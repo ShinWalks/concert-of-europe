@@ -1,0 +1,556 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+the_british_raj  = {
+	trigger = {
+		tag = ENG
+		1236 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1251 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1297 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	research_points = 1
+	prestige = 0.02
+	icon = 19
+}
+
+
+dutch_east_india = {
+	trigger = {
+		1413 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1418 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	research_points = 0.5
+	prestige = 0.01
+	icon = 19
+}
+
+populationsize_25k  = {
+	trigger = {
+		total_pops = 6250
+		NOT = {
+			total_pops = 12500
+		}
+	}
+	research_points = -1
+	global_population_growth = 0.005
+	mobilisation_size = 0.10
+	tax_efficiency = 0.05
+	icon = 11
+}
+
+populationsize_50k  = {
+	trigger = {
+		total_pops = 12500
+		NOT = {
+			total_pops = 25000
+		}
+	}
+	research_points = -0.75
+	global_population_growth = 0.004
+	mobilisation_size = 0.05
+	tax_efficiency = 0.04
+	icon = 11
+}
+
+populationsize_100k = {
+	trigger = {
+		total_pops = 25000
+		NOT = {
+			total_pops = 62500
+		}
+	}
+	research_points = -0.66
+	global_population_growth = 0.003
+	mobilisation_size = 0.03
+	tax_efficiency = 0.03
+	icon = 5
+}
+
+populationsize_250k = {
+	trigger = {
+		total_pops = 62500
+		NOT = {
+			total_pops = 125000
+		}
+	}
+	research_points = -0.5
+	global_population_growth = 0.002
+	mobilisation_size = 0.01
+	tax_efficiency = 0.02
+	icon = 5
+}
+
+populationsize_500k = {
+	trigger = {
+		total_pops = 125000
+		NOT = {
+			total_pops = 250000
+		}
+	}
+	research_points = -0.25
+	global_population_growth = 0.002
+	mobilisation_size = 0.01
+	tax_efficiency = 0.01
+	icon = 5
+}
+
+populationsize_1M = {
+	trigger = {
+		total_pops = 250000
+		NOT = {
+			total_pops = 625000
+
+		}
+	}
+	research_points = -0.15
+	global_population_growth = 0.001
+	mobilisation_size = 0.005
+	icon = 5
+}
+
+populationsize_2_5M = {
+	trigger = {
+		total_pops = 625000
+		NOT = {
+			total_pops = 1250000
+		}
+	}
+	global_population_growth = 0.001
+	icon = 5
+}
+
+populationsize_5M = {
+	trigger = {
+		total_pops = 1250000
+		NOT = {
+			total_pops = 2500000
+		}
+	}
+	research_points = 0.15
+	icon = 5
+}
+
+populationsize_10M = {
+	trigger = {
+		total_pops = 2500000
+		NOT = {
+			total_pops = 6250000
+		}
+	}
+	research_points = 0.25
+	icon = 5
+}
+
+populationsize_25M = {
+	trigger = {
+		total_pops = 6250000
+		NOT = {
+			total_pops = 12500000
+		}
+	}
+	research_points = 0.33
+	tax_efficiency = -0.01
+	icon = 5
+}
+
+populationsize_50M = {
+	trigger = {
+		total_pops = 12500000
+		NOT = {
+			total_pops = 25000000
+		}
+	}
+	research_points = 0.5
+	tax_efficiency = -0.02
+	icon = 5
+}
+
+populationsize_100M = {
+	trigger = {
+		total_pops = 25000000
+		NOT = {
+			total_pops = 50000000
+		}
+	}
+	research_points = 0.66
+	tax_efficiency = -0.03
+	icon = 5
+}
+
+populationsize_200M = {
+	trigger = {
+		total_pops = 50000000
+		NOT = {
+			total_pops = 75000000
+		}
+	}
+	research_points = 0.75
+	tax_efficiency = -0.04
+	icon = 5
+}
+
+populationsize_300M = {
+	trigger = {
+		total_pops = 75000000
+	}
+	research_points = 1
+	tax_efficiency = -0.05
+	icon = 5
+}
+
+no_navy = {
+	trigger = {
+		civilized = yes
+		not = { total_amount_of_ships = 1 }
+	}
+	prestige = -0.25
+	diplomatic_points_modifier = -0.25
+	icon = 9
+}
+
+no_army = {
+	trigger = {
+		civilized = yes
+		not = { total_amount_of_divisions = 1 }
+	}
+	prestige = -0.25
+	icon = 9
+}
+
+small_navy = {
+	trigger = {
+		civilized = yes
+		total_amount_of_ships = 1
+		not = { total_amount_of_ships = 10 }
+	}
+	prestige = -0.1
+	icon = 9
+}
+
+grand_navy = {
+	trigger = {
+		civilized = yes
+		total_amount_of_ships = 100
+	}
+	prestige = 0.1
+	icon = 9
+}
+
+grand_army = {
+	trigger = {
+		civilized = yes
+		total_amount_of_divisions = 100
+	}
+	icon = 9
+	prestige = 0.1
+}
+
+large_nation = {
+	trigger = {
+		civilized = yes
+		num_of_cities = 50
+		not = {
+			num_of_cities = 100
+		}
+	}
+	icon = 9
+	prestige = 0.025
+}
+
+sprawling_empire = {
+	trigger = {
+		civilized = yes
+		num_of_cities = 100
+	}
+	icon = 9
+	prestige = 0.05
+}
+
+landlocked_nation = {
+	trigger = {
+		NOT = { num_of_ports = 1 }
+	}
+	icon = 10
+	RGO_throughput = -0.02
+	factory_throughput = -0.05
+}
+
+well_drilled = {
+	trigger = {
+		officers = 0.002
+		civilized = yes
+	}
+	icon = 17
+	land_organisation = 0.25
+	naval_organisation = 0.25
+}
+
+
+drilled = {
+	trigger = {
+		not = { officers = 0.002 }
+		officers = 0.0015
+		civilized = yes
+	}
+	icon = 17
+	land_organisation = 0.1
+	naval_organisation = 0.1
+}
+
+poorly_drilled = {
+	trigger = {
+		not = { officers = 0.001 }
+		officers = 0.0005
+	}
+	icon = 18
+	land_organisation = -0.1
+	naval_organisation = -0.1
+}
+
+undisciplined_mob = {
+	trigger = {
+		not = { officers = 0.0005 }
+	}
+	icon = 18
+	land_organisation = -0.25
+	naval_organisation = -0.25
+}
+
+vassal_nation = {
+	trigger = {
+		is_vassal = yes
+	}
+	icon = 10
+	prestige = -0.1
+}
+
+oversized_industry_1850 = {
+	trigger = {
+		year = 1850
+		not = { year = 1860 }
+		industrial_score = 200
+		not = { industrial_score = 400 }
+	}
+	icon = 10
+	factory_throughput = -0.05
+	prestige = 0.01
+}
+
+oversized_industry_1860 = {
+	trigger = {
+		year = 1860
+		not = { year = 1870 }
+		industrial_score = 400
+		not = { industrial_score = 800 }
+	}
+	icon = 12
+	factory_throughput = -0.1
+	prestige = 0.02
+}
+
+oversized_industry_1870 = {
+	trigger = {
+		year = 1870
+		not = { year = 1880 }
+		industrial_score = 600
+		not = { industrial_score = 1200 }
+	}
+	icon = 12
+	factory_throughput = -0.15
+	prestige = 0.03
+}
+
+oversized_industry_1880 = {
+	trigger = {
+		year = 1880
+		not = { year = 1890 }
+		industrial_score = 800
+		not = { industrial_score = 1600 }
+	}
+	icon = 12
+	factory_throughput = -0.20
+	prestige = 0.04
+}
+
+oversized_industry_1890 = {
+	trigger = {
+		year = 1890
+		not = { year = 1900 }
+		industrial_score = 1000
+		not = { industrial_score = 2000 }
+	}
+	icon = 12
+	factory_throughput = -0.25
+	prestige = 0.05
+}
+
+oversized_industry_1900 = {
+	trigger = {
+		year = 1900
+		not = { year = 1920 }
+		industrial_score = 1500
+		not = { industrial_score = 3000 }
+	}
+	icon = 12
+	factory_throughput = -0.30
+	prestige = 0.06
+}
+
+oversized_industry_1920 = {
+	trigger = {
+		year = 1920
+		not = { year = 1940 }
+		industrial_score = 2000
+		not = { industrial_score = 4000 }
+	}
+	icon = 12
+	factory_throughput = -0.35
+	prestige = 0.07
+}
+
+oversized_industry_1940 = {
+	trigger = {
+		year = 1940
+		industrial_score = 4000
+		not = { industrial_score = 8000 }
+	}
+	icon = 12
+	factory_throughput = -0.40
+	prestige = 0.08
+}
+
+excessive_industry_1850 = {
+	trigger = {
+		year = 1850
+		not = { year = 1860 }
+		industrial_score = 400
+	}
+	icon = 10
+	factory_throughput = -0.10
+	prestige = 0.02
+}
+
+excessive_industry_1860 = {
+	trigger = {
+		year = 1860
+		not = { year = 1870 }
+		industrial_score = 800
+	}
+	icon = 12
+	factory_throughput = -0.20
+	prestige = 0.04
+}
+
+excessive_industry_1870 = {
+	trigger = {
+		year = 1870
+		not = { year = 1880 }
+		industrial_score = 1200
+	}
+	icon = 12
+	factory_throughput = -0.30
+	prestige = 0.06
+}
+
+excessive_industry_1880 = {
+	trigger = {
+		year = 1880
+		not = { year = 1890 }
+		industrial_score = 1600
+	}
+	icon = 12
+	factory_throughput = -0.40
+	prestige = 0.08
+}
+
+excessive_industry_1890 = {
+	trigger = {
+		year = 1890
+		not = { year = 1900 }
+		industrial_score = 2000
+	}
+	icon = 12
+	factory_throughput = -0.50
+	prestige = 0.1
+}
+
+excessive_industry_1900 = {
+	trigger = {
+		year = 1900
+		not = { year = 1920 }
+		industrial_score = 3000
+	}
+	icon = 12
+	factory_throughput = -0.60
+	prestige = 0.12
+}
+
+excessive_industry_1920 = {
+	trigger = {
+		year = 1920
+		not = { year = 1940 }
+		industrial_score = 4000
+	}
+	icon = 12
+	factory_throughput = -0.70
+	prestige = 0.14
+}
+
+excessive_industry_1940 = {
+	trigger = {
+		year = 1940
+		industrial_score = 8000
+	}
+	icon = 12
+	factory_throughput = -0.80
+	prestige = 0.16
+}
+
+winds_of_change = {
+	trigger = {
+		has_global_flag = berlin_conference
+		civilized = no
+	}
+	icon = 1
+	research_points = 1
+}
+
+the_police_state_effect = {
+	trigger = {
+		invention = the_police_state
+		or = {
+			government = fascist_dictatorship
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = proletarian_dictatorship
+		}
+	}
+	icon = 1
+	core_pop_consciousness_modifier = -0.03
+	core_pop_militancy_modifier = -0.02
+}
+
+the_concert_of_europe = {
+	trigger = {
+		not = { year = 1840 }
+	}
+	global_pop_consciousness_modifier = -0.1
+	icon = 1
+}

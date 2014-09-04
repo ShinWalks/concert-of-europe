@@ -1,0 +1,77 @@
+# Bolivarian solidarity
+alliance = {
+	first = GCO
+	second = ECU
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}
+
+alliance = {
+	first = GCO
+	second = PEU
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}
+
+alliance = {
+	first = GCO
+	second = BOL
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}
+
+alliance = {
+	first = PEU
+	second = BOL
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}
+
+alliance = {
+	first = PEU
+	second = CHL
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}
+
+alliance = {
+	first = PEU
+	second = ARG
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}
+
+alliance = {
+	first = PRG
+	second = BOL
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}
+
+alliance = {
+	first = PRG
+	second = ARG
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}
+
+alliance = {
+	first = BOL
+	second = CHL
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}
+
+alliance = {
+	first = BOL
+	second = ARG
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}
+
+alliance = {
+	first = CHL
+	second = ARG
+	start_date = 1815.11.9
+	end_date = 1823.1.1
+}

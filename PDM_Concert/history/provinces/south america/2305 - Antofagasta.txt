@@ -1,0 +1,15 @@
+owner = BOL
+controller = BOL
+add_core = BOL
+trade_goods = wool
+life_rating = 35
+terrain = desert_hills
+1836.1.1 = {
+	owner = PBC
+	controller = PBC
+	add_core = CHL
+}
+1861.1.1 = {
+	owner = CHL
+	controller = CHL
+}

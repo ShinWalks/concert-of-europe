@@ -1,0 +1,17 @@
+owner = SPA
+controller = SPA
+add_core = PEU
+trade_goods = sulphur
+life_rating = 35
+terrain = cold_desert_hills
+1836.1.1 = {
+	owner = SPU
+	controller = SPU
+	add_core = SPU
+	add_core = CHL
+}
+1861.1.1 = {
+	owner = CHL
+	controller = CHL
+	remove_core = SPU
+}

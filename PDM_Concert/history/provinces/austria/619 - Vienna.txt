@@ -1,0 +1,52 @@
+owner = AUS
+controller = AUS
+add_core = AUS
+trade_goods = grain
+life_rating = 40
+terrain = good_farmland
+fort = 1
+state_building = {
+	level = 1
+	building = luxury_furniture_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = bronze_factory 
+	upgrade = yes
+}
+1836.1.1 = {
+	state_building = {
+		level = 1
+		building = luxury_furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = bronze_factory 
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = fruit_cannery
+		upgrade = yes
+	}
+	#state_building = {
+	#	level = 4
+	#	building = small_arms_factory
+	#	upgrade = yes
+	#}
+}
+1861.1.1 = { railroad = 2 }
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+}

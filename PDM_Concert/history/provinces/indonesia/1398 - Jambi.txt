@@ -1,0 +1,11 @@
+owner = DJA
+controller = DJA
+add_core = DJA
+trade_goods = spices
+life_rating = 30
+terrain = jungle_farmland
+1836.1.1 = {
+	owner = NET
+	controller = NET
+	colonial = 1
+}

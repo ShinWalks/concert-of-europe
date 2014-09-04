@@ -1,0 +1,64 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+add_core = SCO
+trade_goods = copper
+life_rating = 35
+terrain = marginal_farmland
+naval_base = 1
+state_building = {
+	level = 1
+	building = lumber_mill
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = liquor_distillery
+	upgrade = yes
+}
+state_building = {
+	level = 4
+	building = clipper_shipyard
+	upgrade = yes
+}
+1836.1.1 = {
+	naval_base = 2
+	state_building = {
+		level = 1
+		building = steamer_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 6
+		building = clipper_shipyard
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = gunpowder_factory
+		upgrade = yes
+	}
+}
+1861.1.1 = {
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = steamer_shipyard
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }

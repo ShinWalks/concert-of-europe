@@ -1,0 +1,10 @@
+add_core = AST
+add_core = ENG
+trade_goods = iron
+life_rating = 30
+terrain = semi_desert
+colonial = 1
+1836.1.1 = {
+	owner = ENG
+	controller = ENG
+}

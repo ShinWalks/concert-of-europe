@@ -1,0 +1,21 @@
+owner = AUS
+controller = AUS
+add_core = TRE
+add_core = SLO
+add_core = AUS
+trade_goods = grain
+life_rating = 32
+naval_base = 1
+terrain = deciduous_forest_hills
+1836.1.1 = {
+	naval_base = 2
+	#state_building = {
+	#	level = 4
+	#	building = liquor_distillery
+	#	upgrade = yes
+	#}
+}
+1861.1.1 = { 
+	railroad = 2
+	naval_base = 3
+}

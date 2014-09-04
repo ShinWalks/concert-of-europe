@@ -1,0 +1,10 @@
+owner = SPA
+controller = SPA
+add_core = ECU
+trade_goods = fruit
+life_rating = 35
+terrain = seasonal_jungle
+1836.1.1 = {
+	owner = ECU
+	controller = ECU
+}
