@@ -1,0 +1,6 @@
+owner = MAS
+controller = MAS
+add_core = SEG
+trade_goods = grain
+life_rating = 35
+terrain = dry_forest

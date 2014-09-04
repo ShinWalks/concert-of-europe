@@ -1,0 +1,21 @@
+owner = ENG
+controller = ENG
+add_core = QUE
+add_core = ENG
+trade_goods = cattle
+life_rating = 35
+terrain = good_farmland
+colonial = 1
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
+}
+1861.1.1 = { railroad = 3 }

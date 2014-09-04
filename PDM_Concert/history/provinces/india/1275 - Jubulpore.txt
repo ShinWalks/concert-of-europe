@@ -1,0 +1,8 @@
+owner = ENG
+controller = ENG
+add_core = NAG
+add_core = HND
+trade_goods = cotton
+life_rating = 32
+terrain = forested_farmland
+colonial = 1

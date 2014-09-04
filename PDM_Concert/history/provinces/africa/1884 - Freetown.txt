@@ -1,0 +1,7 @@
+owner = ENG
+controller = ENG
+trade_goods = grain
+life_rating = 35
+naval_base = 1
+terrain = jungle_farmland
+colonial = 1

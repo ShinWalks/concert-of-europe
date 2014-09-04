@@ -1,0 +1,8 @@
+owner = ENG
+controller = ENG
+add_core = AST
+add_core = ENG
+trade_goods = tropical_wood
+life_rating = 30
+terrain = semi_desert
+colonial = 1

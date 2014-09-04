@@ -1,0 +1,13 @@
+owner = SWH
+controller = SWH
+add_core = SCH
+add_core = SWH
+add_core = GER
+trade_goods = cattle
+life_rating = 35
+terrain = marginal_farmland
+fort = 1
+1861.1.1 = { railroad = 2 }
+1861.1.1 = {
+	add_core = DEN
+}
