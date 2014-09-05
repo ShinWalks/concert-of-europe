@@ -9,3 +9,8 @@ terrain = good_farmland
 	controller = EGY
 	add_core = EGY
 }
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

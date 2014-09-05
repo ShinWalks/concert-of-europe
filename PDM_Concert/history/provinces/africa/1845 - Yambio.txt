@@ -1,0 +1,10 @@
+add_core = DAR
+add_core = AZA
+trade_goods = grain
+life_rating = 10
+terrain = seasonal_jungle
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

@@ -1,0 +1,35 @@
+owner = RUS
+controller = RUS
+add_core = RUS
+trade_goods = iron
+life_rating = 45
+terrain = forested_farmland
+fort = 1
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = lumber_mill
+	upgrade = yes
+}
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = furniture_factory
+		upgrade = yes
+	}   
+}
+1861.1.1 = { railroad = 2 }

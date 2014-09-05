@@ -1,0 +1,6 @@
+owner = CHL
+controller = CHL
+add_core = CHL
+trade_goods = copper
+life_rating = 35
+terrain = semi_desert_mountains

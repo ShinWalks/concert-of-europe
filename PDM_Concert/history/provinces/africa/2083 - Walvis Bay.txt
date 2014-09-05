@@ -1,0 +1,13 @@
+trade_goods = wool
+life_rating = 10
+terrain = desert
+colonial = 1
+1914.1.1 = {
+	owner = SAF
+	controller = SAF
+	add_core = SAF
+	colonial = 1
+	railroad = 2
+	naval_base = 1
+	fort = 1
+}

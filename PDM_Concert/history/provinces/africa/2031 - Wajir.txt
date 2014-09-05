@@ -1,0 +1,10 @@
+add_core = GEL
+add_core = MAJ
+trade_goods = coffee
+life_rating = 15
+terrain = semi_desert
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

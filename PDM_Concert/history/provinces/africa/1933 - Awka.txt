@@ -1,0 +1,11 @@
+owner = ARO
+controller = ARO
+add_core = ARO
+trade_goods = grain
+life_rating = 35
+terrain = jungle_farmland
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

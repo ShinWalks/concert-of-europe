@@ -9,6 +9,10 @@ terrain = dry_grassland
 }
 1861.1.1 = {
 	owner = TUR
-	controller = TUR
+	colonial = 1
+}
+1914.1.1 = {
+	owner = ITA
+	controller = ITA
 	colonial = 1
 }

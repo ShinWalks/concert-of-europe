@@ -1,0 +1,11 @@
+owner = ZUL
+controller = ZUL
+add_core = ZUL
+trade_goods = wool
+life_rating = 35
+terrain = deciduous_forest_hills
+1914.1.1 = {
+	owner = SAF
+	controller = SAF
+	colonial = 0
+}

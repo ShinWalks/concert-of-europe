@@ -1,0 +1,14 @@
+owner = ENG
+controller = ENG
+add_core = SAF
+add_core = ENG
+add_core = XHO
+trade_goods = fruit
+life_rating = 35
+terrain = dry_forest_hills
+colonial = 1
+1914.1.1 = {
+	owner = SAF
+	controller = SAF
+	colonial = 0
+}

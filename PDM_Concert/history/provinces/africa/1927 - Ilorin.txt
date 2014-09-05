@@ -1,0 +1,12 @@
+owner = SOK
+controller = SOK
+add_core = SOK
+add_core = OYO
+trade_goods = grain
+life_rating = 15
+terrain = seasonal_jungle
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

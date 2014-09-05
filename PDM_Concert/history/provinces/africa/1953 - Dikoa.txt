@@ -1,0 +1,9 @@
+add_core = KBO
+trade_goods = fruit
+life_rating = 10
+terrain = forested_farmland
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

@@ -1,0 +1,8 @@
+add_core = DAR
+trade_goods = grain
+life_rating = 10
+terrain = dry_forest
+1914.1.1 = {
+	owner = DAR
+	controller = DAR
+}

@@ -10,3 +10,7 @@ terrain = dry_grassland
 	add_core = ORA
 	add_core = SAF
 }
+1914.1.1 = {
+	owner = SAF
+	controller = SAF
+}

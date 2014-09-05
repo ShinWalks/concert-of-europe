@@ -1,0 +1,12 @@
+owner = SOK
+controller = SOK
+add_core = SOK
+add_core = DAM
+trade_goods = horses
+life_rating = 35
+terrain = forested_farmland
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

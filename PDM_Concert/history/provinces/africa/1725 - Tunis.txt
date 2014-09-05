@@ -1,0 +1,11 @@
+owner = TUN
+controller = TUN
+add_core = TUN
+terrain = marginal_farmland
+trade_goods = lead
+life_rating = 35
+1914.1.1 = {
+	owner = FRA
+	controller = FRA
+	colonial = 1
+}

@@ -1,0 +1,7 @@
+owner = LAN
+controller = LAN
+add_core = KLM
+add_core = LAN
+trade_goods = spices
+life_rating = 25
+terrain = swamp_jungle

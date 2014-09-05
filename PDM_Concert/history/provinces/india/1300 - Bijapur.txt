@@ -1,0 +1,8 @@
+owner = ENG
+controller = ENG
+add_core = HND
+add_core = MAH
+trade_goods = sugar
+life_rating = 35
+terrain = dry_grassland
+colonial = 1

@@ -1,0 +1,9 @@
+trade_goods = fruit
+life_rating = 10
+terrain = desert
+colonial = 1
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}
