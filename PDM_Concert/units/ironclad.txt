@@ -31,7 +31,6 @@ ironclad = {
 		coal = 2
 	}
 	
-
 	#Naval Abilties
 	hull = 16
 	gun_power = 16
@@ -43,4 +42,3 @@ ironclad = {
 	supply_consumption_score = 5
 	colonial_points = 5
 }
-

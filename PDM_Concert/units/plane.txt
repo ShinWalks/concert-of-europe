@@ -4,9 +4,10 @@ plane = {
 	type = land
 	sprite = Plane
 	active = no
-	unit_type = special
+	unit_type = cavalry
 	primary_culture = yes
-	floating_flag = no	
+	floating_flag = no
+	
 	#Core Abilities
 	priority = 45
 	max_strength = 3
@@ -25,9 +26,9 @@ plane = {
 	supply_consumption = 1
 	supply_cost = {
 		aeroplanes = 0.2
+		fuel = 0.1
 	}
 	
-
 	#Land Abilties
 	reconnaissance = 25
 	attack = 0.5

@@ -7,7 +7,7 @@ cruiser = {
 	unit_type = light_ship
 	move_sound = steam_move
 	select_sound = steam_selected
-		
+	
 	#Core Abilities
 	priority = 12
 	max_strength = 100
@@ -15,8 +15,7 @@ cruiser = {
 	maximum_speed = 8
 	weighted_value = 8.0
 	floating_flag = yes
-
-
+	
 	#Building Costs
 	build_time = 550
 	build_cost = {	
@@ -32,7 +31,6 @@ cruiser = {
 		ammunition = 1
 	}
 	
-
 	#Naval Abilties
 	hull = 16
 	gun_power = 16

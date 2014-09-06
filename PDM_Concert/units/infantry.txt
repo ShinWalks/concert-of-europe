@@ -13,8 +13,7 @@ infantry = {
 	maximum_speed = 4.00
 	floating_flag = no
 	weighted_value = 1.0
-
-
+	
 	#Building Costs
 	build_time = 20
 	build_cost = {
@@ -28,7 +27,6 @@ infantry = {
 		horses = 0.1
 	}
 	
-
 	#Land Abilties
 	reconnaissance = 0
 	attack = 1
@@ -37,5 +35,4 @@ infantry = {
 	support = 0.0
 	maneuver = 1
 	siege = 0.25
-
 }

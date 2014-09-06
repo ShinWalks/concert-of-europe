@@ -12,8 +12,6 @@
 # reliability = mil gain or loss for pop associated.
 #
 
-
-
 personality = {
 	no_personality = {
 	}
@@ -89,7 +87,6 @@ personality = {
 		attack = 0.3
 		speed = 0.05
 		morale = 0.10
-		
 	}
 	indecisive = {
 		attack = -0.2
@@ -936,7 +933,6 @@ background = {
 		attack = -0.3
 		speed = -0.10
 		attrition = 0.10
-		
 	}
 	unfit = {
 		attack = -0.3

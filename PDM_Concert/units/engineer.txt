@@ -4,17 +4,17 @@ engineer = {
 	type = land
 	sprite = Engineer
 	active = no
-	unit_type = infantry
+	unit_type = special
 	primary_culture = yes
 	weighted_value = 3.0
 	floating_flag = no
+	
 	#Core Abilities
 	priority = 10
 	max_strength = 3
 	default_organisation = 5
 	maximum_speed = 4.00
-
-
+	
 	#Building Costs
 	build_time = 50
 	build_cost = {
@@ -29,7 +29,6 @@ engineer = {
 		explosives = 0.3
 	}
 	
-
 	#Land Abilties
 	reconnaissance = 0
 	attack = 1.5
@@ -38,6 +37,4 @@ engineer = {
 	support = 1.2
 	maneuver = 1
 	siege = 1
-
-	
 }

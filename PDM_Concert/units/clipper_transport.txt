@@ -7,7 +7,6 @@ clipper_transport = {
 	transport = yes
 	floating_flag = yes
 
-
 	#Core Abilities
 	priority = 5
 	max_strength = 100
@@ -25,9 +24,8 @@ clipper_transport = {
 	supply_cost = {
 		lumber = 1
 		fabric = 0.5
-		}
+	}
 	
-
 	#Naval Abilties
 	hull = 2
 	gun_power = 1
@@ -38,4 +36,3 @@ clipper_transport = {
 	limit_per_port = -1
 	supply_consumption_score = 1
 }
-

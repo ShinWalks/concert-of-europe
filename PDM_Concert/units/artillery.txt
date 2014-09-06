@@ -4,7 +4,7 @@ artillery = {
 	type = land
 	sprite = Artillery
 	active = no
-	unit_type = special
+	unit_type = support
 	primary_culture = yes
 	floating_flag = no
 	
@@ -12,7 +12,7 @@ artillery = {
 	priority = 20
 	max_strength = 3
 	default_organisation = 5
-	maximum_speed = 2.50
+	maximum_speed = 3.0
 	weighted_value = 5.0
 
 	#Building Costs
@@ -28,7 +28,6 @@ artillery = {
 		explosives = 0.25
 	}
 	
-
 	#Land Abilties
 	reconnaissance = 0
 	attack = 0.5

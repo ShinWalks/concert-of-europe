@@ -15,8 +15,7 @@ monitor = {
 	max_strength = 100
 	default_organisation = 5
 	maximum_speed = 7
-
-
+	
 	#Building Costs
 	build_time = 365
 	build_cost = {
@@ -31,7 +30,6 @@ monitor = {
 		coal = 1
 	}
 	
-
 	#Naval Abilties
 	hull = 8
 	gun_power = 8
@@ -42,4 +40,3 @@ monitor = {
 	limit_per_port = -1
 	supply_consumption_score = 2
 }
-

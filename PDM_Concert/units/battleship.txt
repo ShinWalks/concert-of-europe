@@ -19,8 +19,7 @@ battleship = {
 	maximum_speed = 9
 	weighted_value = 7.0
 	can_build_overseas = no
-
-
+	
 	#Building Costs
 	build_time = 360
 	build_cost = {

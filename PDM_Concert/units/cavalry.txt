@@ -6,7 +6,6 @@ cavalry = {
 	active = yes
 	unit_type = cavalry
 	floating_flag = yes
-	primary_culture = yes
 	
 	#Avatar
 	sprite_mount = GenericMount
@@ -16,14 +15,14 @@ cavalry = {
 	priority = 25
 	max_strength = 3
 	default_organisation = 5
-	maximum_speed = 7.00
+	maximum_speed = 6.00
 	weighted_value = 4.0
 
 	#Building Costs
 	build_time = 40
 	build_cost = {
 		iron = 2
-		horses= 2
+		horses = 2
 	}
 	
 	supply_consumption = 1
@@ -32,7 +31,6 @@ cavalry = {
 		horses = 0.5
 	}
 	
-
 	#Land Abilties
 	reconnaissance = 2
 	attack = 1

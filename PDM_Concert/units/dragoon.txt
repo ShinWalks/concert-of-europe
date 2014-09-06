@@ -35,7 +35,6 @@ dragoon = {
 		horses = 0.2
 	}
 	
-
 	#Land Abilties
 	reconnaissance = 2
 	attack = 1.5
@@ -43,5 +42,4 @@ dragoon = {
 	discipline = 1.0
 	support = 0.0
 	maneuver = 4
-	
 }

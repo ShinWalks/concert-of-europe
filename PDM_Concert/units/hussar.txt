@@ -16,7 +16,7 @@ hussar = {
 	priority = 25
 	max_strength = 3
 	default_organisation = 5
-	maximum_speed = 8.00
+	maximum_speed = 7.00
 	weighted_value = 7.0
 
 	#Building Costs
@@ -33,13 +33,11 @@ hussar = {
 		horses = 0.5
 	}
 	
-
 	#Land Abilties
 	reconnaissance = 3
 	attack = 1
 	defence = 0.5
 	discipline = 1
 	support = 0.0
-	maneuver = 8
-
+	maneuver = 6
 }

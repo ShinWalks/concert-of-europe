@@ -26,7 +26,6 @@ irregular = {
 		wool = 0.5
 	}
 	
-
 	#Land Abilties
 	reconnaissance = 1
 	attack = 0.5
@@ -34,6 +33,4 @@ irregular = {
 	discipline = 0.5
 	support = 0.0
 	maneuver = 2
-	
-
 }

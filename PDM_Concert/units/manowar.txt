@@ -6,16 +6,14 @@ manowar = {
 	unit_type = big_ship
 	capital = yes
 	floating_flag = yes
-
-
+	
 	#Core Abilities
 	priority = 25
 	max_strength = 100
 	default_organisation = 5
 	maximum_speed = 4
 	weighted_value = 3.0
-
-
+	
 	#Building Costs
 	build_time = 1050
 	build_cost = {
@@ -31,7 +29,6 @@ manowar = {
 		bronze = 0.5
 	}
 	
-
 	#Naval Abilties
 	hull = 8
 	gun_power = 8

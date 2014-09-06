@@ -2,8 +2,7 @@
 # If adding new technology, make sure they are uniquely named.
 
 folders = {
-	army_tech = 
-	{
+	army_tech = {
 		army_doctrine
 		light_armament
 		heavy_armament
@@ -42,19 +41,9 @@ folders = {
 		tech_infrastructure
 		chemistry_and_electricity
 	}
-	
-	
 }
 
-
-
-
-
-
-
-
-
-schools ={
+schools = {
 	traditional_academic = 
 	{
 		army_tech_research_bonus = 0.02

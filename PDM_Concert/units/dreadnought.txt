@@ -8,7 +8,8 @@ dreadnought = {
 	active = no
 	move_sound = steam_move
 	select_sound = steam_selected
-	floating_flag = yes	
+	floating_flag = yes
+	
 	#Core Abilities
 	priority = 40
 	max_strength = 100
@@ -33,7 +34,6 @@ dreadnought = {
 		fuel = 2
 	}
 	
-
 	#Naval Abilties
 	hull = 32
 	gun_power = 32

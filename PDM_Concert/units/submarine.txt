@@ -7,7 +7,8 @@ submarine = {
 	unit_type = light_ship
 	move_sound = steam_move
 	select_sound = steam_selected
-	floating_flag = yes	
+	floating_flag = yes
+	
 	#Core Abilities
 	priority = 20
 	max_strength = 100
@@ -29,7 +30,6 @@ submarine = {
 		coal = 0.5
 	}
 	
-
 	#Naval Abilties
 	hull = 4
 	gun_power = 8
@@ -40,4 +40,3 @@ submarine = {
 	limit_per_port = -1
 	supply_consumption_score = 4
 }
-

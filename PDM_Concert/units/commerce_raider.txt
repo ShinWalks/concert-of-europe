@@ -7,7 +7,8 @@ commerce_raider = {
 	unit_type = light_ship
 	move_sound = steam_move
 	select_sound = steam_selected
-	floating_flag = yes	
+	floating_flag = yes
+	
 	#Core Abilities
 	priority = 15
 	max_strength = 100
@@ -29,7 +30,6 @@ commerce_raider = {
 		coal = 0.5
 	}
 	
-
 	#Naval Abilties
 	hull = 5
 	gun_power = 5
@@ -40,4 +40,3 @@ commerce_raider = {
 	limit_per_port = -1
 	supply_consumption_score = 1
 }
-

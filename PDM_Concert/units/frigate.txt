@@ -12,8 +12,7 @@ frigate = {
 	default_organisation = 5
 	maximum_speed = 6
 	weighted_value = 2.0
-
-
+	
 	#Building Costs
 	build_time = 365
 	build_cost = {
@@ -29,7 +28,6 @@ frigate = {
 		bronze = 0.25
 	}
 	
-
 	#Naval Abilties
 	hull = 4
 	gun_power = 4
@@ -40,4 +38,3 @@ frigate = {
 	limit_per_port = -1
 	supply_consumption_score = 1
 }
-

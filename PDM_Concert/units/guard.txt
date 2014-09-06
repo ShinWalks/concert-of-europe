@@ -7,6 +7,7 @@ guard = {
 	unit_type = infantry
 	primary_culture = yes
 	floating_flag = no
+	
 	#Core Abilities
 	priority = 24
 	max_strength = 3
@@ -32,7 +33,6 @@ guard = {
 		fuel = 0.25
 	}
 	
-
 	#Land Abilties
 	reconnaissance = 0
 	attack = 3
@@ -41,5 +41,4 @@ guard = {
 	support = 0
 	maneuver = 3
 	siege = 0.5
-
 }

@@ -24,7 +24,6 @@ the_british_raj  = {
 	icon = 19
 }
 
-
 dutch_east_india = {
 	trigger = {
 		1413 = {
@@ -302,7 +301,6 @@ well_drilled = {
 	naval_organisation = 0.25
 }
 
-
 drilled = {
 	trigger = {
 		not = { officers = 0.002 }
@@ -343,7 +341,6 @@ vassal_nation = {
 
 oversized_industry_1850 = {
 	trigger = {
-		year = 1850
 		not = { year = 1860 }
 		industrial_score = 200
 		not = { industrial_score = 400 }
@@ -438,7 +435,6 @@ oversized_industry_1940 = {
 
 excessive_industry_1850 = {
 	trigger = {
-		year = 1850
 		not = { year = 1860 }
 		industrial_score = 400
 	}

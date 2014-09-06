@@ -9,6 +9,7 @@ steam_transport = {
 	move_sound = steam_move
 	select_sound = steam_selected
 	floating_flag = yes
+	
 	#Core Abilities
 	priority = 10
 	max_strength = 100
@@ -28,7 +29,6 @@ steam_transport = {
 		coal = 1
 	}
 	
-
 	#Naval Abilties
 	gun_power = 1
 	hull = 4
@@ -39,4 +39,3 @@ steam_transport = {
 	limit_per_port = -1
 	supply_consumption_score = 1
 }
-

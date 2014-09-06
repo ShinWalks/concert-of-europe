@@ -6,7 +6,8 @@ regular = {
 	active = no
 	unit_type = infantry
 	primary_culture = yes
-	floating_flag = no	
+	floating_flag = no
+	
 	#Core Abilities
 	priority = 10
 	max_strength = 3
@@ -28,7 +29,6 @@ regular = {
 		horses = 0.1
 	}
 	
-
 	#Land Abilties
 	reconnaissance = 0
 	attack = 2

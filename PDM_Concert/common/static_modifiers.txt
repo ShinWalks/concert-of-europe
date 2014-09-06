@@ -32,9 +32,6 @@ very_hard_player = {
 	supply_consumption = 1.0
 }
 
-
-
-
 very_easy_ai = {
 	land_organisation = -0.25
 	naval_organisation = -0.25
@@ -103,7 +100,6 @@ no_adjacent_controlled = {
 	supply_limit = -3
 }
 
-
 core = {
 	supply_limit = 3
 }
@@ -119,8 +115,6 @@ has_siege = {
 occupied = {
 }
 
-
-
 nationalism = {
 	pop_militancy_modifier = 0.01
 	pop_consciousness_modifier = 0.005
@@ -131,8 +125,6 @@ infrastructure = {
 	local_rgo_throughput = 1			#each % of infra boost throughput 1%
 	supply_limit = 1.5
 }
-
-
 
 ##########################################################################
 # Global Static Modifiers
