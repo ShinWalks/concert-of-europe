@@ -13,3 +13,14 @@ terrain = hilly_farmland
 		upgrade = yes
 	}
 }
+1914.1.1 = {
+	controller = KUK
+	owner = KUK
+	add_core = KUK
+	railroad = 4
+	state_building = {
+		level = 2
+		building = fabric_factory
+		upgrade = yes
+	}
+}

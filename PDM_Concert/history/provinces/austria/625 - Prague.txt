@@ -23,3 +23,14 @@ terrain = good_farmland
 		upgrade = yes
 	}
 }
+1914.1.1 = {
+	controller = KUK
+	owner = KUK
+	add_core = KUK
+	railroad = 5	# Berlin-Baghdad railway
+	state_building = {
+		level = 2
+		building = steel_factory
+		upgrade = yes
+	}
+}

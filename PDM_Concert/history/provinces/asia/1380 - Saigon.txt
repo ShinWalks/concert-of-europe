@@ -7,3 +7,7 @@ terrain = good_farmland
 1861.1.1 = {
 	controller = FRA
 }
+1914.1.1 = {
+	owner = FRA
+	colonial = 1
+}

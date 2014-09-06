@@ -15,3 +15,9 @@ colonial = 1
 	}
 }
 1861.1.1 = { railroad = 1 }
+1914.1.1 = {
+	owner = AST
+	controller = AST
+	colonial = 0
+
+}

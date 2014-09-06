@@ -23,3 +23,15 @@ state_building = {
 		upgrade = yes
 	}
 }
+1914.1.1 = {
+	controller = ITA
+	owner = ITA
+	add_core = ITA
+	railroad = 3
+	naval_base = 3
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+}

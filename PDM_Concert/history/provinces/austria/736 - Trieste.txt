@@ -19,3 +19,28 @@ terrain = deciduous_forest_hills
 	railroad = 2
 	naval_base = 3
 }
+1914.1.1 = {
+
+	controller = KUK
+
+	owner = KUK
+
+	add_core = KUK
+
+	add_core = ITA
+	railroad = 4
+
+	naval_base = 5
+
+	
+state_building = {
+
+		level = 1
+
+		building = liquor_distillery
+
+		upgrade = yes
+
+	}
+
+}

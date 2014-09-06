@@ -7,3 +7,10 @@ terrain = hilly_farmland
 	controller = ENG
 	colonial = 1
 }
+1914.1.1 = {
+	owner = NZL
+
+	controller = NZL
+	colonial = 0
+
+}

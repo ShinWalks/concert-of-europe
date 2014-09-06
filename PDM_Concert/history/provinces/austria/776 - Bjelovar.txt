@@ -5,3 +5,9 @@ add_core = HUN
 trade_goods = grain
 life_rating = 37
 terrain = deciduous_forest_hills
+1914.1.1 = {
+	controller = KUK
+	owner = KUK
+	add_core = KUK
+	railroad = 1
+}

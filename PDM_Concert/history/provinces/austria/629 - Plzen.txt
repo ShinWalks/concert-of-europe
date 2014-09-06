@@ -5,3 +5,9 @@ add_core = AUS
 trade_goods = coal
 life_rating = 31
 terrain = hilly_farmland
+1914.1.1 = {
+	controller = KUK
+	owner = KUK
+	add_core = KUK
+	railroad = 1
+}

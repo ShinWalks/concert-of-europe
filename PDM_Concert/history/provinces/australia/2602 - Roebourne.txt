@@ -8,3 +8,9 @@ colonial = 1
 	owner = ENG
 	controller = ENG
 }
+1914.1.1 = {
+	owner = AST
+	controller = AST
+	colonial = 0
+
+}

@@ -50,3 +50,30 @@ state_building = {
 		upgrade = yes
 	}
 }
+1914.1.1 = {
+	controller = KUK
+	owner = KUK
+	add_core = KUK
+	railroad = 5	# Berlin-Baghdad railway
+	fort = 4
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = regular_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = small_arms_factory
+		upgrade = yes
+	}
+}

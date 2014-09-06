@@ -5,3 +5,8 @@ add_core = KCH
 trade_goods = spices
 life_rating = 35
 terrain = dry_forest_hills
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

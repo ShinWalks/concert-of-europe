@@ -5,3 +5,8 @@ add_core = SHA
 trade_goods = opium
 life_rating = 35
 terrain = dry_forest_mountains
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

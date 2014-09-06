@@ -6,3 +6,9 @@ add_core = POL
 trade_goods = grain
 life_rating = 33
 terrain = good_farmland
+1914.1.1 = {
+	owner = KUK
+	controller = KUK
+	railroad = 1
+	fort = 3
+}

@@ -2,3 +2,9 @@ add_core = AST
 trade_goods = wool
 life_rating = 15
 terrain = semi_desert
+1914.1.1 = {
+	owner = AST
+	controller = AST
+	colonial = 0
+
+}

@@ -6,3 +6,15 @@ trade_goods = silk
 life_rating = 36
 terrain = floodplain_farmland
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	controller = ITA
+
+	owner = ITA
+
+	add_core = ITA
+
+	
+railroad = 4
+
+}

@@ -5,3 +5,9 @@ trade_goods = grain
 life_rating = 34
 terrain = good_farmland
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	controller = KUK
+	owner = KUK
+	add_core = KUK
+	railroad = 4
+}

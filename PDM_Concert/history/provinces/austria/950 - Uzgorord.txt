@@ -6,3 +6,9 @@ add_core = SLV
 trade_goods = iron
 life_rating = 37
 terrain = conifer_forest_mountains
+1914.1.1 = {
+	owner = KUK
+	controller = KUK
+	add_core = KUK
+	railroad = 1
+}

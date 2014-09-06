@@ -14,8 +14,6 @@ terrain = floodplain_farmland
 1861.1.1 = {
 	owner = ITA
 	controller = ITA
-}
-1861.1.1 = { 
 	state_building = {
 	level = 1
 	building = steel_factory
@@ -28,3 +26,39 @@ terrain = floodplain_farmland
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	railroad = 4
+
+	
+state_building = {
+
+		level = 2
+
+		building = steel_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = luxury_clothes_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 1
+
+		building = fabric_factory
+
+		upgrade = yes
+
+	}
+
+}

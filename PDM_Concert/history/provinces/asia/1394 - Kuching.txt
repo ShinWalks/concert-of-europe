@@ -10,3 +10,8 @@ terrain = jungle_hills
 	add_core = SWK
 	remove_core = BRU
 }
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

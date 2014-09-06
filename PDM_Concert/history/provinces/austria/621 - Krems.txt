@@ -4,3 +4,9 @@ add_core = AUS
 trade_goods = grain
 life_rating = 32
 terrain = hilly_farmland
+1914.1.1 = {
+	controller = KUK
+	owner = KUK
+	add_core = KUK
+	railroad = 5	# Berlin-Baghdad railway
+}
