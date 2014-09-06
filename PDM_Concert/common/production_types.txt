@@ -4,7 +4,7 @@
 factory_template = {
 	efficiency = {
 		cement = 6 #if no coal, work at 75% efficiency  total cost £50
-}
+	}
 	
 	owner =
 	{
@@ -33,7 +33,7 @@ factory_template = {
 cheap_factory_template = {
 	efficiency = {
 		cement = 3 #if no coal, work at 75% efficiency  total cost £24
-}
+	}
 	
 	owner =
 	{
@@ -62,7 +62,7 @@ cheap_factory_template = {
 cement_factory_template = {
 	efficiency = {
 		machine_parts = 1  #if no coal, work at 75% efficiency  total cost £20
-}
+	}
 	
 	owner =
 	{
@@ -91,7 +91,7 @@ cement_factory_template = {
 bank_template = {
 	efficiency = {
 		paper = 10 #  total cost £56
-}
+	}
 	
 	owner =
 	{
@@ -117,7 +117,7 @@ modern_factory_template = {
 		electric_power = 8
 		machine_parts = 1
 		financial_services = 1
-}
+	}
 	
 	owner =
 	{
@@ -184,7 +184,7 @@ aeroplane_factory = {
 	}
 }
 
-ammunition_factory = {       
+ammunition_factory = {
 	template = cheap_factory_template	#24
 	input_goods = {      
 		gunpowder = 5			#20
@@ -1718,6 +1718,25 @@ tropical_wood_lodge = {
 }
 
 ### Artisans #####################################################################################
+
+artisan_barrel = {       
+	input_goods = {      
+		machine_parts = 4
+		electric_gear = 5
+		steel = 7
+	}
+	output_goods = barrels 
+	value = 5
+	
+	owner = {
+		poptype = artisan  
+		effect = output
+	}
+	
+	type = artisan
+	
+	workforce = 10000
+}
 
 artisan_radio = {       
 	input_goods = {      

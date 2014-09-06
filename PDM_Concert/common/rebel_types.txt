@@ -46,7 +46,6 @@ reactionary_rebels = {
 	general = yes					# Does not use generals
 	smart = yes						# Does not assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units do not remain after enforcing demands.
-		
 	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces
 
 
@@ -59,18 +58,14 @@ reactionary_rebels = {
 			war = yes
 			factor = 0.8
 		}
-
 		modifier = {
 			war_exhaustion = 4
 			factor = 0.95
 		}	
-
-
 		modifier = {
 			war_exhaustion = 6
 			factor = 0.95
 		}
-
 		modifier = {
 			war_exhaustion = 8
 			factor = 0.95
@@ -87,7 +82,6 @@ reactionary_rebels = {
 			factor = 0.5
 			average_militancy = 8
 		}
-		
 	}
 	
 	# The rebel type with the highest modifier for this pop gets picked
@@ -235,7 +229,13 @@ reactionary_rebels = {
 				reactionary = 10
 				pop_majority_ideology = conservative
 			}
-		}	
+		}
+		modifier = {
+			factor = 0.5
+			location = {
+				is_colonial = yes
+			}
+		}
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -304,6 +304,7 @@ reactionary_rebels = {
 	}
 	
 	demands_enforced_effect = {
+		any_pop = { militancy = -3 }
 		ruling_party_ideology = reactionary
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -346,12 +347,25 @@ reactionary_rebels = {
 		remove_country_modifier = dour_economist
 		remove_country_modifier = otto_von_bismarck
 		remove_country_modifier = louis_napoleon_iii
+		remove_country_modifier = eleftherios_venizelos
+		remove_country_modifier = simon_bolivar
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 		add_country_modifier = {
 			name = national_confusion
-			duration = 365
+			duration = 1825
 		}
-		prestige_factor = -0.2
-		war_exhaustion = 50
+		add_country_modifier = {
+			name = the_eye_of_the_storm
+			duration = 1095
+		}
+		war_exhaustion = 25
 		country_event = 800050
 	}
 }
@@ -401,22 +415,18 @@ fascist_rebels = {
 	will_rise = 
 	{
 		factor = 0.50
-		
 		modifier = {
 			war = yes
 			factor = 0.8
 		}
-		
 		modifier = {
 			war_exhaustion = 4
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 6
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 8
 			factor = 0.95
@@ -438,7 +448,6 @@ fascist_rebels = {
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
 		factor = 2
-		
 		modifier = {
 			factor = 0
 			NOT = {
@@ -460,8 +469,21 @@ fascist_rebels = {
 			}
 		}
 		modifier = {
-			factor = 5
-			reactionary = 10
+			factor = 0.01
+			NOT = {
+				OR = {
+					reactionary = 10
+					fascist = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { fascist = 5 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { fascist = 10 }
 		}
 		modifier = {
 			factor = 5
@@ -510,7 +532,7 @@ fascist_rebels = {
 			country = { plurality = 10 }
 		}
 		modifier = {
-			factor = 15
+			factor = 1.5
 			country = {
 				has_unclaimed_cores = yes
 			}
@@ -595,7 +617,6 @@ fascist_rebels = {
 		}
 	}
 	
-
 	# Country scope
 	demands_enforced_trigger = {
 		OR = {
@@ -612,6 +633,7 @@ fascist_rebels = {
 		}
 	}
 	demands_enforced_effect = {
+		any_pop = { militancy = -3 }
 		ruling_party_ideology = fascist
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -654,12 +676,25 @@ fascist_rebels = {
 		remove_country_modifier = dour_economist
 		remove_country_modifier = otto_von_bismarck
 		remove_country_modifier = louis_napoleon_iii
+		remove_country_modifier = eleftherios_venizelos
+		remove_country_modifier = simon_bolivar
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 		add_country_modifier = {
 			name = national_confusion
-			duration = 365
+			duration = 1825
 		}
-		prestige_factor = -0.2		
-		war_exhaustion = 50
+		add_country_modifier = {
+			name = the_eye_of_the_storm
+			duration = 1095
+		}
+		war_exhaustion = 25
 		country_event = 800051
 	}
 }
@@ -746,7 +781,6 @@ communist_rebels = {
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
 		factor = 2
-		
 		modifier = {
 			factor = 0
 			NOT = {
@@ -769,6 +803,14 @@ communist_rebels = {
 					socialist = 10
 				}
 			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { communist = 5 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { communist = 10 }
 		}
 		modifier = {
 			factor = 5
@@ -799,34 +841,19 @@ communist_rebels = {
 			pop_majority_ideology = communist
 		}
 		modifier = {
-			factor = 5
+			factor = 1.25
 			pop_majority_ideology = socialist
 			NOT = { life_needs = 0.9 }
 		}
 		modifier = {
-			factor = 5
+			factor = 1.25
 			pop_majority_ideology = socialist
 			NOT = { life_needs = 0.7 }
 		}
 		modifier = {
-			factor = 5
+			factor = 1.25
 			pop_majority_ideology = socialist
 			NOT = { life_needs = 0.5 }
-		}
-		modifier = {
-			factor = 2
-			pop_majority_ideology = socialist
-			NOT = { everyday_needs = 0.9 }
-		}
-		modifier = {
-			factor = 2
-			pop_majority_ideology = socialist
-			NOT = { everyday_needs = 0.7 }
-		}
-		modifier = {
-			factor = 2
-			pop_majority_ideology = socialist
-			NOT = { everyday_needs = 0.5 }
 		}
 		modifier = {
 			factor = 0.01
@@ -953,6 +980,7 @@ communist_rebels = {
 		}
 	}
 	demands_enforced_effect = {
+		any_pop = { militancy = -3 }
 		ruling_party_ideology = communist
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -1002,12 +1030,25 @@ communist_rebels = {
 		remove_country_modifier = dour_economist
 		remove_country_modifier = otto_von_bismarck
 		remove_country_modifier = louis_napoleon_iii
+		remove_country_modifier = eleftherios_venizelos
+		remove_country_modifier = simon_bolivar
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 		add_country_modifier = {
 			name = national_confusion
-			duration = 365
+			duration = 1825
 		}
-		prestige_factor = -0.2
-		war_exhaustion = 50
+		add_country_modifier = {
+			name = the_eye_of_the_storm
+			duration = 1095
+		}
+		war_exhaustion = 25
 		country_event = 800052
 	}
 }
@@ -1089,7 +1130,6 @@ anarcho_liberal_rebels = {
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
 		factor = 1
-		
 		modifier = {
 			factor = 0
 			NOT = {
@@ -1254,7 +1294,6 @@ anarcho_liberal_rebels = {
 		}
 	}
 	
-
 	# Country scope
 	demands_enforced_trigger = {
 		OR = {
@@ -1271,6 +1310,7 @@ anarcho_liberal_rebels = {
 		}
 	}
 	demands_enforced_effect = {
+		any_pop = { militancy = -3 }
 		ruling_party_ideology = anarcho_liberal
 		political_reform = universal_voting
 		political_reform = party_appointed
@@ -1319,12 +1359,27 @@ anarcho_liberal_rebels = {
 		remove_country_modifier = dour_economist
 		remove_country_modifier = otto_von_bismarck
 		remove_country_modifier = louis_napoleon_iii
+		remove_country_modifier = eleftherios_venizelos
+		remove_country_modifier = simon_bolivar
+		remove_country_modifier = eleftherios_venizelos
+		remove_country_modifier = simon_bolivar
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 		add_country_modifier = {
 			name = national_confusion
-			duration = 365
+			duration = 1825
 		}
-		prestige_factor = -0.2
-		war_exhaustion = 50
+		add_country_modifier = {
+			name = the_eye_of_the_storm
+			duration = 1095
+		}
+		war_exhaustion = 25
 		country_event = 800053
 	}
 }
@@ -1586,7 +1641,6 @@ nationalist_rebels = {
 		}
 	}
 	
-
 	# Country scope
 	demands_enforced_trigger = {
 		independence = {
@@ -1605,7 +1659,14 @@ nationalist_rebels = {
 			tag = REB
 			relation = -150
 		}
-		prestige_factor = -0.1
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 	}
 }
 
@@ -1652,23 +1713,18 @@ pan_nationalist_rebels = {
 	will_rise = 
 	{
 		factor = 0.5
-		
-
 		modifier = {
 			war = yes
 			factor = 0.8
 		}
-		
 		modifier = {
 			war_exhaustion = 4
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 6
 			factor = 0.95
 		}
-		
 		modifier = {
 			war_exhaustion = 8
 			factor = 0.95
@@ -1698,7 +1754,6 @@ pan_nationalist_rebels = {
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
 		factor = 10
-		
 		modifier = {
 			factor = 0
 			OR = { 
@@ -1944,15 +1999,92 @@ pan_nationalist_rebels = {
 	}
 	
 	demands_enforced_effect = {
-		political_reform = wealth_voting
+		random_owned = {
+			limit = {
+				owner = {
+					not = { vote_franschise = universal_weighted_voting }
+					not = { vote_franschise = universal_voting }
+				}
+			}
+			political_reform = wealth_voting
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					vote_franschise = wealth_voting
+				}
+			}
+			political_reform = universal_weighted_voting
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					vote_franschise = universal_weighted_voting
+				}
+			}
+			political_reform = universal_voting
+		}
 		political_reform = population_equal_weight
 		political_reform = yes_meeting
 		political_reform = free_press
-		political_reform = non_socialist
+		random_owned = {
+			limit = {
+				owner = {
+					not = { trade_unions = all_trade_unions }
+				}
+			}
+			political_reform = non_socialist
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					trade_unions = all_trade_unions
+				}
+			}
+			political_reform = all_trade_unions
+		}
 		political_reform = secret_ballots
-		political_reform = limited
-		political_reform = quota_immigration
-		prestige_factor = -0.2
+		random_owned = {
+			limit = {
+				owner = {
+					not = { minorities_reform = protected }
+				}
+			}
+			political_reform = limited
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					minorities_reform = protected
+				}
+			}
+			political_reform = protected
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					not = { immigration_policy = open_immigration }
+					not = { immigration_policy = naturalization }
+				}
+			}
+			political_reform = quota_immigration
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					immigration_policy = open_immigration
+				}
+			}
+			political_reform = open_immigration
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					immigration_policy = naturalization
+				}
+			}
+			political_reform = naturalization
+		}
 		random_owned = {
 			limit = {
 				owner = {
@@ -2000,6 +2132,14 @@ pan_nationalist_rebels = {
 				}
 			}
 			owner = { country_event = 96200 }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
 		}
 	}
 }
@@ -2100,7 +2240,6 @@ carlist_rebels = {
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
 		factor = 10
-		
 		modifier = {
 			factor = 0
 			country = { 
@@ -2278,6 +2417,7 @@ carlist_rebels = {
 			}
 		}
 		change_tag = SPC
+		plurality = -5
 		ruling_party_ideology = reactionary
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -2285,8 +2425,15 @@ carlist_rebels = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		prestige_factor = -0.2
-		war_exhaustion = 50
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
+		war_exhaustion = 25
 		country_event = 37710
 	}
 }
@@ -2369,7 +2516,6 @@ christino_rebels = {
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
 		factor = 10
-		
 		modifier = {
 			factor = 0
 			country = { 
@@ -2381,6 +2527,10 @@ christino_rebels = {
 			country = {
 				NOT = { has_country_flag = carlism_questioned }
 			}
+		}
+		modifier = {
+			factor = 0
+			year = 1876
 		}
 		modifier = {
 			factor = 100
@@ -2540,6 +2690,7 @@ christino_rebels = {
 			}
 		}
 		change_tag = SPA
+		plurality = 5
 		ruling_party_ideology = liberal
 		political_reform = wealth_voting
 		political_reform = state_equal_weight
@@ -2547,8 +2698,15 @@ christino_rebels = {
 		political_reform = censored_press
 		political_reform = no_trade_unions
 		political_reform = non_secret_ballots
-		prestige_factor = -0.2
-		war_exhaustion = 50
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
+		war_exhaustion = 25
 		country_event = 37716
 	}
 }
@@ -2635,7 +2793,6 @@ red_shirts = {
 	# The rebel type with the highest modifier for this pop gets picked
 	spawn_chance = {
 		factor = 10
-		
 		modifier = {
 			factor = 0
 			OR = { 
@@ -2654,7 +2811,6 @@ red_shirts = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0
 			NOT = {
@@ -2664,7 +2820,6 @@ red_shirts = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0
 			location = {
@@ -2673,8 +2828,6 @@ red_shirts = {
 				}
 			}
 		}
-
-		
 		modifier = {
 			factor = 30
 			country = {
@@ -2684,27 +2837,22 @@ red_shirts = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 10
 			ITA = { exists = no }
 		}
-		
 		modifier = {
 			factor = 20
 			pop_majority_ideology = liberal
 		}
-		
 		modifier = {
 			factor = 10
 			pop_majority_ideology = anarcho_liberal
 		}
-		
 		modifier = {
 			factor = 10
 			pop_majority_ideology = conservative
 		}
-
 		modifier = {
 			factor = 1.5
 			political_reform_want = 0.05
@@ -2779,6 +2927,7 @@ red_shirts = {
 	
 	demands_enforced_effect = {
 		any_pop = { militancy = -6 }
+		plurality = 5
 		random_country = {
 			limit = {
 				is_culture_group = THIS
@@ -2842,7 +2991,6 @@ indian_sepoys = {
 	will_rise = 
 	{
 		factor = 0.5
-		
 		modifier = {
 			war = yes
 			factor = 0.8
@@ -3068,6 +3216,7 @@ indian_sepoys = {
 	}
 	
 	demands_enforced_effect = {
+		any_pop = { militancy = -3 }
 		country_event = 800147
 	}
 }
@@ -3115,7 +3264,6 @@ indian_nationalists = {
 	will_rise = 
 	{
 		factor = 0.5
-		
 		modifier = {
 			war = yes
 			factor = 0.8
@@ -3263,6 +3411,7 @@ indian_nationalists = {
 	}
 	
 	demands_enforced_effect = {
+		any_pop = { militancy = -3 }
 		random_owned = {
 			limit = {
 				owner = { NOT = { is_culture_group = south_asian } }
@@ -3348,7 +3497,6 @@ liberal_rebels = {
 		modifier = {
 			factor = 0.5
 			average_militancy = 8
-
 		}
 		modifier = {
 			factor = 0.1
@@ -3429,6 +3577,24 @@ liberal_rebels = {
 					vote_franschise = universal_voting
 				}
 				ruling_party_ideology = liberal
+			}
+		}
+		modifier = {
+			factor = 0.5
+			country = {
+				OR = {
+					government = democracy
+					government = hms_government
+				}
+				vote_franschise = universal_voting
+				political_parties = secret_ballots
+				or = {
+					trade_unions = all_trade_unions
+					trade_unions = non_socialist
+				}
+				press_rights = free_press
+				public_meetings = yes_meeting
+				upper_house_composition = population_equal_weight
 			}
 		}
 		modifier = {
@@ -3533,7 +3699,13 @@ liberal_rebels = {
 				}
 				NOT = { has_country_flag = wants_to_unify }
 			}
-		}		
+		}
+		modifier = {
+			factor = 0.5
+			location = {
+				is_colonial = yes
+			}
+		}
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -3602,6 +3774,7 @@ liberal_rebels = {
 		}
 	}
 	demands_enforced_effect = {
+		any_pop = { militancy = -3 }
 		ruling_party_ideology = liberal
 		random_owned = {
 			limit = {
@@ -3673,12 +3846,25 @@ liberal_rebels = {
 		remove_country_modifier = dour_economist
 		remove_country_modifier = otto_von_bismarck
 		remove_country_modifier = louis_napoleon_iii
+		remove_country_modifier = eleftherios_venizelos
+		remove_country_modifier = simon_bolivar
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 		add_country_modifier = {
 			name = national_confusion
-			duration = 365
+			duration = 1825
 		}
-		prestige_factor = -0.2
-		war_exhaustion = 50
+		add_country_modifier = {
+			name = the_eye_of_the_storm
+			duration = 1095
+		}
+		war_exhaustion = 25
 		country_event = 800054
 	}
 }
@@ -3897,8 +4083,9 @@ unciv_reactionary_rebels = {
 	}
 	
 	demands_enforced_effect = {
+		any_pop = { militancy = -2 }
 		civilized = no
-		war_exhaustion = 50
+		war_exhaustion = 25
 		remove_random_economic_reforms = 2
 		remove_random_military_reforms = 2
 		country_event = 800149
@@ -4100,7 +4287,14 @@ separatist_rebels = {
 		}
 	}
 	demands_enforced_effect = {
-		prestige_factor = -0.2
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 		any_owned = {
 			limit = {
 				any_core = {
@@ -4281,17 +4475,17 @@ socialist_rebels = {
 			NOT = { life_needs = 0.5 }
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.1
 			pop_majority_ideology = socialist
 			NOT = { everyday_needs = 0.9 }
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.1
 			pop_majority_ideology = socialist
 			NOT = { everyday_needs = 0.7 }
 		}
 		modifier = {
-			factor = 0.8
+			factor = 1.1
 			pop_majority_ideology = socialist
 			NOT = { everyday_needs = 0.5 }
 		}
@@ -4302,10 +4496,11 @@ socialist_rebels = {
 					government = democracy
 					government = hms_government
 				}
-				OR = { 
-					vote_franschise = universal_weighted_voting
-					vote_franschise = universal_voting
-				}
+				vote_franschise = universal_voting
+				public_meetings = yes_meeting
+				press_rights = free_press
+				trade_unions = all_trade_unions
+				upper_house_composition = population_equal_weight
 				ruling_party_ideology = socialist
 			}
 		}
@@ -4368,7 +4563,13 @@ socialist_rebels = {
 				}
 				NOT = { has_country_flag = wants_to_unify }
 			}
-		}		
+		}
+		modifier = {
+			factor = 0.5
+			location = {
+				is_colonial = yes
+			}
+		}
 	}
  
  	#This is checked for EACH province in the Area of Operations
@@ -4420,7 +4621,6 @@ socialist_rebels = {
 		}
 	}
 	
-
 	# Country scope
 	demands_enforced_trigger = {
 		OR = {
@@ -4437,6 +4637,7 @@ socialist_rebels = {
 		}
 	}
 	demands_enforced_effect = {
+		any_pop = { militancy = -3 }
 		ruling_party_ideology = socialist
 		political_reform = universal_voting
 		political_reform = population_equal_weight
@@ -4486,12 +4687,27 @@ socialist_rebels = {
 		remove_country_modifier = dour_economist
 		remove_country_modifier = otto_von_bismarck
 		remove_country_modifier = louis_napoleon_iii
+		remove_country_modifier = eleftherios_venizelos
+		remove_country_modifier = simon_bolivar
+		remove_country_modifier = eleftherios_venizelos
+		remove_country_modifier = simon_bolivar
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 		add_country_modifier = {
 			name = national_confusion
-			duration = 365
+			duration = 1825
 		}
-		prestige_factor = -0.2
-		war_exhaustion = 50
+		add_country_modifier = {
+			name = the_eye_of_the_storm
+			duration = 1095
+		}
+		war_exhaustion = 25
 		country_event = 810056
 	}
 }
@@ -4616,7 +4832,6 @@ independence_rebels = {
 		}
 	}
 	
-
 	# Country scope
 	demands_enforced_trigger = {
 		OR = {
@@ -4633,9 +4848,21 @@ independence_rebels = {
 		}
 	}
 	demands_enforced_effect = {
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 		add_country_modifier = {
 			name = national_confusion
-			duration = 365
+			duration = 1825
+		}
+		add_country_modifier = {
+			name = the_eye_of_the_storm
+			duration = 1095
 		}
 		random_owned = {
 			limit = {
@@ -4645,7 +4872,6 @@ independence_rebels = {
 			}
 			owner = { election = yes }
 		}
-		prestige_factor = -0.2
 		war_exhaustion = 25
 		country_event = 810055
 	}
@@ -4736,7 +4962,6 @@ turkish_nationalist_rebels = {
 			factor = 0
 			NOT = { has_pop_culture = turkish }
 		}
-		
 		modifier = {
 			factor = 0.1
 			NOT = {
@@ -4878,6 +5103,7 @@ turkish_nationalist_rebels = {
 		}
 	}
 	demands_enforced_effect = {
+		any_pop = { militancy = -3 }
 		clr_country_flag = turkish_nationalism_activated
 		ruling_party_ideology = liberal
 		political_reform = no_slavery
@@ -4920,11 +5146,24 @@ turkish_nationalist_rebels = {
 		remove_country_modifier = dour_economist
 		remove_country_modifier = otto_von_bismarck
 		remove_country_modifier = louis_napoleon_iii
+		remove_country_modifier = eleftherios_venizelos
+		remove_country_modifier = simon_bolivar
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 		add_country_modifier = {
 			name = national_confusion
-			duration = 365
+			duration = 1825
 		}
-		prestige_factor = -0.2
+		add_country_modifier = {
+			name = the_eye_of_the_storm
+			duration = 1095
+		}
 		war_exhaustion = 25
 		country_event = 800054
 	}
@@ -5093,11 +5332,22 @@ native_rebels = {
 			relation = { who = THIS value = -50 }
 			diplomatic_influence = { who = THIS value = -50 }
 		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
 		add_country_modifier = {
 			name = national_confusion
-			duration = 365
+			duration = 1825
 		}
-		prestige_factor = -0.2
+		add_country_modifier = {
+			name = the_eye_of_the_storm
+			duration = 1095
+		}
 		country_event = 810057
 	}
 }
@@ -5343,4 +5593,173 @@ apache = {
 	
 	#demands_enforced_effect = {
 	#}
+}
+
+###################################
+# Colonial Rebels
+###################################
+colonial_rebels = {
+	icon = 5
+	
+	area = nation 					# Stays within the nation
+	
+	# <this is the governement in the country> = <this is what the rebels want>
+	government = {
+		proletarian_dictatorship = democracy
+		presidential_dictatorship = democracy
+		bourgeois_dictatorship = democracy
+		fascist_dictatorship = democracy
+		absolute_monarchy = hms_government
+		prussian_constitutionalism = hms_government
+		hms_government = democracy
+		democracy = democracy
+	}
+	
+	defection = none					# Will defect to the "best" alternative.
+	independence = none				# Does not strive for independence
+	defect_delay = 18
+	
+	ideology = liberal
+	
+	allow_all_cultures = yes
+	allow_all_religions = yes
+	allow_all_ideologies = yes
+	
+	resilient = yes					# Does not disbands on retreat
+	reinforcing = yes				# Receives reinforcements
+	general = yes					# Uses generals
+	smart = yes						# Assault forts, tactically withdraw from battle, etc.
+	unit_transfer = no				# Units do not remain after enforcing demands.
+	
+	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces	
+
+	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
+	will_rise = 
+	{
+		factor = 0.5
+		modifier = {
+			war = yes
+			factor = 0.8
+		}
+		modifier = {
+			factor = 0.85
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.75
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 0.5
+			average_militancy = 8
+		}
+	}
+	
+	# The rebel type with the highest modifier for this pop gets picked
+	spawn_chance = {
+		factor = 20
+		modifier = {
+			factor = 0
+			country = {
+				has_country_flag = post_colonial_country
+			}
+		}
+		modifier = {
+			factor = 0
+			location = {
+				is_colonial = no
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					is_culture_group = arabic
+					is_culture_group = west_african
+					is_culture_group = central_african
+					is_culture_group = east_african
+					is_culture_group = southern_african
+					is_culture_group = southeast_asian
+					culture = maori
+				}
+			}
+		}
+	}
+ 
+ 	#This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+			NOT = { is_capital = yes }
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+			NOT = { is_capital = yes }
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_militancy = 8
+		}
+		modifier = {
+			factor = 5.0
+			is_capital = yes
+		}
+	}
+	
+ 	# Province Scope
+ 	siege_won_trigger = {
+		NOT = { has_province_modifier = war_torn }
+ 	}
+	
+	siege_won_effect = {
+		add_province_modifier = {
+			name = war_torn
+			duration = 365
+		}
+	}
+	
+	# Country scope
+	demands_enforced_trigger = {
+		OR = {
+			capital_scope = {
+				controlled_by = REB
+				province_control_days = 90
+			}
+			NOT = {
+				any_owned_province = {
+					is_colonial = no
+					controlled_by = THIS
+				}
+			}
+		}
+	}
+	demands_enforced_effect = {
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { has_country_modifier = the_eye_of_the_storm }
+				}
+			}
+			owner = { prestige_factor = -0.1 }
+		}
+		add_country_modifier = {
+			name = national_confusion
+			duration = 1825
+		}
+		add_country_modifier = {
+			name = the_eye_of_the_storm
+			duration = 1095
+		}
+	}
 }
