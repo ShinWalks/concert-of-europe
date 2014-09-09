@@ -141,6 +141,20 @@ party = {
 	war_policy = jingoism
 }
 
+party = {
+	name = "TAG_social_liberal"
+	start_date = 1890.1.1
+	end_date = 2000.1.1
+	
+	ideology = social_liberal
+	
+	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = secularized
+	citizenship_policy = full_citizenship
+	war_policy = anti_military
+}
+
 unit_names = {
 	dreadnought = {
 		"Dante Alighieri" "Conti di Cavour" "Giulio Cesare" "Leonarda da Vince" "Andrea Doria" Duilio "Francesco Caracciolo" Littorio Roma Terribile Formidabile "Principe di Carignano" Messina "Conte Verde" "Re d'Italia" "Re di Portogallo" "Regina Maria Pia" "San Martino" Castelfidardo Ancona Affondatore "Principe Amedeo" Italia Lepanto "Ruggiero di Lauria" "Francesco Morosini" "Emanuele Filiberto"

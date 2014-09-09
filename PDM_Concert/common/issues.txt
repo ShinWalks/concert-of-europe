@@ -438,10 +438,8 @@ political_reforms = {
 		}
 		limited = {
 			rules = { culture_voting = yes }
-			allow = { not = { citizenship_policy = residency } }
 		}
 		protected = {
-			allow = { citizenship_policy = full_citizenship } 
 			rules = { all_voting = yes }
 			global_immigrant_attract = 0.1
 			non_accepted_pop_militancy_modifier = -0.02

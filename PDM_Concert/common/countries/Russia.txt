@@ -170,6 +170,20 @@ party = {
 	war_policy = jingoism
 }
 
+party = {
+	name = "TAG_social_liberal"
+	start_date = 1890.1.1
+	end_date = 2000.1.1
+	
+	ideology = social_liberal
+	
+	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = secularized
+	citizenship_policy = full_citizenship
+	war_policy = anti_military
+}
+
 unit_names = {
 	dreadnought = {
                        Petropavlovsk Mariya Ekaterina Velikaya "Svobodnaya Rossiya" Aleksander Gangut Sevastopol Poltava Volya Arkhangel’sk Novorossiysk Soyuz Ukraina Rossiya Alekseev Belarussia Potemkin Moskva Mariya Ekaterina Alekseev Krasnaya "Uralskiye gory" Sibir Imperator Komunna "General Alexeiev" Retivisan "Nizhny Novgorod" Omck Chelyabinsk Krasnoyarsk Saratov "Ivan Grozny" Kulikovo 

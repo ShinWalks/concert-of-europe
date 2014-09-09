@@ -396,7 +396,7 @@ political_decisions = {
 		potential = {
 			tag = UPB
 			OR = {
-				has_vassal = BRZ
+				is_our_vassal = BRZ
 				AND = {
 					owns = 2447 #Rio de Janeiro
 					NOT = { exists = BRZ }
