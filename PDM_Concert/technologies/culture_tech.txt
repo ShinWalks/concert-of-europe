@@ -3,7 +3,9 @@ classicism_n_early_romanticism = {
 	area = aesthetics
 	year = 1821
 	cost = 4500
+	permanent_prestige = 2
 	prestige = 0.05
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -57,7 +59,9 @@ romanticism = {
 	area = aesthetics
 	year = 1825
 	cost = 7600
+	permanent_prestige = 2
 	prestige = 0.05
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -116,7 +120,9 @@ realism = {
 	area = aesthetics
 	year = 1840
 	cost = 10000
+	permanent_prestige = 5
 	prestige = 0.1
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -170,7 +176,9 @@ impressionism = {
 	area = aesthetics
 	year = 1850
 	cost = 12500
+	permanent_prestige = 5
 	prestige = 0.1
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -223,8 +231,10 @@ impressionism = {
 expressionism = {
 	area = aesthetics
 	year = 1870
-	cost = 18000
-	prestige = 0.2
+	cost = 20000
+	permanent_prestige = 10
+	prestige = 0.1
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -277,8 +287,10 @@ expressionism = {
 mass_culture_n_the_avant_garde = {
 	area = aesthetics
 	year = 1900
-	cost = 27000
-	prestige = 0.2
+	cost = 30000
+	permanent_prestige = 10
+	prestige = 0.1
+	
 	ai_chance = {
 		factor = 1
 		modifier = {
@@ -328,13 +340,14 @@ mass_culture_n_the_avant_garde = {
 	}
 }
 
-
 #philosophy
 late_enlightenment_philosophy = {
 	area = philosophy
 	year = 1821
 	cost = 4500
+	permanent_prestige = 2
 	increase_research = 0.5
+	
 	ai_chance = {
 		factor = 500
 		modifier = {
@@ -372,7 +385,8 @@ idealism = {
 	area = philosophy
 	year = 1840
 	cost = 7600
-	increase_research = 1
+	permanent_prestige = 2
+	
 	ai_chance = {
 		factor = 350
 		modifier = {
@@ -414,7 +428,8 @@ empiricism = {
 	area = philosophy
 	year = 1860
 	cost = 10000
-	increase_research = 1
+	permanent_prestige = 5
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -460,7 +475,8 @@ analytic_philosophy = {
 	area = philosophy
 	year = 1880
 	cost = 12500
-	increase_research = 1
+	permanent_prestige = 5
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -505,8 +521,9 @@ analytic_philosophy = {
 phenomenology_n_hermeneutic = {
 	area = philosophy
 	year = 1890
-	cost = 18000
-	increase_research = 0.5
+	cost = 20000
+	permanent_prestige = 10
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -547,8 +564,10 @@ phenomenology_n_hermeneutic = {
 anti__rationalism = {
 	area = philosophy
 	year = 1900
-	cost = 27000
+	cost = 30000
+	permanent_prestige = 10
 	increase_research = 0.5
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -586,14 +605,15 @@ anti__rationalism = {
 	}
 }
 
-
 #social_thought
 malthusian_thought = {
 	area = social_thought
 	year = 1821
 	cost = 4500
+	permanent_prestige = 2
 	colonial_points = 50
 	education_efficiency = 0.25
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -683,8 +703,10 @@ positivism = {
 	area = social_thought
 	year = 1830
 	cost = 7600
-	education_efficiency = 0.25
+	permanent_prestige = 2
 	colonial_points = 50
+	education_efficiency = 0.25
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -766,14 +788,16 @@ functionalism = {
 	area = social_thought
 	year = 1850
 	cost = 10000
+	permanent_prestige = 5
 	education_efficiency = 0.5
-	colonial_points = 50
+	colonial_points = 10
 	factory_goods_throughput = {
 		shoes = 0.05
 	}
 	factory_goods_output = {
 		shoes = 0.1
 	}
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -855,7 +879,8 @@ biologism = {
 	area = social_thought
 	year = 1870
 	cost = 12500
-	colonial_points = 50
+	permanent_prestige = 5
+	colonial_points = 10
 	education_efficiency = 0.5
 	factory_goods_throughput = {
 		boots  = 0.1
@@ -863,6 +888,7 @@ biologism = {
 	factory_goods_output = {
 		boots = 0.05
 	}
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -943,9 +969,11 @@ biologism = {
 social_science = {
 	area = social_thought
 	year = 1880
-	cost = 18000
-	education_efficiency = 1
-	colonial_points = 50
+	cost = 20000
+	permanent_prestige = 10
+	education_efficiency = 0.75
+	colonial_points = 10
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -1018,10 +1046,12 @@ social_science = {
 social_alienation = {
 	area = social_thought
 	year = 1900
-	cost = 27000
+	cost = 30000
+	permanent_prestige = 10
 	war_exhaustion = -0.25
 	education_efficiency = 1
-	colonial_points = 50
+	colonial_points = 10
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -1099,15 +1129,16 @@ social_alienation = {
 	}
 }
 
-
 #political_thought
 enlightenment_thought = {
 	area = political_thought
 	year = 1821
 	cost = 4500
+	permanent_prestige = 2
 	max_national_focus = 1
 	cb_creation_speed = 0.25
 	influence = 0.5
+	
 	ai_chance = {
 		factor = 500
 		modifier = {
@@ -1174,9 +1205,11 @@ ideological_thought = {
 	area = political_thought
 	year = 1840
 	cost = 7600
+	permanent_prestige = 2
 	max_national_focus = 1 
 	cb_creation_speed = 0.25
 	influence = 0.5
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -1245,9 +1278,11 @@ state_n_government = {
 	area = political_thought
 	year = 1850
 	cost = 10000
+	permanent_prestige = 5
 	max_national_focus = 1 
 	influence = 0.5
 	cb_creation_speed = 0.25
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -1316,10 +1351,11 @@ nationalism_n_imperialism = {
 	area = political_thought
 	year = 1860
 	cost = 12500
+	permanent_prestige = 5
 	max_national_focus = 1
 	influence = 0.5
-
 	cb_creation_speed = 0.5
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -1387,11 +1423,13 @@ nationalism_n_imperialism = {
 revolution_n_counterrevolution = {
 	area = political_thought
 	year = 1870
-	cost = 18000
+	cost = 20000
+	permanent_prestige = 10
 	max_national_focus = 1
 	influence = 0.5
 	diplomatic_points = 0.25
 	cb_creation_speed = 0.25
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -1459,10 +1497,12 @@ revolution_n_counterrevolution = {
 mass_politics = {
 	area = political_thought
 	year = 1900
-	cost = 27000
+	cost = 30000
+	permanent_prestige = 10
 	max_national_focus = 1
 	influence = 0.5
 	cb_creation_speed = 0.25
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -1523,25 +1563,21 @@ mass_politics = {
 	}
 }
 
-
 #psychology
 introspectionism = {
 	area = psychology
 	year = 1821
 	cost = 4500
+	permanent_prestige = 2
+	education_efficiency = 0.25
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
-	soldier_to_pop_loss = 0.02
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
 			factor = 1.2
 			is_greater_power = yes
-		} 
-		modifier = {
-			factor = 0.5
-			is_greater_power = no
-			is_secondary_power = no
 		}
 		modifier = {
 			factor = 1.2
@@ -1610,9 +1646,11 @@ associationism = {
 	area = psychology
 	year = 1840
 	cost = 7600
+	permanent_prestige = 2
+	education_efficiency = 0.25
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
-	soldier_to_pop_loss = 0.02
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -1622,11 +1660,6 @@ associationism = {
 		modifier = {
 			factor = 1.5
 			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 0.5
-			is_greater_power = no
-			is_secondary_power = no
 		}
 		modifier = {
 			factor = 1.2
@@ -1695,9 +1728,11 @@ phenomenalism = {
 	area = psychology
 	year = 1850
 	cost = 10000
+	permanent_prestige = 5
+	education_efficiency = 0.25
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
-	soldier_to_pop_loss = 0.02
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -1707,11 +1742,6 @@ phenomenalism = {
 		modifier = {
 			factor = 1.5
 			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 0.5
-			is_greater_power = no
-			is_secondary_power = no
 		}
 		modifier = {
 			factor = 1.2
@@ -1780,9 +1810,11 @@ experimental_psychology = {
 	area = psychology
 	year = 1860
 	cost = 12500
+	permanent_prestige = 5
+	education_efficiency = 0.25
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
-	soldier_to_pop_loss = 0.02
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -1792,11 +1824,6 @@ experimental_psychology = {
 		modifier = {
 			factor = 2.5
 			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 0.5
-			is_greater_power = no
-			is_secondary_power = no
 		}
 		modifier = {
 			factor = 1.2
@@ -1864,10 +1891,12 @@ experimental_psychology = {
 psychoanalysis = {
 	area = psychology
 	year = 1870
-	cost = 18000
+	cost = 20000
+	permanent_prestige = 10
+	education_efficiency = 0.25
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
-	soldier_to_pop_loss = 0.02
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -1944,10 +1973,12 @@ psychoanalysis = {
 behaviorism = {
 	area = psychology
 	year = 1900
-	cost = 27000
+	cost = 30000
+	permanent_prestige = 10
+	education_efficiency = 0.25
 	reinforce_rate = 0.05
-	war_exhaustion = -0.5
-	soldier_to_pop_loss = 0.02
+	war_exhaustion = -0.05
+	
 	ai_chance = {
 		factor = 1
 		modifier = {
@@ -1957,11 +1988,6 @@ behaviorism = {
 		modifier = {
 			factor = 5
 			is_secondary_power = yes
-		}
-		modifier = {
-			factor = 0.5
-			is_greater_power = no
-			is_secondary_power = no
 		}
 		modifier = {
 			factor = 1.2

@@ -202,7 +202,6 @@ unciv_nation = {
 	cb_generation_speed_modifier = 1
 }
 
-
 average_literacy = {
 	research_points_modifier = 1
 	leadership = 1

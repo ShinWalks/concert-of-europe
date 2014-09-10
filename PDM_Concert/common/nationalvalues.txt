@@ -74,11 +74,11 @@ nv_freedom = {
 }
 
 nv_fraternity = {
-	core_pop_militancy_modifier = -0.04
+	core_pop_militancy_modifier = -0.03
 	global_population_growth = -0.0003
 	social_reform_desire = 0.1
 	assimilation_rate = 0.3
-	culture_tech_research_bonus = 0.05
+	culture_tech_research_bonus = 0.075
 }
 
 nv_unity = {

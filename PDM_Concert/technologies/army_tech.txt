@@ -5,8 +5,10 @@ post_napoleonic_thought = {
 	cost = 4500
 	activate_building = fort
 	activate_unit = hussar	
+	soldier_to_pop_loss = 0.01
 	army_base = {
 		maneuver = 1
+		default_organisation = 2
 	}
 	ai_chance = {
 		factor = 250
@@ -86,6 +88,10 @@ strategic_mobility = {
 	year = 1825
 	cost = 7600
 	max_fort = 1
+	soldier_to_pop_loss = 0.01
+	army_base = {
+		default_organisation = 2
+	}
 
 	ai_chance = {
 		factor = 100
@@ -166,6 +172,11 @@ point_defense_system = {
 	cost = 10000
 	max_fort = 1
 	dig_in_cap = 1
+	soldier_to_pop_loss = 0.01
+	army_base = {
+		default_organisation = 2
+	}
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -243,20 +254,13 @@ deep_defense_system = {
 	area = army_doctrine
 	year = 1880
 	cost = 12500
-	infantry = {
-		supply_consumption = 0.1
-		maneuver = 1
-	} 
-	guard = {
-		supply_consumption = 0.1
-		maneuver = 1
-	} 
-	engineer = {
-		supply_consumption = 0.1
-		support = 1
-	} 
 	max_fort = 1
 	dig_in_cap = 1
+	soldier_to_pop_loss = 0.01
+	army_base = {
+		default_organisation = 2
+	} 
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -332,11 +336,16 @@ deep_defense_system = {
 
 infiltration = {
 	area = army_doctrine
-	year = 1910
-	cost = 18000
+	year = 1900
+	cost = 20000
 	activate_building = barrel_factory 
 	max_fort = 1
 	dig_in_cap = 1
+	soldier_to_pop_loss = 0.01
+	army_base = {
+		default_organisation = 2
+	}
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -413,8 +422,13 @@ infiltration = {
 modern_army_doctrine = {
 	area = army_doctrine
 	year = 1919
-	cost = 27000 
+	cost = 30000 
 	max_fort = 1
+	soldier_to_pop_loss = 0.01
+	army_base = {
+		default_organisation = 2
+	}
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -488,7 +502,6 @@ modern_army_doctrine = {
 	}
 }
 
-
 #light_armament
 flintlock_rifles = {
 	area = light_armament
@@ -499,7 +512,8 @@ flintlock_rifles = {
 		supply_consumption = 0.05
 		attack = 0.5
 		defence = 0.5
-	} 	
+	}
+	
 	ai_chance = {
 		factor = 500
 		modifier = {
@@ -602,10 +616,11 @@ muzzle_loaded_rifles = {
 	activate_unit = engineer
 	infantry = {
 		supply_consumption = 0.05
-	} 	
+	}
 	regular = {
 		supply_consumption = 0.05
-	} 
+	}
+	
 	ai_chance = {
 		factor = 350
 		modifier = {
@@ -705,16 +720,16 @@ breech_loaded_rifles = {
 	area = light_armament
 	year = 1845
 	cost = 10000
-
 	engineer = {
 		supply_consumption = 0.1
-	} 
+	}
 	infantry = {
 		supply_consumption = 0.1
-	} 	
+	}
 	regular = {
 		supply_consumption = 0.1
-	} 
+	}
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -814,16 +829,16 @@ bolt_action_rifles = {
 	area = light_armament
 	year = 1860
 	cost = 12500
-
 	guard = {
 		supply_consumption = 0.1
-	} 
+	}
 	engineer = {
 		supply_consumption = 0.1
-	} 
+	}
 	regular = {
 		supply_consumption = 0.1
-	} 
+	}
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -922,7 +937,7 @@ bolt_action_rifles = {
 machine_guns = {
 	area = light_armament
 	year = 1880
-	cost = 18000
+	cost = 20000
 	unit = 1
 	guard = {
 		supply_consumption = 0.25
@@ -937,6 +952,7 @@ machine_guns = {
 		supply_consumption = 0.25
 	} 
 	combat_width = -5
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -1035,7 +1051,7 @@ machine_guns = {
 modern_divisional_structure = {
 	area = light_armament
 	year = 1919
-	cost = 27000
+	cost = 30000
 	unit = 2
 	guard = {
 		attack = 0.5
@@ -1139,13 +1155,13 @@ modern_divisional_structure = {
 	}
 }
 
-
 #heavy_armament
 bronze_muzzle_loaded_artillery = {
 	area = heavy_armament
 	year = 1821
 	cost = 4500
 	activate_unit = artillery
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -1344,13 +1360,13 @@ iron_breech_loaded_artillery = {
 	area = heavy_armament
 	year = 1850
 	cost = 10000
-
 	artillery = {
-		support = 0.75
+		support = 0.5
 	}
 	horse_artillery = {
 		support = 0.5
-	}	
+	}
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -1447,7 +1463,7 @@ steel_breech_loaded_artillery = {
 	year = 1870
 	cost = 12500
 	artillery = {
-		support = 1
+		support = 0.75
 		supply_consumption = 0.5
 		maximum_speed = -0.5
 	}
@@ -1550,14 +1566,14 @@ steel_breech_loaded_artillery = {
 indirect_artillery_fire = {
 	area = heavy_armament
 	year = 1900
-	cost = 18000
+	cost = 20000
 	artillery = {
-		support = 1
+		support = 0.75
 		supply_consumption = 0.5
 		maximum_speed = -0.5
 	}
 	horse_artillery = {
-		support = 1
+		support = 0.75
 		supply_consumption = 0.5
 	}
 
@@ -1655,9 +1671,9 @@ indirect_artillery_fire = {
 heavy_armament_dunno = {
 	area = heavy_armament
 	year = 1919
-	cost = 27000
+	cost = 30000
 	artillery = {
-		support = 2
+		support = 1
 		supply_consumption = 1
 		maximum_speed = -0.5
 	}
@@ -1761,7 +1777,6 @@ heavy_armament_dunno = {
 		}
 	}
 }
-
 
 #military_science
 military_staff_system = {
@@ -1876,10 +1891,11 @@ military_plans = {
 	area = military_science
 	year = 1830
 	cost = 7600
-	mobilisation_size = 0.01	
+	mobilisation_size = 0.002
 	army_base = {
 		supply_consumption = -0.1
 	}
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -1983,10 +1999,11 @@ military_statistics = {
 	area = military_science
 	year = 1850
 	cost = 10000
-	mobilisation_size = 0.01	
+	mobilisation_size = 0.002
 	army_base = {
 		supply_consumption = -0.1
 	}
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -2090,11 +2107,12 @@ military_logistics = {
 	area = military_science
 	year = 1870
 	cost = 12500
+	mobilisation_size = 0.002
 	army_base = {
 		supply_consumption = -0.25
 	}
-	mobilisation_size = 0.01
-		ai_chance = {
+	
+	ai_chance = {
 		factor = 25
 		modifier = {
 			factor = 1.2
@@ -2196,11 +2214,12 @@ military_logistics = {
 military_directionism = {
 	area = military_science
 	year = 1900
-	cost = 18000
-	mobilisation_size = 0.01
+	cost = 20000
+	mobilisation_size = 0.002
 	army_base = {
 		supply_consumption = -0.25
 	}
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -2299,8 +2318,13 @@ military_directionism = {
 aeronautics = {
 	area = military_science
 	year = 1914
-	cost = 27000
+	cost = 30000
 	activate_unit = plane
+	mobilisation_size = 0.002
+	army_base = {
+		default_organisation = 5
+	}
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -2392,7 +2416,6 @@ aeronautics = {
 	}
 }
 
-
 #army_leadership
 army_command_principle = {
 	area = army_leadership
@@ -2400,6 +2423,8 @@ army_command_principle = {
 	cost = 4500
 	activate_unit = dragoon	
 	military_tactics = 1
+	soldier_to_pop_loss = 0.01
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -2507,6 +2532,8 @@ army_professionalism = {
 		supply_consumption = 0.05
 	}
 	military_tactics = 0.1
+	soldier_to_pop_loss = 0.01
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -2615,6 +2642,8 @@ army_decision_making = {
 		supply_consumption = 0.1
 	}
 	military_tactics = 0.1
+	soldier_to_pop_loss = 0.01
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -2722,6 +2751,8 @@ army_risk_management = {
 		supply_consumption = 0.1
 	}
 	military_tactics = 0.1
+	soldier_to_pop_loss = 0.01
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -2824,11 +2855,13 @@ army_risk_management = {
 army_nco_training = {
 	area = army_leadership
 	year = 1900
-	cost = 18000
+	cost = 20000
 	army_base = {
 		supply_consumption = 0.2
 	}
 	military_tactics = 0.2
+	soldier_to_pop_loss = 0.01
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -2927,11 +2960,13 @@ army_nco_training = {
 great_war_experience = {
 	area = army_leadership
 	year = 1919
-	cost = 27000
+	cost = 30000
 	army_base = {
 		supply_consumption = 0.25
 	}
 	military_tactics = 1
+	soldier_to_pop_loss = 0.01
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
