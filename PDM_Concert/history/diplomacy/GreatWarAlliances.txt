@@ -1,0 +1,35 @@
+# Triple Alliance
+alliance = {
+	first = GER
+	second = KUK
+	start_date = 1879.1.1
+	end_date = 1918.1.1
+}
+#alliance = {	# Commented out to keep Italy neutral (because it was accepting call ally too often)
+#	first = GER
+#	second = ITA
+#	start_date = 1882.1.1
+#	end_date = 1915.1.1
+#}
+#alliance = {
+#	first = KUK
+#	second = ITA
+#	start_date = 1882.1.1
+#	end_date = 1915.1.1
+#}
+
+# Franco-Russian Alliance
+alliance = {
+	first = FRA
+	second = RUS
+	start_date = 1892.1.1
+	end_date = 1917.1.1
+}
+
+# Anglo-Japanese Alliance
+alliance = {
+	first = ENG
+	second = JAP
+	start_date = 1905.1.1
+	end_date = 1923.1.1
+}

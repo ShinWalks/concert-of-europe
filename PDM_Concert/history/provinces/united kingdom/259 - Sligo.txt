@@ -5,3 +5,6 @@ add_core = IRE
 trade_goods = cattle
 terrain = marginal_farmland
 life_rating = 35
+1914.1.1 = {
+	railroad = 5
+}

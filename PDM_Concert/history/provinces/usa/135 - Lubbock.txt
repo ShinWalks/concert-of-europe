@@ -14,3 +14,9 @@ terrain = dry_grassland
 	add_core = USA
 	remove_core = MEX
 }
+1914.1.1 = {
+	owner = USA
+	controller = USA
+	remove_core = CSA
+	railroad = 2
+}

@@ -8,3 +8,6 @@ terrain = forested_farmland
 	owner = VNZ
 	controller = VNZ
 }
+1914.1.1 = {
+	railroad = 2
+}

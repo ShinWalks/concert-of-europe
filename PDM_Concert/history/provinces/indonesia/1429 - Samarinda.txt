@@ -4,3 +4,8 @@ add_core = KTI
 trade_goods = sulphur
 life_rating = 15
 terrain = swamp_jungle
+1914.1.1 = {
+	owner = NET
+	controller = NET
+	colonial = 1
+}

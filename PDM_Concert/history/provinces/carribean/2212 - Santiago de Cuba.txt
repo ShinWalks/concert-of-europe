@@ -5,3 +5,9 @@ trade_goods = tobacco
 life_rating = 35
 terrain = seasonal_jungle_hills
 colonial = 1
+1914.1.1 = {
+	owner = CUB
+	controller = CUB
+	colonial = 0
+	railroad = 3
+}

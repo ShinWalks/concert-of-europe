@@ -15,3 +15,6 @@ colonial = 1
 	controller = TUR 
 	owner = TUR
 }
+1914.1.1 = {
+	railroad = 3	# Hejaz Railway
+}

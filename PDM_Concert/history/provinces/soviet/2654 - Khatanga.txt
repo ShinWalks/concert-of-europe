@@ -3,3 +3,8 @@ add_core = SIB
 trade_goods = timber
 terrain = tundra_hills
 life_rating = 15
+1914.1.1 = {
+	owner = RUS
+	controller = RUS
+	colonial = 1
+}

@@ -25,3 +25,28 @@ terrain = good_farmland
 	remove_core = BEL
 	railroad = 3
 }
+1914.1.1 = {
+
+	railroad = 5
+
+	state_building = {
+
+		level = 1
+
+		building = canned_food_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 1
+
+		building = liquor_distillery
+
+		upgrade = yes
+
+	}
+
+}

@@ -12,3 +12,6 @@ terrain = forested_farmland
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	railroad = 4
+}

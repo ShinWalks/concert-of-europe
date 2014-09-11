@@ -5,3 +5,12 @@ trade_goods = fish
 life_rating = 35
 terrain = hilly_farmland
 colonial = 1
+1914.1.1 = {
+	owner = GER
+	controller = GER
+	add_core = GER
+	remove_core = ENG
+	railroad = 5
+	fort = 4
+	colonial = 0
+}

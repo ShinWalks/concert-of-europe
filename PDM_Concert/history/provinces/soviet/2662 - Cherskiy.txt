@@ -3,3 +3,8 @@ add_core = KAM
 trade_goods = copper
 life_rating = 15
 terrain = tundra
+1914.1.1 = {
+	owner = RUS
+	controller = RUS
+	colonial = 1
+}

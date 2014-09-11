@@ -4,3 +4,6 @@ add_core = ARG
 trade_goods = tropical_wood
 life_rating = 35
 terrain = dry_forest
+1914.1.1 = {
+	railroad = 2
+}

@@ -9,3 +9,11 @@ terrain = boreal_forest
 #	building = lumber_mill
 #	upgrade = yes
 #}
+1914.1.1 = {
+	railroad = 1
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
+}

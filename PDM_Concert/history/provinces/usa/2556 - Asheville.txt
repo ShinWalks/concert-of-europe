@@ -14,3 +14,9 @@ terrain = deciduous_forest_mountains
 		upgrade = yes
 	}
 }
+1914.1.1 = {
+	owner = USA
+	controller = USA
+	remove_core = CSA
+	railroad = 1
+}

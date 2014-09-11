@@ -14,3 +14,6 @@ terrain = mountain_farmland
 	owner = GUA
 	controller = GUA
 }
+1914.1.1 = {
+	railroad = 2
+}

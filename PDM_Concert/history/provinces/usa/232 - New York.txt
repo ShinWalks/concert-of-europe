@@ -50,8 +50,8 @@ state_building = {
 }
 1861.1.1 = {
 	party_loyalty = {
-	ideology = liberal
-	loyalty_value = 35
+		ideology = liberal
+		loyalty_value = 35
 	}
 	state_building = {
 		level = 1
@@ -62,5 +62,20 @@ state_building = {
 		level = 1
 		building = steamer_shipyard
 		upgrade = yes
-	}}
-1861.1.1 = { railroad = 3 }
+	}
+	railroad = 3
+}
+1914.1.1 = { 
+	railroad = 5
+	fort = 4
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = stock_exchange
+		upgrade = yes
+	}
+}

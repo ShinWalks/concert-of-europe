@@ -6,3 +6,8 @@ trade_goods = fish
 life_rating = 30
 terrain = deciduous_forest_hills
 colonial = 1
+1914.1.1 = {
+	owner = AST
+	controller = AST
+	colonial = 0
+}

@@ -11,3 +11,7 @@ terrain = deciduous_forest_hills
 		loyalty_value = 25
 	}
 }
+1914.1.1 = {
+	remove_core = CSA
+	railroad = 2
+}

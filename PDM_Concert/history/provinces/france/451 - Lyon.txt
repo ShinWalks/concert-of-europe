@@ -29,3 +29,37 @@ state_building = {
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	railroad = 5
+	state_building = {
+
+		level = 2
+
+		building = winery
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = furniture_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 3
+
+		building = luxury_clothes_factory
+
+		upgrade = yes
+
+	}
+
+}

@@ -12,3 +12,8 @@ terrain = good_farmland
 	remove_core = KRA
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	owner = KUK
+	controller = KUK
+	railroad = 4
+}

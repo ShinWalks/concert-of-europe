@@ -6,5 +6,11 @@ colonial = 1
 	owner = ENG
 	controller = ENG
 	add_core = RPL
-	colonial = 1
+}
+1914.1.1 = {
+	owner = CAN
+	controller = CAN
+	add_core = CAN
+	railroad = 3
+
 }

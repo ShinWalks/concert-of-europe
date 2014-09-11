@@ -11,3 +11,10 @@ fort = 1
 1861.1.1 = {
 	add_core = DEN
 }
+1914.1.1 = {
+	owner = GER
+	controller = GER
+	railroad = 5
+	naval_base = 6
+	fort = 4
+}

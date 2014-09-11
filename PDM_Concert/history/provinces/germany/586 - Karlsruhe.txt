@@ -11,3 +11,14 @@ terrain = hilly_farmland
 #	upgrade = yes
 #}
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	owner = GER
+	controller = GER
+	railroad = 5
+	
+	state_building = {
+		level = 1
+		building = lumber_mill
+		upgrade = yes
+	}
+}

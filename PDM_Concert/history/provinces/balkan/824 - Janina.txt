@@ -12,3 +12,9 @@ terrain = dry_forest_mountains
 	controller = TUR
 	remove_core = EPI
 }
+1914.1.1 = {
+	owner = GRE
+	controller = GRE
+	remove_core = TUR
+	railroad = 1
+}

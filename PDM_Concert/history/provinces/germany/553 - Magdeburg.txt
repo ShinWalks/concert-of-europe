@@ -28,3 +28,52 @@ terrain = good_farmland
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	owner = GER
+
+	controller = GER
+
+	railroad = 5
+
+	state_building = {
+
+		level = 2
+
+		building = lumber_mill
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = paper_mill
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = luxury_furniture_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = liquor_distillery
+
+		upgrade = yes
+
+	}
+
+}

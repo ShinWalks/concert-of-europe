@@ -4,3 +4,6 @@ add_core = PEU
 trade_goods = wool
 life_rating = 30
 terrain = mountain_farmland
+1914.1.1 = {
+	railroad = 2
+}

@@ -3,3 +3,8 @@ add_core = KAM
 trade_goods = grain
 life_rating = 15
 terrain = boreal_marsh
+1914.1.1 = {
+	owner = RUS
+	controller = RUS
+	colonial = 1
+}

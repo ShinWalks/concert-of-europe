@@ -5,3 +5,7 @@ add_core = CRS
 trade_goods = fish
 life_rating = 32
 terrain = dry_forest_mountains
+1914.1.1 = {
+	railroad = 1
+	naval_base = 2
+}

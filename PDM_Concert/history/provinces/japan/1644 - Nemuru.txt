@@ -5,3 +5,16 @@ trade_goods = timber
 life_rating = 20
 terrain = conifer_forest_hills
 colonial = 1
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	colonial = 1
+	railroad = 2
+	naval_base = 1
+	state_building = {
+		level = 1
+		building = cement_factory
+		upgrade = yes
+	}
+}

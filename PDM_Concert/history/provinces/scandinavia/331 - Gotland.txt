@@ -4,3 +4,6 @@ add_core = SWE
 trade_goods = grain
 life_rating = 35
 terrain = forested_farmland
+1914.1.1 = {
+	railroad = 1
+}

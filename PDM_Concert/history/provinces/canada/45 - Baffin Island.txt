@@ -5,3 +5,11 @@ trade_goods = fish
 life_rating = 25
 terrain = tundra_hills
 colonial = 1
+1914.1.1 = {
+	owner = CAN
+	controller = CAN
+	add_core = CAN
+
+	railroad = 3
+
+}

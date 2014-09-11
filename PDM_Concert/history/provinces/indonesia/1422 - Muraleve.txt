@@ -4,3 +4,8 @@ add_core = KLM
 trade_goods = spices
 life_rating = 20
 terrain = jungle_hills
+1914.1.1 = {
+	owner = NET
+	controller = NET
+	colonial = 1
+}

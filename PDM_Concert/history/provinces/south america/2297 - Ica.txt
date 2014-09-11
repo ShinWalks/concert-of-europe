@@ -14,3 +14,6 @@ terrain = desert_hills
 	controller = PEU
 	remove_core = SPU
 }
+1914.1.1 = {
+	railroad = 2
+}

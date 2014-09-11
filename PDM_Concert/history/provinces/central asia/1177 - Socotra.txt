@@ -4,3 +4,8 @@ add_core = YEM
 trade_goods = fish
 life_rating = 35
 terrain = semi_desert_hills
+1914.1.1 = {
+	owner = ENG
+	controller = ENG
+	colonial = 1
+}

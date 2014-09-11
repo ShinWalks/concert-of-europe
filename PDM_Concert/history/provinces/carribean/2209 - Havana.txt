@@ -6,7 +6,14 @@ life_rating = 35
 terrain = hilly_farmland
 naval_base = 1
 colonial = 1
-1861.1.1 = { railroad = 2 }
 1861.1.1 = {
+	railroad = 2
 	naval_base = 2
+}
+1914.1.1 = {
+	owner = CUB
+	controller = CUB
+	colonial = 0
+	railroad = 3
+	naval_base = 3
 }

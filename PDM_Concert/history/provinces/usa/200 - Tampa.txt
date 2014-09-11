@@ -13,3 +13,11 @@ naval_base = 1
 	owner = CSA
 	add_core = CSA
 }
+1914.1.1 = {
+	owner = USA
+	controller = USA
+	remove_core = CSA
+	is_slave = no
+	railroad = 3
+	naval_base = 2
+}

@@ -5,3 +5,9 @@ add_core = SER
 trade_goods = timber
 life_rating = 35
 terrain = deciduous_forest_mountains
+1914.1.1 = {
+	owner = SER
+	controller = SER
+	remove_core = TUR
+	railroad = 5	# Berlin-Baghdad railway
+}

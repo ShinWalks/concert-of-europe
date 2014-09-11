@@ -9,3 +9,6 @@ terrain = hilly_farmland
 	owner = TUR
 	controller = TUR
 }
+1914.1.1 = {
+	railroad = 1
+}

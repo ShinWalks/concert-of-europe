@@ -27,3 +27,28 @@ state_building = {
 		upgrade = yes
 	}
 }
+1914.1.1 = {
+	owner = GER
+	controller = GER
+	railroad = 5
+	state_building = {
+		level = 1
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = electric_gear_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = synthetic_oil_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = aeroplane_factory
+		upgrade = yes
+	}
+}

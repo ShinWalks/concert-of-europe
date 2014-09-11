@@ -5,3 +5,11 @@ add_core = TKG
 trade_goods = grain
 life_rating = 35
 terrain = marginal_farmland
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	remove_core = YZW
+	remove_core = TKG
+	railroad = 2
+}

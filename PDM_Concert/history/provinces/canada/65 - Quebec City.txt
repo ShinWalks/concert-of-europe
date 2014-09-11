@@ -7,3 +7,13 @@ life_rating = 35
 terrain = hilly_farmland
 colonial = 1
 naval_base = 1
+1914.1.1 = {
+	owner = CAN
+	controller = CAN
+	add_core = CAN
+
+	colonial = 0
+	railroad = 3
+	naval_base = 4
+
+}

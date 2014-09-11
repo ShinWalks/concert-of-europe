@@ -11,3 +11,6 @@ terrain = boreal_forest_hills
 	add_core = RUS
 	colonial = 1
 }
+1914.1.1 = {
+	colonial = 0
+}

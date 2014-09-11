@@ -10,3 +10,21 @@ terrain = forested_farmland
 	railroad = 1
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	owner = GER
+
+	controller = GER
+
+	railroad = 5
+	state_building = {
+
+		level = 2
+
+		building = glass_factory
+
+		upgrade = yes
+
+	}
+
+}

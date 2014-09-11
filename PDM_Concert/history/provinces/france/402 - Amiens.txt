@@ -8,4 +8,47 @@ naval_base = 1
 1861.1.1 = { 
 	railroad = 3 
 	naval_base = 2
+	state_building = {
+
+		level = 1
+		building = explosives_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 1
+		building = artillery_factory
+
+		upgrade = yes
+
+	}
+}
+1914.1.1 = {
+
+	railroad = 5
+
+	naval_base = 4
+
+	state_building = {
+
+		level = 2
+
+		building = explosives_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = artillery_factory
+
+		upgrade = yes
+
+	}
 }

@@ -5,3 +5,6 @@ add_core = BRT
 trade_goods = fish
 life_rating = 32
 terrain = marginal_farmland
+1914.1.1 = {
+	railroad = 1
+}

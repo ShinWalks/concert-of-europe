@@ -10,3 +10,7 @@ terrain = hilly_farmland
 	owner = ITA
 	naval_base = 1
 }
+1914.1.1 = {
+	railroad = 3
+	naval_base = 3
+}

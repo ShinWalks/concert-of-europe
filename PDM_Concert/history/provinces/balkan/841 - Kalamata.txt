@@ -8,3 +8,6 @@ terrain = dry_forest_hills
 1836.1.1 = {
 	remove_core = TUR
 }
+1914.1.1 = {
+	railroad = 1
+}

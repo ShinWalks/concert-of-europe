@@ -12,8 +12,13 @@ naval_base = 1
 	owner = CSA
 	controller = CSA
 	add_core = CSA
-}
-1861.1.1 = { 
 	railroad = 3 
 	naval_base = 3
+}
+1914.1.1 = {
+	owner = USA
+	controller = USA
+	remove_core = CSA
+	railroad = 5
+	naval_base = 5
 }

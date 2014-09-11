@@ -29,3 +29,22 @@ terrain = forested_farmland
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	owner = USA
+
+	controller = USA
+
+	remove_core = CSA
+	railroad = 5
+	state_building = {
+
+		level = 1
+
+		building = dye_factory
+
+		upgrade = yes
+
+	}
+
+}

@@ -10,3 +10,6 @@ terrain = forested_farmland
 	controller = ROM
 	owner = ROM
 }
+1914.1.1 = {
+	railroad = 1
+}

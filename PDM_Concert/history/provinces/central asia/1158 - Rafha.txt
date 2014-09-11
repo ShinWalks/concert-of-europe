@@ -4,3 +4,6 @@ add_core = HAL
 trade_goods = wool
 life_rating = 30
 terrain = desert
+1914.1.1 = {
+	add_core = NEJ
+}

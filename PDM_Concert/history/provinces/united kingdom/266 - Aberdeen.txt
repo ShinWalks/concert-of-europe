@@ -18,3 +18,17 @@ terrain = hilly_farmland
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	railroad = 5
+	state_building = {
+
+		level = 2
+
+		building = regular_clothes_factory
+
+		upgrade = yes
+
+	}
+
+}

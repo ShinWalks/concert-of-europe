@@ -6,3 +6,9 @@ add_core = ROM
 trade_goods = coal
 life_rating = 35
 terrain = marsh
+1914.1.1 = {
+	controller = ROM
+	owner = ROM
+	remove_core = TUR
+	railroad = 1
+}

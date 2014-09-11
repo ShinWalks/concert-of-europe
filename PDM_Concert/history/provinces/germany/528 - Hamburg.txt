@@ -24,3 +24,24 @@ state_building = {
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	owner = GER
+
+	controller = GER
+
+	railroad = 5
+
+	naval_base = 6
+
+	state_building = {
+
+		level = 1
+
+		building = steamer_shipyard
+
+		upgrade = yes
+
+	}
+
+}

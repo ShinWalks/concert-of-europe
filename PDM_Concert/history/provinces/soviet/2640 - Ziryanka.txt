@@ -3,3 +3,8 @@ add_core = YAK
 trade_goods = cattle
 life_rating = 15
 terrain = boreal_forest_mountains
+1914.1.1 = {
+	owner = RUS
+	controller = RUS
+	colonial = 1
+}

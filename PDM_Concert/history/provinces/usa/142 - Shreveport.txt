@@ -9,3 +9,9 @@ terrain = forested_farmland
 	owner = CSA
 	add_core = CSA}
 1861.1.1 = { railroad = 1 }
+1914.1.1 = {
+	owner = USA
+	controller = USA
+	remove_core = CSA
+	railroad = 3
+}

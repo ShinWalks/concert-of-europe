@@ -12,3 +12,6 @@ terrain = hilly_farmland
 	owner = NIC
 	controller = NIC
 }
+1914.1.1 = {
+	railroad = 2
+}

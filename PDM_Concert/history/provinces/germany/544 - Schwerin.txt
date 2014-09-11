@@ -6,3 +6,14 @@ trade_goods = grain
 life_rating = 35
 terrain = good_farmland
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	owner = GER
+
+	controller = GER
+
+	railroad = 5
+
+	naval_base = 6
+
+}

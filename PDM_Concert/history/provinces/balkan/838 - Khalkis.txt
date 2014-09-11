@@ -9,3 +9,6 @@ terrain = hilly_grassland
 	owner = GRE
 	remove_core = TUR
 }
+1914.1.1 = {
+	railroad = 1
+}

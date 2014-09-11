@@ -18,3 +18,27 @@ terrain = deciduous_forest_hills
 	}
 }
 1861.1.1 = { railroad = 2 }
+1914.1.1 = {
+
+	railroad = 5
+	state_building = {
+
+		level = 2
+
+		building = winery
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = lumber_mill
+
+		upgrade = yes
+
+	}
+
+}

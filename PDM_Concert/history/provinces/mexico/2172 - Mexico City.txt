@@ -5,3 +5,6 @@ trade_goods = tobacco
 life_rating = 45
 terrain = hilly_farmland
 fort = 1
+1914.1.1 = { 
+	railroad = 2
+}

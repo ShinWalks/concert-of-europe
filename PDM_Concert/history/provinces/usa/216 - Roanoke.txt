@@ -9,3 +9,9 @@ terrain = deciduous_forest_mountains
 	controller = CSA
 	add_core = CSA
 }
+1914.1.1 = {
+	owner = USA
+	controller = USA
+	remove_core = CSA
+	railroad = 1
+}

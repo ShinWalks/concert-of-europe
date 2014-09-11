@@ -5,3 +5,12 @@ add_core = TKG
 trade_goods = tobacco
 life_rating = 35
 terrain = hilly_farmland
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	remove_core = TOS
+	remove_core = TKG
+	railroad = 2
+	naval_base = 1
+}

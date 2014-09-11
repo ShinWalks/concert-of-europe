@@ -20,6 +20,16 @@ naval_base = 2
 		ideology = conservative
 		loyalty_value = 25
 	}
+	add_core = CSA
+	railroad = 3
 }
-1861.1.1 = { add_core = CSA }
-1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	remove_core = CSA
+	railroad = 5
+	naval_base = 4
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+}

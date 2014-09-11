@@ -6,3 +6,8 @@ trade_goods = coal
 life_rating = 38
 terrain = deciduous_forest_hills
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	owner = GER
+	controller = GER
+	railroad = 5
+}

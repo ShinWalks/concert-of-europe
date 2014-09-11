@@ -6,3 +6,9 @@ add_core = BUL
 trade_goods = tobacco
 life_rating = 35
 terrain = forested_farmland
+1914.1.1 = {
+	controller = BUL
+	owner = BUL
+	remove_core = TUR
+	railroad = 1
+}

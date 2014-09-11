@@ -40,3 +40,24 @@ state_building = {
 		upgrade = yes
 	}
 }
+1914.1.1 = {
+	owner = GER
+	controller = GER
+	railroad = 5
+	
+	state_building = {
+		level = 2
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = glass_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = liquor_distillery
+		upgrade = yes
+	}
+}

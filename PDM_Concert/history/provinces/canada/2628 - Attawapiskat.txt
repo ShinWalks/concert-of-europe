@@ -5,3 +5,12 @@ trade_goods = fish
 life_rating = 35
 terrain = boreal_marsh
 colonial = 1
+1914.1.1 = {
+	owner = NEW
+	controller = NEW
+	add_core = CAN
+
+	colonial = 0
+	railroad = 3
+
+}

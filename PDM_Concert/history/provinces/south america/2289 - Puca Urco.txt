@@ -9,3 +9,8 @@ terrain = jungle
 	owner = ECU
 	controller = ECU
 }
+1914.1.1 = {
+	owner = PEU
+	controller = PEU
+	railroad = 2
+}

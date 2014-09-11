@@ -9,3 +9,6 @@ terrain = conifer_forest_mountains
 	controller = USA
 	add_core = USA
 }
+1914.1.1 = {
+	railroad = 1
+}

@@ -7,3 +7,12 @@ terrain = boreal_forest_hills
 	add_core = RPL
 	colonial = 1
 }
+1914.1.1 = {
+	owner = NEW
+	controller = NEW
+	add_core = CAN
+
+	colonial = 0
+	railroad = 3
+
+}

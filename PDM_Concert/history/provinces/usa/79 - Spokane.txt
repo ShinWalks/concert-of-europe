@@ -9,3 +9,6 @@ terrain = mountain_grassland
 	controller = USA
 	add_core = USA
 }
+1914.1.1 = {
+	railroad = 1
+}

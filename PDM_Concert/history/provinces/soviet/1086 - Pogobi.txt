@@ -7,3 +7,6 @@ terrain = boreal_forest_hills
 	controller = RUS
 	add_core = RUS
 }
+1914.1.1 = {
+	colonial = 0
+}

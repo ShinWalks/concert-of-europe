@@ -27,3 +27,47 @@ terrain = hilly_farmland
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	railroad = 5
+	state_building = {
+
+		level = 2
+
+		building = winery
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 1
+
+		building = furniture_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 1
+
+		building = fertilizer_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 1
+
+		building = small_arms_factory
+
+		upgrade = yes
+
+	}
+
+}

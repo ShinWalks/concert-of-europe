@@ -4,3 +4,9 @@ add_core = BHR
 trade_goods = grain
 life_rating = 35
 terrain = desert
+1914.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+	colonial = 1
+}

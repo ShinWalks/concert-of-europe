@@ -5,3 +5,6 @@ add_core = RGR
 trade_goods = cattle
 life_rating = 35
 terrain = dry_grassland
+1914.1.1 = { 
+	railroad = 2
+}

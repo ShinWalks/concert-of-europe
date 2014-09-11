@@ -6,3 +6,6 @@ add_core = KDS
 trade_goods = cattle
 life_rating = 35
 terrain = hills
+1914.1.1 = {
+	railroad = 1
+}

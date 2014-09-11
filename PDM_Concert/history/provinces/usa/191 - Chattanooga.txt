@@ -8,5 +8,11 @@ terrain = hilly_farmland
 	controller = CSA
 	owner = CSA
 	add_core = CSA
+	railroad = 3
 }
-1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	owner = USA
+	controller = USA
+	remove_core = CSA
+	railroad = 5
+}

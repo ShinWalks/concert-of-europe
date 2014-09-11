@@ -10,3 +10,17 @@ terrain = hilly_farmland
 #	building = glass_factory
 #	upgrade = yes
 #}
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	remove_core = KAG
+	remove_core = TKG
+	railroad = 2
+	naval_base = 1
+	state_building = {
+		level = 1
+		building = glass_factory
+		upgrade = yes
+	}
+}

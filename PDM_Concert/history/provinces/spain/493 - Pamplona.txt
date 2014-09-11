@@ -15,4 +15,6 @@ terrain = mountain_farmland
 	controller = SPA
 	railroad = 3
 }
-
+1914.1.1 = {
+	railroad = 4
+}

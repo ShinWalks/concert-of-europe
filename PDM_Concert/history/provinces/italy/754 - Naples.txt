@@ -41,3 +41,40 @@ naval_base = 1
 		upgrade = yes
 	}
 }
+1914.1.1 = {
+
+	railroad = 4
+
+	naval_base = 4
+
+	state_building = {
+
+		level = 2
+
+		building = steel_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = glass_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 1
+
+		building = steamer_shipyard
+
+		upgrade = yes
+
+	}
+
+}

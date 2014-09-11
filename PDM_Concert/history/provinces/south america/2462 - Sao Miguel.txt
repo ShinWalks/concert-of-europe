@@ -8,3 +8,6 @@ terrain = deciduous_forest
 	owner = BRZ
 	controller = BRZ
 }
+1914.1.1 = {
+	railroad = 2
+}

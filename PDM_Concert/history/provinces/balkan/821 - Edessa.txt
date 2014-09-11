@@ -5,3 +5,9 @@ add_core = GRE
 trade_goods = silk
 life_rating = 35
 terrain = hilly_farmland
+1914.1.1 = {
+	owner = GRE
+	controller = GRE
+	remove_core = TUR
+	railroad = 1
+}

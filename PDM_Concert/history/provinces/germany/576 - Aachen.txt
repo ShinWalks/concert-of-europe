@@ -7,3 +7,14 @@ trade_goods = coal
 life_rating = 39
 terrain = hilly_farmland
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	owner = GER
+
+	controller = GER
+
+	railroad = 5
+
+	fort = 4
+
+}

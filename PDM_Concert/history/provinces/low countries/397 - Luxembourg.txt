@@ -18,3 +18,8 @@ fort = 1
 	remove_core = NET
 	remove_core = BEL
 }
+1914.1.1 = {
+
+	railroad = 5
+
+}

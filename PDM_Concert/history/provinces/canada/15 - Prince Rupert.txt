@@ -5,3 +5,10 @@ add_core = ENG
 trade_goods = timber
 life_rating = 35
 terrain = boreal_forest_mountains
+1914.1.1 = {
+	owner = CAN
+	controller = CAN
+	add_core = CAN
+	colonial = 0
+	railroad = 3
+}

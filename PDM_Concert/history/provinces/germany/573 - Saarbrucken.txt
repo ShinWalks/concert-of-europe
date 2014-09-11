@@ -8,3 +8,54 @@ life_rating = 35
 terrain = forested_farmland
 fort = 1
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	owner = GER
+
+	controller = GER
+
+	railroad = 5
+
+	fort = 4
+
+	state_building = {
+
+		level = 2
+
+		building = steel_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = machine_parts_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = electric_gear_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = automobile_factory
+
+		upgrade = yes
+
+	}
+
+}

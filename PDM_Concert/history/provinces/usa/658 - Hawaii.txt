@@ -4,3 +4,11 @@ add_core = HAW
 trade_goods = sugar
 life_rating = 35
 terrain = jungle_mountains
+1914.1.1 = {
+	owner = USA
+	add_core = USA
+	controller = USA
+	colonial = 2
+	railroad = 1
+	naval_base = 3
+}

@@ -6,6 +6,7 @@ bookmark =
 	cameraX = 2950 
 	cameraY = 1550
 }
+
 bookmark =
 {
 	name = "GC_NAME"
@@ -22,4 +23,13 @@ bookmark =
 	date = 1861.7.1
 	cameraX = 1270 
 	cameraY = 1450
+}
+
+bookmark =
+{
+	name = "GW_NAME"
+	desc = "GW_DESC"
+	date = 1914.8.4
+	cameraX = 2950 
+	cameraY = 1550
 }

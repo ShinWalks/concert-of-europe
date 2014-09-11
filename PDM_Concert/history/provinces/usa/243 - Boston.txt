@@ -32,3 +32,28 @@ state_building = {
 	railroad = 3 
 	naval_base = 2
 }
+1914.1.1 = {
+ 
+	railroad = 5
+
+	naval_base = 4
+	state_building = {
+
+		level = 2
+
+		building = canned_food_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = glass_factory
+
+		upgrade = yes
+	}
+
+}

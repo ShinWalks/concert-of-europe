@@ -9,3 +9,9 @@ terrain = floodplain_farmland
 	owner = CSA
 	add_core = CSA
 }
+1914.1.1 = {
+	owner = USA
+	controller = USA
+	remove_core = CSA
+	railroad = 3
+}

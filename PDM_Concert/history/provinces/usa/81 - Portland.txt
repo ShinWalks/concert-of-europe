@@ -14,3 +14,6 @@ terrain = conifer_forest_hills
 		upgrade = yes
 	}
 }
+1914.1.1 = {
+	railroad = 1
+}

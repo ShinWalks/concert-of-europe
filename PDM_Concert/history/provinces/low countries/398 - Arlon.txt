@@ -16,3 +16,8 @@ terrain = deciduous_forest_hills
 	remove_core = NET
 	remove_core = LUX
 }
+1914.1.1 = {
+
+	railroad = 5
+
+}

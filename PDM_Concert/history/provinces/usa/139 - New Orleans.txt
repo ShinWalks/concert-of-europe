@@ -20,3 +20,17 @@ naval_base = 1
 	naval_base = 1
 	fort = 1
 }
+1914.1.1 = {
+
+	owner = USA
+
+	controller = USA
+
+	remove_core = CSA
+	railroad = 5
+
+	naval_base = 3
+
+	fort = 3
+
+}

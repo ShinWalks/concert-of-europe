@@ -7,3 +7,9 @@ colonial = 1
 	controller = TKG
 	life_rating = 25
 }
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	add_core = RUS
+}

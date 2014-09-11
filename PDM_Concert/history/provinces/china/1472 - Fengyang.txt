@@ -9,3 +9,8 @@ terrain = marginal_farmland
 	controller = TPG
 	add_core = TPG
 }
+1914.1.1 = {
+	owner = QNG
+	controller = QNG
+	remove_core = TPG
+}

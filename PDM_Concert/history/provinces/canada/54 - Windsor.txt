@@ -7,3 +7,10 @@ life_rating = 35
 terrain = good_farmland
 colonial = 1
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	owner = CAN
+	controller = CAN
+	colonial = 0
+	railroad = 4
+
+}

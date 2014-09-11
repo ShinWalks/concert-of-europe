@@ -5,3 +5,7 @@ trade_goods = spices
 life_rating = 30
 terrain = seasonal_jungle_mountains
 colonial = 1
+1914.1.1 = {
+	owner = USA
+	controller = USA
+}

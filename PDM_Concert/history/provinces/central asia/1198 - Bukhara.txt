@@ -4,3 +4,8 @@ add_core = BUK
 trade_goods = wool
 life_rating = 35
 terrain = desert
+1914.1.1 = {
+	owner = RUS
+	controller = RUS
+	colonial = 1
+}

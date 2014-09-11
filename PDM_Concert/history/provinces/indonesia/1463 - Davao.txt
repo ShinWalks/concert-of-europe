@@ -5,3 +5,7 @@ trade_goods = iron
 life_rating = 30
 terrain = jungle_hills
 colonial = 1
+1914.1.1 = {
+	owner = USA
+	controller = USA
+}

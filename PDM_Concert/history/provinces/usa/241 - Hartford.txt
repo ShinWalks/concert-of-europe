@@ -9,5 +9,9 @@ terrain = marginal_farmland
 	party_loyalty = {
 		ideology = liberal
 		loyalty_value = 25
-	}}
-1861.1.1 = { railroad = 3 }
+	}
+	railroad = 3
+}
+1914.1.1 = {
+	railroad = 5
+}

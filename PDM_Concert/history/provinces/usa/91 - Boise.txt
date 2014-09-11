@@ -2,7 +2,10 @@ trade_goods = wool
 life_rating = 35
 terrain = conifer_forest_mountains
 1861.1.1 = {
-owner = USA
-controller = USA
-add_core = USA
+	owner = USA
+	controller = USA
+	add_core = USA
+}
+1914.1.1 = {
+	railroad = 1
 }

@@ -4,3 +4,6 @@ trade_goods = sugar
 life_rating = 35
 terrain = marginal_farmland
 colonial = 1
+1914.1.1 = {
+	railroad = 3
+}

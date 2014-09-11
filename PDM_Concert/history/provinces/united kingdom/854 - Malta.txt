@@ -9,3 +9,7 @@ naval_base = 1
 1861.1.1 = { 
 	naval_base = 2 #Valetta
 }
+1914.1.1 = {
+	naval_base = 4
+	fort = 4
+}

@@ -5,3 +5,11 @@ add_core = TKG
 trade_goods = coal
 life_rating = 35
 terrain = deciduous_forest_hills
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	remove_core = SAT
+	remove_core = TKG
+	railroad = 2
+}

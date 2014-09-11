@@ -3,3 +3,9 @@ trade_goods = wool
 life_rating = 10
 terrain = tundra_mountains
 colonial = 1
+1914.1.1 = {
+	owner = CHL
+	controller = CHL
+	add_core = CHL
+	railroad = 2
+}

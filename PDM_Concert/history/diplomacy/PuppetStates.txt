@@ -142,6 +142,14 @@ vassal = {
 #	end_date = 1840.7.1		# the Oriental Crisis
 #}
 
+# Ottoman Empire-Hail
+vassal = {
+	first = TUR
+	second = HAL
+	start_date = 1892.1.1
+	end_date = 1921.11.2	# subjugation by Saudi Nejd
+}
+
 #######################
 #        INDIA        #
 #######################
@@ -378,3 +386,107 @@ vassal = {
 	end_date = 1936.1.1
 }
 
+#########1914
+# USA - Cuba
+vassal = {
+	first = USA
+	second = CUB
+	start_date = 1914.1.1
+	end_date = 1959.1.1
+}
+
+# USA - Nicaragua
+vassal = {
+	first = USA
+	second = NIC
+	start_date = 1912.1.1
+	end_date = 1970.1.1
+}
+
+# UK - Canada
+vassal = {
+	first = ENG
+	second = CAN
+	start_date = 1867.1.1
+	end_date = 1953.1.1
+}
+
+# UK - Australia
+vassal = {
+	first = ENG
+	second = AST
+	start_date = 1901.1.1
+	end_date = 1953.1.1
+}
+
+# UK - New Zealand
+vassal = {
+	first = ENG
+	second = NZL
+	start_date = 1907.1.1
+	end_date = 1953.1.1
+}
+
+# UK - Newfoundland
+vassal = {
+	first = ENG
+	second = NEW
+	start_date = 1907.1.1
+	end_date = 1949.1.1
+}
+
+# UK - South Africa
+vassal = {
+	first = ENG
+	second = SAF
+	start_date = 1910.1.1
+	end_date = 1953.1.1
+}
+
+# UK - Egypt
+vassal = {
+	first = ENG
+	second = EGY
+	start_date = 1882.1.1
+	end_date = 1922.1.1
+}
+
+# United Kingdom - Darfur
+vassal = {
+	first = ENG
+	second = DAR
+	start_date = 1898.1.1
+	end_date = 1946.1.1
+}
+
+# UK - Rajputana
+vassal = {
+	first = ENG
+	second = RAJ
+	start_date = 1907.1.1
+	end_date = 1949.1.1
+}
+
+# UK - Assam
+vassal = {
+	first = ENG
+	second = ASM
+	start_date = 1907.1.1
+	end_date = 1949.1.1
+}
+
+# UK - Bhutan
+vassal = {
+	first = ENG
+	second = BHU
+	start_date = 1907.1.1
+	end_date = 1949.1.1
+}
+
+# UK - Baluchistan
+vassal = {
+	first = ENG
+	second = BLC
+	start_date = 1907.1.1
+	end_date = 1949.1.1
+}

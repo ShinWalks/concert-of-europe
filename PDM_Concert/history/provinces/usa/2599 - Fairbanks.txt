@@ -7,3 +7,9 @@ terrain = boreal_forest_hills
 	controller = RUS
 	colonial = 1
 }
+1914.1.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	railroad = 1
+}

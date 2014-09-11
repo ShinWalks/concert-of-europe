@@ -13,5 +13,25 @@ terrain = forested_farmland
 		building = canned_food_factory
 		upgrade = yes
 	}
+	railroad = 3
 }
-1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	owner = USA
+
+	controller = USA
+
+	remove_core = CSA
+	railroad = 5
+
+	state_building = {
+
+		level = 1
+
+		building = regular_clothes_factory
+
+		upgrade = yes
+
+	}
+
+}

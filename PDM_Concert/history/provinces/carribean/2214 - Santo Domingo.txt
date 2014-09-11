@@ -13,3 +13,6 @@ terrain = good_farmland
 	owner = DOM
 	controller = DOM
 }
+1914.1.1 = {
+	remove_core = HAI
+}

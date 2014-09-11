@@ -19,3 +19,17 @@ colonial = 1
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	railroad = 5
+	state_building = {
+
+		level = 1
+
+		building = paper_mill
+
+		upgrade = yes
+
+	}
+
+}

@@ -12,3 +12,7 @@ terrain = dry_forest
 	owner = BOL
 	controller = BOL
 }
+1914.1.1 = {
+	add_core = PRG
+	railroad = 2
+}

@@ -14,4 +14,6 @@ terrain = dry_forest_hills
 	controller = SPA
 	railroad = 3
 }
-
+1914.1.1 = {
+	railroad = 4
+}

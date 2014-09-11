@@ -11,3 +11,8 @@ terrain = deciduous_forest_hills
 #	upgrade = yes
 #}
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	owner = GER
+	controller = GER
+	railroad = 5
+}

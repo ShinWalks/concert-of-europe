@@ -4,3 +4,6 @@ add_core = NEJ
 trade_goods = horses
 life_rating = 35
 terrain = desert_hills
+1914.1.1 = {
+	add_core = HAL
+}

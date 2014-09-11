@@ -9,3 +9,9 @@ terrain = jungle_farmland
 	owner = CLM
 	controller = CLM
 }
+1914.1.1 = {
+	owner = PNM
+	controller = PNM
+	remove_core = CLM
+	railroad = 2
+}

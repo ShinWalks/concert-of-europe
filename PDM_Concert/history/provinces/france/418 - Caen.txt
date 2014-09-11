@@ -16,3 +16,29 @@ naval_base = 1
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	railroad = 5
+
+	naval_base = 4
+	state_building = {
+
+		level = 2
+
+		building = ammunition_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 2
+
+		building = regular_clothes_factory
+
+		upgrade = yes
+
+	}
+
+}

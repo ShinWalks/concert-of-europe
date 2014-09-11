@@ -19,3 +19,8 @@ revolt = {
 	owner = TUR
 	controller = TUR 
 }
+1914.1.1 = {
+	owner = GRE
+	controller = GRE
+	railroad = 1
+}

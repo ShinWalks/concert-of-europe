@@ -7,3 +7,8 @@ colonial = 1
 	controller = RUS
 	add_core = RUS
 }
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+}

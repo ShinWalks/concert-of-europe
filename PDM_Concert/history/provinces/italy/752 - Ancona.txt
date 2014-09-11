@@ -15,3 +15,11 @@ terrain = good_farmland
 	owner = ITA
 	add_core = ITA
 }
+1914.1.1 = {
+	railroad = 2
+	state_building = {
+		level = 1
+		building = winery
+		upgrade = yes
+	}
+}

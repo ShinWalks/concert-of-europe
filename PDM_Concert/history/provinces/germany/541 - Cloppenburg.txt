@@ -5,3 +5,8 @@ add_core = GER
 trade_goods = lead
 life_rating = 35
 terrain = marginal_farmland
+1914.1.1 = {
+	owner = GER
+	controller = GER
+	railroad = 1
+}

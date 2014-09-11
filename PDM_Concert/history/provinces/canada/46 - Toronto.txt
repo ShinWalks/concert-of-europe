@@ -26,5 +26,21 @@ terrain = good_farmland
 		building = lumber_mill
 		upgrade = yes
 	}
+	railroad = 3
 }
-1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	owner = CAN
+	controller = CAN
+	railroad = 4
+	state_building = {
+		level = 2
+		building = small_arms_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = lumber_mill
+		upgrade = yes
+	}
+
+}

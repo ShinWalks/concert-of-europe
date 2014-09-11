@@ -15,3 +15,23 @@ naval_base = 1
 		upgrade = yes
 	}
 }
+1914.1.1 = {
+	owner = GER
+
+	controller = GER
+
+	railroad = 5
+
+	naval_base = 6
+
+	state_building = {
+
+		level = 3
+
+		building = steamer_shipyard
+
+		upgrade = yes
+
+	}
+
+}

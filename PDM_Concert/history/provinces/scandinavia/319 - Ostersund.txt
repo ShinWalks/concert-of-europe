@@ -3,4 +3,8 @@ controller = SWE
 add_core = SWE
 trade_goods = copper
 life_rating = 35
-terrain = conifer_forest_hills
+terrain = conifer_forest_hill
+1914.1.1 = {
+	railroad = 1
+}
+s

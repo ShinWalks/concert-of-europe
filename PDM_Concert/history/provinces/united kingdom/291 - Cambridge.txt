@@ -27,3 +27,26 @@ terrain = good_farmland
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	railroad = 5
+	state_building = {
+
+		level = 1
+
+		building = artillery_factory
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 1
+
+		building = explosives_factory
+
+		upgrade = yes
+
+	}
+
+}

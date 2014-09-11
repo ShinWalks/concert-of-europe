@@ -12,3 +12,10 @@ naval_base = 1
 	railroad = 1
 	naval_base = 3
 }
+1914.1.1 = {
+ 
+	railroad = 4
+
+	naval_base = 5
+
+}

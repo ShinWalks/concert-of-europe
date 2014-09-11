@@ -82,3 +82,53 @@ state_building = {
 	}
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	owner = GER
+
+	controller = GER
+
+	railroad = 5
+
+	fort = 4
+	state_building = {
+
+		level = 3
+
+		building = glass_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 3
+
+		building = ammunition_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 3
+
+		building = small_arms_factory
+
+		upgrade = yes
+
+	}
+
+	state_building = {
+
+		level = 1
+
+		building = radio_factory
+
+		upgrade = yes
+
+	}
+
+}

@@ -16,3 +16,7 @@ terrain = tundra_mountains
 	owner = KAS
 	controller = KAS
 }
+1914.1.1 = {
+	add_core = XIN
+	add_core = CHI
+}

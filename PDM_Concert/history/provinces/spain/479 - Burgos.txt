@@ -14,3 +14,6 @@ terrain = hilly_farmland
 	controller = SPA
 	railroad = 2
 }
+1914.1.1 = {
+	railroad = 3
+}

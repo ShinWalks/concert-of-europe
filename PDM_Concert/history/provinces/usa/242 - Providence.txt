@@ -6,3 +6,6 @@ trade_goods = grain
 terrain = marginal_farmland
 life_rating = 35
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	railroad = 5
+}

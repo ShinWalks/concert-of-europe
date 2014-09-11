@@ -5,3 +5,22 @@ trade_goods = grain
 life_rating = 40
 terrain = good_farmland
 fort = 1
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	remove_core = TKG
+	railroad = 2
+	naval_base = 4
+	fort = 3
+	state_building = {
+		level = 1
+		building = luxury_clothes_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = liquor_distillery
+		upgrade = yes
+	}
+}

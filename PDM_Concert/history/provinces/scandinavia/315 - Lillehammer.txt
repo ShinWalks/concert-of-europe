@@ -4,3 +4,6 @@ add_core = NOR
 trade_goods = iron
 life_rating = 35
 terrain = conifer_forest_mountains
+1914.1.1 = {
+	railroad = 1
+}

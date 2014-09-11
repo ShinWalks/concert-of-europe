@@ -5,3 +5,16 @@ add_core = TKG
 trade_goods = cotton
 life_rating = 35
 terrain = hilly_farmland
+1914.1.1 = {
+	owner = JAP
+	controller = JAP
+	add_core = JAP
+	remove_core = CHO
+	remove_core = TKG
+	railroad = 2
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+}

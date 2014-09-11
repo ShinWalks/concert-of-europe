@@ -15,6 +15,20 @@ terrain = hilly_farmland
 		building = steel_factory
 		upgrade = yes
 	}
+	add_core = CSA
+	railroad = 3
 }
-1861.1.1 = { add_core = CSA }
-1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+	remove_core = CSA
+	railroad = 5
+	state_building = {
+		level = 1
+		building = explosives_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = fertilizer_factory
+		upgrade = yes
+	}
+}

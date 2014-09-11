@@ -13,3 +13,8 @@ fort = 1
 	railroad = 3 
 	naval_base = 3 
 }
+1914.1.1 = {
+	railroad = 5
+	naval_base = 6
+	fort = 4
+}

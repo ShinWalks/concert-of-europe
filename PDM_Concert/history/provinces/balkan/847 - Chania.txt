@@ -14,3 +14,8 @@ terrain = dry_forest_mountains
 	controller = TUR 
 	owner = TUR
 }
+1914.1.1 = {
+	owner = GRE
+	controller = GRE
+	railroad = 1
+}

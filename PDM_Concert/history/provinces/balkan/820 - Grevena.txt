@@ -9,3 +9,9 @@ terrain = hilly_farmland
 	owner = TUR
 	controller = TUR
 }
+1914.1.1 = {
+	owner = GRE
+	controller = GRE
+	remove_core = TUR
+	railroad = 1
+}

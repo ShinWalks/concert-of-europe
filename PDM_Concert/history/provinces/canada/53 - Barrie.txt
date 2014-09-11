@@ -6,3 +6,10 @@ trade_goods = grain
 life_rating = 35
 terrain = forested_farmland
 colonial = 1
+1914.1.1 = {
+	owner = CAN
+	controller = CAN
+	colonial = 0
+	railroad = 3
+
+}

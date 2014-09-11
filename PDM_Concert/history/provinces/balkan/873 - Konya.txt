@@ -4,3 +4,6 @@ add_core = TUR
 trade_goods = wool
 life_rating = 35
 terrain = dry_grassland
+1914.1.1 = {
+	railroad = 5	# Baghdad railway
+}

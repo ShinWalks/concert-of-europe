@@ -8,3 +8,6 @@ terrain = seasonal_jungle_hills
 	owner = VNZ
 	controller = VNZ
 }
+1914.1.1 = {
+	railroad = 2
+}

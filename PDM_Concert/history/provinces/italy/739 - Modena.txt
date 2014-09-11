@@ -16,3 +16,18 @@ terrain = forested_farmland
 	add_core = ITA
 }
 1861.1.1 = { railroad = 3 }
+1914.1.1 = {
+
+	railroad = 4
+
+	state_building = {
+
+		level = 1
+
+		building = canned_food_factory
+
+		upgrade = yes
+
+	}
+
+}

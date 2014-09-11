@@ -10,3 +10,6 @@ terrain = deciduous_forest_mountains
 	owner = ITA
 	add_core = ITA
 }
+1914.1.1 = {
+	railroad = 1
+}

@@ -8,3 +8,6 @@ terrain = jungle
 	owner = CLM
 	controller = CLM
 }
+1914.1.1 = {
+	railroad = 2
+}
