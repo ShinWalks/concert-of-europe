@@ -146,6 +146,7 @@ province_event = {
 		owner = {
 			war = no
 			mechanized_mining = 1
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = coal
@@ -226,6 +227,7 @@ province_event = {
 		owner = {
 			war = no
 			mechanized_mining = 1
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = copper
@@ -306,6 +308,7 @@ province_event = {
 		owner = {
 			war = no
 			mechanized_mining = 1
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = iron
@@ -386,6 +389,7 @@ province_event = {
 		owner = {
 			war = no
 			mechanized_mining = 1
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = lead
@@ -466,6 +470,7 @@ province_event = {
 		owner = {
 			war = no
 			mechanized_mining = 1
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = sulphur
@@ -552,6 +557,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = cotton
@@ -614,6 +620,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = tea
@@ -677,6 +684,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = spices
@@ -744,6 +752,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = wool
@@ -809,6 +818,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = fruit
@@ -871,6 +881,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = tobacco
@@ -937,6 +948,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = coffee
@@ -1005,6 +1017,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = silk
@@ -1071,6 +1084,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = sugar
@@ -1140,6 +1154,7 @@ province_event = {
 		owner = {
 			war = no
 			invention = lumber_mills
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = fish
@@ -1195,6 +1210,7 @@ province_event = {
 		owner = {
 			war = no
 			invention = lumber_mills
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = timber
@@ -1262,6 +1278,7 @@ province_event = {
 		owner = {
 			war = no
 			invention = tropical_lumber_mills
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = tropical_wood
@@ -1321,6 +1338,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = cattle
@@ -1387,6 +1405,7 @@ province_event = {
 		owner = {
 			war = no
 			civilized = yes
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			trade_goods = grain
@@ -1553,6 +1572,7 @@ province_event = {
 		owner = {
 			war = no
 			basic_chemistry = 1
+			NOT = { has_country_flag = no_rgo_change_events }
 		}
 		NOT = {
 			has_province_modifier = intense_farming

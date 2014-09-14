@@ -662,7 +662,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 150
+		months = 1000
 		modifier = {
 			factor = 3
 			NOT = { controlled_by = THIS }
@@ -755,7 +755,7 @@ province_event = {
 		}
 		poor_strata = {
 			limit = { is_culture_group = east_asian }
-			consciousness = 3
+			consciousness = 6
 		}
 		state_scope = {
 			any_pop = {
@@ -769,8 +769,8 @@ province_event = {
 						militancy = 4
 					}
 				}
-				militancy = 3
-				consciousness = 3
+				militancy = 6
+				consciousness = 6
 			}
 			any_owned = {
 				add_province_modifier = {
@@ -791,7 +791,7 @@ province_event = {
 				consciousness = 2
 				ideology = {
 					value = liberal
-					factor = 0.05
+					factor = 0.1
 				}
 			}
 			middle_strata = {
@@ -799,12 +799,12 @@ province_event = {
 				consciousness = 2
 				ideology = {
 					value = liberal
-					factor = 0.1
+					factor = 0.2
 				}
 			}
 			scaled_militancy = {
 				ideology = liberal
-				factor = 5
+				factor = 8
 			}
 		}
 		ai_chance = { factor = 20 }
@@ -1435,7 +1435,7 @@ country_event = {
 			}
 			owner = {
 				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
+				activate_technology = classicism_n_early_romanticism
 				any_pop = {
 					scaled_militancy = {
 						ideology = liberal
@@ -2080,7 +2080,7 @@ country_event = {
 			}
 			owner = {
 				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
+				activate_technology = classicism_n_early_romanticism
 				any_pop = {
 					scaled_militancy = {
 						ideology = liberal

@@ -111,7 +111,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.5
-			not = { poor_strata_life_needs = 0.25 }
+			NOT = { poor_strata_life_needs = 0.25 }
 		}
 	}
 	
@@ -233,7 +233,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.5
-			not = { poor_strata_life_needs = 0.5 }
+			NOT = { poor_strata_life_needs = 0.5 }
 		}
 	}
 	
@@ -356,7 +356,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.5
-			not = { poor_strata_life_needs = 0.75 }
+			NOT = { poor_strata_life_needs = 0.75 }
 		}
 	}
 	
@@ -467,7 +467,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.5
-			not = { unemployment = 0.3 }
+			NOT = { unemployment = 0.3 }
 		}
 		modifier = {
 			factor = 0.9
@@ -479,8 +479,8 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.5
-			not = { poor_strata_life_needs = 1 }
-			not = { poor_strata_everyday_needs = 0.01 }
+			NOT = { poor_strata_life_needs = 1 }
+			NOT = { poor_strata_everyday_needs = 0.01 }
 		}
 	}
 	
@@ -587,14 +587,12 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.5
-			not = { unemployment = 0.2 }
+			NOT = { unemployment = 0.2 }
 		}
 		modifier = {
 			factor = 0.75
-			AND = {
-				NOT = { poor_strata_everyday_needs = 1 }
-				NOT = { poor_strata_luxury_needs = 0.01 }
-			}
+			NOT = { poor_strata_everyday_needs = 1 }
+			NOT = { poor_strata_luxury_needs = 0.01 }
 		}
 		modifier = {
 			factor = 0.75
@@ -602,8 +600,8 @@ country_event = {
 		}
 		modifier = {
 			factor = 2
-			not = { poor_strata_life_needs = 1 }
-			not = { poor_strata_everyday_needs = 0.01 }
+			NOT = { poor_strata_life_needs = 1 }
+			NOT = { poor_strata_everyday_needs = 0.01 }
 		}
 	}
 	
@@ -714,7 +712,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.5
-			not = { unemployment = 0.1 }
+			NOT = { unemployment = 0.1 }
 		}
 		modifier = {
 			factor = 0.75
@@ -726,8 +724,8 @@ country_event = {
 		}
 		modifier = {
 			factor = 2
-			not = { poor_strata_life_needs = 1 }
-			not = { poor_strata_everyday_needs = 0.01 }
+			NOT = { poor_strata_life_needs = 1 }
+			NOT = { poor_strata_everyday_needs = 0.01 }
 		}
 	}
 	
@@ -838,7 +836,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.5
-			not = { unemployment = 0.01 }
+			NOT = { unemployment = 0.01 }
 		}
 		modifier = {
 			factor = 0.75
@@ -850,8 +848,8 @@ country_event = {
 		}
 		modifier = {
 			factor = 4
-			not = { poor_strata_life_needs = 1 }
-			not = { poor_strata_everyday_needs = 0.01 }
+			NOT = { poor_strata_life_needs = 1 }
+			NOT = { poor_strata_everyday_needs = 0.01 }
 		}
 	}
 	

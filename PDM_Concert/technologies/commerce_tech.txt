@@ -1067,7 +1067,7 @@ freedom_of_trade = {
 	area = market_functionality
 	year = 1821
 	cost = 4500
-	education_efficiency = 0.2
+	education_efficiency = 0.25
 	rgo_throughput = 0.1
 	
 	ai_chance = {
@@ -1122,7 +1122,7 @@ market_structure = {
 	area = market_functionality
 	year = 1845
 	cost = 7600
-	education_efficiency = 0.2
+	education_efficiency = 0.25
 	influence = 0.1
 	
 	ai_chance = {
@@ -1188,7 +1188,7 @@ business_regulations = {
 	area = market_functionality
 	year = 1860
 	cost = 10000
-	education_efficiency = 0.2
+	education_efficiency = 0.25
 	influence = 0.1
 	
 	ai_chance = {
@@ -1254,7 +1254,7 @@ market_regulations = {
 	area = market_functionality
 	year = 1870
 	cost = 12500
-	education_efficiency = 0.2
+	education_efficiency = 0.25
 	influence = 0.1
 	administrative_efficiency = 0.025
 	
@@ -1321,7 +1321,7 @@ economic_responsibility = {
 	area = market_functionality
 	year = 1890
 	cost = 20000
-	education_efficiency = 0.2
+	education_efficiency = 0.25
 	influence = 0.1
 	administrative_efficiency = 0.05
 	
@@ -1380,7 +1380,7 @@ government_interventionism = {
 	area = market_functionality
 	year = 1910
 	cost = 30000
-	education_efficiency = 0.2
+	education_efficiency = 0.25
 	influence = 0.1
 	administrative_efficiency = 0.05
 	

@@ -217,7 +217,7 @@ populationsize_300M = {
 no_navy = {
 	trigger = {
 		civilized = yes
-		not = { total_amount_of_ships = 1 }
+		NOT = { total_amount_of_ships = 1 }
 	}
 	prestige = -0.25
 	diplomatic_points_modifier = -0.25
@@ -227,7 +227,7 @@ no_navy = {
 no_army = {
 	trigger = {
 		civilized = yes
-		not = { total_amount_of_divisions = 1 }
+		NOT = { total_amount_of_divisions = 1 }
 	}
 	prestige = -0.25
 	icon = 9
@@ -237,7 +237,7 @@ small_navy = {
 	trigger = {
 		civilized = yes
 		total_amount_of_ships = 1
-		not = { total_amount_of_ships = 10 }
+		NOT = { total_amount_of_ships = 10 }
 	}
 	prestige = -0.1
 	icon = 9
@@ -265,7 +265,7 @@ large_nation = {
 	trigger = {
 		civilized = yes
 		num_of_cities = 50
-		not = {
+		NOT = {
 			num_of_cities = 100
 		}
 	}
@@ -303,7 +303,7 @@ well_drilled = {
 
 drilled = {
 	trigger = {
-		not = { officers = 0.002 }
+		NOT = { officers = 0.002 }
 		officers = 0.0015
 		civilized = yes
 	}
@@ -314,7 +314,7 @@ drilled = {
 
 poorly_drilled = {
 	trigger = {
-		not = { officers = 0.001 }
+		NOT = { officers = 0.001 }
 		officers = 0.0005
 	}
 	icon = 18
@@ -324,7 +324,7 @@ poorly_drilled = {
 
 undisciplined_mob = {
 	trigger = {
-		not = { officers = 0.0005 }
+		NOT = { officers = 0.0005 }
 	}
 	icon = 18
 	land_organisation = -0.25
@@ -341,9 +341,9 @@ vassal_nation = {
 
 oversized_industry_1850 = {
 	trigger = {
-		not = { year = 1860 }
+		NOT = { year = 1860 }
 		industrial_score = 200
-		not = { industrial_score = 400 }
+		NOT = { industrial_score = 400 }
 	}
 	icon = 10
 	factory_throughput = -0.05
@@ -353,9 +353,9 @@ oversized_industry_1850 = {
 oversized_industry_1860 = {
 	trigger = {
 		year = 1860
-		not = { year = 1870 }
+		NOT = { year = 1870 }
 		industrial_score = 400
-		not = { industrial_score = 800 }
+		NOT = { industrial_score = 800 }
 	}
 	icon = 12
 	factory_throughput = -0.1
@@ -365,9 +365,9 @@ oversized_industry_1860 = {
 oversized_industry_1870 = {
 	trigger = {
 		year = 1870
-		not = { year = 1880 }
+		NOT = { year = 1880 }
 		industrial_score = 600
-		not = { industrial_score = 1200 }
+		NOT = { industrial_score = 1200 }
 	}
 	icon = 12
 	factory_throughput = -0.15
@@ -377,9 +377,9 @@ oversized_industry_1870 = {
 oversized_industry_1880 = {
 	trigger = {
 		year = 1880
-		not = { year = 1890 }
+		NOT = { year = 1890 }
 		industrial_score = 800
-		not = { industrial_score = 1600 }
+		NOT = { industrial_score = 1600 }
 	}
 	icon = 12
 	factory_throughput = -0.20
@@ -389,9 +389,9 @@ oversized_industry_1880 = {
 oversized_industry_1890 = {
 	trigger = {
 		year = 1890
-		not = { year = 1900 }
+		NOT = { year = 1900 }
 		industrial_score = 1000
-		not = { industrial_score = 2000 }
+		NOT = { industrial_score = 2000 }
 	}
 	icon = 12
 	factory_throughput = -0.25
@@ -401,9 +401,9 @@ oversized_industry_1890 = {
 oversized_industry_1900 = {
 	trigger = {
 		year = 1900
-		not = { year = 1920 }
+		NOT = { year = 1920 }
 		industrial_score = 1500
-		not = { industrial_score = 3000 }
+		NOT = { industrial_score = 3000 }
 	}
 	icon = 12
 	factory_throughput = -0.30
@@ -413,9 +413,9 @@ oversized_industry_1900 = {
 oversized_industry_1920 = {
 	trigger = {
 		year = 1920
-		not = { year = 1940 }
+		NOT = { year = 1940 }
 		industrial_score = 2000
-		not = { industrial_score = 4000 }
+		NOT = { industrial_score = 4000 }
 	}
 	icon = 12
 	factory_throughput = -0.35
@@ -426,7 +426,7 @@ oversized_industry_1940 = {
 	trigger = {
 		year = 1940
 		industrial_score = 4000
-		not = { industrial_score = 8000 }
+		NOT = { industrial_score = 8000 }
 	}
 	icon = 12
 	factory_throughput = -0.40
@@ -435,7 +435,7 @@ oversized_industry_1940 = {
 
 excessive_industry_1850 = {
 	trigger = {
-		not = { year = 1860 }
+		NOT = { year = 1860 }
 		industrial_score = 400
 	}
 	icon = 10
@@ -446,7 +446,7 @@ excessive_industry_1850 = {
 excessive_industry_1860 = {
 	trigger = {
 		year = 1860
-		not = { year = 1870 }
+		NOT = { year = 1870 }
 		industrial_score = 800
 	}
 	icon = 12
@@ -457,7 +457,7 @@ excessive_industry_1860 = {
 excessive_industry_1870 = {
 	trigger = {
 		year = 1870
-		not = { year = 1880 }
+		NOT = { year = 1880 }
 		industrial_score = 1200
 	}
 	icon = 12
@@ -468,7 +468,7 @@ excessive_industry_1870 = {
 excessive_industry_1880 = {
 	trigger = {
 		year = 1880
-		not = { year = 1890 }
+		NOT = { year = 1890 }
 		industrial_score = 1600
 	}
 	icon = 12
@@ -479,7 +479,7 @@ excessive_industry_1880 = {
 excessive_industry_1890 = {
 	trigger = {
 		year = 1890
-		not = { year = 1900 }
+		NOT = { year = 1900 }
 		industrial_score = 2000
 	}
 	icon = 12
@@ -490,7 +490,7 @@ excessive_industry_1890 = {
 excessive_industry_1900 = {
 	trigger = {
 		year = 1900
-		not = { year = 1920 }
+		NOT = { year = 1920 }
 		industrial_score = 3000
 	}
 	icon = 12
@@ -501,7 +501,7 @@ excessive_industry_1900 = {
 excessive_industry_1920 = {
 	trigger = {
 		year = 1920
-		not = { year = 1940 }
+		NOT = { year = 1940 }
 		industrial_score = 4000
 	}
 	icon = 12
@@ -545,7 +545,7 @@ the_police_state_effect = {
 
 the_concert_of_europe = {
 	trigger = {
-		not = { year = 1840 }
+		NOT = { year = 1840 }
 	}
 	global_pop_consciousness_modifier = -0.1
 	icon = 1

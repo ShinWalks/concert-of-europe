@@ -21,7 +21,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -62,7 +62,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -180,7 +180,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 0.9
 			empiricism = 1
@@ -227,7 +227,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -347,7 +347,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -383,7 +383,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -527,7 +527,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -555,7 +555,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -592,7 +592,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -617,7 +617,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -648,7 +648,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -686,7 +686,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 	}
 	
 	option = {
@@ -1559,7 +1559,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 0.9
 			civilization_progress = 0.2

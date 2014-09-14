@@ -1474,6 +1474,13 @@ ideologies = {
 		modifier = {
 			factor = 1.1
 			OR = {
+				social_reform_want = 0.01
+				political_reform_want = 0.01
+			}
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
 				social_reform_want = 0.05
 				political_reform_want = 0.05
 			}
@@ -1486,17 +1493,31 @@ ideologies = {
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			OR = {
 				social_reform_want = 0.15
 				political_reform_want = 0.15
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			OR = {
 				social_reform_want = 0.20
 				political_reform_want = 0.20
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				social_reform_want = 0.25
+				political_reform_want = 0.25
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				social_reform_want = 0.30
+				political_reform_want = 0.30
 			}
 		}
 		modifier = {
@@ -1510,12 +1531,12 @@ ideologies = {
 			political_reform_want = 0.05
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			social_reform_want = 0.10
 			political_reform_want = 0.10
 		}
 		modifier = {
-			factor = 1.5	
+			factor = 1.2
 			social_reform_want = 0.15
 			political_reform_want = 0.15
 		}
@@ -1523,6 +1544,16 @@ ideologies = {
 			factor = 1.5
 			social_reform_want = 0.20
 			political_reform_want = 0.20
+		}
+		modifier = {
+			factor = 1.5
+			social_reform_want = 0.25
+			political_reform_want = 0.25
+		}
+		modifier = {
+			factor = 1.5
+			social_reform_want = 0.30
+			political_reform_want = 0.30
 		}
 	}
 	
@@ -1615,6 +1646,10 @@ ideologies = {
 		}
 		modifier = {
 			factor = 2.0
+			country = { has_global_flag = the_age_of_nationalism }
+		}
+		modifier = {
+			factor = 2.0
 			country = { minorities_reform = oppression }
 		}
 		modifier = {
@@ -1625,6 +1660,19 @@ ideologies = {
 	
 	fascist = {
 		factor = 1
+		modifier = {
+			factor = 1.5
+			country = { 
+				has_country_flag = great_experiment_fascist
+				ruling_party_ideology = fascist 
+			}
+		}
+		modifier = {
+			factor = 1.1
+			country = { 
+				has_global_flag = the_great_experiment_fascist
+			}
+		}
 		modifier = {
 			factor = 1.1
 			OR = {
@@ -2155,10 +2203,44 @@ ideologies = {
 			factor = 1.5
 			plurality = 50
 		}
+		modifier = {
+			factor = 0.9
+			political_reform_want = 0.10
+			is_ideology_enabled = social_liberal
+		}
+		modifier = {
+			factor = 0.9
+			political_reform_want = 0.20
+			is_ideology_enabled = social_liberal
+		}
+		modifier = {
+			factor = 0.9
+			political_reform_want = 0.30
+			is_ideology_enabled = social_liberal
+		}
 	}
 
 	communist = {
 		factor = 1
+		modifier = {
+			factor = 0.25
+			country = { 
+				NOT = { has_country_flag = vanguard_party_formed }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			country = { 
+				has_country_flag = great_experiment_communist
+				ruling_party_ideology = communist 
+			}
+		}
+		modifier = {
+			factor = 1.2
+			country = { 
+				has_global_flag = the_great_experiment_communist
+			}
+		}
 		modifier = {
 			factor = 0.8
 			nationalvalue = nv_freedom
@@ -2375,6 +2457,21 @@ ideologies = {
 		modifier = {
 			factor = 1.5
 			political_reform_want = 0.30
+		}
+		modifier = {
+			factor = 0.9
+			social_reform_want = 0.10
+			is_ideology_enabled = social_liberal
+		}
+		modifier = {
+			factor = 0.9
+			social_reform_want = 0.20
+			is_ideology_enabled = social_liberal
+		}
+		modifier = {
+			factor = 0.9
+			social_reform_want = 0.30
+			is_ideology_enabled = social_liberal
 		}
 	}
 	
@@ -4002,15 +4099,15 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			NOT = { agree_with_ruling_party = 0.90 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			NOT = { agree_with_ruling_party = 0.80 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			NOT = { agree_with_ruling_party = 0.70 }
 		}
 		modifier = {
@@ -4041,15 +4138,15 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			NOT = { agree_with_ruling_party = 0.90 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			NOT = { agree_with_ruling_party = 0.80 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			NOT = { agree_with_ruling_party = 0.70 }
 		}
 		modifier = {
@@ -4078,15 +4175,15 @@ issues = {
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			NOT = { agree_with_ruling_party = 0.90 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			NOT = { agree_with_ruling_party = 0.80 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.5
 			NOT = { agree_with_ruling_party = 0.70 }
 		}
 		modifier = {
@@ -4335,6 +4432,7 @@ issues = {
 					is_next_reform = state_controlled
 				}
 				country = {	civilized = no }
+				NOT = { is_ideology_enabled = socialist }
 			}
 		}
 		modifier = {
@@ -4352,6 +4450,30 @@ issues = {
 		modifier = {
 			factor = 1.2
 			NOT = { everyday_needs = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			not = { life_needs = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			not = { life_needs = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { social_reform_want = 0.05 }
+		}
+		modifier = {
+			factor = 1.2
+			social_reform_want = 0.10
+		}
+		modifier = {
+			factor = 1.5
+			social_reform_want = 0.15
+		}
+		modifier = {
+			factor = 1.5
+			social_reform_want = 0.20
 		}
 	}
 	non_socialist = {
@@ -4365,6 +4487,7 @@ issues = {
 					is_next_reform = non_socialist
 				}
 				luxury_needs = 0.5
+				NOT = { is_ideology_enabled = socialist }
 			}
 		}
 		modifier = {
@@ -4383,6 +4506,30 @@ issues = {
 			factor = 1.2
 			NOT = { everyday_needs = 1 }
 		}
+		modifier = {
+			factor = 1.5
+			not = { life_needs = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			not = { life_needs = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { social_reform_want = 0.05 }
+		}
+		modifier = {
+			factor = 1.2
+			social_reform_want = 0.10
+		}
+		modifier = {
+			factor = 1.5
+			social_reform_want = 0.15
+		}
+		modifier = {
+			factor = 1.5
+			social_reform_want = 0.20
+		}
 	}
 	all_trade_unions = {
 		factor = 1
@@ -4393,6 +4540,7 @@ issues = {
 				country = {	civilized = no }
 				trade_unions = all_trade_unions
 				luxury_needs = 0.5
+				NOT = { is_ideology_enabled = socialist }
 			}
 		}
 		modifier = {
@@ -4410,6 +4558,30 @@ issues = {
 		modifier = {
 			factor = 1.2
 			NOT = { everyday_needs = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			not = { life_needs = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			not = { life_needs = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			not = { social_reform_want = 0.05 }
+		}
+		modifier = {
+			factor = 1.2
+			social_reform_want = 0.10
+		}
+		modifier = {
+			factor = 1.5
+			social_reform_want = 0.15
+		}
+		modifier = {
+			factor = 1.5
+			social_reform_want = 0.20
 		}
 	}
 	state_equal_weight = {
@@ -6157,14 +6329,6 @@ trinket_subsidies = {
 		modifier = {
 			factor = 2
 			consciousness = 5 
-		}
-		modifier = {
-			factor = 2
-			consciousness = 6 
-		}
-		modifier = {
-			factor = 2
-			consciousness = 6 
 		}
 		modifier = {
 			factor = 2

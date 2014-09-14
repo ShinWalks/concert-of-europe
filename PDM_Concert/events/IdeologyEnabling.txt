@@ -34,6 +34,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1000"
 		enable_ideology = socialist
+		prestige = 20
 		any_pop = {
 			limit = {
 				is_primary_culture = yes
@@ -113,6 +114,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1001"
 		enable_ideology = communist
+		prestige = 20
 		any_pop = {
 			limit = {
 				is_primary_culture = yes
@@ -191,6 +193,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1002"
 		enable_ideology = anarcho_liberal
+		prestige = 20
 		any_pop = {
 			limit = {
 				is_primary_culture = yes
@@ -282,6 +285,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA1003"
 		enable_ideology = fascist
+		prestige = 20
 		any_pop = {
 			limit = {
 				is_primary_culture = yes
@@ -352,10 +356,27 @@ country_event = {
 			factor = 0.5
 			not = { poor_strata_everyday_needs = 0.5 }
 		}
+		modifier = {
+			factor = 10
+			not = { year = 1890 }
+		}
 	}
 
 	option = {
 		name = "We will observe this with great interest."
 		enable_ideology = social_liberal
+		prestige = 20
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+				location = {
+					is_colonial = no
+				}
+			}
+			ideology = {
+				value = social_liberal
+				factor = 0.1
+			}
+		}
 	}
 }

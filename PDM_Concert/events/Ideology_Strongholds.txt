@@ -69,7 +69,11 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400		
+		months = 400
+		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
 		modifier = {
 			factor = 0.3
 			owner = { has_country_flag = liberal_revolution_in_progress }
@@ -201,6 +205,10 @@ province_event = {
 	mean_time_to_happen = {
 		months = 400		
 		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
+		modifier = {
 			factor = 0.3
 			owner = { has_country_flag = liberal_revolution_in_progress }
 		}
@@ -301,6 +309,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 400
+		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
 		modifier = {
 			factor = 0.3
 			owner = { has_country_flag = liberal_revolution_in_progress }
@@ -436,6 +448,10 @@ province_event = {
 	mean_time_to_happen = {
 		months = 400
 		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
+		modifier = {
 			factor = 0.3
 			owner = { has_country_flag = liberal_revolution_in_progress }
 		}
@@ -539,6 +555,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 400
+		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
 		modifier = {
 			factor = 0.3
 			owner = { has_country_flag = liberal_revolution_in_progress }
@@ -669,6 +689,10 @@ province_event = {
 	mean_time_to_happen = {
 		months = 400
 		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
+		modifier = {
 			factor = 0.3
 			owner = { has_country_flag = liberal_revolution_in_progress }
 		}
@@ -771,7 +795,11 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400		
+		months = 400
+		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
 		modifier = {
 			factor = 0.8
 			anarcho_liberal = 20
@@ -903,6 +931,10 @@ province_event = {
 	mean_time_to_happen = {
 		months = 400
 		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
+		modifier = {
 			factor = 0.8
 			anarcho_liberal = 20
 		}
@@ -1001,7 +1033,11 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400		
+		months = 400
+		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
 		modifier = {
 			factor = 0.8
 			socialist = 20
@@ -1129,6 +1165,10 @@ province_event = {
 	mean_time_to_happen = {
 		months = 400
 		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
+		modifier = {
 			factor = 0.8
 			socialist = 20
 		}
@@ -1226,7 +1266,11 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400		
+		months = 400
+		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
 		modifier = {
 			factor = 0.8
 			communist = 20
@@ -1354,6 +1398,10 @@ province_event = {
 	mean_time_to_happen = {
 		months = 400
 		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
+		modifier = {
 			factor = 0.8
 			communist = 20
 		}
@@ -1452,7 +1500,11 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400		
+		months = 400
+		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
 		modifier = {
 			factor = 0.8
 			fascist = 20
@@ -1578,6 +1630,10 @@ province_event = {
 	
 	mean_time_to_happen = {
 		months = 400
+		modifier = {
+			factor = 5
+			owner = { NOT = { state_n_government = 1 } }
+		}
 		modifier = {
 			factor = 0.8
 			fascist = 20

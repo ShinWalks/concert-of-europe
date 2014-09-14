@@ -1,4 +1,6 @@
-color = { 108 108 108 }
+color = { 80 80 80 }
+proletarian_dictatorship = { 170 10 15 }
+fascist_dictatorship = { 25 25 25 }
 graphical_culture = PrussianGC
 
 party = {

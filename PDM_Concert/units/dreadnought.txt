@@ -43,5 +43,5 @@ dreadnought = {
 	min_port_level = 5
 	limit_per_port = -1
 	supply_consumption_score = 20
-	colonial_points = 15
+	colonial_points = 10
 }

@@ -24,7 +24,7 @@ liberal_agitation = {
 
 springtime_of_nations = {
 	core_pop_militancy_modifier = 0.2
-	global_pop_consciousness_modifier = 0.1
+	global_pop_consciousness_modifier = 0.2
 	icon = 16
 }
 
@@ -1158,11 +1158,11 @@ nv_freedom_modifier = {
 }
 
 nv_fraternity_modifier = {
-	core_pop_militancy_modifier = -0.04
+	core_pop_militancy_modifier = -0.02
 	global_population_growth = -0.0003
 	social_reform_desire = 0.1
 	assimilation_rate = 0.3
-	culture_tech_research_bonus = 0.05
+	culture_tech_research_bonus = 0.1
 	icon = 3
 }
 

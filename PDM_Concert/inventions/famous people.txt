@@ -81,6 +81,7 @@ flinders_petrie = {
 		shared_prestige = 5
 	}	
 }
+
 # John George Taylor (1850s), 
 jg_taylor = {
 	limit = {
@@ -95,8 +96,8 @@ jg_taylor = {
 		shared_prestige = 5
 	}	
 }
-# Charles Leonard Wooley (1920s), 
 
+# Charles Leonard Wooley (1920s), 
 cl_wooley = {
 	limit = {
 		social_alienation = 1
@@ -114,8 +115,8 @@ cl_wooley = {
 		shared_prestige = 25
 	}	
 }
-# Arthur Evans (1900ish),
 
+# Arthur Evans (1900ish),
 arthur_evans = {
 	limit = {
 		social_alienation = 1
@@ -135,7 +136,6 @@ arthur_evans = {
 }
 
 # Heinrich Schliemann (1860s).
-
 heinrich_schliemann = {
 	limit = {
 		functionalism = 1
@@ -179,7 +179,6 @@ emile_dirkheim = {
 }
 
 #Max Weber (1890s) 
-
 max_weber = {
 	limit = {
 		social_science = 1
@@ -199,8 +198,8 @@ max_weber = {
 	}
 	effect = {
 		shared_prestige = 25
-	}	
 		political_reform_desire = 0.05
+	}	
 }
 
 #Ferdinand de Saussure (1880s) 
@@ -266,7 +265,6 @@ the_nancy_school = {
 	effect = {
 		shared_prestige = 15
 	}	
-	core_pop_militancy_modifier = -0.01	
 }
 
 # Emile Coue
@@ -285,8 +283,8 @@ emile_coue = {
 	}
 	effect = {
 		shared_prestige = 15
+		core_pop_militancy_modifier = -0.01
 	}	
-	core_pop_militancy_modifier = -0.01	
 }
 
 neurology = {
@@ -304,8 +302,8 @@ neurology = {
 	}
 	effect = {
 		shared_prestige = 25
-	}	
-	core_pop_militancy_modifier = -0.01	
+		core_pop_militancy_modifier = -0.01
+	}
 }
 
 #Alfred Nobel
@@ -387,15 +385,15 @@ the_periodic_table = {
 		}
 	}
 	effect = {
-	shared_prestige = 25
-	rgo_goods_throughput = {
+		shared_prestige = 25
+		rgo_goods_throughput = {
 			sulphur = 0.05
 		}
-	factory_goods_output = {
-		fertilizer = 0.05
+		factory_goods_output = {
+			fertilizer = 0.05
 		}
-	factory_goods_output = {
-		fuel = 0.05
+		factory_goods_output = {
+			fuel = 0.05
 		}
 	}	
 }
@@ -435,7 +433,9 @@ lenin = {
 			economic_policy = planned_economy
 		}
 	}
-	social_reform_desire = 0.05
+	effect = {
+		social_reform_desire = 0.05
+	}
 }
 
 trotsky = { 
@@ -468,7 +468,9 @@ trotsky = {
 			nationalvalue = nv_fraternity
 		}
 	}
-	social_reform_desire = 0.05
+	effect = {
+		social_reform_desire = 0.05
+	}
 }
 
 mussolini = { 
@@ -497,9 +499,9 @@ mussolini = {
 			nationalvalue = nv_fraternity
 		}
 	}
-	social_reform_desire = -0.2
-	political_reform_desire = -0.1
 	effect = {
+		social_reform_desire = -0.2
+		political_reform_desire = -0.1
 		rebel_org_gain = {
 			faction = fascist_rebels 
 			value = 0.5
@@ -681,7 +683,7 @@ antitoxins = {
 
 vitamins = {
 	limit = {
-		electricity = 1 
+		electricity = 1
 		analytic_philosophy = 1
 		has_country_flag = existing_country
 	}
@@ -716,7 +718,6 @@ sanitation = {
 		pop_growth = 0.0001
 	}	
 }
-
 
 #Thomas Robert Malthus
 thomas_robert_malthus ={

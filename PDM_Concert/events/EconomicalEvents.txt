@@ -26,6 +26,22 @@ country_event = {
 			unemployment = 0.15
 		}
 		modifier = {
+			factor = 1.1
+			business_banks = 1
+		}
+		modifier = {
+			factor = 1.1
+			investment_banks = 1
+		}
+		modifier = {
+			factor = 1.1
+			bank_inspection_board = 1
+		}
+		modifier = {
+			factor = 1.1
+			mutual_funds = 1
+		}
+		modifier = {
 			factor = 10
 			keynesian_economics = 1
 		}
@@ -190,11 +206,11 @@ country_event = {
 			keynesian_economics = 1
 		}
 		modifier = {
-			factor = 1.1
+			factor = 0.9
 			investment_banks = 1
 		}
 		modifier = {
-			factor = 1.1
+			factor = 0.9
 			mutual_funds = 1
 		}
 		modifier = {
@@ -1015,11 +1031,11 @@ country_event = {
 			keynesian_economics = 1
 		}
 		modifier = {
-			factor = 0.9
+			factor = 1.1
 			investment_banks = 1
 		}
 		modifier = {
-			factor = 0.9
+			factor = 1.1
 			mutual_funds = 1
 		}
 		modifier = {
@@ -1161,11 +1177,11 @@ country_event = {
 			keynesian_economics = 1
 		}
 		modifier = {
-			factor = 1.1
+			factor = 0.9
 			investment_banks = 1
 		}
 		modifier = {
-			factor = 1.1
+			factor = 0.9
 			mutual_funds = 1
 		}
 		modifier = {
@@ -1505,11 +1521,11 @@ country_event = {
 			keynesian_economics = 1
 		}
 		modifier = {
-			factor = 0.9
+			factor = 1.1
 			investment_banks = 1
 		}
 		modifier = {
-			factor = 0.9
+			factor = 1.1
 			mutual_funds = 1
 		}
 		modifier = {
@@ -1659,11 +1675,11 @@ country_event = {
 			keynesian_economics = 1
 		}
 		modifier = {
-			factor = 1.1
+			factor = 0.9
 			investment_banks = 1
 		}
 		modifier = {
-			factor = 1.1
+			factor = 0.9
 			mutual_funds = 1
 		}
 		modifier = {

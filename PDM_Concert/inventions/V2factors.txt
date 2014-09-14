@@ -138,8 +138,8 @@ alfred_binet  = {
 	}
 	effect = {
 		shared_prestige = 5
+		core_pop_consciousness_modifier = 0.01
 	}
-	core_pop_consciousness_modifier = 0.03	
 }
 
 charles_spearman  = {

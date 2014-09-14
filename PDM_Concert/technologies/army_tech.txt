@@ -2531,7 +2531,7 @@ army_professionalism = {
 	army_base = {
 		supply_consumption = 0.05
 	}
-	military_tactics = 0.1
+	military_tactics = 0.25
 	soldier_to_pop_loss = 0.01
 	
 	ai_chance = {
@@ -2641,7 +2641,7 @@ army_decision_making = {
 		default_organisation = 5
 		supply_consumption = 0.1
 	}
-	military_tactics = 0.1
+	military_tactics = 0.25
 	soldier_to_pop_loss = 0.01
 	
 	ai_chance = {
@@ -2750,7 +2750,7 @@ army_risk_management = {
 	army_base = {
 		supply_consumption = 0.1
 	}
-	military_tactics = 0.1
+	military_tactics = 0.25
 	soldier_to_pop_loss = 0.01
 	
 	ai_chance = {
@@ -2859,7 +2859,7 @@ army_nco_training = {
 	army_base = {
 		supply_consumption = 0.2
 	}
-	military_tactics = 0.2
+	military_tactics = 0.25
 	soldier_to_pop_loss = 0.01
 	
 	ai_chance = {
@@ -2964,7 +2964,7 @@ great_war_experience = {
 	army_base = {
 		supply_consumption = 0.25
 	}
-	military_tactics = 1
+	military_tactics = 0.5
 	soldier_to_pop_loss = 0.01
 	
 	ai_chance = {

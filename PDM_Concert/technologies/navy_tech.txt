@@ -216,7 +216,7 @@ raider_group_doctrine = {
 
 blue_and_brown_water_schools = {
 	area = naval_doctrine
-	year = 1880
+	year = 1870
 	cost = 12500
 	max_naval_base = 1
 	colonial_points = 10

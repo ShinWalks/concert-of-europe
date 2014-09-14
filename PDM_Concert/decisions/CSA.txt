@@ -1,4 +1,276 @@
 political_decisions = {
+	
+	recognize_the_csa = {
+		picture = reform_csa
+		potential = {
+			is_greater_power = yes
+			has_global_flag = american_civil_war_has_happened
+			exists = CSA
+			exists = USA
+			NOT = {
+				has_country_flag = recognize_the_csa
+				has_global_flag = alt_american_civil_war_has_happened
+				tag = CSA
+				tag = USA
+				tag = FSA
+			}
+		}
+		allow = { 
+			state_n_government = 1
+			OR = {
+				NOT = {		
+					CSA = { national_provinces_occupied = 0.30 }
+					relation = { who = USA value = 50 }
+				}
+				AND = {
+					has_global_flag = declaration2
+					NOT = { has_global_flag = right_to_secede }
+				}
+			}
+		}
+		effect = {
+			prestige = -1
+			set_country_flag = recognize_the_csa
+			CSA = { prestige = 5 }
+			USA = { prestige = -5 }
+			relation = { who = CSA value = 100 }
+			diplomatic_influence = { who = CSA value = 25 }
+			relation = { who = USA value = -100 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				alliance_with = USA
+			}
+			modifier = {
+				factor = 0
+				relation = { who = USA value = 100 }
+			}
+		}
+	}
+	
+	right_to_secede = {
+		picture = reform_csa
+		potential = {
+			exists = CSA
+			tag = USA
+			has_global_flag = american_civil_war_has_happened
+			NOT = {
+				has_global_flag = right_to_secede
+			}
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			OR = {
+				CSA = { military_score = THIS }
+				war_exhaustion = 60
+				is_greater_power = no
+			}
+		}
+		effect = {
+			prestige = -25
+			war_exhaustion = -10
+			set_global_flag = right_to_secede
+			CSA = {
+				prestige = 20
+				any_owned = {
+					limit = {
+						is_core = CSA
+						is_core = USA
+					}
+					remove_core = USA
+				}
+			}
+			relation = { who = CSA value = 200 }
+			any_country = {
+				limit = {
+					is_greater_power = yes
+					NOT = { tag = CSA }
+				}
+				relation = {
+					who = THIS
+					value = 50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	second_declaration_of_independence = {
+		alert = yes
+		picture = reform_csa
+		potential = {
+			tag = CSA
+			has_global_flag = american_civil_war_has_happened
+			NOT = { has_global_flag = declaration2 }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 30
+			set_global_flag = declaration2
+			any_pop = {
+				limit = {
+					culture = dixie
+				}
+				militancy = -10
+			}
+			war_exhaustion = -10
+			any_country = {
+				limit = {
+					is_greater_power = yes
+					NOT = { tag = USA }
+				}
+				relation = { who = THIS value = 50 }
+			}
+			USA = { prestige = -30 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	recognize_the_fsa = {
+		picture = form_fsa
+		potential = {
+			is_greater_power = yes
+			exists = FSA
+			exists = USA
+			has_global_flag = alt_american_civil_war_has_happened
+			NOT = {
+				has_country_flag = recognize_the_fsa
+				tag = CSA
+				tag = USA
+				tag = FSA
+			}
+		}
+		allow = { 
+			state_n_government = 1
+			OR = {
+				NOT = {		
+					FSA = { national_provinces_occupied = 0.30 }
+					relation = { who = USA value = 50 }
+				}
+				AND = {
+					has_global_flag = declaration3
+					NOT = { has_global_flag = fsa_right_to_secede }
+				}
+			}
+		}
+		effect = {
+			prestige = 1
+			set_country_flag = recognize_the_fsa
+			FSA = { prestige = 5 }
+			USA = { prestige = -5 }
+			relation = { who = FSA value = 100 }
+			diplomatic_influence = { who = FSA value = 25 }
+			relation = { who = USA value = -100 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				alliance_with = USA
+			}
+			modifier = {
+				factor = 0
+				relation = { who = USA value = 100 }
+			}
+		}
+	}
+	
+	FSA_right_to_secede = {
+		picture = form_fsa
+		potential = {
+			exists = FSA
+			tag = USA
+			has_global_flag = alt_american_civil_war_has_happened
+			NOT = {
+				has_global_flag = fsa_right_to_secede
+			}
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			OR = {
+				FSA = { military_score = THIS }
+				war_exhaustion = 60
+				is_greater_power = no
+			}
+		}
+		effect = {
+			prestige = -25
+			war_exhaustion = -10
+			set_global_flag = fsa_right_to_secede
+			FSA = {
+				prestige = 20
+				any_owned = {
+					limit = {
+						is_core = FSA
+						is_core = USA
+					}
+					remove_core = USA
+				}
+			}
+			relation = {
+				who = FSA
+				value = 200
+			}
+			any_country = {
+				limit = {
+					is_greater_power = yes
+					NOT = { tag = FSA }
+				}
+				relation = { who = THIS value = 50 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FSA_second_declaration_of_independence = {
+		alert = yes
+		picture = form_fsa
+		potential = {
+			tag = FSA
+			has_global_flag = alt_american_civil_war_has_happened
+			NOT = { has_global_flag = declaration3 }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 30
+			set_global_flag = declaration3
+			any_pop = {
+				limit = {
+					culture = yankee
+				}
+				militancy = -10
+			}
+			war_exhaustion = -10
+			any_country = {
+				limit = {
+					is_greater_power = yes
+					NOT = { tag = USA }
+				}
+				relation = { who = THIS value = 50 }
+			}
+			USA = { prestige = -30 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	2nd_ostend_manifesto = {
 		potential = {
 			tag = CSA
@@ -403,11 +675,9 @@ political_decisions = {
 		potential = {
 			slavery = yes_slavery
 			any_owned_province = {
-				location = {
-					OR = {
-						continent = north_america
-						continent = south_america
-					}
+				OR = {
+					continent = north_america
+					continent = south_america
 				}
 			}
 			civilized = yes

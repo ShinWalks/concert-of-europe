@@ -1,5 +1,7 @@
 #color = { 194  53  60 }
 color = { 194  123  47 }
+proletarian_dictatorship = { 200 12 12 }
+fascist_dictatorship = { 38 38 42 }
 graphical_culture = JapaneseGC
 
 party = {

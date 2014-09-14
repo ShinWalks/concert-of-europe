@@ -537,6 +537,9 @@ political_decisions = {
 				any_owned_province = { is_core = JOH }
 				any_owned_province = { is_core = BRU }
 			}
+			NOT = {
+				has_global_flag = sulu_protected
+			}
 		}
 
 		allow = {
@@ -550,6 +553,7 @@ political_decisions = {
 		}
 
 		effect = {
+			set_global_flag = sulu_protected
 			prestige = 5
 			inherit = SUL
 		}

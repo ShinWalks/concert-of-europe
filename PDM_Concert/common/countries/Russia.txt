@@ -1,5 +1,6 @@
 color = { 73  152  76 }
 proletarian_dictatorship = { 200 10 10 }
+fascist_dictatorship = { 35 35 35 }
 graphical_culture = RussianGC
 
 party = {

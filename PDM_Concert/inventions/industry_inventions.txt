@@ -13,12 +13,9 @@ tulls_seed_drill = {
 			fruit = 0.1
 		}
 	}
-	
-	
-	
 }
-# practical_steam_engine
 
+# practical_steam_engine
 rotherham_plough = {
 	limit = { practical_steam_engine = 1 }
 	news = no
@@ -30,10 +27,8 @@ rotherham_plough = {
 			grain = 0.1
 		}
 	}
-	
-	
-	
 }
+
 # high_n_low_pressure_steam_engines
 # steam_turbine
 #combustion_engine
@@ -44,26 +39,33 @@ daimlers_automobile = {
 		base = 2
 		modifier = {
 			factor = 2
-			electricity = 1
-		}
-		modifier = {
-			factor = 2
 			average_consciousness = 3
 		}
 		modifier = {
 			factor = -10 
 			civilized = no
 		}
+		modifier = {
+			factor = -10
+			not = { invention = edison_light_bulb }
+		}
+		modifier = {
+			factor = -3
+			not = { 
+				any_owned_province = {
+					state_scope = {
+						has_building = electric_gear_factory
+					}
+				}
+			}
+		}
 	}
 	effect = {
 		activate_building = automobile_factory 
 		factory_goods_output = {
-		machine_parts = 0.02
+			machine_parts = 0.02
 		}
 	}
-	
-	
-	
 }
 
 wright_n_langleys_aeroplanes = {
@@ -73,15 +75,25 @@ wright_n_langleys_aeroplanes = {
 		base = 2
 		modifier = {
 			factor = 2
-			electricity = 1
-		}
-		modifier = {
-			factor = 2
 			average_consciousness = 4
 		}
 		modifier = {
 			factor = -10 
 			civilized = no
+		}
+		modifier = {
+			factor = -10
+			not = { invention = edison_light_bulb }
+		}
+		modifier = {
+			factor = -3
+			not = { 
+				any_owned_province = {
+					state_scope = {
+						has_building = electric_gear_factory
+					}
+				}
+			}
 		}
 	}
 	effect = {
@@ -90,9 +102,6 @@ wright_n_langleys_aeroplanes = {
 			machine_parts = 0.02 
 		}
 	}
-	
-	
-	
 }
 
 tractors = {
@@ -112,10 +121,8 @@ tractors = {
 	effect = {
 		farm_rgo_eff = 0.15
 	}
-	
-	
-	
 }
+
 #electrical_power_generation
 direct_current = {
 	limit = {
@@ -136,12 +143,14 @@ direct_current = {
 	}
 	effect = {
 		rgo_throughput = 0.05
+		factory_cost = 0.03
 		factory_throughput = 0.03
 		factory_goods_output = {
 			electric_power = 0.02 
 		}
 	}	
 }
+
 alternating_current = {
 	limit = {
 		electrical_power_generation = 1
@@ -165,6 +174,7 @@ alternating_current = {
 	}
 	effect = {
 		rgo_throughput = 0.05
+		factory_cost = 0.03
 		factory_throughput = 0.03
 		activate_building = Petrolium-based_powerplant
 		factory_goods_output = {
@@ -172,6 +182,7 @@ alternating_current = {
 		}
 	}
 }
+
 polyphase_system = {
 	limit = {
 		electrical_power_generation = 1 
@@ -191,15 +202,14 @@ polyphase_system = {
 	}
 	effect = {
 		rgo_throughput = 0.05
+		factory_cost = 0.03
 		factory_throughput = 0.03
 		factory_goods_output = {
 			electric_power = 0.02
 		}
 	}
-	
-	
-	
 }
+
 #mechanical_production
 sharp_n_roberts_power_loom = {
 	limit = {
@@ -241,10 +251,8 @@ jacquard_power_loom = {
 			fabric = 0.01 
 		}
 	}
-	
-	
-	
 }
+
 northrop_power_loom = {
 	limit = {
 		semi_automatization = 1
@@ -274,10 +282,8 @@ northrop_power_loom = {
 			fabric = 0.01 
 		}
 	}
-	
-	
-	
 }
+
 mechanical_saw = {
 	limit = {
 		mechanical_production = 1
@@ -301,10 +307,8 @@ mechanical_saw = {
 			lumber = 0.1
 		} 
 	}
-	
-	
-	
 }
+
 mechanical_precision_saw = {
 	limit = {
 		interchangeable_parts = 1 
@@ -332,10 +336,8 @@ mechanical_precision_saw = {
 			lumber = 0.1
 		} 
 	}
-	
-	
-	
 }
+
 hussey_n_mccormicks_reaping_machine = {
 	limit = {
 		mechanical_production = 1 
@@ -353,10 +355,8 @@ hussey_n_mccormicks_reaping_machine = {
 			fruit = 0.1
 		}
 	}
-	
-	
-	
 }
+
 pitts_threshing_machine = {
 	limit = {
 		interchangeable_parts = 1 
@@ -379,10 +379,8 @@ pitts_threshing_machine = {
 			tea = 0.25
 		}
 	}
-	
-	
-	
 }
+
 mechanized_slaughtering_block = {
 	limit = { mechanical_production = 1 }
 	news = no
@@ -394,10 +392,8 @@ mechanized_slaughtering_block = {
 			cattle = 0.25
 		}
 	}
-	
-	
-	
 }
+
 #interchangeable_parts
 precision_work = {
 	limit = { mechanical_production = 1 }
@@ -413,7 +409,7 @@ precision_work = {
 			invention = machine_tools
 		}
 		modifier = {
-			factor = -10 
+			factor = -3
 			civilized = no
 		}
 	}
@@ -426,10 +422,8 @@ precision_work = {
 		} 
 		activate_building = machine_parts_factory 	
 	}
-	
-	
-	
 }
+
 machine_tools = {
 	limit = { interchangeable_parts = 1 }
 	news = no
@@ -442,15 +436,12 @@ machine_tools = {
 	}
 	effect = {
 		activate_building = iron_machine_parts_factory
-		
 		factory_goods_output = {
 			machine_parts = 0.02
 		}
 	}
-	
-	
-	
 }
+
 whitney_n_colts_standardized_small_arms = {
 	limit = { interchangeable_parts = 1 }
 	news = no
@@ -462,10 +453,8 @@ whitney_n_colts_standardized_small_arms = {
 			small_arms = 0.02 
 		}
 	}
-	
-	
-	
 }
+
 food_packing_system = {
 	limit = { interchangeable_parts = 1 }
 	news = no
@@ -477,10 +466,8 @@ food_packing_system = {
 			canned_food = 0.02 
 		}
 	}
-	
-	
-	
 }
+
 integral_distillery_process = {
 	limit = {
 		interchangeable_parts = 1 
@@ -495,10 +482,8 @@ integral_distillery_process = {
 			liquor = 0.02 
 		}
 	}
-	
-	
-	
 }
+
 jiggs = {
 	limit = { interchangeable_parts = 1 }
 	news = no
@@ -513,10 +498,8 @@ jiggs = {
 			luxury_furniture = 0.02 
 		}
 	}
-	
-	
-	
 }
+
 #semi_automatization
 electric_machinery = {
 	limit = {
@@ -537,12 +520,11 @@ electric_machinery = {
 	}
 	effect = {
 		activate_building = steel_machine_parts_factory
+		factory_cost = 0.05
 		factory_throughput = 0.05
 	}
-	
-	
-	
 }
+
 oil_pumping_machinery = {
 	limit = { semi_automatization = 1 }
 	news = no
@@ -554,10 +536,8 @@ oil_pumping_machinery = {
 			oil = 1
 		}
 	}
-	
-	
-	
 }
+
 drying_techniques = {
 	limit = { semi_automatization = 1 }
 	news = no
@@ -581,10 +561,8 @@ drying_techniques = {
 			fruit = 0.25
 		}
 	}
-	
-	
-	
 }
+
 #assembly_line
 fordism = {
 	limit = {
@@ -607,10 +585,8 @@ fordism = {
 			aeroplanes = 0.03
 		}
 	}
-	
-	
-	
 }
+
 #massproduced_rail = {
 #	limit = { assembly_line = 1 }
 #	chance = {
@@ -631,6 +607,7 @@ fordism = {
 #	effect = {
 #	}
 #}
+
 industrialized_armament_industry = {
 	limit = { assembly_line = 1 }
 	news = no
@@ -659,10 +636,8 @@ industrialized_armament_industry = {
 			explosives = 0.01
 		}
 	}
-	
-	
-	
 }
+
 refrigerator_technology = {
 	limit = { assembly_line = 1 }
 	news = no
@@ -690,10 +665,8 @@ refrigerator_technology = {
 			wine = 0.02
 		}
 	}
-	
-	
-	
 }
+
 #shift_work
 #metallurgy
 ammunition_production = {
@@ -702,68 +675,60 @@ ammunition_production = {
 	chance = {
 		base = 6
 		modifier = {
-			factor = -10 
+			factor = -5
 			civilized = no
 		}
 	}
 	effect = {
 		activate_building = ammunition_factory 
 	}
-	
-	
-	
 }
+
 small_arms_production = {
 	limit = { flintlock_rifles = 1 }
 	news = no
 	chance = {
 		base = 6
 		modifier = {
-			factor = -10 
+			factor = -5
 			civilized = no
 		}
 	}
 	effect = {
 		activate_building = early_small_arms_factory
 	}
-	
-	
-	
 }
+
 explosives_production = {
 	limit = { mechanized_mining = 1 }
 	news = no
 	chance = {
 		base = 6
 		modifier = {
-			factor = -10 
+			factor = -5
 			civilized = no
 		}
 	}
 	effect = {
 		activate_building = explosives_factory 
 	}
-	
-	
-	
 }
+
 bronze_artillery_production = {
 	limit = { bronze_muzzle_loaded_artillery = 1 }
 	news = no
 	chance = {
 		base = 5
 		modifier = {
-			factor = -10 
+			factor = -5
 			civilized = no
 		}
 	}
 	effect = {
 		activate_building = bronze_artillery_factory 
 	}
-	
-	
-	
 }
+
 #clean_coal
 pit_coal = {
 	limit = { clean_coal = 1 }
@@ -776,10 +741,8 @@ pit_coal = {
 			coal = 0.25
 		}
 	}
-	
-	
-	
 }
+
 coke = {
 	limit = { cheap_iron = 1 }
 	news = no
@@ -795,10 +758,8 @@ coke = {
 			coal = 0.25
 		}
 	}
-	
-	
-	
 }
+
 #cheap_iron
 advanced_ore_roasting_processes = {
 	limit = { cheap_iron = 1 }
@@ -817,10 +778,8 @@ advanced_ore_roasting_processes = {
 			copper = 0.2
 		}
 	}
-	
-	
-	
 }
+
 advanced_ore_grinding_processes = {
 	limit = { cheap_iron = 1 }
 	news = no
@@ -842,10 +801,8 @@ advanced_ore_grinding_processes = {
 			copper = 0.25
 		}
 	}
-	
-	
-	
 }
+
 advanced_ore_smelting_processes = {
 	limit = { cheap_iron = 1 }
 	news = no
@@ -867,10 +824,8 @@ advanced_ore_smelting_processes = {
 			copper = 0.5
 		}
 	}
-	
-	
-	
 }
+
 bessemer_steel = {
 	limit = { cheap_iron = 1 }
 	news = no
@@ -882,10 +837,8 @@ bessemer_steel = {
 			steel = 0.1
 		}
 	}
-	
-	
-	
 }
+
 #cheap_steel
 martin_steel = {
 	limit = { cheap_steel = 1 }
@@ -902,10 +855,8 @@ martin_steel = {
 			steel = 0.1
 		}
 	}
-	
-	
-	
 }
+
 thomas_steel = {
 	limit = { cheap_steel = 1 }
 	news = no
@@ -921,10 +872,8 @@ thomas_steel = {
 			steel = 0.03
 		}
 	}
-	
-	
-	
 }
+
 #advanced_metallurgy
 electric_rolling_techniques = {
 	limit = { advanced_metallurgy = 1 }
@@ -945,10 +894,8 @@ electric_rolling_techniques = {
 			steel = 0.03
 		}
 	}
-	
-	
-	
 }
+
 steel_alloys = {
 	limit = { advanced_metallurgy = 1 }
 	news = no
@@ -963,12 +910,9 @@ steel_alloys = {
 	factory_goods_output = {
 		steel = 0.03
 		}
-
 	}
-	
-	
-	
 }
+
 #electric_furnace
 stainless_steel = {
 	limit = { electric_furnace = 1 }
@@ -981,10 +925,8 @@ stainless_steel = {
 			steel = 0.1
 		}
 	}
-	
-	
-	
 }
+
 #experimental_railroad
 #early_railroad
 #iron_railroad
@@ -1002,10 +944,8 @@ combat_medicine = {
 		land_attrition = -0.05 
 		soldier_to_pop_loss = 0.01
 	}
-	
-	
-	
 }
+
 aerial_bacteria_and_antiseptic_principle = {
 	limit = { medicine = 1 }
 	news = no
@@ -1041,10 +981,8 @@ chemotherapy = {
 	effect = {
 		land_attrition = -0.05  
 	}
-	
-	
-	
 }
+
 genetics_heredity = {
 	limit = { medicine = 1 }
 	news = no
@@ -1058,10 +996,8 @@ genetics_heredity = {
 	effect = {
 		pop_growth = 0.0001
 	}
-	
-	
-	
 }
+
 clinical_thermometers_and_binaural_stethoscopes = {
 	limit = { medicine = 1 }
 	news = no
@@ -1075,10 +1011,8 @@ clinical_thermometers_and_binaural_stethoscopes = {
 	effect = {
 		land_attrition = -0.02 
 	}
-	
-	
-	
 }
+
 prophylaxis_against_malaria = {
 	limit = { medicine = 1 }
 	chance = {
@@ -1115,10 +1049,8 @@ pressure_chambers_for_thorax_surgery = {
 	effect = {
 		shared_prestige = 10 
 	}
-	
-	
-	
 }
+
 #inorganic_chemistry
 artificial_fertilizers = {
 	limit = { inorganic_chemistry = 1 }
@@ -1142,14 +1074,12 @@ artificial_fertilizers = {
 		rgo_goods_throughput = {
 			spices = 0.5
 		}
-	factory_goods_output = {
-		fertilizer = 0.02
+		factory_goods_output = {
+			fertilizer = 0.02
 		}
 	}
-	
-	
-	
 }
+
 nitroglycerin = {
 	limit = { inorganic_chemistry = 1 }
 	news = no
@@ -1161,10 +1091,8 @@ nitroglycerin = {
 			explosives = 0.02
 		} 
 	}
-	
-	
-	
 }
+
 chemical_wood_pulp_process = {
 	limit = { inorganic_chemistry = 1 }
 	news = no
@@ -1176,10 +1104,8 @@ chemical_wood_pulp_process = {
 			paper = 0.02
 		} 
 	}
-	
-	
-	
 }
+
 rubber_vulcanization = {
 	limit = { inorganic_chemistry = 1 }
 	news = no
@@ -1191,10 +1117,8 @@ rubber_vulcanization = {
 			rubber = 1
 		} 
 	}
-	
-	
-	
 }
+
 catalytic_fermentative_process = {
 	limit = { inorganic_chemistry = 1 }
 	news = no
@@ -1206,10 +1130,8 @@ catalytic_fermentative_process = {
 			wine = 0.02
 		} 
 	}
-	
-	
-	
 }
+
 #organic_chemistry
 synthetic_dye = {
 	limit = { inorganic_chemistry = 1 }
@@ -1217,17 +1139,15 @@ synthetic_dye = {
 	chance = {
 		base = 6
 		modifier = {
-			factor = -10 
+			factor = -5
 			civilized = no
 		}
 	}
 	effect = {
 		activate_building = dye_factory 
 	}
-	
-	
-	
 }
+
 gaslights = {
 	limit = { organic_chemistry = 1 }
 	news = no
@@ -1235,12 +1155,11 @@ gaslights = {
 		base = 6
 	}
 	effect = {
+		factory_cost = 0.05
 		factory_throughput = 0.05
 	}
-	
-	
-	
 }
+
 carbon_soil_enrichment = {
 	limit = { organic_chemistry = 1 }
 	news = no
@@ -1251,31 +1170,27 @@ carbon_soil_enrichment = {
 		rgo_goods_throughput = {
 			grain = 0.5
 		}
-	factory_goods_output = {
-		fertilizer = 0.02
+		factory_goods_output = {
+			fertilizer = 0.02
 		}
 	}
-	
-	
-	
 }
+
 cracking = {
 	limit = { organic_chemistry = 1 }
 	news = no
 	chance = {
 		base = 6
 		modifier = {
-			factor = -10 
+			factor = -5
 			civilized = no
 		}
 	}
 	effect = {
 		activate_building = fuel_refinery 
 	}
-	
-	
-	
 }
+
 #electricity
 x_rays = {
 	limit = { electricity = 1 }
@@ -1286,35 +1201,49 @@ x_rays = {
 	effect = {
 		land_attrition = -0.02 
 	}
-	
-	
-	
 }
+
 edison_light_bulb = {
 	limit = { electricity = 1 }
 	news = no
 	chance = {
-		base = 6
+		base = 10
 		modifier = {
-			factor = -10 
+			factor = -10
 			civilized = no
 		}
 	}
 	effect = {
 		activate_building = electric_gear_factory 
 	}
-	
-	
-	
 }
+
 Power_transformer = {
 	limit = { electricity = 1 }
 	news = no
 	chance = {
-		base = 6
+		base = 2
+		modifier = {
+			factor = 2
+			average_consciousness = 3
+		}
 		modifier = {
 			factor = -10 
 			civilized = no
+		}
+		modifier = {
+			factor = -10
+			not = { invention = edison_light_bulb }
+		}
+		modifier = {
+			factor = -3
+			not = { 
+				any_owned_province = {
+					state_scope = {
+						has_building = electric_gear_factory
+					}
+				}
+			}
 		}
 	}
 	effect = {
@@ -1326,10 +1255,28 @@ bell_n_greys_telephones = {
 	limit = { electricity = 1 }
 	news = no
 	chance = {
-		base = 6
+		base = 2
+		modifier = {
+			factor = 2
+			average_consciousness = 3
+		}
 		modifier = {
 			factor = -10 
 			civilized = no
+		}
+		modifier = {
+			factor = -10
+			not = { invention = edison_light_bulb }
+		}
+		modifier = {
+			factor = -3
+			not = { 
+				any_owned_province = {
+					state_scope = {
+						has_building = electric_gear_factory
+					}
+				}
+			}
 		}
 	}
 	effect = {
@@ -1367,7 +1314,6 @@ nylon = {
 		activate_building = synthetic_silk_factory
 	}
 }
-
 
 bakelite = {
 	limit = { synthetic_polymers = 1 }

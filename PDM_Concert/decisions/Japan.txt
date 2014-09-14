@@ -309,7 +309,7 @@ political_decisions = {
 				}
 				owner = {
 					economic_reform = interactive
-					activate_technology = early_classical_theory_and_critique
+					activate_technology = classicism_n_early_romanticism
 				}
 			}
 			random_owned = {
@@ -480,7 +480,7 @@ political_decisions = {
 				}
 				owner = {
 					economic_reform = interactive
-					activate_technology = early_classical_theory_and_critique
+					activate_technology = classicism_n_early_romanticism
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1191,7 +1191,7 @@ political_decisions = {
 				remove_core = FJN
 				change_province_name = "Takao"
 				state_scope = {
-					change_region_name = "Takasogo"
+					change_region_name = "Takasago"
 				}
 			}
 			set_country_flag = taiwan_administration

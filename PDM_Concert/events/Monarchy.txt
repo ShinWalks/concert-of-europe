@@ -1489,6 +1489,93 @@ country_event = {
 				}
 				is_primary_culture = yes
 				location = { is_colonial = no }
+				country = {
+					vote_franschise = none_voting
+				}
+			}
+			dominant_issue = {
+				factor = 0.05
+				value = landed_voting
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = liberal
+			}
+		}		
+		any_pop = {
+			limit = {
+				OR = {
+					strata = poor
+					strata = middle
+				}
+				is_primary_culture = yes
+				location = { is_colonial = no }
+				country = {
+					vote_franschise = landed_voting
+				}
+			}
+			dominant_issue = {
+				factor = 0.05
+				value = wealth_weighted_voting
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = liberal
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					strata = poor
+					strata = middle
+				}
+				is_primary_culture = yes
+				location = { is_colonial = no }
+				country = {
+					vote_franschise = wealth_weighted_voting
+				}
+			}
+			dominant_issue = {
+				factor = 0.05
+				value = wealth_voting
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = liberal
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					strata = poor
+					strata = middle
+				}
+				is_primary_culture = yes
+				location = { is_colonial = no }
+				country = {
+					vote_franschise = wealth_voting
+				}
+			}
+			dominant_issue = {
+				factor = 0.05
+				value = universal_weighted_voting
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = liberal
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					strata = poor
+					strata = middle
+				}
+				is_primary_culture = yes
+				location = { is_colonial = no }
+				country = {
+					vote_franschise = universal_weighted_voting
+				}
 			}
 			dominant_issue = {
 				factor = 0.05
@@ -1498,7 +1585,7 @@ country_event = {
 				factor = 2
 				ideology = liberal
 			}
-		}					
+		}
 		ai_chance = {
 			factor = 40
 			modifier = {

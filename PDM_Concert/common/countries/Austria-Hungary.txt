@@ -1,4 +1,6 @@
 color = { 251  251  221 }
+proletarian_dictatorship = { 145 10 15 }
+fascist_dictatorship = { 45 30 35 }
 graphical_culture = AustriaHungaryGC
 
 party = {

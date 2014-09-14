@@ -249,6 +249,7 @@ political_reforms = {
 	}
 	upper_house_composition = {
 		administrative = yes
+		next_step_only = yes
 		party_appointed = {
 			rules = { same_as_ruling_party = yes }
 			allow = {
@@ -272,6 +273,7 @@ political_reforms = {
 		}
 	}
 	voting_system = {
+		next_step_only = yes
 		first_past_the_post = {
 			rules = { largest_share = yes }
 			allow = {
@@ -297,7 +299,7 @@ political_reforms = {
 			global_pop_consciousness_modifier = -0.01
 		}
 		yes_meeting = {
-			issue_change_speed = 0.25
+			issue_change_speed = 0.5
 			global_immigrant_attract = 0.05
 		}
 	}
@@ -312,13 +314,13 @@ political_reforms = {
 		censored_press = {
 			literacy_con_impact = 0.5
 			suppression_points_modifier = -0.25
-			issue_change_speed = 0.25
+			issue_change_speed = 0.5
 		}
 		free_press = {
 			literacy_con_impact = 1
 			suppression_points_modifier = -0.50
 			cb_generation_speed_modifier = -0.1
-			issue_change_speed = 0.5
+			issue_change_speed = 1
 			global_immigrant_attract = 0.05
 			global_pop_consciousness_modifier = 0.01
 		}
@@ -384,6 +386,7 @@ political_reforms = {
 		}
 	}
 	immigration_policy = {
+		next_step_only = yes
 		nobody_gets_out = {
 			global_immigrant_attract = -1.0
 		}
@@ -675,6 +678,7 @@ social_reforms = {
 			factory_maintenance = 0.1
 			administrative_multiplier = 1
 			global_immigrant_attract = 0.05
+			global_population_growth = 0.0005
 			social_reform_desire = -0.025
 			political_reform_desire = -0.025
 		}
@@ -682,7 +686,7 @@ social_reforms = {
 			factory_maintenance = 0.2
 			administrative_multiplier = 2
 			global_immigrant_attract = 0.1
-			global_population_growth = 0.0005
+			global_population_growth = 0.001
 			social_reform_desire = -0.05
 			political_reform_desire = -0.05
 		}
@@ -690,7 +694,7 @@ social_reforms = {
 			factory_maintenance = 0.3
 			administrative_multiplier = 3
 			global_immigrant_attract = 0.15
-			global_population_growth = 0.001
+			global_population_growth = 0.0015
 			social_reform_desire = -0.075
 			political_reform_desire = -0.075
 			global_pop_consciousness_modifier = -0.01
@@ -699,7 +703,7 @@ social_reforms = {
 			factory_maintenance = 0.4
 			administrative_multiplier = 4
 			global_immigrant_attract = 0.2
-			global_population_growth = 0.0015
+			global_population_growth = 0.002
 			social_reform_desire = -0.1
 			political_reform_desire = -0.1
 			global_pop_consciousness_modifier = -0.02
