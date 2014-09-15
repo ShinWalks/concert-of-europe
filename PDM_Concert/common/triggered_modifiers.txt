@@ -40,7 +40,7 @@ dutch_east_india = {
 	icon = 19
 }
 
-populationsize_25k  = {
+populationsize_25k = {
 	trigger = {
 		total_pops = 6250
 		NOT = {
@@ -54,7 +54,7 @@ populationsize_25k  = {
 	icon = 11
 }
 
-populationsize_50k  = {
+populationsize_50k = {
 	trigger = {
 		total_pops = 12500
 		NOT = {

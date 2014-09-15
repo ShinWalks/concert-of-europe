@@ -193,13 +193,13 @@ EVTNAME666942;Machine Tools in $COUNTRYNAME$;;;;;;;;;;;;x,,
 EVTDESC666942;Mother! Mother! Father says that they've got new tools in the mine!'\n\nWith the invention of machine tools, mines are slowly being fitted with new and efficient tools to aid the excavation of the slumbering riches below the surface. Mine efficiency and size has been increased in $COUNTRYNAME$ on account of this.;;;;;;;;;;;;x,,
 EVTOPTA666942;Let us not dig too deep and greedily, though.;;;;;;;;;;;;x,,
 EVTNAME666950;Early Shaft Mining in $COUNTRYNAME$;;;;;;;;;;;;x,,
-EVTDESC666950;Strip mining has been adopted throughout $COUNTRYNAME$.;;;;;;;;;;;;x,,
+EVTDESC666950;Shaft mining has been adopted throughout $COUNTRYNAME$.;;;;;;;;;;;;x,,
 EVTOPTA666950;Excellent;;;;;;;;;;;;x,,
 EVTNAME666951;Improved Shaft Mining in $COUNTRYNAME$;;;;;;;;;;;;x,,
-EVTDESC666951;Strip mining has been adopted throughout $COUNTRYNAME$.;;;;;;;;;;;;x,,
+EVTDESC666951;Shaft mining has been adopted throughout $COUNTRYNAME$.;;;;;;;;;;;;x,,
 EVTOPTA666951;Excellent;;;;;;;;;;;;x,,
 EVTNAME666952;Shaft Mining in $COUNTRYNAME$;;;;;;;;;;;;x,,
-EVTDESC666952;Strip mining has been adopted throughout $COUNTRYNAME$.;;;;;;;;;;;;x,,
+EVTDESC666952;Shaft mining has been adopted throughout $COUNTRYNAME$.;;;;;;;;;;;;x,,
 EVTOPTA666952;Excellent;;;;;;;;;;;;x,,
 EVTNAME666960;Early Pit Mining in $COUNTRYNAME$;;;;;;;;;;;;x,,
 EVTDESC666960;Pit mining has been adopted throughout $COUNTRYNAME$.;;;;;;;;;;;;x,,
@@ -322,7 +322,7 @@ EVTNAME555025;End of Charismatic Leader - Assassination;;;;;;;;;;;;x,,
 EVTDESC555025;Special edition! Charismatic leader assassinated! Perpetrators shot by the police! Protests and riots all over the country!\n\nOur charismatic leader was killed tonight while out for a stroll in $CAPITAL$. Multiple attackers fired at him from a dark alleyway, slaying him on the spot. A police patrol near the crime scene chased the perpetrators to their hideout and after a prolonged firefight, all attackers were killed. It is unknown who had hired the goons, but needless to say the list of potential suspects is very long...;;;;;;;;;;;;x,,
 EVTOPTA555025;A tragedy!;;;;;;;;;;;;x,,
 EVTNAME555026;End of Charismatic Leader - Discredited;;;;;;;;;;;;x,,
-EVTDESC555026;Today we received an anonymous package, containing evidence that our charismatic leader isn't really the saint he seems to be. On the one hand, we could use this to destroy his credibility, but many will suspect a setup and public outrage might occur. On the other hand, we could simply ignore the matter. What shall we do?;;;;;;;;;;;;x,,
+EVTDESC555026;Today we received an anonymous package, containing evidence that our charismatic leader isn't really the saint he seems to be. On the one hand, we could use this to destroy his credibility, but many will suspect a set-up and public outrage might occur. On the other hand, we could simply ignore the matter. What shall we do?;;;;;;;;;;;;x,,
 EVTOPTA555026;Use the evidence to get rid of him;;;;;;;;;;;;x,,
 EVTOPTB555026;We will not resort to such cowardly tactics;;;;;;;;;;;;x,,
 EVTNAME555027;End of Charismatic Leader - Retired;;;;;;;;;;;;x,,
@@ -462,14 +462,14 @@ EVTDESC555059;A historical event took place today, with the fascist and the reac
 EVTDESC555060;Many nasty words had been spoken and many terrible deeds had been done, but it seems that the quarrel within the party was finally resolved. Most of the remaining members have come to terms with each other and it looks like that the party can finally ''get back to business''.;;;;;;;;;;;;x,,
 EVTDESC555061;The wounds will heal in time, as will the entire world. The sacrifices have been made. Just as the party members discarded their hatreds and stood united against a common political foe, so did their supporters to banish the Shadow forever.;;;;;;;;;;;;x,,
 EVTDESC555062;Today party officials announced the end of the alliance between their two parties. There had been significant disagreement on several issues in the recent past, so this is hardly a surprise for most people. In fact, many wonder how the cooperative agreement between the two parties could actually last that long.;;;;;;;;;;;;x,,
-EVTOPTA555030;Though times for the conservatives;;;;;;;;;;;;x,,
-EVTOPTA555031;Though times for the liberals;;;;;;;;;;;;x,,
-EVTOPTA555032;Though times for the reactionaries;;;;;;;;;;;;x,,
-EVTOPTA555033;Though times for the anarcho-liberals;;;;;;;;;;;;x,,
-EVTOPTA555034;Though times for the socialists;;;;;;;;;;;;x,,
-EVTOPTA555035;Though times for the communists;;;;;;;;;;;;x,,
-EVTOPTA555036;Though times for the fascists;;;;;;;;;;;;x,,
-EVTOPTA555037;Though times for the social liberals;;;;;;;;;;;;x,,
+EVTOPTA555030;Tough times for the conservatives;;;;;;;;;;;;x,,
+EVTOPTA555031;Tough times for the liberals;;;;;;;;;;;;x,,
+EVTOPTA555032;Tough times for the reactionaries;;;;;;;;;;;;x,,
+EVTOPTA555033;Tough times for the anarcho-liberals;;;;;;;;;;;;x,,
+EVTOPTA555034;Tough times for the socialists;;;;;;;;;;;;x,,
+EVTOPTA555035;Tough times for the communists;;;;;;;;;;;;x,,
+EVTOPTA555036;Tough times for the fascists;;;;;;;;;;;;x,,
+EVTOPTA555037;Tough times for the social liberals;;;;;;;;;;;;x,,
 EVTOPTA555038;Cry me a river;;;;;;;;;;;;x,,
 EVTOPTA555040;This does not bode well for them...;;;;;;;;;;;;x,,
 EVTOPTA555041;This does not bode well for them...;;;;;;;;;;;;x,,
@@ -872,3 +872,25 @@ pit_mining_invention;Pit Mining (#);;;;;;;;;;;;
 pit_mining_invention_desc;"Open-pit mining is a surface mining technique of extracting rock or minerals from the earth by their removal from an open pit or borrow. This form of mining differs from extractive methods that require tunnelling into the earth such as long wall mining. Open-pit mines are used when deposits of commercially useful minerals or rock are found near the surface; that is, where the overburden (surface material covering the valuable deposit) is relatively thin or the material of interest is structurally unsuitable for tunnelling (as would be the case for sand, cinder, and gravel).";;;;;;;;;;;;
 strip_mining_invention;Strip Mining (#);;;;;;;;;;;;
 strip_mining_invention_desc;Strip mining is the practice of mining a seam of mineral, by first removing a long strip of overlying soil and rock (the overburden). It is most commonly used to mine coal and lignite (brown coal). Strip mining is only practical when the ore body to be excavated is relatively near the surface. This type of mining uses some of the largest machines on earth, including bucket-wheel excavators which can move as much as 12,000 cubic meters of earth per hour.;;;;;;;;;;;;
+social_dissent;Social Dissent;;;;;;;;;;;;x,,
+social_tensions;Social Tensions;;;;;;;;;;;;x,,
+social_disorder;Social Disorder;;;;;;;;;;;;x,,
+social_chaos;Social Chaos;;;;;;;;;;;;x,,
+populationsize_25k;Population 25k;;;;;;;;;;;;x
+populationsize_25k_desc;Our population has reached twenty-five thousand people.;;;;;;;;;;;;x
+populationsize_50k;Population 50k;;;;;;;;;;;;x
+populationsize_50k_desc;Our population has reached fifty thousand people.;;;;;;;;;;;;x
+populationsize_250k;Population 250k;;;;;;;;;;;;x
+populationsize_250k_desc;Our population has reached two hundred fifty thousand people.;;;;;;;;;;;;x
+populationsize_500k;Population 500k;;;;;;;;;;;;x
+populationsize_500k_desc;Our population has reached five hundred thousand people.;;;;;;;;;;;;x
+populationsize_2_5M;Population 2.5 Million;;;;;;;;;;;;x
+populationsize_2_5M_desc;Our population has reached two and a half million people.;;;;;;;;;;;;x
+populationsize_5M;Population 5 Million;;;;;;;;;;;;x
+populationsize_5M_desc;Our population has reached five million people.;;;;;;;;;;;;x
+populationsize_25M;Population 25 Million;;;;;;;;;;;;x
+populationsize_25M_desc;Our population has reached twenty-five million people.;;;;;;;;;;;;x
+populationsize_50M;Population 50 Million;;;;;;;;;;;;x
+populationsize_50M_desc;Our population has reached fifty million people.;;;;;;;;;;;;x
+populationsize_200M;Population 200 Million;;;;;;;;;;;;x
+populationsize_200M_desc;Our population has reached two hundred million people.;;;;;;;;;;;;x
