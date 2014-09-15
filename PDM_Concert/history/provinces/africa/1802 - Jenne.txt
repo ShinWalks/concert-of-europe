@@ -1,0 +1,7 @@
+owner = SEG
+controller = SEG
+add_core = SEG
+add_core = MAS
+trade_goods = lead
+life_rating = 30
+terrain = floodplain_farmland

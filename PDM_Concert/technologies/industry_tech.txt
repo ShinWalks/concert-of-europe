@@ -4,6 +4,7 @@ water_wheel_power = {
 	year = 1821
 	cost = 4500
 	rgo_throughput = 0.05
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -89,6 +90,7 @@ practical_steam_engine = {
 	year = 1825
 	cost = 7600
 	rgo_throughput = 0.1
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -176,6 +178,7 @@ high_n_low_pressure_steam_engines = {
 	year = 1850
 	cost = 10000
 	rgo_throughput = 0.1
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -264,6 +267,7 @@ steam_turbine = {
 	year = 1860
 	cost = 12500
 	rgo_throughput = 0.1
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -342,9 +346,10 @@ steam_turbine = {
 combustion_engine = {
 	area = tech_power
 	year = 1880
-	cost = 18000
+	cost = 20000
 	rgo_throughput = 0.1
-	pop_growth = -0.0001 
+	pop_growth = -0.0001
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -426,8 +431,9 @@ combustion_engine = {
 electrical_power_generation = {
 	area = tech_power
 	year = 1900
-	cost = 27000
+	cost = 30000
 	rgo_throughput = 0.1
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -502,6 +508,7 @@ publishing_industry = {
 	area = mechanization
 	year = 1821
 	cost = 4500
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -581,6 +588,7 @@ mechanical_production = {
 	area = mechanization
 	year = 1830
 	cost = 7600
+	factory_cost = 0.05
 	factory_throughput = 0.05
 	factory_goods_throughput = {
 		shares = -0.05
@@ -588,6 +596,7 @@ mechanical_production = {
 	factory_goods_throughput = {
 		financial_services = -0.05
 	}
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -670,14 +679,15 @@ interchangeable_parts = {
 	area = mechanization
 	year = 1850
 	cost = 10000
-	factory_throughput = 0.05 
 	factory_cost = 0.05
+	factory_throughput = 0.05 
 	factory_goods_throughput = {
 		shares = -0.05
 	}
 	factory_goods_throughput = {
 		financial_services = -0.05
 	}
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -764,7 +774,7 @@ semi_automatization = {
 	area = mechanization
 	year = 1870
 	cost = 12500
-	factory_cost = 0.05
+	factory_cost = 0.1
 	factory_throughput = 0.1 
 	factory_goods_throughput = {
 		shares = -0.05
@@ -772,6 +782,7 @@ semi_automatization = {
 	factory_goods_throughput = {
 		financial_services = -0.05
 	}
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -853,7 +864,7 @@ semi_automatization = {
 assembly_line = {
 	area = mechanization
 	year = 1880
-	cost = 18000
+	cost = 20000
 	factory_cost = 0.1 
 	factory_throughput = 0.1 
 	factory_goods_throughput = {
@@ -862,6 +873,7 @@ assembly_line = {
 	factory_goods_throughput = {
 		financial_services = -0.1
 	}
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -950,7 +962,8 @@ assembly_line = {
 shift_work = {
 	area = mechanization
 	year = 1900
-	cost = 27000
+	cost = 30000
+	factory_cost = 0.1
 	factory_throughput = 0.1 
 	factory_goods_throughput = {
 		shares = -0.1
@@ -958,6 +971,7 @@ shift_work = {
 	factory_goods_throughput = {
 		financial_services = -0.1
 	}
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -1032,7 +1046,6 @@ shift_work = {
 	}
 }
 
-
 #metallurgy
 mechanized_mining = {
 	area = metallurgy
@@ -1042,11 +1055,12 @@ mechanized_mining = {
 		coal = 0.5
 	}
 	rgo_goods_throughput = {
-		copper = 1
+		copper = 0.5
 	}
 	rgo_goods_throughput = {
-		lead = 1
+		lead = 0.5
 	}
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -1131,6 +1145,14 @@ mechanized_mining = {
 			factor = 1.5
 			tech_school = japanese_tech_school
 		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			is_secondary_power = yes
+		}
 	}
 }
 
@@ -1156,6 +1178,7 @@ clean_coal = {
 	rgo_goods_throughput = {
 		lead = 0.2
 	}
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -1244,6 +1267,14 @@ clean_coal = {
 			factor = 1.5
 			tech_school = japanese_tech_school
 		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			is_secondary_power = yes
+		}
 	}
 }
 
@@ -1252,26 +1283,30 @@ cheap_iron = {
 	year = 1850
 	cost = 10000
 	rgo_goods_throughput = {
-		precious_metal = 0.05
+		precious_metal = 0.025
 	}
 	rgo_goods_throughput = {
-		iron = 2
+		iron = 1
 	}
 	rgo_goods_throughput = {
-		sulphur = 0.5
+		sulphur = 0.25
 	}
 	rgo_goods_throughput = {
-		coal = 0.5
+		coal = 1
 	}
 	factory_goods_throughput = {
 		steel = 0.05 
+	}
+	factory_goods_output = {
+		bronze = 0.05 
 	}
 	rgo_goods_throughput = {
 		copper = 0.5
 	}
 	rgo_goods_throughput = {
-		lead = 0.5
+		lead = 0.25
 	}
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -1363,6 +1398,14 @@ cheap_iron = {
 			factor = 1.5
 			tech_school = japanese_tech_school
 		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			is_secondary_power = yes
+		}
 	}
 }
 
@@ -1391,6 +1434,10 @@ cheap_steel = {
 	factory_goods_output = {
 		steel = 0.2
 	}
+	factory_goods_output = {
+		bronze = 0.2 
+	}
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -1482,28 +1529,46 @@ cheap_steel = {
 			factor = 1.5
 			tech_school = japanese_tech_school
 		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			is_secondary_power = yes
+		}
 	}
 }
 
 advanced_metallurgy = {
 	area = metallurgy
 	year = 1880
-	cost = 18000
+	cost = 20000
 	rgo_goods_throughput = {
-		iron = 1
+		oil = 2
 	}
 	rgo_goods_throughput = {
-		sulphur = 1
+		iron = 2
+	}
+	rgo_goods_throughput = {
+		sulphur = 2
 	}
 	factory_goods_throughput = {
 		steel = 0.1 
 	}
-	rgo_goods_throughput = {
-		copper = 1
+	factory_goods_throughput = {
+		bronze = 0.1 
 	}
 	rgo_goods_throughput = {
-		lead = 1
+		copper = 2
 	}
+	rgo_goods_throughput = {
+		lead = 2
+	}
+	rgo_goods_throughput = {
+		coal = 2
+	}
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -1596,31 +1661,46 @@ advanced_metallurgy = {
 			factor = 1.5
 			tech_school = japanese_tech_school
 		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			is_secondary_power = yes
+		}
 	}
 }
 
 electric_furnace = {
 	area = metallurgy
 	year = 1900
-	cost = 27000
+	cost = 30000
 	rgo_goods_throughput = {
-		coal = 4
+		coal = 2
 	}
 	rgo_goods_throughput = {
-		iron = 4
+		iron = 2
 	}
 	factory_goods_output = {
 		steel = 0.05 
 	}
-	rgo_goods_throughput = {
-		copper = 4
+	factory_goods_output = {
+		bronze = 0.05 
 	}
 	rgo_goods_throughput = {
-		lead = 4
+		copper = 2
 	}
 	rgo_goods_throughput = {
-		oil = 4
+		lead = 2
 	}
+	rgo_goods_throughput = {
+		oil = 2
+	}
+	rgo_goods_throughput = {
+		sulphur = 2
+	}
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -1709,15 +1789,23 @@ electric_furnace = {
 			factor = 1.5
 			tech_school = japanese_tech_school
 		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			is_secondary_power = yes
+		}
 	}
 }
-
 
 #tech_infrastructure
 experimental_railroad = {
 	area = tech_infrastructure
 	year = 1821
 	cost = 4500
+	
 	ai_chance = {
 		factor = 500
 		modifier = {
@@ -1805,6 +1893,7 @@ early_railroad = {
 	area = tech_infrastructure
 	year = 1840
 	cost = 7600
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -1896,6 +1985,7 @@ iron_railroad = {
 	area = tech_infrastructure
 	year = 1860
 	cost = 10000
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -1987,6 +2077,7 @@ steel_railroad = {
 	area = tech_infrastructure
 	year = 1880
 	cost = 12500
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -2077,7 +2168,8 @@ steel_railroad = {
 integral_rail_system = {
 	area = tech_infrastructure
 	year = 1900
-	cost = 18000
+	cost = 20000
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -2164,7 +2256,8 @@ integral_rail_system = {
 limited_access_roads = {
 	area = tech_infrastructure
 	year = 1919
-	cost = 27000
+	cost = 30000
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -2244,7 +2337,6 @@ limited_access_roads = {
 	}
 }
 
-
 #chemistry_and_electricity
 basic_chemistry = {
 	area = chemistry_and_electricity
@@ -2255,6 +2347,7 @@ basic_chemistry = {
 	rgo_goods_throughput = {
 		sulphur = 1
 	}
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -2352,6 +2445,7 @@ medicine = {
 	supply_limit = 0.25	
 	soldier_to_pop_loss = 0.01
 	pop_growth = 0.0001
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -2451,6 +2545,7 @@ inorganic_chemistry = {
 	rgo_goods_throughput = {
 		sulphur = 0.5
 	}
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -2547,6 +2642,7 @@ organic_chemistry = {
 	cost = 12500
 	supply_limit = 0.25
 	soldier_to_pop_loss = 0.01
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -2639,9 +2735,10 @@ organic_chemistry = {
 electricity = {
 	area = chemistry_and_electricity
 	year = 1880
-	cost = 18000
+	cost = 20000
 	supply_limit = 0.50
 	soldier_to_pop_loss = 0.01
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -2731,9 +2828,10 @@ electricity = {
 synthetic_polymers = {
 	area = chemistry_and_electricity
 	year = 1900
-	cost = 27000
+	cost = 30000
 	supply_limit = 0.50
 	soldier_to_pop_loss = 0.01
+	
 	ai_chance = {
 		factor = 5
 		modifier = {

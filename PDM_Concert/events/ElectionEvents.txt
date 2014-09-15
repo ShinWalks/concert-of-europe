@@ -19,6 +19,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { NOT = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -121,6 +122,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -192,6 +194,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -281,6 +284,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -338,6 +342,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -409,6 +414,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -490,6 +496,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -571,6 +578,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -659,6 +667,7 @@ country_event = {
 			NOT = { economic_policy = laissez_faire }
 		}
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -744,6 +753,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -824,6 +834,7 @@ country_event = {
 			NOT = { economic_policy = laissez_faire }
 		}
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -909,6 +920,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -1002,6 +1014,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -1083,6 +1096,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -1168,6 +1182,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -1253,6 +1268,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -1341,6 +1357,7 @@ country_event = {
 			NOT = { citizenship_policy = full_citizenship }
 		}
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -1422,6 +1439,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -1504,6 +1522,7 @@ country_event = {
 	trigger = {
 		any_owned_province = { jingoism = 5 }
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -1590,6 +1609,7 @@ country_event = {
 	trigger = {
 		has_pop_type = soldiers
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -1663,6 +1683,7 @@ country_event = {
 
 	trigger = {
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {
@@ -1749,6 +1770,7 @@ country_event = {
 	trigger = {
 		any_owned_province = { pacifism = 5 }
 		is_colonial = no
+		owner = { not = { has_country_flag = no_state_election_events } }
 	}
 	
 	option = {

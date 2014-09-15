@@ -604,7 +604,6 @@ country_event = {
 	title = "EVTNAME46325" #War of the Farrapos
 	desc = "EVTDESC46325"
 	picture = "Rebellion"
-	major = yes
 	
 	trigger = {
 		tag = BRZ
@@ -638,11 +637,50 @@ country_event = {
 			any_pop = { militancy = -6 }
 			leadership = 40
 		}
+		random_owned = {
+			limit = {
+				owner = { is_vassal = no }
+			}
+			owner = {
+				war = {
+					target = RGS
+					attacker_goal = {
+						casus_belli = annex_core_country
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { is_vassal = yes }
+			}
+			random_country = {
+				limit = {
+					is_our_vassal = BRZ
+				}
+				country_event = 46326
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 46326
+	title = "EVTNAME46325" #War of the Farrapos
+	desc = "EVTDESC46325"
+	picture = "Rebellion"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Those fools!"
 		war = {
 			target = RGS
 			attacker_goal = {
-				casus_belli = annex_core_country
+				casus_belli = liberate_country
+				country = BRZ
 			}
+			call_ally = yes
 		}
 	}
 }

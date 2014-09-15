@@ -1,0 +1,6 @@
+owner = NET
+controller = NET
+trade_goods = spices
+life_rating = 30
+terrain = jungle_mountains
+colonial = 1

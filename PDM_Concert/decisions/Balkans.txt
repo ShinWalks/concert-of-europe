@@ -608,8 +608,10 @@ political_decisions = {
 				limit = {
 					owner = { tag = BUL }
 				}
-				set_global_flag = bulgaria_in_yugoslavia
-				prestige = 5
+				owner = {
+					set_global_flag = bulgaria_in_yugoslavia
+					prestige = 5
+				}
 			}
 			all_core = { add_core = YUG }
 			SER = { all_core = { add_core = YUG } }

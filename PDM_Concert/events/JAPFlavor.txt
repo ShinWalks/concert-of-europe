@@ -201,7 +201,7 @@ country_event = {
 			}
 			owner = {
 				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
+				activate_technology = classicism_n_early_romanticism
 				any_pop = {
 					scaled_militancy = {
 						ideology = liberal
@@ -338,7 +338,7 @@ country_event = {
 			}
 			owner = {
 				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
+				activate_technology = classicism_n_early_romanticism
 				any_pop = {
 					scaled_militancy = {
 						ideology = liberal
@@ -1178,7 +1178,7 @@ country_event = {
 			}
 			owner = {
 				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
+				activate_technology = classicism_n_early_romanticism
 			}
 		}
 		random_owned = {
@@ -1415,7 +1415,7 @@ country_event = {
 			}
 			owner = {
 				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
+				activate_technology = classicism_n_early_romanticism
 			}
 		}
 		random_owned = {

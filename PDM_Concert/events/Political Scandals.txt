@@ -11,8 +11,7 @@ country_event = {
 	desc = "EVTDESC880130"
 	picture = "news"
 	
-	trigger = {
-		exists = yes
+	trigger = {	exists = yes
 		civilized = yes
 		NOT = {
 			press_rights = state_press
@@ -27,7 +26,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 750
 		modifier = {
 			factor = 0.75
 			election = yes
@@ -159,8 +158,7 @@ country_event = {
 	desc = "EVTDESC880140"
 	picture = "news"
 	
-	trigger = {
-		exists = yes
+	trigger = {	exists = yes
 		civilized = yes
 		NOT = {
 			press_rights = state_press
@@ -175,7 +173,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 750
 		modifier = {
 			factor = 0.75
 			election = yes
@@ -312,8 +310,7 @@ country_event = {
 	desc = "EVTDESC880150"
 	picture = "news"
 	
-	trigger = {
-		exists = yes
+	trigger = {	exists = yes
 		civilized = yes
 		NOT = {
 			press_rights = state_press
@@ -328,7 +325,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 750
 		modifier = {
 			factor = 0.75
 			election = yes
@@ -460,8 +457,7 @@ country_event = {
 	desc = "EVTDESC880160"
 	picture = "news"
 	
-	trigger = {
-		exists = yes
+	trigger = {	exists = yes
 		civilized = yes
 		is_ideology_enabled = anarcho_liberal
 		NOT = {
@@ -477,7 +473,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 750
 		modifier = {
 			factor = 0.75
 			election = yes
@@ -609,8 +605,7 @@ country_event = {
 	desc = "EVTDESC880170"
 	picture = "news"
 	
-	trigger = {
-		exists = yes
+	trigger = {	exists = yes
 		civilized = yes
 		is_ideology_enabled = socialist
 		NOT = {
@@ -626,7 +621,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 750
 		modifier = {
 			factor = 0.75
 			election = yes
@@ -759,8 +754,7 @@ country_event = {
 	desc = "EVTDESC880180"
 	picture = "news"
 	
-	trigger = {
-		exists = yes
+	trigger = {	exists = yes
 		civilized = yes
 		is_ideology_enabled = communist
 		NOT = {
@@ -776,7 +770,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 750
 		modifier = {
 			factor = 0.75
 			election = yes
@@ -909,8 +903,7 @@ country_event = {
 	desc = "EVTDESC880190"
 	picture = "news"
 	
-	trigger = {
-		exists = yes
+	trigger = {	exists = yes
 		civilized = yes
 		is_ideology_enabled = fascist
 		NOT = {
@@ -926,7 +919,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 750
 		modifier = {
 			factor = 0.75
 			election = yes
@@ -1058,8 +1051,7 @@ country_event = {
 	desc = "EVTDESC880200"
 	picture = "stortinget"
 	
-	trigger = {
-		exists = yes
+	trigger = {	exists = yes
 		OR = {
 			has_country_modifier = ruling_party_scandal
 			has_country_modifier = party_scandal_evidence
@@ -1169,8 +1161,7 @@ country_event = {
 	desc = "EVTDESC880210"
 	picture = "news"
 	
-	trigger = {
-		exists = yes
+	trigger = {	exists = yes
 		has_country_modifier = ruling_party_scandal
 		NOT = { has_country_modifier = party_scandal_evidence }
 		NOT = {
@@ -1180,7 +1171,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 40	
+		months = 36	
 		modifier = {
 			factor = 1.5
 			NOT = { average_consciousness = 2 }

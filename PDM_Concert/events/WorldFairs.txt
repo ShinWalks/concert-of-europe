@@ -34,7 +34,7 @@ country_event = {
 	
 	option = {
 		name = "A splendid idea!" # let's organize it
-		money = -25000
+		money = -250000
 		set_country_flag = PlanWorldFairbid
 		set_global_flag = WorldFairbidding
 		any_country = {
@@ -55,15 +55,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 100000 }
+				NOT = { money = 1000000 }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 50000 }
+				NOT = { money = 500000 }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { money = 1000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -121,7 +121,7 @@ country_event = {
 	
 	option = {
 		name = "A splendid idea!" # let's organize it
-		money = -25000
+		money = -250000
 		set_country_flag = PlanWorldFairbid
 		set_global_flag = WorldFairbidding
 		any_country = {
@@ -142,15 +142,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 100000 }
+				NOT = { money = 1000000 }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 50000 }
+				NOT = { money = 500000 }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { money = 1000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -208,7 +208,7 @@ country_event = {
 	
 	option = {
 		name = "A splendid idea!" # let's organize it
-		money = -25000
+		money = -250000
 		set_country_flag = PlanWorldFairbid
 		set_global_flag = WorldFairbidding
 		any_country = {
@@ -229,15 +229,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 100000 }
+				NOT = { money = 1000000 }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 50000 }
+				NOT = { money = 500000 }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { money = 1000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -295,7 +295,7 @@ country_event = {
 	
 	option = {
 		name = "A splendid idea!" # let's organize it
-		money = -25000
+		money = -250000
 		set_country_flag = PlanWorldFairbid
 		set_global_flag = WorldFairbidding
 		any_country = {
@@ -316,15 +316,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 100000 }
+				NOT = { money = 1000000 }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 50000 }
+				NOT = { money = 500000 }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { money = 1000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -382,7 +382,7 @@ country_event = {
 	
 	option = {
 		name = "A splendid idea!" # let's organize it
-		money = -25000
+		money = -250000
 		set_country_flag = PlanWorldFairbid
 		set_global_flag = WorldFairbidding
 		any_country = {
@@ -403,15 +403,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 100000 }
+				NOT = { money = 1000000 }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 50000 }
+				NOT = { money = 500000 }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { money = 1000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -469,7 +469,7 @@ country_event = {
 	
 	option = {
 		name = "A splendid idea!" # let's organize it
-		money = -25000
+		money = -250000
 		set_country_flag = PlanWorldFairbid
 		set_global_flag = WorldFairbidding
 		any_country = {
@@ -490,15 +490,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 100000 }
+				NOT = { money = 1000000 }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 50000 }
+				NOT = { money = 500000 }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { money = 1000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -556,7 +556,7 @@ country_event = {
 	
 	option = {
 		name = "A splendid idea!" # let's organize it
-		money = -25000
+		money = -250000
 		set_country_flag = PlanWorldFairbid
 		set_global_flag = WorldFairbidding
 		any_country = {
@@ -577,15 +577,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 100000 }
+				NOT = { money = 1000000 }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 50000 }
+				NOT = { money = 500000 }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { money = 1000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -643,7 +643,7 @@ country_event = {
 	
 	option = {
 		name = "A splendid idea!" # let's organize it
-		money = -25000
+		money = -250000
 		set_country_flag = PlanWorldFairbid
 		set_global_flag = WorldFairbidding
 		any_country = {
@@ -664,15 +664,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 100000 }
+				NOT = { money = 1000000 }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 50000 }
+				NOT = { money = 500000 }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { money = 1000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -730,7 +730,7 @@ country_event = {
 	
 	option = {
 		name = "A splendid idea!" # let's organize it
-		money = -25000
+		money = -250000
 		set_country_flag = PlanWorldFairbid
 		set_global_flag = WorldFairbidding
 		any_country = {
@@ -751,15 +751,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 100000 }
+				NOT = { money = 1000000 }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 50000 }
+				NOT = { money = 500000 }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { money = 1000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -798,7 +798,7 @@ country_event = {
  
 	option = {
 		name = "A splendid idea!" # let's organize it
-		money = -25000
+		money = -250000
 		set_country_flag = PlanWorldFairbid
 		set_global_flag = WorldFairbidding
 		ai_chance = {
@@ -809,15 +809,15 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 100000 }
+				NOT = { money = 1000000 }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { money = 50000 }
+				NOT = { money = 500000 }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { money = 1000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -956,7 +956,7 @@ country_event = {
 	
 	option = {
 		name = "Oh well. We shall attend, anyway."
-		money = -5000
+		money = -50000
 		set_country_flag = PlanWorldFairteam
 		ai_chance = {
 			factor = 50
@@ -1099,7 +1099,7 @@ country_event = {
 	option = {
 		name = "It must be magnificent! No expenses to be spared"
 		set_country_flag = magnificent_fair
-		money = -30000	
+		money = -300000	
 		change_variable = {
 			which = boycotts
 			value = -1
@@ -1108,13 +1108,13 @@ country_event = {
 	
 	option = {
 		name = "Be prudent, but provide a true spectacle"
-		money = -15000	
+		money = -150000	
 	}
 	
 	option = {
 		name = "Do it on a shoestring, no-one need know."
 		set_country_flag = shoestring_fair
-		money = -5000	
+		money = -50000	
 		change_variable = {
 			which = boycotts
 			value = 1
@@ -1135,7 +1135,7 @@ country_event = {
 	}
  
 	mean_time_to_happen =  {
-		months = 15
+		months = 20
 		modifier = {
 			factor = 2
 			has_country_flag = world_fair_accounting
@@ -1144,12 +1144,17 @@ country_event = {
 			factor = 0.8
 			has_country_flag = magnificent_fair
 		}
+		modifier = {
+			factor = 2
+			has_country_flag = PlanWorldFairX
+		}
 	}
 	
 	option = {
 		name = "Aaaargh!"
 		set_country_flag = world_fair_accounting
-		money = -30000	
+		money = -300000
+		set_country_flag = PlanWorldFairX
 		change_variable = {
 			which = boycotts
 			value = 1
@@ -1170,7 +1175,7 @@ country_event = {
 	}
  
 	mean_time_to_happen =  {
-		months = 15
+		months = 20
 		modifier = {
 			factor = 2
 			has_country_flag = slowconstruction
@@ -1178,11 +1183,16 @@ country_event = {
 		modifier = {
 			factor = 0.8
 			has_country_flag = shoestring_fair
-		}	
+		}
+		modifier = {
+			factor = 2
+			has_country_flag = PlanWorldFairX
+		}
 	}
 	
 	option = {
-		name = "aaaargh!"
+		name = "Aaaargh!"
+		set_country_flag = PlanWorldFairX
 		money = -30000	
 		set_country_flag = slowconstruction 
 	}
@@ -1211,6 +1221,7 @@ country_event = {
 	
 	immediate = {
 		clr_country_flag = PlanWorldFair2
+		clr_country_flag = PlanWorldFairX
 		clr_country_flag = slowconstruction
 		clr_country_flag = world_fair_accounting
 		set_country_flag = atworldfair
@@ -1265,7 +1276,7 @@ country_event = {
 	
 	option = {
 		name = "Damnation!"
-		money = -5000	
+		money = -50000	
 		prestige = -10
 	}
 }
@@ -1323,7 +1334,7 @@ country_event = {
 	
 	option = {
 		name = "Hooray!"
-		money = 5000	
+		money = 50000	
 		prestige = 10
 		random_country = {
 			limit = { has_country_flag = PlanWorldFair }
@@ -1509,7 +1520,7 @@ country_event = {
 	
 	option = {
 		name = "Outrageous! Fire everyone!"
-		prestige = -25
+		prestige = -15
 	}
 }
 
@@ -1594,7 +1605,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA30000" # let's organize it
-		money = -25000
+		money = -250000
 		set_global_flag = PlanRegionalFair
 		set_country_flag = regionalfairplanner
 	}
@@ -1648,7 +1659,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA30003" # hold the fair
-		prestige = 15
+		prestige = 10
 		clr_global_flag = PlanRegionalFair
 		clr_country_flag = regionalfairplanner
 	}
@@ -1749,7 +1760,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA30000" # let's organize it
-		money = -15000
+		money = -150000
 		set_global_flag = PlanColonialFair
 		set_country_flag = colonialfairplanner
 	}
@@ -1803,7 +1814,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA30005" # hold the fair
-		prestige = 10
+		prestige = 5
 		clr_global_flag = PlanColonialFair
 		clr_country_flag = colonialfairplanner
 	}

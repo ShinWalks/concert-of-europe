@@ -171,7 +171,7 @@ country_event = {
 			}
 			owner = {
 				economic_reform = interactive
-				activate_technology = early_classical_theory_and_critique
+				activate_technology = classicism_n_early_romanticism
 				any_pop = {
 					scaled_militancy = {
 						ideology = liberal
@@ -3913,13 +3913,14 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		exists = yes
-		NOT = { tag = CHI }
-		NOT = { tag = TPG }
-		NOT = { tag = QNG }
+		NOT = {
+			tag = CHI
+			tag = TPG
+			tag = QNG 
+		}
 	}
 
-	option = {				
+	option = {
 		name = "EVTOPTA90910"
 		prestige = 10
 		remove_country_modifier = educational_reform
@@ -3940,7 +3941,189 @@ country_event = {
 			remove_province_modifier = extraterritoriality_granted
 			remove_province_modifier = boxer_presence
 			remove_province_modifier = boxer_agitation
-		}		
+		}
+		activate_building = cement_factory 
+		activate_unit = regular
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = practical_steam_engine }
+			}
+			owner = { 
+				activate_technology = practical_steam_engine 
+				clr_country_flag = practical_steam_engine
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = ideological_thought }
+			}
+			owner = { 
+				activate_technology = ideological_thought 
+				clr_country_flag = ideological_thought
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = romanticism }
+			}
+			owner = { 
+				activate_technology = romanticism 
+				clr_country_flag = romanticism
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = market_structure }
+			}
+			owner = { 
+				activate_technology = market_structure 
+				clr_country_flag = market_structure
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = ad_hoc_money_bill_printing }
+			}
+			owner = { 
+				activate_technology = ad_hoc_money_bill_printing 
+				clr_country_flag = ad_hoc_money_bill_printing
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = positivism }
+			}
+			owner = { 
+				activate_technology = positivism 
+				clr_country_flag = positivism
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = medicine }
+			}
+			owner = { 
+				activate_technology = medicine 
+				clr_country_flag = medicine
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = idealism }
+			}
+			owner = { 
+				activate_technology = idealism 
+				clr_country_flag = idealism
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = early_railroad }
+			}
+			owner = { 
+				activate_technology = early_railroad 
+				clr_country_flag = early_railroad
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = clean_coal }
+			}
+			owner = { 
+				activate_technology = clean_coal 
+				clr_country_flag = clean_coal
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = military_plans }
+			}
+			owner = { 
+				activate_technology = military_plans 
+				clr_country_flag = military_plans
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = muzzle_loaded_rifles }
+			}
+			owner = { 
+				activate_technology = muzzle_loaded_rifles 
+				clr_country_flag = muzzle_loaded_rifles
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = strategic_mobility }
+			}
+			owner = { 
+				activate_technology = strategic_mobility 
+				clr_country_flag = strategic_mobility
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = army_professionalism }
+			}
+			owner = { 
+				activate_technology = army_professionalism 
+				clr_country_flag = army_professionalism
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = iron_muzzle_loaded_artillery }
+			}
+			owner = { 
+				activate_technology = iron_muzzle_loaded_artillery 
+				clr_country_flag = iron_muzzle_loaded_artillery
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = naval_professionalism }
+			}
+			owner = { 
+				activate_technology = naval_professionalism 
+				clr_country_flag = naval_professionalism
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = naval_plans }
+			}
+			owner = { 
+				activate_technology = naval_plans 
+				clr_country_flag = naval_plans
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = battleship_column_doctrine }
+			}
+			owner = { 
+				activate_technology = battleship_column_doctrine 
+				clr_country_flag = battleship_column_doctrine
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = fire_control_systems }
+			}
+			owner = { 
+				activate_technology = fire_control_systems 
+				clr_country_flag = fire_control_systems
+			}
+		}
+		any_owned = {
+			limit = { 
+				owner = { has_country_flag = steamers }
+			}
+			owner = { 
+				activate_technology = steamers 
+				clr_country_flag = steamers
+			}
+		}
 	}
 }
 

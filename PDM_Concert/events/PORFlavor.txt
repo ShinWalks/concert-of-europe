@@ -1658,7 +1658,7 @@ country_event = {
 			secede_province = BRZ
 		}
 		diplomatic_influence = { who = BRZ value = 200 }
-		remove_accepted_sulture = brazilian
+		remove_accepted_culture = brazilian
 		any_pop = {
 			limit = {
 				is_primary_culture = no

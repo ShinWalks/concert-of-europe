@@ -1,0 +1,10 @@
+owner = ENG
+controller = ENG
+add_core = SAF
+add_core = ENG
+trade_goods = fruit
+life_rating = 35
+terrain = good_farmland
+colonial = 1
+naval_base = 1
+1861.1.1 = { railroad = 1 }

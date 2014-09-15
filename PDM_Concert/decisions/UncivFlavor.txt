@@ -70,7 +70,6 @@ political_decisions = {
 	
 	incorporate_sudan = {
 		picture = enact_muhammad_alis_reforms
-		
 		potential = {
 			tag = EGY
 			NOT = { has_country_flag = sudan_incorporated }
@@ -106,7 +105,6 @@ political_decisions = {
 	
 	incorporate_hedjaz = {
 		picture = enact_muhammad_alis_reforms
-		
 		potential = {
 			tag = EGY
 			owns = 1151 #Mecca
@@ -192,6 +190,39 @@ political_decisions = {
 		}
 	}
 	
+	tonghak_reforms = {
+		potential = {
+			tag = KOR
+			has_country_flag = tonghak_rebellion_happened
+			NOT = { has_country_flag = tonghak }
+		}
+		allow = {
+			war = no
+			NOT = {
+				num_of_revolts = 1
+				any_owned_province = {
+					has_province_modifier = peasant_revolt
+				}
+			}
+		}
+		effect = {
+			set_country_flag = tonghak 
+			prestige = 20
+			years_of_research = 1
+			add_country_modifier = {
+				name = self_strengthening_movement
+				duration = 1095
+			}
+			poor_strata = {
+				militancy = -2
+				consciousness = -2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	establish_the_dar_al_funun = {
 		potential = {
 			tag = PER
@@ -234,6 +265,43 @@ political_decisions = {
 				name = dar_al_funun
 				duration = -1
 			}
+		}
+	}
+	
+	reclaim_herat = {
+		picture = form_the_ikhwan
+		alert = yes
+		potential = {
+			tag = PER
+			is_vassal = no
+			NOT = {
+				owns = 1212
+				has_country_flag = herat
+			}
+		}
+		allow = {
+			military_score = 50
+		}
+		effect = {
+			1212 = {
+				add_core = PER
+			}
+			prestige = 10
+			random_country = {
+				limit = { owns = 1212 }
+				relation = {
+					who = PER
+					value = -50
+				}
+			}
+			relation = {
+				who = ENG
+				value = -50
+			}
+			set_country_flag = herat
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -558,6 +626,7 @@ political_decisions = {
 			prestige = 20
 		}
 	}
+	
 	move_capital_to_algiers = {
 		potential = {
 			tag = ALD
@@ -577,6 +646,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
 	become_hausaland = {
 		potential = {
 			tag = SOK
@@ -600,8 +670,8 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
 	become_toucouleur = {
-		
 		potential = {
 			OR = {
 				tag = MAS
@@ -644,8 +714,8 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
 	become_mali_empire = {
-		
 		potential = {
 			OR = {
 				tag = MAS

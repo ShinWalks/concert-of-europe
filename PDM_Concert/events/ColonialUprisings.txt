@@ -986,31 +986,31 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			owner = { num_of_cities = 10 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			owner = { num_of_cities = 15 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			owner = { num_of_cities = 20 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			owner = { num_of_cities = 25 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			owner = { num_of_cities = 30 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			owner = { num_of_cities = 35 }
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			owner = { num_of_cities = 40 }
 		}
 	}
@@ -1925,11 +1925,15 @@ country_event = {
 	news_desc_long = "EVTDESC14740_NEWS_LONG"
 	news_desc_medium = "EVTDESC14740_NEWS_MEDIUM"
 	news_desc_short = "EVTDESC14740_NEWS_SHORT"
+	picture = "farming"
 	
 	trigger = {
 		exists = yes
-		colonial_nation = yes
 		civilized = yes
+		any_owned_province = {
+			is_colonial = yes
+			is_overseas = yes
+		}
 		administration_spending = 0.6
 		education_spending = 0.6
 		military_spending = 0.6
@@ -2152,7 +2156,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		modifier = {
 			factor = 0.8
 			NOT = {

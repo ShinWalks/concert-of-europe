@@ -5569,7 +5569,7 @@ colonial_competition = {
 	}
 }
 
-# Dismantle fortifications (forts + naval bases)
+# Dismantle fortifications (forts)
 dismantle_forts = {
 	sprite_index = 16
 	is_triggered_only = yes
@@ -5619,10 +5619,7 @@ dismantle_forts = {
 	# war target country of goal's state
 	allowed_states = {
 		any_owned_province = {
-			OR = { 
-				has_building = fort
-				has_building = naval_base
-			}
+			has_building = fort
 		}
 		OR = {
 			THIS = { ai = no }
@@ -5637,7 +5634,6 @@ dismantle_forts = {
 	}
 
 	po_destroy_forts = yes
-	po_destroy_naval_bases = yes
 
 	war_name = WAR_NAME
 	

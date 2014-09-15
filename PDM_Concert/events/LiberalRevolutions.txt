@@ -331,6 +331,26 @@ country_event = {
 					ideology = conservative
 					factor = -4
 				}
+				ideology = {
+					value = conservative
+					factor = 0.1
+				}
+				ideology = {
+					value = reactionary
+					factor = 0.05
+				}
+			}
+			aristocrats = {
+				ideology = {
+					value = reactionary
+					factor = 0.15
+				}
+			}
+			officers = {
+				ideology = {
+					value = reactionary
+					factor = 0.10
+				}
 			}
 			remove_province_modifier = liberal_agitation
 		}
@@ -395,6 +415,26 @@ country_event = {
 					ideology = conservative
 					factor = -4
 				}
+				ideology = {
+					value = conservative
+					factor = 0.1
+				}
+				ideology = {
+					value = reactionary
+					factor = 0.05
+				}
+			}
+			aristocrats = {
+				ideology = {
+					value = reactionary
+					factor = 0.15
+				}
+			}
+			officers = {
+				ideology = {
+					value = reactionary
+					factor = 0.10
+				}
 			}
 			remove_province_modifier = liberal_agitation
 		}
@@ -402,7 +442,7 @@ country_event = {
 		clr_country_flag = liberal_revolution_fired
 		clr_country_flag = liberal_revolution_in_progress
 		set_country_flag = had_liberal_revolution
-		prestige = 25
+		prestige = 15
 	}
 }
 
@@ -712,7 +752,28 @@ country_event = {
 			any_pop = {
 				ideology = {
 					value = liberal
-					factor = 0.05
+					factor = 0.03
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 4
+				}
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 365
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_colonial = no
+			}
+			any_pop = {
+				ideology = {
+					value = liberal
+					factor = 0.03
 				}
 				scaled_consciousness = {
 					ideology = liberal
@@ -884,7 +945,31 @@ country_event = {
 				limit = { literacy = 0.2 }
 				ideology = {
 					value = liberal
-					factor = 0.05
+					factor = 0.03
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 4
+				}
+				dominant_issue = {
+					value = free_press
+					factor = 0.1
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_colonial = no
+				liberal = 5
+				any_owned_province = {
+					NOT = { has_province_modifier = liberal_agitation }
+				}
+			}
+			any_pop = {
+				limit = { literacy = 0.2 }
+				ideology = {
+					value = liberal
+					factor = 0.03
 				}
 				scaled_consciousness = {
 					ideology = liberal
@@ -1079,7 +1164,30 @@ country_event = {
 			any_pop = {
 				ideology = {
 					value = liberal
-					factor = 0.05
+					factor = 0.03
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 4
+				}
+				dominant_issue = {
+					value = universal_voting
+					factor = 0.1
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_colonial = no
+				liberal = 10
+				any_owned_province = {
+					NOT = { has_province_modifier = liberal_agitation }
+				}
+			}
+			any_pop = {
+				ideology = {
+					value = liberal
+					factor = 0.03
 				}
 				scaled_consciousness = {
 					ideology = liberal
@@ -1149,6 +1257,21 @@ country_event = {
 			dominant_issue = {
 				value = landed_voting
 				factor = 0.05
+			}
+		}
+		random_state = {
+			limit = {
+				is_colonial = no
+				liberal = 10
+				any_owned_province = {
+					NOT = { has_province_modifier = liberal_agitation }
+				}
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
 			}
 		}
 		random_state = {
@@ -1264,7 +1387,30 @@ country_event = {
 			any_pop = {
 				ideology = {
 					value = liberal
-					factor = 0.05
+					factor = 0.03
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 4
+				}
+				dominant_issue = {
+					value = secret_ballots
+					factor = 0.1
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_colonial = no
+				liberal = 5
+				any_owned_province = {
+					NOT = { has_province_modifier = liberal_agitation }
+				}
+			}
+			any_pop = {
+				ideology = {
+					value = liberal
+					factor = 0.03
 				}
 				scaled_consciousness = {
 					ideology = liberal
@@ -1329,6 +1475,21 @@ country_event = {
 			dominant_issue = {
 				value = underground_parties
 				factor = 0.05
+			}
+		}
+		random_state = {
+			limit = {
+				is_colonial = no
+				liberal = 5
+				any_owned_province = {
+					NOT = { has_province_modifier = liberal_agitation }
+				}
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
 			}
 		}
 		random_state = {
@@ -1438,7 +1599,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 30
+		months = 36
 		modifier = {
 			factor = 1.2
 			has_country_modifier = anti_jacobin_tract
@@ -1798,7 +1959,7 @@ country_event = {
 				}
 				ideology = {
 					value = liberal
-					factor = 0.1
+					factor = 0.05
 				}
 				consciousness = 3
 				scaled_militancy = {
@@ -1930,7 +2091,7 @@ country_event = {
 				limit = { is_primary_culture = yes }
 				ideology = {
 					value = liberal
-					factor = 0.05
+					factor = 0.03
 				}
 				scaled_consciousness = {
 					ideology = liberal
@@ -1938,7 +2099,7 @@ country_event = {
 				}
 				scaled_militancy = {
 					ideology = liberal
-					factor = 3
+					factor = 6
 				}
 			}
 		}
@@ -2043,6 +2204,20 @@ country_event = {
 				}
 			}
 		}
+		random_state = {
+			limit = {
+				is_colonial = no
+				any_owned_province = {
+					NOT = { has_province_modifier = liberal_agitation }
+				}
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
+			}
+		}
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -2088,7 +2263,29 @@ country_event = {
 			any_pop = {
 				ideology = {
 					value = liberal
-					factor = 0.05
+					factor = 0.03
+				}
+				scaled_consciousness = {
+					ideology = liberal
+					factor = 4
+				}
+				dominant_issue = {
+					value = yes_meeting
+					factor = 0.1
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_colonial = no
+				any_owned_province = {
+					NOT = { has_province_modifier = liberal_agitation }
+				}
+			}
+			any_pop = {
+				ideology = {
+					value = liberal
+					factor = 0.03
 				}
 				scaled_consciousness = {
 					ideology = liberal
@@ -2156,7 +2353,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 30
+		months = 36
 		modifier = {
 			factor = 0.5
 			NOT = { controlled_by = THIS }
@@ -2655,13 +2852,13 @@ province_event = {
 			poor_strata = {
 				ideology = {
 					value = liberal
-					factor = 0.10
+					factor = 0.05
 				}
 			}
 			middle_strata = {
 				ideology = {
 					value = liberal
-					factor = 0.05
+					factor = 0.03
 				}
 			}
 			any_pop = {
@@ -2838,7 +3035,7 @@ country_event = {
 			any_pop = {
 				ideology = {
 					value = liberal
-					factor = 0.2
+					factor = 0.05
 				}
 			}
 			state_scope = {
@@ -2846,7 +3043,7 @@ country_event = {
 				any_pop = {
 					ideology = {
 						value = liberal
-						factor = 0.05
+						factor = 0.03
 					}
 				}
 				any_pop = {
@@ -2877,7 +3074,7 @@ country_event = {
 					}
 					ideology = {
 						value = liberal
-						factor = 0.05
+						factor = 0.03
 					}
 				}
 				any_pop = {
@@ -3037,7 +3234,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 30
+		months = 36
 		modifier = {
 			factor = 0.5
 			any_owned_province = {
@@ -3104,10 +3301,14 @@ country_event = {
 				}
 				ideology = {
 					value = liberal
-					factor = 0.1
+					factor = 0.05
+				}
+				scaled_militancy = {
+					factor = 8
+					ideology = liberal
 				}
 				scaled_consciousness = {
-					factor = 8
+					factor = 6
 					ideology = liberal
 				}
 			}
@@ -3301,7 +3502,7 @@ province_event = {
 				}
 				ideology = {
 					value = liberal
-					factor = 0.1
+					factor = 0.05
 				}
 				consciousness = 4
 			}
@@ -3646,7 +3847,6 @@ country_event = {
 		}		
 	}
 }
-
 
 # Hungarian Revolution events
 country_event = {
@@ -5018,10 +5218,7 @@ country_event = {
 	trigger = {
 		exists = yes
 		NOT = {
-			OR = {
-				vote_franschise = universal_weighted_voting
-				vote_franschise = universal_voting
-			}
+			vote_franschise = universal_voting
 		}
 		civilized = yes
 	}
@@ -5093,15 +5290,64 @@ country_event = {
 			any_pop = {
 				ideology = {
 					value = liberal
-					factor = 0.1
+					factor = 0.2
 				}
 				militancy = 1
 				consciousness = 1
 			}
-			poor_strata = {
+			any_pop = {
+				limit = {
+					country = {
+						vote_franschise = none_voting
+					}
+				}
 				dominant_issue = {
-					value = universal_weighted_voting
 					factor = 0.1
+					value = landed_voting
+				}
+			}
+			any_pop = {
+				limit = {
+					country = {
+						vote_franschise = landed_voting
+					}
+				}
+				dominant_issue = {
+					factor = 0.1
+					value = wealth_weighted_voting
+				}
+			}
+			any_pop = {
+				limit = {
+					country = {
+						vote_franschise = wealth_weighted_voting
+					}
+				}
+				dominant_issue = {
+					factor = 0.1
+					value = wealth_voting
+				}
+			}
+			any_pop = {
+				limit = {
+					country = {
+						vote_franschise = wealth_voting
+					}
+				}
+				dominant_issue = {
+					factor = 0.1
+					value = universal_weighted_voting
+				}
+			}
+			any_pop = {
+				limit = {
+					country = {
+						vote_franschise = universal_weighted_voting
+					}
+				}
+				dominant_issue = {
+					factor = 0.1
+					value = universal_voting
 				}
 			}
 		}

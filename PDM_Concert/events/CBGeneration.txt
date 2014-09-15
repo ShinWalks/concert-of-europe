@@ -24,7 +24,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 24
 		modifier = {
 			factor = 0.8
 			press_rights = state_press
@@ -74,7 +74,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 24
 		modifier = {
 			factor = 1.2
 			press_rights = state_press
@@ -119,7 +119,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 24
 		modifier = {
 			factor = 0.8
 			press_rights = state_press
@@ -164,7 +164,7 @@ country_event = {
 	}
 	
 		mean_time_to_happen = {
-		months = 3
+		months = 24
 		modifier = {
 			factor = 1.2
 			press_rights = state_press
@@ -209,7 +209,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 24
 		modifier = {
 			factor = 0.8
 			press_rights = state_press
@@ -254,7 +254,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 24
 		modifier = {
 			factor = 1.2
 			press_rights = state_press
@@ -299,7 +299,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 24
 		modifier = {
 			factor = 0.8
 			press_rights = state_press
@@ -344,7 +344,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 24
 		modifier = {
 			factor = 1.2
 			press_rights = state_press
@@ -392,7 +392,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 24
 		modifier = {
 			factor = 0.8
 			press_rights = state_press
@@ -440,7 +440,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 24
 		modifier = {
 			factor = 1.2
 			press_rights = state_press

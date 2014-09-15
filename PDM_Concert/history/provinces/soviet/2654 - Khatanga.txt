@@ -1,0 +1,5 @@
+add_core = RUS
+add_core = SIB
+trade_goods = timber
+terrain = tundra_hills
+life_rating = 15

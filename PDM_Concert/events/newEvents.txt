@@ -62,41 +62,43 @@ country_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 8760321
 	title = "White Hooded Judge."
 	desc = "A judge in the South seems awful soft on cross-burnin'..."
+	picture = "kkk"
 	
 	trigger = {
-		has_province_modifier =	jim_crow
+		any_owned_province = {
+			has_province_modifier =	jim_crow
+		}
 	}
 	
 	mean_time_to_happen = {
-		months = 360
+		months = 60
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			has_country_flag = kkk
-		}
-		modifier = {
-			factor = 1.5 #increase likelihood to happen
-			any_neighbor_province = {
-				not = { has_province_modifier = jim_crow } 
-			}
 		}
 	}
 	
 	option = {
 		name = "EVTOPTA16415"
-		state_scope = {
-			any_pop = {
-				limit = {
-					not = { has_pop_culture = dixie }
+		any_owned = {
+			limit = {
+				has_province_modifier =	jim_crow
+			}
+			state_scope = {
+				any_pop = {
+					limit = {
+						not = { has_pop_culture = dixie }
+					}
+					militancy = 2
+					consciousness = 2
 				}
-				militancy = 2
-				consciousness = 2
 			}
 		}
-	}	
+	}
 }
 
 #################################################################################################################
@@ -1921,7 +1923,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 150
 		modifier = {
 			factor = 0.9
 			war = yes
@@ -2283,7 +2285,7 @@ country_event = {
 		}
 	}
 }
-		
+
 country_event = {
 	id = 152009873
 	title = "EVTNAME152009873" #The $COUNTRY_ADJ$ Military Coup
@@ -2313,7 +2315,7 @@ country_event = {
 		}
 		OR = {
 			average_militancy = 6
-			revolt_percentage = .10
+			revolt_percentage = 0.25
 			has_country_modifier = coup_risk
 		}
 		NOT = {
@@ -2343,7 +2345,7 @@ country_event = {
 		modifier = {
 			factor = 2
 			NOT = { average_militancy = 6 }
-			NOT = { revolt_percentage = .10 }
+			NOT = { revolt_percentage = 0.25 }
 		}
 		modifier = {
 			factor = 0.9
@@ -2358,16 +2360,16 @@ country_event = {
 			average_militancy = 9
 		}
 		modifier = {
-			factor = 0.8
-			revolt_percentage = .20
+			factor = 0.9
+			revolt_percentage = 0.33
 		}
 		modifier = {
-			factor = 0.7
-			revolt_percentage = .30
+			factor = 0.9
+			revolt_percentage = 0.5
 		}
 		modifier = {
-			factor = 0.6
-			revolt_percentage = .40
+			factor = 0.9
+			revolt_percentage = 0.75
 		}
 	}
 	
@@ -2427,11 +2429,12 @@ country_event = {
 		remove_country_modifier = pig_headed_isolationist
 		remove_country_modifier = ambitious_union_boss
 		remove_country_modifier = dour_economist
+		plurality = -25
 		add_country_modifier = {
 			name = national_confusion
 			duration = 365
 		}
-		prestige = -25
+		prestige = -10
 		country_event = 800050
 		ai_chance = {
 			factor = 50

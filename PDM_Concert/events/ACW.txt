@@ -470,28 +470,23 @@ country_event = {
 }
 
 #A Southern Belle
-province_event = {
+country_event = {
 	id = 16030
 	title = "EVTNAME16030"
 	desc = "EVTDESC16030"
+	picture = "Lola"
 	
 	trigger = {
-		owner = {
-			tag = USA
-			slavery = yes_slavery
-			has_country_modifier = the_slavery_debate
-		}
-		state_scope = {
-			is_slave = yes
-			is_colonial = no
-		}
+		tag = USA
+		exists = yes
+		slavery = yes_slavery
 		NOT = {
 			has_global_flag = american_civil_war_has_happened
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 30
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -510,21 +505,33 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA16030"
-		aristocrats = {
-			consciousness = 1
+		random_state = {
+			limit = {
+				is_slave = yes
+				is_colonial = no
+			}
+			aristocrats = {
+				consciousness = 2
+			}
+			capitalists = {
+				consciousness = 2
+			}	
 		}
-		capitalists = {
-			consciousness = 1
-		}	
 	}
 	
 	option = {
 		name  = "EVTOPTB16030"
-		craftsmen = {
-			consciousness = 1
-		}
-		labourers = {
-			consciousness = 1
+		random_state = {
+			limit = {
+				is_slave = yes
+				is_colonial = no
+			}
+			craftsmen = {
+				consciousness = 2
+			}
+			labourers = {
+				consciousness = 2
+			}
 		}
 	}
 }
@@ -782,28 +789,23 @@ country_event = {
 }
 
 #Fire-Eaters
-province_event = {
+country_event = {
 	id = 16070
 	title = "EVTNAME16070"
 	desc = "EVTDESC16070"
+	picture = "Metis"
 	
 	trigger = {
-		owner = {
-			tag = USA
-			slavery = yes_slavery
-		}
-		state_scope = {
-			is_slave = yes
-			is_colonial = no
-		}
-		has_country_modifier = the_slavery_debate
+		tag = USA
+		exists = yes
+		slavery = yes_slavery
 		NOT = {
 			has_global_flag = american_civil_war_has_happened
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 24
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -822,21 +824,58 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA16070"
-		any_pop = {
-			consciousness = 1
+		random_state = {
+			limit = {
+				is_slave = yes
+				is_colonial = no
+			}
+			any_pop = {
+				consciousness = 1
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = yes
+				is_colonial = no
+			}
+			any_pop = {
+				consciousness = 1
+			}
 		}
 	}
 	
 	option = {
 		name = "EVTOPTB16070"
-		poor_strata = {
+		random_state = {
 			limit = {
-				NOT = { type = slaves }
+				is_slave = yes
+				is_colonial = no
 			}
-			consciousness = 1.5
-			ideology = {
-				value = reactionary
-				factor = 0.10
+			poor_strata = {
+				limit = {
+					NOT = { type = slaves }
+				}
+				consciousness = 2
+				ideology = {
+					value = reactionary
+					factor = 0.10
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = yes
+				is_colonial = no
+			}
+			poor_strata = {
+				limit = {
+					NOT = { type = slaves }
+				}
+				consciousness = 2
+				ideology = {
+					value = reactionary
+					factor = 0.10
+				}
 			}
 		}
 	}
@@ -848,7 +887,7 @@ country_event = {
 	title = "EVTNAME16080"
 	desc = "EVTDESC16080"
 	picture = "prisonworkers"
-		
+	
 	trigger = {
 		tag = USA
 		exists = yes
@@ -945,7 +984,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1200
+		months = 2400
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -964,29 +1003,35 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA16090"
-		add_province_modifier = {
-			name = knights_of_the_golden_circle
-			duration = 365
-		}
-		any_pop = {
-			limit = {
-				NOT = { type = slaves }
+		state_scope = {
+			any_owned = {
+				add_province_modifier = {
+					name = knights_of_the_golden_circle
+					duration = 365
+				}
 			}
-			dominant_issue = {
-				value = yes_slavery
-				factor = 0.05
-			}
-			ideology = {
-				value = reactionary
-				factor = 0.10
+			any_pop = {
+				limit = {
+					NOT = { type = slaves }
+				}
+				dominant_issue = {
+					value = yes_slavery
+					factor = 0.05
+				}
+				ideology = {
+					value = reactionary
+					factor = 0.10
+				}
 			}
 		}
 	}
 	
 	option = {
 		name = "EVTOPTB16090"
-		any_pop = {
-			consciousness = 1.5
+		state_scope = {
+			any_pop = {
+				consciousness = 1.5
+			}
 		}
 	}
 }
@@ -1018,7 +1063,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1200
+		months = 2400
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -1037,30 +1082,36 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA16100"
-		add_province_modifier = {
-			name = american_anti_slavery_society
-			duration = 3650
-		}
-		any_pop = {
-			dominant_issue = {
-				value = no_slavery
-				factor = 0.05
+		state_scope = {
+			any_owned = {
+				add_province_modifier = {
+					name = american_anti_slavery_society
+					duration = 3650
+				}
 			}
-			ideology = {
-				value = liberal
-				factor = 0.05
+			any_pop = {
+				dominant_issue = {
+					value = no_slavery
+					factor = 0.05
+				}
+				ideology = {
+					value = liberal
+					factor = 0.05
+				}
+				militancy = 2
 			}
-			militancy = 2
 		}
 	}
 
 	option = {
 		name = "EVTOPTB16100"
-		any_pop = {
-			consciousness = 1.5
-			ideology = {
-				value = conservative
-				factor = 0.05
+		state_scope = {
+			any_pop = {
+				consciousness = 1.5
+				ideology = {
+					value = conservative
+					factor = 0.05
+				}
 			}
 		}
 	}
@@ -1142,28 +1193,23 @@ country_event = {
 }
 
 #Abolitionist Pamphlets
-province_event = {
+country_event = {
 	id = 16120
 	title = "EVTNAME16120"
 	desc = "EVTDESC16120"
+	picture = "Liberator"
 	
 	trigger = {
-		owner = {
-			tag = USA
-			slavery = yes_slavery
-			has_country_modifier = the_slavery_debate
-		}
-		state_scope = {
-			is_slave = yes
-			is_colonial = no
-		}
+		tag = USA
+		exists = yes
+		slavery = yes_slavery
 		NOT = {
 			has_global_flag = american_civil_war_has_happened
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1200
+		months = 30
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -1182,67 +1228,114 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA16120"
-		poor_strata = {
-			dominant_issue = {
-				value = no_slavery
-				factor = 0.02
+		random_state = {
+			limit = {
+				is_slave = yes
+				is_colonial = no
 			}
-			consciousness = 2
-			ideology = {
-				value = liberal
-				factor = 0.05
+			poor_strata = {
+				dominant_issue = {
+					value = no_slavery
+					factor = 0.02
+				}
+				consciousness = 2
+				ideology = {
+					value = liberal
+					factor = 0.05
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = yes
+				is_colonial = no
+			}
+			poor_strata = {
+				dominant_issue = {
+					value = no_slavery
+					factor = 0.02
+				}
+				consciousness = 2
+				ideology = {
+					value = liberal
+					factor = 0.05
+				}
 			}
 		}
 	}
 	
 	option = {
 		name = "EVTOPTB16120"
-		rich_strata = {
-			dominant_issue = {
-				value = yes_slavery
-				factor = 0.05
+		random_state = {
+			limit = {
+				is_slave = yes
+				is_colonial = no
 			}
-			consciousness = 1.5
-			ideology = {
-				value = conservative
-				factor = 0.20
+			rich_strata = {
+				dominant_issue = {
+					value = yes_slavery
+					factor = 0.05
+				}
+				consciousness = 1.5
+				ideology = {
+					value = conservative
+					factor = 0.20
+				}
+			}
+			middle_strata = {
+				dominant_issue = {
+					value = yes_slavery
+					factor = 0.05
+				}
+				consciousness = 1.5
+				ideology = {
+					value = conservative
+					factor = 0.10
+				}
 			}
 		}
-		middle_strata = {
-			dominant_issue = {
-				value = yes_slavery
-				factor = 0.05
+		random_state = {
+			limit = {
+				is_slave = yes
+				is_colonial = no
 			}
-			consciousness = 1.5
-			ideology = {
-				value = conservative
-				factor = 0.10
+			rich_strata = {
+				dominant_issue = {
+					value = yes_slavery
+					factor = 0.05
+				}
+				consciousness = 1.5
+				ideology = {
+					value = conservative
+					factor = 0.20
+				}
+			}
+			middle_strata = {
+				dominant_issue = {
+					value = yes_slavery
+					factor = 0.05
+				}
+				consciousness = 1.5
+				ideology = {
+					value = conservative
+					factor = 0.10
+				}
 			}
 		}
 	}
 }
 
 #Fugitive Slave 
-province_event = {
+country_event = {
 	id = 16130
 	title = "EVTNAME16130"
 	desc = "EVTDESC16130"
+	picture = "Slaves"
 	
 	trigger = {
-		owner = {
-			tag = USA
-			slavery = yes_slavery
-			has_country_modifier = the_slavery_debate
-		}
-		state_scope = {
-			is_slave = no
-			is_colonial = no
-		}
-		any_neighbor_province = {
-			state_scope = {
-				is_slave = yes
-			}
-		}
+		tag = USA
+		exists = yes
+		slavery = yes_slavery
 		NOT = {
 			has_global_flag = american_civil_war_has_happened
 			has_country_flag = fugitive_slave_act_enacted
@@ -1250,7 +1343,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1200
+		months = 30
 		modifier = {
 			factor = 0.5
 			has_country_flag = fugitive_slave_act_enacted
@@ -1273,31 +1366,61 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA16130"
-		any_pop = {
-			consciousness = 2
-			ideology = {
-				value = liberal
-				factor = 0.05
+		random_state = {
+			limit = {
+				is_slave = no
+				is_colonial = no
+			}
+			any_pop = {
+				consciousness = 2
+				ideology = {
+					value = liberal
+					factor = 0.05
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = no
+				is_colonial = no
+			}
+			any_pop = {
+				consciousness = 2
+				ideology = {
+					value = liberal
+					factor = 0.05
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = no
+				is_colonial = no
+			}
+			any_pop = {
+				consciousness = 2
+				ideology = {
+					value = liberal
+					factor = 0.05
+				}
 			}
 		}
 	}
 	
 	option = {
 		name = "EVTOPTB16130"
-		owner = {
-			any_state = {
+		any_state = {
+			limit = {
+				is_slave = yes
+			}
+			any_pop = {
 				limit = {
-					is_slave = yes
+					NOT = { type = slaves }
 				}
-				any_pop = {
-					limit = {
-						NOT = { type = slaves }
-					}
-					consciousness = 1.5
-					ideology = {
-						value = conservative
-						factor = 0.10
-					}
+				consciousness = 1
+				ideology = {
+					value = conservative
+					factor = 0.10
 				}
 			}
 		}
@@ -1305,38 +1428,23 @@ province_event = {
 }
 
 #Underground Railroad
-province_event = {
+country_event = {
 	id = 16140
 	title = "EVTNAME16140"
 	desc = "EVTDESC16140"
+	picture = "Liberator"
 	
 	trigger = {
-		owner = {
-			tag = USA
-			slavery = yes_slavery
-			has_country_modifier = the_slavery_debate
-		}
-		state_scope = {
-			is_colonial = no
-		}
-		OR = { 
-			AND = { 
-				state_scope = {
-					is_slave = yes	
-				}
-				any_neighbor_province = {
-				has_province_modifier = underground_railroad
-				}	
-			}
-		}
+		tag = USA
+		exists = yes
+		slavery = yes_slavery
 		NOT = {
 			has_global_flag = american_civil_war_has_happened
-			has_province_modifier = underground_railroad
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 1200
+		months = 30
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -1355,25 +1463,55 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA16140"
-		add_province_modifier = {
-			name = underground_railroad
-			duration = -1
+		random_state = {
+			limit = {
+				is_colonial = no
+				is_slave = yes
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = underground_railroad
+					duration = -1
+				}
+			}
 		}
 	}
 	
 	option = {
 		name = "EVTOPTB16140"
-		owner = {
-			random_state = {
-				limit = {
-					is_slave = no
+		random_state = {
+			limit = {
+				is_slave = no
+			}
+			any_pop = {
+				consciousness = 2
+				ideology = {
+					value = liberal
+					factor = 0.1
 				}
-				any_pop = {
-					consciousness = 2
-					ideology = {
-						value = liberal
-						factor = 0.1
-					}
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = no
+			}
+			any_pop = {
+				consciousness = 2
+				ideology = {
+					value = liberal
+					factor = 0.1
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = no
+			}
+			any_pop = {
+				consciousness = 2
+				ideology = {
+					value = liberal
+					factor = 0.1
 				}
 			}
 		}
@@ -1381,29 +1519,21 @@ province_event = {
 }
 
 #Copperheads
-province_event = {
+country_event = {
 	id = 16150
 	title = "EVTNAME16150"
 	desc = "EVTDESC16150"
+	picture = "AnarchoLiberals"
 	
 	trigger = {
-		owner = {
-			tag = USA
-			slavery = yes_slavery
-			has_country_modifier = the_slavery_debate
-		}
-		state_scope = {
-			is_slave = no
-			is_colonial = no
-		}
-		NOT = {
-			has_global_flag = american_civil_war_has_happened
-			has_province_modifier = copperhead_democrats
-		}
+		tag = USA
+		exists = yes
+		slavery = yes_slavery
+		NOT = { has_global_flag = american_civil_war_has_happened }
 	}
 	
 	mean_time_to_happen = {
-		months = 1200
+		months = 30
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -1422,37 +1552,106 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA16150"
-		add_province_modifier = {
-			name = copperhead_democrats
-			duration = 365
-		}
-		any_pop = {
+		random_state = {
 			limit = {
-				NOT = { type = slaves }
+				is_slave = no
+				is_colonial = no
 			}
-			ideology = {
-				value = reactionary
-				factor = 0.10
+			any_owned = {
+				add_province_modifier = {
+					name = copperhead_democrats
+					duration = 365
+				}
+			}
+			any_pop = {
+				ideology = {
+					value = reactionary
+					factor = 0.10
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = no
+				is_colonial = no
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = copperhead_democrats
+					duration = 365
+				}
+			}
+			any_pop = {
+				ideology = {
+					value = reactionary
+					factor = 0.10
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = no
+				is_colonial = no
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = copperhead_democrats
+					duration = 365
+				}
+			}
+			any_pop = {
+				ideology = {
+					value = reactionary
+					factor = 0.10
+				}
 			}
 		}
 	}
 	
 	option = {
 		name = "EVTOPTB16150"
-		owner = {
-			random_state = {
+		random_state = {
+			limit = {
+				is_slave = yes
+			}
+			any_pop = {
 				limit = {
-					is_slave = yes
+					NOT = { type = slaves }
 				}
-				any_pop = {
-					limit = {
-						NOT = { type = slaves }
-					}
-					consciousness = 2
-					ideology = {
-						value = conservative
-						factor = 0.05
-					}
+				consciousness = 2
+				ideology = {
+					value = conservative
+					factor = 0.05
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = yes
+			}
+			any_pop = {
+				limit = {
+					NOT = { type = slaves }
+				}
+				consciousness = 2
+				ideology = {
+					value = conservative
+					factor = 0.05
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				is_slave = yes
+			}
+			any_pop = {
+				limit = {
+					NOT = { type = slaves }
+				}
+				consciousness = 2
+				ideology = {
+					value = conservative
+					factor = 0.05
 				}
 			}
 		}
@@ -1612,7 +1811,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 240
 		modifier = {
 			factor = 0.3
 			has_province_modifier = border_ruffians
@@ -1627,14 +1826,18 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA16180"
-		add_province_modifier = {
-			name = free_staters
-			duration = 3650
-		}
-		any_pop = {
-			dominant_issue = {
+		state_scope = {
+			any_owned = {
+				add_province_modifier = {
+					name = free_staters
+					duration = 3650
+				}
+			}
+			any_pop = {
+				dominant_issue = {
 					value = no_slavery
 					factor = 0.05
+				}
 			}
 		}
 	}
@@ -1689,7 +1892,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 360
 		modifier = {
 			factor = 0.3
 			has_province_modifier = free_staters
@@ -1698,14 +1901,18 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA16190"
-		add_province_modifier = {
-			name = border_ruffians
-			duration = 3650
-		}
-		any_pop = {
-			dominant_issue = {
+		state_scope = {
+			any_owned = {
+				add_province_modifier = {
+					name = border_ruffians
+					duration = 3650
+				}
+			}
+			any_pop = {
+				dominant_issue = {
 					value = yes_slavery
 					factor = 0.05
+				}
 			}
 		}
 	}
@@ -1716,7 +1923,7 @@ province_event = {
 			any_state = {
 				limit = {
 					is_colonial = no
-					is_slave = no
+					is_slave = yes
 				}
 				any_pop = {
 					consciousness = 2

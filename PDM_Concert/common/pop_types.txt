@@ -58,37 +58,33 @@ promotion_chance =
 			militancy = 7
 		}
 	}
-		modifier = {
-			factor = -10
-			strata = rich
-			luxury_needs = 0.5
-		}
-		modifier = {
-			factor = -0.2
-			strata = rich
-		}
-
+	modifier = {
+		factor = -10
+		strata = rich
+		luxury_needs = 0.5
+	}
+	modifier = {
+		factor = -0.2
+		strata = rich
+	}
 	group = {
 		modifier = {
 			factor = 0.1
 			life_needs = 0.9
-	
 		}
 		modifier = {
 			factor = 0.1
 			life_needs = 0.8 
 		}
 	}
-		modifier = {
-			factor = 0.1
-			life_needs = 0.7
-			strata = poor
-		}
-
-
+	modifier = {
+		factor = 0.1
+		life_needs = 0.7
+		strata = poor
+	}
 	modifier = {
 		factor = -0.1
-		not = { religion = this }
+		NOT = { religion = this }
 	}
 	modifier = {
 		factor = -0.1
@@ -96,7 +92,7 @@ promotion_chance =
 	}
 	modifier = {
 		factor = -0.1
-		not = { culture = this }
+		NOT = { culture = this }
 	}
 	modifier = {
 		factor = -0.1
@@ -105,14 +101,13 @@ promotion_chance =
 	modifier = {
 		factor = -0.05
 		state_scope = {
-				is_slave = yes
-			}
+			is_slave = yes
+		}
 	}	
 	modifier = {
 		factor = -100
 		location = { NOT = { controlled_by = owner } }
 	}
-	
 }
 
 demotion_chance = 
@@ -120,9 +115,8 @@ demotion_chance =
 	factor = 1
 	modifier = {
 		factor = -0.1
-		not = { religion = this }
+		NOT = { religion = this }
 	}
-
 	modifier = {
 		factor = -0.2
 		state_scope = { is_colonial = yes }
@@ -132,7 +126,7 @@ demotion_chance =
 		factor = 1
 		state_scope = { is_colonial = yes }
 		strata = middle
-		not = { culture = this }		
+		NOT = { culture = this }		
 	}
 	modifier = {
 		factor = -10
@@ -142,7 +136,7 @@ demotion_chance =
 	modifier = {
 		factor = -0.05
 		country = {
-			has_country_flag = serfdom_not_abolished
+			has_country_flag = serfdom_NOT_abolished
 		}
 	}
 	modifier = {
@@ -152,114 +146,110 @@ demotion_chance =
 	modifier = {
 		factor = -0.05
 		state_scope = {
-				is_slave = yes
-			}
+			is_slave = yes
+		}
 	}
 	modifier = {
 		factor = -0.1
-		not = { culture = this }
+		NOT = { culture = this }
 	}
-		modifier = {
-			factor = -0.03
-			not = { literacy = 0.1 }
-		}
-		modifier = {
-			factor = -0.03
-			not = { literacy = 0.15 }
-		}
-		modifier = {
-			factor = -0.03
-			not = { literacy = 0.2 }
-		}
-		modifier = {
-			factor = -0.03
-			not = { literacy = 0.3 }
-		}
-		modifier = {
-			factor = -0.03
-			not = { literacy = 0.4 }
-		}
-		modifier = {
-			factor = -0.03
-			not = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = -0.03
-			not = { literacy = 0.6 }
-		}
-		modifier = {
-			factor = -0.03
-			not = { literacy = 0.7 }
-		}
-		modifier = {
-			factor = -0.03
-			not = { literacy = 0.8 }
-		}
-		modifier = {
-			factor = -0.03
-			not = { literacy = 0.9 }
-		}
-
+	modifier = {
+		factor = -0.03
+		NOT = { literacy = 0.1 }
+	}
+	modifier = {
+		factor = -0.03
+		NOT = { literacy = 0.15 }
+	}
+	modifier = {
+		factor = -0.03
+		NOT = { literacy = 0.2 }
+	}
+	modifier = {
+		factor = -0.03
+		NOT = { literacy = 0.3 }
+	}
+	modifier = {
+		factor = -0.03
+		NOT = { literacy = 0.4 }
+	}
+	modifier = {
+		factor = -0.03
+		NOT = { literacy = 0.5 }
+	}
+	modifier = {
+		factor = -0.03
+		NOT = { literacy = 0.6 }
+	}
+	modifier = {
+		factor = -0.03
+		NOT = { literacy = 0.7 }
+	}
+	modifier = {
+		factor = -0.03
+		NOT = { literacy = 0.8 }
+	}
+	modifier = {
+		factor = -0.03
+		NOT = { literacy = 0.9 }
+	}
 	group = {
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.9 }
+			NOT = { life_needs = 0.9 }
 		}
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.8 }
+			NOT = { life_needs = 0.8 }
 		}
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.7 }
+			NOT = { life_needs = 0.7 }
 		}
 	}
-		modifier = {
-			factor = -0.1
-			not = { consciousness = 4 }
-			strata = poor
-		}
-
-
+	modifier = {
+		factor = -0.1
+		NOT = { consciousness = 4 }
+		strata = poor
+	}
 	group = {
 		modifier = {
 			factor = 0.1
-			not = { luxury_needs = 1 }
+			NOT = { luxury_needs = 1 }
 		}
 		modifier = {
 			factor = 0.1
-			not = { luxury_needs = 0.9 }
+			NOT = { luxury_needs = 0.9 }
 		}
 		modifier = {
 			factor = 0.1
-			not = { luxury_needs = 0.8 }
+			NOT = { luxury_needs = 0.8 }
 		}
 	}
 	group = {
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.5 }
+			NOT = { life_needs = 0.5 }
 			strata = middle
 		}
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.4 }
-			strata = middle
-	
-		}
-		modifier = {
-			factor = 0.1
-			not = { life_needs = 0.3 }
+			NOT = { life_needs = 0.4 }
 			strata = middle
 		}
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.2 }
+			NOT = { life_needs = 0.3 }
+			strata = middle
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { life_needs = 0.2 }
 			strata = middle
 		}
 		modifier = {
 			factor = 0.2
-			not = { life_needs = 0.1 }
+			NOT = { life_needs = 0.1 }
 			strata = middle
 		}
 	}
@@ -280,7 +270,6 @@ demotion_chance =
 			strata = middle
 		}
 	}
-
 	group = {
 		modifier = {
 			factor = 0.1
@@ -294,8 +283,7 @@ demotion_chance =
 			factor = 0.1
 			unemployment = 0.3
 			location = { controlled_by = owner }
-		}		
-		
+		}
 	}
 	modifier = {
 		factor = -100
@@ -309,41 +297,41 @@ factor = 0.5
 	group = {
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.8 }
+			NOT = { life_needs = 0.8 }
 		}
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.7 }
+			NOT = { life_needs = 0.7 }
 		}
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.6 }
+			NOT = { life_needs = 0.6 }
 		}
 		modifier = {
 			factor = 0.3
-			not = { life_needs = 0.5 }
+			NOT = { life_needs = 0.5 }
 		}
 		modifier = {
 			factor = 1
-			not = { life_needs = 0.4 }
+			NOT = { life_needs = 0.4 }
 		}
 	}
 	group = {
 		modifier = {
 			factor = -0.1
-			not = { literacy = 0.4 }
+			NOT = { literacy = 0.4 }
 		}
 		modifier = {
 			factor = -0.1
-			not = { literacy = 0.3 }
+			NOT = { literacy = 0.3 }
 		}
 		modifier = {
 			factor = -0.1
-			not = { literacy = 0.2 }
+			NOT = { literacy = 0.2 }
 		}
 		modifier = {
 			factor = -0.1
-			not = { literacy = 0.1 }
+			NOT = { literacy = 0.1 }
 		}
 	}
 	modifier = {
@@ -439,25 +427,25 @@ colonialmigration_chance = {
 	group = {
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 1 }
+			NOT = { life_needs = 1 }
 		}
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.9 }
+			NOT = { life_needs = 0.9 }
 		}
 		modifier = {
 			factor = 0.1
-			not = { life_needs = 0.8 }
+			NOT = { life_needs = 0.8 }
 		}
 		modifier = {
 			factor = 0.5
-			not = { life_needs = 0.6 }
+			NOT = { life_needs = 0.6 }
 		}
 	}
-		modifier = {
-			factor = -1
-			strata = rich
-		}
+	modifier = {
+		factor = -1
+		strata = rich
+	}
 	group = {
 		modifier = {
 			factor = 0.1
@@ -481,7 +469,7 @@ colonialmigration_chance = {
 	}
 	modifier = {
 		factor = -100
-		not = { 
+		NOT = { 
 			location = { controlled_by = owner }
 		}
 	}
@@ -494,19 +482,19 @@ emigration_chance =
 	group = {
 		modifier = {
 			factor = 0.25
-			not = { life_needs = 0.7 }
+			NOT = { life_needs = 0.7 }
 		}
 		modifier = {
 			factor = 0.5
-			not = { life_needs = 0.6 }
+			NOT = { life_needs = 0.6 }
 		}
 		modifier = {
 			factor = 0.75
-			not = { life_needs = 0.5 }
+			NOT = { life_needs = 0.5 }
 		}
 		modifier = {
 			factor = 1
-			not = { life_needs = 0.4 }
+			NOT = { life_needs = 0.4 }
 		}
 	}
 	group = {
@@ -549,7 +537,7 @@ emigration_chance =
 	}
 	modifier = {
 		factor = 0.5
-		not = { strata = poor }
+		NOT = { strata = poor }
 		country = {
 			OR = {
 				government = fascist_dictatorship
@@ -559,27 +547,28 @@ emigration_chance =
 	}
 	modifier = {
 		factor = 3
-		has_pop_religion = jewish
-		location = { NOT = { is_core = ISR } } 
+		THIS = { has_pop_religion = jewish }
+		location = {
+			owner = { has_global_flag = israel_has_her_cores }
+			NOT = { is_core = ISR }
+		}
 	}
-
 	modifier = {
 		factor = -100
-		not = { 
+		NOT = { 
 			location = { controlled_by = owner }
 		}
 	}
 	modifier = {
 		factor = 0.3
 		country = { religious_policy = moralism }
-		not = { religion = this }
+		NOT = { religion = this }
 	}
 	modifier = {
 		factor = -0.3
 		country = { religious_policy = moralism }
 		religion = this 
 	}
-
 	modifier = {
 		factor = 0.2
 		country = { citizenship_policy = residency }
@@ -614,19 +603,19 @@ emigration_chance =
 	group = {
 		modifier = {
 			factor = -0.1
-			not = { literacy = 0.4 }
+			NOT = { literacy = 0.4 }
 		}
 		modifier = {
 			factor = -0.1
-			not = { literacy = 0.3 }
+			NOT = { literacy = 0.3 }
 		}
 		modifier = {
 			factor = -0.1
-			not = { literacy = 0.2 }
+			NOT = { literacy = 0.2 }
 		}
 		modifier = {
 			factor = -0.1
-			not = { literacy = 0.1 }
+			NOT = { literacy = 0.1 }
 		}
 	}
 		modifier = {
@@ -798,15 +787,15 @@ assimilation_chance =
 	group = {
 		modifier = {
 			factor = -1
-			not = { consciousness = 3 }
+			NOT = { consciousness = 3 }
 		}
 		modifier = {
 			factor = -1
-			not = { consciousness = 2 }
+			NOT = { consciousness = 2 }
 		}
 		modifier = {
 			factor = -1
-			not = { consciousness = 1 }
+			NOT = { consciousness = 1 }
 		}
 	}
 	modifier = {
@@ -843,7 +832,7 @@ assimilation_chance =
 	modifier = {
 		factor = -5
 		country = { religious_policy = moralism }
-		not = { religion = this }
+		NOT = { religion = this }
 	}
 	modifier = {
 		factor = 3
@@ -896,7 +885,6 @@ assimilation_chance =
 			continent = asia
 		}
 	}
-	
 	group = {
 		modifier = {
 			factor = 0.5
@@ -909,7 +897,7 @@ assimilation_chance =
 	}
 	modifier = {
 		factor = -3
-		not = { religion = this }
+		NOT = { religion = this }
 	}
 	modifier = {
 		factor = -50
@@ -924,20 +912,20 @@ conversion_chance =
 	group = {
 		modifier = {
 			factor = 0.2
-			not = { luxury_needs = 0.9 }
+			NOT = { luxury_needs = 0.9 }
 		}
 		modifier = {
 			factor = 0.2
-			not = { luxury_needs = 0.7 }
+			NOT = { luxury_needs = 0.7 }
 		}
 		modifier = {
 			factor = 0.2
-			not = { luxury_needs = 0.5 }
+			NOT = { luxury_needs = 0.5 }
 		}
 	}
 	modifier = {
 		factor = -3
-		not = { consciousness = 3 }
+		NOT = { consciousness = 3 }
 	}
 	modifier = {
 		factor = 5
@@ -948,11 +936,11 @@ conversion_chance =
 	}
 	modifier = {
 		factor = -5
-		not = { consciousness = 2 }
+		NOT = { consciousness = 2 }
 	}
 	modifier = {
 		factor = -10
-		not = { consciousness = 1 }
+		NOT = { consciousness = 1 }
 	}
 	modifier = {
 		factor = -10
@@ -970,21 +958,21 @@ conversion_chance =
 	group = {
 		modifier = {
 			factor = 0.5
-			not = { life_needs = 0.9 }
+			NOT = { life_needs = 0.9 }
 		}
 		modifier = {
 			factor = 0.5
-			not = { life_needs = 0.8 }
+			NOT = { life_needs = 0.8 }
 		}
 		modifier = {
 			factor = 0.5
-			not = { life_needs = 0.7 }
+			NOT = { life_needs = 0.7 }
 		}
 	}
 	modifier = {
 		factor = -10000
-		not = { 
-		location = { controlled_by = owner }
+		NOT = { 
+			location = { controlled_by = owner }
 		}
 	}
 	modifier = {

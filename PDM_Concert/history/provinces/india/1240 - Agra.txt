@@ -1,0 +1,10 @@
+owner = ENG
+controller = ENG
+add_core = MUG
+add_core = AWA
+add_core = HND
+trade_goods = sugar
+life_rating = 30
+terrain = floodplain_farmland
+colonial = 1
+fort = 1

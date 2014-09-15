@@ -16,7 +16,7 @@ country_event = {
 		year = 1837
 		NOT = {
 			year = 1840
-			}
+		}
 	}
 	
 	fire_only_once = yes
@@ -1135,6 +1135,10 @@ province_event = {
 			NOT = { average_militancy = 1 }
 		}
 		modifier = {
+			factor = 1.5
+			NOT = { average_militancy = 2 }
+		}
+		modifier = {
 			factor = 0.8
 			reactionary = 30
 		}
@@ -1157,10 +1161,6 @@ province_event = {
 		modifier = {
 			factor = 1.2
 			liberal = 40
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 2
 		}
 		modifier = {
 			factor = 0.8
@@ -1356,6 +1356,10 @@ province_event = {
 			NOT = { average_militancy = 1 }
 		}
 		modifier = {
+			factor = 1.5
+			NOT = { average_militancy = 2 }
+		}
+		modifier = {
 			factor = 0.8
 			reactionary = 30
 		}
@@ -1378,10 +1382,6 @@ province_event = {
 		modifier = {
 			factor = 1.2
 			liberal = 40
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 2
 		}
 		modifier = {
 			factor = 0.8
@@ -1850,6 +1850,10 @@ province_event = {
 			NOT = { average_militancy = 1 }
 		}
 		modifier = {
+			factor = 1.5
+			NOT = { average_militancy = 2 }
+		}
+		modifier = {
 			factor = 2.5
 			owner = {
 				check_variable = {
@@ -1889,10 +1893,6 @@ province_event = {
 		modifier = {
 			factor = 0.8
 			anarcho_liberal = 20
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 2
 		}
 		modifier = {
 			factor = 0.8
@@ -2053,6 +2053,10 @@ province_event = {
 			NOT = { average_militancy = 1 }
 		}
 		modifier = {
+			factor = 1.5
+			NOT = { average_militancy = 2 }
+		}
+		modifier = {
 			factor = 1.2
 			reactionary = 20
 		}
@@ -2083,10 +2087,6 @@ province_event = {
 		modifier = {
 			factor = 0.8
 			anarcho_liberal = 20
-		}
-		modifier = {
-			factor = 0.9
-			average_militancy = 2
 		}
 		modifier = {
 			factor = 0.8
@@ -2512,7 +2512,7 @@ country_event = {
 			name = national_instability
 			duration = 1095
 		}
-		prestige = -20
+		prestige = -10
 		government = democracy
 		ruling_party_ideology = liberal
 		set_country_flag = liberal_election_win
@@ -3202,7 +3202,7 @@ country_event = {
 		name = "Give them what they want."
 		USA = { end_war = THIS }
 		money = 1000000
-		prestige = -40
+		prestige = -25
 		random_owned = {
 			limit = {
 				province_id = 2209
@@ -3293,7 +3293,7 @@ country_event = {
 	
 	option = {
 		name = "Excellent!"
-		prestige = 40
+		prestige = 25
 		money = -1000000
 		relation = {
 			who = FROM
@@ -3425,7 +3425,7 @@ country_event = {
 	option = {
 		name = "Give them what they want."
 		money = 1000000
-		prestige = -40
+		prestige = -25
 		random_owned = {
 			limit = { province_id = 2222 }
 			secede_province = USA
@@ -3530,7 +3530,7 @@ country_event = {
 	option = {
 		name = "Calm the people. We do not want more war."
 		set_country_flag = treaty_of_paris_1898
-		prestige = -30
+		prestige = -15
 		any_pop = {
 			scaled_militancy = {
 				issue = jingoism
@@ -3561,7 +3561,7 @@ country_event = {
 	option = {
 		name = "Fan the flames while we can."
 		set_country_flag = treaty_of_paris_1898
-		prestige = -30
+		prestige = -15
 		badboy = 10
 		random_country = {
 			limit = {
@@ -3971,7 +3971,7 @@ country_event = {
 	
 	option = {
 		name = "There is no point in pursuing the matter."
-		prestige = -25
+		prestige = -15
 		badboy = -2
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -3993,7 +3993,7 @@ country_event = {
 	option = {
 		name = "$FROMCOUNTRY$ must be brought into line."
 		set_country_flag = restore_the_spanish_empire
-		prestige = -25
+		prestige = -15
 		badboy = 2
 		diplomatic_influence = { who = FROM value = -200 }
 		FROM = { set_country_flag = resisting_spanish_rule }

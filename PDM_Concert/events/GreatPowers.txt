@@ -44,7 +44,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 		modifier = {
 			factor = 0.5
 			part_of_sphere = no
@@ -206,7 +206,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA19010"
-		prestige = 20
+		prestige = 5
 		capital_scope = {
 			any_pop = {
 				militancy = -1

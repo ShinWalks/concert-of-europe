@@ -4,6 +4,8 @@ post_nelsonian_thought = {
 	year = 1821
 	cost = 4500
 	activate_building = naval_base
+	colonial_points = 10
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -66,13 +68,16 @@ post_nelsonian_thought = {
 			tech_school = prussian_tech_school
 		}
 	}
-
 }
+
 battleship_column_doctrine = {
 	area = naval_doctrine
 	year = 1825
 	cost = 7600
 	max_naval_base = 1
+	colonial_points = 10
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -142,6 +147,9 @@ raider_group_doctrine = {
 	year = 1860
 	cost = 10000
 	max_naval_base = 1
+	colonial_points = 10
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -208,9 +216,12 @@ raider_group_doctrine = {
 
 blue_and_brown_water_schools = {
 	area = naval_doctrine
-	year = 1880
+	year = 1870
 	cost = 12500
 	max_naval_base = 1
+	colonial_points = 10
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -278,8 +289,11 @@ blue_and_brown_water_schools = {
 high_sea_battle_fleet = {
 	area = naval_doctrine
 	year = 1900
-	cost = 18000
+	cost = 20000
 	max_naval_base = 1
+	colonial_points = 10
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -347,8 +361,11 @@ high_sea_battle_fleet = {
 modern_naval_doctrine = {
 	area = naval_doctrine
 	year = 1919
-	cost = 27000
+	cost = 30000
 	max_naval_base = 1
+	colonial_points = 10
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -413,13 +430,13 @@ modern_naval_doctrine = {
 	}
 }
 
-
 #ship_construction
 clipper_design = {
 	area = ship_construction
 	year = 1821
 	cost = 4500
 	activate_unit = manowar
+	
 	ai_chance = {
 		factor = 250
 		modifier = {
@@ -498,6 +515,8 @@ steamers = {
 	area = ship_construction
 	year = 1830
 	cost = 7600
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -577,6 +596,8 @@ iron_steamers = {
 	area = ship_construction
 	year = 1860
 	cost = 10000
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -644,6 +665,8 @@ steel_steamers = {
 	area = ship_construction
 	year = 1880
 	cost = 12500
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -710,7 +733,9 @@ steel_steamers = {
 steam_turbine_ships = {
 	area = ship_construction
 	year = 1900
-	cost = 18000
+	cost = 20000
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -777,7 +802,8 @@ steam_turbine_ships = {
 oil_driven_ships = {
 	area = ship_construction
 	year = 1919
-	cost = 27000
+	cost = 30000
+	influence = 0.05
 
 	ai_chance = {
 		factor = 5
@@ -842,13 +868,13 @@ oil_driven_ships = {
 	}
 }
 
-
 #naval_engineering
 naval_design_bureaus = {
 	area = naval_engineering
 	year = 1821
 	cost = 4500
 	navy_base = { build_time = -15 }
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -924,6 +950,8 @@ fire_control_systems = {
 	navy_base = {
 		build_time = -15 
 	}
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -999,6 +1027,8 @@ weapon_platforms = {
 	navy_base = {
 		build_time = -15 
 	}
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -1074,6 +1104,8 @@ main_armament = {
 	navy_base = {
 		build_time = -15
 	}
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -1145,10 +1177,12 @@ main_armament = {
 advanced_naval_design = {
 	area = naval_engineering
 	year = 1900
-	cost = 18000
+	cost = 20000
 	navy_base = {
 		build_time = -15 
 	}
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -1220,10 +1254,12 @@ advanced_naval_design = {
 modern_naval_design = {
 	area = naval_engineering
 	year = 1919
-	cost = 27000
+	cost = 30000
 	navy_base = {
 		build_time = -30 
 	}
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 1
 		modifier = {
@@ -1292,13 +1328,14 @@ modern_naval_design = {
 	}
 }
 
-
 #naval_science
 alphabetic_flag_signaling = {
 	area = naval_science
 	year = 1821
 	cost = 4500
 	supply_range = 1.0
+	colonial_points = 10
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -1376,9 +1413,12 @@ naval_plans = {
 	year = 1840
 	cost = 7600
 	supply_range = 0.5
+	colonial_points = 10
 	navy_base = {
 		supply_consumption = -0.15 
 	}
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -1456,9 +1496,12 @@ naval_statistics = {
 	year = 1870
 	cost = 10000
 	supply_range = 0.5
+	colonial_points = 10
 	navy_base = {
 		supply_consumption = -0.15 
 	}
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -1536,9 +1579,12 @@ naval_logistics = {
 	year = 1890
 	cost = 12500
 	supply_range = 1
+	colonial_points = 10
 	navy_base = {
 		supply_consumption = -0.15 
 	}
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -1610,11 +1656,14 @@ naval_logistics = {
 naval_directionism = {
 	area = naval_science
 	year = 1900
-	cost = 18000
+	cost = 20000
 	supply_range = 1
+	colonial_points = 10
 	navy_base = {
 		supply_consumption = -0.15 
 	}
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -1686,11 +1735,14 @@ naval_directionism = {
 naval_integration = {
 	area = naval_science
 	year = 1919
-	cost = 27000
+	cost = 30000
 	supply_range = 1
+	colonial_points = 10
 	navy_base = {
 		supply_consumption = -0.15 
 	}
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 1
 		modifier = {
@@ -1759,7 +1811,6 @@ naval_integration = {
 	}
 }
 
-
 #naval_leadership
 the_command_principle = {
 	area = naval_leadership
@@ -1769,6 +1820,8 @@ the_command_principle = {
 		default_organisation = 1
 		supply_consumption = 0.1
 	}
+	colonial_points = 10
+	
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -1849,6 +1902,9 @@ naval_professionalism = {
 		default_organisation = 1
 		supply_consumption = 0.1
 	}
+	colonial_points = 10
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 50
 		modifier = {
@@ -1929,6 +1985,9 @@ naval_decision_making = {
 		default_organisation = 1
 		supply_consumption = 0.1
 	}
+	colonial_points = 10
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 25
 		modifier = {
@@ -2009,6 +2068,9 @@ naval_risk_management = {
 		default_organisation = 1
 		supply_consumption = 0.1
 	}
+	colonial_points = 10
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 10
 		modifier = {
@@ -2080,11 +2142,14 @@ naval_risk_management = {
 naval_nco_training = {
 	area = naval_leadership
 	year = 1900
-	cost = 18000
+	cost = 20000
 	navy_base = {
 		default_organisation = 2
 		supply_consumption = 0.1
 	}
+	colonial_points = 10
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -2156,11 +2221,14 @@ naval_nco_training = {
 modern_naval_training = {
 	area = naval_leadership
 	year = 1919
-	cost = 27000
+	cost = 30000
 	navy_base = {
 		default_organisation = 2
 		supply_consumption = 0.1
 	}
+	colonial_points = 10
+	influence = 0.05
+	
 	ai_chance = {
 		factor = 1
 		modifier = {

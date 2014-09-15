@@ -40,19 +40,19 @@ country_event = {
 		any_owned = {
 			limit = { is_core = HND }
 			random_list = {
-				25 = {
+				20 = {
 					poor_strata = {
 						limit = {
 							is_culture_group = south_asian
 						}
-						militancy = 6
+						militancy = 5
 					}
 					add_province_modifier = {
 						name = nationalist_agitation
 						duration = 1095
 					}
 				}
-				25 = {
+				40 = {
 					poor_strata = {
 						limit = {
 							is_culture_group = south_asian
@@ -64,7 +64,7 @@ country_event = {
 						duration = 730
 					}
 				}
-				50 = {
+				40 = {
 				}
 			}
 		}										
