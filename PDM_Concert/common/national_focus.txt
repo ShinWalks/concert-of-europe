@@ -1,24 +1,24 @@
 promotion_focus = {
 	promote_aristocrats = {
-		aristocrats = 0.15 #10% more likeley to become artisans
+		aristocrats = 0.15 #10% more likely to become artisans
 		icon = 2
 		outliner_show_as_percent = yes
 	}
 
 	promote_artisans = {
-		artisans = 0.15 #10% more likeley to become this type
+		artisans = 0.15 #10% more likely to become this type
 		icon = 3
 		outliner_show_as_percent = yes
 	}
 
 	promote_bureaucrats = {
-		bureaucrats = 0.15 #10% more likeley to become this type
+		bureaucrats = 0.15 #10% more likely to become this type
 		icon = 4
 		outliner_show_as_percent = yes
 	}
 
 	promote_capitalists = {
-		capitalists = 0.15 #10% more likeley to become this type
+		capitalists = 0.15 #10% more likely to become this type
 		icon = 5
 		outliner_show_as_percent = yes
 		limit = { 
@@ -29,13 +29,13 @@ promotion_focus = {
 	}
 	
 	promote_clergymen = {
-		clergymen = 0.15 #10% more likeley to become this type
+		clergymen = 0.15 #10% more likely to become this type
 		icon = 6
 		outliner_show_as_percent = yes
 	}
 
 	promote_clerks = {
-		clerks = 0.15 #10% more likeley to become this type
+		clerks = 0.15 #10% more likele to become this type
 		icon = 7
 		outliner_show_as_percent = yes
 		limit = { 
@@ -46,7 +46,7 @@ promotion_focus = {
 	}
 
 	promote_craftsmen = {
-		craftsmen = 0.15 #10% more likeley to become this type
+		craftsmen = 0.15 #10% more likely to become this type
 		icon = 8
 		outliner_show_as_percent = yes
 		limit = { 
@@ -55,25 +55,25 @@ promotion_focus = {
 	}
 
 	promote_farmers = {
-		farmers = 0.15 #10% more likeley to become this type
+		farmers = 0.15 #10% more likely to become this type
 		outliner_show_as_percent = yes
 		icon = 9
 	}
 	
 	promote_labourers = {
-		labourers = 0.15 #10% more likeley to become this type
+		labourers = 0.15 #10% more likely to become this type
 		outliner_show_as_percent = yes
 		icon = 10
 	}
 
 	promote_officers = {
-		officers = 0.15 #10% more likeley to become this type
+		officers = 0.15 #10% more likely to become this type
 		icon = 11
 		outliner_show_as_percent = yes
 	}
 
 	promote_soldiers = {
-		soldiers = 0.15 #10% more likeley to become this type
+		soldiers = 0.15 #10% more likely to become this type
 		icon = 12
 		outliner_show_as_percent = yes
 	}
@@ -81,7 +81,7 @@ promotion_focus = {
 
 heavy_industry_focus = {	
 	encourage_rail =  {
-		railroads = 10 #Capitalists 100% more likeley to choose railroads
+		railroads = 10 #Capitalists 100% more likely to choose railroads
 		icon = 13
 	}
 	
@@ -278,7 +278,7 @@ military_goods_focus = {
 
 immigration_colonization_focus = {	
 	immigration = {
-		immigrant_attract = 3 #increases attactiveness to immigrants by 300 %
+		immigrant_attract = 3 #increases attractiveness to immigrants by 300 %
 		global_immigrant_attract = 0.05
 		icon = 35
 		limit = { 
@@ -290,7 +290,6 @@ immigration_colonization_focus = {
 		icon = 43
 		has_flashpoint = yes
 		own_provinces = no
-
 		flashpoint_tension = 0.08
 		limit = { 
 			OR = {

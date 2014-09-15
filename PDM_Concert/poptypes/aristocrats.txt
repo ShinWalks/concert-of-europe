@@ -52,7 +52,7 @@ country_migration_target = {
 	modifier = {
 		factor = 0.8
 		religious_policy = moralism
-		NOT = { religion = this }
+		NOT = { religion = THIS }
 	}
 	modifier = {
 		factor = 1.2
@@ -60,7 +60,7 @@ country_migration_target = {
 	}
 	modifier = {
 		factor = 1.2
-		religion = this
+		religion = THIS
 	}
 	modifier = {
 		factor = 1.2
@@ -107,7 +107,7 @@ country_migration_target = {
 	modifier = {
 		factor = 1.2
 		religious_policy = moralism
-		religion = this 
+		religion = THIS 
 	}
 	modifier = {
 		factor = 0.8
@@ -120,12 +120,12 @@ country_migration_target = {
 	modifier = {
 		factor = 0.8
 		citizenship_policy = residency
-		NOT = { has_pop_culture = this }
+		NOT = { has_pop_culture = THIS }
 	}
 	modifier = {
 		factor = 1.2
 		citizenship_policy = residency
-		has_pop_culture = this 
+		has_pop_culture = THIS 
 	}
 	modifier = {
 		factor = 0.8
@@ -252,12 +252,12 @@ migration_target = {
 	}
 	modifier = {
 		factor = 2
-		this = { religion = jewish }
+		THIS = { religion = jewish }
 		is_core = ISR 
 	}
 	modifier = {
 		factor = 2
-		this = { religion = mormon }
+		THIS = { religion = mormon }
 		is_core = DES
 	}
 	modifier = {
@@ -473,12 +473,10 @@ promote_to = {
 		}
 		modifier = {
 			factor = -50
-			AND = {
-				state_scope = {
-					has_factories = no
-				}
-				can_build_factory = no
+			state_scope = {
+				has_factories = no
 			}
+			can_build_factory = no
 		}
 		modifier = {
 			factor = 10
@@ -6695,10 +6693,6 @@ trinket_subsidies = {
 			citizenship_policy = residency
 			is_primary_culture = yes
 		}
-		modifier = {
-			factor = 1.2
-			consciousness = 5
-		} 
 		modifier = {
 			factor = 0
 			OR = {

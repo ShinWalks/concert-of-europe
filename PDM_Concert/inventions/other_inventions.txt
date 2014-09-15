@@ -4068,42 +4068,36 @@ early_1930_army_armament = {
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		guard = {
 			attack = 0.25
 			defence = 0.25
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		engineer = {
 			attack = 0.2
 			defence = 0.2
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		artillery = {
 			attack = 0.1
 			defence = 0.1
 			support = 0.25
 			supply_consumption = 0.1
 		}
-
 		horse_artillery = {
 			attack = 0.1
 			defence = 0.1
 			support = 0.25
 			supply_consumption = 0.1
 		}
-
 		tank = {
 			attack = 0.25
 			defence = 0.25
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		plane = {
 			attack = 0.25
 			defence = 0.25
@@ -4111,42 +4105,36 @@ early_1930_army_armament = {
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		cuirassier = {
 			attack = 0.2
 			defence = 0.2
 			discipline = 0.1
 			supply_consumption = 0.1
 		}
-
 		dragoon = {
 			attack = 0.2
 			defence = 0.2
 			discipline = 0.1
 			supply_consumption = 0.1
 		}
-
 		hussar = {
 			attack = 0.2
 			defence = 0.2
 			discipline = 0.1
 			supply_consumption = 0.1
 		}
-
 		infantry = {
 			attack = 0.2
 			defence = 0.2
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		cavalry = {
 			attack = 0.1
 			defence = 0.1
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		irregular = {
 			attack = 0.1
 			defence = 0.1
@@ -4181,42 +4169,36 @@ mid_1930_army_armament	= {
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		guard = {
 			attack = 0.25
 			defence = 0.25
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		engineer = {
 			attack = 0.2
 			defence = 0.2
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		artillery = {
 			attack = 0.1
 			defence = 0.1
 			support = 0.25
 			supply_consumption = 0.1
 		}
-
 		horse_artillery = {
 			attack = 0.1
 			defence = 0.1
 			support = 0.25
 			supply_consumption = 0.1
 		}
-
 		tank = {
 			attack = 0.25
 			defence = 0.25
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		plane = {
 			attack = 0.25
 			defence = 0.25
@@ -4224,42 +4206,36 @@ mid_1930_army_armament	= {
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		cuirassier = {
 			attack = 0.2
 			defence = 0.2
 			discipline = 0.1
 			supply_consumption = 0.1
 		}
-
 		dragoon = {
 			attack = 0.2
 			defence = 0.2
 			discipline = 0.1
 			supply_consumption = 0.1
 		}
-
 		hussar = {
 			attack = 0.2
 			defence = 0.2
 			discipline = 0.1
 			supply_consumption = 0.1
 		}
-
 		infantry = {
 			attack = 0.2
 			defence = 0.2
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		cavalry = {
 			attack = 0.1
 			defence = 0.1
 			discipline = 0.15
 			supply_consumption = 0.1
 		}
-
 		irregular = {
 			attack = 0.1
 			defence = 0.1
@@ -4388,25 +4364,21 @@ early_1930_navy_armament = {
 			hull = 2
 			supply_consumption = 0.05
 		}
-
 		cruiser = {
 			gun_power = 2
 			hull = 2
 			supply_consumption = 0.05
 		}
-
 		ironclad = {
 			gun_power = 1
 			hull = 1
 			supply_consumption = 0.05
 		}
-
 		monitor = {
 			gun_power = 1
 			hull = 1
 			supply_consumption = 0.05
 		}
-
 		submarine = {
 			gun_power = 1
 			hull = 0.5
@@ -4439,25 +4411,21 @@ mid_1930_navy_armament = {
 			hull = 2
 			supply_consumption = 0.05
 		}
-
 		cruiser = {
 			gun_power = 2
 			hull = 2
 			supply_consumption = 0.05
 		}
-
 		ironclad = {
 			gun_power = 1
 			hull = 1
 			supply_consumption = 0.05
 		}
-
 		monitor = {
 			gun_power = 1
 			hull = 1
 			supply_consumption = 0.05
 		}
-
 		submarine = {
 			gun_power = 1
 			hull = 0.5
