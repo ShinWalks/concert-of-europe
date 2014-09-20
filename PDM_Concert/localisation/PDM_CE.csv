@@ -29,7 +29,12 @@ FRA_400;Pas de Calais;;;;;;;;;;;;x
 TUR_824;Epirus;;;;;;;;;;;;x
 TUR_828;Eastern Thrace;;;;;;;;;;;;x
 TUR_860;Istanbul Region;;;;;;;;;;;;x
+PROV356;Selija;;;;;;;;;;;;;x
+PROV357;Zemgale;;;;;;;;;;;;;x
 PROV641;Buda;;;;;;;;;;;;;x
+PROV3249;Eupen;;;;;;;;;;;;;x
+PROV3250;Guangzhou Wan;;;;;;;;;;;;;x
+PROV3251;Latgale;;;;;;;;;;;;;x
 incorporate_sudan_title;Incorporate Sudan;;;;;;;;;;;;;x
 incorporate_sudan_desc;We should introduce modern administrative structures to replace tribal governments throughout our new lands in the Sudan. The locals won't like it, but it will bind the region to Egypt permanently.;;;;;;;;;;;;;x
 incorporate_hedjaz_title;Incorporate Hedjaz;;;;;;;;;;;;;x
