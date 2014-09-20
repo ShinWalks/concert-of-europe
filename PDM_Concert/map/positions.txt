@@ -17659,13 +17659,13 @@ naval_base=0.785399
 {
 	unit=
 	{
-		x=3214.000000
+		x=3208.000000
 		y=1784.000000
 	}
 
 	text_position=
 	{
-		x=3213.699951
+		x=3207.699951
 		y=1778.000000
 	}
 	text_scale=3.799999
@@ -17724,32 +17724,37 @@ naval_base=
 {
 	unit=
 	{
-		x=3227.000000
+		x=3210.000000
 		y=1761.000000
 	}
-
-	text_scale=2.899999
+	text_position=
+	{
+		x=3207.000000
+		y=1759.000000
+	}
+	text_scale=4.000000
+	text_rotation=5.650000
 	building_construction=
 	{
-		x=3238.300049
+		x=3210.000000
 		y=1761.000000
 	}
 	military_construction=
 	{
-		x=3222.100098
-		y=1755.900024
+		x=3208.000000
+		y=1762.000000
 	}
 	factory=
 	{
-		x=3242.899902
-		y=1763.000000
+		x=3203.000000
+		y=1764.000000
 	}
 building_position = 
 	{
 fort=
 		{
-			x=3214.000000
-			y=1758.000000
+			x=3203.000000
+			y=1767.000000
 		}
 
 	}
@@ -19505,34 +19510,32 @@ fort=
 }
 
 #Spa
-396 = 
-{
-	text_position=
-	{
-		x=2899.300049
-		y=1637.900024
-	}
-	text_scale=2.000000
-	building_construction=
-	{
-		x=2903.100098
-		y=1637.099976
-	}
-	factory=
-	{
-		x=2896.399902
-		y=1642.099976
-	}
-building_position = 
-	{
-fort=
-		{
-			x=2896.000000
-			y=1637.000000
-		}
+396 = { 
+    text_position = { 
+        x = 2896.300049
+        y = 1638.900024
+    } 
 
-	}
-}
+    text_scale = 2.000000
+    factory = { 
+        x = 2896.399902
+        y = 1642.099976
+    } 
+
+    building_construction = { 
+        x = 2898.650000
+        y = 1640.400000
+    } 
+
+    building_position = { 
+        fort = { 
+            x = 2896.000000
+            y = 1637.000000
+        } 
+
+    } 
+
+} 
 
 #Luxembourg
 397 = 
@@ -67865,16 +67868,14 @@ naval_base=3.577924
 		x=4540.000000
 		y=1117.000000
 	}
-	military_construction=
-	{
-		x=4528.000000
-		y=1107.000000
-	}
-	factory=
-	{
-		x=4539.000000
-		y=1122.000000
-	}
+	military_construction = { 
+        x = 4509.500000
+        y = 1113.856667
+    } 
+	factory = { 
+        x = 4539.000000
+        y = 1122.000000
+    } 
 building_position = 
 	{
 fort=
@@ -67883,11 +67884,10 @@ fort=
 			y=1092.000000
 		}
 
-naval_base=
-		{
-			x=4535.100098
-			y=1105.000000
-		}
+	naval_base = { 
+            x = 4510.736667
+            y = 1107.408333
+        } 
 
 railroad=
 		{
@@ -67904,10 +67904,9 @@ railroad=
 			y=1118.000000
 		}
 	}
-building_rotation = 
-	{
-naval_base=4.188790
-	}
+	building_rotation = { 
+        naval_base = 4.188790
+    } 
 }
 
 #Hong Kong
@@ -131468,3 +131467,115 @@ naval_base=4.101523
 	text_scale=5.299997
 }
 
+# Eupen
+3249 = {
+    text_position = { 
+        x = 2903.000000
+        y = 1637.000000
+    } 
+
+    text_scale = 1.000000
+    building_construction = { 
+        x = 2904.000000
+        y = 1638.000000
+    } 
+
+    building_position = { 
+        fort = { 
+            x = 2901.000000
+            y = 1636.000000
+        } 
+
+        railroad = { 
+            x = 2902.750000
+            y = 1639.350000
+        }
+    }
+}
+
+# Guangzhou Wan
+3250 = {
+    text_position = {
+        x = 4528.750000
+        y = 1101.800000
+    }
+
+    city = {
+        x = 4527.000000
+        y = 1102.650000
+    }
+
+    building_construction = {
+        x = 4532.100000
+        y = 1106.150000
+    }
+
+    building_position = {
+        fort = {
+            x = 4532.000000
+            y = 1106.300000
+        }
+
+        railroad = {
+            x = 4528.900000
+            y = 1105.100000
+        }
+
+        naval_base = {
+            x = 4532.800000
+            y = 1104.200000
+        }
+    }
+
+    building_rotation = {
+        naval_base = 3.146593
+    }
+} 
+
+# Latgale
+3251 = {
+    unit = {
+		x=3234.000000
+		y=1764.000000
+	}
+
+	text_position = {
+		x=3232.000000
+		y=1763.000000
+	}
+	text_scale=3.799999
+	building_construction = {
+		x=3199.699951
+		y=1790.000000
+	}
+	military_construction = {
+		x=3225.000000
+		y=1772.000000
+	}
+	factory = {
+		x=3199.000000
+		y=1798.000000
+	}
+	building_position = {
+		fort = {
+			x=3246.000000
+			y=1772.000000
+		}
+		spawn_railway_track = {
+		{
+			x=0.000000
+			y=0.000000
+		}
+
+		{
+			x=0.000000
+			y=0.000000
+		}
+
+		{
+			x=3197.812500
+			y=1782.998779
+		}
+		}
+	}
+}

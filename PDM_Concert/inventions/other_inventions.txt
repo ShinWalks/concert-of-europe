@@ -245,8 +245,8 @@ School_of_manuever = {
 	}
 	effect = {
 		tank = {
-			maximum_speed = 3
-			supply_consumption = -0.5
+			maximum_speed = 1
+			supply_consumption = -0.25
 		}
 	}
 }
@@ -260,7 +260,7 @@ School_of_firepower = {
 	effect = {
 		army_base = {
 			attack = 1
-			supply_consumption = -0.25
+			supply_consumption = -0.15
 		}
 		artillery = {
 			attack = 0.2
@@ -283,7 +283,7 @@ Schwerpunkt = {
 		army_base = { 
 			attack = 0.2
 			reconnaissance = 2	
-			maximum_speed = 2	
+			maximum_speed = 1
 		}
 		combat_width = -1
 	}
@@ -724,7 +724,6 @@ carronade = {
 				attack = 0.1
 				defence = 0.1
 			}
-
 		}
 	}
 }
@@ -760,7 +759,6 @@ twelve_pounder = {
 				attack = 0.1
 				defence = 0.1
 			}
-
 		}
 	}
 }
@@ -796,7 +794,6 @@ rifled_barrels = {
 				attack = 0.1
 				defence = 0.1
 			}
-
 		}
 	}
 }
@@ -832,7 +829,6 @@ rifled_barrels = {
 				attack = 0.1
 				defence = 0.1
 			}
-
 		}
 	}
 }
@@ -867,7 +863,6 @@ howitzer = {
 				attack = 0.25
 				defence = 0.25
 			}
-
 		}
 		tank = {
 			attack = 0.3
@@ -906,7 +901,6 @@ mortar = {
 				attack = 0.1
 				defence = 0.1
 			}
-
 		}
 	}
 }
@@ -987,7 +981,6 @@ Armoured_fist_doctrine = {
 		tank = {
 			attack = 0.4
 			defence = 0.2
-			maximum_speed = 1
 			reconnaissance = 4
 			supply_consumption = 0.15
 		}
@@ -1763,9 +1756,9 @@ jominian_attitude = {
 		}
 	}
 	effect = {
+		morale = 0.25
 		army_base = {
 			discipline = 0.2
-			morale = 0.25
 		}
 	}	
 }
@@ -1797,9 +1790,9 @@ clausewitzian_theory = {
 		}
 	}
 	effect = {
+		military_tactics = 0.2
 		army_base = {
 			default_organisation = 5
-			military_tactics = 0.2
 		} 
 	}	
 }
@@ -4044,6 +4037,7 @@ modern_infrastructure = {
 	}
 	effect = {
 		max_railroad = 1
+		mobilisation_size = 0.002
 	}
 }
 

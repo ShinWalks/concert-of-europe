@@ -3131,49 +3131,104 @@
 		size = 565    
 	}
 }
-#Aachen (400000/100000 POPS)
+#Aachen (300000/75000 POPS)
 576 = {
+	
 	aristocrats = {
 		culture = north_german
 		religion = catholic
-		size = 1100 
+		size = 1100
 	}
-
-	clergymen = {
-		culture = north_german
-		religion = catholic
-		size = 850
-	}
-
 	artisans = {
+
+		size = 4150
+		culture = north_german
+		religion = protestant
+
+	}
+	artisans = {
+
+		size = 3070
 		culture = north_german
 		religion = catholic
-		size = 4500
-	}
 
+	}
+	clergymen = {
+
+		size = 1003
+		culture = north_german
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 12366
+		culture = north_german
+		religion = protestant
+
+	}
+	labourers = {
+
+		size = 49311
+		culture = north_german
+		religion = catholic
+
+	}
 	soldiers = {
 		culture = north_german
 		religion = catholic
-		size= 2000
+		size= 4000
 
 	}
-
-	farmers = {
+}
+#Eupen (100000/25000 POPS)
+3249 = {
+	aristocrats = {
 		culture = north_german
 		religion = catholic
-		size = 90450
+		size = 770 
 	}
+	artisans = {
 
+		size = 250
+		culture = wallonian
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 750
+		culture = north_german
+		religion = catholic
+
+	}
 	clergymen = {
-		culture = wallonian
-		religion = catholic
-		size = 10 
-	}
 
-	farmers = {
+		size = 55
 		culture = wallonian
 		religion = catholic
-		size = 990 
+
+	}
+	clergymen = {
+
+		size = 175
+		culture = north_german
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 3000
+		culture = wallonian
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 20000
+		culture = north_german
+		religion = catholic
+
 	}
 }
 #Kleves (356000/89000 POPS)

@@ -84,7 +84,7 @@ promotion_chance =
 	}
 	modifier = {
 		factor = -0.1
-		NOT = { religion = this }
+		NOT = { religion = THIS }
 	}
 	modifier = {
 		factor = -0.1
@@ -92,7 +92,7 @@ promotion_chance =
 	}
 	modifier = {
 		factor = -0.1
-		NOT = { culture = this }
+		NOT = { culture = THIS }
 	}
 	modifier = {
 		factor = -0.1
@@ -115,7 +115,7 @@ demotion_chance =
 	factor = 1
 	modifier = {
 		factor = -0.1
-		NOT = { religion = this }
+		NOT = { religion = THIS }
 	}
 	modifier = {
 		factor = -0.2
@@ -126,7 +126,7 @@ demotion_chance =
 		factor = 1
 		state_scope = { is_colonial = yes }
 		strata = middle
-		NOT = { culture = this }		
+		NOT = { culture = THIS }		
 	}
 	modifier = {
 		factor = -10
@@ -136,7 +136,7 @@ demotion_chance =
 	modifier = {
 		factor = -0.05
 		country = {
-			has_country_flag = serfdom_NOT_abolished
+			has_country_flag = serfdom_not_abolished
 		}
 	}
 	modifier = {
@@ -151,7 +151,7 @@ demotion_chance =
 	}
 	modifier = {
 		factor = -0.1
-		NOT = { culture = this }
+		NOT = { culture = THIS }
 	}
 	modifier = {
 		factor = -0.03
@@ -562,12 +562,12 @@ emigration_chance =
 	modifier = {
 		factor = 0.3
 		country = { religious_policy = moralism }
-		NOT = { religion = this }
+		NOT = { religion = THIS }
 	}
 	modifier = {
 		factor = -0.3
 		country = { religious_policy = moralism }
-		religion = this 
+		religion = THIS 
 	}
 	modifier = {
 		factor = 0.2
@@ -666,7 +666,6 @@ emigration_chance =
 			}
 		}
 	}
-
 	group = {
 		modifier = {
 			factor = 0.1
@@ -832,12 +831,12 @@ assimilation_chance =
 	modifier = {
 		factor = -5
 		country = { religious_policy = moralism }
-		NOT = { religion = this }
+		NOT = { religion = THIS }
 	}
 	modifier = {
 		factor = 3
 		country = { religious_policy = moralism }
-		religion = this 
+		religion = THIS 
 	}
 	modifier = {
 		factor = 1
@@ -897,7 +896,7 @@ assimilation_chance =
 	}
 	modifier = {
 		factor = -3
-		NOT = { religion = this }
+		NOT = { religion = THIS }
 	}
 	modifier = {
 		factor = -50
@@ -977,7 +976,7 @@ conversion_chance =
 	}
 	modifier = {
 		factor = 1.5
-		culture = this
+		culture = THIS
 	}
 	modifier = {
 		factor = 2

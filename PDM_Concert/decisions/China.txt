@@ -1346,6 +1346,49 @@ political_decisions = {
 		}
 	}
 	
+	lease_guangzhouwan = {
+		potential = {
+			is_greater_power = yes
+			any_owned_province = { continent = asia }
+			nationalism_n_imperialism = 1
+			3250 = {
+				owner = {
+					OR = {
+						tag = QNG
+						tag = TPG
+					}
+					civilized = no
+				}
+			}
+			NOT = {
+				capital_scope = { continent = asia }
+				has_country_flag = solicited_guangzhouwan
+				war_with = QNG
+				truce_with = QNG
+				any_owned_province = { is_core = CHI }
+			}
+		}
+		
+		allow = {
+			steel_steamers = 1
+			treasury = 250000
+			3250 = {
+				owner = { relation = { who = THIS value = 50 } }
+			}
+		}
+		
+		effect = {
+			set_country_flag = solicited_guangzhouwan
+			3250 = {
+				owner = { country_event = 1316095 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	self_strengthening_movement = {
 		potential = {
 			OR = {

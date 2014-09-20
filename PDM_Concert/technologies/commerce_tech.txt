@@ -329,7 +329,7 @@ bank_inspection_board = {
 
 mutual_funds = {
 	area = financial_institutions
-	year = 1910
+	year = 1900
 	cost = 30000
 	administrative_efficiency = 0.05
 	factory_output = 0.02
@@ -1012,7 +1012,7 @@ neoclassical_theory = {
 
 keynesian_economics = {
 	area = economic_thought_and_critique
-	year = 1910
+	year = 1900
 	cost = 30000
 	factory_input = -0.01
 	factory_cost = -0.02
@@ -1378,7 +1378,7 @@ economic_responsibility = {
 
 government_interventionism = {
 	area = market_functionality
-	year = 1910
+	year = 1900
 	cost = 30000
 	education_efficiency = 0.25
 	influence = 0.1

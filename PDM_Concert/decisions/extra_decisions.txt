@@ -740,7 +740,7 @@ political_decisions = {
 		}
 		effect = {
 			prestige = -5
-			years_of_research = 0.25
+			years_of_research = 0.4
 			add_country_modifier = {
 				name = conference
 				duration = 5400
@@ -772,7 +772,7 @@ political_decisions = {
 		}
 		effect = {
 			prestige = -10
-			years_of_research = 0.33
+			years_of_research = 0.5
 			add_country_modifier = {
 				name = conference
 				duration = 5400
@@ -804,7 +804,7 @@ political_decisions = {
 		}
 		effect = {
 			prestige = -15
-			years_of_research = 0.50
+			years_of_research = 0.6
 			add_country_modifier = {
 				name = conference
 				duration = 5400
@@ -836,7 +836,7 @@ political_decisions = {
 		}
 		effect = {
 			prestige = -20
-			years_of_research = 0.67
+			years_of_research = 0.7
 			add_country_modifier = {
 				name = conference
 				duration = 5400
@@ -897,7 +897,7 @@ political_decisions = {
 		}
 		effect = {
 			prestige = -30
-			years_of_research = 1
+			years_of_research = 0.8
 			add_country_modifier = {
 				name = conference
 				duration = 5400

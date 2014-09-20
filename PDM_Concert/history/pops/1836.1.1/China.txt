@@ -2705,7 +2705,7 @@
 		size = 449750
 	}
 }
-#Gaozhou (3788000/947000 POPS)
+#Gaozhou (3698000/924500 POPS)
 1495 = {
 	aristocrats = {
 		culture = min
@@ -2741,13 +2741,13 @@
 	aristocrats = {
 		culture = yue
 		religion = mahayana
-		size = 18000
+		size = 17500
 	}
 
 	clergymen = {
 		culture = yue
 		religion = mahayana
-		size = 9250
+		size = 9000
 	}
 
 	artisans = {
@@ -2771,13 +2771,7 @@
 	artisans = {
 		culture = yue
 		religion = mahayana
-		size = 11000
-	}
-	
-	artisans = {
-		culture = yue
-		religion = mahayana
-		size = 6500
+		size = 10950
 	}
 
 	soldiers = {
@@ -2790,14 +2784,47 @@
 	soldiers = {
 		culture = yue
 		religion = mahayana
-		size= 2300
+		size= 2050
 
 	}
 
 	farmers = {
 		culture = yue
 		religion = mahayana
-		size = 844950
+		size = 83000
+	}
+}
+#Guangzhou Wan (90000/22500 POPS)
+3250 = {
+	aristocrats = {
+		culture = yue
+		religion = mahayana
+		size = 500
+	}
+
+	clergymen = {
+		culture = yue
+		religion = mahayana
+		size = 250
+	}
+	
+	artisans = {
+		culture = yue
+		religion = mahayana
+		size = 6500
+	}
+
+	soldiers = {
+		culture = yue
+		religion = mahayana
+		size= 250
+
+	}
+
+	farmers = {
+		culture = yue
+		religion = mahayana
+		size = 15000
 	}
 }
 #Hong Kong (6000/1500 POPS)

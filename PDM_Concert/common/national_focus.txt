@@ -328,6 +328,9 @@ immigration_colonization_focus = {
 #	}
 	
 	progress_focus = {
+		limit = { 
+			ai = no
+		}
 		pop_consciousness_modifier = 0.1
 		pop_militancy_modifier = 0.03
 		icon = 41
@@ -340,6 +343,9 @@ immigration_colonization_focus = {
 	}
 	
 	education_focus = {
+		limit = { 
+			not = { literacy = 0.5 }
+		}
 		education_efficiency_modifier = 0.02
 		icon = 30
 	}

@@ -56,8 +56,12 @@ create_iberia_UPB_title;Become Iberia;;;;;;;;;;;;;x
 create_iberia_UPB_desc;We have proven our mettle and united the Iberian peninsula under our rule. Now the time has come for a new Iberian federation to be born, one that unites all of the peninsula's cultures under a single rule.;;;;;;;;;;;;;x
 create_iberia2_UPB_title;Become Iberia;;;;;;;;;;;;;x
 create_iberia2_UPB_desc;We have proven our mettle and united the Iberian peninsula under our rule. Now the time has come for a new Iberian federation to be born, one that unites all of the peninsula's cultures under a single rule.;;;;;;;;;;;;;x
-thorbecke's_reforms_title;Thorbecke's Reforms;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
-thorbecke's_reforms_desc;In the face of coming revolution, King William II of the Netherlands appointed liberal statesman Johan Rudolf Thorbecke as chief minister and asked him to draft a new constitution for the kingdom. The constitution of 1848 significantly reduced the King's powers, established direct popular election of MPs and protected freedom of religion in the Netherlands.;;;;;;;;;;;;;;x;;;;;;;;;;;;;;
+lease_guangzhouwan_title;Lease Guangzhou Wan;;;;;;;;;;;;;;x
+lease_guangzhouwan_desc;A port on the Chinese coast would help us to administer our Asian possessions and encourage trade with China. We can propose a lengthy lease for a minor town on the coast of Guangzhou.;;;;;;;;;;;;;;x
+greater_PLC_title;Greater Poland-Lithuania;;;;;;;;;;;;;x
+greater_PLC_desc;Our nation has become influential enough to stake a credible claim to all of the lands once ruled by the Commonwealth. Let us restore Poland-Lithuania!;;;;;;;;;;;;;x
+thorbecke's_reforms_title;Thorbecke's Reforms;;;;;;;;;;;;;;x
+thorbecke's_reforms_desc;In the face of coming revolution, King William II of the Netherlands appointed liberal statesman Johan Rudolf Thorbecke as chief minister and asked him to draft a new constitution for the kingdom. The constitution of 1848 significantly reduced the King's powers, established direct popular election of MPs and protected freedom of religion in the Netherlands.;;;;;;;;;;;;;;x
 reclaim_southern_netherlands_title;Reclaim Southern Netherlands;;;;;;;;;;;;;x
 reclaim_southern_netherlands_desc;The region of Calais was once part of the Low Countries, and our people are still a minority there. It's time the southern Netherlands was brought under our banner.;;;;;;;;;;;;;x
 reclaim_east_frisia_title;Reclaim East Frisia;;;;;;;;;;;;;x
@@ -667,3 +671,9 @@ EVTNAME201071;A Temple of the Sun;;;;;;;;;;;;x;
 EVTDESC201071;A breakthrough in the Andes! Our archaeologists have located a major Inca temple complex. Its walls are covered in brilliant frescoes depicting myths and religious ceremonies, and a number of tools, garments and textiles have been remarkably well preserved by the arid Andean climate. It is clear that the Inca were wealthier and more culturally sophisticated than was previously suspected.;;;;;;;;;;;;x;
 EVTNAME201072;The Golden Raft;;;;;;;;;;;;x;
 EVTDESC201072;After all the careful exploration of major Inca sites, the most dramatic breakthrough yet has come from a farming village. A ceramic vessel was unearthed, and inside was a breathtaking golden sculpture of an early Inca chief on a log raft, surrounded by priests and servants. Comparing the sculpture with frescoes from the temples and regional legends, we now believe that the chief painted himself with gold dust and leapt into a mountain lake to make offerings to appease the gods. It seems likely that this ritual is the ancient origin of the legend of "Golden Kings" that so tantalized Spanish explorers centuries ago. What a triumph for $COUNTRY_ADJ$ archaeology!;;;;;;;;;;;;x;
+EVTNAME1316095;Leasing a Port?;;;;;;;;;;;;x;
+EVTDESC1316095;Envoys from $FROMCOUNTRY$ have approached us about leasing a port town on the Guangzhou coast in exchange for a substantial sum of money. The port is of no particular consequence and would never be missed, though we might wish to think twice before giving even more foreigners a foothold on our shores. Still, their proposal is respectful and their offer generous.;;;;;;;;;;;;x;
+EVTNAME1316096;China Agrees!;;;;;;;;;;;;x;
+EVTDESC1316096;Our offer has been accepted, and control of the port town has been transferred to us. This will facilitate our trade with China and our Asian possessions.;;;;;;;;;;;;x;
+EVTNAME1316097;China Refuses!;;;;;;;;;;;;x;
+EVTDESC1316097;Our offer has been turned down, and the Chinese seem offended that we even asked. If we still want a Chinese port, we'll have to get it the old-fashioned way...;;;;;;;;;;;;x;

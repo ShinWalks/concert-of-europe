@@ -16271,91 +16271,91 @@
 
 	artisans = {
 
-		size = 3067
+		size = 1567
 		culture = latvian
 		religion = protestant
 
 	}
 	artisans = {
 
-		size = 549
+		size = 299
 		culture = north_german
 		religion = protestant
 
 	}
 	artisans = {
 
-		size = 1007
+		size = 507
 		culture = ashkenazi
 		religion = jewish
 
 	}
 	artisans = {
 
-		size = 93
+		size = 48
 		culture = russian
 		religion = orthodox
 
 	}
 	artisans = {
 
-		size = 366
+		size = 186
 		culture = polish
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 1007
+		size = 507
 		culture = latvian
 		religion = protestant
 
 	}
 	clergymen = {
 
-		size = 45
+		size = 25
 		culture = north_german
 		religion = protestant
 
 	}
 	clergymen = {
 
-		size = 68
+		size = 38
 		culture = ashkenazi
 		religion = jewish
 
 	}
 	clergymen = {
 
-		size = 45
+		size = 25
 		culture = russian
 		religion = orthodox
 
 	}
 	clergymen = {
 
-		size = 137
+		size = 72
 		culture = polish
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 103818
+		size = 53818
 		culture = latvian
 		religion = protestant
 
 	}
 	farmers = {
 
-		size = 3548
+		size = 1798
 		culture = ashkenazi
 		religion = jewish
 
 	}
 	farmers = {
 
-		size = 1419
+		size = 719
 		culture = russian
 		religion = orthodox
 
@@ -27536,43 +27536,36 @@
 
 	artisans = {
 
-		size = 906
+		size = 656
 		culture = dutch
 		religion = protestant
 
 	}
 	artisans = {
 
-		size = 3214
+		size = 2464
 		culture = north_german
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 778
+		size = 603
 		culture = north_german
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 18421
+		size = 12366
 		culture = dutch
 		religion = protestant
 
 	}
 	labourers = {
 
-		size = 65311
+		size = 49311
 		culture = north_german
-		religion = catholic
-
-	}
-	labourers = {
-
-		size = 906
-		culture = wallonian
 		religion = catholic
 
 	}
@@ -87654,13 +87647,6 @@
 		religion = mahayana
 
 	}
-	artisans = {
-
-		size = 6063
-		culture = yue
-		religion = mahayana
-
-	}
 	clergymen = {
 
 		size = 186
@@ -87670,7 +87656,7 @@
 	}
 	clergymen = {
 
-		size = 8629
+		size = 8429
 		culture = yue
 		religion = mahayana
 
@@ -87684,7 +87670,7 @@
 	}
 	farmers = {
 
-		size = 788246
+		size = 774246
 		culture = yue
 		religion = mahayana
 
@@ -151200,6 +151186,172 @@
 		size = 5993
 		culture = kazak
 		religion = sunni
+
+	}
+
+}
+3249 = {
+
+	artisans = {
+
+		size = 250
+		culture = wallonian
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 750
+		culture = north_german
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 55
+		culture = wallonian
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 175
+		culture = north_german
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 3000
+		culture = wallonian
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 20000
+		culture = north_german
+		religion = catholic
+
+	}
+
+}
+3250 = {
+
+	artisans = {
+
+		size = 6063
+		culture = yue
+		religion = mahayana
+
+	}
+	clergymen = {
+
+		size = 200
+		culture = yue
+		religion = mahayana
+
+	}
+	farmers = {
+
+		size = 14000
+		culture = yue
+		religion = mahayana
+
+	}
+
+}
+3251 = {
+
+	artisans = {
+
+		size = 1500
+		culture = latvian
+		religion = protestant
+
+	}
+	artisans = {
+
+		size = 250
+		culture = north_german
+		religion = protestant
+
+	}
+	artisans = {
+
+		size = 500
+		culture = ashkenazi
+		religion = jewish
+
+	}
+	artisans = {
+
+		size = 45
+		culture = russian
+		religion = orthodox
+
+	}
+	artisans = {
+
+		size = 180
+		culture = polish
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 500
+		culture = latvian
+		religion = protestant
+
+	}
+	clergymen = {
+
+		size = 20
+		culture = north_german
+		religion = protestant
+
+	}
+	clergymen = {
+
+		size = 30
+		culture = ashkenazi
+		religion = jewish
+
+	}
+	clergymen = {
+
+		size = 20
+		culture = russian
+		religion = orthodox
+
+	}
+	clergymen = {
+
+		size = 65
+		culture = polish
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 50000
+		culture = latvian
+		religion = protestant
+
+	}
+	farmers = {
+
+		size = 1750
+		culture = ashkenazi
+		religion = jewish
+
+	}
+	farmers = {
+
+		size = 700
+		culture = russian
+		religion = orthodox
 
 	}
 

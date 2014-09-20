@@ -3670,6 +3670,11 @@ country_event = {
 				type = acquire_state
 				months = 12
 			}
+			add_casus_belli = {	
+				target = THIS
+				type = place_in_the_sun
+				months = 12
+			}
 		}
 		random_country = {
 			limit = {

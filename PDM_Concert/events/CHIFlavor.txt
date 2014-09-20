@@ -1593,6 +1593,7 @@ country_event = {
 				OR = {
 					vassal_of = FROM
 					substate_of = FROM
+					alliance_with = FROM
 				}
 				war_with = THIS
 			}
@@ -2097,6 +2098,64 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+country_event = {
+	id = 1316095
+	title = "EVTNAME1316095" #Leasing a Port?
+	desc = "EVTDESC1316095"
+	picture = "asian_administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We could certainly use the money."
+		relation = { who = FROM value = 50 }
+		treasury = 250000
+		3250 = { secede_province = FROM }
+		FROM = { country_event = 1316096 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "Rebuff their advances."
+		relation = { who = FROM value = -25 }
+		FROM = { country_event = 1316097 }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 1316096
+	title = "EVTNAME1316096" #China Agrees!
+	desc = "EVTDESC1316096"
+	picture = "asian_administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		treasury = -250000
+		diplomatic_influence = { who = FROM value = 50 }
+	}
+}
+
+country_event = {
+	id = 1316097
+	title = "EVTNAME1316097" #China Refuses!
+	desc = "EVTDESC1316097"
+	picture = "asian_administration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "An unfortunate choice."
+		diplomatic_influence = { who = FROM value = -50 }
 	}
 }
 

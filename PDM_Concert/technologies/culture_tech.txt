@@ -520,7 +520,7 @@ analytic_philosophy = {
 
 phenomenology_n_hermeneutic = {
 	area = philosophy
-	year = 1890
+	year = 1880
 	cost = 20000
 	permanent_prestige = 10
 	
@@ -971,7 +971,7 @@ social_science = {
 	year = 1880
 	cost = 20000
 	permanent_prestige = 10
-	education_efficiency = 0.75
+	education_efficiency = 0.5
 	colonial_points = 10
 	
 	ai_chance = {
@@ -1049,7 +1049,7 @@ social_alienation = {
 	cost = 30000
 	permanent_prestige = 10
 	war_exhaustion = -0.25
-	education_efficiency = 1
+	education_efficiency = 0.75
 	colonial_points = 10
 	
 	ai_chance = {
@@ -1137,7 +1137,7 @@ enlightenment_thought = {
 	permanent_prestige = 2
 	max_national_focus = 1
 	cb_creation_speed = 0.25
-	influence = 0.5
+	influence = 0.25
 	
 	ai_chance = {
 		factor = 500
@@ -1208,7 +1208,7 @@ ideological_thought = {
 	permanent_prestige = 2
 	max_national_focus = 1 
 	cb_creation_speed = 0.25
-	influence = 0.5
+	influence = 0.25
 	
 	ai_chance = {
 		factor = 250
@@ -1280,7 +1280,7 @@ state_n_government = {
 	cost = 10000
 	permanent_prestige = 5
 	max_national_focus = 1 
-	influence = 0.5
+	influence = 0.25
 	cb_creation_speed = 0.25
 	
 	ai_chance = {
@@ -1353,7 +1353,7 @@ nationalism_n_imperialism = {
 	cost = 12500
 	permanent_prestige = 5
 	max_national_focus = 1
-	influence = 0.5
+	influence = 0.25
 	cb_creation_speed = 0.5
 	
 	ai_chance = {
@@ -1426,7 +1426,7 @@ revolution_n_counterrevolution = {
 	cost = 20000
 	permanent_prestige = 10
 	max_national_focus = 1
-	influence = 0.5
+	influence = 0.25
 	diplomatic_points = 0.25
 	cb_creation_speed = 0.25
 	
@@ -1500,7 +1500,7 @@ mass_politics = {
 	cost = 30000
 	permanent_prestige = 10
 	max_national_focus = 1
-	influence = 0.5
+	influence = 0.25
 	cb_creation_speed = 0.25
 	
 	ai_chance = {

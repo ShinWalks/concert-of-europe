@@ -357,7 +357,7 @@ country_event = {
 			tag = BRZ
 			tag = UPB
 		}
-		exists = yes
+		owns = 2405
 		OR = {
 			2404 = { empty = yes } #Tefe
 			2407 = { empty = yes } #Tabatinga

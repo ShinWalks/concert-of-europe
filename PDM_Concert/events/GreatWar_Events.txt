@@ -2450,7 +2450,22 @@ country_event = {
 			}
 		}
 		
-		#Add Dutch cores in Arlon & Spa, if Netherlands has a truce & Belgium doesn't exist
+		#If Netherlands has a truce & is still united, add Dutch & Wallonian cores to Eupen
+		random_country = {
+			limit = {
+				tag = NET
+				truce_with = THIS
+				NOT = { has_country_flag = signed_treaty_of_london }
+			}
+			3249 = {
+				add_core = NET
+				add_core = WLL
+				remove_core = GER
+				remove_core = THIS
+			}
+		}
+		
+		#Add Dutch cores in Arlon, Spa & Eupen if Netherlands has a truce & Belgium doesn't exist
 		random_country = {
 			limit = {
 				tag = NET
@@ -2472,6 +2487,20 @@ country_event = {
 					limit = { is_core = NET }
 					secede_province = NET
 				}
+			}
+		}
+		
+		#If Belgium exists & has a truce, add Belgian & Wallonian cores to Eupen
+		random_country = {
+			limit = {
+				tag = BEL
+				truce_with = THIS
+			}
+			3249 = {
+				add_core = BEL
+				add_core = WLL
+				remove_core = GER
+				remove_core = THIS
 			}
 		}
 		

@@ -327,7 +327,7 @@ low_echelon_fire_support = {
 	}
 	effect = {
 		army_base = {
-			discipline = 1
+			discipline = 0.5
 		}
 	}
 }
@@ -370,6 +370,10 @@ tank_experiments = {
 	}
 	chance = {
 		base = 3
+		modifier = {
+			factor = -3
+			NOT = { year = 1919 }
+		}
 		modifier = {
 			factor = 6
 			war = yes
@@ -414,11 +418,11 @@ tank_exploits = {
 	}
 	effect = {
 		tank = {
-			attack = 4
+			attack = 2
 			defence = 2
 			discipline = 5
 			maximum_speed = 1
-			supply_consumption = -0.25
+			supply_consumption = -0.1
 		}
 	}
 }
@@ -476,12 +480,26 @@ interwar_infantry = {
 	}
 	effect = {
 		guard = {
-			attack = 2
-			defence = 2
-			discipline = 2
+			attack = 1
+			defence = 1
+			discipline = 1
 			default_organisation = 5
 			supply_consumption = 0.05
-		} 
+		}
+		regular = {
+			attack = 1
+			defence = 1
+			discipline = 1
+			default_organisation = 5
+			supply_consumption = 0.05
+		}
+		infantry = {
+			attack = 1
+			defence = 1
+			discipline = 1
+			default_organisation = 5
+			supply_consumption = 0.05
+		}
 	}
 }
 
@@ -540,7 +558,7 @@ tankette = {
 		tank = {
 			attack = 0.2
 			maximum_speed = 1
-			supply_consumption = 0.5
+			supply_consumption = 0.25
 		}
 	}
 }
@@ -565,9 +583,9 @@ light_tank = {
 	}
 	effect = {
 		tank = {
-			attack = 0.5
-			supply_consumption = 0.5
-			maximum_speed = 2
+			attack = 0.3
+			supply_consumption = 0.25
+			maximum_speed = 1
 		}
 	}
 }
@@ -588,8 +606,8 @@ armoured_cars = {
 	}
 	effect = {
 		tank = {
-			maximum_speed = 2
-			supply_consumption = 0.5
+			maximum_speed = 1
+			supply_consumption = 0.25
 		}
 	}
 }
@@ -694,7 +712,7 @@ heavy_artillery = {
 
 		}
 		tank = {
-			attack = 2
+			attack = 1
 			supply_consumption = 0.25
 		}
 	}
@@ -862,7 +880,7 @@ logistical_calculations = {
 	}
 	effect = {
 		army_base = {
-			supply_consumption = -0.15
+			supply_consumption = -0.1
 		} 
 	}
 }
@@ -887,7 +905,7 @@ replenishment_transport_organisation = {
 	}
 	effect = {
 		army_base = {
-			supply_consumption = -0.15
+			supply_consumption = -0.1
 		} 
 	}
 }
@@ -1364,7 +1382,7 @@ nco_field_training = {
 		}
 	}
 	effect = {
-			morale = 0.5
+		morale = 0.5
 	}
 }
 

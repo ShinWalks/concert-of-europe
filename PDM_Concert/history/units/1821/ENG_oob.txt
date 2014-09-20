@@ -66,7 +66,7 @@ YEM = {
 }
 
 #Europe
-POR = {
+UPB = {
 	value = 100		#relation
 	level = 4		#3=cordial, 4 = friendly, 5 sphere
 	influence_value = 0

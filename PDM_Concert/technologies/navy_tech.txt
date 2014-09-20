@@ -1576,7 +1576,7 @@ naval_statistics = {
 
 naval_logistics = {
 	area = naval_science
-	year = 1890
+	year = 1880
 	cost = 12500
 	supply_range = 1
 	colonial_points = 10

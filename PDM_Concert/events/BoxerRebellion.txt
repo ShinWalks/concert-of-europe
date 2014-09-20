@@ -290,7 +290,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Supress them. The westerners must not be harmed."
+		name = "Suppress them. The westerners must not be harmed."
 		owner = { prestige = 2 }
 		state_scope = {
 			any_pop = {
