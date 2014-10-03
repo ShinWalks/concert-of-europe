@@ -274,7 +274,7 @@ HAN_540 = { 539 540 543 542 538 541 } #East Friesland
 
 PRU_544 = { 544 545 } #Mecklenburg
 
-PRU_546 = { 546 547 548 679 680 692 } #Pomerania
+PRU_546 = { 546 547 548 679 680 } #Pomerania
 
 PRU_549 = { 549 550 551 552 681 } #Brandenburg
 
@@ -310,7 +310,7 @@ PRU_682 = { 682 683 687 } #Lower Silesia
 
 PRU_684 = { 684 685 688 689 2584 } #Upper Silesia
 
-PRU_690 = { 690 691 694 } #Westpreuﬂen
+PRU_690 = { 690 691 694 692 } #Westpreuﬂen
 
 PRU_695 = { 695 696 697 698 693 } #Ostpreuﬂen
 

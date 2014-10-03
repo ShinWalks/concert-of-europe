@@ -1214,9 +1214,12 @@ PHL_fascist;Partido Fascista;Partido Fascista;Partido Fascista;;;;;;;;;;;x
 PLC;Polish-Lithuanian Commonwealth;;;;;;;;;;;;x
 PLC_ADJ;Polish-Lithuanian;;;;;;;;;;;;x
 PLC_proletarian_dictatorship;Polish-Lithuanian Republic;;;;;;;;;;;;x
-PLC_fascist_dictatorship;Polish-Lithuanian Republic;;;;;;;;;;;;x
+PLC_fascist_dictatorship;Sarmatia;;;;;;;;;;;;x
 PLC_presidential_dictatorship;Polish-Lithuanian Republic;;;;;;;;;;;;x
 PLC_democracy;Poland-Lithuania;;;;;;;;;;;;x
+PLC_conservative;Narodowa-Demokracja;National-démocratique;Narodowa-Demokracja;;Narodowa-Demokracja;;;;;;;;;x
+PLC_anarcho_liberal;Stronnictwo Radykalne;Parti radical;Stronnictwo Radykalne;;Stronnictwo Radykalne;;;;;;;;;x
+PLC_communist;Partia Komunistyczna;Parti communiste;Partia Komunistyczna;;Partia Komunistyczna;;;;;;;;;x
 PLS;Palestine;;;;;;;;;;;;;x
 PLS_ADJ;Palestinian;;;;;;;;;;;;;x
 PLS_reactionary;Al Raj'i;;;;;;;;;;;;;x
