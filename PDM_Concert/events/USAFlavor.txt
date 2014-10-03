@@ -1825,6 +1825,7 @@ country_event = {
 					region = CAN_13
 					region = CAN_19
 					region = ENG_22
+					region = ENG_30
 				}
 			}
 			secede_province = ENG
@@ -1864,6 +1865,7 @@ country_event = {
 					region = CAN_13
 					region = CAN_19
 					region = ENG_22
+					region = ENG_30
 					province_id = 78
 				}
 			}

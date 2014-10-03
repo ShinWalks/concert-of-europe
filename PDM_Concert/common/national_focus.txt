@@ -35,7 +35,7 @@ promotion_focus = {
 	}
 
 	promote_clerks = {
-		clerks = 0.15 #10% more likele to become this type
+		clerks = 0.15 #10% more likely to become this type
 		icon = 7
 		outliner_show_as_percent = yes
 		limit = { 
@@ -161,7 +161,6 @@ heavy_industry_focus = {
 }
 
 consumer_goods_focus = {
-	
 	furniture_focus = {
 		luxury_furniture = 10.5
 		furniture = 10.5
@@ -276,7 +275,7 @@ military_goods_focus = {
 	}	
 }
 
-immigration_colonization_focus = {	
+social_development_focus = {
 	immigration = {
 		immigrant_attract = 3 #increases attractiveness to immigrants by 300 %
 		global_immigrant_attract = 0.05
@@ -310,30 +309,14 @@ immigration_colonization_focus = {
 			}
 		}
 	}
-
-#	growth_focus =
-#	{
-#		global_population_growth = 0.001
-#		
-#		limit = {
-#			civilized = yes
-#			owner = { not = { has_country_modifier = populationsize_10M } }
-#			owner = { not = { has_country_modifier = populationsize_25M } }
-#			owner = { not = { has_country_modifier = populationsize_50M } }
-#			owner = { not = { has_country_modifier = populationsize_100M } }
-#			owner = { not = { has_country_modifier = populationsize_200M } }
-#			owner = { not = { has_country_modifier = populationsize_300M } }
-#		}
-#		icon = 28
-#	}
 	
 	progress_focus = {
-		limit = { 
-			ai = no
-		}
 		pop_consciousness_modifier = 0.1
 		pop_militancy_modifier = 0.03
 		icon = 41
+		limit = {
+			THIS = { ai = no }
+		}
 	}
 	
 	order_focus = {
@@ -342,13 +325,38 @@ immigration_colonization_focus = {
 		icon = 38
 	}
 	
-	education_focus = {
-		limit = { 
-			not = { literacy = 0.5 }
-		}
-		education_efficiency_modifier = 0.02
-		icon = 30
-	}
+#	assimilation_focus = {
+#		assimilation_rate = 0.05
+#		non_accepted_pop_militancy_modifier = 0.01
+#		non_accepted_pop_consciousness_modifier = 0.01
+#		pop_consciousness_modifier = 0.02
+#		icon = 30
+#		limit = {
+#			nationalism_n_imperialism = 1
+#		}
+#	}
+	
+#	growth_focus = {
+#		global_population_growth = 0.001
+#		limit = {
+#			civilized = yes
+#			owner = { NOT = { has_country_modifier = populationsize_10M } }
+#			owner = { NOT = { has_country_modifier = populationsize_25M } }
+#			owner = { NOT = { has_country_modifier = populationsize_50M } }
+#			owner = { NOT = { has_country_modifier = populationsize_100M } }
+#			owner = { NOT = { has_country_modifier = populationsize_200M } }
+#			owner = { NOT = { has_country_modifier = populationsize_300M } }
+#		}
+#		icon = 28
+#	}
+	
+#	education_focus = {
+#		limit = {
+#			NOT = { literacy = 0.5 }
+#		}
+#		education_efficiency_modifier = 0.02
+#		icon = 30
+#	}
 }
 
 party_loyalty_focus = {

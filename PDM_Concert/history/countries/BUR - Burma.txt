@@ -51,7 +51,6 @@ diplomatic_reform = interactive
 
 # Technologies
 flintlock_rifles = 1
-bronze_muzzle_loaded_artillery = 1
 late_enlightenment_philosophy = 1
 early_classical_theory_and_critique = 1
 
@@ -61,22 +60,26 @@ early_classical_theory_and_critique = 1
 consciousness = 0
 nonstate_consciousness = 0
 
-oob = "BUR_oob.txt"
+oob = "/1821/BUR_oob.txt"
 
 1836.1.1 = {
-literacy = 0.02
-non_state_culture_literacy = 0
+	literacy = 0.02
+	non_state_culture_literacy = 0
+	
+	set_country_flag = return_of_the_king
 
-foreign_weapons = yes_foreign_weapons
-academic_institutions = madrasahs
-taxation_reform = tax_farmers
-diplomatic_reform = interactive
+	foreign_weapons = yes_foreign_weapons
+	academic_institutions = madrasahs
+	taxation_reform = tax_farmers
+	diplomatic_reform = interactive
 
-# Technologies
-flintlock_rifles = 1
-late_enlightenment_philosophy = 1
-private_banks = 1
-early_classical_theory_and_critique = 1
+	# Technologies
+	flintlock_rifles = 1
+	late_enlightenment_philosophy = 1
+	private_banks = 1
+	early_classical_theory_and_critique = 1
+	
+	oob = "BUR_oob.txt"
 }
 
 1861.1.1 = {

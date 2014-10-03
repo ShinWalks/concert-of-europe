@@ -25,10 +25,17 @@ UPB_proletarian_dictatorship;Lusitanic Union;Lusitanic Union;Lusitanic Union;;;;
 UPB_proletarian_dictatorship_ADJ;Lusitanic;Lusitanic;Lusitanic;;;;;;;;;;;x
 UPB_fascist_dictatorship;Lusitanic Union;Lusitanic Union;Lusitanic Union;;;;;;;;;;;x
 UPB_fascist_dictatorship_ADJ;Lusitanic;Lusitanic;Lusitanic;;;;;;;;;;;x
+IRE_conservative_2;Fine Gael;Fine Gael;Fine Gael;;Fine Gael;;;;;;;;;x;;;;
+IRE_liberal_2;Sinn Fein;Sinn Fein;Sinn Fein;;Sinn Fein;;;;;;;;;x;;;;
+IRE_reactionary;Unionist Party;Parti unioniste;Unionist Party;;Partido Unionista;;;;;;;;;x;;;;
+IRE_social_liberal;Fianna Fail;Fianna Fail;Fianna Fail;;Fianna Fail;;;;;;;;;x;;;;
+IRE_anarcho_liberal;Anarcho-Liberal Party;Anarcho-Liberal Party;Anarcho-Liberal Party;;Anarcho-Liberal Party;;;;;;;;;x;;;;
 FRA_400;Pas de Calais;;;;;;;;;;;;x
 TUR_824;Epirus;;;;;;;;;;;;x
 TUR_828;Eastern Thrace;;;;;;;;;;;;x
 TUR_860;Istanbul Region;;;;;;;;;;;;x
+ENG_1251;West Bengal;;;;;;;;;;;;x
+ENG_1252;East Bengal;;;;;;;;;;;;x
 PROV356;Selija;;;;;;;;;;;;;x
 PROV357;Zemgale;;;;;;;;;;;;;x
 PROV641;Buda;;;;;;;;;;;;;x
@@ -55,6 +62,8 @@ treaty_of_adrianople_title;The Treaty of Adrianople;;;;;;;;;;;;;x
 treaty_of_adrianople_desc;Having soundly defeated the Turkish armies in the field, we can force certain concessions from the Ottomans at the peace table. They will acknowledge Greek sovereignty and protect the rights of Christians within their realm. Russia will annex the mouth of the Danube and the fortress of Akhaltsikhe in Georgia, and the Ottomans will allow Russia to station troops in the lands of their Romanian vassals. A great day for the Motherland!;;;;;;;;;;;;;x
 treaty_of_turkmenchay_title;The Treaty of Turkmenchay;;;;;;;;;;;;;x
 treaty_of_turkmenchay_desc;Having defeated Persia's armies in the Caucasus, we can force a humiliating peace upon the Shah. Persia will transfer all of its Caucasian lands to Russian suzerainty, as well as formally renouncing its claims to Armenia and Azerbaijan. A great day for the Motherland!;;;;;;;;;;;;;x
+treaty_of_yandabo_title;The Treaty of Yandabo;;;;;;;;;;;;;x
+treaty_of_yandabo_desc;Having defeated Burma's armies in the East, we can force a humiliating peace upon the Burmese Court. Assam and Arakan will be transferred to our control, along with a segment of the southward coast. Burma will also pay a hefty indemnity for the expense they've put us to. A great day for the Empire!;;;;;;;;;;;;;x
 unite_portugal_brazil_title;Unite Portugal and Brazil;;;;;;;;;;;;;x
 unite_portugal_brazil_desc;The United Kingdom has stood the test of time. By giving full political rights and equal representation in parliament to our Brazilian citizens, we can create a stronger, transatlantic nation.;;;;;;;;;;;;;x
 create_iberia_UPB_title;Become Iberia;;;;;;;;;;;;;x
@@ -269,10 +278,14 @@ no_navy;No Navy;;;;;;;;;;;;x
 no_navy_desc;Without a navy, our nation has no way to project influence beyond its immediate neighbors.;;;;;;;;;;;;x
 landlocked_nation;Landlocked;;;;;;;;;;;;x
 landlocked_nation_desc;Without access to the sea, our nation's ability to trade is significantly reduced.;;;;;;;;;;;;x
+social_development_focus;Social Development;;;;;;;;;;;;;x
+assimilation_focus;Encourage Minority Assimilation;;;;;;;;;;;;;x
 NORMAL_WAR_CONQUEST_NAME_BRZ_URU;$ORDER$ Cisplatine War;;;;;;;;;;;;;x
 AGRESSION_WAR_CONQUEST_NAME_BRZ_URU;$ORDER$ Cisplatine War;;;;;;;;;;;;;x
 NORMAL_WAR_RESTORE_ORDER_NAME_BRZ_URU;$ORDER$ Cisplatine War;;;;;;;;;;;;;x
 AGRESSION_WAR_RESTORE_ORDER_NAME_BRZ_URU;$ORDER$ Cisplatine War;;;;;;;;;;;;;x
+NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_ENG_BUR;$ORDER$ Anglo-Burmese War;;;;;;;;;;;;;x
+AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_ENG_BUR;$ORDER$ Anglo-Burmese War;;;;;;;;;;;;;x
 EVTNAME1141;Lead Struck - $PROVINCENAME$;;;;;;;;;;;;;x
 EVTDESC1141;A rich vein of metal ores with industrial applications has been located in $PROVINCENAME$. This is a strategically significant resource, and we should begin extracting it immediately.;;;;;;;;;;;;;x
 EVTNAME16350;The Trent Affair;;;;;;;;;;;;;x
@@ -590,6 +603,25 @@ EVTNAME95256;Malacca Proposal Rebuffed;;;;;;;;;;;;;x
 EVTDESC95256;The Dutch have refused our proposal and insist that they will retain their colonies in Malacca. Perhaps we must consider other means of persuading them...;;;;;;;;;;;;;x
 EVTNAME95660;The Lao Rebellion;;;;;;;;;;;;;x
 EVTDESC95660;In the 1820s, growing British pressure on Burma and Siam from the west inspired Siam's Lao client states to dream of independence and a new Laotian polity. Led by the king of Vientiane, several Lao princes rose up in 1827 to rebel against the Siamese crown.;;;;;;;;;;;;;x
+EVTNAME95670;The Return of the King;;;;;;;;;;;;;x
+EVTDESC95670;When our armies seized control of Assam, the Ahom king fled westward into British territory. We would very much like to have him in custody, so that we might eliminate all credible challenges to our sovereignty in Assam. The British colonial government, however, is hosting the fugitive king, no doubt hoping that his survival will destabilize our new holdings. We could demand his extradition, though the British would likely refuse and we could only force the issue by arms. Or, we could accept that he is lost to us and concentrate on suppressing the likely unrest in Assam.;;;;;;;;;;;;;x
+EVTNAME95671;The Return of the King;;;;;;;;;;;;;x
+EVTDESC95671;When the Burmese armies seized control of Assam, the Ahom king fled westward into our territory. Burma's rulers would very much like to have him in custody, so as to eliminate a credible challenge to their sovereignty in Assam. We've taken in the fugitive king, however, since his survival seems likely to destabilize Burma's new holdings. But now a Burmese envoy has come to Calcutta demanding the king's extradition. He offers nothing in return but "friendship," and hints at war if we refuse. If the Empire's attention is needed elsewhere, we could deliver the king and keep the peace; or, we could take this demand as a plausible justification for eastward expansion into Burma. What should our course be?;;;;;;;;;;;;;x
+EVTNAME95672;The British Agree!;;;;;;;;;;;;;x
+EVTDESC95672;The last king of Assam is imprisoned in Ava, and the Assamese elites now have little choice but to acknowledge our rule. This is a proud day for the Burmese Empire!;;;;;;;;;;;;;x
+EVTNAME95673;The British Refuse!;;;;;;;;;;;;;x
+EVTDESC95673;The British have refused to extradite the Assamese king, and now we must decide whether to make good on our threats. We could use their refusal to justify further expansion into East Bengal--- but we must realize that the British will also be viewing this conflict as an excuse to take some of our lands. Do we dare provoke the British? Or, must we back down and manage Assam as best we can?;;;;;;;;;;;;;x
+EVTNAME95674;The Burmese Capitulate;;;;;;;;;;;;;x
+EVTDESC95674;After hearing our refusal to release the Assamese king, the Burmese envoy artfully climbed down from his earlier intimations of war and took his leave. It seems that Burma dares not provoke us openly; and we four our part will happily let this king's allies sow unrest in Assam.;;;;;;;;;;;;;x
+EVTNAME95675;Victory over the British;;;;;;;;;;;;;x
+EVTDESC95675;Having faced down the British on the field of battle, we have compelled their colonial government to acknowledge our rule in Assam and turn over the fugitive king. This is a proud day for the Burmese Empire!;;;;;;;;;;;;;x
+EVTNAME95676;Defeat by the British;;;;;;;;;;;;;x
+EVTDESC95676;In the end we were unable to withstand the British forces, and our entire western frontier is now threatened. We must prepare ourselves for further difficulties with British India in the years to come.;;;;;;;;;;;;;x
+EVTNAME95677;The Treaty of Yandabo;;;;;;;;;;;;;x
+EVTDESC95677;Our armies are in disarray, and the British are marching on the palace. For peace the British envoy now demands that all of Assam and Arakan be transferred to British India, along with our southern coastline and a massive indemnity. This is a crushing indignity for the Empire, but the alternative appears to be total destruction. Will we sign this treaty?;;;;;;;;;;;;;x
+EVTDESC95678;After a crushing defeat by British colonial forces, Burma has conceded all of Assam to British India, along with Arakan and Burma's southward coastline. The Burmese court also agrees to pay a massive indemnity to the British colonial administration, in reparation for the cost of the war. Burma's power is shattered, and Britain ascends still further.;;;;;;;;;;;;;x
+EVTNAME95679;Treaty Refused!;;;;;;;;;;;;;x
+EVTDESC95679;The Burmese court has outrageously refused to accept our peace terms, despite their utter inability to resist our armed forces. We should expand our demands for their territory, and perhaps commit a few atrocities against their people for good measure.;;;;;;;;;;;;;x
 EVTNAME97021;The Draft Constitution;;;;;;;;;;;;;x
 EVTDESC97021;King John VI has returned to Europe from his court in Rio de Janeiro, leaving the crown prince, Dom Pedro, to govern Brazil as his viceroy. The Portuguese Cortes has produced a new draft constitution which greatly reduces the powers of the monarch and raises the sensitive question of the status of Brazil.\nWhile the royal court was in Rio de Janeiro, Brazil was elevated to the status of a peer kingdom united with Portugal under one monarch, and many legal and commercial restrictions from the colonial period were removed. Now, the Portuguese nobility are agitating for Brazil's colonial status to be restored and Portugal's primacy reestablished. If Brazil is returned to colonial dependency it will greatly upset the Brazilians, who feel that they deserve to be full citizens of the Portuguese nation. But, if Brazil's autonomy as a kingdom is respected we face massive reactionary unrest in Portugal. What should Brazil's status be?;;;;;;;;;;;;;x
 EVTNAME97022;Dom Pedro's Refusal;;;;;;;;;;;;;x

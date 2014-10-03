@@ -45,6 +45,341 @@ country_event = {
 }
 
 #############################################################################
+# First Anglo-Burmese War
+#############################################################################
+
+country_event = {
+	id = 95670
+	title = "EVTNAME95670" #Anglo-Burmese War - Return of the King
+	desc = "EVTDESC95670"
+	picture = "burmese_palace"
+	
+	trigger = {
+		tag = BUR
+		exists = yes
+		owns = 1258
+		neighbour = ENG
+		NOT = {
+			exists = ASM
+			war_with = ENG
+			has_country_flag = return_of_the_king
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "We insist upon his return."
+		set_country_flag = return_of_the_king
+		ENG = { country_event = 95671 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "We should not provoke the British."
+		set_country_flag = return_of_the_king
+		prestige = -5
+		any_owned = {
+			limit = {
+				is_core = ASM
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 1825
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 95671
+	title = "EVTNAME95671" #Anglo-Burmese War - Burmese Demands
+	desc = "EVTDESC95671"
+	picture = "burmese_palace"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Deliver him to the Burmese."
+		prestige = -5
+		diplomatic_influence = { who = FROM value = -50 }
+		FROM = { country_event = 95672 }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				war = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "Decline, and await provocation."
+		relation = { who = FROM value = -50 }
+		FROM = { country_event = 95673 }
+		ai_chance = {
+			factor = 95
+		}
+	}
+}
+
+country_event = {
+	id = 95672
+	title = "EVTNAME95672" #Anglo-Burmese War - The British Agree
+	desc = "EVTDESC95672"
+	picture = "burmese_palace"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "We rule in Assam."
+		ASM = {
+			all_core = { add_core = THIS }
+		}
+		prestige = 5
+	}
+}
+
+country_event = {
+	id = 95673
+	title = "EVTNAME95673" #Anglo-Burmese War - The British Refuse
+	desc = "EVTDESC95673"
+	picture = "burmese_palace"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Now is not the time for a war."
+		prestige = -5
+		any_owned = {
+			limit = {
+				is_core = ASM
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 1825
+			}
+		}
+		FROM = { country_event = 95674 }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				war = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "We will make our point by force!"
+		set_country_flag = first_anglo_war
+		relation = { who = FROM value = -100 }
+		add_country_modifier = {
+			name = csa_draft
+			duration = 1825
+		}
+		FROM = {
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = cut_down_to_size
+				}
+				attacker_goal = {
+					casus_belli = acquire_any_state
+					state_province_id = 1258
+				}
+				defender_goal = {
+					casus_belli = acquire_any_state
+					state_province_id = 1254
+				}
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+}
+
+country_event = {
+	id = 95674
+	title = "EVTNAME95674" #Anglo-Burmese War - The Burmese Back Down
+	desc = "EVTDESC95674"
+	picture = "burmese_palace"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "But we were hoping for an excuse..."
+		prestige = 5
+	}
+}
+
+country_event = {
+	id = 95675
+	title = "EVTNAME95675" #Anglo-Burmese War - Burmese Victory
+	desc = "EVTDESC95675"
+	picture = "burmese_palace"
+	
+	trigger = {
+		tag = BUR
+		exists = yes
+		has_country_flag = first_anglo_war
+		truce_with = ENG
+		owns = 1258
+		is_disarmed = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "We rule in Assam."
+		clr_country_flag = first_anglo_war
+		prestige = 5
+		relation = { who = ENG value = 100 }
+		ASM = {
+			all_core = { add_core = THIS }
+		}
+	}
+}
+
+country_event = {
+	id = 95676
+	title = "EVTNAME95676" #Anglo-Burmese War - British Victory
+	desc = "EVTDESC95676"
+	picture = "burmese_palace"
+	
+	trigger = {
+		tag = BUR
+		exists = yes
+		has_country_flag = first_anglo_war
+		truce_with = ENG
+		OR = {
+			ENG = { owns = 1258 }
+			is_disarmed = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "The British are more of a threat than we had thought..."
+		clr_country_flag = first_anglo_war
+		prestige = -5
+		relation = { who = ENG value = 50 }
+		any_owned = {
+			limit = {
+				is_core = ASM
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 1825
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 95677
+	title = "EVTNAME95677" #Anglo-Burmese War - Treaty of Yandabo
+	desc = "EVTDESC95677"
+	picture = "burmese_palace"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "We have no choice."
+		clr_country_flag = first_anglo_war
+		prestige = -10
+		treasury = -50000
+		capital_scope = {
+			add_province_modifier = {
+				name = legation_quarter
+				duration = -1
+			}
+		}
+		relation = { who = ENG value = 100 }
+		any_greater_power = {
+			limit = {
+				NOT = { tag = ENG }
+			}
+			diplomatic_influence = { who = ENG value = -50 }
+		}
+		diplomatic_influence = { who = ENG value = 100 }
+		any_owned = {
+			limit = {
+				OR = {
+					region = ENG_1258 #Assam
+					province_id = 1343 #Moulmein
+					province_id = 1344 #Mergui
+					province_id = 1345 #Sittwe
+				}
+			}
+			secede_province = ENG
+		}
+		FROM = { country_event = 95678 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "We will fight on, no matter the cost!"
+		war_exhaustion = 20
+		FROM = {
+			casus_belli = {
+				target = THIS
+				type = demand_concession_casus_belli
+				months = 60
+			}
+			country_event = 95679
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 95678
+	title = "EVTNAME95677" #Anglo-Burmese War - Treaty of Yandabo Signed
+	desc = "EVTDESC95678"
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Eastern India is secured."
+		prestige = 8
+		money = 50000
+	}
+}
+
+country_event = {
+	id = 95679
+	title = "EVTNAME95679" #Anglo-Burmese War - Treaty of Yandabo Refused
+	desc = "EVTDESC95679"
+	picture = "burmese_palace"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "We will show them their error."
+		war_exhaustion = -5
+	}
+}
+
+#############################################################################
 # French conquest of Indochina
 #############################################################################
 

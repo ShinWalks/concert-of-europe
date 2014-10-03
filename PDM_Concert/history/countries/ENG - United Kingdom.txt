@@ -164,6 +164,7 @@ oob = "/1821/ENG_oob.txt"
 	
 	set_country_flag = malacca_treaty
 	set_country_flag = falklands_contested
+	set_country_flag = yandabo_treaty
 	
 	foreign_investment = {
 		BEL = 10000

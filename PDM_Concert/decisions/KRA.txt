@@ -49,8 +49,11 @@ political_decisions = {
 		}
 		
 		effect = {
-			prestige = 20
-			all_core = { remove_core = THIS }
+			prestige = 10
+			all_core = {
+				add_core = POL
+				remove_core = THIS
+			}
 			change_tag = POL
 			capital = 706
 		}
@@ -100,44 +103,27 @@ political_decisions = {
 		
 		effect = {
 			prestige = 15
-			random_owned = {
-				limit = {
-					owner = { primary_culture = polish }
-				}
-				owner = {
-					add_accepted_culture = lithuanian
-					all_core = {
-						add_core = PLC
-						remove_core = POL
-					}
-				}
-				LIT = {
-					all_core = { add_core = PLC }
-				}
+			add_accepted_culture = polish
+			add_accepted_culture = lithuanian
+			add_accepted_culture = byelorussian
+			all_core = {
+				add_core = PLC
+				remove_core = THIS
 			}
-			random_owned = {
-				limit = {
-					owner = { primary_culture = lithuanian }
-				}
-				owner = {
-					add_accepted_culture = polish
-					all_core = {
-						add_core = PLC
-						remove_core = LIT
-					}
-				}
-				POL = {
-					all_core = { add_core = PLC }
-				}
+			POL = {
+				all_core = { add_core = PLC }
+			}
+			LIT = {
+				all_core = { add_core = PLC }
+			}
+			BYE = {
+				all_core = { add_core = PLC }
 			}
 			356 = { add_core = PLC }
 			357 = { add_core = PLC }
 			358 = { add_core = PLC }
 			359 = { add_core = PLC }
 			3251 = { add_core = PLC }
-			BYE = {
-				all_core = { add_core = PLC }
-			}
 			RUS_958 = { add_core = PLC }
 			any_country = {
 				limit = {
@@ -152,6 +138,22 @@ political_decisions = {
 				}
 			}
 			change_tag = PLC
+			random_owned = {
+				limit = {
+					owner = { primary_culture = polish }
+				}
+				POL = {
+					all_core = { remove_core = POL }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { primary_culture = lithuanian }
+				}
+				LIT = {
+					all_core = { remove_core = LIT }
+				}
+			}
 			capital = 706
 			any_greater_power = {
 				limit = {
@@ -182,9 +184,11 @@ political_decisions = {
 			war = no
 			is_greater_power = yes
 			all_core = { owned_by = THIS }
+			NOT = { has_country_flag = greater_PLC }
 		}
 		
 		effect = {
+			set_country_flag = greater_PLC
 			badboy = 10
 			prestige = 5
 			351 = { add_core = PLC }

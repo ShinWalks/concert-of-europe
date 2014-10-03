@@ -4,7 +4,7 @@ culture = french_canadian
 culture = picard
 culture = occitan
 religion = catholic
-government = hms_government
+government = prussian_constitutionalism
 plurality = 5
 nationalvalue = nv_equality
 literacy = 0.59
@@ -17,7 +17,7 @@ prestige = 70
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = appointed
-vote_franschise = wealth_weighted_voting
+vote_franschise = landed_voting
 public_meetings = no_meeting
 press_rights = free_press
 trade_unions = no_trade_unions
@@ -25,7 +25,7 @@ minorities_reform = limited
 immigration_policy = quota_immigration
 conscription = no_draft
 voting_system = first_past_the_post
-political_parties = non_secret_ballots
+political_parties = underground_parties
 
 # Social Reforms
 wage_reform = no_minimum_wage

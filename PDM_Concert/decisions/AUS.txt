@@ -7,11 +7,11 @@ political_decisions = {
 				government = prussian_constitutionalism
 				government = hms_government
 			}
-			any_owned_province = {
-				is_core = HUN
-			}
 			OR = {
-				NOT = { exists = HUN }
+				AND = {
+					owns = 641 #Buda
+					NOT = { exists = HUN }
+				}
 				HUN = { vassal_of = AUS }
 			}
 			NOT = { has_global_flag = has_become_dual_monarchy }
@@ -654,6 +654,7 @@ political_decisions = {
 		picture = embrace_minority
 		potential = {
 			OR = {
+				tag = AUS
 				tag = KUK
 				tag = DNB
 			}
@@ -744,6 +745,7 @@ political_decisions = {
 		picture = embrace_minority
 		potential = {
 			OR = {
+				tag = AUS
 				tag = KUK
 				tag = DNB
 			}
@@ -756,6 +758,7 @@ political_decisions = {
 			OR = {
 				accepted_culture = croat
 				NOT = { any_owned_province = { is_core = CRO } }
+				tag = AUS
 			}
 		}
 		allow = {

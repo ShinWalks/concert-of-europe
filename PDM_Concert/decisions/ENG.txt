@@ -1,4 +1,44 @@
 political_decisions = {
+	treaty_of_yandabo = {
+		picture = unequal_treaty
+		potential = {
+			tag = ENG
+			is_greater_power = yes
+			BUR = {
+				civilized = no
+				war_with = THIS
+				has_country_flag = first_anglo_war
+			}
+			NOT = {
+				has_country_flag = yandabo_treaty
+			}
+		}
+		
+		allow = {
+			war_with = BUR
+			BUR = {
+				war_exhaustion = 40
+				national_provinces_occupied = 0.3
+				OR = {
+					war_exhaustion = 80
+					capital_scope = { controlled_by = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = yandabo_treaty
+			badboy = 3
+			BUR = {
+				country_event = 95677
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	repeal_the_corn_laws = {
 		potential = {
 			OR = {
@@ -26,6 +66,7 @@ political_decisions = {
 			set_country_flag = corn_laws_repealed_flag
 		}
 	}
+	
 	crown_empress_of_india = {
 		news = yes
 		news_desc_long = "empress_of_india_NEWS_LONG"
@@ -92,6 +133,7 @@ political_decisions = {
 			set_country_flag = we_are_live_from_london
 		}
 	}
+	
 	the_scotland_yard = {
 		potential = {
 			OR = {

@@ -788,7 +788,7 @@ central_bank_established = {
 }
 
 local_stock_exchange = {
-	local_RGO_throughput = 0.05
+	local_factory_throughput = 0.05
 	pop_militancy_modifier = -0.02
 	icon = 11
 }
