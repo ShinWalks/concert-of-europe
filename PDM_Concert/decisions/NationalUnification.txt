@@ -844,6 +844,7 @@ political_decisions = {
 						is_core = MAK
 						is_core = AFG
 						is_core = KAS
+						is_core = SIK
 						owner = {
 							in_sphere = THIS
 							OR = {

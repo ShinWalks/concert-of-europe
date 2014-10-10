@@ -1237,6 +1237,7 @@ country_event = {
 		capital_scope = { continent = south_america }
 		war = no
 		NOT = {
+			tag = UPB
 			has_country_flag = colombian_assistance
 			has_country_flag = liberal_constitution
 			has_country_flag = conservative_constitution

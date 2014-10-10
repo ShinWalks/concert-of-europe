@@ -627,11 +627,11 @@ country_event = {
 	option = {
 		name = "Those fools!"
 		set_country_flag = farrapos_war
-		2463 = { add_core = RGS }
-		2464 = { add_core = RGS }
-		2465 = { add_core = RGS }
-		2466 = { add_core = RGS }
-		2467 = { add_core = RGS }
+		BRZ_2467 = { add_core = RGS } #Rio Grande do Sul
+		random_owned = {
+			limit = { region = URU_2344 }
+			URU_2344 = { add_core = RGS } #Uruguay
+		}
 		release = RGS
 		RGS = {
 			any_pop = { militancy = -6 }

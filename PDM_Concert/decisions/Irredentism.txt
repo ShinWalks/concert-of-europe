@@ -151,21 +151,40 @@ political_decisions = {
 		
 		effect = {
 			set_country_flag = claim_santa_catarina
-			2461 = { #Desterro
-				add_core = RGS
-			}
-			2462 = { #Sao Miguel
-				add_core = RGS
-			}
-			2459 = { #Lajes
-				add_core = RGS
-			}
+			BRZ_2461 = { add_core = RGS }
 		}
 		
 		ai_will_do = {
 			factor = 1
 		}
-	}		
+	}
+	
+	RGS_claim_cisplatina = {
+		potential = {
+			tag = RGS
+			has_country_flag = claim_santa_catarina
+			NOT = { has_country_flag = cisplatina_is_ours }
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+			owns = 2461 #Santa Catarina
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+		}
+		
+		effect = {
+			set_country_flag = cisplatina_is_ours
+			URU_2344 = { add_core = RGS }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	claim_greater_albania = {
 		potential = {

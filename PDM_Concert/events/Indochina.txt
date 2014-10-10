@@ -300,6 +300,7 @@ country_event = {
 	option = {
 		name = "We have no choice."
 		clr_country_flag = first_anglo_war
+		end_war = FROM
 		prestige = -10
 		treasury = -50000
 		capital_scope = {
