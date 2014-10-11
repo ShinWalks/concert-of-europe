@@ -630,6 +630,7 @@ country_event = {
 		BRZ_2467 = { add_core = RGS } #Rio Grande do Sul
 		random_owned = {
 			limit = { region = URU_2344 }
+			RGS = { set_country_flag = cisplatina_is_ours }
 			URU_2344 = { add_core = RGS } #Uruguay
 		}
 		release = RGS

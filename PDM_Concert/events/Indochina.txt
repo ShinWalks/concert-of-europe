@@ -300,7 +300,7 @@ country_event = {
 	option = {
 		name = "We have no choice."
 		clr_country_flag = first_anglo_war
-		end_war = FROM
+		end_war = ENG
 		prestige = -10
 		treasury = -50000
 		capital_scope = {
@@ -314,7 +314,7 @@ country_event = {
 			limit = {
 				NOT = { tag = ENG }
 			}
-			diplomatic_influence = { who = ENG value = -50 }
+			diplomatic_influence = { who = THIS value = -50 }
 		}
 		diplomatic_influence = { who = ENG value = 100 }
 		any_owned = {
@@ -328,7 +328,7 @@ country_event = {
 			}
 			secede_province = ENG
 		}
-		FROM = { country_event = 95678 }
+		ENG = { country_event = 95678 }
 		ai_chance = {
 			factor = 100
 		}

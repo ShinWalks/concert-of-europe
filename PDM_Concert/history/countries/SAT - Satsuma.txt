@@ -62,7 +62,7 @@ private_banks = 1
 consciousness = 0
 nonstate_consciousness = 0
 
-oob = "SAT_oob.txt"
+oob = "/1821/SAT_oob.txt"
 
 1836.1.1 = {
 literacy = 0.4
@@ -81,6 +81,8 @@ freedom_of_trade = 1
 malthusian_thought = 1
 late_enlightenment_philosophy = 1
 private_banks = 1
+
+oob = "SAT_oob.txt"
 }
 
 1861.1.1 = {
