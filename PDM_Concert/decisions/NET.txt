@@ -309,7 +309,7 @@ political_decisions = {
 			nationalvalue = nv_prosperity
 			add_country_modifier = {
 				name = national_confusion
-				duration = 3650
+				duration = 1825
 			}
 		}
 		

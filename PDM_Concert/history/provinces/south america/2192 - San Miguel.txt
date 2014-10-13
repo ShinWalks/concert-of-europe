@@ -1,13 +1,9 @@
-owner = MEX
-controller = MEX
+owner = UCA
+controller = UCA
 add_core = ELS
 trade_goods = tropical_wood
 life_rating = 30
 terrain = good_farmland
-1836.1.1 = {
-	owner = UCA
-	controller = UCA
-}
 1861.1.1 = {
 	owner = ELS
 	controller = ELS

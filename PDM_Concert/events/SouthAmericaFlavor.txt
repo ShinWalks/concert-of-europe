@@ -1280,11 +1280,11 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				factor = 2
+				factor = 3
 				nationalvalue = nv_equality
 			}
 			modifier = {
-				factor = 5
+				factor = 9
 				nationalvalue = nv_liberty
 			}
 		}

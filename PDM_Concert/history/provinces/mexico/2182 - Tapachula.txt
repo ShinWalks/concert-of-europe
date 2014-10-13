@@ -1,6 +1,5 @@
-owner = MEX
-controller = MEX
-add_core = MEX
+owner = UCA
+controller = UCA
 add_core = GUA
 add_core = CHP
 add_core = LOS
@@ -8,8 +7,7 @@ trade_goods = coffee
 life_rating = 30
 terrain = seasonal_jungle_mountains
 1836.1.1 = {
-	owner = UCA
-	controller = UCA
+	add_core = MEX
 }
 1861.1.1 = {
 	owner = MEX

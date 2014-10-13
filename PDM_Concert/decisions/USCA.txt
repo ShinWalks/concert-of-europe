@@ -44,22 +44,55 @@ political_decisions = {
 			factor = 1
 		}
 	}
-
+	
+	legitimize_usca = {
+		picture = form_USCA
+		potential = {
+			tag = UCA
+			state_n_government = 1
+			NOT = {
+				has_country_flag = usca_legitimate
+				has_global_flag = the_usca_has_failed
+			}
+		}
+		
+		allow = {
+			war = no
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			set_country_flag = usca_legitimate
+			prestige = 10
+			UCA_2186 = { add_core = UCA } #Guatemala
+			UCA_2191 = { add_core = UCA } #El Salvador
+			UCA_2193 = { add_core = UCA } #Honduras
+			UCA_2197 = { add_core = UCA } #Nicaragua
+			UCA_2201 = { add_core = UCA } #Costa Rica
+			CLM_1723 = { add_core = UCA } #Panama
+			2182 = { add_core = UCA } #Tapachula
+			MEX = {
+				leave_alliance = THIS
+				relation = { who = THIS value = -50 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	reform_the_USCA = {
 		picture = form_USCA
 		potential = {
-			OR = {
-				tag = GUA
-				tag = NIC
-				tag = ELS
-				tag = COS
-				tag = HON
-				tag = PNM
-			}
+			primary_culture = central_american
 			has_global_flag = the_usca_has_failed
-			NOT = { exists = UCA }
+			OR = {
+				tag = UCA
+				NOT = { exists = UCA }
+			}
 		}
-
+		
 		allow = {
 			GUA = {
 				OR = {
@@ -98,7 +131,7 @@ political_decisions = {
 				}
 			}
 		}
-
+		
 		effect = {
 			prestige = 10
 			any_country = {
@@ -118,12 +151,12 @@ political_decisions = {
 			2182 = { add_core = UCA } #Tapachula
 			change_tag = UCA
 		}
-
+		
 		ai_will_do = {
 			factor = 1
 		}
 	}
-
+	
 	reform_the_USCA_outside = {
 		picture = form_USCA
 		potential = {
@@ -142,7 +175,7 @@ political_decisions = {
 			has_global_flag = the_usca_has_failed
 			NOT = { exists = UCA }
 		}
-
+		
 		allow = {
 			GUA = {
 				OR = {
@@ -181,7 +214,7 @@ political_decisions = {
 				}
 			}
 		}
-
+		
 		effect = {
 			prestige = 10
 			any_country = {
@@ -219,9 +252,13 @@ political_decisions = {
 				value = 200
 			}
 		}
-
+		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				tag = MEX
+			}
 		}
 	}
 	
@@ -272,6 +309,7 @@ political_decisions = {
 			UCA = { government = democracy }
 			OR = {
 				tag = PNM
+				tag = YUC
 				AND = {
 					primary_culture = central_american
 					has_global_flag = the_usca_has_failed
@@ -304,6 +342,7 @@ political_decisions = {
 					ai = yes
 					THIS = { ai = yes }
 				}
+				all_core = { add_core = UCA }
 				inherit = THIS
 			}
 			random_country = {
@@ -319,7 +358,7 @@ political_decisions = {
 						owner = { capital = 2186 }
 					}
 					change_tag = UCA
-				}	
+				}
 			}
 			random_country = {
 				limit = {
@@ -334,4 +373,3 @@ political_decisions = {
 		}
 	}
 }	
-

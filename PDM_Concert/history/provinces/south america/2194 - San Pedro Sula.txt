@@ -1,13 +1,9 @@
-owner = MEX
-controller = MEX
+owner = UCA
+controller = UCA
 add_core = HON
 trade_goods = tobacco
 life_rating = 30
 terrain = seasonal_jungle_hills
-1836.1.1 = {
-	owner = UCA
-	controller = UCA
-}
 1861.1.1 = {
 	owner = HON
 	controller = HON

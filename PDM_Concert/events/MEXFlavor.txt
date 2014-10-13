@@ -177,7 +177,7 @@ country_event = {
 	desc = "EVTDESC44802"
 	picture = "churchmexico"
 
-	 fire_only_once = yes
+	fire_only_once = yes
 
 	trigger = {
 		tag = MEX
@@ -1360,15 +1360,20 @@ country_event = {
 	}
 
 	option = {
-		name = "Long live Emperor Agustin I!"
+		name = "The emperor must have a free hand to protect Mexico."
 		set_country_flag = first_empire
 		political_reform = appointed
 		political_reform = none_voting
 		political_reform = underground_parties
 		government = absolute_monarchy
+		plurality = -3
 		add_country_modifier = {
 			name = national_confusion
 			duration = 365
+		}
+		add_country_modifier = {
+			name = liberal_reaction
+			duration = 1825
 		}
 		any_pop = {
 			limit = {
@@ -1379,13 +1384,13 @@ country_event = {
 			}
 			ideology = {
 				value = liberal
-				factor = 0.2
+				factor = 0.4
 			}
 			scaled_militancy = {
 				ideology = liberal
-				factor = 9
+				factor = 10
 			}
-			consciousness = 2
+			consciousness = 4
 		}
 		any_owned = {
 			limit = {
@@ -1402,6 +1407,74 @@ country_event = {
 				name = nationalist_agitation
 				duration = 3650
 			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "The emperor must accept the sovereignty of the congress."
+		set_country_flag = first_empire
+		political_reform = wealth_voting
+		political_reform = non_secret_ballots
+		government = hms_government
+		plurality = 3
+		add_country_modifier = {
+			name = national_confusion
+			duration = 365
+		}
+		add_country_modifier = {
+			name = coup_risk
+			duration = 730
+		}
+		add_country_modifier = {
+			name = conservative_reaction
+			duration = 1825
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes
+					culture = central_american
+				}
+			}
+			ideology = {
+				value = conservative
+				factor = 0.2
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.1
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 6
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 10
+			}
+			consciousness = 4
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					region = UCA_2186
+					region = UCA_2191
+					region = UCA_2193
+					region = UCA_2197
+					region = UCA_2201
+					region = MEX_2181
+				}
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 3650
+			}
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -1420,7 +1493,19 @@ country_event = {
 		has_country_flag = first_empire
 		UCA = { exists = no }
 		NOT = { year = 1836 }
-		any_owned_province = { is_core = UCA }
+		any_owned_province = {
+			OR = {
+				is_core = GUA
+				is_core = ELS
+				is_core = HON
+				is_core = NIC
+				is_core = COS
+			}
+			OR = {
+				controlled_by = REB
+				state_scope = { average_militancy = 8 }
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1448,7 +1533,7 @@ country_event = {
 			leadership = 40
 		}
 		USA = {
-			relation = { who = UCA value = 100 }
+			relation = { who = UCA value = 50 }
 			diplomatic_influence = { who = UCA value = 50 }
 		}
 		war = {
@@ -1483,8 +1568,8 @@ country_event = {
 			any_pop = { militancy = -6 }
 		}
 		USA = {
-			relation = { who = UCA value = 100 }
-			diplomatic_influence = { who = UCA value = 100 }
+			relation = { who = UCA value = 50 }
+			diplomatic_influence = { who = UCA value = 50 }
 		}
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -1516,8 +1601,8 @@ country_event = {
 			any_pop = { militancy = -6 }
 		}
 		USA = {
-			relation = { who = UCA value = 100 }
-			diplomatic_influence = { who = UCA value = 100 }
+			relation = { who = UCA value = 50 }
+			diplomatic_influence = { who = UCA value = 50 }
 		}
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -1545,13 +1630,20 @@ country_event = {
 			government = hms_government
 		}
 		has_country_flag = first_empire
+		any_owned_province = {
+			is_core = MEX
+			OR = {
+				controlled_by = REB
+				state_scope = { average_militancy = 6 }
+			}
+		}
 		NOT = {
 			has_country_flag = casa_mata_plan
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 1
 	}
 
 	option = {
@@ -1561,10 +1653,19 @@ country_event = {
 		political_reform = wealth_weighted_voting
 		political_reform = gerrymandering
 		government = democracy
-		plurality = 1
+		plurality = 5
+		remove_country_modifier = liberal_reaction
 		add_country_modifier = {
 			name = national_confusion
 			duration = 365
+		}
+		add_country_modifier = {
+			name = coup_risk
+			duration = 730
+		}
+		add_country_modifier = {
+			name = conservative_reaction
+			duration = 1825
 		}
 		any_pop = {
 			limit = {
@@ -1592,13 +1693,19 @@ country_event = {
 	title = "EVTNAME44853" #Plan of Cuernavaca
 	desc = "EVTDESC44853"
 	picture = "mexico_soldiers"
-	major = yes
 
 	trigger = {
 		tag = MEX
 		exists = yes
 		government = democracy
-		year = 1832
+		year = 1830
+		any_owned_province = {
+			is_core = MEX
+			OR = {
+				controlled_by = REB
+				state_scope = { average_militancy = 6 }
+			}
+		}
 		NOT = {
 			has_country_flag = cuernavaca_plan
 			year = 1860
@@ -1606,7 +1713,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 18
+		months = 1
 	}
 
 	option = {
@@ -1621,6 +1728,7 @@ country_event = {
 			name = national_confusion
 			duration = 365
 		}
+		remove_country_modifier = conservative_reaction
 	}
 }
 

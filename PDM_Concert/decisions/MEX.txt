@@ -117,6 +117,97 @@ political_decisions = {
 		}
 	}
 	
+	mexican_central_america = {
+		potential = {
+			tag = MEX
+			any_owned_province = { culture = central_american }
+			NOT = {
+				exists = UCA
+				has_country_flag = mexican_central_america
+			}
+		}
+		
+		allow = {
+			war = no
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+			nationalism_n_imperialism = 1
+			OR = {
+				government = democracy
+				government = hms_government
+			}
+			GUA = {
+				OR = {
+					in_sphere = THIS
+					all_core = {
+						OR = {
+							province_id = 2190
+							province_id = 2182
+							owned_by = THIS
+						}
+					}
+				}
+			}
+			NIC = {
+				OR = {
+					in_sphere = THIS
+					all_core = { owned_by = THIS }
+				}
+			}
+			ELS = {
+				OR = {
+					in_sphere = THIS
+					all_core = { owned_by = THIS }
+				}
+			}
+			COS = {
+				OR = {
+					in_sphere = THIS
+					all_core = { owned_by = THIS }
+				}
+			}
+			HON = {
+				OR = {
+					in_sphere = THIS
+					all_core = { owned_by = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = mexican_central_america
+			prestige = 10
+			UCA = {
+				all_core = { remove_core = UCA }
+			}
+			any_country = {
+				limit = {
+					primary_culture = central_american
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			UCA_2186 = { add_core = MEX } #Guatemala
+			UCA_2191 = { add_core = MEX } #El Salvador
+			UCA_2193 = { add_core = MEX } #Honduras
+			UCA_2197 = { add_core = MEX } #Nicaragua
+			UCA_2201 = { add_core = MEX } #Costa Rica
+			CLM_1723 = { add_core = MEX } #Panama
+			2182 = { add_core = MEX } #Tapachula
+			add_accepted_culture = central_american
+			add_country_modifier = {
+				name = national_confusion
+				duration = 730
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	mexico_setup = {
 		potential = {
 			tag = MEX
