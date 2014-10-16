@@ -1679,10 +1679,76 @@ country_event = {
 		any_pop = {
 			limit = {
 				is_primary_culture = yes
+				OR = {
+					type = officers
+					type = soldiers
+				}
+			}
+			ideology = {
+				value = conservative
+				factor = 0.2
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.1
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
 			}
 			scaled_militancy = {
 				ideology = reactionary
 				factor = 4
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+	
+	option = {
+		name = "Defend the Empire!"
+		set_country_flag = casa_mata_plan
+		plurality = -2
+		remove_country_modifier = conservative_reaction
+		add_country_modifier = {
+			name = coup_risk
+			duration = 730
+		}
+		add_country_modifier = {
+			name = liberal_reaction
+			duration = 1825
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+				OR = {
+					type = officers
+					type = soldiers
+				}
+			}
+			ideology = {
+				value = liberal
+				factor = 0.3
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 10
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -4
 			}
 		}
 	}

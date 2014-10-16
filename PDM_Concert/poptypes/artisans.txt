@@ -196,6 +196,13 @@ country_migration_target = {
 		}
 	}
 	modifier = {
+		factor = 0.5
+		OR = {
+			continent = africa
+			continent = asia
+		}
+	}
+	modifier = {
 		factor = 0.8
 		average_militancy = 3
 	}
