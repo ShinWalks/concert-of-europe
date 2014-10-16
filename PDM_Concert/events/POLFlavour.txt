@@ -1,0 +1,464 @@
+#Jozef Pilsudski - Polish nationalist
+country_event = {
+	id = 190000
+	title = "Jozef Pilsudski"
+	desc = "EVTDESC190000"
+	picture = "recruits"
+	
+	trigger = {
+		tag = POL
+		OR = {
+			government = hms_government
+			government = democracy
+		}
+		NOT = {
+			has_country_flag = pilsudski_flag
+		}
+		NOT = {
+			has_country_flag = pilsudski_rejected_flag
+		}
+		year = 1895
+		any_core = {
+			NOT = {
+				owned_by = THIS
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 16
+	}
+	
+	option = {
+		name = "He will serve Poland well."
+		plurality = 5
+		prestige = 5
+		any_pop = {
+			limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+			}
+			consciousness = -2
+			militancy = -2
+		}
+		set_country_flag = pilsudski_flag
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_country_flag = dmowski_flag
+			}
+		}
+	}
+	
+	option = {
+		name = "His policies are not what's best for Poland."
+		set_country_flag = pilsudski_rejected_flag
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#Roman Dmowski - Polish nationalist
+country_event = {
+	id = 190001
+	title = "Roman Dmowski"
+	desc = "EVTDESC190001"
+	picture = "dmowski"
+	
+	trigger = {
+		tag = POL
+		OR = {
+			government = hms_government
+			government = democracy
+		}
+		NOT = {
+			has_country_flag = dmowski_flag
+		}
+		NOT = {
+			has_country_flag = dmowski_rejected_flag
+		}
+		year = 1895
+		any_core = {
+			NOT = {
+				owned_by = THIS
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 16
+	}
+	
+	option = {
+		name = "He is a true patriot."
+		plurality = -5
+		prestige = 6
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			consciousness = -2
+			militancy = -2
+		}
+		set_country_flag = dmowski_flag
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_country_flag = pilsudski_flag
+			}
+		}
+	}
+	
+	option = {
+		name = "His policies are not what's best for Poland."
+		set_country_flag = dmowski_rejected_flag
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+#Zeligowski's Mutiny
+country_event = {
+	id = 190002
+	title = "Zeligowski's Mutiny"
+	desc = "EVTDESC190002"
+	picture = "polish_soldiers"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POL
+		has_country_flag = pilsudski_flag
+		war = no
+		truce_with = RUS
+		mass_politics = 1
+		NOT = {
+			owns = 360 #Vilnius
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 2
+			has_country_flag = dmowski_flag
+		}
+	}
+	
+	option = {
+		name = "Support the operation."
+		prestige = -5
+		badboy = 3
+		money = -25000
+		RUS = {
+			country_event = 190003
+		}
+		relation = {
+			who = RUS
+			value = -100
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	option = {
+		name = "We will not fund a war crime."
+		prestige = 5
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			consciousness = 3
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 3
+				war_exhaustion = 50
+			}
+		}
+	}
+}
+
+#Zeligowski's Mutiny - Russia event
+country_event = {
+	id = 190003
+	title = "Zeligowski's Mutiny"
+	desc = "EVTDESC190003"
+	picture = "polish_soldiers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We cannot allow this!"
+		prestige = -5
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = LIT
+					is_core = POL
+				}
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 730
+			}
+			any_pop = {
+				limit = {
+					culture = polish
+				}
+				militancy = 10
+				consciousness = 10
+			}
+		}
+	}
+}
+
+#Jews in Poland
+country_event = {
+	id = 190004
+	title = "The Polish Jews"
+	desc = "EVTDESC190004"
+	picture = "jews"
+	
+	trigger = {
+		war = no
+		primary_culture = polish
+		prestige = 40
+		is_vassal = no
+		any_pop = {
+			has_pop_religion = jewish
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "Poland is a fatherland for the Jews."
+		prestige = 3
+		plurality = -2
+		add_accepted_culture = ashkenazi
+	}
+	option = {
+		name = "We do not need them in our country."
+		plurality = 2
+	}
+}
+
+#Polish Academy of Learning
+country_event = {
+	id = 190005
+	title = "Polish Academy of Learning"
+	desc = "EVTDESC190005"
+	picture = "krakow_view"
+	
+	trigger = {
+		empiricism = 1
+		703 = {
+			NOT = {
+				has_province_modifier = polish_academy_learning
+			}
+		}
+		year = 1870
+		owns = 703
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "What a prestigious academy."
+		prestige = 3
+		703 = {
+			add_province_modifier = {
+				name = polish_academy_learning
+				duration = -1
+			}
+		}
+	}
+}
+
+#Death of Chopin
+country_event = {
+	id = 190006
+	title = "The Death of Chopin"
+	desc = "EVTDESC190006"
+	picture = "chopin"
+	
+	trigger = {
+		OR = {
+			owns = 425 #Paris
+			primary_culture = polish
+		}
+		year = 1848
+		NOT = {
+			has_country_flag = chopin_death_flag
+		}
+		NOT = {
+			year = 1855
+		}
+		prestige = 10
+	}
+	
+	mean_time_to_happen = {
+		months = 14
+	}
+	
+	option = {
+		name = "He was one of the greatest of his kind."
+		prestige = 10
+		set_country_flag = chopin_death_flag
+	}
+}
+
+#Zycie! Young Poland movement
+country_event = {
+	id = 190007
+	title = "Young Poland"
+	desc = "EVTDESC190007"
+	picture = "polish_art"
+	
+	trigger = {
+		OR = {
+			any_neighbor_country = {
+				mass_culture_n_the_avant_garde = 1
+			}
+			mass_culture_n_the_avant_garde = 1
+		}
+		average_consciousness = 4
+		prestige = 50
+		primary_culture = polish
+		NOT = {
+			has_country_flag = young_poland_arts
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Polish culture lives on!"
+		prestige = 10
+		plurality = 3
+		set_country_flag = young_poland_arts
+	}
+}
+
+#Stanislaw Przybyszewski's Homo Sapiens
+country_event = {
+	id = 190008
+	title = "Homo Sapiens"
+	desc = "EVTDESC190008"
+	picture = "polish_art"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		primary_culture = polish
+		has_country_flag = young_poland_arts
+		NOT = {
+			has_country_flag = homo_sapiens_poland
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 13
+	}
+	
+	option = {
+		name = "Should we be supporting this?"
+		set_country_flag = homo_sapiens_poland
+		plurality = 1
+		any_pop = {
+			limit = {
+				strata = rich
+			}
+			consciousness = 3
+		}
+	}
+}
+
+#Adam Mickiewicz - Polish poet
+country_event = {
+	id = 190009
+	title = "Adam Mickiewicz"
+	desc = "EVTDESC190009"
+	picture = "mickiewicz"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		romanticism = 1
+		primary_culture = polish
+		NOT = {
+			year = 1855
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 14
+	}
+	
+	option = {
+		name = "His name will live forever in Polish hearts."
+		prestige = 7
+	}
+}
+
+#Jan Matejko, Polish painter
+country_event = {
+	id = 190010
+	title = "Jan Matejko"
+	desc = "EVTDESC190010"
+	picture = "prussian_homage"
+	
+	trigger = {
+		year = 1860
+		expressionism = 1
+		OR = {
+			primary_culture = polish
+			accepted_culture = polish
+		}
+		NOT = { has_country_flag = matejko_flag }
+		NOT = { year = 1893 }
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = {
+		name = "What a good painter!"
+		prestige = 10
+		set_country_flag = matejko_flag
+		any_pop = {
+			limit = {
+				culture = polish
+			}
+			consciousness = 2
+		}
+	}
+}	
+
+#Revocation of the Partitions - GP Reaction
+
+#Revocation of the Partitions - Success!
+
+#Revocation of the Partitions - Failure!
+
+#Revocation of the Partitions - Failure Reaction: Supported
+
+#Revocation of the Partitions - Failure Reaction: Opposed
+
+#Revocation of the Partitions - Success Reaction: Supported
+
+#Revocation of the Partitions - Success Reaction: Opposed
