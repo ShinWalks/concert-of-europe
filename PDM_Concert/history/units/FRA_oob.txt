@@ -106,6 +106,10 @@ TUR = {
 QNG ={
 	level = 0
 }
+AOT = { 
+	value = 50
+	level = 3
+}
 
 army = {
 	name = "regulare Royale"

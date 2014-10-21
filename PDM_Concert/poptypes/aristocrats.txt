@@ -1300,12 +1300,6 @@ promote_to = {
 			factor = -10
 			NOT = { literacy = 0.50 }
 		}
-		modifier = {
-			factor = 2
-			state_scope = {
-				NOT = { clerks = 0.005 }
-			}
-		}
 		group = {
 			modifier = {
 				factor = 2
@@ -1326,6 +1320,36 @@ promote_to = {
 			modifier = {
 				factor = 2
 				literacy = 1
+			}
+		}
+		group = {
+			modifier = {
+				factor = 2
+				state_scope = { NOT = { clerks = 0.005 } }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { clerks = 0.02 }
+			}
+			modifier = {
+				factor = -2
+				state_scope = { clerks = 0.03 }
+			}
+			modifier = {
+				factor = -4
+				state_scope = { clerks = 0.04 }
+			}	
+			modifier = {
+				factor = -4
+				state_scope = { clerks = 0.05 }
+			}
+			modifier = {
+				factor = -10
+				state_scope = { clerks = 0.075 }
+			}
+			modifier = {
+				factor = -10
+				state_scope = { clerks = 0.1 }
 			}
 		}
 		modifier = {

@@ -523,7 +523,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = sent_iwakura_mission
 			prestige = 10
-			years_of_research = 1
+			years_of_research = 2
 		}
 		
 		ai_will_do = {
@@ -550,6 +550,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = enacted_meiji_constitution
 			prestige = 10
+			years_of_research = 1
 			political_reform = wealth_weighted_voting
 			random_owned = {
 				limit = {
