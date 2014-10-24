@@ -1,12 +1,12 @@
 capital = 2512
 primary_culture = british
+culture = maori
 religion = protestant
 government = hms_government
 plurality = 0.88
 nationalvalue = nv_liberty
 literacy = 0.5
 civilized = yes
-
 
 # Political reforms
 slavery = no_slavery
@@ -19,7 +19,7 @@ voting_system = jefferson_method
 political_parties = non_secret_ballots
 minorities_reform = limited
 immigration_policy = open_immigration
-conscription=two_year_draft
+conscription = two_year_draft
 
 # Social Reforms
 wage_reform = low_minimum_wage
@@ -28,9 +28,9 @@ safety_regulations = low_safety
 health_care = low_health_care
 unemployment_subsidies = low_subsidies
 pensions = low_pensions
-pollution=no_controls
+pollution = no_controls
 child_labor = child_labor_restricted
-arts_endowment=no_endowment
+arts_endowment = no_endowment
 education = elite
 
 ruling_party = NWZ_conservative

@@ -272,6 +272,12 @@
 		religion = animist
 		size = 1775
 	}
+	
+	farmers = {
+		culture = french
+		religion = catholic
+		size = 1250
+	}
 }
 #Nelson (12000/3000 POPS)
 2516 = {

@@ -1827,40 +1827,55 @@ country_event = {
 	news_desc_short = "EVTDESC36940_NEWS_SHORT"
 	picture = "Waitangi"
 
-	trigger = {
-		OR = {
-			tag = ENG
-			tag = ENL
-		}
-		exists = yes
-		owns = 2509 #Auckland
-		year = 1840
-		NOT = { exists = NZL }
-	}
+	is_triggered_only = yes
 
-	fire_only_once = yes
- 
-	mean_time_to_happen =  {
-		months = 5
-		modifier = {
-			factor = 0.75 #increase likelihood to happen
-			year = 1842
-		}
-		modifier = {
-			factor = 0.95 #increase likelihood to happen
-			year = 1845
+	option = {
+		name = "EVTOPTA36940"
+		prestige = 5
+		badboy = 3
+		inherit = AOT
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				AOT = { ai = no }
+			}
 		}
 	}
 
 	option = {
-		name = "EVTOPTA36940"
-		set_global_flag = treaty_of_waitangi
-		prestige = 5
-		ENG_2509 = { add_core = ENG } #North Island
-		ENG_2513 = { add_core = ENG } #South Island
-		any_pop = { 
-			limit = { has_pop_culture = maori }
-			militancy = -3
+		name = "EVTOPTB36940"
+		diplomatic_influence = { who = AOT value = 200 }
+		2510 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2511 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2512 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2513 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2514 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2515 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2516 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		ai_chance = {
+			factor = 10
 		}
 	}
 }
@@ -1877,13 +1892,8 @@ country_event = {
 	picture = "flagstaffwar"
 
 	trigger = {
-		OR = {
-			tag = ENG
-			tag = ENL
-		}
-		exists = yes
+		capital_scope = { continent = europe }
 		owns = 2509 #Auckland
-		has_global_flag = treaty_of_waitangi
 		year = 1845
 		NOT = { exists = NZL }
 	}
@@ -1905,8 +1915,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA36941"
 		set_country_flag = flagstaff_war
-		ENG_2509 = { add_core = AOT }
-		ENG_2513 = { add_core = AOT }
 		any_owned = {
 			limit = {
 				OR = {
@@ -1937,15 +1945,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = ENG
-			tag = ENL
-		}
-		exists = yes
 		NZL = {
 			exists = no
 			all_core = { owned_by = THIS }
 		}
+		NOT = { is_culture_group = oceanic }
+		civilized = yes
 	}
 
 	mean_time_to_happen = {
@@ -1964,7 +1969,7 @@ country_event = {
 		name = "EVTOPTA36942"
 		ENG_2509 = {
 			add_province_modifier = {
-				name =	colonial_recruitment
+				name = colonial_recruitment
 				duration = 730
 			}
 		}
@@ -1978,12 +1983,6 @@ country_event = {
 	picture = "flagstaffwar"
 
 	trigger = {
-		OR = {
-			tag = ENG
-			tag = ENL
-		}
-		exists = yes
-		has_global_flag = treaty_of_waitangi
 		any_owned_province = {
 			is_core = NZL
 			NOT = {
@@ -1991,6 +1990,11 @@ country_event = {
 				average_militancy = 2
 			}
 		}
+		OR = {
+			has_global_flag = treaty_of_waitangi
+			state_n_government = 1
+		}
+		NOT = { tag = AOT }
 	}
 
 	mean_time_to_happen = {
@@ -2012,7 +2016,7 @@ country_event = {
 		any_pop = {
 			limit = {
 				has_pop_culture = maori
-				location = { is_core = NZL }
+				location = { is_core = AOT }
 			}
 			ideology = {
 				value = reactionary
@@ -2024,86 +2028,87 @@ country_event = {
 }
 
 country_event = {
-	id = 36944
-	title = "EVTNAME36944" #The Highland Potato Famine
-	desc = "EVTDESC36944"
-	picture = "famine"
-	
+	id = 36945
+	title = "The United Tribes of New Zealand"
+	desc = "No one should ever see this!"
+
 	trigger = {
-		tag = ENG
-		exists = yes
-		year = 1846
-		any_owned_province = { region = ENG_266 }
-		has_country_flag = great_irish_famine
+		tag = AOT
+		exists = no
+		year = 1834
+		NOT = {
+			has_country_flag = declaration_NZ
+		}
 	}
-	
-	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
-	
+
 	option = {
-		name = "Give them what aid we can."
-		prestige = -2
-		treasury = -20000
-		any_owned = {
-			limit = {
-				region = ENG_266
-			}
-			add_province_modifier = {
-				name = irish_potato_blight
-				duration = 1280
-			}
+		name = "We are independent!"
+		set_country_flag = declaration_NZ
+		2571 = { secede_province = AOT }
+		2515 = { secede_province = AOT }
+		2509 = {
+			secede_province = AOT
+			life_rating = 5
 		}
-		ai_chance = {
-			factor = 35
-			modifier = {
-				factor = 0
-				NOT = { money = 20000 }
-			}
+		capital = 2571
+		relation = { who = ENG value = 50 }
+		relation = { who = FRA value = 50 }
+		diplomatic_influence = { who = ENG value = 50 }
+		diplomatic_influence = { who = FRA value = 50 }
+	}
+}
+
+country_event = {
+	id = 36946
+	title = "EVTNAME36946" #Seeking Recognition
+	desc = "EVTDESC36946"
+	picture = "Waitangi"
+
+	trigger = {
+		tag = AOT
+		exists = yes
+		year = 1840
+		war = no
+		NOT = {
+			has_global_flag = treaty_of_waitangi
 		}
 	}
-	
+ 
+	mean_time_to_happen =  {
+		months = 5
+		modifier = {
+			factor = 0.75 #increase likelihood to happen
+			year = 1842
+		}
+		modifier = {
+			factor = 0.5 #increase likelihood to happen
+			year = 1845
+		}
+	}
+
 	option = {
-		name = "We must not interfere in the markets."
-		any_owned = {
-			limit = {
-				region = ENG_266
-			}
-			add_province_modifier = {
-				name = irish_potato_blight
-				duration = 1825
-			}
-		}
-		any_pop = {
-			limit = {
-				is_primary_culture = yes
-				location = { is_core = ENG }
-			}
-			scaled_consciousness = {
-				issue = laissez_faire
-				factor = -1
-			}
-			scaled_militancy = {
-				ideology = reactionary
-				factor = -1
-			}
-		}
+		name = "We will seek recognition from the British."
+		set_global_flag = treaty_of_waitangi
+		relation = { who = ENG value = 100 }
+		diplomatic_influence = { who = ENG value = 200 }
+		ENG = { country_event = 36940 }
 		ai_chance = {
-			factor = 65
-			modifier = {
-				factor = 2
-				economic_policy = laissez_faire
-			}
-			modifier = {
-				factor = 1.5
-				citizenship_policy = residency
-			}
-			modifier = {
-				factor = 0.5
-				citizenship_policy = full_citizenship
-			}
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "We will seek recognition from the French."
+		set_global_flag = treaty_of_waitangi
+		relation = { who = FRA value = 100 }
+		diplomatic_influence = { who = FRA value = 200 }
+		FRA = { country_event = 36940 }
+		ai_chance = {
+			factor = 10
 		}
 	}
 }
@@ -2181,6 +2186,91 @@ country_event = {
 		prestige = -5
 		ai_chance = {
 			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 36952
+	title = "EVTNAME36952" #The Highland Potato Famine
+	desc = "EVTDESC36952"
+	picture = "famine"
+	
+	trigger = {
+		tag = ENG
+		exists = yes
+		year = 1846
+		any_owned_province = { region = ENG_266 }
+		has_country_flag = great_irish_famine
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "Give them what aid we can."
+		prestige = -2
+		treasury = -20000
+		any_owned = {
+			limit = {
+				region = ENG_266
+			}
+			add_province_modifier = {
+				name = irish_potato_blight
+				duration = 1280
+			}
+		}
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 0
+				NOT = { money = 20000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "We must not interfere in the markets."
+		any_owned = {
+			limit = {
+				region = ENG_266
+			}
+			add_province_modifier = {
+				name = irish_potato_blight
+				duration = 1825
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+				location = { is_core = ENG }
+			}
+			scaled_consciousness = {
+				issue = laissez_faire
+				factor = -1
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -1
+			}
+		}
+		ai_chance = {
+			factor = 65
+			modifier = {
+				factor = 2
+				economic_policy = laissez_faire
+			}
+			modifier = {
+				factor = 1.5
+				citizenship_policy = residency
+			}
+			modifier = {
+				factor = 0.5
+				citizenship_policy = full_citizenship
+			}
 		}
 	}
 }

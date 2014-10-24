@@ -25,11 +25,14 @@ UPB_proletarian_dictatorship;Lusitanic Union;Lusitanic Union;Lusitanic Union;;;;
 UPB_proletarian_dictatorship_ADJ;Lusitanic;Lusitanic;Lusitanic;;;;;;;;;;;x
 UPB_fascist_dictatorship;Lusitanic Union;Lusitanic Union;Lusitanic Union;;;;;;;;;;;x
 UPB_fascist_dictatorship_ADJ;Lusitanic;Lusitanic;Lusitanic;;;;;;;;;;;x
-IRE_conservative_2;Fine Gael;Fine Gael;Fine Gael;;Fine Gael;;;;;;;;;x;;;;
-IRE_liberal_2;Sinn Fein;Sinn Fein;Sinn Fein;;Sinn Fein;;;;;;;;;x;;;;
-IRE_reactionary;Unionist Party;Parti unioniste;Unionist Party;;Partido Unionista;;;;;;;;;x;;;;
-IRE_social_liberal;Fianna Fail;Fianna Fail;Fianna Fail;;Fianna Fail;;;;;;;;;x;;;;
-IRE_anarcho_liberal;Anarcho-Liberal Party;Anarcho-Liberal Party;Anarcho-Liberal Party;;Anarcho-Liberal Party;;;;;;;;;x;;;;
+IRE_conservative_2;Fine Gael;Fine Gael;Fine Gael;;Fine Gael;;;;;;;;;x
+IRE_liberal_2;Sinn Fein;Sinn Fein;Sinn Fein;;Sinn Fein;;;;;;;;;x
+IRE_reactionary;Unionist Party;Parti unioniste;Unionist Party;;Partido Unionista;;;;;;;;;x
+IRE_social_liberal;Fianna Fail;Fianna Fail;Fianna Fail;;Fianna Fail;;;;;;;;;x
+IRE_anarcho_liberal;Anarcho-Liberal Party;Anarcho-Liberal Party;Anarcho-Liberal Party;;Anarcho-Liberal Party;;;;;;;;;x
+AOT_absolute_monarchy;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
+AOT_prussian_constitutionalism;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
+AOT_hms_government;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
 FRA_400;Pas de Calais;;;;;;;;;;;;x
 TUR_824;Epirus;;;;;;;;;;;;x
 TUR_828;Eastern Thrace;;;;;;;;;;;;x
@@ -168,16 +171,20 @@ end_mamluk_iraq_title;End the Mamluk Dynasty in Iraq;;;;;;;;;;;;;x
 end_mamluk_iraq_desc;The Mamluk Pashas who rule Iraq on behalf of the Empire have fallen into decline and decadence. By reinstating direct Imperial rule in Mesopotamia, we will be able to reform the local administration and improve the lot of the people.;;;;;;;;;;;;;x
 unite_caucasus_tribes_title;Unite the Caucasus Tribes;;;;;;;;;;;;;x
 unite_caucasus_tribes_desc;Defeating the Russians will convince the fractious tribes of the Caucasus that we are the rightful rulers of the region. United under our banner, the Caucasus will stand independent against the onslaught of the Russians.;;;;;;;;;;;;;x
-embrace_oromo_title;Embrace the Oromo;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-embrace_oromo_desc;Many of the Oromo people are Muslims, and our peoples have long inhabited the same lands. Let us make them a part of our nation, and together we will stand strong and resist the European powers.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-organize_somalia_title;Organize Somalia;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-organize_somalia_desc;We should organize the African colonies to better reflect both a local structure, as well as set up the possibility for autonomous rule-- dominated by our benevolent colonial administrators, of course.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-reorganize_somalia_title;Claim Somalia;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-reorganize_somalia_desc;Now that we have taken possession of this African colony, we should reorganize its structure to make it truly part of our greater colonial administration.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PNJ_embrace_kashmiri_minority_title;Embrace the Kashmiri;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PNJ_embrace_kashmiri_minority_desc;The Sikh Empire is a secular, tolerant state. We shall embrace the Kashmiri lands under our dominion, and together forge a nation even stronger than before.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PNJ_embrace_baluchi_minority_title;Embrace the Baluch;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PNJ_embrace_baluchi_minority_desc;The Sikh Empire is a secular, tolerant state. We shall embrace the Baluchi lands under our dominion, and together forge a nation even stronger than before.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+embrace_oromo_title;Embrace the Oromo;;;;;;;;;;;;;x
+embrace_oromo_desc;Many of the Oromo people are Muslims, and our peoples have long inhabited the same lands. Let us make them a part of our nation, and together we will stand strong and resist the European powers.;;;;;;;;;;;;;x
+organize_somalia_title;Organize Somalia;;;;;;;;;;;;;x
+organize_somalia_desc;We should organize the African colonies to better reflect both a local structure, as well as set up the possibility for autonomous rule-- dominated by our benevolent colonial administrators, of course.;;;;;;;;;;;;;x
+reorganize_somalia_title;Claim Somalia;;;;;;;;;;;;;x
+reorganize_somalia_desc;Now that we have taken possession of this African colony, we should reorganize its structure to make it truly part of our greater colonial administration.;;;;;;;;;;;;;x
+organize_new_zealand_title;Organize New Zealand;;;;;;;;;;;;;x
+organize_new_zealand_desc;We should organize our colony in New Zealand to better reflect both a local structure, as well as set up the possibility for autonomous rule-- dominated by our benevolent colonial administrators, of course.;;;;;;;;;;;;;x
+reorganize_new_zealand_title;Claim New Zealand;;;;;;;;;;;;;x
+reorganize_new_zealand_desc;Now that we have taken possession of the New Zealand colony, we should reorganize its structure to make it truly part of our greater colonial administration.;;;;;;;;;;;;;x
+PNJ_embrace_kashmiri_minority_title;Embrace the Kashmiri;;;;;;;;;;;;;x
+PNJ_embrace_kashmiri_minority_desc;The Sikh Empire is a secular, tolerant state. We shall embrace the Kashmiri lands under our dominion, and together forge a nation even stronger than before.;;;;;;;;;;;;;x
+PNJ_embrace_baluchi_minority_title;Embrace the Baluch;;;;;;;;;;;;;x
+PNJ_embrace_baluchi_minority_desc;The Sikh Empire is a secular, tolerant state. We shall embrace the Baluchi lands under our dominion, and together forge a nation even stronger than before.;;;;;;;;;;;;;x
 italian_islands_title;The Italian Islands;;;;;;;;;;;;x;
 italian_islands_desc;In the Middle Ages Corsica belonged to Genoa, Malta to Sicily, and the Ionian Islands to Venice. Significant Italian communities still inhabit these islands. It is time the world recognized the truth: Malta, Corsica and the Ionian Islands are rightfully Italian territories.;;;;;;;;;;;;x;
 italian_dalmatia_title;Italian Dalmatia;;;;;;;;;;;;x;
@@ -478,8 +485,10 @@ EVTDESC36744;Belgium has defied the convention and unilaterally proclaimed its s
 EVTNAME36745;The Netherlands Refuses!;;;;;;;;;;;;;x
 EVTDESC36745;The Netherlands has defied the convention and refused to ratify the general treaty acknowledging Belgium's sovereignty. They insist that they will regain control of their southern provinces, with or without the support of the Powers.;;;;;;;;;;;;;x
 EVTDESC36746;The Netherlands has defied the convention and refused to ratify the general treaty acknowledging Belgium's partition. They insist that the region is rightfully theirs and vow to regain it someday.;;;;;;;;;;;;;x
-EVTNAME36944;Highlands Potato Famine;;;;;;;;;;;;;x
-EVTDESC36944;The potato blight has spread into the Scottish highlands, and crops across the region are failing. Some local landlords are distributing oatmeal and hiring crofters for public works projects, but others are rounding up the indigent and shipping them off to Canada and Australia. Which policy should the government endorse?;;;;;;;;;;;;;
+EVTNAME36946;Seeking Recognition;;;;;;;;;;;;;x
+EVTDESC36946;As European interest in our islands grows, we should secure our nation's future by seeking the protection of a Great Power. The British and the French have both expressed interest in developing closer ties with our people. By offering trade concessions, we could likely secure legal recognition of our sovereignty and land rights. Should we tie our future to the British Empire, or the French?;;;;;;;;;;;;;
+EVTNAME36952;Highlands Potato Famine;;;;;;;;;;;;;x
+EVTDESC36952;The potato blight has spread into the Scottish highlands, and crops across the region are failing. Some local landlords are distributing oatmeal and hiring crofters for public works projects, but others are rounding up the indigent and shipping them off to Canada and Australia. Which policy should the government endorse?;;;;;;;;;;;;;
 EVTNAME36990;Claiming Australia;;;;;;;;;;;;;x
 EVTDESC36990;The vast territories of Australia promise to form the foundation of a mighty Pacific empire for Britain. We must solidify our hold on this continent before another power can challenge us.;;;;;;;;;;;;;
 EVTNAME36995;Claiming Rupert's Land;;;;;;;;;;;;;x

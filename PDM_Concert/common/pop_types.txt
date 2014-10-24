@@ -377,6 +377,24 @@ factor = 0.5
 			location = { controlled_by = owner }
 		}
 	}
+	group = {
+		modifier = {
+			factor = -0.1
+			not = { consciousness = 2 }
+		}
+		modifier = {
+			factor = -0.1
+			not = { consciousness = 1.5 }
+		}
+		modifier = {
+			factor = -0.1
+			not = { consciousness = 1 }
+		}
+		modifier = {
+			factor = -0.1
+			not = { consciousness = 0.5 }
+		}
+	}
 	modifier = {
 		factor = 3
 		THIS = { has_pop_religion = jewish }

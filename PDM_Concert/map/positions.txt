@@ -62146,61 +62146,61 @@ naval_base=4.363323
 }
 
 #Singapore
-1384 = 
-{
-	unit=
-	{
-		x=4426.000000
-		y=783.000000
-	}
+1384 = { 
+    text_position = { 
+        x = 4428.300000
+        y = 777.350000
+    } 
 
-	text_position=
-	{
-		x=4423.299805
-		y=781.299988
-	}
-	text_scale=1.900000
-	building_construction=
-	{
-		x=4424.200195
-		y=782.599976
-	}
-	military_construction=
-	{
-		x=4424.700195
-		y=779.400024
-	}
-	factory=
-	{
-		x=4420.600098
-		y=784.700012
-	}
-building_position = 
-	{
-fort=
-		{
-			x=4427.700195
-			y=779.299988
-		}
+    text_scale = 1.900000
+    unit = { 
+        x = 4428.944444
+        y = 780.027778
+    } 
 
-naval_base=
-		{
-			x=4418.399902
-			y=780.299988
-		}
+    city = { 
+        x = 4428.569444
+        y = 778.472222
+    } 
 
-railroad=
-		{
-			x=4423.100098
-			y=780.700012
-		}
+    factory = { 
+        x = 4430.263889
+        y = 778.777778
+    } 
 
-	}
-building_rotation = 
-	{
-naval_base=5.497786
-	}
-}
+    building_construction = { 
+        x = 4424.305556
+        y = 782.013889
+    } 
+
+    military_construction = { 
+        x = 4426.152778
+        y = 782.486111
+    } 
+
+    building_position = { 
+        fort = { 
+            x = 4427.700195
+            y = 779.299988
+        } 
+
+        railroad = { 
+            x = 4423.100098
+            y = 780.700012
+        } 
+
+        naval_base = { 
+            x = 4418.399902
+            y = 780.299988
+        } 
+
+    } 
+
+    building_rotation = { 
+        naval_base = 5.497786
+    } 
+
+} 
 
 #Johor Bahru
 1385 = 
@@ -62265,44 +62265,46 @@ naval_base=2.705261
 }
 
 #Malacca
-1386 = 
-{
-	text_position=
-	{
-		x=4404.299805
-		y=794.700012
-	}
-	text_scale=1.600000
-	building_construction=
-	{
-		x=4407.000000
-		y=793.299988
-	}
-	factory=
-	{
-		x=4405.799805
-		y=797.900024
-	}
-building_position = 
-	{
-fort=
-		{
-			x=4406.899902
-			y=792.200012
-		}
+1386 = { 
+    text_position = { 
+        x = 4404.299805
+        y = 794.700012
+    } 
 
-naval_base=
-		{
-			x=4398.399902
-			y=792.799988
-		}
+    text_scale = 1.600000
+    unit = { 
+        x = 4403.150000
+        y = 795.325000
+    } 
 
-	}
-building_rotation = 
-	{
-naval_base=5.410520
-	}
-}
+    factory = { 
+        x = 4403.350000
+        y = 796.975000
+    } 
+
+    building_construction = { 
+        x = 4404.700000
+        y = 795.800000
+    } 
+
+    building_position = { 
+        fort = { 
+            x = 4404.850000
+            y = 792.950000
+        } 
+
+        naval_base = { 
+            x = 4398.399902
+            y = 792.799988
+        } 
+
+    } 
+
+    building_rotation = { 
+        naval_base = 5.410520
+    } 
+
+} 
 
 #Kuala Lumpur
 1387 = 
@@ -62370,55 +62372,57 @@ naval_base=5.497786
 }
 
 #Penang
-1388 = 
-{
-	unit=
-	{
-		x=4377.000000
-		y=846.000000
-	}
+1388 = { 
+    text_position = { 
+        x = 4374.850000
+        y = 843.900000
+    } 
 
-	text_position=
-	{
-		x=4377.200195
-		y=842.900024
-	}
-	text_scale=1.800000
-	building_construction=
-	{
-		x=4379.600098
-		y=845.500000
-	}
-	military_construction=
-	{
-		x=4376.000000
-		y=842.400024
-	}
-	factory=
-	{
-		x=4374.000000
-		y=847.599976
-	}
-building_position = 
-	{
-fort=
-		{
-			x=4379.500000
-			y=840.900024
-		}
+    text_rotation = 4.712389
+    text_scale = 1.3
+    unit = { 
+        x = 4374.825000
+        y = 845.425000
+    } 
 
-naval_base=
-		{
-			x=4369.200195
-			y=842.200012
-		}
+    city = { 
+        x = 4374.950000
+        y = 844.075000
+    } 
 
-	}
-building_rotation = 
-	{
-naval_base=5.672319
-	}
-}
+    factory = { 
+        x = 4374.900000
+        y = 846.425000
+    } 
+
+    building_construction = { 
+        x = 4371.450000
+        y = 844.050000
+    } 
+
+    military_construction = { 
+        x = 4375.650000
+        y = 843.425000
+    } 
+
+    building_position = { 
+        fort = { 
+            x = 4371.500000
+            y = 843.575000
+        } 
+
+        naval_base = { 
+            x = 4369.200195
+            y = 842.200012
+        } 
+
+    } 
+
+    building_rotation = { 
+        naval_base = 5.672319
+    } 
+
+} 
 
 #Alor Setar
 1389 = 

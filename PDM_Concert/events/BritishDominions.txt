@@ -443,26 +443,23 @@ country_event = {
 }
 
 country_event = {
-
 	id = 44333
 
 	title = "The New Zealand Dominion"
-	desc = "The colony of British New Zealand has asked to be governed as an autonomous dominion within the empire."
+	desc = "The colony of New Zealand has asked to be governed as an autonomous dominion within the empire."
 	picture = "danishgovernment"
 
 	major = yes
 
 	trigger = {
-		OR = {
-			tag = ENG
-			tag = ENL
+		any_owned_province = { is_core = NZL }
+		NZL = {
+			exists = no
+			is_culture_group = THIS
 		}
-		exists = yes
+		is_possible_vassal = NZL
 		war = no
 		year = 1907
-		any_owned_province = { is_core = NZL }
-		NOT = { exists = NZL }
-		is_possible_vassal = NZL
 	}
 
 	mean_time_to_happen = {
@@ -506,7 +503,7 @@ country_event = {
 		}
 		NZL = {
 			set_country_flag = post_colonial_country
-			all_core = { remove_core = ENG }
+			all_core = { remove_core = THIS }
 		}
 		release_vassal = NZL
 		NZL = {
@@ -624,8 +621,11 @@ country_event = {
 			limit = { location = { is_core = NZL } }
 			militancy = -10
 		}
+		AOT = {
+			all_core = { remove_core = AOT }
+		}
 		NZL = {
-			all_core = { remove_core = ENG }
+			all_core = { remove_core = THIS }
 		}
 		release_vassal = NZL
 		NZL = {

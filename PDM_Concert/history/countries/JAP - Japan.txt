@@ -47,13 +47,11 @@ set_country_flag = existing_country
 land_reform = yes_land_reform
 education_reform = yes_education_reform
 academic_institutions = madrasahs
-taxation_reform = tax_farmers
 
 # Technologies
 freedom_of_trade = 1
 malthusian_thought = 1
 late_enlightenment_philosophy = 1
-private_banks = 1
 
 # Inventions
 

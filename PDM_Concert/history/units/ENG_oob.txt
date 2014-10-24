@@ -26,6 +26,10 @@ JOH = {
 	value = 50
 	level = 3
 }
+AOT = { 
+	value = 50
+	level = 3
+}
 
 #Middle East
 PER = {

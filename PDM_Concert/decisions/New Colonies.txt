@@ -2162,4 +2162,83 @@ political_decisions = {
 			}
 		}	
 	}
+	
+	organize_new_zealand = {
+		picture = map_east_indies
+		potential = {
+			civilized = yes
+			owns = 2509
+			OR = {
+				has_global_flag = treaty_of_waitangi
+				state_n_government = 1
+			}
+			NOT = {
+				has_global_flag = new_zealand_organized
+				is_culture_group = oceanic
+			}
+		}
+		
+		allow = {
+			war = no
+			owns = 2509
+		}
+		
+		effect = {
+			set_global_flag = new_zealand_organized
+			prestige = 3
+			ENG_2509 = { add_core = NZL }
+			ENG_2513 = { add_core = NZL }
+			any_owned = {
+				limit = {
+					OR = {
+						region = ENG_2509 #North Island
+						region = ENG_2513 #South Island
+					}
+				}
+				add_province_modifier = {
+					name = colonial_recruitment
+					duration = 1095
+				}
+			}
+			NZL = {
+				primary_culture = THIS
+				set_country_flag = civilize_after_release
+			}
+		}
+	}
+	
+	reorganize_new_zealand = {
+		picture = map_east_indies
+		potential = {
+			civilized = yes
+			has_global_flag = new_zealand_organized
+			owns = 2509
+			NZL = {
+				exists = no
+				NOT = { is_culture_group = THIS }
+			}
+			NOT = {
+				is_culture_group = oceanic
+			}
+		}
+		
+		allow = {
+			war = no
+			state_n_government = 1
+			owns = 2509
+		}
+		
+		effect = {
+			prestige = 3
+			any_pop = {
+				limit = {
+					location = { is_core = NZL }
+				}
+				militancy = -3
+			}
+			NZL = {
+				primary_culture = THIS
+			}
+		}	
+	}
 }

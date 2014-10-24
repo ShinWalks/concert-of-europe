@@ -49,13 +49,11 @@ set_country_flag = existing_country
 foreign_weapons = yes_foreign_weapons
 education_reform = yes_education_reform
 academic_institutions = madrasahs
-taxation_reform = tax_farmers
 
 # Technologies
 flintlock_rifles = 1
 malthusian_thought = 1
 late_enlightenment_philosophy = 1
-private_banks = 1
 
 # Inventions
 

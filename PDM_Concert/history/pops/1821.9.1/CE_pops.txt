@@ -144643,42 +144643,42 @@
 
 	aristocrats = {
 
-		size = 148
+		size = 150
 		culture = maori
 		religion = animist
 
 	}
 	artisans = {
 
-		size = 197
+		size = 200
 		culture = maori
 		religion = animist
 
 	}
 	clergymen = {
 
-		size = 74
+		size = 75
 		culture = maori
 		religion = animist
 
 	}
 	farmers = {
-
-		size = 3537
-		culture = maori
-		religion = animist
-
-	}
-	farmers = {
-
-		size = 1144
+		
+		size = 1000
 		culture = british
 		religion = protestant
+		
+	}
+	farmers = {
+
+		size = 3575
+		culture = maori
+		religion = animist
 
 	}
 	soldiers = {
 
-		size = 371
+		size = 375
 		culture = maori
 		religion = animist
 
@@ -144689,21 +144689,21 @@
 
 	artisans = {
 
-		size = 98
+		size = 100
 		culture = maori
 		religion = animist
 
 	}
 	clergymen = {
 
-		size = 49
+		size = 50
 		culture = maori
 		religion = animist
 
 	}
 	farmers = {
 
-		size = 1756
+		size = 1775
 		culture = maori
 		religion = animist
 
@@ -144714,21 +144714,21 @@
 
 	artisans = {
 
-		size = 148
+		size = 150
 		culture = maori
 		religion = animist
 
 	}
 	clergymen = {
 
-		size = 74
+		size = 75
 		culture = maori
 		religion = animist
 
 	}
 	farmers = {
 
-		size = 2646
+		size = 2675
 		culture = maori
 		religion = animist
 
@@ -144739,21 +144739,21 @@
 
 	artisans = {
 
-		size = 148
+		size = 150
 		culture = maori
 		religion = animist
 
 	}
 	clergymen = {
 
-		size = 74
+		size = 75
 		culture = maori
 		religion = animist
 
 	}
 	farmers = {
 
-		size = 2646
+		size = 2675
 		culture = maori
 		religion = animist
 
@@ -144764,35 +144764,35 @@
 
 	aristocrats = {
 
-		size = 69
+		size = 70
 		culture = maori
 		religion = animist
 
 	}
 	artisans = {
 
-		size = 49
+		size = 50
 		culture = maori
 		religion = animist
 
 	}
 	clergymen = {
 
-		size = 24
+		size = 25
 		culture = maori
 		religion = animist
 
 	}
 	farmers = {
 
-		size = 890
+		size = 900
 		culture = maori
 		religion = animist
 
 	}
 	soldiers = {
 
-		size = 153
+		size = 160
 		culture = maori
 		religion = animist
 
@@ -144803,21 +144803,21 @@
 
 	artisans = {
 
-		size = 49
+		size = 50
 		culture = maori
 		religion = animist
 
 	}
 	clergymen = {
 
-		size = 24
+		size = 25
 		culture = maori
 		religion = animist
 
 	}
 	farmers = {
 
-		size = 890
+		size = 900
 		culture = maori
 		religion = animist
 
@@ -144828,21 +144828,28 @@
 
 	artisans = {
 
-		size = 98
+		size = 100
 		culture = maori
 		religion = animist
 
 	}
 	clergymen = {
 
-		size = 49
+		size = 50
 		culture = maori
 		religion = animist
 
 	}
 	farmers = {
+		
+		size = 1000
+		culture = french
+		religion = catholic
+		
+	}
+	farmers = {
 
-		size = 1756
+		size = 1775
 		culture = maori
 		religion = animist
 
@@ -144853,21 +144860,21 @@
 
 	artisans = {
 
-		size = 148
+		size = 150
 		culture = maori
 		religion = animist
 
 	}
 	clergymen = {
 
-		size = 74
+		size = 75
 		culture = maori
 		religion = animist
 
 	}
 	farmers = {
 
-		size = 2646
+		size = 2675
 		culture = maori
 		religion = animist
 
@@ -146837,21 +146844,21 @@
 
 	artisans = {
 
-		size = 148
+		size = 150
 		culture = maori
 		religion = animist
 
 	}
 	clergymen = {
 
-		size = 74
+		size = 75
 		culture = maori
 		religion = animist
 
 	}
 	farmers = {
 
-		size = 2646
+		size = 2675
 		culture = maori
 		religion = animist
 

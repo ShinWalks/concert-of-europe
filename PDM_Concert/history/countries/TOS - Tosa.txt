@@ -48,12 +48,10 @@ set_country_flag = tozama_daimyo
 
 education_reform = yes_education_reform
 academic_institutions = madrasahs
-taxation_reform = tax_farmers
 
 # Technologies
 malthusian_thought = 1
 late_enlightenment_philosophy = 1
-private_banks = 1
 
 # Inventions
 
