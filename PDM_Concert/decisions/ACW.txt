@@ -320,17 +320,19 @@ political_decisions = {
 		potential = {
 			tag = USA
 			is_greater_power = yes
+			ideological_thought = 1
 			NOT = { has_country_flag = hasmanifestdestiny }
 		}
 		allow = {
 			war = no
 			romanticism = 1
-			ideological_thought = 1
 			NOT = { truce_with = MEX }
 			OR = {
-				TEX = { exists = no }
 				invention = manifest_destiny
-				any_owned_province = { is_core = MEX }
+				AND = {
+					TEX = { exists = no }
+					any_owned_province = { is_core = TEX }
+				}
 			}
 		}
 		effect = {
@@ -343,8 +345,6 @@ political_decisions = {
 			MEX_100 = { add_core = USA } #Arizona
 			USA_129 = { add_core = USA } #Oklahoma
 			USA_106 = { add_core = USA } #Colorado
-			USA_78 = { add_core = USA } #Washington
-			USA_81 = { add_core = USA } #Oregon
 			USA_91 = { add_core = USA } #Idaho
 			relation = { who = MEX value = -200 }
 			diplomatic_influence = { who = MEX value = -200 }

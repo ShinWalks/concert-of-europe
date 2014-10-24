@@ -520,7 +520,7 @@ analytic_philosophy = {
 
 phenomenology_n_hermeneutic = {
 	area = philosophy
-	year = 1880
+	year = 1890
 	cost = 20000
 	permanent_prestige = 10
 	

@@ -1350,13 +1350,14 @@ country_event = {
 		exists = yes
 		government = prussian_constitutionalism
 		year = 1821
+		UCA = { has_country_flag = join_mexico }
 		NOT = {
 			has_country_flag = first_empire
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 3
 	}
 
 	option = {
@@ -1470,7 +1471,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = nationalist_agitation
-				duration = 3650
+				duration = 730
 			}
 		}
 		ai_chance = {
@@ -1493,17 +1494,24 @@ country_event = {
 		has_country_flag = first_empire
 		UCA = { exists = no }
 		NOT = { year = 1836 }
-		any_owned_province = {
-			OR = {
-				is_core = GUA
-				is_core = ELS
-				is_core = HON
-				is_core = NIC
-				is_core = COS
+		OR = {
+			NOT = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
 			}
-			OR = {
-				controlled_by = REB
-				state_scope = { average_militancy = 8 }
+			any_owned_province = {
+				OR = {
+					is_core = GUA
+					is_core = ELS
+					is_core = HON
+					is_core = NIC
+					is_core = COS
+				}
+				OR = {
+					controlled_by = REB
+					state_scope = { average_militancy = 8 }
+				}
 			}
 		}
 	}

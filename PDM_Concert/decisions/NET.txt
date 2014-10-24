@@ -4,6 +4,7 @@ political_decisions = {
 		potential = {
 			tag = ENG
 			is_greater_power = yes
+			has_global_flag = london_conference_1830_held
 			BEL = { exists = yes }
 			NET = {
 				exists = yes

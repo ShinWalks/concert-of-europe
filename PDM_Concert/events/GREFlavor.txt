@@ -518,6 +518,7 @@ country_event = {
 		any_owned = {
 			remove_core = TUR
 		}
+		capital = 834
 		clr_country_flag = attending_london_conference_1832
 		clr_country_flag = weak_greece
 		clr_country_flag = medium_greece
@@ -555,6 +556,7 @@ country_event = {
 			}
 			remove_core = TUR
 		}
+		capital = 834
 		clr_country_flag = attending_london_conference_1832
 		clr_country_flag = weak_greece
 		clr_country_flag = medium_greece
@@ -615,6 +617,7 @@ country_event = {
 				}
 				remove_core = TUR
 			}
+			capital = 834
 		}
 		clr_country_flag = attending_london_conference_1832
 		clr_country_flag = weak_greece
@@ -666,6 +669,7 @@ country_event = {
 				}
 				remove_core = TUR
 			}
+			capital = 834
 		}
 		clr_country_flag = attending_london_conference_1832
 		clr_country_flag = weak_greece

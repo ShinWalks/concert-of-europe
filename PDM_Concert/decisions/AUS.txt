@@ -125,9 +125,7 @@ political_decisions = {
 					NOT = { vassal_of = KUK }
 				}
 				NOT = {
-					any_owned_province = {
-						is_core = HUN
-					}
+					owns = 641 #Budapest
 				}
 				NOT = {
 					government = absolute_monarchy

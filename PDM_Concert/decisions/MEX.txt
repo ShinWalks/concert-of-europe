@@ -45,8 +45,11 @@ political_decisions = {
 		potential = {
 			tag = USA
 			has_country_flag = hasmanifestdestiny
-			NOT = { has_country_flag = treaty_of_guadalupe_hidalgo }
-			MEX = { is_greater_power = no }
+			NOT = {
+				has_country_flag = treaty_of_guadalupe_hidalgo
+				MEX = { is_greater_power = yes }
+				MEX = { has_country_flag = manifest_destiny_refuted }
+			}
 		}
 
 		allow = {
@@ -93,9 +96,21 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			is_greater_power = yes
-			invention = manifest_destiny
-			all_core = { owned_by = THIS }
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+			OR = {
+				invention = manifest_destiny
+				truce_with = USA
+			}
+			all_core = {
+				OR = {
+					owned_by = THIS
+					province_id = 2190 #Belize
+					region = CLM_1723 #Panama
+				}
+			}
 		}
 		
 		effect = {
@@ -143,8 +158,7 @@ political_decisions = {
 					in_sphere = THIS
 					all_core = {
 						OR = {
-							province_id = 2190
-							province_id = 2182
+							province_id = 2190 #Belize
 							owned_by = THIS
 						}
 					}

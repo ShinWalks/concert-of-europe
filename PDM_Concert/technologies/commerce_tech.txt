@@ -329,7 +329,7 @@ bank_inspection_board = {
 
 mutual_funds = {
 	area = financial_institutions
-	year = 1900
+	year = 1910
 	cost = 30000
 	administrative_efficiency = 0.05
 	factory_output = 0.02

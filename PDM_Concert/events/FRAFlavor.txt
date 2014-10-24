@@ -1379,6 +1379,7 @@ country_event = {
 		}
 		NOT = {
 			alliance_with = ALD
+			truce_with = ALD
 			has_country_flag = no_more_algerian_rebellion
 			has_country_modifier = punitive_effects
 			war_policy = pacifism

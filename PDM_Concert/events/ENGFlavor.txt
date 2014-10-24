@@ -1845,8 +1845,34 @@ country_event = {
 
 	option = {
 		name = "EVTOPTB36940"
-		AOT = {
-			ENG_2509 = { secede_province = AOT }
+		diplomatic_influence = { who = AOT value = 200 }
+		2510 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2511 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2512 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2513 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2514 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2515 = {
+			secede_province = THIS
+			secede_province = AOT
+		}
+		2516 = {
+			secede_province = THIS
+			secede_province = AOT
 		}
 		ai_chance = {
 			factor = 10
@@ -1866,13 +1892,8 @@ country_event = {
 	picture = "flagstaffwar"
 
 	trigger = {
-		OR = {
-			tag = ENG
-			tag = ENL
-		}
-		exists = yes
+		capital_scope = { continent = europe }
 		owns = 2509 #Auckland
-		has_global_flag = treaty_of_waitangi
 		year = 1845
 		NOT = { exists = NZL }
 	}
@@ -1894,8 +1915,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA36941"
 		set_country_flag = flagstaff_war
-		ENG_2509 = { add_core = AOT }
-		ENG_2513 = { add_core = AOT }
 		any_owned = {
 			limit = {
 				OR = {
@@ -1926,15 +1945,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = ENG
-			tag = ENL
-		}
-		exists = yes
 		NZL = {
 			exists = no
 			all_core = { owned_by = THIS }
 		}
+		NOT = { is_culture_group = oceanic }
+		civilized = yes
 	}
 
 	mean_time_to_happen = {
@@ -1953,7 +1969,7 @@ country_event = {
 		name = "EVTOPTA36942"
 		ENG_2509 = {
 			add_province_modifier = {
-				name =	colonial_recruitment
+				name = colonial_recruitment
 				duration = 730
 			}
 		}
@@ -1967,12 +1983,6 @@ country_event = {
 	picture = "flagstaffwar"
 
 	trigger = {
-		OR = {
-			tag = ENG
-			tag = ENL
-		}
-		exists = yes
-		has_global_flag = treaty_of_waitangi
 		any_owned_province = {
 			is_core = NZL
 			NOT = {
@@ -1980,6 +1990,11 @@ country_event = {
 				average_militancy = 2
 			}
 		}
+		OR = {
+			has_global_flag = treaty_of_waitangi
+			state_n_government = 1
+		}
+		NOT = { tag = AOT }
 	}
 
 	mean_time_to_happen = {
@@ -2001,7 +2016,7 @@ country_event = {
 		any_pop = {
 			limit = {
 				has_pop_culture = maori
-				location = { is_core = NZL }
+				location = { is_core = AOT }
 			}
 			ideology = {
 				value = reactionary
@@ -2034,7 +2049,11 @@ country_event = {
 		name = "We are independent!"
 		set_country_flag = declaration_NZ
 		2571 = { secede_province = AOT }
-		2509 = { secede_province = AOT }
+		2515 = { secede_province = AOT }
+		2509 = {
+			secede_province = AOT
+			life_rating = 5
+		}
 		capital = 2571
 		relation = { who = ENG value = 50 }
 		relation = { who = FRA value = 50 }
@@ -2047,11 +2066,13 @@ country_event = {
 	id = 36946
 	title = "EVTNAME36946" #Seeking Recognition
 	desc = "EVTDESC36946"
+	picture = "Waitangi"
 
 	trigger = {
 		tag = AOT
 		exists = yes
 		year = 1840
+		war = no
 		NOT = {
 			has_global_flag = treaty_of_waitangi
 		}
