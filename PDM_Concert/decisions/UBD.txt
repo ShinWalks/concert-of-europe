@@ -1,0 +1,209 @@
+political_decisions = {
+	form_baltic_states = {
+		potential = {
+			is_culture_group = baltic
+			NOT = { exists = UBD }
+			NOT = { has_global_flag = baltic_states_formed }
+			NOT = { has_country_flag = post_colonial_country }
+		}
+
+		allow = {
+			war = no
+			OR = {
+				LAT = {
+					exists = yes
+					part_of_sphere = no
+					relation = { who = THIS value = 100 }
+				}
+				LAT = {
+					exists = yes
+					has_country_flag = newly_released_nation
+				}
+				354 = { owned_by = THIS }
+				354 = {
+					owner = { in_sphere = THIS }
+				}
+			}
+			OR = {
+				tag = EST
+				EST = {
+					exists = yes
+					part_of_sphere = no
+					relation = { who = THIS value = 100 }
+				}
+				EST = {
+					exists = yes
+					has_country_flag = newly_released_nation
+				}
+				349 = { owned_by = THIS }
+				349 = {
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+
+		effect = {
+			set_global_flag = baltic_states_formed
+			prestige = 10
+			LAT = { all_core = { add_core = UBD } }
+			LIT = { all_core = { add_core = UBD } }
+			EST = { all_core = { add_core = UBD } }
+			add_accepted_culture = latvian
+			add_accepted_culture = lithuanian
+			add_accepted_culture = estonian
+			change_tag = UBD
+			random_country = {
+				limit = {
+					tag = LAT
+					NOT = { in_sphere = THIS }
+					NOT = { tag = THIS }
+				}
+				annex_to = THIS
+			}
+			random_country = {
+				limit = {
+					tag = LIT
+					NOT = { in_sphere = THIS }
+					NOT = { tag = THIS }
+				}
+				annex_to = THIS
+			}
+			random_country = {
+				limit = {
+					tag = EST
+					NOT = { in_sphere = THIS }
+					NOT = { tag = THIS }
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = {
+					in_sphere = THIS
+					war = no
+				}
+				any_owned = {
+					limit = { is_core = UBD }
+					secede_province = THIS
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	create_baltic_states = {
+		picture = form_baltic_states
+		potential = {
+			NOT = {
+				tag = RUS
+				tag = PLC
+				exists = UBD
+				is_culture_group = baltic
+				has_global_flag = baltic_states_formed
+			}
+			OR = {
+				any_owned_province = {
+					any_neighbor_province = {
+						OR = {
+							is_core = LIT
+							is_core = LAT
+							is_core = EST
+						}
+					}
+				}
+				any_owned_province = {
+					OR = {
+						is_core = LIT
+						is_core = LAT
+						is_core = EST
+					}
+				}
+				is_sphere_leader_of = LIT
+				is_sphere_leader_of = LAT
+				is_sphere_leader_of = EST
+			}	
+		}
+		allow = {
+			war = no
+			is_greater_power = yes
+			LAT = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
+				}
+			}
+			EST = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_global_flag = baltic_states_formed
+			prestige = 20
+			badboy = 2
+			any_country = {
+				limit = {
+					OR = {
+						tag = LAT
+						tag = EST
+						tag = LIT
+					}
+					ai = yes
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			any_country = {
+				limit = {
+					NOT = { is_culture_group = south_slavic }
+					in_sphere = THIS
+					war = no
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = LAT
+							is_core = EST
+							is_core = LIT
+						}
+					}
+					secede_province = THIS
+				}
+			}
+			LAT = { all_core = { add_core = UBD } }
+			LIT = { all_core = { add_core = UBD } }
+			EST = { all_core = { add_core = UBD } }
+			any_owned = {
+				limit = {
+					is_core = THIS
+					is_core = UBD
+				}
+				remove_core = UBD
+			}
+			release_vassal = UBD
+			create_alliance = UBD
+			diplomatic_influence = {
+				who = UBD
+				value = 300
+			}
+			RUS = { relation = { who = THIS value = -50 } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
