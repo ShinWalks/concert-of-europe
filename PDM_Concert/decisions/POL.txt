@@ -226,4 +226,37 @@ political_decisions = {
 			set_country_flag = hungarian_brotherhood_flag
 		}
 	}
+	
+	construct_gdynia = {
+		picture=construct_germania_werft
+		potential = {
+			NOT = {
+				has_global_flag = gdynia_has_been_built
+			}
+			OR = {
+				tag = POL
+				tag = PLC
+				tag = NGF
+			}
+			owns = 691
+		}
+		
+		allow = {
+			steel_steamers = 1
+		}
+		
+		effect = {
+			set_global_flag = gdynia_has_been_built
+			prestige = 10
+			691 = {
+				change_province_name = "Gdynia"
+				life_rating = 1
+				naval_base = 6
+				add_province_modifier = {
+					name = gdynia_port
+					duration = -1
+				}
+			}
+		}
+	}
 }

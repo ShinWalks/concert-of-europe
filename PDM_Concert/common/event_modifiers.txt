@@ -2215,6 +2215,12 @@ polish_academy_learning = {
 	icon = 15
 }
 
+gdynia_port = {
+	local_repair = 0.5
+	local_ship_build = -0.05
+	icon = 17
+}
+
 ### Party Scandals ###
 ruling_party_scandal = {
 	ruling_party_support = -0.2
