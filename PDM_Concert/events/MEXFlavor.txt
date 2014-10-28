@@ -1410,7 +1410,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 100
+			factor = 90
 		}
 	}
 	
@@ -1427,11 +1427,11 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = coup_risk
-			duration = 730
+			duration = 1825
 		}
 		add_country_modifier = {
 			name = conservative_reaction
-			duration = 1825
+			duration = 3650
 		}
 		any_pop = {
 			limit = {
@@ -1458,24 +1458,8 @@ country_event = {
 			}
 			consciousness = 4
 		}
-		any_owned = {
-			limit = {
-				OR = {
-					region = UCA_2186
-					region = UCA_2191
-					region = UCA_2193
-					region = UCA_2197
-					region = UCA_2201
-					region = MEX_2181
-				}
-			}
-			add_province_modifier = {
-				name = nationalist_agitation
-				duration = 730
-			}
-		}
 		ai_chance = {
-			factor = 0
+			factor = 10
 		}
 	}
 }
@@ -1530,7 +1514,6 @@ country_event = {
 					region = UCA_2193
 					region = UCA_2197
 					region = UCA_2201
-					province_id = 2182
 				}
 			}
 			secede_province = UCA
@@ -1566,7 +1549,6 @@ country_event = {
 					region = UCA_2193
 					region = UCA_2197
 					region = UCA_2201
-					province_id = 2182
 				}
 			}
 			secede_province = UCA
@@ -1574,10 +1556,6 @@ country_event = {
 		UCA = {
 			capital = 2186
 			any_pop = { militancy = -6 }
-		}
-		USA = {
-			relation = { who = UCA value = 50 }
-			diplomatic_influence = { who = UCA value = 50 }
 		}
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -1599,7 +1577,6 @@ country_event = {
 					region = UCA_2193
 					region = UCA_2197
 					region = UCA_2201
-					province_id = 2182
 				}
 			}
 			secede_province = UCA
@@ -1607,10 +1584,6 @@ country_event = {
 		UCA = {
 			capital = 2186
 			any_pop = { militancy = -6 }
-		}
-		USA = {
-			relation = { who = UCA value = 50 }
-			diplomatic_influence = { who = UCA value = 50 }
 		}
 		any_pop = {
 			limit = { is_primary_culture = yes }

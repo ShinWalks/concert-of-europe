@@ -133553,13 +133553,6 @@
 }
 2244 = {
 
-	aristocrats = {
-
-		size = 4
-		culture = british
-		religion = protestant
-
-	}
 	farmers = {
 
 		size = 13

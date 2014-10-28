@@ -3,6 +3,7 @@ political_decisions = {
 		potential = {
 			tag = MEX
 			government = democracy
+			year = 1850
 			NOT = { has_country_flag = we_have_tried_this_once }
 			FRA = {
 				OR = {

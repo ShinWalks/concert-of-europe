@@ -45,6 +45,10 @@ country_event = {
 					is_core = GRE
 				}
 			}
+			exists = GRE
+			NOT = {
+				SER = { vassal_of = TUR }
+			}
 			OR = {
 				is_secondary_power = no
 				is_disarmed = yes

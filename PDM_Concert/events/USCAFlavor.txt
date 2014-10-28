@@ -26,6 +26,14 @@ country_event = {
 			has_country_flag = 1836_start
 		}
 		modifier = {
+			factor = 2
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+		modifier = {
 			factor = 0.5
 			average_militancy = 3
 		}
