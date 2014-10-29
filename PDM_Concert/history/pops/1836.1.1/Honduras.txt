@@ -6,8 +6,7 @@
 		culture = central_american
 		religion = catholic
 		size = 950
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	bureaucrats = {
@@ -20,16 +19,14 @@
 		culture = central_american
 		religion = catholic
 		size = 100
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 450
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	artisans = {
@@ -42,9 +39,7 @@
 		culture = central_american
 		religion = catholic
 		size= 1450
-
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	farmers = {
@@ -60,16 +55,14 @@
 		culture = central_american
 		religion = catholic
 		size = 550
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 225
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	artisans = {
@@ -82,17 +75,14 @@
 		culture = central_american
 		religion = catholic
 		size= 225
-
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	farmers = {
 		culture = central_american
 		religion = catholic
 		size = 20850
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 }
 #La Ceiba (68000/17000 POPS)
@@ -101,16 +91,14 @@
 		culture = central_american
 		religion = catholic
 		size = 425
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 175
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	artisans = {
@@ -123,17 +111,14 @@
 		culture = central_american
 		religion = catholic
 		size= 175
-
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	farmers = {
 		culture = central_american
 		religion = catholic
 		size = 15375
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 }
 #Puerto Lempira (12000/3000 POPS)
@@ -142,16 +127,14 @@
 		culture = central_american
 		religion = catholic
 		size = 75
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 50
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	artisans = {
@@ -164,9 +147,7 @@
 		culture = central_american
 		religion = catholic
 		size= 25
-
-		militancy = 9
-		rebel_type = nationalist_rebels
+		militancy = 5
 	}
 
 	farmers = {

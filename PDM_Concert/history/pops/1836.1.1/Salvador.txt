@@ -20,7 +20,7 @@
 		culture = central_american
 		religion = catholic
 		size = 125
-		militancy = 9
+		militancy = 5
 	}
 
 	clergymen = {
@@ -34,15 +34,14 @@
 		culture = central_american
 		religion = catholic
 		size = 3250
-		militancy = 9
+		militancy = 5
 	}
 
 	soldiers = {
 		culture = central_american
 		religion = catholic
 		size= 1100
-
-		militancy = 9
+		militancy = 5
 	}
 
 	farmers = {
@@ -58,29 +57,28 @@
 		culture = central_american
 		religion = catholic
 		size = 950
-		militancy = 9
+		militancy = 5
 	}
 
 	clergymen = {
 		culture = central_american
 		religion = catholic
 		size = 450
-		militancy = 9
+		militancy = 5
 	}
 
 	artisans = {
 		culture = central_american
 		religion = catholic
 		size = 2200
-		militancy = 9
+		militancy = 5
 	}
 
 	soldiers = {
 		culture = central_american
 		religion = catholic
 		size= 450
-
-		militancy = 9
+		militancy = 5
 	}
 
 	farmers = {
