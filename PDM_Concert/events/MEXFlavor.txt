@@ -1062,7 +1062,6 @@ country_event = {
 		tag = TEX
 		exists = yes
 		war_with = MEX
-		MEX = { has_country_modifier = military_man }
 		national_provinces_occupied = 0.25
 		any_owned_province = { country_units_in_province = MEX }
 		NOT = { has_country_flag = santa_ana_captured }
@@ -1522,6 +1521,10 @@ country_event = {
 			capital = 2186
 			any_pop = { militancy = -6 }
 			leadership = 40
+			add_country_modifier = {
+				name = conservative_reaction
+				duration = 3650
+			}
 		}
 		USA = {
 			relation = { who = UCA value = 50 }
@@ -1535,6 +1538,10 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 10
+			modifier = {
+				factor = 0
+				government = democracy
+			}
 		}
 	}
 
@@ -1556,6 +1563,10 @@ country_event = {
 		UCA = {
 			capital = 2186
 			any_pop = { militancy = -6 }
+			add_country_modifier = {
+				name = conservative_reaction
+				duration = 3650
+			}
 		}
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -1563,6 +1574,10 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 0
+				government = absolute_monarchy
+			}
 		}
 	}
 	
@@ -1584,6 +1599,10 @@ country_event = {
 		UCA = {
 			capital = 2186
 			any_pop = { militancy = -6 }
+			add_country_modifier = {
+				name = conservative_reaction
+				duration = 3650
+			}
 		}
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -1731,6 +1750,9 @@ country_event = {
 				ideology = reactionary
 				factor = -4
 			}
+		}
+		ai_chance = {
+			factor = 10
 		}
 	}
 }

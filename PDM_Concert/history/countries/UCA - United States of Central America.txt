@@ -73,6 +73,7 @@ nonstate_consciousness = 0
 	
 	set_country_flag = join_mexico
 	set_country_flag = 1836_start
+	set_country_flag = right_to_secede
 	
 	# Technologies
 	post_napoleonic_thought = 1
