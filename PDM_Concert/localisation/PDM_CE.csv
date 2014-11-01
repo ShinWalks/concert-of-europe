@@ -75,8 +75,6 @@ create_iberia2_UPB_title;Become Iberia;;;;;;;;;;;;;x
 create_iberia2_UPB_desc;We have proven our mettle and united the Iberian peninsula under our rule. Now the time has come for a new Iberian federation to be born, one that unites all of the peninsula's cultures under a single rule.;;;;;;;;;;;;;x
 lease_guangzhouwan_title;Lease Guangzhou Wan;;;;;;;;;;;;;;x
 lease_guangzhouwan_desc;A port on the Chinese coast would help us to administer our Asian possessions and encourage trade with China. We can propose a lengthy lease for a minor town on the coast of Guangzhou.;;;;;;;;;;;;;;x
-greater_PLC_title;Greater Poland-Lithuania;;;;;;;;;;;;;x
-greater_PLC_desc;Our nation has become influential enough to stake a credible claim to all of the lands once ruled by the Commonwealth. Let us restore Poland-Lithuania!;;;;;;;;;;;;;x
 RGS_claim_cisplatina_title;Claim Cisplatina;;;;;;;;;;;;;x
 RGS_claim_cisplatina_desc;The Provincia Cisplatina adjoins our country and shares our pastoral culture and independent values. It is only natural that its people should join the Rio Grande Republic.;;;;;;;;;;;;;x
 thorbecke's_reforms_title;Thorbecke's Reforms;;;;;;;;;;;;;;x
@@ -211,6 +209,14 @@ buda_pest_title;Budapest;;;;;;;;;;;;;x
 buda_pest_desc;Buda and Pest were originally two separate cities on the two banks of the Danube, with Buda being Hungary's political capital and Pest an industrial and economic center. The two cities eventually grew together and were connected by a railroad bridge, which led to their legal unification and renaming as Budapest in 1873.;;;;;;;;;;;;;x
 CPL_recognized_title;Independence Recognized;;;;;;;;;;;;;x
 CPL_recognized_desc;Having proven our independence by victory on the battlefield, we can now demand that the international order recognize our right to exist as a sovereign nation.;;;;;;;;;;;;;x
+greater_PLC_title;Greater Poland-Lithuania;;;;;;;;;;;;;x
+greater_PLC_desc;Our nation has become influential enough to stake a credible claim to all of the lands once ruled by the Commonwealth. Let us restore Poland-Lithuania!;;;;;;;;;;;;;x
+polish_jews_title;Polish Jews;;;;;;;;;;;;;x
+polish_jews_desc;Since the Middle Ages Poland has been the home and refuge of Europe's Jews. Now that Poland is reborn, it shall again be a beacon of tolerance and inclusion.;;;;;;;;;;;;;x
+reinstate_ken_title;Reinstate the Commission of National Education;;;;;;;;;;;;x
+reinstate_ken_desc;Formed in the late years of the Polish-Lithuanian Commonwealth, the Commission of National Education was Europe's first public education ministry. Though the Commonwealth ended not long thereafter, the Commission can now be reestablished to see to the literacy and education of our nation.;;;;;;;;;;;;x
+2nd_treaty_of_hadiach_title;Second Treaty of Hadiach;;;;;;;;;;;;x
+2nd_treaty_of_hadiach_desc;At the peak of old Poland-Lithuania's powers, it almost signed a treaty to make the Ruthenians a third equal nation within the Commonwealth. We should resurrect this idea and give equal political rights and representation to our eastern regions.;;;;;;;;;;;;x
 rename_malvinas_title;Las Malvinas son Argentinas;;;;Las Malvinas son Argentinas;;;;;;;;;x
 rename_malvinas_desc;We have finally liberated the Islas Malvinas from British rule. We can now insist upon their proper name!;;;;;;;;;;;;;x
 restore_falkland_title;Restore Falkland Islands;;;;;;;;;;;;;x
@@ -529,6 +535,18 @@ EVTNAME44856;The Republic of Texas;;;;;;;;;;;;;x
 EVTDESC44856;The frontier settlers brought into Tejas by the empresarios chafed under the increased taxes Santa Anna's regime levied. Tensions rose in the early 1830s, and the Texans increasingly talked of secession from Mexico, perhaps to be followed by annexation to the United States, where most of them had come from. Finally, in October of 1835 a Texan militia rose up in rebellion and proclaimed the Republic of Texas. Mexican armies quickly marched north to crush the rebels, led by President Santa Anna himself.;;;;;;;;;;;;;
 EVTNAME44860;Claiming New Mexico;;;;;;;;;;;;;x
 EVTDESC44860;The mountainous lands to the north are part of the Spanish claims that Mexico has inherited. We must establish control of them, before our neighbors do.;;;;;;;;;;;;;
+EVTNAME44861;Cuban Liberation?;;;;;;;;;;;;;x
+EVTDESC44861;"Cuba without Mexico is aimed at imperialist yoke, Mexico without Cuba is a prisoner of the Gulf of Mexico."\nSince our independence, Havana has become Spain's last stronghold in North America. Our Foreign Minister contends that as long as Cuba remains in Spanish hands, Mexico will not be truly secure. He heads a growing movement to declare new war on our former masters and wrest Cuba from the Spanish crown. We worry, though, that the Americans also have designs on Cuba and might not look favorably upon our conquest of the island. If we are to pursue war with Spain, we should seek America's support first. If not, we could instead focus our efforts on normalizing relations with Spain and thus remove the threat of reconquest.;;;;;;;;;;;;;
+EVTNAME44862;Mexican Cuba?;;;;;;;;;;;;;x
+EVTDESC44862;An envoy from $FROMCOUNTRY$ seeks America's support for an effort by his government to seize control of Cuba from Spain. While we are flattered that they felt the need to ask our permission, we hesitate to give it, since many in America are interested in eventually adding Cuba to our own Union. A Mexican Cuba would likely be a greater obstacle to that goal than a Spanish Cuba. Still, we also desire strong relations with our neighbor to the south. Shall we promise not to interfere with their attempt for Cuba, or should we discourage them from trying?;;;;;;;;;;;;;
+EVTNAME44862;Mexican Cuba?;;;;;;;;;;;;;x
+EVTDESC44862;An envoy from $FROMCOUNTRY$ seeks America's support for an effort by his government to seize control of Cuba from Spain. While we are flattered that they felt the need to ask our permission, we hesitate to give it, since many in America are interested in eventually adding Cuba to our own Union. A Mexican Cuba would likely be a greater obstacle to that goal than a Spanish Cuba. Still, we also desire strong relations with our neighbor to the south. Shall we promise not to interfere with their attempt for Cuba, or should we discourage them from trying?;;;;;;;;;;;;;
+EVTNAME44863;$FROMCOUNTRY$ Agrees!;;;;;;;;;;;;;x
+EVTDESC44863;$FROMCOUNTRY$ acknowledges our legitimate interests in Cuba and will not interfere. The time is right for Mexico to secure its independence once and for all.;;;;;;;;;;;;;
+EVTNAME44864;$FROMCOUNTRY$ Refuses!;;;;;;;;;;;;;x
+EVTDESC44864;$FROMCOUNTRY$ refuses to sanction our invasion of Cuba, and warns that the attempt would disrupt our relations with them. How should we weigh the good will of the Yankees against all of our strategic interests in Cuba?;;;;;;;;;;;;;
+EVTNAME44865;Victory in Cuba!;;;;;;;;;;;;;x
+EVTDESC44865;We have successfully wrested Cuba away from the Spanish crown, securing Mexico's territorial waters and liberating more of New Spain. Let the world recognize that Cuba is a part of Mexico, and always shall be.;;;;;;;;;;;;;
 EVTNAME46305;Claiming the Jungle;;;;;;;;;;;;;x
 EVTDESC46305;The deep Amazonian jungle is not yet firmly controlled by any civilized power. Brazil should make an effort to stake a claim to this land before our neighbors do.;;;;;;;;;;;;;
 EVTNAME46306;Escaped Slaves;;;;;;;;;;;;;x

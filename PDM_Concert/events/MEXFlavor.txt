@@ -1068,7 +1068,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 4
 		modifier = {
 			factor = 0.75
 			TEX = { national_provinces_occupied = 0.05 }
@@ -1528,7 +1528,7 @@ country_event = {
 		}
 		USA = {
 			relation = { who = UCA value = 50 }
-			diplomatic_influence = { who = UCA value = 50 }
+			diplomatic_influence = { who = UCA value = 25 }
 		}
 		war = {
 			target = UCA
@@ -1875,8 +1875,6 @@ country_event = {
 	desc = "EVTDESC44856"
 	picture = "mexico_soldiers"
 
-	fire_only_once = yes
-
 	trigger = {
 		tag = MEX
 		exists = yes
@@ -1916,8 +1914,8 @@ country_event = {
 			leadership = 40
 		}
 		USA = {
-			relation = { who = TEX value = 100 }
-			diplomatic_influence = { who = TEX value = 50 }
+			relation = { who = TEX value = 50 }
+			diplomatic_influence = { who = TEX value = 25 }
 		}
 		war = {
 			target = TEX
@@ -1950,8 +1948,8 @@ country_event = {
 			any_pop = { militancy = -6 }
 		}
 		USA = {
-			relation = { who = TEX value = 125 }
-			diplomatic_influence = { who = TEX value = 200 }
+			relation = { who = TEX value = 100 }
+			diplomatic_influence = { who = TEX value = 100 }
 		}
 		any_pop = {
 			limit = { is_primary_culture = yes }
@@ -2137,5 +2135,250 @@ country_event = {
 				secede_province = THIS
 			}
 		}
+	}
+}
+
+country_event = {
+	id = 44861
+	title = "EVTNAME44861" #Cuban Liberation?
+	desc = "EVTDESC44861"
+	picture = "deliberation"
+
+	trigger = {
+		tag = MEX
+		exists = yes
+		has_country_flag = first_empire
+		is_vassal = no
+		CUB = { exists = no }
+		2209 = { owned_by = SPA }
+		NOT = {
+			year = 1836
+			war_with = SPA
+			truce_with = SPA
+			war_policy = pacifism
+			relation = { who = SPA value = 0 }
+			has_country_flag = mission_to_cuba
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 2
+			war_policy = anti_military
+		}
+		modifier = {
+			factor = 0.5
+			war_policy = jingoism
+		}
+	}
+
+	option = {
+		name = "We should seek Yankee support for war with Spain."
+		set_country_flag = mission_to_cuba
+		USA = { country_event = 44862 }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.1
+				war_policy = anti_military
+			}
+		}
+	}
+
+	option = {
+		name = "We should pursue reconciliation with Spain."
+		set_country_flag = mission_to_cuba
+		prestige = -2
+		relation = { who = SPA value = 25 }
+		diplomatic_influence = { who = SPA value = 25 }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_secondary_power = yes
+					is_greater_power = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44862
+	title = "EVTNAME44862" #Mexican Cuba? (for USA)
+	desc = "EVTDESC44862"
+	picture = "mexico_soldiers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can accept Mexican control of Cuba."
+		leave_alliance = SPA
+		relation = { who = SPA value = -50 }
+		relation = { who = MEX value = 25 }
+		diplomatic_influence = { who = MEX value = 25 }
+		MEX = { country_event = 44863 }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 5
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 5
+				MEX = {
+					OR = {
+						is_secondary_power = yes
+						is_greater_power = yes
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We prefer the status quo."
+		leave_alliance = MEX
+		relation = { who = MEX value = -25 }
+		diplomatic_influence = { who = MEX value = -25 }
+		MEX = { country_event = 44864 }
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+country_event = {
+	id = 44863
+	title = "EVTNAME44863" #America Supports
+	desc = "EVTDESC44863"
+	picture = "mexico_soldiers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then we go, to Cuba and victory!"
+		prestige = 2
+		war = {
+			target = SPA
+			attacker_goal = {
+				casus_belli = acquire_any_state
+				state_province_id = 2209
+			}
+			call_ally = yes
+		}
+		SPA = {
+			casus_belli = {
+				target = MEX
+				type = make_puppet
+				months = 60
+			}
+		}
+		any_pop = {
+			dominant_issue = {
+				value = jingoism
+				factor = 0.05
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44864
+	title = "EVTNAME44864" #America Discourages
+	desc = "EVTDESC44864"
+	picture = "mexico_soldiers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We don't need their permission. War it is!"
+		prestige = 2
+		relation = { who = USA value = -50 }
+		war = {
+			target = SPA
+			attacker_goal = {
+				casus_belli = acquire_any_state
+				state_province_id = 2209
+			}
+			call_ally = yes
+		}
+		SPA = {
+			casus_belli = {
+				target = MEX
+				type = make_puppet
+				months = 60
+			}
+		}
+		any_pop = {
+			dominant_issue = {
+				value = jingoism
+				factor = 0.05
+			}
+		}
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.2
+				war_policy = anti_military
+			}
+		}
+	}
+	
+	option = {
+		name = "Perhaps we should reconsider..."
+		prestige = -2
+		relation = { who = USA value = 50 }
+		diplomatic_influence = { who = MEX value = 25 }
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				war_policy = jingoism
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					is_secondary_power = yes
+					is_greater_power = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44865
+	title = "EVTNAME44865" #Mexican Cuba
+	desc = "EVTDESC44865"
+	picture = "expansion"
+
+	trigger = {
+		tag = MEX
+		exists = yes
+		has_country_flag = mission_to_cuba
+		CUB = { exists = no }
+		2209 = { owned_by = MEX }
+		NOT = {
+			year = 1840
+			has_country_flag = mexican_cuba
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "Long live Mexican Cuba!"
+		set_country_flag = mexican_cuba
+		add_accepted_culture = caribeno
+		SPA_2209 = { add_core = MEX }
 	}
 }

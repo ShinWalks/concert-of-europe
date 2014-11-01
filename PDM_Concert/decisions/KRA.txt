@@ -1,8 +1,8 @@
 political_decisions = {
 	CPL_recognized = {
+		picture = unite_with_poland
 		potential = {
 			tag = CPL
-			exists = yes
 			NOT = { has_country_flag = CPL_recognized }
 		}
 		
@@ -31,6 +31,121 @@ political_decisions = {
 			factor = 1
 		}
 	}
+
+	unite_with_poland = {
+		potential = {
+			primary_culture = polish
+			NOT = { tag = POL }
+			NOT = { tag = PLC }
+			exists = POL
+			NOT = { has_country_flag = unite_with_poland }
+			NOT = { has_country_flag = post_colonial_country }
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+			OR = {
+				part_of_sphere = no
+				sphere_owner = { is_sphere_leader_of = POL }
+				POL = { is_sphere_leader_of = THIS }
+			}
+			POL = {
+				war = no
+				neighbour = THIS
+				is_vassal = no
+			}
+		}
+		
+		effect = {
+			set_country_flag = unite_with_poland
+			random_country = {
+				limit = {
+					tag = POL
+					ai = yes
+					THIS = { ai = yes }
+				}
+				inherit = THIS
+			}
+			random_country = {
+				limit = {
+					tag = POL
+					ai = yes
+					THIS = { ai = no }
+				}
+				THIS = {
+					inherit = POL
+					random_owned = {
+						limit = { province_id = 706 }
+						owner = { capital = 706 }
+					}
+					change_tag = POL
+				}	
+			}
+			random_country = {
+				limit = {
+					tag = POL
+					ai = no
+				}
+				country_event = 60130
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				government = fascist_dictatorship
+				POL = {
+					NOT = { government = fascist_dictatorship }
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { government = fascist_dictatorship }
+				POL = { government = fascist_dictatorship }
+			}
+			modifier = {
+				factor = 0
+				NOT = { government = proletarian_dictatorship }
+				POL = { government = proletarian_dictatorship }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					government = democracy
+					government = hms_government
+				}
+				POL = {
+					NOT = {
+						government = democracy
+						government = hms_government
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				POL = {
+					OR = {
+						government = democracy
+						government = hms_government
+					}
+				}
+				NOT = {
+					government = democracy
+					government = hms_government
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					government = presidential_dictatorship
+					government = bourgeois_dictatorship
+					government = absolute_monarchy
+				}
+			}
+		}
+	}
 	
 	become_poland = {
 		potential = {
@@ -49,13 +164,82 @@ political_decisions = {
 		}
 		
 		effect = {
-			prestige = 10
+			prestige = 5
 			all_core = {
 				add_core = POL
 				remove_core = THIS
 			}
 			change_tag = POL
 			capital = 706
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	polish_jews = {
+		picture = embrace_minority
+		potential = {
+			tag = POL
+			NOT = { has_country_flag = polish_jews }
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+			OR = {
+				minorities_reform = limited
+				minorities_reform = protected
+			}
+		}
+		
+		effect = {
+			set_country_flag = polish_jews
+			add_accepted_culture = ashkenazi
+			plurality = 5
+			any_pop = {
+				limit = {
+					culture = polish
+				}
+				consciousness = 2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	reinstate_ken = {
+		picture = polish_library
+		potential = {
+			OR = {
+				tag = POL
+				tag = PLC
+			}
+			NOT = {
+				education = public
+				has_country_flag = ken_reinstated
+			}
+		}
+		
+		allow = {
+			war = no
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+			functionalism = 1
+		}
+		
+		effect = {
+			set_country_flag = ken_reinstated
+			prestige = 5
+			social_reform = public
+			any_pop = {
+				consciousness = 1
+			}
 		}
 		
 		ai_will_do = {
@@ -76,8 +260,27 @@ political_decisions = {
 		allow = {
 			war = no
 			is_greater_power = yes
-			owns = 706
-			owns = 703
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			706 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			703 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
 			360 = {
 				OR = {
 					owned_by = THIS
@@ -102,10 +305,9 @@ political_decisions = {
 		}
 		
 		effect = {
-			prestige = 15
+			prestige = 10
 			add_accepted_culture = polish
 			add_accepted_culture = lithuanian
-			add_accepted_culture = byelorussian
 			all_core = {
 				add_core = PLC
 				remove_core = THIS
@@ -154,6 +356,13 @@ political_decisions = {
 					all_core = { remove_core = LIT }
 				}
 			}
+			any_pop = {
+				limit = {
+					is_primary_culture = yes
+				}
+				militancy = 1
+				consciousness = 2
+			}
 			capital = 706
 			any_greater_power = {
 				limit = {
@@ -170,6 +379,48 @@ political_decisions = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+	}
+
+	2nd_treaty_of_hadiach = {
+		picture = embrace_minority
+		potential = {
+			tag = PLC
+			NOT = { has_country_flag = hadiach }
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes
+			OR = {
+				minorities_reform = limited
+				minorities_reform = protected
+			}
+		}
+		
+		effect = {
+			set_country_flag = hadiach
+			add_accepted_culture = byelorussian
+			add_accepted_culture = ukrainian
+			plurality = 5
+			any_pop = {
+				limit = {
+					OR = {
+						culture = polish
+						culture = lithuanian
+					}
+				}
+				militancy = 2
+				consciousness = 4
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				average_militancy = 4
+			}
 		}
 	}
 	
@@ -310,121 +561,6 @@ political_decisions = {
 		
 		ai_will_do = {
 			factor = 1
-		}
-	}
-
-	unite_with_poland = {
-		potential = {
-			primary_culture = polish
-			NOT = { tag = POL }
-			NOT = { tag = PLC }
-			exists = POL
-			NOT = { has_country_flag = unite_with_poland }
-			NOT = { has_country_flag = post_colonial_country }
-		}
-		
-		allow = {
-			war = no
-			is_vassal = no
-			OR = {
-				part_of_sphere = no
-				sphere_owner = { is_sphere_leader_of = POL }
-				POL = { is_sphere_leader_of = THIS }
-			}
-			POL = {
-				war = no
-				neighbour = THIS
-				is_vassal = no
-			}
-		}
-		
-		effect = {
-			set_country_flag = unite_with_poland
-			random_country = {
-				limit = {
-					tag = POL
-					ai = yes
-					THIS = { ai = yes }
-				}
-				inherit = THIS
-			}
-			random_country = {
-				limit = {
-					tag = POL
-					ai = yes
-					THIS = { ai = no }
-				}
-				THIS = {
-					inherit = POL
-					random_owned = {
-						limit = { province_id = 706 }
-						owner = { capital = 706 }
-					}
-					change_tag = POL
-				}	
-			}
-			random_country = {
-				limit = {
-					tag = POL
-					ai = no
-				}
-				country_event = 60130
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				government = fascist_dictatorship
-				POL = {
-					NOT = { government = fascist_dictatorship }
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = { government = fascist_dictatorship }
-				POL = { government = fascist_dictatorship }
-			}
-			modifier = {
-				factor = 0
-				NOT = { government = proletarian_dictatorship }
-				POL = { government = proletarian_dictatorship }
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					government = democracy
-					government = hms_government
-				}
-				POL = {
-					NOT = {
-						government = democracy
-						government = hms_government
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				POL = {
-					OR = {
-						government = democracy
-						government = hms_government
-					}
-				}
-				NOT = {
-					government = democracy
-					government = hms_government
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					government = presidential_dictatorship
-					government = bourgeois_dictatorship
-					government = absolute_monarchy
-				}
-			}
 		}
 	}
 

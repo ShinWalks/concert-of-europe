@@ -45,6 +45,10 @@ upper_house = {
 
 set_country_flag = colombian_assistance
 
+1836.1.1 = {
+	clr_country_flag = colombian_assistance
+}
+
 1861.1.1 = {
 	oob = "/1861/CUB_oob.txt"
 }

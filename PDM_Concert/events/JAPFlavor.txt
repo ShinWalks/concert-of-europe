@@ -93,6 +93,7 @@ country_event = {
 			has_country_flag = tozama_daimyo
 		}
 		exists = yes
+		civilized = no
 		NOT = { has_country_flag = rangaku_applied }
 	}
 	

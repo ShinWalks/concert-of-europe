@@ -90,6 +90,7 @@ oob = "/1821/MEX_oob.txt"
 	set_country_flag = cuernavaca_plan
 	set_country_flag = tejas_settled
 	set_country_flag = texas_seceded
+	set_country_flag = mission_to_cuba
 	
 	# Technologies
 	post_napoleonic_thought = 1
