@@ -199,7 +199,7 @@ political_reforms = {
 			prestige = 0.01
 			global_immigrant_attract = 0.05
 			allow = {
-				NOT = { has_country_flag = the_slavery_debate}
+				NOT = { has_country_flag = the_slavery_debate }
 			}
 		}
 	}
@@ -231,21 +231,21 @@ political_reforms = {
 			poor_vote = 0
 			global_immigrant_attract = 0.15
 			cb_generation_speed_modifier = -0.1
-			}
+		}
 		universal_weighted_voting = {
 			rich_vote = 3
 			middle_vote = 3
 			poor_vote = 1
 			global_immigrant_attract = 0.2
 			cb_generation_speed_modifier = -0.2
-			}
+		}
 		universal_voting = {
 			rich_vote = 1
 			middle_vote = 1
 			poor_vote = 1
 			global_immigrant_attract = 0.25
 			cb_generation_speed_modifier = -0.3
-			}
+		}
 	}
 	upper_house_composition = {
 		administrative = yes

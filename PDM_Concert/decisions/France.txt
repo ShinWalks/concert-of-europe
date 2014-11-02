@@ -50,6 +50,7 @@ political_decisions = {
 			}
 		}
 	}
+	
 	support_french_foreign_legion = {
 		potential = {
 			tag = FRA
