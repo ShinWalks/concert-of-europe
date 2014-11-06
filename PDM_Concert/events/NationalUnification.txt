@@ -1617,6 +1617,22 @@ country_event = {
 	}
 }
 
+# Notification of Antillean Confederation for Sphere Master/Overlord
+country_event = {
+	id = 11125
+	title = "EVTNAME11125"
+	desc = "EVTDESC11125"
+	picture = "Celebration"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will recognize the union."
+		prestige = 2
+		relation = { who = FROM value = 10 }
+	}
+}
+
 # Generic Event to Inherit
 country_event = {
 	id = 98650

@@ -1,5 +1,5 @@
 owner = SPA
-controller = SPA
+controller = GCO
 add_core = ECU
 trade_goods = cattle
 life_rating = 30

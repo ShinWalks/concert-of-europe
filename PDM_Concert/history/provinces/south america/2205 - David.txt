@@ -1,6 +1,5 @@
-owner = GCO
-controller = GCO
-add_core = CLM
+owner = SPA
+controller = SPA
 add_core = PNM
 trade_goods = coffee
 life_rating = 30
@@ -8,4 +7,5 @@ terrain = jungle_hills
 1836.1.1 = {
 	owner = CLM
 	controller = CLM
+	add_core = CLM
 }

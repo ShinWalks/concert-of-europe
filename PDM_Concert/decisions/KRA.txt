@@ -402,6 +402,7 @@ political_decisions = {
 			set_country_flag = hadiach
 			add_accepted_culture = byelorussian
 			add_accepted_culture = ukrainian
+			badboy = 5
 			plurality = 5
 			any_pop = {
 				limit = {
@@ -413,6 +414,19 @@ political_decisions = {
 				militancy = 2
 				consciousness = 4
 			}
+			any_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							is_core = BYE
+							is_core = UKR
+							is_core = RUT
+						}
+					}
+				}
+				relation = { who = THIS value = -100 }
+				leave_alliance = THIS
+			}
 		}
 		
 		ai_will_do = {
@@ -420,6 +434,10 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				average_militancy = 4
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.6
 			}
 		}
 	}
@@ -654,9 +672,11 @@ political_decisions = {
 	form_baltic_states = {
 		potential = {
 			is_culture_group = baltic
-			NOT = { exists = UBD }
-			NOT = { has_global_flag = baltic_states_formed }
-			NOT = { has_country_flag = post_colonial_country }
+			NOT = {
+				exists = UBD
+				has_global_flag = baltic_states_formed
+				has_country_flag = post_colonial_country
+			}
 		}
 
 		allow = {

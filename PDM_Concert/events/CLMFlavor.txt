@@ -56,7 +56,7 @@ country_event = {
 		name = "Let us join Colombia!"
 		clr_country_flag = colombian_assistance
 		any_pop = { militancy = -6 }
-		GCO = { country_event = 37802 }
+		GCO = { country_event = 37803 }
 		ai_chance = {
 			factor = 100
 		}
@@ -74,8 +74,54 @@ country_event = {
 
 country_event = {
 	id = 37802
-	title = "EVTNAME37802" #Petition for Annexation to GCO
+	title = "EVTNAME37802" #Panamanian Annexation
 	desc = "EVTDESC37802"
+	picture = "greatpowers"
+	
+	trigger = {
+		tag = PNM
+		exists = yes
+		exists = GCO
+		esists = UCA
+		war = no
+		NOT = {
+			year = 1830
+			has_country_flag = federation
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	option = {
+		name = "Let us join Colombia!"
+		set_country_flag = federation
+		clr_country_flag = liberal_constitution
+		any_pop = { militancy = -6 }
+		all_core = { add_core = CLM }
+		GCO = { country_event = 37803 }
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "Let us join Central America!"
+		set_country_flag = federation
+		clr_country_flag = liberal_constitution
+		any_pop = { militancy = -6 }
+		UCA = { country_event = 37803 }
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 37803
+	title = "EVTNAME37803" #Petition for Annexation to GCO/UCA
+	desc = "EVTDESC37803"
 	picture = "greatpowers"
 	
 	is_triggered_only = yes
@@ -99,7 +145,7 @@ country_event = {
 					is_core = CUB
 				}
 			}
-			GCO = {
+			THIS = {
 				add_accepted_culture = caribeno
 			}
 		}
@@ -688,6 +734,10 @@ country_event = {
 		}
 		remove_accepted_culture = caribeno
 		change_tag = CLM
+		any_country = {
+			limit = { has_country_flag = colombian_assistance }
+			clr_country_flag = colombian_assistance
+		}
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -780,6 +830,10 @@ country_event = {
 		}
 		remove_accepted_culture = caribeno
 		change_tag = CLM
+		any_country = {
+			limit = { has_country_flag = colombian_assistance }
+			clr_country_flag = colombian_assistance
+		}
 		ai_chance = {
 			factor = 90
 		}
@@ -927,6 +981,10 @@ country_event = {
 		}
 		remove_accepted_culture = caribeno
 		change_tag = CLM
+		any_country = {
+			limit = { has_country_flag = colombian_assistance }
+			clr_country_flag = colombian_assistance
+		}
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1023,6 +1081,10 @@ country_event = {
 		}
 		remove_accepted_culture = caribeno
 		change_tag = CLM
+		any_country = {
+			limit = { has_country_flag = colombian_assistance }
+			clr_country_flag = colombian_assistance
+		}
 		ai_chance = {
 			factor = 90
 		}

@@ -5,6 +5,7 @@ REB 	= 	"countries/rebels.txt"
 
 ### CONCERT OF EUROPE ###
 
+ANC		= "countries/Antilles Confederation.txt"
 EFR		= "countries/East Frisia.txt"
 EPI		= "countries/Epirus.txt"
 NPU		= "countries/North Peru.txt"
