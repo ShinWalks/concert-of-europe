@@ -102466,6 +102466,8 @@
 		size = 40
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	artisans = {
@@ -102480,6 +102482,8 @@
 		size = 20
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	clergymen = {
@@ -102494,6 +102498,8 @@
 		size = 733
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	farmers = {
@@ -131319,6 +131325,8 @@
 		size = 479
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	aristocrats = {
@@ -131333,6 +131341,8 @@
 		size = 368
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	artisans = {
@@ -131347,6 +131357,8 @@
 		size = 20
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	clergymen = {
@@ -131354,6 +131366,8 @@
 		size = 81
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	clergymen = {
@@ -131368,6 +131382,8 @@
 		size = 6615
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	farmers = {
@@ -131389,6 +131405,8 @@
 		size = 40
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	slaves = {
@@ -131403,6 +131421,8 @@
 		size = 245
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	soldiers = {
@@ -131481,6 +131501,8 @@
 		size = 204
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	artisans = {
@@ -131495,6 +131517,8 @@
 		size = 40
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	clergymen = {
@@ -131509,6 +131533,8 @@
 		size = 3689
 		culture = central_american
 		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	farmers = {
@@ -131556,44 +131582,29 @@
 
 	artisans = {
 
-		size = 40
+		size = 121
 		culture = central_american
 		religion = catholic
-
-	}
-	artisans = {
-
-		size = 81
-		culture = north_andean
-		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	clergymen = {
 
-		size = 20
+		size = 60
 		culture = central_american
 		religion = catholic
-
-	}
-	clergymen = {
-
-		size = 40
-		culture = north_andean
-		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	farmers = {
 
-		size = 733
+		size = 1483
 		culture = central_american
 		religion = catholic
-
-	}
-	farmers = {
-
-		size = 750
-		culture = north_andean
-		religion = catholic
+		militancy = 9
+		rebel_type = nationalist_rebels
 
 	}
 	farmers = {

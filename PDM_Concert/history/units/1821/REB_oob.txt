@@ -132,3 +132,24 @@ army = {
 		home = 855
 	}
 }
+
+army = {
+	name = "1st Panamanian Patriots"
+	location = 2206
+	
+	regiment = {
+		name = "1.Regiment"
+		type = regular
+		home = 2204
+	}
+	regiment = {
+		name = "2.Regiment"
+		type = regular
+		home = 2206
+	}
+	regiment = {
+		name = "3.Regiment"
+		type = regular
+		home = 2208
+	}
+}

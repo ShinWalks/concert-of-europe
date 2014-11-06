@@ -161,6 +161,101 @@ political_decisions = {
 		}
 	}
 	
+	colombian_central_america = {
+		picture = form_gran_colombia
+		potential = {
+			tag = GCO
+			has_country_flag = the_federation_is_legitime
+			any_owned_province = { culture = central_american }
+			NOT = {
+				exists = UCA
+				has_country_flag = colombian_central_america
+			}
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			OR = {
+				government = democracy
+				government = hms_government
+			}
+			GUA = {
+				OR = {
+					in_sphere = THIS
+					all_core = {
+						OR = {
+							province_id = 2182 #Tapachula
+							province_id = 2190 #Belize
+							owned_by = THIS
+						}
+					}
+				}
+			}
+			NIC = {
+				OR = {
+					in_sphere = THIS
+					all_core = { owned_by = THIS }
+				}
+			}
+			ELS = {
+				OR = {
+					in_sphere = THIS
+					all_core = { owned_by = THIS }
+				}
+			}
+			COS = {
+				OR = {
+					in_sphere = THIS
+					all_core = { owned_by = THIS }
+				}
+			}
+			HON = {
+				OR = {
+					in_sphere = THIS
+					all_core = { owned_by = THIS }
+				}
+			}
+			PNM = {
+				OR = {
+					in_sphere = THIS
+					all_core = { owned_by = THIS }
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = colombian_central_america
+			prestige = 5
+			UCA = {
+				all_core = { remove_core = UCA }
+			}
+			any_country = {
+				limit = {
+					primary_culture = central_american
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			UCA_2186 = { add_core = GCO } #Guatemala
+			UCA_2191 = { add_core = GCO } #El Salvador
+			UCA_2193 = { add_core = GCO } #Honduras
+			UCA_2197 = { add_core = GCO } #Nicaragua
+			UCA_2201 = { add_core = GCO } #Costa Rica
+			CLM_1723 = { add_core = GCO } #Panama
+			add_accepted_culture = central_american
+			add_country_modifier = {
+				name = national_confusion
+				duration = 730
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	end_of_federation = {
 		picture = form_gran_colombia
 		potential = {

@@ -45,6 +45,13 @@ upper_house = {
 	communist = 0
 }
 
+set_country_flag = liberal_constitution
+
+1836.1.1 = {
+	set_country_flag = federation
+	clr_country_flag = liberal_constitution
+}
+
 1861.1.1 = {
 	oob = "/1861/PNM_oob.txt"
 }

@@ -1,4 +1,3 @@
-
 country_event = {
 
 	id = 90040 # Sepoy Rebellion
@@ -40,7 +39,7 @@ country_event = {
 		any_owned = {
 			limit = { is_core = HND }
 			random_list = {
-				20 = {
+				10 = {
 					poor_strata = {
 						limit = {
 							is_culture_group = south_asian
@@ -57,14 +56,24 @@ country_event = {
 						limit = {
 							is_culture_group = south_asian
 						}
-						militancy = 3
+						militancy = 2
 					}
 					add_province_modifier = {
 						name = nationalist_agitation
 						duration = 730
 					}
 				}
-				40 = {
+				50 = {
+					poor_strata = {
+						limit = {
+							is_culture_group = south_asian
+						}
+						militancy = 1
+					}
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 365
+					}
 				}
 			}
 		}										

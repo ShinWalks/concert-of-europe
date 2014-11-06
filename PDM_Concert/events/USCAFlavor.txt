@@ -1219,6 +1219,10 @@ country_event = {
 	trigger = {
 		tag = UCA
 		exists = yes
+		OR = {
+			PNM = { has_country_flag = federation }
+			year = 1822
+		}
 		NOT = {
 			has_country_flag = join_mexico
 		}

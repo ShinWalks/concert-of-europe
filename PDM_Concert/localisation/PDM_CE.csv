@@ -1,5 +1,7 @@
 CE_NAME;The Concert of Europe;;;;;;;;;;;;;x
 CE_DESC;Napoleon has died, but his legacy still shakes Europe. The empires of the Americas are shattered, and the empires of Europe hear the first rumbles in a gathering storm of nationalism. The Vienna Congress that brought the Napoleonic Wars to an end was meant to restore the old monarchical order, but the concert of balanced powers it sought to establish is already looking precarious. Whichever nations can seize this moment will dominate a new age.;;;;;;;;;;;;;x
+ANC;Antillean Confederation;Antillean Confederation;Antillean Confederation;;;;;;;;;;;x
+ANC_ADJ;Antillean;Antillean;Antillean;;;;;;;;;;;x
 EFR;East Frisia;East Frisia;East Frisia;;;;;;;;;;;x
 EFR_ADJ;Frisian;Frisian;Frisian;;;;;;;;;;;x
 EPI;Epirus;Epirus;Epirus;;;;;;;;;;;x
@@ -99,6 +101,8 @@ treaty_of_cucuta_title;Treaty of Cucuta;;;;;;;;;;;;;x
 treaty_of_cucuta_desc;The Federation has stood the test of time, and the regional elites have been appeased. Gran Colombia's legitimacy is now universally accepted!;;;;;;;;;;;;;x
 colombia_irredenta_title;Unredeemed Colombia;;;;;;;;;;;;;x
 colombia_irredenta_desc;Bolivar's dream was always to build a federation to embrace all the peoples of New Granada. Our prestigious global presence now enables us to lay claim to all of these lands.;;;;;;;;;;;;;x
+colombian_central_america_title;Colombian Central America;;;;;;;;;;;;;x
+colombian_central_america_desc;Central America experimented with its own federal union, but now Colombia's prestige and influence in the region is sufficient that we can legally admit its provinces to our Federation. Let Central America be the latest addition to Gran Colombia!;;;;;;;;;;;;;x
 end_of_federation_title;The End of the Federation;;;;;;;;;;;;;x
 end_of_federation_desc;With Venezuela independent, The Colombian Federation is no more. The project of union has failed, for now.;;;;;;;;;;;;;x
 colombian_integration_title;Integration;;;;;;;;;;;;x
@@ -221,6 +225,8 @@ rename_malvinas_title;Las Malvinas son Argentinas;;;;Las Malvinas son Argentinas
 rename_malvinas_desc;We have finally liberated the Islas Malvinas from British rule. We can now insist upon their proper name!;;;;;;;;;;;;;x
 restore_falkland_title;Restore Falkland Islands;;;;;;;;;;;;;x
 restore_falkland_desc;Now that we have liberated the Falkland Islands, we can correct their name on the maps.;;;;;;;;;;;;;x
+become_antillean_confederation_title;Become Antillean Confederation;;;;;;;;;;;;;x
+become_antillean_confederation_desc;The nations of the former Spanish Caribbean share a language, a culture, a surrounding sea, and an historical legacy. We should move to unite our islands under an Antillean Confederation, and enter a new era together.;;;;;;;;;;;;;x
 2nd_ostend_manifesto_title;Second Ostend Manifesto;;;;;;;;;;;;;x
 2nd_ostend_manifesto_desc;The Confederacy must seek other slave-holding lands to expand into--- and the natural first choice is Cuba. We should contact the island's colonial masters about purchasing Cuba from them.;;;;;;;;;;;;;x
 golden_cuba_title;Confederate Cuba;;;;;;;;;;;;;x
@@ -307,6 +313,8 @@ NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_ENG_BUR;$ORDER$ Anglo-Burmese War;;;;;;;;;;;;;x
 AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_ENG_BUR;$ORDER$ Anglo-Burmese War;;;;;;;;;;;;;x
 EVTNAME1141;Lead Struck - $PROVINCENAME$;;;;;;;;;;;;;x
 EVTDESC1141;A rich vein of metal ores with industrial applications has been located in $PROVINCENAME$. This is a strategically significant resource, and we should begin extracting it immediately.;;;;;;;;;;;;;x
+EVTNAME11125;An Antillean Confederation;;;;;;;;;;;;;x
+EVTDESC11125;It seems that a few of the smaller Caribbean nations under our influence have determined to form a confederation. This should simplify our diplomacy with the region, if nothing else.;;;;;;;;;;;;x
 EVTNAME16350;The Trent Affair;;;;;;;;;;;;;x
 EVTDESC16350;Two Confederate diplomats, hoping to establish good relations with $COUNTRY$, are aboard the HMS Trent. We have just received word, however, that the American warship San Jacinto has intercepted the Trent and taken the diplomats prisoner. This can be seen as an act of war on British territory, and many are calling for an American apology and reparations for this insult.;;;;;;;;;;;;x
 EVTDESC16351;The British vessel HMS Trent was transporting two Confederate diplomats to Britain and France, where they would attempt to involve them on the Confederate side in this war. The Trent was interecepted, however, by one of our warships, the USS San Jacinto, and the Confederate diplomats arrested. This has offended the British, who are demanding an apology from our officials and the immediate release of the diplomats. British forces have begun making isolated showings of force along the Canadian border.;;;;;;;;;;;;x
@@ -507,8 +515,10 @@ EVTNAME37800;El Libertador;;;;;;;;;;;;;x
 EVTDESC37800;Simon Bolivar, the liberator of Latin America, has led our great Colombian Federation to independence from the Spanish crown. Even now the fighting continues for the liberation of Ecuador and the Perus. Soon the last royalist forces will be defeated and the republics of South America will be free from tyranny. With such a great man leading our nation, who can doubt that Colombia has a bright future ahead of it?;;;;;;;;;;;;;x
 EVTNAME37801;Admission to Colombia?;;;;;;;;;;;;;x
 EVTDESC37801;Now that we have our independence, our Governor is interested in seeking admission to the Colombian Federation. The Colombians supported our independence from Spain, and our people would likely be far safer as part of such a large and strong state. But, some whisper that Bogota shows dictatorial tendencies, and that we might find that we had only traded one tyranny for another. What is the best course for our nation?;;;;;;;;;;;;;x
-EVTNAME37802;Federation with $FROMCOUNTRY$?;;;;;;;;;;;;;x
-EVTDESC37802;Having won its independence, $FROMCOUNTRY$ is now petitioning us for admission to the Colombian Federation. Our nation would be stronger with this addition, but perhaps the new territory would bring new conflict with $FROMCOUNTRY$'s neighbors. Shall we approve their entry to the federation?;;;;;;;;;;;;;x
+EVTNAME37802;North or South?;;;;;;;;;;;;;x
+EVTDESC37802;Now that we have our independence, Panama should consider joining one of the federations we border. The Colombian Federation to our south appears stronger and more likely to defend our independence, but we have more in common culturally with the Federal Republic of Central America to our north. Which way does Panama's future lie?;;;;;;;;;;;;;x
+EVTNAME37803;Federation with $FROMCOUNTRY$?;;;;;;;;;;;;;x
+EVTDESC37803;Having won its independence, $FROMCOUNTRY$ is now petitioning us for admission to our federation. Our nation would be stronger with this addition, but perhaps the new territory would bring new conflict with $FROMCOUNTRY$'s neighbors. Shall we approve their accession to $COUNTRY$?;;;;;;;;;;;;;x
 EVTNAME37805;Liberal Unrest;;;;;;;;;;;;;x
 EVTDESC37805;$COUNTRY$'s conservative constitution and strong central government are provoking discontent in the provinces. Liberals complain that the average $COUNTRY_ADJ$ citizen has few more political rights than under Spanish rule. Sectionalists agitate for federalization and greater regional autonomy. Should the government consider amending the constitution to appease the liberals?;;;;;;;;;;;;;x
 EVTNAME37806;Reactionary Unrest;;;;;;;;;;;;;x
