@@ -58,6 +58,7 @@ country_event = {
 					is_core = HON
 					is_core = COS
 					is_core = ELS
+					is_core = PNM
 				}
 			}
 			add_province_modifier = {
@@ -85,8 +86,6 @@ country_event = {
 	desc = "EVTDESC97551"
 	picture = "rebellion"
 	
-	fire_only_once = yes
-	
 	trigger = {
 		tag = UCA
 		owns = 2201
@@ -101,7 +100,7 @@ country_event = {
 			any_owned_province = {
 				province_id = 2201
 				controlled_by_rebels = yes
-				province_control_days = 60
+				province_control_days = 30
 				NOT = { country_units_in_province = UCA }
 			}
 		}
@@ -152,8 +151,6 @@ country_event = {
 	desc = "EVTDESC97552"
 	picture = "rebellion"
 	
-	fire_only_once = yes
-	
 	trigger = {
 		tag = UCA
 		owns = 2197
@@ -168,7 +165,7 @@ country_event = {
 			any_owned_province = {
 				province_id = 2197
 				controlled_by_rebels = yes
-				province_control_days = 60
+				province_control_days = 30
 				NOT = { country_units_in_province = UCA }
 			}
 		}
@@ -219,8 +216,6 @@ country_event = {
 	desc = "EVTDESC97553"
 	picture = "rebellion"
 	
-	fire_only_once = yes
-	
 	trigger = {
 		tag = UCA
 		owns = 2191
@@ -235,7 +230,7 @@ country_event = {
 			any_owned_province = {
 				province_id = 2191
 				controlled_by_rebels = yes
-				province_control_days = 60
+				province_control_days = 30
 				NOT = { country_units_in_province = UCA }
 			}
 		}
@@ -286,8 +281,6 @@ country_event = {
 	desc = "EVTDESC97554"
 	picture = "rebellion"
 	
-	fire_only_once = yes
-	
 	trigger = {
 		tag = UCA
 		owns = 2193
@@ -303,7 +296,7 @@ country_event = {
 			any_owned_province = {
 				province_id = 2193
 				controlled_by_rebels = yes
-				province_control_days = 60
+				province_control_days = 30
 				NOT = { country_units_in_province = UCA }
 			}
 		}
@@ -349,6 +342,71 @@ country_event = {
 }
 
 country_event = {
+	id = 97555
+	title = "EVTNAME97555" #Panama Declares Independence
+	desc = "EVTDESC97555"
+	picture = "rebellion"
+	
+	trigger = {
+		tag = UCA
+		owns = 2204
+		war = no
+		NOT = {
+			has_country_flag = panama_independence
+			has_country_flag = usca_legitimate
+			exists = PNM
+		}
+		OR = {
+			exists = COS
+			any_owned_province = {
+				province_id = 2204
+				controlled_by_rebels = yes
+				province_control_days = 30
+				NOT = { country_units_in_province = UCA }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+		modifier = {
+			factor = 0.5
+			CLM_1723 = { average_militancy = 4 }
+		}
+		modifier = {
+			factor = 0.5
+			CLM_1723 = { average_militancy = 6 }
+		}
+		modifier = {
+			factor = 0.5
+			CLM_1723 = { average_militancy = 8 }
+		}
+		modifier = {
+			factor = 24
+			has_global_flag = the_usca_has_failed
+		}
+	}
+	
+	option = {
+		name = "The republic must live on!"
+		set_country_flag = panama_independence
+		prestige = -5
+		any_owned = {
+			limit = { is_core = PNM }
+			secede_province = PNM
+		}
+		PNM = {
+			relation = { who = THIS value = -100 }
+			casus_belli = {
+				target = UCA
+				type = free_peoples
+				months = 12
+			}
+		}
+	}
+}
+
+country_event = {
 	id = 97556
 	title = "The Secession of Costa Rica"
 	desc = "Costa Rica has seceded from the Federal Republic, sparking renewed unrest elsewhere in the union."
@@ -365,6 +423,7 @@ country_event = {
 				is_core = ELS
 				is_core = HON
 				is_core = NIC
+				is_core = PNM
 			}
 		}
 		NOT = { year = 1840 }
@@ -385,6 +444,7 @@ country_event = {
 						is_core = ELS
 						is_core = HON
 						is_core = NIC
+						is_core = PNM
 					}
 				}
 			}
@@ -423,6 +483,10 @@ country_event = {
 				exists = NIC
 			}
 			modifier = {
+				factor = 0.8
+				exists = PNM
+			}
+			modifier = {
 				factor = 0.5
 				num_of_revolts = 5
 			}
@@ -439,6 +503,7 @@ country_event = {
 						is_core = ELS
 						is_core = HON
 						is_core = NIC
+						is_core = PNM
 					}
 				}
 			}
@@ -468,6 +533,7 @@ country_event = {
 				is_core = HON
 				is_core = NIC
 				is_core = COS
+				is_core = PNM
 			}
 		}
 		NOT = { year = 1840 }
@@ -488,6 +554,7 @@ country_event = {
 						is_core = HON
 						is_core = NIC
 						is_core = COS
+						is_core = PNM
 					}
 				}
 			}
@@ -526,6 +593,10 @@ country_event = {
 				exists = COS
 			}
 			modifier = {
+				factor = 0.8
+				exists = PNM
+			}
+			modifier = {
 				factor = 0.5
 				num_of_revolts = 5
 			}
@@ -542,6 +613,7 @@ country_event = {
 						is_core = HON
 						is_core = NIC
 						is_core = COS
+						is_core = PNM
 					}
 				}
 			}
@@ -571,6 +643,7 @@ country_event = {
 				is_core = ELS
 				is_core = NIC
 				is_core = COS
+				is_core = PNM
 			}
 		}
 		NOT = { year = 1840 }
@@ -591,6 +664,7 @@ country_event = {
 						is_core = ELS
 						is_core = NIC
 						is_core = COS
+						is_core = PNM
 					}
 				}
 			}
@@ -629,6 +703,10 @@ country_event = {
 				exists = COS
 			}
 			modifier = {
+				factor = 0.8
+				exists = PNM
+			}
+			modifier = {
 				factor = 0.5
 				num_of_revolts = 5
 			}
@@ -645,6 +723,7 @@ country_event = {
 						is_core = ELS
 						is_core = NIC
 						is_core = COS
+						is_core = PNM
 					}
 				}
 			}
@@ -674,6 +753,7 @@ country_event = {
 				is_core = ELS
 				is_core = HON
 				is_core = COS
+				is_core = PNM
 			}
 		}
 		NOT = { year = 1840 }
@@ -694,6 +774,7 @@ country_event = {
 						is_core = ELS
 						is_core = HON
 						is_core = COS
+						is_core = PNM
 					}
 				}
 			}
@@ -732,6 +813,10 @@ country_event = {
 				exists = COS
 			}
 			modifier = {
+				factor = 0.8
+				exists = PNM
+			}
+			modifier = {
 				factor = 0.5
 				num_of_revolts = 5
 			}
@@ -748,6 +833,118 @@ country_event = {
 						is_core = ELS
 						is_core = HON
 						is_core = COS
+						is_core = PNM
+					}
+				}
+			}
+			militancy = 9
+		}
+		prestige = -2
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 975591
+	title = "The Secession of Panama"
+	desc = "Panama has seceded from the Federal Republic, sparking renewed unrest elsewhere in the union."
+	picture = "rebellion"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = UCA
+		exists = yes
+		exists = PNM
+		has_country_flag = panama_independence
+		any_owned_province = {
+			OR = {
+				is_core = ELS
+				is_core = HON
+				is_core = COS
+				is_core = NIC
+			}
+		}
+		NOT = { year = 1840 }
+		NOT = { has_global_flag = the_usca_has_failed }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "Order must be restored!"
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+				location = {
+					OR = {
+						is_core = ELS
+						is_core = HON
+						is_core = COS
+						is_core = NIC
+					}
+				}
+			}
+			militancy = 9
+		}
+		prestige = 2
+		relation = { who = NIC value = -100 }
+		war = {
+			target = NIC
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		NIC = {
+			casus_belli = {
+				target = UCA
+				type = free_peoples
+				months = 12
+			}
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.8
+				exists = ELS
+			}
+			modifier = {
+				factor = 0.8
+				exists = HON
+			}
+			modifier = {
+				factor = 0.8
+				exists = COS
+			}
+			modifier = {
+				factor = 0.8
+				exists = NIC
+			}
+			modifier = {
+				factor = 0.5
+				num_of_revolts = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "Let them go."
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+				location = {
+					OR = {
+						is_core = ELS
+						is_core = HON
+						is_core = COS
+						is_core = NIC
 					}
 				}
 			}
@@ -781,6 +978,7 @@ country_event = {
 			exists = HON
 			exists = NIC
 			exists = COS
+			exists = PNM
 		}
 		NOT = {
 			has_country_flag = usca_legitimate
@@ -807,6 +1005,10 @@ country_event = {
 		modifier = {
 			factor = 0.75
 			exists = COS
+		}
+		modifier = {
+			factor = 0.75
+			exists = PNM
 		}
 		modifier = {
 			factor = 0.75
@@ -903,6 +1105,24 @@ country_event = {
 		}
 		random_owned = {
 			limit = {
+				province_id = 2204
+				PNM = { exists = no }
+			}
+			owner = {
+				release = PNM
+				war = {
+					target = PNM
+					attacker_goal = {
+						casus_belli = civil_war
+					}
+					defender_goal = {
+						casus_belli = status_quo
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
 				province_id = 2183
 				YUC = { exists = no }
 			}
@@ -930,6 +1150,7 @@ country_event = {
 					tag = ELS
 					tag = COS
 					tag = HON
+					tag = PNM
 					tag = YUC
 				}
 			}
@@ -979,6 +1200,13 @@ country_event = {
 		}
 		random_owned = {
 			limit = {
+				province_id = 2204
+				PNM = { exists = no }
+			}
+			owner = { release = PNM }
+		}
+		random_owned = {
+			limit = {
 				province_id = 2183
 				YUC = { exists = no }
 			}
@@ -990,6 +1218,8 @@ country_event = {
 		relation = { who = HON value = 50 }
 		relation = { who = NIC value = 50 }
 		relation = { who = COS value = 50 }
+		relation = { who = PNM value = 50 }
+		relation = { who = YUC value = 50 }
 		relation = { who = MEX value = -50 }
 		any_pop = {
 			militancy = -5
@@ -1018,6 +1248,7 @@ country_event = {
 			war_with = HON
 			war_with = NIC
 			war_with = COS
+			war_with = PNM
 			war_with = YUC
 		}
 		has_country_flag = usca_civil_war
@@ -1060,6 +1291,15 @@ country_event = {
 				}
 			}
 			AND = {
+				war_with = PNM
+				PNM = {
+					NOT = {
+						any_owned_province = { controlled_by = THIS }
+						any_owned_province = { country_units_in_province = UCA }
+					}
+				}
+			}
+			AND = {
 				war_with = YUC
 				YUC = {
 					NOT = {
@@ -1084,6 +1324,7 @@ country_event = {
 					tag = HON
 					tag = NIC
 					tag = COS
+					tag = PNM
 					tag = YUC
 				}
 				ai = yes
@@ -1393,6 +1634,7 @@ country_event = {
 					is_core = HON
 					is_core = COS
 					is_core = ELS
+					is_core = PNM
 				}
 			}
 			add_province_modifier = {

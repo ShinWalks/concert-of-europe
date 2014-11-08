@@ -107,6 +107,8 @@ end_of_federation_title;The End of the Federation;;;;;;;;;;;;;x
 end_of_federation_desc;With Venezuela independent, The Colombian Federation is no more. The project of union has failed, for now.;;;;;;;;;;;;;x
 colombian_integration_title;Integration;;;;;;;;;;;;x
 colombian_integration_desc;The Afro-Caribeno people are becoming an integral part of Colombian culture. It is time for them to obtain full citizenship.;;;;;;;;;;;;x
+native_integration_ecuador_title;Native Integration;;;;;;;;;;;;;x
+native_integration_ecuador_desc;The time has come to integrate the native Quechua culture into the fabric of our country.;;;;;;;;;;;;;x
 eject_sucre_title;Eject the Bolivian Government;;;;;;;;;;;;;x
 eject_sucre_desc;Having defeated Bolivia's armies, we are now in a position to force the resignation of their government and install one less friendly to Bolivar and more amenable to unification with Peru.;;;;;;;;;;;;;x
 form_PBC_BOL_title;Form Peru-Bolivia Confederation;;;;;;;;;;;;;x
@@ -702,6 +704,8 @@ EVTNAME97084;Claiming the Pampas;;;;;;;;;;;;;x
 EVTDESC97084;The rich farmlands of the Pampas are Argentina's heartland. We must extend our control of them, before our neighbors beat us to it.;;;;;;;;;;;;;x
 EVTNAME97095;Constitutional Controversy;;;;;;;;;;;;;x
 EVTDESC97095;Having thrown off European tyranny, we are now free to choose the form of a new government for $COUNTRY$. Many among our elites and soldiers wish to see a strong central government led by a strong president, to stabilize and protect the nation. Others, however, worry that we may end by creating a dictatorship as bad as any monarchy, and would prefer a federal system that preserved more autonomy for the provinces.\n\nWhich is the best course for our nation: a more liberal constitution with greater separation of powers, or a more conservative document that centralizes power and concentrates authority in the president?;;;;;;;;;;;;;x
+EVTNAME97555;Panama Declares Independence;;;;;;;;;;;;x
+EVTDESC97555;With rebels rampant in the south, it has become next to impossible for the government to maintain order in Panama. Government authorities have withdrawn as locals have overtaken the capital in Panama City.;;;;;;;;;;;;x
 EVTNAME97580;Union with Mexico?;;;;;;;;;;;;;x
 EVTDESC97580;Our young nation stands at a crossroads. We have not yet had time to hold a constituent assembly, but the provisional governing council has just received a proposal from Mexico's transitional government: our six provinces are invited to join the new Mexican empire.\n\nOur liberals are divided: some are determined to have an independent republic, yet others approve of Mexico's liberal trade policies and prohibition of slavery. The conservatives and the clergy, however, are united: they wish to see us back under a proper Catholic monarchy. Which way does Central America's destiny lie?;;;;;;;;;;;;;x
 EVTNAME97581;Annex Central America?;;;;;;;;;;;;;x

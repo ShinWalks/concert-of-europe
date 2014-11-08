@@ -16,7 +16,7 @@ political_decisions = {
 			nationalism_n_imperialism = 1
 			NOT = {
 				average_militancy = 3
-			}	
+			}
 		}
 		effect = {
 			add_accepted_culture = nahua
@@ -34,6 +34,10 @@ political_decisions = {
 			OR = {
 				tag = UCA
 				tag = GUA
+				AND = {
+					tag = GCO
+					has_country_flag = colombian_central_america
+				}
 			}
 			OR = {
 				government = hms_government
@@ -41,7 +45,7 @@ political_decisions = {
 			}
 			slavery = no_slavery
 			NOT = {
-				has_country_flag = integrated
+				has_country_flag = usca_integrated
 			}
 		}
 		allow = {
@@ -49,11 +53,11 @@ political_decisions = {
 			nationalism_n_imperialism = 1
 			NOT = {
 				average_militancy = 3
-			}	
+			}
 		}
 		effect = {
 			add_accepted_culture = mayan
-			set_country_flag = integrated
+			set_country_flag = usca_integrated
 		}
 		ai_will_do = {
 			factor = 1
@@ -64,6 +68,7 @@ political_decisions = {
 			OR = {
 				tag = PEU
 				tag = SPU
+				tag = NPU
 				tag = BOL
 				tag = PBC
 			}
@@ -81,7 +86,7 @@ political_decisions = {
 			nationalism_n_imperialism = 1
 			NOT = {
 				average_militancy = 3
-			}	
+			}
 		}
 		effect = {
 			add_accepted_culture = quechua
@@ -92,4 +97,35 @@ political_decisions = {
 			factor = 1
 		}
 	}
-}	
+	native_integration_ecuador = {
+		potential = {
+			OR = {
+				tag = ECU
+				tag = CLM
+				tag = GCO
+			}
+			OR = {
+				government = hms_government
+				government = democracy
+			}
+			slavery = no_slavery
+			NOT = {
+				has_country_flag = native_integrated
+			}
+		}
+		allow = {
+			biologism = 1
+			nationalism_n_imperialism = 1
+			NOT = {
+				average_militancy = 3
+			}
+		}
+		effect = {
+			add_accepted_culture = quechua
+			set_country_flag = native_integrated
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

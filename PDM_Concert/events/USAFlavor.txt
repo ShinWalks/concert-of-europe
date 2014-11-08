@@ -1628,6 +1628,8 @@ country_event = {
 		name = "All of Oregon belongs to the United States."
 		ENG = { country_event = 44154 }
 		badboy = 5
+		USA_81 = { add_core = USA }
+		USA_78 = { add_core = USA }
 		CAN_13 = { add_core = USA }
 		any_pop = {
 			dominant_issue = {
@@ -1674,6 +1676,8 @@ country_event = {
 	
 	option = {
 		name = "Settle on a compromise with the British."
+		USA_81 = { add_core = USA }
+		USA_78 = { add_core = USA }
 		ENG = { country_event = 44151 }
 		any_pop = {
 			scaled_consciousness = {
