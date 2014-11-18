@@ -35,18 +35,68 @@ IRE_anarcho_liberal;Anarcho-Liberal Party;Anarcho-Liberal Party;Anarcho-Liberal 
 AOT_absolute_monarchy;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
 AOT_prussian_constitutionalism;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
 AOT_hms_government;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
-FRA_400;Pas de Calais;;;;;;;;;;;;x
+RUS_354;Livonia;;;;;;;;;;;;x
+RUS_357;Courland;;;;;;;;;;;;x
+RUS_360;Lithuania;;;;;;;;;;;;x
+RUS_361;Vilna;;;;;;;;;;;;x
+FRA_400;Pas-de-Calais;;;;;;;;;;;;x
+SPA_474;Galicia-Asturias;;;;;;;;;;;;x
+SPA_477;Castilla-León;;;;;;;;;;;;x
+SWI_605;German Switzerland;;;;;;;;;;;;x
+SWI_607;French Switzerland;;;;;;;;;;;;x
+RUS_707;Suwalki;;;;;;;;;;;;x
+SIC_760;Calabria;;;;;;;;;;;;x
 TUR_824;Epirus;;;;;;;;;;;;x
 TUR_828;Eastern Thrace;;;;;;;;;;;;x
 TUR_860;Istanbul Region;;;;;;;;;;;;x
+RUS_936;Grodno;;;;;;;;;;;;x
+RUS_955;Podolia;;;;;;;;;;;;x
+RUS_956;Volhynia;;;;;;;;;;;;x
+RUS_968;Novorossiya;;;;;;;;;;;;x
+RUS_978;Poltava;;;;;;;;;;;;x
+RUS_979;Azov;;;;;;;;;;;;x
+RUS_980;Donbass;;;;;;;;;;;;x
+RUS_1048;Kuban;;;;;;;;;;;;x
 ENG_1251;West Bengal;;;;;;;;;;;;x
 ENG_1252;East Bengal;;;;;;;;;;;;x
+ENG_1320;Andaman & Nicobar Islands;;;;;;;;;;;;x
+SWI_2568;Italian Switzerland;;;;;;;;;;;;x
+PROV351;Pernau;;;;;;;;;;;;;x
 PROV356;Selija;;;;;;;;;;;;;x
 PROV357;Zemgale;;;;;;;;;;;;;x
+PROV360;Vilna;;;;;;;;;;;;;x
+PROV361;Kovno;;;;;;;;;;;;;x
+PROV362;Mariampol;;;;;;;;;;;;;x
+PROV363;Ponevezh;;;;;;;;;;;;;x
+PROV364;Shavli;;;;;;;;;;;;;x
+PROV365;Telshi;;;;;;;;;;;;;x
 PROV641;Buda;;;;;;;;;;;;;x
+PROV702;Lwow;;;;;;;;;;;;;x
+PROV939;Novogrudok;;;;;;;;;;;;;x
+PROV947;Vileyka;;;;;;;;;;;;;x
+PROV951;Stryj;;;;;;;;;;;;;x
+PROV952;Tarnopol;;;;;;;;;;;;;x
+PROV953;Stanislawow;;;;;;;;;;;;;x
+PROV955;Kamenets;;;;;;;;;;;;;x
+PROV956;Rovno;;;;;;;;;;;;;x
+PROV959;Ovruch;;;;;;;;;;;;;x
+PROV965;Kherson;;;;;;;;;;;;;x
+PROV969;Ananyev;;;;;;;;;;;;;x
+PROV971;Elizavetgrad;;;;;;;;;;;;;x
+PROV974;Slavyansk;;;;;;;;;;;;;x
+PROV980;Lugansk;;;;;;;;;;;;;x
+PROV984;Kem;;;;;;;;;;;;;x
+PROV988;Pudozh;;;;;;;;;;;;;x
+PROV993;Vytegra;;;;;;;;;;;;;x
+PROV1019;Voronezh;;;;;;;;;;;;;x
+PROV1045;Ust-Medveditskaya;;;;;;;;;;;;;x
+PROV1046;Nizhnechirskaya;;;;;;;;;;;;;x
+PROV1090;Tiflis;;;;;;;;;;;;;x
+PROV2580;Staraya Ladoga;;;;;;;;;;;;;x
 PROV3249;Eupen;;;;;;;;;;;;;x
 PROV3250;Guangzhou Wan;;;;;;;;;;;;;x
 PROV3251;Latgale;;;;;;;;;;;;;x
+PROV3252;Nicobar Islands;;;;;;;;;;;;;x
 incorporate_sudan_title;Incorporate Sudan;;;;;;;;;;;;;x
 incorporate_sudan_desc;We should introduce modern administrative structures to replace tribal governments throughout our new lands in the Sudan. The locals won't like it, but it will bind the region to Egypt permanently.;;;;;;;;;;;;;x
 incorporate_hedjaz_title;Incorporate Hedjaz;;;;;;;;;;;;;x
@@ -223,6 +273,8 @@ reinstate_ken_title;Reinstate the Commission of National Education;;;;;;;;;;;;x
 reinstate_ken_desc;Formed in the late years of the Polish-Lithuanian Commonwealth, the Commission of National Education was Europe's first public education ministry. Though the Commonwealth ended not long thereafter, the Commission can now be reestablished to see to the literacy and education of our nation.;;;;;;;;;;;;x
 2nd_treaty_of_hadiach_title;Second Treaty of Hadiach;;;;;;;;;;;;x
 2nd_treaty_of_hadiach_desc;At the peak of old Poland-Lithuania's powers, it almost signed a treaty to make the Ruthenians a third equal nation within the Commonwealth. We should resurrect this idea and give equal political rights and representation to our eastern regions.;;;;;;;;;;;;x
+lithuanian_kaunas_title;Lithuanian Kaunas;;;;;;;;;;;;x
+lithuanian_kaunas_desc;Now that Lithuania has gained its freedom, proper Lithuanian names can be restored to the land.;;;;;;;;;;;;x
 rename_malvinas_title;Las Malvinas son Argentinas;;;;Las Malvinas son Argentinas;;;;;;;;;x
 rename_malvinas_desc;We have finally liberated the Islas Malvinas from British rule. We can now insist upon their proper name!;;;;;;;;;;;;;x
 restore_falkland_title;Restore Falkland Islands;;;;;;;;;;;;;x
@@ -474,6 +526,10 @@ EVTNAME32565;Caucasian Separatism;;;;;;;;;;;;;x
 EVTDESC32565;Despite their defeat on the battlefield, the Muslims of the Caucasus refuse to accept the inevitability of Russian rule. Unrest simmers in the mountains, waiting for a charismatic imam to call for another holy war. It seems clear that this conflict will carry on for some time to come.;;;;;;;;;;;;;x
 EVTNAME35705;Election of Pius IX;;;;;;;;;;;;x;
 EVTDESC35705;The papal conclave of 1846 took an unexpected turn, as liberals and moderates among the cardinals combined to elect Bishop Mastai-Ferretti of Spoleto, an Italian patriot and reformer. Conservative Catholic governments were shocked, including that of Austria, which had attempted to block his nomination. Taking the name Pius IX, he quickly instituted political and economic reforms in the Papal States and released political prisoners. For a time, the new pope was the most popular man on the Italian peninsula, where the exclamation 'Long life to Pius IX!' was often heard.;;;;;;;;;;;;x;
+EVTNAME36224;Sell the Nicobars?;;;;;;;;;;;;;x
+EVTDESC36224;Denmark still holds a colonial outpost in the Indian Ocean: the Nicobar Islands. Voices in parliament have begun calling on the government to seek out a buyer for the archipelago, to eliminate the expense of administration and communication with the islands and show the government's focus on European and domestic affairs.\nIt would be something of a symbolic admission that Denmark is no longer a truly global power, but it would also strengthen the budget and appease the opposition. Shall we search for a buyer?;;;;;;;;;;;;;x
+EVTNAME36225;Purchase the Nicobars?;;;;;;;;;;;;;x
+EVTDESC36225;An envoy from $FROMCOUNTRY$ has approached us about purchasing their colony in the Nicobar Islands. The islands are relatively insignificant, but an extra territory never hurts. Shall we take them up on the offer?;;;;;;;;;;;;;x
 EVTNAME36707;End of the Personal Union;;;;;;;;;;;;;x
 EVTDESC36707;Our king has died without a male heir. Our realm's inheritance laws permit his daughter, Wilhelmina, to become monarch of the Netherlands, but Luxembourg's laws will not allow her to rule. This means an end to the personal union between our two nations: Luxembourg will instead be ruled by the head of another branch of the House of Nassau.;;;;;;;;;;;;;x
 EVTNAME36720;Belgian Secession;;;;;;;;;;;;;x
@@ -534,11 +590,11 @@ EVTDESC44148;Since the war of 1812 the British have quarrelled with us over the 
 EVTNAME44149;The Columbia District;;;;;;;;;;;;;x
 EVTDESC44149;Since the war of 1812 the Americans have quarrelled with us over the boundary between our territories in the Canadian West: both we and they claim the Columbia District. Now this conflict has entered a new phase, as both nations have begun sending settlers to colonize the region. Hundreds of bold pioneers are already loading up to find their fortunes in the Columbia Valley.;;;;;;;;;;;;;
 EVTNAME44850;The First Mexican Empire;;;;;;;;;;;;;x
-EVTDESC44850;After winning independence, Mexico's elites had intended to establish a constitutional monarchy with an emperor chosen from a European noble house. However, Spain refused to recognize the new nation as legitimate, and other crowned heads hesitated. In the mean time, the popular general who had been made President of the Regency, Agustin de Iturbide, built support for his own claim to the throne- in 1822 he was crowned Mexico's first emperor.\nAfter taking the throne, he quickly showed himself an absolutist, abolishing the elected parliament and suppressing all dissent. In the end his rule displeased both liberals, who had hoped for a constitutional monarchy or even a republic, and conservatives, who wanted a monarch from a proper European noble house rather than a military usurper.;;;;;;;;;;;;;
+EVTDESC44850;After winning independence, Mexico's elites had intended to establish a constitutional monarchy with an emperor chosen from a European noble house. However, Spain refused to recognize the new nation as legitimate, and other crowned heads hesitated. In the mean time, the popular general who had been made President of the Regency, Agustín de Iturbide, built support for his own claim to the throne- in 1822 he was crowned Mexico's first emperor.\nAfter taking the throne, he quickly showed himself an absolutist, abolishing the elected parliament and suppressing all dissent. In the end his rule displeased both liberals, who had hoped for a constitutional monarchy or even a republic, and conservatives, who wanted a monarch from a proper European noble house rather than a military usurper.;;;;;;;;;;;;;
 EVTNAME44851;The United Provinces of Central America;;;;;;;;;;;;;x
-EVTDESC44851;The provinces of Guatemala in Central America united with Mexico shortly after their independence, but cultural and political differences between the two regions meant that Central America quickly chafed under Mexican rule. The Central American elites were deeply disappointed by Emperor Agustin's coronation, and they soon began talks in Guatemala City about seceding again to form their own republican federation. In 1823 a proclamation announced the establishment of the United Provinces of Central America, comprising all of New Spain's mainland territories southeast of the Yucatan.;;;;;;;;;;;;;
+EVTDESC44851;The provinces of Guatemala in Central America united with Mexico shortly after their independence, but cultural and political differences between the two regions meant that Central America quickly chafed under Mexican rule. The Central American elites were deeply disappointed by Emperor Agustín's coronation, and they soon began talks in Guatemala City about seceding again to form their own republican federation. In 1823 a proclamation announced the establishment of the United Provinces of Central America, comprising all of New Spain's mainland territories southeast of the Yucatan.;;;;;;;;;;;;;
 EVTNAME44852;The Plan of Casa Mata;;;;;;;;;;;;;x
-EVTDESC44852;Only months after Emperor Augstin I's coronation, a group of generals and republican aristocrats began conspiring to overthrow him and establish a republic in Mexico. Chief among these was General Antonio Lopez de Santa Anna, who led a rebellion in Veracruz which successfully forced the Emperor to abdicate and go into exile. The victorious rebels published a document, called the Plan of Casa Mata, which called for the assembly of a new congress to draw up a constitution for representative government. In short order, elections were held to choose Mexico's first democratically elected president.;;;;;;;;;;;;;
+EVTDESC44852;Only months after Emperor Agustín I's coronation, a group of generals and republican aristocrats began conspiring to overthrow him and establish a republic in Mexico. Chief among these was General Antonio Lopez de Santa Anna, who led a rebellion in Veracruz which successfully forced the Emperor to abdicate and go into exile. The victorious rebels published a document, called the Plan of Casa Mata, which called for the assembly of a new congress to draw up a constitution for representative government. In short order, elections were held to choose Mexico's first democratically elected president.;;;;;;;;;;;;;
 EVTNAME44853;The Plan of Cuernavaca;;;;;;;;;;;;;x
 EVTDESC44853;In 1834, Mexico's president Antonio Lopez de Santa Anna and his close supporters responded to agitation within the Catholic church about the legislature's liberal, secular program by publishing a reactionary proclamation in which they abrogated Mexico's federalist constitution of 1824, consolidated political authority to the central government, dissolved the elected parliament, and repealed a number of progressive laws passed by a recent rival government. This Plan of Cuernavaca essentially transformed Mexico into a centralized dictatorship, and many of the border territories in the far north and south moved toward rebellion against the new regime.;;;;;;;;;;;;;
 EVTNAME44855;Empresarios in Tejas;;;;;;;;;;;;;x
@@ -684,6 +740,10 @@ EVTNAME97028;Full Independence?;;;;;;;;;;;;;x
 EVTDESC97028;A fiery speech delivered in parliament today is the talk of the nation. The impassioned orator decried Brazil's continued subordination to a crown four thousand miles away. Is it not time, he asked, that Brazil stood on its own and sought its own destiny? He speaks for a growing number of our people who feel that we have drifted apart from Portugal, that the Portuguese monarchy has done little to deserve our continued loyalty. Many believe it is time for full independence, and an end to the United Kingdom. Are we prepared to send an ultimatum to the Portuguese Cortes insisting on full Brazilian independence? Or, must the people's cry for freedom go unheard?;;;;;;;;;;;;;x
 EVTNAME97029;A Brazilian Ultimatum;;;;;;;;;;;;;x
 EVTDESC97029;A worrisome political movement in Brazil has begun to agitate for full independence from Portugal, and it seems now to have infected the Brazilian political class, as well. The regional government in Rio de Janeiro has submitted an ultimatum to the Cortes, announcing Brazil's intention to dissolve the United Kingdom and form an independent state. Of course, such a step would be intolerable for Portugal... unless we don't believe we can stop it. Acceding to Brazil's demands without a fight would humiliate Portugal and enrage our nationalists, but the only alternative now seems to be war. What is Portugal's response?;;;;;;;;;;;;;x
+EVTNAME97030;The Death of John VI;;;;;;;;;;;;;x
+EVTDESC97030;The king has died, and Portugal is faced with a dilemma. His older son, Pedro, is a constitutionalist and liberal darling, but he recently rebelled against his father and became Emperor of Brazil. The king's younger son, Miguel, is an absolutist and has the support of the reactionary aristocracy, but he has been in exile since a failed coup attempt.\nIf Pedro succeeded his father, it would bring Portugal and Brazil into a personal union, an outcome neither nation now wants. Instead, Pedro means to pass the Portuguese crown directly to his daughter, Maria da Gloria, after swearing that the Constitution will be upheld. Miguel, for his part, would take the crown and likely abolish the Cortes and the constitution, restoring absolute rule. Either ruler would provoke a backlash from the opposing camp. How will this crisis be resolved?;;;;;;;;;;;;;x
+EVTNAME97031;Intervention in Portugal?;;;;;;;;;;;;;x
+EVTDESC97031;Portugal is in the midst of a succession crisis, with late King John VI's two sons struggling over the crown and the constitution. Pedro, previously the Brazilian Emperor, is now raising a liberal rebellion against the absolutist Miguel, and he has the support of the bourgeoisie in Porto and the Azores. With a small injection of arms and funds from us, his faction could likely restore constitutional rule in Portugal. Can we spare some ships and soldiers to covertly foment this rebellion?;;;;;;;;;;;;;x
 EVTNAME97039;An Iberian Destiny?;;;;;;;;;;;;;x
 EVTDESC97039;Portugal's dominant position on the Iberian Peninsula makes the formation of a pan-Iberian federation a real possibility. However, an increased emphasis on the nation's Iberian identity would likely upset our citizens overseas, who feel less attached to their Iberian heritage. Further, the formation of a Brazilian-Iberian state would seriously disturb the balance of power in Europe, upsetting the other Great Powers and risking their intervention. We could unite all of Iberia with Brazil and suffer the consequences to our reputation, or compromise by forming an Iberian Federation and devolving home rule to a Brazilian government. Or, we could turn our backs on the Iberian project and preserve our unification with Brazil. Which way does Portugal's destiny lie?;;;;;;;;;;;;;x
 EVTNAME97040;A Peruvian Confederation?;;;;;;;;;;;;;x

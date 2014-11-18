@@ -15279,14 +15279,14 @@
 	}
 	labourers = {
 
-		size = 8081
+		size = 7081
 		culture = finnish
 		religion = protestant
 
 	}
 	labourers = {
 
-		size = 454
+		size = 1454
 		culture = sami
 		religion = protestant
 
@@ -15339,7 +15339,7 @@
 	}
 	labourers = {
 
-		size = 39100
+		size = 35100
 		culture = finnish
 		religion = protestant
 
@@ -15349,6 +15349,13 @@
 		size = 4258
 		culture = finnish
 		religion = orthodox
+
+	}
+	labourers = {
+
+		size = 4000
+		culture = ugrian
+		religion = protestant
 
 	}
 	officers = {
@@ -16704,14 +16711,14 @@
 	}
 	farmers = {
 
-		size = 11354
+		size = 6354
 		culture = lithuanian
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 3960
+		size = 8960
 		culture = polish
 		religion = catholic
 
@@ -16739,7 +16746,7 @@
 	}
 	soldiers = {
 
-		size = 91
+		size = 204
 		culture = polish
 		religion = catholic
 
@@ -16751,34 +16758,20 @@
 		religion = jewish
 
 	}
-	soldiers = {
-
-		size = 91
-		culture = north_german
-		religion = protestant
-
-	}
-	soldiers = {
-
-		size = 22
-		culture = russian
-		religion = orthodox
-
-	}
 
 }
 361 = {
 
 	artisans = {
 
-		size = 1053
+		size = 953
 		culture = lithuanian
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 137
+		size = 237
 		culture = polish
 		religion = catholic
 
@@ -16806,14 +16799,14 @@
 	}
 	farmers = {
 
-		size = 34339
+		size = 30339
 		culture = lithuanian
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 503
+		size = 4503
 		culture = polish
 		religion = catholic
 
@@ -16919,7 +16912,7 @@
 
 	artisans = {
 
-		size = 1602
+		size = 1402
 		culture = lithuanian
 		religion = catholic
 
@@ -16940,16 +16933,16 @@
 	}
 	artisans = {
 
+		size = 200
+		culture = polish
+		religion = catholic
+
+	}
+	artisans = {
+
 		size = 91
 		culture = russian
 		religion = orthodox
-
-	}
-	bureaucrats = {
-
-		size = 1
-		culture = ashkenazi
-		religion = jewish
 
 	}
 	clergymen = {
@@ -16982,7 +16975,7 @@
 	}
 	farmers = {
 
-		size = 31569
+		size = 28569
 		culture = lithuanian
 		religion = catholic
 
@@ -16999,6 +16992,13 @@
 		size = 686
 		culture = north_german
 		religion = protestant
+
+	}
+	farmers = {
+
+		size = 3000
+		culture = polish
+		religion = catholic
 
 	}
 	farmers = {
@@ -35162,14 +35162,14 @@
 
 	artisans = {
 
-		size = 1739
+		size = 1639
 		culture = north_german
 		religion = protestant
 
 	}
 	artisans = {
 
-		size = 91
+		size = 191
 		culture = western_slavic
 		religion = protestant
 
@@ -35197,14 +35197,14 @@
 	}
 	farmers = {
 
-		size = 31510
+		size = 30510
 		culture = north_german
 		religion = protestant
 
 	}
 	farmers = {
 
-		size = 1671
+		size = 2671
 		culture = western_slavic
 		religion = protestant
 
@@ -35916,8 +35916,15 @@
 	}
 	artisans = {
 
-		size = 8699
+		size = 8199
 		culture = north_german
+		religion = protestant
+
+	}
+	artisans = {
+
+		size = 500
+		culture = western_slavic
 		religion = protestant
 
 	}
@@ -35951,14 +35958,14 @@
 	}
 	farmers = {
 
-		size = 1007
+		size = 907
 		culture = north_german
 		religion = protestant
 
 	}
 	farmers = {
 
-		size = 251
+		size = 351
 		culture = western_slavic
 		religion = protestant
 
@@ -36004,9 +36011,16 @@
 	}
 	artisans = {
 
-		size = 2014
+		size = 1814
 		culture = polish
 		religion = catholic
+
+	}
+	artisans = {
+
+		size = 200
+		culture = western_slavic
+		religion = protestant
 
 	}
 	clergymen = {
@@ -36025,14 +36039,14 @@
 	}
 	farmers = {
 
-		size = 21820
+		size = 17820
 		culture = north_german
 		religion = protestant
 
 	}
 	farmers = {
 
-		size = 2930
+		size = 7930
 		culture = western_slavic
 		religion = protestant
 
@@ -36046,7 +36060,7 @@
 	}
 	farmers = {
 
-		size = 12293
+		size = 11293
 		culture = polish
 		religion = catholic
 
@@ -38321,14 +38335,14 @@
 	}
 	artisans = {
 
-		size = 1373
+		size = 1473
 		culture = polish
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 686
+		size = 586
 		culture = byelorussian
 		religion = catholic
 
@@ -38349,14 +38363,14 @@
 	}
 	clergymen = {
 
-		size = 297
+		size = 197
 		culture = byelorussian
 		religion = orthodox
 
 	}
 	clergymen = {
 
-		size = 228
+		size = 328
 		culture = polish
 		religion = catholic
 
@@ -38384,14 +38398,14 @@
 	}
 	farmers = {
 
-		size = 23213
+		size = 24213
 		culture = polish
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 10988
+		size = 9988
 		culture = byelorussian
 		religion = catholic
 
@@ -51443,28 +51457,28 @@
 
 	artisans = {
 
-		size = 503
+		size = 403
 		culture = byelorussian
 		religion = orthodox
 
 	}
 	artisans = {
 
-		size = 1144
+		size = 1444
 		culture = polish
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 640
+		size = 540
 		culture = byelorussian
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 183
+		size = 83
 		culture = lithuanian
 		religion = orthodox
 
@@ -51478,14 +51492,14 @@
 	}
 	clergymen = {
 
-		size = 389
+		size = 289
 		culture = byelorussian
 		religion = orthodox
 
 	}
 	clergymen = {
 
-		size = 45
+		size = 145
 		culture = polish
 		religion = catholic
 
@@ -51513,21 +51527,21 @@
 	}
 	labourers = {
 
-		size = 30012
+		size = 18012
 		culture = byelorussian
 		religion = orthodox
 
 	}
 	labourers = {
 
-		size = 14239
+		size = 28239
 		culture = polish
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 11927
+		size = 9927
 		culture = byelorussian
 		religion = catholic
 
@@ -51552,14 +51566,14 @@
 
 	artisans = {
 
-		size = 366
+		size = 1366
 		culture = byelorussian
 		religion = orthodox
 
 	}
 	artisans = {
 
-		size = 2014
+		size = 1014
 		culture = polish
 		religion = catholic
 
@@ -51622,35 +51636,35 @@
 	}
 	farmers = {
 
-		size = 13254
+		size = 8254
 		culture = byelorussian
 		religion = orthodox
 
 	}
 	farmers = {
 
-		size = 22022
+		size = 12022
 		culture = polish
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 13666
+		size = 8666
 		culture = byelorussian
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 3000
+		size = 18000
 		culture = ukrainian
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 3890
+		size = 8890
 		culture = ukrainian
 		religion = orthodox
 
@@ -51675,14 +51689,14 @@
 
 	artisans = {
 
-		size = 732
+		size = 432
 		culture = lithuanian
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 366
+		size = 666
 		culture = polish
 		religion = catholic
 
@@ -51703,14 +51717,14 @@
 	}
 	clergymen = {
 
-		size = 183
+		size = 83
 		culture = lithuanian
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 68
+		size = 168
 		culture = polish
 		religion = catholic
 
@@ -51731,14 +51745,14 @@
 	}
 	farmers = {
 
-		size = 14536
+		size = 4536
 		culture = lithuanian
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 4807
+		size = 14807
 		culture = polish
 		religion = catholic
 
@@ -51770,14 +51784,14 @@
 	}
 	artisans = {
 
-		size = 183
+		size = 283
 		culture = polish
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 828
+		size = 728
 		culture = byelorussian
 		religion = catholic
 
@@ -51798,14 +51812,14 @@
 	}
 	clergymen = {
 
-		size = 68
+		size = 118
 		culture = polish
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 268
+		size = 218
 		culture = byelorussian
 		religion = catholic
 
@@ -51819,21 +51833,21 @@
 	}
 	farmers = {
 
-		size = 16019
+		size = 14019
 		culture = byelorussian
 		religion = orthodox
 
 	}
 	farmers = {
 
-		size = 1350
+		size = 5350
 		culture = polish
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 19235
+		size = 17235
 		culture = byelorussian
 		religion = catholic
 
@@ -51858,7 +51872,7 @@
 	}
 	artisans = {
 
-		size = 598
+		size = 298
 		culture = byelorussian
 		religion = catholic
 
@@ -51879,7 +51893,7 @@
 	}
 	artisans = {
 
-		size = 366
+		size = 666
 		culture = ukrainian
 		religion = catholic
 
@@ -51921,28 +51935,28 @@
 	}
 	farmers = {
 
-		size = 21000
+		size = 11000
 		culture = byelorussian
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 20390
+		size = 10390
 		culture = byelorussian
 		religion = orthodox
 
 	}
 	farmers = {
 
-		size = 7000
+		size = 17000
 		culture = ukrainian
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 6094
+		size = 16094
 		culture = ukrainian
 		religion = orthodox
 
@@ -52129,7 +52143,14 @@
 	}
 	artisans = {
 
-		size = 3388
+		size = 2388
+		culture = byelorussian
+		religion = orthodox
+
+	}
+	artisans = {
+
+		size = 1000
 		culture = russian
 		religion = orthodox
 
@@ -52150,14 +52171,28 @@
 	}
 	clergymen = {
 
-		size = 302
+		size = 202
+		culture = byelorussian
+		religion = orthodox
+
+	}
+	clergymen = {
+
+		size = 100
 		culture = russian
 		religion = orthodox
 
 	}
 	farmers = {
 
-		size = 76507
+		size = 56507
+		culture = byelorussian
+		religion = orthodox
+
+	}
+	farmers = {
+
+		size = 20000
 		culture = russian
 		religion = orthodox
 
@@ -52171,7 +52206,14 @@
 	}
 	soldiers = {
 
-		size = 6890
+		size = 4890
+		culture = byelorussian
+		religion = orthodox
+
+	}
+	soldiers = {
+
+		size = 2000
 		culture = russian
 		religion = orthodox
 
@@ -52460,14 +52502,14 @@
 
 	artisans = {
 
-		size = 1831
+		size = 831
 		culture = lithuanian
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 549
+		size = 1549
 		culture = byelorussian
 		religion = catholic
 
@@ -52488,14 +52530,14 @@
 	}
 	clergymen = {
 
-		size = 503
+		size = 303
 		culture = lithuanian
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 114
+		size = 314
 		culture = byelorussian
 		religion = catholic
 
@@ -52516,14 +52558,14 @@
 	}
 	farmers = {
 
-		size = 51142
+		size = 21142
 		culture = lithuanian
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 6000
+		size = 36000
 		culture = byelorussian
 		religion = catholic
 
@@ -55588,8 +55630,15 @@
 	}
 	labourers = {
 
-		size = 448
+		size = 348
 		culture = finnish
+		religion = animist
+
+	}
+	labourers = {
+
+		size = 100
+		culture = sami
 		religion = animist
 
 	}
@@ -55613,9 +55662,16 @@
 	}
 	labourers = {
 
-		size = 1222
+		size = 972
 		culture = russian
 		religion = orthodox
+
+	}
+	labourers = {
+
+		size = 250
+		culture = sami
+		religion = animist
 
 	}
 	labourers = {
@@ -56168,15 +56224,22 @@
 	}
 	farmers = {
 
-		size = 15314
+		size = 12314
 		culture = russian
 		religion = orthodox
 
 	}
 	farmers = {
 
-		size = 12453
+		size = 10453
 		culture = finnish
+		religion = protestant
+
+	}
+	farmers = {
+
+		size = 5000
+		culture = ugrian
 		religion = protestant
 
 	}
@@ -57057,71 +57120,22 @@
 
 	artisans = {
 
-		size = 2289
-		culture = russian
-		religion = orthodox
-
-	}
-	artisans = {
-
-		size = 3204
-		culture = ukrainian
-		religion = orthodox
-
-	}
-	artisans = {
-
-		size = 732
-		culture = byelorussian
-		religion = orthodox
-
-	}
-	artisans = {
-
-		size = 897
-		culture = ashkenazi
-		religion = jewish
-
-	}
-	clergymen = {
-
-		size = 123
+		size = 7132
 		culture = russian
 		religion = orthodox
 
 	}
 	clergymen = {
 
-		size = 91
-		culture = ukrainian
-		religion = orthodox
-
-	}
-	clergymen = {
-
-		size = 160
-		culture = byelorussian
-		religion = orthodox
-
-	}
-	labourers = {
-
-		size = 38597
+		size = 374
 		culture = russian
 		religion = orthodox
 
 	}
 	labourers = {
 
-		size = 74035
-		culture = ukrainian
-		religion = orthodox
-
-	}
-	labourers = {
-
-		size = 17238
-		culture = byelorussian
+		size = 129870
+		culture = russian
 		religion = orthodox
 
 	}
@@ -57131,7 +57145,14 @@
 
 	artisans = {
 
-		size = 6593
+		size = 3593
+		culture = byelorussian
+		religion = orthodox
+
+	}
+	artisans = {
+
+		size = 3000
 		culture = russian
 		religion = orthodox
 
@@ -57152,7 +57173,14 @@
 	}
 	farmers = {
 
-		size = 136921
+		size = 76921
+		culture = byelorussian
+		religion = orthodox
+
+	}
+	farmers = {
+
+		size = 60000
 		culture = russian
 		religion = orthodox
 
@@ -75329,14 +75357,14 @@
 
 	clergymen = {
 
-		size = 46
+		size = 34
 		culture = asian_minor
 		religion = animist
 
 	}
 	farmers = {
 
-		size = 3171
+		size = 2571
 		culture = asian_minor
 		religion = animist
 
@@ -147521,7 +147549,7 @@
 	}
 	labourers = {
 
-		size = 270
+		size = 170
 		culture = russian
 		religion = orthodox
 
@@ -147530,6 +147558,13 @@
 
 		size = 224
 		culture = finnish
+		religion = animist
+
+	}
+	labourers = {
+
+		size = 100
+		culture = sami
 		religion = animist
 
 	}
@@ -151377,6 +151412,25 @@
 		size = 700
 		culture = russian
 		religion = orthodox
+
+	}
+
+}
+
+3252 = {
+
+	clergymen = {
+
+		size = 12
+		culture = asian_minor
+		religion = animist
+
+	}
+	farmers = {
+
+		size = 600
+		culture = asian_minor
+		religion = animist
 
 	}
 

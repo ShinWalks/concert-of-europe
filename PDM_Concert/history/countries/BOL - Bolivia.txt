@@ -1,7 +1,5 @@
 capital = 2313
 primary_culture = south_andean
-culture = quechua
-culture = aimara
 religion = catholic
 government = presidential_dictatorship
 plurality = 0.0

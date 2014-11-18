@@ -15,18 +15,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 8
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1871
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1872
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1874
@@ -76,18 +72,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 8
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1872
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1873
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1874
@@ -165,18 +157,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 8
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1875
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1876
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1878
@@ -259,18 +247,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 8
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1849
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1850
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1851
@@ -336,18 +320,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 8
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1886
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1888
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1889
@@ -449,18 +429,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 8
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1899
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1900
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1901
@@ -518,18 +494,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 8
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1909
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1910
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1911
@@ -620,18 +592,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 12
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1883
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1884
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1885
@@ -743,18 +711,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 6
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1885
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1886
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1887
@@ -792,7 +756,6 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 6
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1885
@@ -839,18 +802,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 12
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1885
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1886
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1887
@@ -1068,18 +1027,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 12
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1850
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1860
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1870
@@ -1115,18 +1070,14 @@ country_event = {
 	
 	mean_time_to_happen =  {
 		months = 6
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1843
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1844
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1846
@@ -1167,18 +1118,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 6
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1844
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1846
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1847
@@ -1225,18 +1172,14 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 6
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1871
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1873
 		}
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1874
@@ -1275,13 +1218,10 @@ country_event = {
  
 	mean_time_to_happen =  {
 		months = 5
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1857
 		}
-
-
 		modifier = {
 			factor = 0.95 #increase likelihood to happen
 			year = 1858
@@ -1309,5 +1249,103 @@ country_event = {
 	}
 }
 
-
 ###events 36221 and 36222 are in USAFlavor.txt (US purchase VI events)
+
+country_event = {
+	id = 36224
+	title = "EVTNAME36224" #Sell the Nicobars?
+	desc = "EVTDESC36224"
+	picture = "deliberation"
+	
+	trigger = {
+		tag = DEN
+		exists = yes
+		owns = 3252 #Nicobar Islands
+		is_greater_power = no
+		is_secondary_power = no
+		state_n_government = 1
+		NOT = { has_country_flag = nicobar_sale }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Let them be someone else's burden."
+		set_country_flag = nicobar_sale
+		prestige = -2
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			militancy = -1
+			consciousness = -1
+		}
+		random_country = {
+			limit = {
+				owns = 1320 #Andaman Islands
+				is_greater_power = yes
+				capital_scope = { continent = europe }
+			}
+			country_event = 36225
+		}
+		random_country = {
+			limit = {
+				1320 = { owner = { is_greater_power = no } }
+				is_greater_power = yes
+				capital_scope = { continent = europe }
+			}
+			country_event = 36225
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "The sun never sets on the Danish Empire!"
+		set_country_flag = nicobar_sale
+		prestige = 2
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			militancy = 1
+			consciousness = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 36225
+	title = "EVTNAME36225" #Purchase the Nicobars?
+	desc = "EVTDESC36225"
+	picture = "deliberation"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Our new borders will be lovely!"
+		prestige = 2
+		3252 = { secede_province = THIS }
+		relation = { who = FROM value = 25 }
+		treasury = -20000
+		FROM = { treasury = 20000 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "We've enough desert islands already."
+		prestige = -2
+		relation = { who = FROM value = -25 }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

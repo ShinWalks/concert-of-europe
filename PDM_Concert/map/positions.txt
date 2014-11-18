@@ -18148,18 +18148,11 @@ railroad=
 	}
 building_position = 
 	{
-fort=
+	fort=
 		{
 			x=3159.000000
 			y=1755.000000
 		}
-
-naval_base=
-		{
-			x=3133.399902
-			y=1757.099976
-		}
-
 	}
 }
 
@@ -131581,5 +131574,56 @@ naval_base=4.101523
 			y=1782.998779
 		}
 		}
+	}
+}
+
+#Nicobar Islands
+3252 = 
+{
+	unit=
+	{
+		x=4270.000000
+		y=872.000000
+	}
+
+	text_position=
+	{
+		x=4256.000000
+		y=880.000000
+	}
+	text_scale=2.999999
+	building_construction=
+	{
+		x=4264.000000
+		y=884.000000
+	}
+	military_construction=
+	{
+		x=4268.000000
+		y=872.000000
+	}
+	factory=
+	{
+		x=4263.000000
+		y=885.000000
+	}
+building_position = 
+	{
+fort=
+		{
+			x=4270.500098
+			y=867.500000
+		}
+
+naval_base=
+		{
+			x=4270.000000
+			y=873.000000
+		}
+
+	}
+building_rotation = 
+	{
+naval_base=2.356194
 	}
 }

@@ -70,7 +70,7 @@ publishing_industry = 1
 consciousness = 2
 nonstate_consciousness = 0
 
-oob = "DEN_oob.txt"
+oob = "/1821/DEN_oob.txt"
 
 1836.1.1 = {
 	literacy = 0.8
@@ -106,6 +106,8 @@ oob = "DEN_oob.txt"
 	#Inventions
 	#corvettes = yes
 	commerce_raiders = yes
+	
+	oob = "DEN_oob.txt"
 }
 
 1850.1.1 = {
@@ -116,6 +118,7 @@ oob = "DEN_oob.txt"
 	plurality = 60
 	set_country_flag = annex_schleswig_holstein
 	set_country_flag = schleswig_holstein_restored
+	set_country_flag = nicobar_sale
 	government = prussian_constitutionalism
 	decision = danmarks_riges_grundlov
 	

@@ -10,7 +10,7 @@ literacy = 0.12
 civilized = yes
 
 #GreaterPowers = prestige
-prestige = 45
+prestige = 40
 
 # Political reforms
 slavery = yes_slavery
@@ -38,6 +38,7 @@ arts_endowment = no_endowment
 education = elite
 
 ruling_party = SPA_liberal
+set_country_flag = liberal_election_win
 upper_house = {
 	fascist = 0
 	liberal = 35

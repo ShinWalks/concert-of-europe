@@ -405,9 +405,6 @@ army = {
 
 }
 
-
-
-
 navy = {
 	name = "Imperial Black Sea Fleet"
 	location = 967
@@ -542,11 +539,6 @@ navy = {
 	}
 
 	ship = {
-		name= "Chtchastlivyï"
-		type = frigate
-	}
-
-	ship = {
 		name= "1. Transportnaya Flotiliya"
 		type = clipper_transport
 	}
@@ -593,11 +585,6 @@ navy = {
 
 	ship = {
 		name= "Tsar Konstantin"
-		type = manowar
-	}
-
-	ship = {
-		name= "Yaroslav"
 		type = manowar
 	}
 

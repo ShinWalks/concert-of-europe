@@ -1798,6 +1798,86 @@ country_event = {
 			duration = 365
 		}
 		remove_country_modifier = conservative_reaction
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			ideology = {
+				value = liberal
+				factor = 0.1
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 6
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -4
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "Defend the federal constitution!"
+		set_country_flag = cuernavaca_plan
+		add_country_modifier = {
+			name = coup_risk
+			duration = 730
+		}
+		add_country_modifier = {
+			name = conservative_reaction
+			duration = 1825
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -4
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+				OR = {
+					type = officers
+					type = soldiers
+				}
+			}
+			ideology = {
+				value = conservative
+				factor = 0.2
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.1
+			}
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 10
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 20
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 

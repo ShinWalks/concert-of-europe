@@ -14,7 +14,10 @@ political_decisions = {
 		allow = {
 			OR = {
 				state_n_government = 1
-				is_vassal = no
+				AND = {
+					WAL = { is_vassal = no }
+					MOL = { is_vassal = no }
+				}
 			}
 			WAL = {
 				war = no

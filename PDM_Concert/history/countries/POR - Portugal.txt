@@ -110,8 +110,6 @@ oob = "/1821/POR_oob.txt"
 #Inventions
 #corvettes = yes
 	
-	set_country_flag = brazil_independent
-	
 	oob = "POR_oob.txt"
 }
 

@@ -319,14 +319,20 @@ political_decisions = {
 				all_core = { add_core = PLC }
 			}
 			BYE = {
-				all_core = { add_core = PLC }
+				all_core = {
+					limit = {
+						NOT = {
+							province_id = 943 #Smolensk
+							province_id = 1016 #Bryansk
+						}
+					}
+					add_core = PLC
+				}
 			}
-			356 = { add_core = PLC }
-			357 = { add_core = PLC }
-			358 = { add_core = PLC }
-			359 = { add_core = PLC }
-			3251 = { add_core = PLC }
-			RUS_958 = { add_core = PLC }
+			RUS_357 = { add_core = PLC } #Courland
+			3251 = { add_core = PLC } #Latgale
+			RUS_955 = { add_core = PLC } #Podolia
+			RUS_958 = { add_core = PLC } #Kiev
 			any_country = {
 				limit = {
 					OR = {
@@ -460,15 +466,16 @@ political_decisions = {
 			set_country_flag = greater_PLC
 			badboy = 10
 			prestige = 5
-			351 = { add_core = PLC }
-			352 = { add_core = PLC }
-			354 = { add_core = PLC }
-			355 = { add_core = PLC }
-			PRU_695 = { add_core = PLC }
-			692 = { add_core = PLC }
-			962 = { add_core = PLC }
-			963 = { add_core = PLC }
-			943 = { add_core = PLC }
+			351 = { add_core = PLC } #Livonia
+			352 = { add_core = PLC } #Livonia
+			354 = { add_core = PLC } #Livonia
+			355 = { add_core = PLC } #Livonia
+			PRU_695 = { add_core = PLC } #East Prussia
+			692 = { add_core = PLC } #Deutsch Krone
+			962 = { add_core = PLC } #Chernigov
+			963 = { add_core = PLC } #Poltava
+			943 = { add_core = PLC } #Smolensk
+			1016 = { add_core = PLC } #Bryansk
 			any_country = {
 				limit = {
 					OR = {
@@ -673,6 +680,7 @@ political_decisions = {
 		potential = {
 			is_culture_group = baltic
 			NOT = {
+				tag = PLC
 				exists = UBD
 				has_global_flag = baltic_states_formed
 				has_country_flag = post_colonial_country
@@ -718,11 +726,12 @@ political_decisions = {
 			set_global_flag = baltic_states_formed
 			prestige = 10
 			LAT = { all_core = { add_core = UBD } }
-			LIT = { all_core = { add_core = UBD } }
 			EST = { all_core = { add_core = UBD } }
+			RUS_360 = { all_core = { add_core = UBD } } #Lithuania
+			698 = { all_core = { add_core = UBD } } #Memel
 			add_accepted_culture = latvian
-			add_accepted_culture = lithuanian
 			add_accepted_culture = estonian
+			add_accepted_culture = lithuanian
 			change_tag = UBD
 			random_country = {
 				limit = {
@@ -771,6 +780,7 @@ political_decisions = {
 			NOT = {
 				tag = RUS
 				tag = PLC
+				tag = SCA
 				exists = UBD
 				is_culture_group = baltic
 				has_global_flag = baltic_states_formed
@@ -825,7 +835,7 @@ political_decisions = {
 		}
 		effect = {
 			set_global_flag = baltic_states_formed
-			prestige = 20
+			prestige = 10
 			badboy = 2
 			any_country = {
 				limit = {
@@ -857,8 +867,9 @@ political_decisions = {
 				}
 			}
 			LAT = { all_core = { add_core = UBD } }
-			LIT = { all_core = { add_core = UBD } }
 			EST = { all_core = { add_core = UBD } }
+			RUS_360 = { all_core = { add_core = UBD } } #Lithuania
+			698 = { all_core = { add_core = UBD } } #Memel
 			any_owned = {
 				limit = {
 					is_core = THIS
@@ -876,6 +887,36 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	lithuanian_kaunas = {
+		picture = form_baltic_states
+		potential = {
+			OR = {
+				tag = LIT
+				tag = PLC
+				tag = UBD
+			}
+			owns = 361 #Kaunas
+			NOT = {
+				has_global_flag = lithuanian_kaunas
+			}
+		}
+		
+		allow = {
+			owns = 361
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = lithuanian_kaunas
+			361 = { change_province_name = "Kaunas" }
+			363 = { change_province_name = "Panevezys" }
+			364 = { change_province_name = "Siauliai" }
+			365 = { change_province_name = "Palanga" }
+			prestige = 3
+			RUS = { prestige = -2 }
 		}
 	}
 }

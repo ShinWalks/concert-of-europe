@@ -81,8 +81,10 @@ country_event = {
 	trigger = {
 		tag = PNM
 		exists = yes
-		exists = GCO
-		esists = UCA
+		OR = {
+			exists = GCO
+			exists = UCA
+		}
 		war = no
 		NOT = {
 			year = 1830
@@ -103,6 +105,10 @@ country_event = {
 		GCO = { country_event = 37803 }
 		ai_chance = {
 			factor = 75
+			modifier = {
+				factor = 0
+				NOT = { exists = GCO }
+			}
 		}
 	}
 	
@@ -114,6 +120,10 @@ country_event = {
 		UCA = { country_event = 37803 }
 		ai_chance = {
 			factor = 25
+			modifier = {
+				factor = 0
+				NOT = { exists = UCA }
+			}
 		}
 	}
 }

@@ -487,7 +487,11 @@ country_event = {
 	}
 }
 
-#Carlist/Christino War Events
+#########################################################
+#														#
+#  				Carlist Wars Events 					#
+#														#
+#########################################################
 country_event = {
 	id = 37760
 	title = "EVTNAME37760" #Carlism
@@ -1265,7 +1269,6 @@ province_event = {
 	}
 }
 	
-
 province_event = {
 	id = 37714
 	title = "EVTNAME37714" #Carlist Sympathies
@@ -4365,6 +4368,114 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 90
+		}
+	}
+}
+
+#########################################################
+#														#
+#  				Liberal Wars Events 					#
+#														#
+#########################################################
+
+country_event = {
+	id = 37761
+	title = "EVTNAME37761" #Appeal to the Holy Alliance
+	desc = "EVTDESC37761"
+	picture = "carlists"
+	
+	trigger = {
+		tag = SPA
+		exists = yes
+		government = hms_government
+		NOT = { year = 1836 }
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "He's inviting them to invade his own country?!"
+		prestige = -2
+		any_pop = {
+			limit = {
+				location = { is_core = SPA }
+			}
+			consciousness = 2
+		}
+		FRA = { country_event = 37762 }
+	}
+}
+
+country_event = {
+	id = 37762
+	title = "EVTNAME37762" #Request for Aid
+	desc = "EVTDESC37762"
+	picture = "carlists"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ferdinand will have to deal with his own parliament."
+		prestige = -5
+		relation = { who = FROM value = 25 }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = "A splendid excuse to invade a neighbor!"
+		relation = { who = FROM value = -50 }
+		leave_alliance = FROM
+		casus_belli = {
+			target = FROM
+			type = humiliate
+			months = 60
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = 37763
+	title = "EVTNAME37763" #Ferdinand's Restoration
+	desc = "EVTDESC37763"
+	picture = "carlists"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ferdinand will be restored, and the Constitution abrogated."
+		prestige = -5
+		end_war = FROM
+		relation = { who = FROM value = 150 }
+		alliance = FROM
+		political_reform = appointed
+		political_reform = underground_parties
+		political_reform = none_voting
+		government = absolute_monarchy
+		add_country_modifier = {
+			name = national_confusion
+			duration = 365
+		}
+		FROM = { prestige = 10 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "We fight on! For Parliament, and the Constitution!"
+		war_exhaustion = 25
+		badboy = 6
+		ai_chance = {
+			factor = 0
 		}
 	}
 }

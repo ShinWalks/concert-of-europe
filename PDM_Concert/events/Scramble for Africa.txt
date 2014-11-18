@@ -251,6 +251,7 @@ country_event = {
 		capital_scope = { continent = africa }
 		civilized = no
 		is_vassal = no
+		war = no
 		part_of_sphere = yes
 		OR = {
 			any_owned_province = { port = yes }

@@ -669,14 +669,9 @@ east_slavic = {
 	}
 	byelorussian = {
 		color = {100 140 110}
-		first_names = { Alaksandr Alexei Andrei Anton Boris Cyril Danya Dz'mitry Giorgi 
-		Ivan Janka Jury Lavr Leonid Leu Mikalai Paval Piotr Roman Ryhor 
-		Stanislaw Sergey Valery Vasily Viktar Uladzimir Vladislav }
+		first_names = { Alaksandr Alaksej Andrej Anton Barys Fabijan Ihnat Jakub Janka Jaska Jazep Jury Kiryla Kuzma Laur Leanid Leu Makar Michal Mikola Paval Piotra Raman Ryhor Siarhiej Stanislau Stefan Tamaš Todar Valery Vasil Viktar Uladzimier Uladzislau Zmicier }
 		
-		last_names = { Alexseyev "Bulak-Balachowicz" Chibisov Denikin Dragomirov Golivin Gurko 
-		Ivanov Kalinowski Kornilov Kolchak Kuropatkin Lukashenka Menshikov Nakhimov 
-		Nebogatov Nikolaevich Pavlov Putyatin Rozhestvensky Skobelev Sukhoi 
-		Tukhachevsky Yegorov Vorontsov Zhauryd }
+		last_names = { Alaksiuk Ausiannik Bialevic "Bulak-Balachovic" Carapuk Cvikievic Cybisau Dubiejka "Duz-Duseuski" Gurko Hryb Ivanou Jakubiecki Jaremich Jezavitau Kacanovic Kalinouski Kavalou Kraucou Kreceuski Ladnou Luckievich Miadziolka Prusynski "Rak-Michajlouski" Serada Skirmunt Smolic Stankievic "Sviatapolk-Mirski" Špak Varonka Viacorka Viarsynin Viernikouski "Vitan-Dubiejkauski" Voranau Zacharka Zajac }
 	}
 	ukrainian = {
 		color = {160 160 60}

@@ -3984,19 +3984,40 @@
 	clergymen = {
 		culture = asian_minor
 		religion = animist
-		size = 51.5
+		size = 38.5
 	}
 
 	artisans = {
 		culture = asian_minor
 		religion = animist
-		size = 51.5
+		size = 38.5
 	}
 
 	farmers = {
 		culture = asian_minor
 		religion = animist
-		size = 3502.0
+		size = 2802.0
+	}
+
+}
+#Nicobar Islands (14000/3500 POPS)
+1320 = {
+	clergymen = {
+		culture = asian_minor
+		religion = animist
+		size = 13
+	}
+
+	artisans = {
+		culture = asian_minor
+		religion = animist
+		size = 13
+	}
+
+	farmers = {
+		culture = asian_minor
+		religion = animist
+		size = 700
 	}
 
 }

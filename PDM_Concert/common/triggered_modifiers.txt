@@ -3,7 +3,7 @@
 #
 # Effects are fully scriptable here.
 
-the_british_raj  = {
+the_british_raj = {
 	trigger = {
 		tag = ENG
 		1236 = {
@@ -422,17 +422,6 @@ oversized_industry_1920 = {
 	prestige = 0.07
 }
 
-oversized_industry_1940 = {
-	trigger = {
-		year = 1940
-		industrial_score = 4000
-		NOT = { industrial_score = 8000 }
-	}
-	icon = 12
-	factory_throughput = -0.40
-	prestige = 0.08
-}
-
 excessive_industry_1850 = {
 	trigger = {
 		NOT = { year = 1860 }
@@ -507,16 +496,6 @@ excessive_industry_1920 = {
 	icon = 12
 	factory_throughput = -0.70
 	prestige = 0.14
-}
-
-excessive_industry_1940 = {
-	trigger = {
-		year = 1940
-		industrial_score = 8000
-	}
-	icon = 12
-	factory_throughput = -0.80
-	prestige = 0.16
 }
 
 winds_of_change = {

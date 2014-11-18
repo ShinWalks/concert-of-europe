@@ -461,6 +461,48 @@ political_decisions = {
 		}
 	}
 	
+	restore_spanish_absolutism = {
+		picture = spanish_restoration
+		potential = {
+			tag = FRA
+			war_with = SPA
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+			}
+			SPA = {
+				government = hms_government
+				NOT = { state_n_government = 1 }
+			}
+			NOT = { has_country_flag = spanish_absolutism_restored }
+		}
+	
+		allow = {
+			war_with = SPA
+			SPA = {
+				war_exhaustion = 25
+				national_provinces_occupied = 0.25
+				OR = {
+					war_exhaustion = 75
+					national_provinces_occupied = 0.5
+					AND = {
+						487 = { controlled_by = THIS } #Madrid
+						512 = { controlled_by = THIS } #Cadiz
+					}
+				}
+			}
+		}
+	
+		effect = {
+			set_country_flag = spanish_absolutism_restored
+			SPA = { country_event = 37763 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	FRA_setup = {
 		potential = {
 			tag = FRA

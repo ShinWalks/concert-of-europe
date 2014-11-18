@@ -23,10 +23,9 @@ ENG_258;Connacht;;;;;;;;;;;;x
 ENG_263;Leinster;;;;;;;;;;;;x
 SWE_322;Stockholm;;;;;;;;;;;;x
 SWE_329;Göteborg;;;;;;;;;;;;x
-SWE_334; Malmö;;;;;;;;;;;;x
+SWE_334;Malmö;;;;;;;;;;;;x
 RUS_343;Helsinki;;;;;;;;;;;;x
 RUS_345;Turku;;;;;;;;;;;;x
-RUS_360;Lithuania;;;;;;;;;;;;x
 HOL_369;Holstein;;;;;;;;;;;;x
 SCH_370;Schleswig;;;;;;;;;;;;x
 NET_379;Zeeland;;;;;;;;;;;;x
@@ -75,11 +74,7 @@ TUR_893;Diyarbakir;;;;;;;;;;;;x
 TUR_894;Adana;;;;;;;;;;;;x
 RUS_940;Pinsk;;;;;;;;;;;;x
 PROV950;Uzhgorod;;;;;;;;;;;;x
-RUS_955;Podillia;;;;;;;;;;;;x
-RUS_968;Transnistria;;;;;;;;;;;;x
 RUS_973;Zaporizhia;;;;;;;;;;;;x
-RUS_978;Kharkov;;;;;;;;;;;;x
-RUS_979;Donbass;;;;;;;;;;;;x
 PROV1082;Haishenwai;;;;;;;;;;;;x
 JAP_1086;Sakhalin;;;;;;;;;;;;x
 PROV1087;Otomari;;;;;;;;;;;;x

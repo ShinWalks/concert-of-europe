@@ -1729,3 +1729,195 @@ country_event = {
 		}
 	}
 }
+
+#########################################################
+#														#
+#  				Liberal Wars Events 					#
+#														#
+#########################################################
+
+country_event = {
+	id = 97030
+	title = "EVTNAME97030" #Death of John VI
+	desc = "EVTDESC97030"
+	picture = "carlists"
+	
+	trigger = {
+		tag = POR
+		exists = yes
+		year = 1825
+		NOT = {
+			year = 1836
+			war_with = BRZ
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Pedro will give the crown to Maria and reaffirm the constitution."
+		relation = { who = BRZ value = 200 }
+		alliance = BRZ
+		any_pop = {
+			limit = {
+				type = aristocrats
+			}
+			ideology = {
+				value = conservative
+				factor = 0.2
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.15
+			}
+		}
+		any_pop = {
+			ideology = {
+				value = conservative
+				factor = 0.2
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.05
+			}
+			scaled_militancy = {
+				factor = 10
+				ideology = conservative
+			}
+			scaled_militancy = {
+				factor = 20
+				ideology = reactionary
+			}
+		}
+		add_country_modifier = {
+			name = conservative_reaction
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "Miguel will become king and abrogate the constitution."
+		political_reform = appointed
+		political_reform = underground_parties
+		political_reform = none_voting
+		government = absolute_monarchy
+		ruling_party_ideology = reactionary
+		relation = { who = BRZ value = -100 }
+		leave_alliance = BRZ
+		any_greater_power = {
+			diplomatic_influence = { who = THIS value = -100 }
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					type = capitalists
+					type = bureaucrats
+					type = artisans
+				}
+			}
+			ideology = {
+				value = liberal
+				factor = 0.25
+			}
+		}
+		any_pop = {
+			ideology = {
+				value = liberal
+				factor = 0.2
+			}
+			scaled_militancy = {
+				factor = 20
+				ideology = liberal
+			}
+		}
+		add_country_modifier = {
+			name = liberal_reaction
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = national_confusion
+			duration = 365
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {
+	id = 97031
+	title = "EVTNAME97031" #Pedro seeks liberal support
+	desc = "EVTDESC97031"
+	picture = "carlists"
+	
+	trigger = {
+		is_greater_power = yes
+		capital_scope = { continent = europe }
+		OR = {
+			government = hms_government
+			government = democracy
+		}
+		POR = { government = absolute_monarchy }
+		NOT = {
+			year = 1836
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+		name = "We can offer Pedro some support."
+		prestige = 3
+		clipper_convoy = -2
+		small_arms = -5
+		artillery = -2
+		ammunition = -5
+		money = -50000
+		diplomatic_influence = { who = POR value = 50 }
+		POR = {
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 518 #Porto
+						province_id = 527 #Faro
+						province_id = 2134 #Azores
+					}
+				}
+				any_pop = {
+					ideology = {
+						value = liberal
+						factor = 0.2
+					}
+					scaled_militancy = {
+						factor = 20
+						ideology = liberal
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.5
+				war = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "We cannot become involved in their civil war."
+		prestige = -3
+		ai_chance = {
+			factor = 20
+		}
+	}
+}

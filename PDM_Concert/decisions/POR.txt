@@ -793,6 +793,7 @@ political_decisions = {
 					has_pop_culture = brazilian
 				}
 				literacy = 0.06
+				consciousness = 4
 			}
 		}
 	}

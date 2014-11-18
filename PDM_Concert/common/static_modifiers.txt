@@ -9,8 +9,6 @@
 # Difficulty Modifiers
 ##########################################################################
 
-
-
 very_easy_player = {
 	supply_consumption = -0.5
 	research_points_modifier = 0.5
@@ -35,7 +33,6 @@ very_hard_player = {
 very_easy_ai = {
 	land_organisation = -0.25
 	naval_organisation = -0.25
-
 }
 
 easy_ai = {

@@ -4,6 +4,7 @@ add_core = PNM
 trade_goods = coffee
 life_rating = 30
 terrain = jungle_farmland
+colonial = 1
 revolt = {
 	type = nationalist_rebels
 	country = PNM
@@ -13,4 +14,5 @@ revolt = {
 	owner = CLM
 	controller = CLM
 	add_core = CLM
+	colonial = 0
 }

@@ -151,6 +151,8 @@ oob = "/1821/FRA_oob.txt"
 	commerce_raiders = yes
 	
 	oob = "FRA_oob.txt"
+	
+	set_country_flag = spanish_absolutism_restored
 }
 
 
