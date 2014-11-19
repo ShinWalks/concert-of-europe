@@ -727,8 +727,7 @@ political_decisions = {
 			prestige = 10
 			LAT = { all_core = { add_core = UBD } }
 			EST = { all_core = { add_core = UBD } }
-			RUS_360 = { all_core = { add_core = UBD } } #Lithuania
-			698 = { all_core = { add_core = UBD } } #Memel
+			LIT = { all_core = { add_core = UBD } }
 			add_accepted_culture = latvian
 			add_accepted_culture = estonian
 			add_accepted_culture = lithuanian
@@ -868,8 +867,7 @@ political_decisions = {
 			}
 			LAT = { all_core = { add_core = UBD } }
 			EST = { all_core = { add_core = UBD } }
-			RUS_360 = { all_core = { add_core = UBD } } #Lithuania
-			698 = { all_core = { add_core = UBD } } #Memel
+			LIT = { all_core = { add_core = UBD } }
 			any_owned = {
 				limit = {
 					is_core = THIS

@@ -81,6 +81,104 @@ political_decisions = {
 		}
 	}
 	
+	breslau_treaty = {
+		picture = enact_dual_monarchy
+		potential = {
+			OR = {
+				tag = AUS
+				tag = KUK
+				tag = DNB
+			}
+			is_greater_power = yes
+			owns = 625 #Prague
+			state_n_government = 1
+			NOT = {
+				has_country_flag = breslau_treaty
+				exists = NGF
+				exists = GER
+			}
+		}
+		allow = {
+			war = no
+			684 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					AND = {
+						owned_by = PRU
+						PRU = { truce_with = THIS }
+						NOT = {
+							ANH = { in_sphere = PRU }
+							BRA = { in_sphere = PRU }
+							BRE = { in_sphere = PRU }
+							COB = { in_sphere = PRU }
+							DZG = { in_sphere = PRU }
+							FRM = { in_sphere = PRU }
+							HAM = { in_sphere = PRU }
+							HAN = { in_sphere = PRU }
+							HEK = { in_sphere = PRU }
+							HES = { in_sphere = PRU }
+							HOL = { in_sphere = PRU }
+							LIP = { in_sphere = PRU }
+							LUB = { in_sphere = PRU }
+							MEC = { in_sphere = PRU }
+							MEI = { in_sphere = PRU }
+							NAS = { in_sphere = PRU }
+							OLD = { in_sphere = PRU }
+							RHI = { in_sphere = PRU }
+							SAA = { in_sphere = PRU }
+							SAX = { in_sphere = PRU }
+							SCH = { in_sphere = PRU }
+							SWH = { in_sphere = PRU }
+							WEI = { in_sphere = PRU }
+							WES = { in_sphere = PRU }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = breslau_treaty
+			add_accepted_culture = north_german
+			PRU_684 = { #Upper Silesia
+				add_core = THIS
+				remove_core = GER
+			}
+			random_country = {
+				limit = {
+					tag = SLS
+					in_sphere = THIS
+					owns = 682
+				}
+				PRU_682 = { #Lower Silesia
+					add_core = THIS
+					remove_core = GER
+				}
+			}
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						truce_with = THIS
+					}
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							region = PRU_684
+							region = PRU_682
+						}
+						is_core = THIS
+					}
+					secede_province = THIS
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	the_grunderzeit = {
 		potential = {
 			capital = 619
