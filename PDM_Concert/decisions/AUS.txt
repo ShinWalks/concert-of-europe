@@ -178,6 +178,171 @@ political_decisions = {
 		}
 	}
 	
+	potsdam_treaty = {
+		picture = form_germany
+		potential = {
+			OR = {
+				tag = AUS
+				tag = KUK
+				tag = DNB
+			}
+			is_greater_power = yes
+			has_country_flag = reassert_confederation
+			NOT = {
+				has_country_flag = potsdam_treaty
+				exists = NGF
+				exists = GER
+			}
+		}
+		allow = {
+			war = no
+			has_recently_lost_war = no
+			PRU = {
+				truce_with = THIS
+				is_disarmed = yes
+			}
+			NOT = {
+				ANH = { in_sphere = PRU }
+				BRA = { in_sphere = PRU }
+				BRE = { in_sphere = PRU }
+				COB = { in_sphere = PRU }
+				DZG = { in_sphere = PRU }
+				FRM = { in_sphere = PRU }
+				HAM = { in_sphere = PRU }
+				HAN = { in_sphere = PRU }
+				HEK = { in_sphere = PRU }
+				HES = { in_sphere = PRU }
+				HOL = { in_sphere = PRU }
+				LIP = { in_sphere = PRU }
+				LUB = { in_sphere = PRU }
+				MEC = { in_sphere = PRU }
+				MEI = { in_sphere = PRU }
+				NAS = { in_sphere = PRU }
+				OLD = { in_sphere = PRU }
+				RHI = { in_sphere = PRU }
+				SAA = { in_sphere = PRU }
+				SAX = { in_sphere = PRU }
+				SCH = { in_sphere = PRU }
+				SWH = { in_sphere = PRU }
+				WEI = { in_sphere = PRU }
+				WES = { in_sphere = PRU }
+			}
+		}
+		effect = {
+			set_country_flag = potsdam_treaty
+			prestige = 15
+			badboy = 25
+			PRU_684 = { remove_core = PRU } #Upper Silesia
+			PRU_682 = { remove_core = PRU } #Lower Silesia
+			PRU_553 = { #Anhalt
+				add_core = ANH
+				remove_core = PRU
+			}
+			554 = { #Erfurt
+				add_core = WEI
+				remove_core = PRU
+			}
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_german
+						primary_culture = south_german
+					}
+					is_greater_power = no
+				}
+				annex_to = THIS
+			}
+			PRU = {
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = ANH
+							is_core = BRA
+							is_core = BRE
+							is_core = COB
+							is_core = DZG
+							is_core = FRM
+							is_core = HAM
+							is_core = HAN
+							is_core = HEK
+							is_core = HES
+							is_core = HOL
+							is_core = LIP
+							is_core = LUB
+							is_core = LUX
+							is_core = MEC
+							is_core = MEI
+							is_core = NAS
+							is_core = OLD
+							is_core = RHI
+							is_core = WES
+							is_core = SAA
+							is_core = SAX
+							is_core = SCH
+							is_core = SWH
+							is_core = WEI
+							is_core = WES
+							is_core = THIS
+						}
+					}
+					secede_province = THIS
+				}
+				prestige = -1000
+			}
+			release_vassal = ANH
+			diplomatic_influence = { who = ANH value = 200 }
+			release_vassal = BRA
+			diplomatic_influence = { who = BRA value = 200 }
+			release_vassal = BRE
+			diplomatic_influence = { who = BRE value = 200 }
+			release_vassal = COB
+			diplomatic_influence = { who = COB value = 200 }
+			release_vassal = DZG
+			diplomatic_influence = { who = DZG value = 200 }
+			release_vassal = FRM
+			diplomatic_influence = { who = FRM value = 200 }
+			release_vassal = HAM
+			diplomatic_influence = { who = HAM value = 200 }
+			release_vassal = HAN
+			diplomatic_influence = { who = HAN value = 200 }
+			release_vassal = HEK
+			diplomatic_influence = { who = HEK value = 200 }
+			release_vassal = HES
+			diplomatic_influence = { who = HES value = 200 }
+			release_vassal = HOL
+			diplomatic_influence = { who = HOL value = 200 }
+			release_vassal = LIP
+			diplomatic_influence = { who = LIP value = 200 }
+			release_vassal = LUB
+			diplomatic_influence = { who = LUB value = 200 }
+			release_vassal = LUX
+			diplomatic_influence = { who = LUX value = 200 }
+			release_vassal = MEC
+			diplomatic_influence = { who = MEC value = 200 }
+			release_vassal = MEI
+			diplomatic_influence = { who = MEI value = 200 }
+			release_vassal = NAS
+			diplomatic_influence = { who = NAS value = 200 }
+			release_vassal = OLD
+			diplomatic_influence = { who = OLD value = 200 }
+			release_vassal = RHI
+			diplomatic_influence = { who = RHI value = 200 }
+			release_vassal = SAA
+			diplomatic_influence = { who = SAA value = 200 }
+			release_vassal = SAX
+			diplomatic_influence = { who = SAX value = 200 }
+			release_vassal = SCH
+			diplomatic_influence = { who = SCH value = 200 }
+			release_vassal = WEI
+			diplomatic_influence = { who = WEI value = 200 }
+			release_vassal = WES
+			diplomatic_influence = { who = WES value = 200 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	the_grunderzeit = {
 		potential = {
 			capital = 619

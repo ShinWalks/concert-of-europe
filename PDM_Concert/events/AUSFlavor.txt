@@ -458,6 +458,45 @@ country_event = {
 }
 
 country_event = {
+	id = 31520
+	title = "EVTNAME31520" #The German Confederation
+	desc = "EVTDESC31520"
+	picture = "threehurrahs"
+	trigger = {
+		OR = {
+			tag = AUS
+			tag = KUK
+			tag = DNB
+		}
+		has_country_flag = breslau_treaty
+		nationalism_n_imperialism = 1
+		is_greater_power = yes
+		owns = 684 #Oppeln
+		owns = 682 #Breslau
+		exists = PRU
+		war = no
+		NOT = {
+			has_country_flag = reassert_confederation
+			exists = NGF
+			exists = GER
+			truce_with = PRU
+		}
+	}
+	mean_time_to_happen =  {
+		months = 3
+	}
+	option = {
+		name = "We will make preparations for war."
+		set_country_flag = reassert_confederation
+		casus_belli = {
+			target = PRU
+			type = cut_down_to_size
+			months = 60
+		}
+	}
+}
+
+country_event = {
 
 	id = 98007 # Hungarian Revolutionaries demand free press
 
