@@ -343,9 +343,11 @@ AUS_654 = { 654 655 656 661 651 647 } #Western Transylvania
 
 AUS_657 = { 657 659 660 2533 } #Eastern Transylvania
 
-AUS_702 = { 702 704 705 714 951 952 953 } #Galicia-Lodomeria
+AUS_702 = { 702 951 952 953 } #Galicia
 
-RUS_715 = { 715 711 713 716 703 } #West Galicia
+AUS_703 = { 703 705 704 714 } #Lesser Poland
+
+RUS_715 = { 715 711 713 716 } #West Galicia
 
 AUS_726 = { 726 727 728 } #Lombardia
 

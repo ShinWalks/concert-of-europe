@@ -44,6 +44,8 @@ SPA_474;Galicia-Asturias;;;;;;;;;;;;x
 SPA_477;Castilla-León;;;;;;;;;;;;x
 SWI_605;German Switzerland;;;;;;;;;;;;x
 SWI_607;French Switzerland;;;;;;;;;;;;x
+AUS_702;Galicia;;;;;;;;;;;;x
+AUS_703;Lesser Poland;;;;;;;;;;;;x
 RUS_707;Suwalki;;;;;;;;;;;;x
 SIC_760;Calabria;;;;;;;;;;;;x
 TUR_824;Epirus;;;;;;;;;;;;x
@@ -239,16 +241,18 @@ PNJ_embrace_kashmiri_minority_title;Embrace the Kashmiri;;;;;;;;;;;;;x
 PNJ_embrace_kashmiri_minority_desc;The Sikh Empire is a secular, tolerant state. We shall embrace the Kashmiri lands under our dominion, and together forge a nation even stronger than before.;;;;;;;;;;;;;x
 PNJ_embrace_baluchi_minority_title;Embrace the Baluch;;;;;;;;;;;;;x
 PNJ_embrace_baluchi_minority_desc;The Sikh Empire is a secular, tolerant state. We shall embrace the Baluchi lands under our dominion, and together forge a nation even stronger than before.;;;;;;;;;;;;;x
-italian_islands_title;The Italian Islands;;;;;;;;;;;;x;
-italian_islands_desc;In the Middle Ages Corsica belonged to Genoa, Malta to Sicily, and the Ionian Islands to Venice. Significant Italian communities still inhabit these islands. It is time the world recognized the truth: Malta, Corsica and the Ionian Islands are rightfully Italian territories.;;;;;;;;;;;;x;
-italian_dalmatia_title;Italian Dalmatia;;;;;;;;;;;;x;
-italian_dalmatia_desc;We should restore the classic Italian names of the cities on the Dalmatian coast.;;;;;;;;;;;;x;
-south_slavic_dalmatia_title;Slavic Dalmatia;;;;;;;;;;;;x;
-south_slavic_dalmatia_desc;We should restore the Slavic names of the cities on the Dalmatian coast.;;;;;;;;;;;;x;
-italian_trentino_title;Italian Trentino;;;;;;;;;;;;x;
-italian_trentino_desc;The Trentino has always been Italian land, and its Italian name should be restored. As for South Tyrol... we will find some fitting names.;;;;;;;;;;;;x;
-german_tyrol_title;German South Tirol;;;;;;;;;;;;x;
-german_tyrol_desc;South Tyrol has always been German land, and its German name should be restored. As for Trent... we will find some fitting names.;;;;;;;;;;;;x;
+italian_islands_title;The Italian Islands;;;;;;;;;;;;x
+italian_islands_desc;In the Middle Ages Corsica belonged to Genoa, Malta to Sicily, and the Ionian Islands to Venice. Significant Italian communities still inhabit these islands. It is time the world recognized the truth: Malta, Corsica and the Ionian Islands are rightfully Italian territories.;;;;;;;;;;;;x
+italian_dalmatia_title;Italian Dalmatia;;;;;;;;;;;;x
+italian_dalmatia_desc;We should restore the classic Italian names of the cities on the Dalmatian coast.;;;;;;;;;;;;x
+south_slavic_dalmatia_title;Slavic Dalmatia;;;;;;;;;;;;x
+south_slavic_dalmatia_desc;We should restore the Slavic names of the cities on the Dalmatian coast.;;;;;;;;;;;;x
+italian_trentino_title;Italian Trentino;;;;;;;;;;;;x
+italian_trentino_desc;The Trentino has always been Italian land, and its Italian name should be restored. As for South Tyrol... we will find some fitting names.;;;;;;;;;;;;x
+german_tyrol_title;German South Tirol;;;;;;;;;;;;x
+german_tyrol_desc;South Tyrol has always been German land, and its German name should be restored. As for Trent... we will find some fitting names.;;;;;;;;;;;;x
+breslau_treaty_title;Treaty of Breslau;;;;;;;;;;;;x
+breslau_treaty_desc;Having conclusively demonstrated Austria's superiority over Prussia, we can now right a wrong by reclaiming Silesia as a rightful part of our patrimony.;;;;;;;;;;;;x
 primus_inter_pares_title;Primus Inter Pares;Primus Inter Pares;Primus Inter Pares;;;;;;;;;;;x
 primus_inter_pares_desc;The kings of Hungary are considered to be first among equals within the aristocracy, and have rarely held absolute power. Even in the middle ages our kings were elected to their position by the Estates. During later times certain aristocrats even gained the right of insurgency, should the king behave tyrannically. Now, at the dawn of this new age, the evolution of state, government and political parties make reform necessary. It is time for our monarch, in accordance with the Estates, to give a constitution to His people, and lead us into a new chapter of Hungarian history.;;;;;;;;;;;;;x
 tizenket_pont_title;The Twelve Points;;;;;;;;;;;;;x

@@ -215,7 +215,8 @@ political_decisions = {
 			set_country_flag = king_of_galicia
 			prestige = 10
 			badboy = 6
-			AUS_702 = { add_core = HUN }
+			AUS_703 = { add_core = HUN } #Lesser Poland
+			AUS_702 = { add_core = HUN } #Galicia
 		}
 		
 		ai_will_do = {
