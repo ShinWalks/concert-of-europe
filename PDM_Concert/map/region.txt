@@ -343,9 +343,9 @@ AUS_654 = { 654 655 656 661 651 647 } #Western Transylvania
 
 AUS_657 = { 657 659 660 2533 } #Eastern Transylvania
 
-AUS_702 = { 702 951 952 953 } #Galicia
+AUS_702 = { 702 951 952 953 705 } #Galicia
 
-AUS_703 = { 703 705 704 714 } #Lesser Poland
+AUS_703 = { 703 704 3253 714 } #Lesser Poland
 
 RUS_715 = { 715 711 713 716 } #West Galicia
 

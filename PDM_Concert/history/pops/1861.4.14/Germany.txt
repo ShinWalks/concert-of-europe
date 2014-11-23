@@ -3444,19 +3444,19 @@
 	aristocrats = {
 		culture = north_german
 		religion = catholic
-		size = 1060.0
+		size = 960.0
 	}
 
 	clergymen = {
 		culture = north_german
 		religion = catholic
-		size = 901.0
+		size = 626.0
 	}
 
 	artisans = {
 		culture = north_german
 		religion = catholic
-		size = 4770.0
+		size = 3520.0
 	}
 
 	soldiers = {
@@ -3469,7 +3469,33 @@
 	farmers = {
 		culture = north_german
 		religion = catholic
-		size = 95877.0
+		size = 70877.0
+	}
+}
+#Eupen (400000/100000 POPS)
+3249 = {
+	aristocrats = {
+		culture = north_german
+		religion = catholic
+		size = 100
+	}
+
+	clergymen = {
+		culture = north_german
+		religion = catholic
+		size = 275.0
+	}
+
+	artisans = {
+		culture = north_german
+		religion = catholic
+		size = 1250
+	}
+
+	farmers = {
+		culture = north_german
+		religion = catholic
+		size = 25000
 	}
 
 	clergymen = {

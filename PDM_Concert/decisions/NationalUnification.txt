@@ -102,93 +102,93 @@ political_decisions = {
 		}
 	}
 	
-	austrian_form_south_german_confederation = {
-		potential = {
-			OR = {
-				AND = {
-					tag = AUS
-					any_owned_province = {
-						NOT = { 
-							is_core = AUS
-							is_core = GER
-							is_colonial = yes
-						}
-					}
-				}
-				tag = KUK
-			}
-			is_greater_power = yes
-			primary_culture = south_german
-			NOT = {
-				exists = GER
-				exists = SGF
-				has_country_flag = austrian_greater_germany
-			}
-		}	
-		allow = {
-			war = no
-			state_n_government = 1
-			GER = {
-				all_core = {
-					OR = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-								OR = {
-									is_vassal = no
-									vassal_of = THIS
-								}
-								war = no
-								ai = yes
-								is_greater_power = no
-							}
-						}
-						NOT = { culture = south_german }
-					}
-				}
-			}
-		}
-		
-		effect = {
-			prestige = 10
-			FRA_412 = { add_core = GER }
-			any_country = {
-				limit = {
-					OR = {
-						tag = WUR
-						tag = BAD
-						tag = BAV
-					}
-					in_sphere = THIS
-				}
-				annex_to = THIS
-			}
-			any_owned = {
-				limit = {
-					OR = {
-						culture = south_german
-						province_id = 412
-					}
-					is_core = GER
-					NOT = {
-						is_core = AUS
-						is_core = KUK
-					}
-					NOT = { has_country_flag = post_colonial_country }
-				}
-				add_core = SGF
-			}
-			release_vassal = SGF
-			diplomatic_influence = {
-				who = SGF
-				value = 300
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+#	austrian_form_south_german_confederation = {
+#		potential = {
+#			OR = {
+#				AND = {
+#					tag = AUS
+#					any_owned_province = {
+#						NOT = { 
+#							is_core = AUS
+#							is_core = GER
+#							is_colonial = yes
+#						}
+#					}
+#				}
+#				tag = KUK
+#			}
+#			is_greater_power = yes
+#			primary_culture = south_german
+#			NOT = {
+#				exists = GER
+#				exists = SGF
+#				has_country_flag = austrian_greater_germany
+#			}
+#		}	
+#		allow = {
+#			war = no
+#			state_n_government = 1
+#			GER = {
+#				all_core = {
+#					OR = {
+#						OR = {
+#							owned_by = THIS
+#							owner = {
+#								in_sphere = THIS
+#								OR = {
+#									is_vassal = no
+#									vassal_of = THIS
+#								}
+#								war = no
+#								ai = yes
+#								is_greater_power = no
+#							}
+#						}
+#						NOT = { culture = south_german }
+#					}
+#				}
+#			}
+#		}
+#		
+#		effect = {
+#			prestige = 10
+#			FRA_412 = { add_core = GER }
+#			any_country = {
+#				limit = {
+#					OR = {
+#						tag = WUR
+#						tag = BAD
+#						tag = BAV
+#					}
+#					in_sphere = THIS
+#				}
+#				annex_to = THIS
+#			}
+#			any_owned = {
+#				limit = {
+#					OR = {
+#						culture = south_german
+#						province_id = 412
+#					}
+#					is_core = GER
+#					NOT = {
+#						is_core = AUS
+#						is_core = KUK
+#					}
+#					NOT = { has_country_flag = post_colonial_country }
+#				}
+#				add_core = SGF
+#			}
+#			release_vassal = SGF
+#			diplomatic_influence = {
+#				who = SGF
+#				value = 300
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
 	
 	austrian_form_south_german_confederation2 = {
 		picture = form_south_german_confederation

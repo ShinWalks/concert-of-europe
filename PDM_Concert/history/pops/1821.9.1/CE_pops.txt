@@ -37089,84 +37089,70 @@
 
 	artisans = {
 
-		size = 869
+		size = 640
 		culture = ukrainian
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 5265
+		size = 1265
 		culture = polish
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 4166
+		size = 1000
 		culture = ashkenazi
 		religion = jewish
 
 	}
-	artisans = {
-
-		size = 91
-		culture = south_german
-		religion = catholic
-
-	}
 	clergymen = {
 
-		size = 160
+		size = 120
 		culture = ukrainian
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 1075
+		size = 375
 		culture = polish
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 114
+		size = 50
 		culture = ashkenazi
 		religion = jewish
 
 	}
-	clergymen = {
-
-		size = 45
-		culture = south_german
-		religion = catholic
-
-	}
 	labourers = {
 
-		size = 16208
+		size = 12208
 		culture = ukrainian
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 103956
+		size = 13000
 		culture = polish
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 7531
+		size = 1500
 		culture = ashkenazi
 		religion = jewish
 
 	}
 	labourers = {
 
-		size = 1671
+		size = 671
 		culture = south_german
 		religion = catholic
 
@@ -151431,6 +151417,95 @@
 		size = 600
 		culture = asian_minor
 		religion = animist
+
+	}
+
+}
+
+3253 = {
+
+	artisans = {
+
+		size = 229
+		culture = ukrainian
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 4000
+		culture = polish
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 3166
+		culture = ashkenazi
+		religion = jewish
+
+	}
+	artisans = {
+
+		size = 91
+		culture = south_german
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 40
+		culture = ukrainian
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 700
+		culture = polish
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 64
+		culture = ashkenazi
+		religion = jewish
+
+	}
+	clergymen = {
+
+		size = 45
+		culture = south_german
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 4000
+		culture = ukrainian
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 90956
+		culture = polish
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 6031
+		culture = ashkenazi
+		religion = jewish
+
+	}
+	labourers = {
+
+		size = 1000
+		culture = south_german
+		religion = catholic
 
 	}
 

@@ -32662,37 +32662,37 @@ fort=
 {
 	unit=
 	{
-		x=3152.000000
-		y=1632.000000
+		x=3157.000000
+		y=1627.000000
 	}
 
 	text_position=
 	{
-		x=3151.800049
-		y=1623.500000
+		x=3156.800049
+		y=1618.500000
 	}
-	text_scale=2.899999
+	text_scale=2.399999
 	building_construction=
 	{
-		x=3144.000000
-		y=1632.000000
+		x=3149.000000
+		y=1627.000000
 	}
 	military_construction=
 	{
-		x=3150.000000
-		y=1621.000000
+		x=3155.000000
+		y=1616.000000
 	}
 	factory=
 	{
-		x=3161.000000
-		y=1630.000000
+		x=3166.000000
+		y=1625.000000
 	}
 building_position = 
 	{
 fort=
 		{
-			x=3155.000000
-			y=1616.000000
+			x=3160.000000
+			y=1611.000000
 		}
 
 	}
@@ -86587,15 +86587,16 @@ railroad=
 {
 	unit=
 	{
-		x=2813.000000
-		y=860.000000
+		x=2810.000000
+		y=857.000000
 	}
 
 	text_position=
 	{
-		x=2815.300049
-		y=855.900024
+		x=2807.300049
+		y=851.900024
 	}
+	text_rotation=0.436332
 	text_scale=2.600000
 	building_construction=
 	{
@@ -86622,7 +86623,7 @@ fort=
 
 naval_base=
 		{
-			x=2817.000000
+			x=2811.500000
 			y=852.099976
 		}
 
@@ -87017,6 +87018,15 @@ railroad=
 			y=889.299988
 		}
 
+	naval_base=
+		{
+			x=2819.000000
+			y=852.099976
+		}
+	}
+building_rotation =
+	{
+naval_base=4.625124
 	}
 	spawn_railway_track=
 	{
@@ -131625,5 +131635,46 @@ naval_base=
 building_rotation = 
 	{
 naval_base=2.356194
+	}
+}
+
+#Rzeszow
+3253 = 
+{
+	unit=
+	{
+		x=3147.000000
+		y=1637.000000
+	}
+
+	text_position=
+	{
+		x=3144.800049
+		y=1630.500000
+	}
+	text_scale=6.399999
+	building_construction=
+	{
+		x=3139.000000
+		y=1637.000000
+	}
+	military_construction=
+	{
+		x=3145.000000
+		y=1626.000000
+	}
+	factory=
+	{
+		x=3156.000000
+		y=1635.000000
+	}
+building_position = 
+	{
+fort=
+		{
+			x=3150.000000
+			y=1621.000000
+		}
+
 	}
 }

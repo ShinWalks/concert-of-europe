@@ -99,6 +99,7 @@ PROV3249;Eupen;;;;;;;;;;;;;x
 PROV3250;Guangzhou Wan;;;;;;;;;;;;;x
 PROV3251;Latgale;;;;;;;;;;;;;x
 PROV3252;Nicobar Islands;;;;;;;;;;;;;x
+PROV3253;Rzeszow;;;;;;;;;;;;;x
 incorporate_sudan_title;Incorporate Sudan;;;;;;;;;;;;;x
 incorporate_sudan_desc;We should introduce modern administrative structures to replace tribal governments throughout our new lands in the Sudan. The locals won't like it, but it will bind the region to Egypt permanently.;;;;;;;;;;;;;x
 incorporate_hedjaz_title;Incorporate Hedjaz;;;;;;;;;;;;;x
@@ -279,6 +280,8 @@ reinstate_ken_title;Reinstate the Commission of National Education;;;;;;;;;;;;x
 reinstate_ken_desc;Formed in the late years of the Polish-Lithuanian Commonwealth, the Commission of National Education was Europe's first public education ministry. Though the Commonwealth ended not long thereafter, the Commission can now be reestablished to see to the literacy and education of our nation.;;;;;;;;;;;;x
 2nd_treaty_of_hadiach_title;Second Treaty of Hadiach;;;;;;;;;;;;x
 2nd_treaty_of_hadiach_desc;At the peak of old Poland-Lithuania's powers, it almost signed a treaty to make the Ruthenians a third equal nation within the Commonwealth. We should resurrect this idea and give equal political rights and representation to our eastern regions.;;;;;;;;;;;;x
+create_german_baltic_states_title;Create the Baltic States;;;;;;;;;;;;x
+create_german_baltic_states_desc;Uniting the Baltic nations under a single flag, as a puppet to our nation, will make for a much stronger ally.;;;;;;;;;;;;x
 lithuanian_kaunas_title;Lithuanian Kaunas;;;;;;;;;;;;x
 lithuanian_kaunas_desc;Now that Lithuania has gained its freedom, proper Lithuanian names can be restored to the land.;;;;;;;;;;;;x
 rename_malvinas_title;Las Malvinas son Argentinas;;;;Las Malvinas son Argentinas;;;;;;;;;x
@@ -516,8 +519,8 @@ EVTNAME31295;Succession Crisis;;;;;;;;;;;;;x
 EVTDESC31295;In 1832 the old Pasha of Tripoli abdicated, and his three sons each laid claim to his throne. Factions in the government and military support each, and civil conflict seemed likely. Worse, with the decline Tripolitania had suffered generally since piracy in the Mediterranean became difficult and the trans-Saharan slave trade dried up, the nation looked especially vulnerable to outside powers. The Ottomans seized the moment as an opportunity to reassert direct Imperial rule in the region.;;;;;;;;;;;;;x
 EVTNAME31296;Intervention in Tripolitania?;;;;;;;;;;;;;x
 EVTDESC31296;Tripolitania is a nominal vassal of ours, but in reality the local Pashas have long been effectively independent. Their state has been in steep decline in recent decades, however, and now they are descending into a succession crisis that will likely shatter the nation. This provides both the opportunity and the excuse for us to intervene and reassert direct Imperial rule in Tripoli, for the stability of the region. Shall we call up the armies to install a loyal governor in Tripoli?;;;;;;;;;;;;;x
-EVTNAME31520;The German Confederation;;;;;;;;;;;;;x
-EVTDESC31520;The Vienna Congress established a "German Confederation" to take the place of the Holy Roman Empire. It was meant to serve as a diplomatic forum and customs union, but the rivalry between $COUNTRY$ and Prussia has threatened to shatter German unity. The time has come to put Prussia in its place and reestablish $COUNTRY$ as the preeminent German power. Let us break Prussia's strength, once and for all.;;;;;;;;;;;;;x
+EVTNAME31525;The German Confederation;;;;;;;;;;;;;x
+EVTDESC31525;The Vienna Congress established a "German Confederation" to take the place of the Holy Roman Empire. It was meant to serve as a diplomatic forum and customs union, but the rivalry between $COUNTRY$ and Prussia has threatened to shatter German unity.\nThe time has come to put Prussia in its place and reestablish $COUNTRY$ as the preeminent German power. Let us break Prussia's strength, once and for all, and remind the lesser German states that it is we who lead the Confederation.;;;;;;;;;;;;;x
 EVTNAME32540;A new Russo-Persian War;;;;;;;;;;;;;x
 EVTDESC32540;Persia lost sovereignty over the Azeri Khanates to Russia by the Treaty of Gulistan in 1813. In 1826, encouraged by British advisors, a belligerent faction in the Persian government unilaterally arrested the Russian ambassador and announced its intent to fight for control of the Khanates of the Caucasus, beginning a new Russo-Persian War.;;;;;;;;;;;;;x
 EVTNAME32541;The Treaty of Turkmenchay;;;;;;;;;;;;;x

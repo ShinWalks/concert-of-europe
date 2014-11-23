@@ -143,16 +143,19 @@ political_decisions = {
 			badboy = -10
 			465 = {
 				remove_core = THIS
+				remove_core = ITA
 				add_core = FRA
 				secede_province = FRA
 			}
 			466 = {
 				remove_core = THIS
+				remove_core = ITA
 				add_core = FRA
 				secede_province = FRA
 			}
 			472 = {
 				remove_core = THIS
+				remove_core = ITA
 				add_core = FRA
 				secede_province = FRA
 			}
@@ -510,6 +513,7 @@ political_decisions = {
 				invention = national_fraternity
 				is_greater_power = yes
 			}
+			owns = 726 #Milan
 		}
 
 		effect = {
@@ -546,6 +550,7 @@ political_decisions = {
 				ruling_party_ideology = conservative
 				ruling_party_ideology = fascist
 			}
+			owns = 729 #Venice
 		}
 		
 		effect = {

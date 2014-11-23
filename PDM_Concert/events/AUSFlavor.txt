@@ -458,9 +458,9 @@ country_event = {
 }
 
 country_event = {
-	id = 31520
-	title = "EVTNAME31520" #The German Confederation
-	desc = "EVTDESC31520"
+	id = 31525
+	title = "EVTNAME31525" #The German Confederation
+	desc = "EVTDESC31525"
 	picture = "threehurrahs"
 	trigger = {
 		OR = {
