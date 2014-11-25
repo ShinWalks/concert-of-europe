@@ -49,6 +49,7 @@ country_event = {
 				minorities_reform = protected
 				citizenship_policy = full_citizenship
 			}
+			is_greater_power = yes
 			is_culture_group = arabic
 			is_culture_group = iranian_turanian
 			has_country_flag = arab_revolt

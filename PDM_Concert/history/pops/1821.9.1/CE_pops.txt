@@ -19281,36 +19281,43 @@
 	}
 	artisans = {
 
-		size = 3204
+		size = 1200
 		culture = french
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 2004
+		culture = picard
 		religion = catholic
 
 	}
 	clergymen = {
 
 		size = 640
-		culture = french
+		culture = picard
 		religion = catholic
 
 	}
 	labourers = {
 
 		size = 58788
-		culture = french
+		culture = picard
 		religion = catholic
 
 	}
 	officers = {
 
 		size = 595
-		culture = french
+		culture = picard
 		religion = catholic
 
 	}
 	soldiers = {
 
 		size = 4807
-		culture = french
+		culture = picard
 		religion = catholic
 
 	}

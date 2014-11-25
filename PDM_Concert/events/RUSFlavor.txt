@@ -2560,9 +2560,16 @@ country_event = {
 			}
 			country_event = 32561
 		}
-		DAG = {
-			inherit = AZB
-			inherit = CIR
+		any_country = {
+			limit = {
+				OR = {
+					tag = AZB
+					tag = CIR
+				}
+				exists = yes
+				ai = yes
+			}
+			annex_to = DAG
 		}
 		any_owned = {
 			limit = {
@@ -2596,7 +2603,29 @@ country_event = {
 	
 	option = {
 		name = "Let us answer the call!"
-		change_tag_no_core_switch = DAG
+		inherit = DAG
+		change_tag = DAG
+		RUS = {
+			war = {
+				target = DAG
+				attacker_goal = {
+					casus_belli = conquest_any
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "We will fight, but separately."
+		overlord = {
+			release_vassal = THIS
+			war = {
+				target = THIS
+				attacker_goal = {
+					casus_belli = conquest_any
+				}
+			}
+		}
 	}
 }
 

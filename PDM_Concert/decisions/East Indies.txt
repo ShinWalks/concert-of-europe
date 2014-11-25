@@ -977,7 +977,6 @@ political_decisions = {
 			}
 			LXA = {
 				set_country_flag = Luangprabang
-				government = democracy
 				political_reform = landed_voting
 				set_country_flag = civilize_after_release
 			}

@@ -18,14 +18,14 @@ prestige = 70
 slavery = yes_slavery
 upper_house_composition = appointed
 vote_franschise = landed_voting
-public_meetings = no_meeting
+public_meetings = yes_meeting
 press_rights = free_press
 trade_unions = no_trade_unions
 minorities_reform = limited
 immigration_policy = quota_immigration
 conscription = no_draft
 voting_system = first_past_the_post
-political_parties = underground_parties
+political_parties = gerrymandering
 
 # Social Reforms
 wage_reform = no_minimum_wage
@@ -102,7 +102,7 @@ oob = "/1821/FRA_oob.txt"
 	slavery = yes_slavery
 	upper_house_composition = appointed
 	vote_franschise = landed_voting
-	public_meetings = no_meeting
+	public_meetings = yes_meeting
 	press_rights = free_press
 	trade_unions = no_trade_unions
 	minorities_reform = limited
@@ -153,6 +153,9 @@ oob = "/1821/FRA_oob.txt"
 	oob = "FRA_oob.txt"
 	
 	set_country_flag = spanish_absolutism_restored
+	set_country_flag = charles_x
+	set_country_flag = three_glorious_days
+	set_country_flag = july_revolution
 }
 
 

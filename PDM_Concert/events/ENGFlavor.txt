@@ -2507,6 +2507,9 @@ country_event = {
 		name = "Then we shall leave it at that."
 		prestige = -10
 		treasury = 10000
+		ai_chance = {
+			factor = 75
+		}
 	}
 	
 	option = {
@@ -2516,11 +2519,29 @@ country_event = {
 		diplomatic_influence = { who = FROM value = -100 }
 		relation = { who = FROM value = -50 }
 		leave_alliance = FROM
-		1909 = { add_core = THIS }
 		casus_belli = {
 			target = FROM
-			type = humiliate
+			type = place_in_the_sun
 			months = 12
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				alliance_with = FROM
+			}
+			modifier = {
+				factor = 0.5
+				relation = { who = FROM value = 50 }
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 0
+				war_policy = pacifism
+			}
 		}
 	}
 }

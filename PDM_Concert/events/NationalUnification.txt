@@ -182,7 +182,7 @@ country_event = {
 				all_core = { remove_core = THIS }
 			}
 		}
-		FROM = { inherit = THIS }	
+		FROM = { inherit = THIS }
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -435,7 +435,6 @@ country_event = {
 		}
 	}		
 }
-		
 
 # Removing cores for non-existing countries
 country_event = {

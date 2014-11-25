@@ -1587,6 +1587,9 @@ country_event = {
 				war_with = FROM
 			}
 			end_war = FROM
+			end_war = KOR
+			end_war = TIB
+			end_war = MGL
 		}
 		any_country = {
 			limit = {
@@ -2553,7 +2556,7 @@ country_event = {
 		OR = {
 			AND = {
 				civilized = yes
-				is_greater_power =no
+				is_greater_power = no
 			}
 			AND = {
 				civilized = no

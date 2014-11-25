@@ -3966,12 +3966,16 @@ country_event = {
 		tag = TUR
 		exists = yes
 		is_greater_power = no
-		has_global_flag = great_wars_enabled
+		OR = {
+			has_global_flag = great_wars_enabled
+			nationalism_n_imperialism = 1
+		}
 		NOT = { has_country_flag = turkish_nationalism_activated }
 		OR = {
 			government = absolute_monarchy
 			government = prussian_constitutionalism
 			government = hms_government
+			government = democracy
 		}
 		OR = {
 			lost_national = 0.3
@@ -4078,10 +4082,11 @@ country_event = {
 		tag = TUR
 		exists = yes
 		war = no
+		has_country_flag = turkish_nationalism_activated
 		NOT = { has_country_flag = ottomans_to_turks }		
 		NOT = { government = absolute_monarchy }
 		NOT = { government = prussian_constitutionalism }
-		NOT = { government = hms_government }		
+		NOT = { government = hms_government }
 	}
 	
 	mean_time_to_happen = {

@@ -410,6 +410,36 @@ political_decisions = {
 		}
 	}
 	
+	embrace_wallonians = {
+		picture = embrace_minority
+		potential = {
+			tag = FRA
+			is_greater_power = yes
+			any_owned_province = {
+				is_core = WLL
+				is_core = FRA
+			}
+			NOT = {
+				has_country_flag = embraced_wallonians
+				has_country_flag = enacted_french_schooling
+			}
+		}
+		
+		allow = {
+			war = no
+			is_greater_power = yes
+			any_owned_province = {
+				is_core = WLL
+				is_core = FRA
+			}
+		}
+		
+		effect = {
+			set_country_flag = embraced_wallonians
+			add_accepted_culture = wallonian
+		}
+	}
+	
 	french_language_schooling = {
 		picture = embrace_minority
 		potential = {
@@ -432,6 +462,7 @@ political_decisions = {
 			set_country_flag = enacted_french_schooling
 			remove_accepted_culture = occitan
 			remove_accepted_culture = picard
+			remove_accepted_culture = wallonian
 			random_owned = {
 				limit = {
 					owner = { education = church }
@@ -443,6 +474,7 @@ political_decisions = {
 					OR = {
 						is_core = OCC
 						is_core = BRT
+						is_core = WLL
 						culture = picard
 					}
 				}

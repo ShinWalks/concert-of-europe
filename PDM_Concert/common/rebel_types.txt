@@ -100,8 +100,8 @@ reactionary_rebels = {
 		modifier = {
 			factor = 0
 			OR = {
-				 social_movement = yes
-				 political_movement = yes
+				social_movement = yes
+				political_movement = yes
 			}
 		}
 		modifier = {
@@ -167,6 +167,12 @@ reactionary_rebels = {
 						has_country_modifier = springtime_of_nations
 					}	
 				}
+			}
+		}
+		modifier = {
+			factor = 5
+			country = {
+				has_country_modifier = conservative_reaction
 			}
 		}
 		modifier = {
@@ -349,6 +355,7 @@ reactionary_rebels = {
 		remove_country_modifier = louis_napoleon_iii
 		remove_country_modifier = eleftherios_venizelos
 		remove_country_modifier = simon_bolivar
+		remove_country_modifier = conservative_reaction
 		random_owned = {
 			limit = {
 				owner = {
@@ -1363,6 +1370,8 @@ anarcho_liberal_rebels = {
 		remove_country_modifier = simon_bolivar
 		remove_country_modifier = eleftherios_venizelos
 		remove_country_modifier = simon_bolivar
+		remove_country_modifier = liberal_reaction
+		remove_country_modifier = liberal_agitation
 		random_owned = {
 			limit = {
 				owner = {
@@ -3566,6 +3575,15 @@ liberal_rebels = {
 			}
 		}
 		modifier = {
+			factor = 5
+			country = {
+				OR = {
+					has_country_modifier = liberal_reaction
+					has_country_modifier = liberal_agitation
+				}
+			}
+		}
+		modifier = {
 			factor = 0
 			country = {
 				OR = {
@@ -3588,7 +3606,7 @@ liberal_rebels = {
 				}
 				vote_franschise = universal_voting
 				political_parties = secret_ballots
-				or = {
+				OR = {
 					trade_unions = all_trade_unions
 					trade_unions = non_socialist
 				}
@@ -3848,6 +3866,8 @@ liberal_rebels = {
 		remove_country_modifier = louis_napoleon_iii
 		remove_country_modifier = eleftherios_venizelos
 		remove_country_modifier = simon_bolivar
+		remove_country_modifier = liberal_reaction
+		remove_country_modifier = liberal_agitation
 		random_owned = {
 			limit = {
 				owner = {
