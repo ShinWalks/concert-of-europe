@@ -914,6 +914,7 @@ country_event = {
 	trigger = {
 		tag = SPA
 		exists = yes
+		has_country_flag = carlism_questioned
 		OR = {
 			government = absolute_monarchy
 			government = prussian_constitutionalism
@@ -4428,8 +4429,11 @@ country_event = {
 	}
 	
 	option = {
-		name = "A splendid excuse to invade a neighbor!"
+		name = "A splendid excuse for a war!"
 		relation = { who = FROM value = -50 }
+		any_country = {
+			leave_alliance = FROM
+		}
 		leave_alliance = FROM
 		casus_belli = {
 			target = FROM

@@ -2389,13 +2389,6 @@ country_event = {
 			}
 			call_ally = yes
 		}
-		SPA = {
-			casus_belli = {
-				target = MEX
-				type = make_puppet
-				months = 60
-			}
-		}
 		any_pop = {
 			dominant_issue = {
 				value = jingoism

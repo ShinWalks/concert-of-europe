@@ -251,9 +251,9 @@ SPA_498 = { 498 499 500 501 502 } #Catalonia
 
 SPA_503 = { 503 504 505 506 507 508 } #Valencia
 
-SPA_512 = { 512 509 510 511 517 } #Andalucia
+SPA_512 = { 512 509 510 511 516 } #Andalucia
 
-SPA_513 = { 513 514 515 516 } #Granada
+SPA_513 = { 513 514 515 517 } #Granada
 
 POR_518 = { 518 519 520 } #Douro
 
