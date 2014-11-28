@@ -308,7 +308,7 @@ SWI_607 = { 607 608 609 } #French Switzerland
 
 SWI_2568 = { 2568 611 } #Italian Switzerland
 
-PRU_682 = { 682 683 687 } #Lower Silesia
+PRU_682 = { 682 683 687 3255 3256 } #Lower Silesia
 
 PRU_684 = { 684 685 688 689 2584 } #Upper Silesia
 
@@ -329,7 +329,7 @@ AUS_619 = { 619 620 621 622 624 } #Österreich
 
 AUS_623 = { 623 639 640 642 643 644 } #Transdanubia
 
-AUS_625 = { 625 626 627 628 629 630 } #Bohemia
+AUS_625 = { 625 626 627 628 629 630 3254 } #Bohemia
 
 AUS_626 = { 631 632 } #Moravia
 
@@ -551,7 +551,7 @@ RUS_718 = { 718 940 939 941 942 } #Minsk
 
 RUS_943 = { 943 999 1000 1007 } #Smolensk
 
-RUS_947 = { 944 945 946 948 949 } #Orsha
+RUS_947 = { 944 945 946 948 949 } #Mogilev/Orsha
 
 RUS_955 = { 955 954 } #Podillia
 

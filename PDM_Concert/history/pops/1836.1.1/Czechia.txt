@@ -17,7 +17,7 @@
 	clergymen = {
 		culture = czech
 		religion = catholic
-		size = 3625
+		size = 2900
 	}
 
 	artisans = {
@@ -29,7 +29,7 @@
 	artisans = {
 		culture = czech
 		religion = catholic
-		size = 8000
+		size = 5400
 	}
 
 	soldiers = {
@@ -39,17 +39,10 @@
 
 	}
 
-	soldiers = {
-		culture = czech
-		religion = catholic
-		size= 750
-
-	}
-
 	farmers = {
 		culture = czech
 		religion = catholic
-		size = 353325
+		size = 288325
 	}
 
 	aristocrats = {
@@ -73,19 +66,13 @@
 	clergymen = {
 		culture = south_german
 		religion = catholic
-		size = 275
+		size = 200
 	}
 
 	artisans = {
 		culture = south_german
 		religion = catholic
-		size = 10000
-	}
-	
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 2000
+		size = 9600
 	}
 
 	soldiers = {
@@ -98,7 +85,7 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 11775 
+		size = 9475 
 	}
 
 	clergymen = {
@@ -110,7 +97,7 @@
 	artisans = {
 		culture = south_german
 		religion = jewish
-		size = 5000
+		size = 4000
 	}
 
 	soldiers = {
@@ -123,7 +110,7 @@
 	farmers = {
 		culture = south_german
 		religion = jewish
-		size = 1850 
+		size = 1500 
 	}
 }
 #Hradec Kralove (528000/132000 POPS)
@@ -516,6 +503,62 @@
 		size = 925  
 	}
 }
+#Pardubice
+3254 = {
+	clergymen = {
+		culture = czech
+		religion = catholic
+		size = 900
+	}
+	
+	artisans = {
+		culture = czech
+		religion = catholic
+		size = 4550
+	}
+
+	soldiers = {
+		culture = czech
+		religion = catholic
+		size= 950
+	}
+
+	farmers = {
+		culture = czech
+		religion = catholic
+		size = 82500
+	}
+
+	clergymen = {
+		culture = south_german
+		religion = catholic
+		size = 140
+	}
+	
+	artisans = {
+		culture = south_german
+		religion = catholic
+		size = 3050
+	}
+
+	farmers = {
+		culture = south_german
+		religion = catholic
+		size = 8100
+	}
+
+	artisans = {
+		culture = south_german
+		religion = jewish
+		size = 1250
+	}
+
+	farmers = {
+		culture = south_german
+		religion = jewish
+		size = 480
+	}
+}
 #Moravia Region (1476000) 
 #under the rule of Austria in 1836  
 #Brno (1040000/260000 POPS)
@@ -535,26 +578,25 @@
 	clergymen = {
 		culture = czech
 		religion = catholic
-		size = 1825 
+		size = 1650 
 	}
 
 	artisans = {
 		culture = czech
 		religion = catholic
-		size = 9350
+		size = 8400
 	}
 
 	soldiers = {
 		culture = czech
 		religion = catholic
-		size= 1900
-
+		size = 1700
 	}
 
 	farmers = {
 		culture = czech
 		religion = catholic
-		size = 173550 
+		size = 156050 
 	}
 
 	aristocrats = {
@@ -578,13 +620,13 @@
 	clergymen = {
 		culture = south_german
 		religion = catholic
-		size = 675  
+		size = 615  
 	}
 
 	artisans = {
 		culture = south_german
 		religion = catholic
-		size = 6500 
+		size = 5850 
 	}
 
 	soldiers = {
@@ -597,7 +639,7 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size = 57925 
+		size = 52125 
 	}
 
 	clergymen = {
@@ -609,7 +651,7 @@
 	artisans = {
 		culture = south_german
 		religion = jewish
-		size = 2500 
+		size = 2250 
 	}
 
 	soldiers = {
@@ -622,7 +664,7 @@
 	farmers = {
 		culture = south_german
 		religion = jewish
-		size = 1370   
+		size = 1240   
 	}
 }
 #Olomouc (436000/109000 POPS)

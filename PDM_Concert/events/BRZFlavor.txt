@@ -646,7 +646,7 @@ country_event = {
 				war = {
 					target = RGS
 					attacker_goal = {
-						casus_belli = annex_core_country
+						casus_belli = conquest_any
 					}
 				}
 			}

@@ -4,4 +4,4 @@ add_core = BOH
 add_core = AUS
 trade_goods = iron
 life_rating = 35
-terrain = deciduous_forest_hills
+terrain = deciduous_forest_mountains

@@ -177,6 +177,9 @@ From;To;Type;Through;Data;Comment
 2568;722;impassable;0;0;Lugano-Novara
 609;722;impassable;0;0;Sitten-Novara
 606;722;impassable;0;0;Lucerne-Novara
+454;720;impassable;0;0;Grenoble-Turin
+471;720;impassable;0;0;Frejus-Turin
+454;471;impassable;0;0;Grenoble-Frejus
 
 #Pyrenees
 

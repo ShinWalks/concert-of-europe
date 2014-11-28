@@ -1411,6 +1411,92 @@ political_decisions = {
 		}
 	}
 	
+	czech_bohemia = {
+		potential = {
+			OR = {
+				tag = BOH
+				tag = CZH
+			}
+			owns = 625 #Prague
+			NOT = {
+				has_global_flag = czech_bohemia
+			}
+		}
+		
+		allow = {
+			owns = 625
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = czech_bohemia
+			625 = { change_province_name = "Praha" }
+			626 = { change_province_name = "Hradec Králové" }
+			627 = { change_province_name = "Karlovy Vary" }
+			628 = { change_province_name = "Liberec" }
+			629 = { change_province_name = "Plzen" }
+			630 = { change_province_name = "Budejovice" }
+			3254 = { change_province_name = "Pardubice" }
+			prestige = 5
+			AUS = { prestige = -3 }
+			KUK = { prestige = -3 }
+		}
+	}
+	
+	czech_moravia = {
+		potential = {
+			OR = {
+				tag = BOH
+				tag = CZH
+			}
+			owns = 631 #Brno
+			NOT = {
+				has_global_flag = czech_moravia
+			}
+		}
+		
+		allow = {
+			owns = 631
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = czech_moravia
+			631 = { change_province_name = "Brno" }
+			632 = { change_province_name = "Olomouc" }
+			prestige = 2
+			AUS = { prestige = -1 }
+			KUK = { prestige = -1 }
+		}
+	}
+	
+	czech_silesia = {
+		potential = {
+			OR = {
+				tag = BOH
+				tag = CZH
+			}
+			owns = 688 #Troppau
+			NOT = {
+				has_global_flag = czech_silesia
+			}
+		}
+		
+		allow = {
+			owns = 688
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = czech_silesia
+			688 = { change_province_name = "Opava" }
+			689 = { change_province_name = "Tešín" }
+			prestige = 2
+			AUS = { prestige = -1 }
+			KUK = { prestige = -1 }
+		}
+	}
+	
 	AUS_setup = {
 		potential = {
 			tag = AUS

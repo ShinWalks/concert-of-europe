@@ -1026,11 +1026,72 @@ political_decisions = {
 		effect = {
 			set_global_flag = lithuanian_kaunas
 			361 = { change_province_name = "Kaunas" }
+			state_scope = {
+				change_region_name = "Kaunas"
+			}
 			363 = { change_province_name = "Panevezys" }
 			364 = { change_province_name = "Siauliai" }
 			365 = { change_province_name = "Palanga" }
-			prestige = 3
-			RUS = { prestige = -2 }
+			prestige = 2
+			RUS = { prestige = -1 }
+		}
+	}
+	
+	latvian_courland = {
+		picture = form_baltic_states
+		potential = {
+			OR = {
+				tag = LAT
+				tag = PLC
+				tag = UBD
+			}
+			owns = 357 #Mitau/Jelgava
+			NOT = {
+				has_global_flag = latvian_courland
+			}
+		}
+		
+		allow = {
+			owns = 357
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = latvian_courland
+			357 = { change_province_name = "Jelgava" }
+			358 = { change_province_name = "Ventspils" }
+			359 = { change_province_name = "Liepaja" }
+			356 = { change_province_name = "Jēkabpils" }
+			prestige = 2
+			RUS = { prestige = -1 }
+		}
+	}
+	
+	latvian_livonia = {
+		picture = form_baltic_states
+		potential = {
+			OR = {
+				tag = LAT
+				tag = PLC
+				tag = UBD
+			}
+			owns = 354 #Riga
+			NOT = {
+				has_global_flag = latvian_livonia
+			}
+		}
+		
+		allow = {
+			owns = 354
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = latvian_livonia
+			355 = { change_province_name = "Valmiera" }
+			3251 = { change_province_name = "Daugavpils" }
+			prestige = 2
+			RUS = { prestige = -1 }
 		}
 	}
 }

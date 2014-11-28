@@ -30091,7 +30091,7 @@
 	}
 	artisans = {
 
-		size = 7327
+		size = 4327
 		culture = czech
 		religion = catholic
 
@@ -30105,14 +30105,7 @@
 	}
 	artisans = {
 
-		size = 1831
-		culture = south_german
-		religion = catholic
-
-	}
-	artisans = {
-
-		size = 4578
+		size = 3578
 		culture = south_german
 		religion = jewish
 
@@ -30133,28 +30126,28 @@
 	}
 	clergymen = {
 
-		size = 3319
+		size = 2669
 		culture = czech
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 320
+		size = 250
 		culture = south_german
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 323543
+		size = 259543
 		culture = czech
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 10782
+		size = 8782
 		culture = south_german
 		religion = catholic
 
@@ -30500,21 +30493,21 @@
 	}
 	artisans = {
 
-		size = 8561
+		size = 7711
 		culture = czech
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 5952
+		size = 5352
 		culture = south_german
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 2289
+		size = 2059
 		culture = south_german
 		religion = jewish
 
@@ -30535,28 +30528,28 @@
 	}
 	clergymen = {
 
-		size = 1671
+		size = 1511
 		culture = czech
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 691
+		size = 621
 		culture = south_german
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 158921
+		size = 141421
 		culture = czech
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 53042
+		size = 47742
 		culture = south_german
 		religion = catholic
 
@@ -35261,35 +35254,28 @@
 	}
 	artisans = {
 
-		size = 9157
+		size = 7044
 		culture = north_german
 		religion = protestant
 
 	}
 	artisans = {
 
-		size = 2113
-		culture = north_german
-		religion = protestant
-
-	}
-	artisans = {
-
-		size = 824
+		size = 783
 		culture = south_german
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 1352
+		size = 352
 		culture = ashkenazi
 		religion = jewish
 
 	}
 	artisans = {
 
-		size = 1602
+		size = 530
 		culture = polish
 		religion = catholic
 
@@ -35310,21 +35296,21 @@
 	}
 	clergymen = {
 
-		size = 1625
+		size = 1000
 		culture = north_german
 		religion = protestant
 
 	}
 	clergymen = {
 
-		size = 160
+		size = 80
 		culture = south_german
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 320
+		size = 110
 		culture = polish
 		religion = catholic
 
@@ -35343,31 +35329,38 @@
 		religion = protestant
 
 	}
-	farmers = {
+	labourers = {
 
-		size = 139291
+		size = 84291
 		culture = north_german
 		religion = protestant
 
 	}
-	farmers = {
+	labourers = {
 
-		size = 14582
+		size = 11947
 		culture = south_german
 		religion = catholic
 
 	}
-	farmers = {
+	labourers = {
 
-		size = 400
+		size = 200
 		culture = ashkenazi
 		religion = jewish
 
 	}
-	farmers = {
+	labourers = {
 
-		size = 29211
+		size = 9211
 		culture = polish
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 847
+		culture = czech
 		religion = catholic
 
 	}
@@ -35412,50 +35405,36 @@
 	}
 	artisans = {
 
-		size = 183
-		culture = south_german
-		religion = catholic
-
-	}
-	artisans = {
-
-		size = 228
+		size = 100
 		culture = polish
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 1007
+		size = 807
 		culture = north_german
 		religion = protestant
 
 	}
 	labourers = {
 
-		size = 92853
+		size = 72853
 		culture = north_german
 		religion = protestant
 
 	}
 	labourers = {
 
-		size = 3365
+		size = 1000
 		culture = south_german
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 4226
+		size = 1226
 		culture = polish
-		religion = catholic
-
-	}
-	labourers = {
-
-		size = 847
-		culture = czech
 		religion = catholic
 
 	}
@@ -151409,7 +151388,6 @@
 	}
 
 }
-
 3252 = {
 
 	clergymen = {
@@ -151428,7 +151406,6 @@
 	}
 
 }
-
 3253 = {
 
 	artisans = {
@@ -151512,6 +151489,200 @@
 
 		size = 1000
 		culture = south_german
+		religion = catholic
+
+	}
+
+}
+3254 = {
+
+	artisans = {
+
+		size = 3850
+		culture = czech
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 2431
+		culture = south_german
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 1230
+		culture = south_german
+		religion = jewish
+
+	}
+	clergymen = {
+
+		size = 810
+		culture = czech
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 140
+		culture = south_german
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 81500
+		culture = czech
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 7300
+		culture = south_german
+		religion = catholic
+
+	}
+
+}
+3255 = {
+
+	artisans = {
+
+		size = 2213
+		culture = north_german
+		religion = protestant
+
+	}
+	artisans = {
+
+		size = 500
+		culture = ashkenazi
+		religion = jewish
+
+	}
+	artisans = {
+
+		size = 600
+		culture = polish
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 425
+		culture = north_german
+		religion = protestant
+
+	}
+	clergymen = {
+
+		size = 100
+		culture = polish
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 40000
+		culture = north_german
+		religion = protestant
+
+	}
+	farmers = {
+
+		size = 100
+		culture = ashkenazi
+		religion = jewish
+
+	}
+	farmers = {
+
+		size = 11000
+		culture = polish
+		religion = catholic
+
+	}
+
+}
+3256 = {
+
+	artisans = {
+
+		size = 2013
+		culture = north_german
+		religion = protestant
+
+	}
+	artisans = {
+
+		size = 224
+		culture = south_german
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 500
+		culture = ashkenazi
+		religion = jewish
+
+	}
+	artisans = {
+
+		size = 600
+		culture = polish
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 400
+		culture = north_german
+		religion = protestant
+
+	}
+	clergymen = {
+
+		size = 80
+		culture = south_german
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 110
+		culture = polish
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 35000
+		culture = north_german
+		religion = protestant
+
+	}
+	farmers = {
+
+		size = 5000
+		culture = south_german
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 100
+		culture = ashkenazi
+		religion = jewish
+
+	}
+	farmers = {
+
+		size = 12000
+		culture = polish
 		religion = catholic
 
 	}
