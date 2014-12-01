@@ -1470,7 +1470,7 @@ political_decisions = {
 		}
 	}
 	
-	czech_silesia = {
+	czech_opava = {
 		potential = {
 			OR = {
 				tag = BOH
@@ -1478,7 +1478,7 @@ political_decisions = {
 			}
 			owns = 688 #Troppau
 			NOT = {
-				has_global_flag = czech_silesia
+				has_global_flag = czech_opava
 			}
 		}
 		
@@ -1488,12 +1488,40 @@ political_decisions = {
 		}
 		
 		effect = {
-			set_global_flag = czech_silesia
+			set_global_flag = czech_opava
 			688 = { change_province_name = "Opava" }
-			689 = { change_province_name = "Tešín" }
-			prestige = 2
+			prestige = 1
 			AUS = { prestige = -1 }
 			KUK = { prestige = -1 }
+		}
+	}
+	
+	czech_tesin = {
+		potential = {
+			OR = {
+				tag = BOH
+				tag = CZH
+			}
+			owns = 689 #Tesin
+			NOT = {
+				has_global_flag = czech_tesin
+			}
+		}
+		
+		allow = {
+			owns = 689
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = czech_tesin
+			clr_global_flag = polish_cieszyn
+			689 = { change_province_name = "Tešín" }
+			prestige = 1
+			AUS = { prestige = -1 }
+			KUK = { prestige = -1 }
+			POL = { prestige = -1 }
+			PLC = { prestige = -1 }
 		}
 	}
 	

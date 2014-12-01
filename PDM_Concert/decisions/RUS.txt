@@ -804,6 +804,12 @@ political_decisions = {
 				}
 				literacy = 0.1
 			}
+			any_pop = {
+				limit = {
+					has_pop_culture = north_german
+				}
+				literacy = 0.2
+			}
 		}
 	}
 }

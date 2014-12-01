@@ -1004,6 +1004,190 @@ political_decisions = {
 		}
 	}
 	
+	polish_poznan = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = PZN
+				tag = POL
+				tag = PLC
+			}
+			owns = 699 #Poznan
+			NOT = {
+				has_global_flag = polish_poznan
+			}
+		}
+		
+		allow = {
+			owns = 699
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_poznan
+			699 = { change_province_name = "Poznań" }
+			state_scope = {
+				change_region_name = "Greater Poland"
+			}
+			700 = { change_province_name = "Bydgoszcz" }
+			701 = { change_province_name = "Gniezno" }
+			prestige = 3
+			PRU = { prestige = -2 }
+			NGF = { prestige = -2 }
+			GER = { prestige = -2 }
+		}
+	}
+	
+	german_posen = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+			owns = 699 #Poznan
+			699 = { is_core = THIS }
+			has_global_flag = polish_poznan
+		}
+		
+		allow = {
+			owns = 699
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = polish_poznan
+			699 = { change_province_name = "Posen" }
+			state_scope = {
+				change_region_name = "Posen"
+			}
+			700 = { change_province_name = "Bromberg" }
+			701 = { change_province_name = "Gnesen" }
+			prestige = 2
+			POL = { prestige = -3 }
+			PLC = { prestige = -3 }
+		}
+	}
+	
+	polish_opole = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = SLS
+				tag = POL
+				tag = PLC
+			}
+			owns = 684 #Oppeln
+			NOT = {
+				has_global_flag = polish_opole
+			}
+		}
+		
+		allow = {
+			owns = 684
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_opole
+			684 = { change_province_name = "Opole" }
+			685 = { change_province_name = "Katowice" }
+			prestige = 2
+			PRU = { prestige = -1 }
+			NGF = { prestige = -1 }
+			GER = { prestige = -1 }
+		}
+	}
+	
+	german_oppeln = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+			owns = 684 #Oppeln
+			684 = { is_core = THIS }
+			has_global_flag = polish_opole
+		}
+		
+		allow = {
+			owns = 684
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = polish_opole
+			684 = { change_province_name = "Oppeln" }
+			685 = { change_province_name = "Kattowitz" }
+			prestige = 1
+			SLS = { prestige = -2 }
+			POL = { prestige = -2 }
+			PLC = { prestige = -2 }
+		}
+	}
+	
+	polish_cieszyn = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = SLS
+				tag = POL
+				tag = PLC
+			}
+			owns = 689 #Tesin
+			NOT = {
+				has_global_flag = polish_cieszyn
+			}
+		}
+		
+		allow = {
+			owns = 689
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_cieszyn
+			clr_global_flag = czech_tesin
+			689 = { change_province_name = "Cieszyn" }
+			prestige = 1
+			AUS = { prestige = -1 }
+			KUK = { prestige = -1 }
+			BOH = { prestige = -1 }
+			CZH = { prestige = -1 }
+		}
+	}
+	
+	polish_bielsko = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = SLS
+				tag = POL
+				tag = PLC
+			}
+			owns = 2584 #Bielsko
+			NOT = {
+				has_global_flag = polish_bielsko
+			}
+		}
+		
+		allow = {
+			owns = 2584
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_bielsko
+			2584 = { change_province_name = "Bielsko" }
+			prestige = 1
+			AUS = { prestige = -1 }
+			KUK = { prestige = -1 }
+		}
+	}
+	
 	lithuanian_kaunas = {
 		picture = form_baltic_states
 		potential = {

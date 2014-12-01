@@ -16452,7 +16452,7 @@
     } 
 
     text_rotation = 5.650000
-    text_scale = 3.000000
+    text_scale = 2.600000
     unit = { 
         x = 3198.922222
         y = 1765.588889
@@ -27341,8 +27341,8 @@
 # Hradec Kralove
 626 = { 
     text_position = { 
-        x = 3049.750000
-        y = 1635.450000
+        x = 3048.800000
+        y = 1635.500000
     } 
 
     text_scale = 2.400000
@@ -27373,25 +27373,26 @@
 
 # Karlsbad
 627 = { 
+    text_position = { 
+        x = 3009.205000
+        y = 1632.730000
+    } 
+
+    text_rotation = 0.4
+    text_scale = 2.100000
     unit = { 
         x = 3008.000000
         y = 1635.000000
     } 
 
-    text_position = { 
-        x = 3007.699951
-        y = 1631.900024
-    } 
-
-    text_scale = 2.100000
-    building_construction = { 
-        x = 3014.500000
-        y = 1633.099976
-    } 
-
     factory = { 
         x = 3013.000000
         y = 1637.000000
+    } 
+
+    building_construction = { 
+        x = 3014.500000
+        y = 1633.099976
     } 
 
     building_position = { 
@@ -27488,11 +27489,11 @@
 # Budejovice
 630 = { 
     text_position = { 
-        x = 3038.560000
-        y = 1613.500000
+        x = 3037.240000
+        y = 1609.045000
     } 
 
-    text_rotation = 6.283185
+    text_rotation = 0.8
     text_scale = 2.200000
     factory = { 
         x = 3034.875000
@@ -121815,7 +121816,7 @@
         y = 1624.450000
     } 
 
-    text_scale = 2.999999
+    text_scale = 2.7
     factory = { 
         x = 3058.550000
         y = 1626.750000
@@ -121848,7 +121849,7 @@
         y = 1663.300000
     } 
 
-    text_scale = 2.700000
+    text_scale = 2.400000
     factory = { 
         x = 3044.850000
         y = 1661.400000
@@ -121866,8 +121867,8 @@
 
     building_position = { 
         fort = { 
-            x = 3070.100098
-            y = 1656.500000
+            x = 3045.600000
+            y = 1665.300000
         } 
 
     } 
