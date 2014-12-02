@@ -1843,6 +1843,7 @@ country_event = {
 			name = national_confusion
 			duration = 365
 		}
+		BRZ = { country_event = 46315 } #Pedro's abdication in BRZFlavor.txt
 		ai_chance = {
 			factor = 20
 		}

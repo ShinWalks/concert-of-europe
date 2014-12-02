@@ -74,6 +74,7 @@ oob = "BRZ_oob.txt"
 	prestige = 5
 	
 	set_country_flag = farrapos_war
+	set_country_flag = pedro_events_begun
 	
 	# Technologies
 	post_napoleonic_thought = 1

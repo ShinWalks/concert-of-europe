@@ -463,141 +463,79 @@ province_event = {
 	}
 }
 
-#country_event = {
-#	id = 46315
-#	title = "EVTNAME46315" #Regency of Pedro II
-#	desc = "EVTDESC46315"
-#	picture = "Administration"
-#	
-#	trigger = {
-#		tag = BRZ
-#		OR = {
-#			government = hms_government
-#			government = absolute_monarchy
-#			government = prussian_constitutionalism
-#		}
-#		year = 1831
-#		NOT = {
-#			has_country_flag = pedro_events_begun
-#		}
-#	}
-#	mean_time_to_happen = {
-#		months = 1
-#	}
-#	option = {
-#		name = "He will make a great leader, someday."
-#		prestige = -5
-#		set_country_flag = pedro_events_begun
-#	}
-#}
+country_event = {
+	id = 46315
+	title = "EVTNAME46315" #Involvement in Portuguese Succession?
+	desc = "EVTDESC46315"
+	picture = "carlists"
+	
+	trigger = {
+		tag = BRZ
+		OR = {
+			government = hms_government
+			government = prussian_constitutionalism
+			government = absolute_monarchy
+		}
+		POR = { government = absolute_monarchy }
+		NOT = {
+			year = 1840
+			has_country_flag = pedro_events_begun
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "Pedro II will make a great leader, someday."
+		set_country_flag = pedro_events_begun
+	}
+}
 
-#country_event = {
-#	id = 46316
-#	title = "EVTNAME46316" #Pedro II comes of age early due to a change in laws, the golden age of Brazil begins!
-#	desc = "EVTDESC46316"
-#	picture = "pedro_ii_grand"
-#	
-#	trigger = {
-#		tag = BRZ
-#		year = 1840
-#		has_country_flag = pedro_events_begun
-#	}
-#	mean_time_to_happen = {
-#		months = 6
-#	}
-#	option = {
-#		name = "The Golden Age of Brazil begins!"
-#		clr_country_flag = pedro_events_begun
-#		set_country_flag = reign_of_pedro
-#		prestige = 10
-#		add_country_modifier = {
-#			name = dom_pedro_ii
-#			duration = 18615
-#		}
-#	}
-#}
-
-#country_event = {
-#	id = 46317
-#	title = "EVTNAME46317" #Pedro II passes away
-#	desc = "EVTDESC46317"
-#	picture = "pedro_ii"
-#	
-#	fire_only_once = yes
-#	
-#	trigger = {
-#		tag = BRZ
-#		has_country_flag = reign_of_pedro
-#		NOT = {	has_country_flag = death_of_pedro }
-#		NOT = { has_country_modifier = dom_pedro_ii }
-#		OR = {
-#			government = hms_government
-#			government = prussian_constitutionalism
-#			government = absolute_monarchy
-#		}
-#	}
-#	mean_time_to_happen = {
-#		months = 1
-#	}
-#	option = {
-#		name = "The whole nation will mourn his passing."
-#		prestige = 25
-#		add_country_modifier = {
-#			name = national_instability
-#			duration = 3650
-#		}
-#		set_country_flag = death_of_pedro
-#		any_pop = {
-#			limit = {
-#				type = aristocrats
-#			}
-#			militancy = 10
-#			consciousness = 10
-#		}
-#	}
-#}
-
-#country_event = {
-#	id = 46318
-#	title = "EVTNAME46318" #Pedro II abdicates
-#	desc = "EVTDESC46318"
-#	picture = "pedro_ii"
-#	
-#	fire_only_once = yes
-#	
-#	trigger = {
-#		tag = BRZ
-#		has_country_flag = reign_of_pedro
-#		has_country_modifier = dom_pedro_ii
-#		NOT = {
-#			OR = {
-#				government = hms_government
-#				government = prussian_constitutionalism
-#				government = absolute_monarchy
-#			}
-#		}
-#	}
-#	mean_time_to_happen = {
-#		months = 2
-#	}
-#	option = {
-#		name = "A dark age for Brazil."
-#		prestige = -25
-#		add_country_modifier = {
-#			name = national_instability
-#			duration = 3650
-#		}
-#		any_pop = {
-#			limit = {
-#				type = aristocrats
-#			}
-#			militancy = -10
-#			consciousness = -10
-#		}
-#		remove_country_modifier = dom_pedro_ii
-#		clr_country_flag = reign_of_pedro
-#	}
-#}
+country_event = {
+	id = 46316
+	title = "EVTNAME46316" #Pedro II comes of age early due to a change in laws, the golden age of Brazil begins!
+	desc = "EVTDESC46316"
+	picture = "pedro_ii_grand"
+	
+	trigger = {
+		tag = BRZ
+		year = 1840
+		has_country_flag = pedro_events_begun
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "He will be a great reformer."
+		prestige = 5
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+		add_country_modifier = {
+			name = great_reformer
+			duration = 7300
+		}
+	}
+}
 
 country_event = {
 	id = 46325
