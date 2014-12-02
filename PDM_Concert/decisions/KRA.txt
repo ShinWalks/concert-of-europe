@@ -1332,6 +1332,78 @@ political_decisions = {
 		}
 	}
 	
+	polish_wilno = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = POL
+				AND = {
+					tag = PLC
+					primary_culture = polish
+				}
+			}
+			owns = 360 #Vilnius
+			NOT = {
+				has_global_flag = polish_wilno
+			}
+		}
+		
+		allow = {
+			owns = 360
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = lithuanian_vilnius
+			set_global_flag = polish_wilno
+			360 = { change_province_name = "Wilno" }
+			state_scope = {
+				change_region_name = "Wilno"
+			}
+			947 = { change_province_name = "Wilejka" }
+			prestige = 2
+			RUS = { prestige = -1 }
+			BYE = { prestige = -1 }
+			LIT = { prestige = -1 }
+		}
+	}
+	
+	lithuanian_vilnius = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = LIT
+				AND = {
+					tag = PLC
+					primary_culture = lithuanian
+				}
+			}
+			owns = 360 #Vilnius
+			NOT = {
+				has_global_flag = lithuanian_vilnius
+			}
+		}
+		
+		allow = {
+			owns = 360
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = polish_wilno
+			set_global_flag = lithuanian_vilnius
+			360 = { change_province_name = "Vilnius" }
+			state_scope = {
+				change_region_name = "Vilnius"
+			}
+			947 = { change_province_name = "Vileika" }
+			prestige = 2
+			RUS = { prestige = -1 }
+			BYE = { prestige = -1 }
+			POL = { prestige = -1 }
+		}
+	}
+	
 	lithuanian_kaunas = {
 		picture = form_baltic_states
 		potential = {

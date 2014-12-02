@@ -29759,30 +29759,30 @@
 
 # Elbing
 693 = { 
-    unit = { 
-        x = 3108.000000
-        y = 1711.000000
-    } 
-
     text_position = { 
-        x = 3106.800049
-        y = 1706.900024
+        x = 3117.850000
+        y = 1714.100000
     } 
 
-    text_scale = 2.300000
+    text_scale = 2.500000
+    unit = { 
+        x = 3124.000000
+        y = 1717.000000
+    } 
+
+    factory = { 
+        x = 3112.300000
+        y = 1709.600000
+    } 
+
     building_construction = { 
         x = 3111.399902
         y = 1717.000000
     } 
 
     military_construction = { 
-        x = 3104.000000
-        y = 1705.000000
-    } 
-
-    factory = { 
-        x = 3108.000000
-        y = 1702.000000
+        x = 3137.800000
+        y = 1716.450000
     } 
 
     building_position = { 
@@ -29895,30 +29895,30 @@
 
 # Allenstein
 696 = { 
+    text_position = { 
+        x = 3134.706667
+        y = 1704.613333
+    } 
+
+    text_scale = 2.600000
     unit = { 
         x = 3135.000000
         y = 1709.000000
     } 
 
-    text_position = { 
-        x = 3133.899902
-        y = 1704.599976
+    factory = { 
+        x = 3122.173333
+        y = 1700.773333
     } 
 
-    text_scale = 2.500000
     building_construction = { 
         x = 3145.000000
         y = 1710.000000
     } 
 
     military_construction = { 
-        x = 3125.000000
-        y = 1710.000000
-    } 
-
-    factory = { 
-        x = 3147.000000
-        y = 1717.000000
+        x = 3124.360000
+        y = 1706.426667
     } 
 
     building_position = { 
@@ -121950,6 +121950,45 @@
     building_rotation = { 
         naval_base = 0.000001
         aeroplane_factory = 0.523599
+    } 
+
+} 
+
+# Marienwerder
+3258 = { 
+    text_position = { 
+        x = 3106.400000
+        y = 1705.050000
+    } 
+
+    text_rotation = 5.686838
+    text_scale = 1.700000
+    unit = { 
+        x = 3104.800000
+        y = 1709.150000
+    } 
+
+    factory = { 
+        x = 3102.500000
+        y = 1707.700000
+    } 
+
+    building_construction = { 
+        x = 3108.100000
+        y = 1707.050000
+    } 
+
+    military_construction = { 
+        x = 3104.000000
+        y = 1705.000000
+    } 
+
+    building_position = { 
+        fort = { 
+            x = 3106.050000
+            y = 1712.850000
+        } 
+
     } 
 
 } 

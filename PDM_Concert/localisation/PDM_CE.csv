@@ -123,6 +123,7 @@ PROV3254;Pardubitz;;;;;;;;;;;;;x
 PROV3255;Glogau;;;;;;;;;;;;;x
 PROV3256;Öls;;;;;;;;;;;;;x
 PROV3257;Calais;;;;;;;;;;;;;x
+PROV3258;Marienwerder;;;;;;;;;;;;;x
 incorporate_sudan_title;Incorporate Sudan;;;;;;;;;;;;;x
 incorporate_sudan_desc;We should introduce modern administrative structures to replace tribal governments throughout our new lands in the Sudan. The locals won't like it, but it will bind the region to Egypt permanently.;;;;;;;;;;;;;x
 incorporate_hedjaz_title;Incorporate Hedjaz;;;;;;;;;;;;;x
@@ -337,8 +338,12 @@ polish_bielsko_title;Polish Bielsko;;;;;;;;;;;;x
 polish_bielsko_desc;Now that Bielsko has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
 polish_podlasie_title;Polish Podlasie;;;;;;;;;;;;x
 polish_podlasie_desc;Now that Podlasie has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
+polish_wilno_title;Polish Wilno;;;;;;;;;;;;x
+polish_wilno_desc;Now that Wilno has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
+lithuanian_vilnius_title;Lithuanian Vilnius;;;;;;;;;;;;x
+lithuanian_vilnius_desc;Now that Vilnius has gained its freedom, proper Lithuanian names can be restored to the land.;;;;;;;;;;;;x
 lithuanian_kaunas_title;Lithuanian Kaunas;;;;;;;;;;;;x
-lithuanian_kaunas_desc;Now that Lithuania has gained its freedom, proper Lithuanian names can be restored to the land.;;;;;;;;;;;;x
+lithuanian_kaunas_desc;Now that Kaunas has gained its freedom, proper Lithuanian names can be restored to the land.;;;;;;;;;;;;x
 latvian_courland_title;Latvian Courland;;;;;;;;;;;;x
 latvian_courland_desc;Now that Courland has gained its freedom, proper Latvian names can be restored to the land.;;;;;;;;;;;;x
 latvian_livonia_title;Latvian Livonia;;;;;;;;;;;;x

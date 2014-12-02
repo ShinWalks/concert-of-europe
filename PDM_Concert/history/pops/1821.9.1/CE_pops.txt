@@ -36194,35 +36194,35 @@
 
 	artisans = {
 
-		size = 1281
+		size = 1255
 		culture = north_german
 		religion = protestant
 
 	}
 	artisans = {
 
-		size = 412
+		size = 100
 		culture = polish
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 183
+		size = 292
 		culture = north_german
 		religion = protestant
 
 	}
 	farmers = {
 
-		size = 22366
+		size = 21291
 		culture = north_german
 		religion = protestant
 
 	}
 	farmers = {
 
-		size = 6844
+		size = 1000
 		culture = polish
 		religion = catholic
 
@@ -36423,7 +36423,7 @@
 
 	artisans = {
 
-		size = 2655
+		size = 1700
 		culture = north_german
 		religion = protestant
 
@@ -36444,7 +36444,7 @@
 	}
 	clergymen = {
 
-		size = 572
+		size = 280
 		culture = north_german
 		religion = protestant
 
@@ -36458,7 +36458,7 @@
 	}
 	farmers = {
 
-		size = 46291
+		size = 28000
 		culture = north_german
 		religion = protestant
 
@@ -151905,6 +151905,45 @@
 
 		size = 2300
 		culture = flemish
+		religion = catholic
+
+	}
+
+}
+3258 = {
+
+	artisans = {
+
+		size = 981
+		culture = north_german
+		religion = protestant
+
+	}
+	artisans = {
+
+		size = 312
+		culture = polish
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 183
+		culture = north_german
+		religion = protestant
+
+	}
+	farmers = {
+
+		size = 19366
+		culture = north_german
+		religion = protestant
+
+	}
+	farmers = {
+
+		size = 5844
+		culture = polish
 		religion = catholic
 
 	}
