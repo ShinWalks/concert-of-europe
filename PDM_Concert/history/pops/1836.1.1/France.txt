@@ -80,22 +80,10 @@
 }
 #Dunkirk (396000/99000 POPS)
 400 = {
-	aristocrats = {
-		culture = french
-		religion = catholic
-		size = 800
-	}
-
 	clergymen = {
 		culture = picard
 		religion = catholic
-		size = 1050
-	}
-
-	artisans = {
-		culture = french
-		religion = catholic
-		size = 5000
+		size = 105
 	}
 
 	soldiers = {
@@ -136,13 +124,13 @@
 	farmers = {
 		culture = picard
 		religion = catholic
-		size = 63350
+		size = 5000
 	}
 
 	artisans = {
 		culture = flemish
 		religion = catholic
-		size = 2500
+		size = 2250
 	}
 
 	soldiers = {
@@ -155,7 +143,52 @@
 	farmers = {
 		culture = flemish
 		religion = catholic
-		size = 15000
+		size = 13500
+	}
+}
+#Calais (/ POPS)
+3257 = {
+	aristocrats = {
+		culture = french
+		religion = catholic
+		size = 800
+	}
+
+	clergymen = {
+		culture = picard
+		religion = catholic
+		size = 945
+	}
+
+	artisans = {
+		culture = french
+		religion = catholic
+		size = 5000
+	}
+
+	farmers = {
+		culture = picard
+		religion = catholic
+		size = 58350
+	}
+
+	artisans = {
+		culture = flemish
+		religion = catholic
+		size = 250
+	}
+
+	soldiers = {
+		culture = flemish
+		religion = catholic
+		size= 300
+
+	}
+
+	farmers = {
+		culture = flemish
+		religion = catholic
+		size = 1500
 	}
 }
 #Arras (428000/107000 POPS)
@@ -340,26 +373,26 @@
 	}
 
 	clergymen = {
-		culture = french
+		culture = picard
 		religion = catholic
 		size = 700
 	}
 
 	artisans = {
-		culture = french
+		culture = picard
 		religion = catholic
 		size = 3500
 	}
 
 	soldiers = {
-		culture = french
+		culture = picard
 		religion = catholic
 		size= 1000
 
 	}
 
 	farmers = {
-		culture = french
+		culture = picard
 		religion = catholic
 		size = 64200
 	}

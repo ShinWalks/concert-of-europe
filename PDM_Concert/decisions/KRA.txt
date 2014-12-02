@@ -1129,6 +1129,119 @@ political_decisions = {
 		}
 	}
 	
+	polish_west_prussia = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = PML
+				tag = POL
+				tag = PLC
+			}
+			owns = 691 #Tuchel
+			NOT = {
+				has_global_flag = polish_west_prussia
+			}
+		}
+		
+		allow = {
+			owns = 691
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_west_prussia
+			691 = { change_province_name = "Tuchola" }
+			state_scope = {
+				change_region_name = "West Prussia"
+			}
+			694 = { change_province_name = "Toruń" }
+			prestige = 2
+			PRU = { prestige = -1 }
+			NGF = { prestige = -1 }
+			GER = { prestige = -1 }
+		}
+	}
+	
+	german_west_prussia = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+			owns = 691 #Tuchel
+			691 = { is_core = THIS }
+			has_global_flag = polish_west_prussia
+		}
+		
+		allow = {
+			owns = 691
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = polish_west_prussia
+			691 = { change_province_name = "Tuchel" }
+			694 = { change_province_name = "Thorn" }
+			prestige = 1
+			PML = { prestige = -2 }
+			POL = { prestige = -2 }
+			PLC = { prestige = -2 }
+		}
+	}
+	
+	polish_gdansk = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = PML
+				tag = POL
+				tag = PLC
+			}
+			owns = 690 #Danzig
+			NOT = {
+				has_global_flag = polish_gdansk
+			}
+		}
+		
+		allow = {
+			owns = 690
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_gdansk
+			690 = { change_province_name = "Gdańsk" }
+			prestige = 1
+		}
+	}
+	
+	german_danzig = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+			owns = 690 #Danzig
+			690 = { is_core = THIS }
+			has_global_flag = polish_gdansk
+		}
+		
+		allow = {
+			owns = 690
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = polish_gdansk
+			690 = { change_province_name = "Danzig" }
+			prestige = 1
+		}
+	}
+	
 	polish_cieszyn = {
 		picture = become_poland
 		potential = {
@@ -1185,6 +1298,37 @@ political_decisions = {
 			prestige = 1
 			AUS = { prestige = -1 }
 			KUK = { prestige = -1 }
+		}
+	}
+	
+	polish_podlasie = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = POL
+				tag = PLC
+			}
+			owns = 936 #Grodno
+			NOT = {
+				has_global_flag = polish_podlasie
+			}
+		}
+		
+		allow = {
+			owns = 936
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_podlasie
+			719 = { change_province_name = "Białystok" }
+			state_scope = {
+				change_region_name = "Podlasie"
+			}
+			937 = { change_province_name = "Brześć" }
+			prestige = 2
+			RUS = { prestige = -1 }
+			BYE = { prestige = -1 }
 		}
 	}
 	

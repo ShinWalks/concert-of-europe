@@ -61,7 +61,7 @@ luxury_needs = {
 
 country_migration_target = {
 	factor = 0.01
-
+	
 	modifier = {
 		factor = 0.8
 		religious_policy = moralism

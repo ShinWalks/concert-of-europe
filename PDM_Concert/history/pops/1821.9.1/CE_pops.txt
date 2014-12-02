@@ -18814,14 +18814,21 @@
 	}
 	artisans = {
 
-		size = 1373
+		size = 1273
 		culture = flemish
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 3479
+		size = 600
+		culture = picard
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 2979
 		culture = wallonian
 		religion = catholic
 
@@ -18849,14 +18856,21 @@
 	}
 	labourers = {
 
-		size = 9408
+		size = 8408
 		culture = flemish
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 73920
+		size = 9000
+		culture = picard
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 65920
 		culture = wallonian
 		religion = catholic
 
@@ -19149,7 +19163,7 @@
 	}
 	artisans = {
 
-		size = 2958
+		size = 958
 		culture = flemish
 		religion = catholic
 
@@ -19177,7 +19191,7 @@
 	}
 	clergymen = {
 
-		size = 630
+		size = 230
 		culture = flemish
 		religion = catholic
 
@@ -19191,14 +19205,14 @@
 	}
 	labourers = {
 
-		size = 20878
+		size = 7878
 		culture = flemish
 		religion = catholic
 
 	}
 	labourers = {
 
-		size = 89007
+		size = 90007
 		culture = picard
 		religion = catholic
 
@@ -19230,42 +19244,35 @@
 
 	artisans = {
 
-		size = 3777
-		culture = french
-		religion = catholic
-
-	}
-	artisans = {
-
-		size = 3090
+		size = 4290
 		culture = flemish
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 360
+		size = 708
 		culture = flemish
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 601
+		size = 60
 		culture = picard
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 53203
+		size = 4320
 		culture = picard
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 18542
+		size = 29242
 		culture = flemish
 		religion = catholic
 
@@ -19432,8 +19439,15 @@
 
 	artisans = {
 
-		size = 3433
+		size = 3133
 		culture = french
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 300
+		culture = wallonian
 		religion = catholic
 
 	}
@@ -19446,8 +19460,15 @@
 	}
 	labourers = {
 
-		size = 65061
+		size = 61861
 		culture = french
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 3200
+		culture = wallonian
 		religion = catholic
 
 	}
@@ -151838,6 +151859,52 @@
 
 		size = 12000
 		culture = polish
+		religion = catholic
+
+	}
+
+}
+3257 = {
+
+	artisans = {
+
+		size = 3777
+		culture = french
+		religion = catholic
+
+	}
+	artisans = {
+
+		size = 800
+		culture = flemish
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 52
+		culture = flemish
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 541
+		culture = picard
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 47883
+		culture = picard
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 2300
+		culture = flemish
 		religion = catholic
 
 	}

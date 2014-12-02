@@ -4,7 +4,7 @@ religion = protestant
 government = democracy
 plurality = 0.0
 nationalvalue = nv_equality
-literacy = 0.69
+literacy = 0.64
 civilized = yes
 
 # Political reforms
@@ -79,7 +79,7 @@ nonstate_consciousness = 1
 oob = "SWI_oob.txt"
 
 1836.1.1 = {
-	literacy = 0.7
+	literacy = 0.65
 	prestige = 5
 	
 	#Technologies

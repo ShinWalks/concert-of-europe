@@ -194,7 +194,7 @@ BEL_394 = { 394 392 393 395 396 398 } #Wallonia
 
 ### France
 
-FRA_400 = { 399 400 401 404 } #Pas de Calais
+FRA_400 = { 399 400 401 404 3257 } #Pas de Calais
 
 FRA_399 = { 402 2570 403 } #Picardie
 

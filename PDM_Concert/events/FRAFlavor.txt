@@ -1500,7 +1500,7 @@ country_event = {
 	id = 37244
 	title = "EVTNAME37244" #July Revolution
 	desc = "EVTDESC37244"
-	picture = "communist_riot"
+	picture = "july_revolution"
 
 	trigger = {
 		tag = FRA
