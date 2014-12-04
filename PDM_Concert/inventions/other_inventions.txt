@@ -282,7 +282,7 @@ Schwerpunkt = {
 	effect = {
 		army_base = { 
 			attack = 0.2
-			reconnaissance = 2	
+			reconnaissance = 1
 			maximum_speed = 1
 		}
 		combat_width = -1
@@ -981,7 +981,6 @@ Armoured_fist_doctrine = {
 		tank = {
 			attack = 0.4
 			defence = 0.2
-			reconnaissance = 4
 			supply_consumption = 0.15
 		}
 	}
@@ -1041,7 +1040,6 @@ siege_doctrine = {
 		artillery = {
 			attack = 0.2
 			defence = 0.2
-			reconnaissance = 5
 			maximum_speed = 1
 			supply_consumption = 0.15
 		}
@@ -1062,7 +1060,7 @@ grand_battle_plan_doctrine = {
 	effect = {
 		army_base = {
 			maneuver = 2
-			reconnaissance = 2		
+			reconnaissance = 2
 		}
 	}
 }
@@ -1121,8 +1119,7 @@ spearhead_doctrine = {
 	effect = {
 		tank = {
 			attack = 0.4
-			defence = 0.4	
-			reconnaissance = 2
+			defence = 0.4
 			maneuver = 4
 			supply_consumption = -0.25
 		}

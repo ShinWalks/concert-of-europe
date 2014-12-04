@@ -514,7 +514,7 @@ interwar_cavalry = {
 	}
 	effect = {
 		dragoon = {
-			reconnaissance = 2
+			reconnaissance = 1
 			attack = 0.5
 		}
 	}
@@ -656,7 +656,6 @@ light_artillery = {
 		horse_artillery = {
 			support = 0.25
 			supply_consumption = 0.05
-
 		}
 	}
 }
@@ -679,7 +678,6 @@ medium_artillery = {
 		artillery = {
 			support = 0.5
 			supply_consumption = 0.05
-
 		}
 		tank = {
 			attack = 1
@@ -708,8 +706,6 @@ heavy_artillery = {
 			defence = 0.25
 			supply_consumption = 0.5
 			support = 1
-
-
 		}
 		tank = {
 			attack = 1

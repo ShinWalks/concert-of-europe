@@ -1252,9 +1252,100 @@ country_event = {
 ###events 36221 and 36222 are in USAFlavor.txt (US purchase VI events)
 
 country_event = {
+	id = 36223
+	title = "EVTNAME36223" #Sell Accra?
+	desc = "EVTDESC36223"
+	picture = "deliberation"
+	
+	trigger = {
+		tag = DEN
+		exists = yes
+		owns = 1907 #Accra
+		is_greater_power = no
+		slavery = no_slavery
+		NOT = { has_country_flag = accra_sale }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "We should withdraw from Africa."
+		set_country_flag = accra_sale
+		prestige = -2
+		random_country = {
+			limit = {
+				owns = 1908 #Cape Coast
+				is_greater_power = yes
+				capital_scope = { continent = europe }
+			}
+			country_event = 36224
+		}
+		random_country = {
+			limit = {
+				1908 = { owner = { is_greater_power = no } }
+				is_greater_power = yes
+				capital_scope = { continent = europe }
+			}
+			country_event = 36224
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "The sun never sets on the Danish Empire!"
+		set_country_flag = accra_sale
+		prestige = 2
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			militancy = 1
+			consciousness = 1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
 	id = 36224
-	title = "EVTNAME36224" #Sell the Nicobars?
+	title = "EVTNAME36224" #Purchase Accra?
 	desc = "EVTDESC36224"
+	picture = "deliberation"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Our new borders will be lovely!"
+		prestige = 2
+		1907 = { secede_province = THIS }
+		relation = { who = FROM value = 25 }
+		treasury = -20000
+		FROM = { treasury = 20000 }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "We've enough jungle outposts already."
+		prestige = -2
+		relation = { who = FROM value = -25 }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 36225
+	title = "EVTNAME36225" #Sell the Nicobars?
+	desc = "EVTDESC36225"
 	picture = "deliberation"
 	
 	trigger = {
@@ -1288,7 +1379,7 @@ country_event = {
 				is_greater_power = yes
 				capital_scope = { continent = europe }
 			}
-			country_event = 36225
+			country_event = 36226
 		}
 		random_country = {
 			limit = {
@@ -1296,7 +1387,7 @@ country_event = {
 				is_greater_power = yes
 				capital_scope = { continent = europe }
 			}
-			country_event = 36225
+			country_event = 36226
 		}
 		ai_chance = {
 			factor = 100
@@ -1321,9 +1412,9 @@ country_event = {
 }
 
 country_event = {
-	id = 36225
-	title = "EVTNAME36225" #Purchase the Nicobars?
-	desc = "EVTDESC36225"
+	id = 36226
+	title = "EVTNAME36226" #Purchase the Nicobars?
+	desc = "EVTDESC36226"
 	picture = "deliberation"
 	
 	is_triggered_only = yes
