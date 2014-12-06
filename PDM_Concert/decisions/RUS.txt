@@ -649,6 +649,7 @@ political_decisions = {
 		picture = become_poland
 		potential = {
 			tag = RUS
+			mass_politics = 1
 			OR = {
 				706 = { NOT = { is_core = RUS } }
 				713 = { NOT = { is_core = RUS } }

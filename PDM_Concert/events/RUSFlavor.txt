@@ -2513,7 +2513,7 @@ country_event = {
 	option = {
 		name = "A triumph!"
 		inherit = AZB
-		diplomatic_influence = { who = ENG value = 100 }
+		ENG = { diplomatic_influence = { who = THIS value = 100 } }
 		war_exhaustion = -20
 		any_pop = {
 			militancy = -4

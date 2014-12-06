@@ -3159,7 +3159,7 @@
 	farmers = {
 		culture = anglo_canadian
 		religion = protestant
-		size = 12750
+		size = 14750
 	}
 
 	clergymen = {
@@ -3171,7 +3171,7 @@
 	artisans = {
 		culture = french_canadian
 		religion = catholic
-		size = 350
+		size = 450
 	}
 
 	soldiers = {
@@ -3184,7 +3184,7 @@
 	farmers = {
 		culture = french_canadian
 		religion = catholic
-		size = 6400
+		size = 8400
 	}
 }
 #Bathurst (64000/16000 POPS)
@@ -3211,7 +3211,7 @@
 	labourers = {
 		culture = anglo_canadian
 		religion = protestant
-		size = 11175
+		size = 9175
 	}
 
 	clergymen = {
@@ -3223,7 +3223,7 @@
 	artisans = {
 		culture = french_canadian
 		religion = catholic
-		size = 200
+		size = 100
 	}
 
 	soldiers = {
@@ -3236,7 +3236,7 @@
 	farmers = {
 		culture = french_canadian
 		religion = catholic
-		size = 3725
+		size = 1725
 	}
 
 }

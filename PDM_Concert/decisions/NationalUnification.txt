@@ -259,6 +259,7 @@ political_decisions = {
 					primary_culture = south_german
 					in_sphere = THIS
 					NOT = { 
+						has_country_flag = post_colonial_country
 						tag = THIS
 						tag = KUK
 						tag = AUS
@@ -268,7 +269,6 @@ political_decisions = {
 						is_vassal = no
 						vassal_of = THIS
 					}
-					NOT = { has_country_flag = post_colonial_country }
 				}
 				country_event = 11106
 			}
@@ -341,8 +341,11 @@ political_decisions = {
 						tag = EFR
 					}
 					in_sphere = THIS 
-					NOT = { tag = THIS }
-					NOT = { has_country_flag = post_colonial_country }
+					NOT = {
+						tag = THIS
+						tag = UBD
+						has_country_flag = post_colonial_country
+					}
 					OR = {
 						is_vassal = no
 						vassal_of = THIS
@@ -569,12 +572,13 @@ political_decisions = {
 						tag = AUS
 						tag = DNB
 						tag = BAN
+						tag = UBD
+						has_country_flag = post_colonial_country
 					}
 					OR = {
 						is_vassal = no
 						vassal_of = THIS
 					}
-					NOT = { has_country_flag = post_colonial_country }
 				}
 				country_event = 11101
 			}
@@ -664,7 +668,10 @@ political_decisions = {
 						is_vassal = no
 						vassal_of = THIS
 					}
-					NOT = { has_country_flag = post_colonial_country }
+					NOT = {
+						tag = UBD
+						has_country_flag = post_colonial_country
+					}
 				}
 				country_event = 11101
 			}

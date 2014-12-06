@@ -333,6 +333,7 @@ political_decisions = {
 			3251 = { add_core = PLC } #Latgale
 			RUS_955 = { add_core = PLC } #Podolia
 			RUS_958 = { add_core = PLC } #Kiev
+			690 = { add_core = PLC } #Danzig
 			any_country = {
 				limit = {
 					OR = {
@@ -358,6 +359,7 @@ political_decisions = {
 				limit = {
 					owner = { primary_culture = lithuanian }
 				}
+				add_accepted_culture = latvian
 				LIT = {
 					all_core = { remove_core = LIT }
 				}
@@ -1025,9 +1027,11 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = polish_poznan
-			699 = { change_province_name = "Poznań" }
-			state_scope = {
-				change_region_name = "Greater Poland"
+			699 = {
+				change_province_name = "Poznan"
+				state_scope = {
+					change_region_name = "Greater Poland"
+				}
 			}
 			700 = { change_province_name = "Bydgoszcz" }
 			701 = { change_province_name = "Gniezno" }
@@ -1058,9 +1062,11 @@ political_decisions = {
 		
 		effect = {
 			clr_global_flag = polish_poznan
-			699 = { change_province_name = "Posen" }
-			state_scope = {
-				change_region_name = "Posen"
+			699 = {
+				change_province_name = "Posen"
+				state_scope = {
+					change_region_name = "Posen"
+				}
 			}
 			700 = { change_province_name = "Bromberg" }
 			701 = { change_province_name = "Gnesen" }
@@ -1150,11 +1156,13 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = polish_west_prussia
-			691 = { change_province_name = "Tuchola" }
-			state_scope = {
-				change_region_name = "West Prussia"
+			691 = {
+				change_province_name = "Tuchola"
+				state_scope = {
+					change_region_name = "West Prussia"
+				}
 			}
-			694 = { change_province_name = "Toruń" }
+			694 = { change_province_name = "Torun" }
 			prestige = 2
 			PRU = { prestige = -1 }
 			NGF = { prestige = -1 }
@@ -1212,7 +1220,7 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = polish_gdansk
-			690 = { change_province_name = "Gdańsk" }
+			690 = { change_province_name = "Gdansk" }
 			prestige = 1
 		}
 	}
@@ -1321,11 +1329,13 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = polish_podlasie
-			719 = { change_province_name = "Białystok" }
-			state_scope = {
-				change_region_name = "Podlasie"
+			719 = {
+				change_province_name = "Bialystok"
+				state_scope = {
+					change_region_name = "Podlasie"
+				}
 			}
-			937 = { change_province_name = "Brześć" }
+			937 = { change_province_name = "Brzesc" }
 			prestige = 2
 			RUS = { prestige = -1 }
 			BYE = { prestige = -1 }
@@ -1356,9 +1366,11 @@ political_decisions = {
 		effect = {
 			clr_global_flag = lithuanian_vilnius
 			set_global_flag = polish_wilno
-			360 = { change_province_name = "Wilno" }
-			state_scope = {
-				change_region_name = "Wilno"
+			360 = {
+				change_province_name = "Wilno"
+				state_scope = {
+					change_region_name = "Wilno"
+				}
 			}
 			947 = { change_province_name = "Wilejka" }
 			prestige = 2
@@ -1392,9 +1404,11 @@ political_decisions = {
 		effect = {
 			clr_global_flag = polish_wilno
 			set_global_flag = lithuanian_vilnius
-			360 = { change_province_name = "Vilnius" }
-			state_scope = {
-				change_region_name = "Vilnius"
+			360 = {
+				change_province_name = "Vilnius"
+				state_scope = {
+					change_region_name = "Vilnius"
+				}
 			}
 			947 = { change_province_name = "Vileika" }
 			prestige = 2
@@ -1425,9 +1439,11 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = lithuanian_kaunas
-			361 = { change_province_name = "Kaunas" }
-			state_scope = {
-				change_region_name = "Kaunas"
+			361 = {
+				change_province_name = "Kaunas"
+				state_scope = {
+					change_region_name = "Kaunas"
+				}
 			}
 			363 = { change_province_name = "Panevezys" }
 			364 = { change_province_name = "Siauliai" }
@@ -1461,7 +1477,7 @@ political_decisions = {
 			357 = { change_province_name = "Jelgava" }
 			358 = { change_province_name = "Ventspils" }
 			359 = { change_province_name = "Liepaja" }
-			356 = { change_province_name = "Jēkabpils" }
+			356 = { change_province_name = "Jekabpils" }
 			prestige = 2
 			RUS = { prestige = -1 }
 		}

@@ -67,6 +67,7 @@ ENG_1251;West Bengal;;;;;;;;;;;;x
 ENG_1252;East Bengal;;;;;;;;;;;;x
 ENG_1320;Andaman & Nicobar Islands;;;;;;;;;;;;x
 SWI_2568;Italian Switzerland;;;;;;;;;;;;x
+PROV69;Edmundston;;;;;;;;;;;;;x
 PROV351;Pernau;;;;;;;;;;;;;x
 PROV355;Wolmar;;;;;;;;;;;;;x
 PROV356;Jakobstadt;;;;;;;;;;;;;x
@@ -172,6 +173,8 @@ repudiate_treaty_of_london_title;Repudiate Treaty of London;;;;;;;;;;;;;x
 repudiate_treaty_of_london_desc;The Netherlands signed away its claims to Belgium under duress. But today's politics places less emphasis on the sort of legal legitimacy and internationalism that marked the age of the Concert of Europe. With the right rhetoric, we could revive our claims to those lands.;;;;;;;;;;;;;x
 embrace_wallonians_title;Embrace Wallonians;;;;;;;;;;;;;x
 embrace_wallonians_desc;The Wallonians of the southern Netherlands are a predominantly Catholic, French-speaking nation with historic ties to France. We should include them fully in our civil and political institutions and build a stronger France together.;;;;;;;;;;;;;x
+integrate_posen_title;Integrate Posen;;;;;;;;;;;;;x
+integrate_posen_desc;The Vienna Congress established the Grand Duchy of Posen as an autonomous region, guaranteed to retain its Polish identity and be ruled separately from Prussia proper. In reality, however, Posen is increasingly treated as just another Prussian province. Explicitly doing away with the "Grand Duchy" would discourage Polish separatism in the region and reaffirm Prussia's unity.;;;;;;;;;;;;;x
 russian_black_sea_title;Russian Black Sea;;;;;;;;;;;;;x
 russian_black_sea_desc;The process of expansion around the Black Sea begun by Catherine the Great must continue. Russia should lay claim to the entire northern coast of the Sea.;;;;;;;;;;;;;x
 russian_transcaucasia_title;Russian Transcaucasia;;;;;;;;;;;;;x
@@ -354,6 +357,8 @@ restore_falkland_title;Restore Falkland Islands;;;;;;;;;;;;;x
 restore_falkland_desc;Now that we have liberated the Falkland Islands, we can correct their name on the maps.;;;;;;;;;;;;;x
 become_antillean_confederation_title;Become Antillean Confederation;;;;;;;;;;;;;x
 become_antillean_confederation_desc;The nations of the former Spanish Caribbean share a language, a culture, a surrounding sea, and an historical legacy. We should move to unite our islands under an Antillean Confederation, and enter a new era together.;;;;;;;;;;;;;x
+gadsden_purchase_title;Gadsden Purchase;;;;;;;;;;;;;x
+gadsden_purchase_desc;Transportation and trade in the southwest would be greatly simplified if we could acquire the Mexican desert valley that runs just south of our Arizona Territory. In fact, it wouldn't hurt to go ahead and acquire Lower California, as well. We could offer to purchase a bit more of Mexico's land, bidding different sums depending on how much territory they were willing to part with.;;;;;;;;;;;;;x
 2nd_ostend_manifesto_title;Second Ostend Manifesto;;;;;;;;;;;;;x
 2nd_ostend_manifesto_desc;The Confederacy must seek other slave-holding lands to expand into--- and the natural first choice is Cuba. We should contact the island's colonial masters about purchasing Cuba from them.;;;;;;;;;;;;;x
 golden_cuba_title;Confederate Cuba;;;;;;;;;;;;;x
@@ -676,6 +681,25 @@ EVTNAME37807;A Secession Crisis;;;;;;;;;;;;;x
 EVTDESC37807;Regional conflicts have reached the boiling point in $COUNTRY$. Dissatisfied with the centralist tendencies of the current government, elites and bureaucrats in $PROVINCENAME$ have come together to announce their intent to secede from $COUNTRY$ and establish a new state. This would be a grievous blow to our nation's power and prestige, and it faces us with a dilemma.\n\nIf we let this region secede peacefully, the other disaffected territories will want to follow suit. If, however, we attempt to hold the country together by force, we will lose our legitimacy outside of the core regions of New Granada. How shall we respond?;;;;;;;;;;;;;x
 EVTNAME37808;A Presidential Crisis;;;;;;;;;;;;;x
 EVTDESC37808;Regional conflicts have reached the boiling point in $COUNTRY$. A cabal of elites and military leaders have come together in $PROVINCENAME$ to announce their intent to abolish the autonomy of the regions and proclaim the president Protector of Colombia for life. This would incense the estates in the east and west, and it faces us with a dilemma.\n\nIf the president becomes a dictator, the disaffected territories will certainly secede from the federation. We could attempt to hold the country together by force, but we would lose our legitimacy outside of the core regions of New Granada. How shall we respond?;;;;;;;;;;;;;x
+EVTNAME44122;A Northern Purchase?;;;;;;;;;;;;x
+EVTDESC44122;Apparently possessing no shame of any kind, the American government has approached us about purchasing a strip of desert in our northwest to facilitate rail links between Alto California and the Atlantic coast. In fact, they are willing to offer a considerably larger sum if we agree to concede Baja California, as well.\nWe could use the money, and the empty deserts of Sonora are of little tangible value to us. If our pride doesn't forbid it, making this sale would go some way toward restoring good relations between our nations.;;;;;;;;;;;;x
+EVTNAME44123;Lower California;;;;;;;;;;;;x
+EVTDESC44123;Recognizing the inevitability of our expansion, the Mexican government has agreed to concede a piece of the Sonora desert, along with all of Lower California. This will considerably simplify travel between California and the Southeast. From sea to shining sea, indeed!;;;;;;;;;;;;x
+EVTNAME44124;The Gadsden Strip;;;;;;;;;;;;x
+EVTDESC44124;Recognizing the inevitability of our expansion, the Mexican government has agreed to concede a piece of the Sonora desert. This will considerably simplify travel between California and the Southeast.;;;;;;;;;;;;x
+EVTNAME44125;An Offer Rebuffed;;;;;;;;;;;;x
+EVTDESC44125;Refusing to recognize the inevitability of our expansion, the Mexican government has refused to part with the otherwise worthless desert we so reasonably offered to purchase. Other methods may have to be considered...;;;;;;;;;;;;x
+EVTNAME44130;The Maine Census;;;;;;;;;;;;x
+EVTDESC44130;The Treaty of Paris (1783) ended the American Revolutionary War and established the new international border between the United States and British Canada. Some of the details, however, were vague or even contradictory, and now no one is quite certain where Maine ends and New Brunswick begins.\n\nThe state of Maine has sent census-takers into the disputed region and begun recording the local trappers and lumberjacks as American citizens, which has provoked the New Brunswick government into arrests and militia deployments. If the border isn't defined soon, the conflict seems set to grow.;;;;;;;;;;;;x
+EVTNAME44131;A Border Treaty;;;;;;;;;;;;x
+EVTDESC44131;The border dispute along the Maine-New Brunswick frontier continues to escalate. There are now militias on both sides maneuvering along the rivers and ordering each other to stand down. The Secretary of State has invited the British Foreign Minister to work toward a general treaty settling this and a number of other minor disputes between our nations. But Congress is divided on the approach our envoy should take: should our priority be a peaceful resolution of the conflict, or should we insist upon the maximum territory even if it risks war?;;;;;;;;;;;;x
+EVTNAME44132;A Border Treaty;;;;;;;;;;;;x
+EVTDESC44132;The border dispute along the Maine-New Brunswick frontier continues to escalate. There are now militias on both sides maneuvering along the rivers and ordering each other to stand down. The American Secretary of State has invited our Foreign Minister to work toward a general treaty settling this and a number of other minor disputes between our nations. They appear to want the peace preserved, and are willing to renounce some of their claims if we will do the same. Shall we cooperate and keep the peace?;;;;;;;;;;;;x
+EVTDESC44133;The border dispute along the Maine-New Brunswick frontier continues to escalate. There are now militias on both sides maneuvering along the rivers and ordering each other to stand down. The American Secretary of State has invited our Foreign Minister to work toward a general treaty settling this and a number of other minor disputes between our nations. Unfortunately, they are taking an aggressive line, insisting upon their claims to the entire disputed region. Should we back down to keep the peace?;;;;;;;;;;;;x
+EVTNAME44134;Webster-Ashburton Treaty;;;;;;;;;;;;x
+EVTDESC44134;We have concluded a treaty with $FROMCOUNTRY$, resolving several long-standing border disputes between our nations. In particular, the treaty has clearly established the border between Maine and the British colony of New Brunswick. Tensions along the border should be much reduced.;;;;;;;;;;;;x
+EVTNAME44135;Negotiations Break Down;;;;;;;;;;;;x
+EVTDESC44135;The treaty negotiations have collapsed, and the British envoy has departed in a huff. Our relations will be greatly disrupted, and northern Maine will have to be secured the old-fashioned way.;;;;;;;;;;;;x
 EVTNAME44148;The Oregon Trail;;;;;;;;;;;;;x
 EVTDESC44148;Since the war of 1812 the British have quarrelled with us over the boundary between our territories in the American Northwest: both we and they claim the Oregon Country. Now this conflict has entered a new phase, as both nations have begun sending settlers to colonize the region. Hundreds of bold pioneers are already loading up to travel the Oregon Trail and find their fortunes in the Columbia Valley.;;;;;;;;;;;;;
 EVTNAME44149;The Columbia District;;;;;;;;;;;;;x

@@ -3,7 +3,6 @@ controller = PRU
 add_core = PRU
 add_core = PZN
 add_core = POL
-add_core = GER
 trade_goods = cattle
 life_rating = 35
 terrain = good_farmland

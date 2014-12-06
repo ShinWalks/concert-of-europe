@@ -525,8 +525,12 @@ political_decisions = {
 			OR = {
 				tag = PRU
 				tag = NGF
-				tag = GER
+				AND = {
+					tag = GER
+					primary_culture = north_german
+				}
 			}
+			mass_politics = 1
 			OR = {
 				684 = { NOT = { is_core = GER } }
 				685 = { NOT = { is_core = GER } }
@@ -812,6 +816,42 @@ political_decisions = {
 				}
 				country_event = 33025
 			}
+		}
+	}
+	
+	integrate_posen = {
+		picture = embrace_minority
+		potential = {
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+			owns = 699 #Posen
+			699 = {
+				is_core = PZN
+				is_core = THIS
+			}
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+		}
+
+		allow = {
+			war = no
+			owns = 699
+			revolution_n_counterrevolution = 1
+		}
+
+		effect = {
+			prestige = 1
+			badboy = 1
+			POL = { prestige = -2 }
+			relation = { who = POL value = -25 }
+			PZN = { all_core = { remove_core = PZN } }
+		}
+
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	

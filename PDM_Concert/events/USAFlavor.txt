@@ -1102,28 +1102,128 @@ country_event = {
 }
 
 country_event = {
-
-	id = 44122
-	title = "EVTNAME44122" #Webster–Ashburton Treaty
+	id = 44122 #Gadsden Purchase
+	title = "EVTNAME44122"
 	desc = "EVTDESC44122"
-	news = yes
-	news_desc_long = "EVTDESC44122_NEWS_LONG"
-	news_desc_medium = "EVTDESC44122_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC44122_NEWS_SHORT"
-	picture = "treaty"
-
+	picture = "gadsden"
+	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Great!"   
-		250 = {
+		name = "Sell the desert and all of Baja California."
+		treasury = 100000
+		relation = { who = USA value = 25 }
+		102 = {
 			add_core = USA
-			add_core = NEN
+			remove_core = MEX
+			secede_province = USA
 		}
-		relation = {
-			who = ENG
-			value = 100
+		2138 = {
+			add_core = USA
+			remove_core = MEX
+			secede_province = USA
 		}
+		2139 = {
+			add_core = USA
+			remove_core = MEX
+			secede_province = USA
+		}
+		USA = { country_event = 44123 }
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = "Sell the strip of desert."
+		treasury = 30000
+		relation = { who = USA value = 10 }
+		102 = {
+			add_core = USA
+			remove_core = MEX
+			secede_province = USA
+		}
+		USA = { country_event = 44124 }
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				treasury = 250000
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { treasury = 100000 }
+			}
+		}
+	}
+	
+	option = {
+		name = "Refuse the sale."
+		relation = { who = USA value = -25 }
+		USA = { country_event = 44125 }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				treasury = 500000
+			}
+			modifier = {
+				factor = 2
+				treasury = 250000
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { treasury = 100000 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44123
+	title = "EVTNAME44123" #Lower California Acquired
+	desc = "EVTDESC44123"
+	picture = "gadsden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A grand day for Manifest Destiny!"
+		prestige = 5
+		diplomatic_influence = { who = MEX value = 25 }
+		treasury = -100000
+	}
+}
+
+country_event = {
+	id = 44124
+	title = "EVTNAME44124" #Gadsden Strip Acquired
+	desc = "EVTDESC44124"
+	picture = "gadsden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A grand day for Manifest Destiny!"
+		prestige = 2
+		diplomatic_influence = { who = MEX value = 10 }
+		treasury = -30000
+	}
+}
+
+country_event = {
+	id = 44125
+	title = "EVTNAME44125" #Offer Rebuffed
+	desc = "EVTDESC44125"
+	picture = "gadsden"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "How dare they!"
+		prestige = -2
+		diplomatic_influence = { who = MEX value = -25 }
+		leave_alliance = MEX
 	}
 }
 
@@ -1352,6 +1452,244 @@ country_event = {
 	}
 }
 
+#Webster-Ashburton Treaty Events
+country_event = {
+	id = 44130 #The Maine Census
+	title = "EVTNAME44130"
+	desc = "EVTDESC44130"
+	picture = "aroostook"
+	
+	trigger = {
+		tag = USA
+		exists = yes
+		year = 1830
+		ENG = {
+			owns = 250 #Caribou
+			owns = 69 #Edmundston
+		}
+		NOT = {
+			war_with = ENG
+			has_country_flag = aroostook_war
+		}
+	}
+	
+	mean_time_to_happen =  {
+		months = 6
+		modifier = {
+			factor = 0.25
+			month = 9
+		}
+		modifier = {
+			factor = 0.25
+			month = 11
+		}
+		modifier = {
+			factor = 0.1
+			year = 1831
+		}
+	}
+	
+	option = {
+		name = "This sounds like trouble..."
+		set_country_flag = aroostook_war
+		random_country = {
+			limit = {
+				tag = ENG
+				NOT = { tag = THIS }
+			}
+			country_event = 44130
+		}
+		250 = { #Caribou
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 5475
+			}
+		}
+		69 = { #Edmundston
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 5475
+			}
+		}
+		relation = { who = ENG value = -25 }
+	}
+}
+
+country_event = {
+	id = 44131 #A Border Treaty
+	title = "EVTNAME44131"
+	desc = "EVTDESC44131"
+	picture = "treaty"
+
+	trigger = {
+		tag = USA
+		exists = yes
+		has_country_flag = aroostook_war
+		year = 1838
+		ENG = {
+			owns = 250 #Caribou
+			owns = 69 #Edmundston
+		}
+		NOT = {
+			has_country_flag = webster_ashburton
+			war_with = ENG
+			truce_with = ENG
+		}
+	}
+ 
+	mean_time_to_happen =  {
+		months = 12
+	}
+
+	option = {
+		name = "Try to keep the peace."
+		set_country_flag = webster_ashburton
+		250 = { add_core = USA }
+		ENG = { country_event = 44132 }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0.1
+				war_policy = jingoism
+			}
+		}
+	}
+	
+	option = {
+		name = "Demand all of the contested lands."
+		set_country_flag = webster_ashburton
+		badboy = 2
+		250 = { add_core = USA }
+		69 = { add_core = USA }
+		ENG = { country_event = 44133 }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_greater_power = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44132
+	title = "EVTNAME44132" #Maine Border Treaty: Conciliatory
+	desc = "EVTDESC44132"
+	picture = "treaty"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We can accept a compromise."
+		badboy = -3
+		69 = {
+			remove_core = NEN
+		}
+		250 = {
+			remove_core = ENG
+			remove_core = MRU
+			secede_province = USA
+		}
+		relation = { who = FROM value = 25 }
+		FROM = { country_event = 44134 }
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.1
+				war_policy = jingoism
+			}
+		}
+	}
+	
+	option = {
+		name = "No! The entire region is ours!"
+		badboy = 2
+		relation = { who = FROM value = -50 }
+		FROM = { country_event = 44135 }
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	id = 44133
+	title = "EVTNAME44132" #Maine Border Treaty: Belligerent
+	desc = "EVTDESC44133"
+	picture = "treaty"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We acknowledge their claims."
+		prestige = -5
+		badboy = -3
+		69 = {
+			remove_core = ENG
+			remove_core = MRU
+			secede_province = USA
+		}
+		250 = {
+			remove_core = ENG
+			remove_core = MRU
+			secede_province = USA
+		}
+		relation = { who = FROM value = 25 }
+		FROM = { country_event = 44134 }
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.1
+				war_policy = jingoism
+			}
+		}
+	}
+	
+	option = {
+		name = "Nonsense! The region is ours!"
+		relation = { who = FROM value = -50 }
+		FROM = { country_event = 44135 }
+		ai_chance = {
+			factor = 60
+		}
+	}
+}
+
+country_event = {
+	id = 44134
+	title = "EVTNAME44134" #Webster–Ashburton Treaty
+	desc = "EVTDESC44134"
+	news = yes
+	news_desc_long = "EVTDESC44122_NEWS_LONG"
+	news_desc_medium = "EVTDESC44122_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC44122_NEWS_SHORT"
+	picture = "treaty"
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Excellent!"
+		relation = { who = FROM value = 25 }
+	}
+}
+
+country_event = {
+	id = 44135
+	title = "EVTNAME44135" #Negotiations Break Down
+	desc = "EVTDESC44135"
+	picture = "rebellion"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then we must prepare for the worst."
+		relation = { who = FROM value = -100 }
+		leave_alliance = FROM
+	}
+}
+
 country_event = {
 
 	id = 44140
@@ -1378,6 +1716,7 @@ country_event = {
 			}
 		}
 	}
+	
 	option = {
 		name = "Never! We got there first."
 		FROM = { country_event = 44141 }
@@ -1471,6 +1810,7 @@ country_event = {
 			}
 		}
 	}
+	
 	option = {
 		name = "Never! We got there first."
 		FROM = { country_event = 44146 }

@@ -1,5 +1,6 @@
 capital = 682
 primary_culture = polish
+culture = north_german
 culture = south_german
 culture = czech
 religion = protestant

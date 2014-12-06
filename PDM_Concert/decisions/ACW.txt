@@ -349,7 +349,8 @@ political_decisions = {
 			MEX_103 = { add_core = USA } #New Mexico
 			MEX_94 = { add_core = USA } #Nevada
 			MEX_97 = { add_core = USA } #Utah
-			MEX_100 = { add_core = USA } #Arizona
+			100 = { add_core = USA } #Phoenix
+			101 = { add_core = USA } #Flagstaff
 			USA_129 = { add_core = USA } #Oklahoma
 			USA_106 = { add_core = USA } #Colorado
 			USA_91 = { add_core = USA } #Idaho
@@ -428,6 +429,37 @@ political_decisions = {
 				NOT = { any_owned_province = { is_core = TEX } }
 				badboy = 0.25
 			}
+		}
+	}
+	
+	gadsden_purchase = {
+		picture = expansion
+		potential = {
+			tag = USA
+			is_greater_power = yes
+			has_country_flag = treaty_of_guadalupe_hidalgo
+			owns = 100 #Phoenix
+			MEX = {
+				owns = 102 #Tucson
+				owns = 2138 #Loreto
+				owns = 2139 #Rosarito
+			}
+			NOT = {
+				war_with = MEX
+				has_country_flag = gadsden_purchase
+			}
+		}
+		allow = {
+			war = no
+			treasury = 100000
+			NOT = { truce_with = MEX }
+		}
+		effect = {
+			set_country_flag = gadsden_purchase
+			MEX = { country_event = 44122 }
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -898,44 +930,6 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-		}
-	}
-	
-	webster_ashburton_treaty = {
-		potential = {
-			tag = ENG
-			NOT = { has_country_flag = webster_ashburton_signed }
-			USA = {
-				any_owned_province = { region = USA_247 }
-			}
-			year = 1835
-		}
-		
-		allow = {
-			owns = 250
-			NOT = { war_with = USA }
-		}
-		
-		effect = {
-			250 = {
-				remove_core = ENG
-				remove_core = MRU
-				remove_core = CAN
-				secede_province = USA
-			}
-			badboy = -2
-			prestige = 10
-			USA = { country_event = 44122 }
-			set_country_flag = webster_ashburton_signed
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { year = 1842 }
-				NOT = { badboy = 0.2 }
-			}
 		}
 	}
 	

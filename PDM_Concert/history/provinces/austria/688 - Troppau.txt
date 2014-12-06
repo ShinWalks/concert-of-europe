@@ -1,7 +1,8 @@
 owner = AUS
 controller = AUS
-add_core = BOH
 add_core = AUS
+add_core = SLS
+add_core = BOH
 trade_goods = iron
 life_rating = 35
 terrain = deciduous_forest_mountains

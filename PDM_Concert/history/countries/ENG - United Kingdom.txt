@@ -196,7 +196,6 @@ oob = "/1821/ENG_oob.txt"
 	set_country_flag = no_help_for_the_irish
 	set_country_flag = young_irish
 	set_country_flag = mediated_belgian_independence
-	set_country_flag = webster_ashburton_signed
 	decision = canada_1861_start
 	decision = organize_british_columbia
 	decision = south_africa_1861_start
