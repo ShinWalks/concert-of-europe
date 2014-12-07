@@ -1756,6 +1756,8 @@ country_event = {
 		months = 12
 	}
 	
+	fire_only_once = yes
+	
 	option = {
 		name = "Pedro will give the crown to Maria and reaffirm the constitution."
 		relation = { who = BRZ value = 200 }
