@@ -1139,7 +1139,6 @@ political_decisions = {
 		picture = become_poland
 		potential = {
 			OR = {
-				tag = PML
 				tag = POL
 				tag = PLC
 			}
@@ -1193,7 +1192,6 @@ political_decisions = {
 			691 = { change_province_name = "Tuchel" }
 			694 = { change_province_name = "Thorn" }
 			prestige = 1
-			PML = { prestige = -2 }
 			POL = { prestige = -2 }
 			PLC = { prestige = -2 }
 		}
@@ -1203,7 +1201,6 @@ political_decisions = {
 		picture = become_poland
 		potential = {
 			OR = {
-				tag = PML
 				tag = POL
 				tag = PLC
 			}
@@ -1247,6 +1244,60 @@ political_decisions = {
 			clr_global_flag = polish_gdansk
 			690 = { change_province_name = "Danzig" }
 			prestige = 1
+		}
+	}
+	
+	polish_mazury = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = POL
+				tag = PLC
+			}
+			owns = 696 #Allenstein
+			NOT = {
+				has_global_flag = polish_mazury
+			}
+		}
+		
+		allow = {
+			owns = 696
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_mazury
+			696 = { change_province_name = "Olsztyn" }
+			3258 = { change_province_name = "Kwidzyn" }
+			prestige = 1
+		}
+	}
+	
+	german_allenstein = {
+		picture = become_poland
+		potential = {
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+			owns = 696 #Allenstein
+			696 = { is_core = THIS }
+			has_global_flag = polish_mazury
+		}
+		
+		allow = {
+			owns = 696
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = polish_mazury
+			696 = { change_province_name = "Allenstein" }
+			3258 = { change_province_name = "Marienwerder" }
+			prestige = 1
+			POL = { prestige = -1 }
+			PLC = { prestige = -1 }
 		}
 	}
 	
