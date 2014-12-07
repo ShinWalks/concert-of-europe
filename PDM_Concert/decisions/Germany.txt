@@ -553,6 +553,7 @@ political_decisions = {
 							region = PRU_701
 							region = PRU_682
 							region = PRU_695
+							region = PRU_693
 							province_id = 684
 							province_id = 685
 						}
@@ -576,6 +577,7 @@ political_decisions = {
 				PRU_701 = { add_core = GER }
 				PRU_682 = { add_core = GER }
 				PRU_695 = { add_core = GER }
+				PRU_693 = { add_core = GER }
 				684 = { add_core = GER }
 				685 = { add_core = GER }
 			}

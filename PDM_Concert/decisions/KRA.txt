@@ -472,7 +472,8 @@ political_decisions = {
 			352 = { add_core = PLC } #Livonia
 			354 = { add_core = PLC } #Livonia
 			355 = { add_core = PLC } #Livonia
-			PRU_695 = { add_core = PLC } #East Prussia
+			PRU_695 = { add_core = PLC } #Königsberg
+			693 = { add_core = PLC } #Elbing
 			692 = { add_core = PLC } #Deutsch Krone
 			962 = { add_core = PLC } #Chernigov
 			963 = { add_core = PLC } #Poltava
