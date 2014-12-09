@@ -314,7 +314,9 @@ PRU_684 = { 684 685 688 689 2584 } #Upper Silesia
 
 PRU_690 = { 690 691 694 692 } #Westpreußen
 
-PRU_695 = { 695 696 697 698 693 3258 } #Ostpreußen
+PRU_695 = { 695 697 } #Königsberg
+
+PRU_693 = { 696 693 3258 } #Ermland&Masuren
 
 PRU_701 = { 701 699 700 } #Posen
 
@@ -535,7 +537,7 @@ RUS_354 = { 354 355 3251 } #Livonia
 
 RUS_357 = { 357 358 359 356 } #Courland
 
-RUS_360 = { 361 363 364 365 } #Lithuania
+RUS_360 = { 361 363 364 365 698 } #Lithuania
 
 RUS_361 = { 360 947 938 } #Vilnius
 
