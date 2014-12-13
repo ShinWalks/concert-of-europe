@@ -1,7 +1,8 @@
 owner = AUS
 controller = AUS
-add_core = CRO
+add_core = SYL
 add_core = HUN
-trade_goods = cattle
-life_rating = 36
-terrain = forested_farmland
+add_core = ROM
+trade_goods = wool
+life_rating = 32
+terrain = hilly_farmland

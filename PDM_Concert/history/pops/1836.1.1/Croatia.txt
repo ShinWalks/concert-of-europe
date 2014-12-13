@@ -65,7 +65,7 @@
 	aristocrats = {
 		culture = croat
 		religion = catholic
-		size = 450
+		size = 800
 	}
 
 	bureaucrats = {
@@ -89,26 +89,25 @@
 	clergymen = {
 		culture = croat
 		religion = catholic
-		size = 450
+		size = 625
 	}
 
 	artisans = {
 		culture = croat
 		religion = catholic
-		size = 2500
+		size = 3400
 	}
 
 	soldiers = {
 		culture = croat
 		religion = catholic
-		size= 1100
-
+		size = 1275
 	}
 
 	farmers = {
 		culture = croat
 		religion = catholic
-		size = 39250
+		size = 55650
 	}
 
 	aristocrats = {
@@ -144,8 +143,7 @@
 	soldiers = {
 		culture = hungarian
 		religion = catholic
-		size= 50
-
+		size = 50
 	}
 
 	farmers = {
@@ -175,47 +173,13 @@
 	soldiers = {
 		culture = south_german
 		religion = catholic
-		size= 75
-
+		size = 75
 	}
 
 	farmers = {
 		culture = south_german
 		religion = catholic
 		size = 6500
-	}
-}
-#Sisak (116000/29000 POPS)
-772 = {
-	aristocrats = {
-		culture = croat
-		religion = catholic
-		size = 350
-	}
-
-	clergymen = {
-		culture = croat
-		religion = catholic
-		size = 175
-	}
-
-	artisans = {
-		culture = croat
-		religion = catholic
-		size = 900
-	}
-
-	soldiers = {
-		culture = croat
-		religion = catholic
-		size= 175
-
-	}
-
-	farmers = {
-		culture = croat
-		religion = catholic
-		size = 16400
 	}
 
 	clergymen = {
@@ -233,8 +197,7 @@
 	soldiers = {
 		culture = serb
 		religion = orthodox
-		size= 125
-
+		size = 125
 	}
 
 	farmers = {

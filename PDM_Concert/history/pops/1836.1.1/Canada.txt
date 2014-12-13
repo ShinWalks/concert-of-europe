@@ -338,33 +338,34 @@
 	aristocrats = {
 		culture = inuit
 		religion = animist
-		size = 5
+		size = 15
 	}
 
 	clergymen = {
 		culture = inuit
 		religion = animist
-		size = 10
+		size = 25
 	}
 
 	artisans = {
 		culture = inuit
 		religion = animist
-		size = 25
+		size = 60
 	}
 
 	soldiers = {
 		culture = inuit
 		religion = animist
-		size= 5
+		size= 15
 
 	}
 
 	farmers = {
 		culture = inuit
 		religion = animist
-		size = 450
+		size = 1080
 	}
+
 }
 #Baffin Island (4000/1000 POPS)
 45 = {
@@ -397,40 +398,6 @@
 		culture = inuit
 		religion = animist
 		size = 900
-	}
-
-}
-#Whale Cove (2800/700 POPS)
-2595 = {
-	aristocrats = {
-		culture = inuit
-		religion = animist
-		size = 10
-	}
-
-	clergymen = {
-		culture = inuit
-		religion = animist
-		size = 15
-	}
-
-	artisans = {
-		culture = inuit
-		religion = animist
-		size = 35
-	}
-
-	soldiers = {
-		culture = inuit
-		religion = animist
-		size= 10
-
-	}
-
-	farmers = {
-		culture = inuit
-		religion = animist
-		size = 630
 	}
 
 }

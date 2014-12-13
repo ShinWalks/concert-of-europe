@@ -4,7 +4,7 @@ USA_1 = { 1 2 3 4 5 2599 2630 2631 } #Alaska
 
 ENG_6 = { 6 7 8 } #Yukon
 
-ENG_9 = { 9 10 11 12 43 44 45 2595 2596 2598 } #Northwest Territories
+ENG_9 = { 9 10 11 12 43 44 45 2596 2598 } #Northwest Territories
 
 CAN_13 = { 13 14 20 21 15 } #Columbia
 
@@ -148,7 +148,7 @@ ENG_300 = { 300 294 301 302 303 } #South East England
 
 ### Scandinavia
 
-DEN_251 = { 251 252 253 2591 2632 2636 } #Iceland & Greenland
+DEN_251 = { 251 252 253 2591 2632 } #Iceland & Greenland
 
 SWE_308 = { 308 305 306 307 3246 } #Nordnoge
 
@@ -181,13 +181,13 @@ DEN_372 = { 372 373 374 } #Sjaelland
 
 ### Low Countries
 
-NET_375 = { 375 376 377 382 } #Holland
+NET_375 = { 375 376 377 378 } #Holland
 
-NET_379 = { 379 378 380 381 } #Zeeland
+NET_379 = { 379 382 2595 380 381 } #Gelderland-North Brabant
 
 NET_385 = { 385 383 384 386 } #Friesland
 
-BEL_387 = { 387 388 389 390 391 } #Flanders
+BEL_387 = { 387 390 389 388 391 } #Flanders
 
 BEL_394 = { 394 392 393 395 396 398 } #Wallonia
 
@@ -335,19 +335,19 @@ AUS_626 = { 631 632 } #Moravia
 
 AUS_633 = { 633 634 635 636 637 638 950 } #Slovakia
 
-AUS_641 = { 641 645 646 648 649 650 } #Central Hungary
+AUS_641 = { 641 645 646 648 649 650 } #Great Plain/Central Hungary
 
 AUS_652 = { 652 653 } #Banat
 
-AUS_654 = { 654 655 656 661 651 647 } #Western Transylvania
+AUS_654 = { 654 661 651 647 660 2533 } #Northern Transylvania
 
-AUS_657 = { 657 659 660 2533 } #Eastern Transylvania
+AUS_657 = { 657 655 656 659 772 } #Southern Transylvania
 
-AUS_702 = { 702 951 952 953 705 } #Galicia
+AUS_702 = { 702 951 952 953 705 } #East Galicia
 
-AUS_703 = { 703 704 3253 714 } #Lesser Poland
+AUS_703 = { 703 704 3253 714 } #West Galicia
 
-RUS_715 = { 715 711 713 716 } #West Galicia
+RUS_715 = { 715 711 713 716 } #Lesser Poland
 
 AUS_726 = { 726 727 728 } #Lombardia
 
@@ -357,9 +357,9 @@ AUS_734 = { 734 735 } #South Tirol
 
 AUS_736 = { 736 737 769 770 778 } #Istria
 
-AUS_768 = { 767 768 } #Slovenia
+AUS_768 = { 768 767 } #Slovenia/Carniola
 
-AUS_771 = { 771 772 773 774 775 776 } #Croatia
+AUS_771 = { 771 773 774 775 776 } #Croatia
 
 AUS_777 = { 779 793 777 } #Slavonia
 
@@ -529,7 +529,7 @@ AFG_1214 = { 1214 1215 1213 1212 1211 } #Kandahar
 
 ### Russia
 
-RUS_349 = { 349 350 351 352 353 } #Estonia
+RUS_349 = { 349 352 350 351 353 } #Estonia
 
 RUS_354 = { 354 355 3251 } #Livonia
 
@@ -545,7 +545,7 @@ RUS_339 = { 339 984 995 988 } #Karelia
 
 RUS_706 = { 706 708 709 710 717 712 } #Masovia
 
-RUS_936 = { 936 719 937 } #Grodno/Brêst
+RUS_936 = { 936 719 937 2636 } #Grodno/Brêst
 
 RUS_718 = { 718 940 939 941 942 } #Minsk
 

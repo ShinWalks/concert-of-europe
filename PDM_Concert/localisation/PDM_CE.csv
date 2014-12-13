@@ -42,15 +42,21 @@ RUS_354;Livonia;;;;;;;;;;;;x
 RUS_357;Courland;;;;;;;;;;;;x
 RUS_360;Kovno;;;;;;;;;;;;x
 RUS_361;Vilna;;;;;;;;;;;;x
+NET_379;Gelderland-North Brabant;;;;;;;;;;;;x
 FRA_400;Pas-de-Calais;;;;;;;;;;;;x
 SPA_474;Galicia-Asturias;;;;;;;;;;;;x
 SPA_477;Castilla-León;;;;;;;;;;;;x
 SWI_605;German Switzerland;;;;;;;;;;;;x
 SWI_607;French Switzerland;;;;;;;;;;;;x
-AUS_702;Galicia;;;;;;;;;;;;x
-AUS_703;Lesser Poland;;;;;;;;;;;;x
+AUS_641;Great Plain;;;;;;;;;;;;x
+AUS_654;Northern Transylvania;;;;;;;;;;;;x
+AUS_657;Southern Transylvania;;;;;;;;;;;;x
+AUS_702;East Galicia;;;;;;;;;;;;x
+AUS_703;West Galicia;;;;;;;;;;;;x
 RUS_707;Suwalki;;;;;;;;;;;;x
+RUS_715;Lesser Poland;;;;;;;;;;;;x
 SIC_760;Calabria;;;;;;;;;;;;x
+AUS_768;Krain-Untersteiermark;;;;;;;;;;;;x
 TUR_824;Epirus;;;;;;;;;;;;x
 TUR_828;Eastern Thrace;;;;;;;;;;;;x
 TUR_860;Istanbul Region;;;;;;;;;;;;x
@@ -68,6 +74,7 @@ ENG_1252;East Bengal;;;;;;;;;;;;x
 ENG_1320;Andaman & Nicobar Islands;;;;;;;;;;;;x
 SWI_2568;Italian Switzerland;;;;;;;;;;;;x
 PROV69;Edmundston;;;;;;;;;;;;;x
+PROV350;Narwa;;;;;;;;;;;;;x
 PROV351;Pernau;;;;;;;;;;;;;x
 PROV355;Wolmar;;;;;;;;;;;;;x
 PROV356;Jakobstadt;;;;;;;;;;;;;x
@@ -80,6 +87,12 @@ PROV362;Mariampol;;;;;;;;;;;;;x
 PROV363;Ponevezh;;;;;;;;;;;;;x
 PROV364;Shavli;;;;;;;;;;;;;x
 PROV365;Telshi;;;;;;;;;;;;;x
+PROV387;Bruxelles;;;;;;;;;;;;;x
+PROV388;Brugge;;;;;;;;;;;;;x
+PROV389;Gent;;;;;;;;;;;;;x
+PROV390;Antwerpen;;;;;;;;;;;;;x
+PROV393;Mons;;;;;;;;;;;;;x
+PROV396;Verviers;;;;;;;;;;;;;x
 PROV625;Prag;;;;;;;;;;;;;x
 PROV626;Königgrätz;;;;;;;;;;;;;x
 PROV628;Reichenberg;;;;;;;;;;;;;x
@@ -87,12 +100,31 @@ PROV629;Pilsen;;;;;;;;;;;;;x
 PROV630;Budweis;;;;;;;;;;;;;x
 PROV631;Brünn;;;;;;;;;;;;;x
 PROV632;Olmütz;;;;;;;;;;;;;x
+PROV633;Pozsony;;;;;;;;;;;;;x
+PROV634;Trencsén;;;;;;;;;;;;;x
+PROV635;Nyitra;;;;;;;;;;;;;x
+PROV636;Besztercebánya;;;;;;;;;;;;;x
+PROV637;Kassa;;;;;;;;;;;;;x
+PROV638;Komárom;;;;;;;;;;;;;x
 PROV641;Buda;;;;;;;;;;;;;x
+PROV647;Nagyvárad;;;;;;;;;;;;;x
+PROV651;Nagykároly;;;;;;;;;;;;;x
+PROV652;Temesvár;;;;;;;;;;;;;x
+PROV654;Kolozsvár;;;;;;;;;;;;;x
+PROV655;Gyulafehérvár;;;;;;;;;;;;;x
+PROV656;Déva;;;;;;;;;;;;;x
+PROV657;Hermannstadt;;;;;;;;;;;;;x
+PROV659;Kronstadt;;;;;;;;;;;;;x
+PROV660;Szentgyörgy;;;;;;;;;;;;;x
+PROV661;Beszterce;;;;;;;;;;;;;x
 PROV689;Teschen;;;;;;;;;;;;;x
 PROV694;Thorn;;;;;;;;;;;;;x
 PROV701;Gnesen;;;;;;;;;;;;;x
 PROV702;Lwow;;;;;;;;;;;;;x
 PROV719;Belostok;;;;;;;;;;;;x
+PROV767;Marburg;;;;;;;;;;;;x
+PROV768;Laibach;;;;;;;;;;;;x
+PROV772;Arad;;;;;;;;;;;;x
 PROV939;Novogrudok;;;;;;;;;;;;;x
 PROV947;Vileyka;;;;;;;;;;;;;x
 PROV951;Stryj;;;;;;;;;;;;;x
@@ -113,8 +145,11 @@ PROV1019;Voronezh;;;;;;;;;;;;;x
 PROV1045;Ust-Medveditskaya;;;;;;;;;;;;;x
 PROV1046;Nizhnechirskaya;;;;;;;;;;;;;x
 PROV1090;Tiflis;;;;;;;;;;;;;x
+PROV2533;Vásárhely;;;;;;;;;;;;;x
 PROV2580;Staraya Ladoga;;;;;;;;;;;;;x
 PROV2584;Bielitz;;;;;;;;;;;;;x
+PROV2595;Nijmegen;;;;;;;;;;;;;x
+PROV2636;Volkovysk;;;;;;;;;;;;;x
 PROV3249;Eupen;;;;;;;;;;;;;x
 PROV3250;Guangzhou Wan;;;;;;;;;;;;;x
 PROV3251;Dünaburg;;;;;;;;;;;;;x
@@ -293,6 +328,10 @@ czech_opava_title;Czech Opava;;;;;;;;;;;;x
 czech_opava_desc;Now that Opava has gained its freedom, proper Czech names can be restored to the land.;;;;;;;;;;;;x
 czech_tesin_title;Czech Tesín;;;;;;;;;;;;x
 czech_tesin_desc;Now that Tesín has gained its freedom, proper Czech names can be restored to the land.;;;;;;;;;;;;x
+slovene_slovenia_title;Slovene Slovenia;;;;;;;;;;;;x
+slovene_slovenia_desc;Now that Slovenia has gained its freedom, proper Slovene names can be restored to the land.;;;;;;;;;;;;x
+german_carniola_title;German Carniola;;;;;;;;;;;;x
+german_carniola_desc;Now that Carniola-Styria has been recovered, proper German names can be restored to the land.;;;;;;;;;;;;x
 primus_inter_pares_title;Primus Inter Pares;Primus Inter Pares;Primus Inter Pares;;;;;;;;;;;x
 primus_inter_pares_desc;The kings of Hungary are considered to be first among equals within the aristocracy, and have rarely held absolute power. Even in the middle ages our kings were elected to their position by the Estates. During later times certain aristocrats even gained the right of insurgency, should the king behave tyrannically. Now, at the dawn of this new age, the evolution of state, government and political parties make reform necessary. It is time for our monarch, in accordance with the Estates, to give a constitution to His people, and lead us into a new chapter of Hungarian history.;;;;;;;;;;;;;x
 tizenket_pont_title;The Twelve Points;;;;;;;;;;;;;x
@@ -307,6 +346,22 @@ croatian_compromise_title;The Croatian Compromise;;;;;;;;;;;;;x
 croatian_compromise_desc;Inspired by the Austro-Hungarian Compromise enacted the year before, the Croatianâ€“Hungarian Settlement acknowledged the long-standing autonomy of Croatia within Hungary. It allowed the formation of a Croatian Parliament and gave seats to Croatian MPs in Budapest. With this compromise, we recognise Croatians as full citizens of our state.;;;;;;;;;;;;;x
 buda_pest_title;Budapest;;;;;;;;;;;;;x
 buda_pest_desc;Buda and Pest were originally two separate cities on the two banks of the Danube, with Buda being Hungary's political capital and Pest an industrial and economic center. The two cities eventually grew together and were connected by a railroad bridge, which led to their legal unification and renaming as Budapest in 1873.;;;;;;;;;;;;;x
+slovak_slovakia_title;Slovak Slovakia;;;;;;;;;;;;x
+slovak_slovakia_desc;Now that Slovakia has gained its freedom, proper Slovakian names can be restored to the land.;;;;;;;;;;;;x
+hungarian_slovakia_title;Hungarian Slovakia;;;;;;;;;;;;x
+hungarian_slovakia_desc;Now that Slovakia has been recovered, proper Hungarian names can be restored to the land.;;;;;;;;;;;;x
+romanian_north_transylvania_title;Romanian North Transylvania;;;;;;;;;;;;x
+romanian_north_transylvania_desc;Now that North Transylvania has gained its freedom, proper Romanian names can be restored to the land.;;;;;;;;;;;;x
+hungarian_north_transylvania_title;Hungarian North Transylvania;;;;;;;;;;;;x
+hungarian_north_transylvania_desc;Now that North Transylvania has been recovered, proper Hungarian names can be restored to the land.;;;;;;;;;;;;x
+romanian_south_transylvania_title;Romanian South Transylvania;;;;;;;;;;;;x
+romanian_south_transylvania_desc;Now that South Transylvania has gained its freedom, proper Romanian names can be restored to the land.;;;;;;;;;;;;x
+hungarian_south_transylvania_title;Hungarian South Transylvania;;;;;;;;;;;;x
+hungarian_south_transylvania_desc;Now that South Transylvania has been recovered, proper Hungarian names can be restored to the land.;;;;;;;;;;;;x
+romanian_banat_title;Romanian Banat;;;;;;;;;;;;x
+romanian_banat_desc;Now that Banat has gained its freedom, proper Romanian names can be restored to the land.;;;;;;;;;;;;x
+hungarian_banat_title;Hungarian Banat;;;;;;;;;;;;x
+hungarian_banat_desc;Now that Banat has been recovered, proper Hungarian names can be restored to the land.;;;;;;;;;;;;x
 CPL_recognized_title;Independence Recognized;;;;;;;;;;;;;x
 CPL_recognized_desc;Having proven our independence by victory on the battlefield, we can now demand that the international order recognize our right to exist as a sovereign nation.;;;;;;;;;;;;;x
 greater_PLC_title;Greater Poland-Lithuania;;;;;;;;;;;;;x
@@ -327,16 +382,16 @@ polish_opole_title;Polish Opole;;;;;;;;;;;;x
 polish_opole_desc;Now that Opole has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
 german_oppeln_title;German Oppeln;;;;;;;;;;;;x
 german_oppeln_desc;Now that Oppeln has been recovered, proper German names can be restored to the land.;;;;;;;;;;;;x
-polish_west_prussia_title;Polish West Prussia;;;;;;;;;;;;x
-polish_west_prussia_desc;Now that West Prussia has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
+polish_pomerelia_title;Polish Pomerelia;;;;;;;;;;;;x
+polish_pomerelia_desc;Now that Pomerelia has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
 german_west_prussia_title;German West Prussia;;;;;;;;;;;;x
 german_west_prussia_desc;Now that West Prussia has been recovered, proper German names can be restored to the land.;;;;;;;;;;;;x
 polish_gdansk_title;Polish Gdansk;;;;;;;;;;;;x
 polish_gdansk_desc;Now that Gdansk has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
 german_danzig_title;German Danzig;;;;;;;;;;;;x
 german_danzig_desc;Now that Danzig has been recovered, proper German names can be restored to the land.;;;;;;;;;;;;x
-polish_gdansk_title;Polish Mazury;;;;;;;;;;;;x
-polish_gdansk_desc;Now that Mazury has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
+polish_masuria_title;Polish Masuria;;;;;;;;;;;;x
+polish_masuria_desc;Now that Masuria has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
 german_danzig_title;German Allenstein;;;;;;;;;;;;x
 german_danzig_desc;Now that Allenstein has been recovered, proper German names can be restored to the land.;;;;;;;;;;;;x
 polish_cieszyn_title;Polish Cieszyn;;;;;;;;;;;;x
@@ -355,6 +410,8 @@ latvian_courland_title;Latvian Courland;;;;;;;;;;;;x
 latvian_courland_desc;Now that Courland has gained its freedom, proper Latvian names can be restored to the land.;;;;;;;;;;;;x
 latvian_livonia_title;Latvian Livonia;;;;;;;;;;;;x
 latvian_livonia_desc;Now that Livonia has gained its freedom, proper Latvian names can be restored to the land.;;;;;;;;;;;;x
+estonian_estonia_title;Estonian Estonia;;;;;;;;;;;;x
+estonian_estonia_desc;Now that Estonia has gained its freedom, proper Estonian names can be restored to the land.;;;;;;;;;;;;x
 rename_malvinas_title;Las Malvinas son Argentinas;;;;Las Malvinas son Argentinas;;;;;;;;;x
 rename_malvinas_desc;We have finally liberated the Islas Malvinas from British rule. We can now insist upon their proper name!;;;;;;;;;;;;;x
 restore_falkland_title;Restore Falkland Islands;;;;;;;;;;;;;x

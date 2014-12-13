@@ -4,4 +4,4 @@ add_core = SLV
 add_core = HUN
 trade_goods = coal
 life_rating = 33
-terrain = hilly_farmland
+terrain = deciduous_forest_hills

@@ -1135,7 +1135,7 @@ political_decisions = {
 		}
 	}
 	
-	polish_west_prussia = {
+	polish_pomerelia = {
 		picture = become_poland
 		potential = {
 			OR = {
@@ -1144,7 +1144,7 @@ political_decisions = {
 			}
 			owns = 691 #Tuchel
 			NOT = {
-				has_global_flag = polish_west_prussia
+				has_global_flag = polish_pomerelia
 			}
 		}
 		
@@ -1154,11 +1154,11 @@ political_decisions = {
 		}
 		
 		effect = {
-			set_global_flag = polish_west_prussia
+			set_global_flag = polish_pomerelia
 			691 = {
 				change_province_name = "Tuchola"
 				state_scope = {
-					change_region_name = "West Prussia"
+					change_region_name = "Pomerelia"
 				}
 			}
 			694 = { change_province_name = "Torun" }
@@ -1179,7 +1179,7 @@ political_decisions = {
 			}
 			owns = 691 #Tuchel
 			691 = { is_core = THIS }
-			has_global_flag = polish_west_prussia
+			has_global_flag = polish_pomerelia
 		}
 		
 		allow = {
@@ -1188,8 +1188,13 @@ political_decisions = {
 		}
 		
 		effect = {
-			clr_global_flag = polish_west_prussia
-			691 = { change_province_name = "Tuchel" }
+			clr_global_flag = polish_pomerelia
+			691 = {
+				change_province_name = "Tuchel"
+				state_scope = {
+					change_region_name = "Westpreußen"
+				}
+			}
 			694 = { change_province_name = "Thorn" }
 			prestige = 1
 			POL = { prestige = -2 }
@@ -1247,7 +1252,7 @@ political_decisions = {
 		}
 	}
 	
-	polish_mazury = {
+	polish_masuria = {
 		picture = become_poland
 		potential = {
 			OR = {
@@ -1256,7 +1261,7 @@ political_decisions = {
 			}
 			owns = 696 #Allenstein
 			NOT = {
-				has_global_flag = polish_mazury
+				has_global_flag = polish_masuria
 			}
 		}
 		
@@ -1266,7 +1271,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			set_global_flag = polish_mazury
+			set_global_flag = polish_masuria
 			696 = { change_province_name = "Olsztyn" }
 			3258 = { change_province_name = "Kwidzyn" }
 			prestige = 1
@@ -1283,7 +1288,7 @@ political_decisions = {
 			}
 			owns = 696 #Allenstein
 			696 = { is_core = THIS }
-			has_global_flag = polish_mazury
+			has_global_flag = polish_masuria
 		}
 		
 		allow = {
@@ -1292,7 +1297,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			clr_global_flag = polish_mazury
+			clr_global_flag = polish_masuria
 			696 = { change_province_name = "Allenstein" }
 			3258 = { change_province_name = "Marienwerder" }
 			prestige = 1
@@ -1387,6 +1392,7 @@ political_decisions = {
 				}
 			}
 			937 = { change_province_name = "Brzesc" }
+			2636 = { change_province_name = "Wolkowysk" }
 			prestige = 2
 			RUS = { prestige = -1 }
 			BYE = { prestige = -1 }
@@ -1558,6 +1564,37 @@ political_decisions = {
 			355 = { change_province_name = "Valmiera" }
 			3251 = { change_province_name = "Daugavpils" }
 			prestige = 2
+			RUS = { prestige = -1 }
+		}
+	}
+	
+	estonian_estonia = {
+		picture = form_baltic_states
+		potential = {
+			OR = {
+				tag = EST
+				tag = UBD
+				tag = SCA
+			}
+			owns = 349 #Tallinn
+			NOT = {
+				has_global_flag = estonian_estonia
+			}
+		}
+		
+		allow = {
+			owns = 349
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = estonian_estonia
+			349 = { change_province_name = "Tallinn" }
+			350 = { change_province_name = "Narva" }
+			351 = { change_province_name = "Pärnu" }
+			352 = { change_province_name = "Tartu" }
+			353 = { change_province_name = "Saaremaa" }
+			prestige = 3
 			RUS = { prestige = -1 }
 		}
 	}

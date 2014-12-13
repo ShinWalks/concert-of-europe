@@ -28,7 +28,6 @@ RUS_343;Helsinki;;;;;;;;;;;;x
 RUS_345;Turku;;;;;;;;;;;;x
 HOL_369;Holstein;;;;;;;;;;;;x
 SCH_370;Schleswig;;;;;;;;;;;;x
-NET_379;Zeeland;;;;;;;;;;;;x
 PROV381;Limburg;;;;;;;;;;;;x
 BEL_387;Flanders;;;;;;;;;;;;x
 BEL_394;Wallonia;;;;;;;;;;;;x
@@ -47,15 +46,12 @@ BAV_595;Franconia;;;;;;;;;;;;x
 BAV_599;Upper Bavaria;;;;;;;;;;;;x
 SPA_610;Caroline Islands;;;;;;;;;;;;x
 AUS_652;Banat;;;;;;;;;;;;x
-AUS_654;Western Transylvania;;;;;;;;;;;;x
-AUS_657;Eastern Transylvania;;;;;;;;;;;;x
 MOL_676;Bessarabia;;;;;;;;;;;;x
 PRU_682;Lower Silesia;;;;;;;;;;;;x
 PRU_684;Upper Silesia;;;;;;;;;;;;x
 PROV704;Nowy Sacz;;;;;;;;;;;;x
 RUS_706;Masovia;;;;;;;;;;;;x
 PROV711;Siedlce;;;;;;;;;;;;x
-RUS_715;West Galicia;;;;;;;;;;;;x
 PROV748;Grosseto;;;;;;;;;;;;x
 SAR_765;Sardinia & Corsica;;;;;;;;;;;;x
 FRA_801;Tahiti;;;;;;;;;;;;x
@@ -241,7 +237,6 @@ USA_2543;Samoa;;;;;;;;;;;;x
 PROV2554;Misiones;;;;;;;;;;;;x
 HES_2560;Hessen;;;;;;;;;;;;x
 RUS_2587;Kola;;;;;;;;;;;;x
-PROV2595;Keewatin;;;;;;;;;;;;x
 CHI_2678;Outer Mongolia;;;;;;;;;;;;x
 PROV2834;Bay of Ayan;;;;;;;;;;;;x
 PROV2836;Coast of Kamchatka;;;;;;;;;;;;x

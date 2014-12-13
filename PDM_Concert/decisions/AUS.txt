@@ -1525,6 +1525,72 @@ political_decisions = {
 		}
 	}
 	
+	slovene_slovenia = {
+		picture = form_yugoslavia
+		potential = {
+			OR = {
+				tag = SLO
+				tag = YUG
+			}
+			owns = 768 #Ljubljana
+			NOT = {
+				has_global_flag = slovene_slovenia
+			}
+		}
+		
+		allow = {
+			owns = 768
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = slovene_slovenia
+			768 = {
+				change_province_name = "Ljubljana"
+				state_scope = {
+					change_region_name = "Slovenia"
+				}
+			}
+			767 = { change_province_name = "Maribor" }
+			prestige = 2
+			AUS = { prestige = -1 }
+			KUK = { prestige = -1 }
+		}
+	}
+	
+	german_carniola = {
+		picture = form_yugoslavia
+		potential = {
+			OR = {
+				tag = AUS
+				tag = KUK
+				tag = GER
+			}
+			owns = 768 #Ljubljana
+			768 = { is_core = THIS }
+			has_global_flag = slovene_slovenia
+		}
+		
+		allow = {
+			owns = 768
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = slovene_slovenia
+			768 = {
+				change_province_name = "Laibach"
+				state_scope = {
+					change_region_name = "Krain-Untersteiermark"
+				}
+			}
+			767 = { change_province_name = "Marburg" }
+			prestige = 1
+			SLO = { prestige = -2 }
+			YUG = { prestige = -2 }
+		}
+	}
+	
 	AUS_setup = {
 		potential = {
 			tag = AUS

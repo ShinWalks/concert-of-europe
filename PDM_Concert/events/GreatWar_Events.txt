@@ -5932,6 +5932,7 @@ country_event = {
 				NOT = {
 					region = AUS_623 #Transdanubia
 					region = AUS_641 #Central Hungary
+					province_id = 638 #Komarom
 				}
 			}
 			remove_core = THIS

@@ -336,4 +336,244 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	slovak_slovakia = {
+		picture = embrace_minority
+		potential = {
+			OR = {
+				tag = SLV
+				tag = CZH
+			}
+			owns = 633 #Bratislava
+			NOT = {
+				has_global_flag = slovak_slovakia
+			}
+		}
+		
+		allow = {
+			owns = 633
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = slovak_slovakia
+			633 = { change_province_name = "Prešporok" }
+			634 = { change_province_name = "Trencín" }
+			635 = { change_province_name = "Nitra" }
+			636 = { change_province_name = "Banská Bystrica" }
+			637 = { change_province_name = "Košice" }
+			638 = { change_province_name = "Komárno" }
+			prestige = 5
+			KUK = { prestige = -3 }
+			HUN = { prestige = -3 }
+		}
+	}
+	
+	hungarian_slovakia = {
+		picture = embrace_minority
+		potential = {
+			OR = {
+				tag = KUK
+				tag = HUN
+			}
+			owns = 633 #Bratislava
+			633 = { is_core = THIS }
+			has_global_flag = slovak_slovakia
+		}
+		
+		allow = {
+			owns = 633
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = slovak_slovakia
+			633 = { change_province_name = "Pozsony" }
+			634 = { change_province_name = "Trencsén" }
+			635 = { change_province_name = "Nyitra" }
+			636 = { change_province_name = "Besztercebánya" }
+			637 = { change_province_name = "Kassa" }
+			638 = { change_province_name = "Komárom" }
+			prestige = 3
+			SLV = { prestige = -5 }
+			CZH = { prestige = -5 }
+		}
+	}
+	
+	romanian_north_transylvania = {
+		picture = create_romania
+		potential = {
+			OR = {
+				tag = SYL
+				tag = ROM
+			}
+			owns = 654 #Cluj
+			NOT = {
+				has_global_flag = romanian_north_transylvania
+			}
+		}
+		
+		allow = {
+			owns = 654
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = romanian_north_transylvania
+			654 = { change_province_name = "Cluj" }
+			661 = { change_province_name = "Bistrita" }
+			651 = { change_province_name = "Carei" }
+			647 = { change_province_name = "Oradea" }
+			660 = { change_province_name = "Sfântu Gheorghe" }
+			2533 = { change_province_name = "Târgu Mures" }
+			prestige = 5
+			KUK = { prestige = -3 }
+			HUN = { prestige = -3 }
+		}
+	}
+	
+	hungarian_north_transylvania = {
+		picture = create_romania
+		potential = {
+			OR = {
+				tag = KUK
+				tag = HUN
+			}
+			owns = 654 #Cluj
+			654 = { is_core = THIS }
+			has_global_flag = romanian_north_transylvania
+		}
+		
+		allow = {
+			owns = 654
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = romanian_north_transylvania
+			654 = { change_province_name = "Kolozsvár" }
+			661 = { change_province_name = "Beszterce" }
+			651 = { change_province_name = "Nagykároly" }
+			647 = { change_province_name = "Nagyvárad" }
+			660 = { change_province_name = "Szentgyörgy" }
+			2533 = { change_province_name = "Vásárhely" }
+			prestige = 3
+			SYL = { prestige = -5 }
+			ROM = { prestige = -5 }
+		}
+	}
+	
+	romanian_south_transylvania = {
+		picture = create_romania
+		potential = {
+			OR = {
+				tag = SYL
+				tag = ROM
+			}
+			owns = 657 #Sibiu
+			NOT = {
+				has_global_flag = romanian_south_transylvania
+			}
+		}
+		
+		allow = {
+			owns = 657
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = romanian_south_transylvania
+			657 = { change_province_name = "Sibiu" }
+			655 = { change_province_name = "Alba Iulia" }
+			656 = { change_province_name = "Deva" }
+			659 = { change_province_name = "Brasov" }
+			prestige = 5
+			KUK = { prestige = -3 }
+			HUN = { prestige = -3 }
+		}
+	}
+	
+	hungarian_south_transylvania = {
+		picture = create_romania
+		potential = {
+			OR = {
+				tag = KUK
+				tag = HUN
+			}
+			owns = 657 #Sibiu
+			657 = { is_core = THIS }
+			has_global_flag = romanian_south_transylvania
+		}
+		
+		allow = {
+			owns = 657
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = romanian_south_transylvania
+			657 = { change_province_name = "Hermannstadt" }
+			655 = { change_province_name = "Gyulafehérvár" }
+			656 = { change_province_name = "Déva" }
+			659 = { change_province_name = "Kronstadt" }
+			prestige = 3
+			SYL = { prestige = -5 }
+			ROM = { prestige = -5 }
+		}
+	}
+	
+	romanian_banat = {
+		picture = create_romania
+		potential = {
+			OR = {
+				tag = SYL
+				tag = ROM
+			}
+			owns = 652 #Timisoara
+			NOT = {
+				has_global_flag = romanian_banat
+			}
+		}
+		
+		allow = {
+			owns = 652
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = romanian_banat
+			652 = { change_province_name = "Timisoara" }
+			653 = { change_province_name = "Resita" }
+			prestige = 2
+			KUK = { prestige = -1 }
+			HUN = { prestige = -1 }
+		}
+	}
+	
+	hungarian_banat = {
+		picture = create_romania
+		potential = {
+			OR = {
+				tag = KUK
+				tag = HUN
+			}
+			owns = 652 #Timisoara
+			652 = { is_core = THIS }
+			has_global_flag = romanian_banat
+		}
+		
+		allow = {
+			owns = 657
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = romanian_banat
+			652 = { change_province_name = "Temesvár" }
+			653 = { change_province_name = "Resicabánya" }
+			prestige = 1
+			SYL = { prestige = -2 }
+			ROM = { prestige = -2 }
+		}
+	}
 }

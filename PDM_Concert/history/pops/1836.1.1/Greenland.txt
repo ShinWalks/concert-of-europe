@@ -49,40 +49,20 @@
 #Augmagsalik (1232/308 POPS)
 2632 = {
 	clergymen = {
-		culture = danish
-		religion = protestant
-		size = 4
-	}
-
-	artisans = {
-		culture = danish
-		religion = protestant
-		size = 4
-	}
-
-	farmers = {
 		culture = inuit
-		religion = protestant
-		size = 300
-	}
-}
-#Egedesminde (816/204 POPS)
-2636 = {
-	clergymen = {
-		culture = danish
-		religion = protestant
+		religion = animist
 		size = 2
 	}
 
 	artisans = {
-		culture = danish
-		religion = protestant
+		culture = inuit
+		religion = animist
 		size = 2
 	}
 
 	farmers = {
 		culture = inuit
-		religion = protestant
-		size = 200
+		religion = animist
+		size = 500
 	}
 }
