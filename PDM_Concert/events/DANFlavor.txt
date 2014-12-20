@@ -1278,7 +1278,6 @@ country_event = {
 			limit = {
 				owns = 1908 #Cape Coast
 				is_greater_power = yes
-				capital_scope = { continent = europe }
 			}
 			country_event = 36224
 		}

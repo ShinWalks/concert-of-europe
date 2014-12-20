@@ -477,7 +477,7 @@ luxury_furniture_factory = {
 	template = factory_template		#100
 	input_goods = { 
 		furniture = 4			#68
-		tropical_wood = 30		#300
+		tropical_wood = 20		#300
 	}
 	output_goods = luxury_furniture 
 	value = 5				#630
@@ -1420,7 +1420,7 @@ advanced_luxury_furniture_factory = {
 	template = modern_factory_template
 	input_goods = { 
 		lumber = 48
-		tropical_wood = 30	#300
+		tropical_wood = 20	#300
 	}
 	output_goods = luxury_furniture 
 	value = 7.5
@@ -1713,7 +1713,7 @@ tobacco_plantation = {
 tropical_wood_lodge = {
 	template = RGO_template_labourers
 	output_goods = tropical_wood 
-	value = 4
+	value = 6
 	mine = yes
 }
 

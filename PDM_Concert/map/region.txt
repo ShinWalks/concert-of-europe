@@ -158,11 +158,11 @@ SWE_313 = { 313 316 314 315 } #Ostlandet
 
 SWE_318 = { 318 317 319 320 321 } #Norrland
 
-SWE_322 = { 322 324 326 325 } #Stockholm
+SWE_322 = { 322 324 326 328 327 323 } #Stockholm/Svealand
 
-SWE_329 = { 329 328 327 323 330 } #Goteburg
+SWE_329 = { 329 332 333 325 330 } #Goteburg/Gotaland
 
-SWE_334 = { 334 332 331 333 335 } #Malmo
+SWE_334 = { 334 331 335 2636 } #Malmo/Skaneland
 
 RUS_336 = { 336 337 338 342 } #Northern Finland
 
@@ -170,13 +170,13 @@ RUS_343 = { 343 344 341 340 } #Helsinki
 
 RUS_345 = { 345 346 347 348 } #Turku
 
-DEN_367 = { 367 366 368 2557 } #Jylland
+DEN_367 = { 367 366 368 } #Jylland
 
 HOL_369 = { 369 530 529 } #Holstein
 
 SCH_370 = { 370 371 533 } #Schleswig
 
-DEN_372 = { 372 373 374 } #Sjaelland
+DEN_372 = { 372 2557 373 374 } #Sjaelland
 
 
 ### Low Countries
@@ -194,45 +194,45 @@ BEL_394 = { 394 392 393 395 396 398 } #Wallonia
 
 ### France
 
-FRA_400 = { 399 400 401 404 3257 } #Pas de Calais
+FRA_400 = { 399 400 401 404 3257 } #Pas-de-Calais
 
 FRA_399 = { 402 2570 403 } #Picardie
 
-FRA_404 = { 408 405 406 } #Champagne
+FRA_404 = { 408 405 406 407 } #Champagne
 
-FRA_411 = { 411 413 407 414 432 } #Franche-Comté
+FRA_411 = { 411 413 414 } #Lorraine
 
-FRA_412 = { 412 409 410 } #Alsace-Lorraine
+FRA_412 = { 412 409 410 } #Alsace
 
 FRA_418 = { 418 415 416 417 } #Normandie
 
-FRA_420 = { 420 421 422 424 423 } #Bretagne
+FRA_420 = { 420 421 422 424 } #Bretagne
 
-FRA_425 = { 425 426 427 } #Ile de France
+FRA_425 = { 425 435 427 } #Ile de France
 
-FRA_428 = { 428 429 431 430 433 } #Bourgogne
+FRA_428 = { 428 429 431 430 } #Bourgogne
 
-FRA_435 = { 435 434 437 } #Loire
+FRA_435 = { 436 434 437 423 } #Loire
 
-FRA_438 = { 438 436 439 440 441 } #Region Centre
+FRA_432 = { 432 433 471 } #Franche-Comté
+
+FRA_438 = { 438 439 440 441 426 } #Centre
 
 FRA_442 = { 442 444 443 } #Poitou
 
-FRA_445 = { 445 446 447 } #Limousin
-
-FRA_448 = { 448 449 450 } #Auvergne
+FRA_448 = { 448 445 449 450 } #Auvergne-Limousin
 
 FRA_451 = { 451 452 453 454 } #Rhone
 
-FRA_455 = { 455 457 456 } #Le Midi
+FRA_455 = { 455 457 456 462 450 } #Midi-Pyrénées
 
-FRA_458 = { 458 459 460 } #Aquitaine
+FRA_458 = { 458 459 460 447 446 } #Aquitaine
 
-FRA_461 = { 461 462 463 464 } #Languedoc
+FRA_461 = { 461 463 468 464 } #Languedoc
 
 SAR_466 = { 465 466 472 } #Savoie
 
-FRA_467 = { 467 468 469 470 471 } #Provence
+FRA_467 = { 467 469 470 } #Provence
 
 
 ### Spain & Portugal
@@ -243,13 +243,13 @@ SPA_477 = { 477 479 480 481 482 483 } #Castilla-León
 
 SPA_484 = { 484 485 486 } #Extremadura
 
-SPA_487 = { 487 488 489 490 491 } #Castilla la Nueva
+SPA_487 = { 487 488 489 490 491 508 } #Castilla la Nueva
 
 SPA_492 = { 492 493 494 495 496 497 } #Vasconia-Aragón
 
 SPA_498 = { 498 499 500 501 502 } #Catalonia
 
-SPA_503 = { 503 504 505 506 507 508 } #Valencia
+SPA_503 = { 503 504 505 506 507 } #Valencia
 
 SPA_512 = { 512 509 510 511 516 } #Andalucia
 
@@ -405,13 +405,13 @@ TUR_788 = { 783 787 789 788 786 785 784 } #Bosnia
 
 SER_794 = { 794 797 795 796 } #Northern Serbia
 
-MON_2582 = { 2583 2569 2577 800 } #Montenegro
+MON_2582 = { 2583 2569 800 } #Montenegro
 
 TUR_803 = { 803 804 798 802 799 } #Southern Serbia
 
 TUR_805 = { 805 819 820 821 822 } #Southern Macedonia
 
-TUR_806 = { 806 807 } #Northern Macedonia
+TUR_806 = { 806 807 2577 } #Northern Macedonia
 
 TUR_809 = { 817 808 815 816 } #Eastern Rumelia
 
@@ -545,7 +545,7 @@ RUS_339 = { 339 984 995 988 } #Karelia
 
 RUS_706 = { 706 708 709 710 717 712 } #Masovia
 
-RUS_936 = { 936 719 937 2636 } #Grodno/Brêst
+RUS_936 = { 936 719 937 2614 } #Grodno/Brêst
 
 RUS_718 = { 718 940 939 941 942 } #Minsk
 
@@ -601,7 +601,7 @@ RUS_1060 = { 1060 1044 1042 1034 1043 1035 } #Samara
 
 RUS_1064 = { 1064 2683 2686 1066 } #Tobolsk
 
-RUS_1065 = { 1065 2613 2614 2659 2682 2684 2690 } #Ob
+RUS_1065 = { 1065 2613 2659 2682 2684 2690 } #Ob
 
 RUS_1069 = { 1069 2671 2695 2650 2651 } #West Yakutsk
 

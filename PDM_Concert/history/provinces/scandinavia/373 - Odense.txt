@@ -1,6 +1,6 @@
 owner = DEN
 controller = DEN
 add_core = DEN
-trade_goods = fish
+trade_goods = grain
 life_rating = 35
 terrain = good_farmland

@@ -132,6 +132,7 @@ populationsize_2_5M = {
 		}
 	}
 	global_population_growth = 0.001
+	tax_efficiency = -0.01
 	icon = 5
 }
 
@@ -143,6 +144,7 @@ populationsize_5M = {
 		}
 	}
 	research_points = 0.15
+	tax_efficiency = -0.02
 	icon = 5
 }
 
@@ -154,6 +156,7 @@ populationsize_10M = {
 		}
 	}
 	research_points = 0.25
+	tax_efficiency = -0.03
 	icon = 5
 }
 
@@ -165,7 +168,7 @@ populationsize_25M = {
 		}
 	}
 	research_points = 0.33
-	tax_efficiency = -0.01
+	tax_efficiency = -0.04
 	icon = 5
 }
 
@@ -177,7 +180,7 @@ populationsize_50M = {
 		}
 	}
 	research_points = 0.5
-	tax_efficiency = -0.02
+	tax_efficiency = -0.05
 	icon = 5
 }
 
@@ -189,7 +192,7 @@ populationsize_100M = {
 		}
 	}
 	research_points = 0.66
-	tax_efficiency = -0.03
+	tax_efficiency = -0.06
 	icon = 5
 }
 
@@ -201,7 +204,7 @@ populationsize_200M = {
 		}
 	}
 	research_points = 0.75
-	tax_efficiency = -0.04
+	tax_efficiency = -0.08
 	icon = 5
 }
 
@@ -210,7 +213,7 @@ populationsize_300M = {
 		total_pops = 75000000
 	}
 	research_points = 1
-	tax_efficiency = -0.05
+	tax_efficiency = -0.1
 	icon = 5
 }
 

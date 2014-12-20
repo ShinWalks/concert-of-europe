@@ -366,7 +366,7 @@ province;red;green;blue;x;x
 365;128;96;160;Palanga;x
 366;128;65;224;Aarhus;x
 367;0;191;223;Aalborg;x
-368;148;70;143;Ribe;x
+368;148;70;143;Vejle;x
 369;128;65;96;Kiel;x
 370;0;192;96;Flensburg;x
 371;128;192;97;Abenra;x
@@ -2555,7 +2555,7 @@ province;red;green;blue;x;x
 2554;205;159;230;Posadas;x
 2555;128;32;128;Augusta;x
 2556;128;112;64;Asheville;x
-2557;0;64;223;Esbjerg;x
+2557;0;64;223;Roskilde;x
 2558;112;64;208;De Aar;x
 2559;240;17;33;Suhaj;x
 2560;17;65;160;Darmstadt;x
@@ -2575,7 +2575,7 @@ province;red;green;blue;x;x
 2574;171;222;170;Mochudi;x
 2575;170;34;135;Ipoh;x
 2576;1;192;48;Natuna;x
-2577;161;47;130;Pljevlja;x
+2577;161;47;130;Debar;x
 2578;0;112;53;Tacna;x
 2579;113;65;77;Truk;x
 2580;233;198;113;Stara Ladoga;x
@@ -2612,7 +2612,7 @@ province;red;green;blue;x;x
 2611;132;177;194;Turgay;x
 2612;174;180;67;Zhambyl;x
 2613;6;183;195;Novyj Urengoj;x
-2614;48;186;68;Panajevsk;x
+2614;48;186;68;Volkovysk;x
 2615;132;192;69;Sidorovsk;x
 2616;174;195;197;Korf;x
 2617;6;198;70;Amgun;x
@@ -2634,7 +2634,7 @@ province;red;green;blue;x;x
 2633;168;72;12;Palana;x
 2634;0;75;140;Khatyrka;x
 2635;42;78;13;Kariba;x
-2636;84;81;141;Volkovysk;x
+2636;84;81;141;Halmstad;x
 2637;126;84;14;Navarin;x
 2638;168;87;142;Sugoj;x
 2639;0;90;15;Susuman;x

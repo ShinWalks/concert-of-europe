@@ -56,7 +56,7 @@
 	clergymen = {
 		culture = serb
 		religion = orthodox
-		size = 100
+		size = 175
 	}
 	
 	bureaucrats = {
@@ -68,44 +68,44 @@
 	artisans = {
 		culture = serb
 		religion = orthodox
-		size = 500
+		size = 750
 	}
 
 	farmers = {
 		culture = serb
 		religion = orthodox
-		size = 11400
+		size = 19575
 	}
 
 	aristocrats = {
 		culture = bosniak
 		religion = sunni
-		size = 250
+		size = 500
 	}
 
 	clergymen = {
 		culture = bosniak
 		religion = sunni
-		size = 25
+		size = 75
 	}
 
 	artisans = {
 		culture = bosniak
 		religion = sunni
-		size = 75
+		size = 475
 	}
 
 	soldiers = {
 		culture = bosniak
 		religion = sunni
-		size= 125
+		size= 275
 
 	}
 
 	farmers = {
 		culture = bosniak
 		religion = sunni
-		size = 5825
+		size = 9475
 	}
 }
 #under the rule of Montenegro in 1836  
@@ -152,59 +152,6 @@
 		culture = serb
 		religion = orthodox
 		size = 23375
-	}
-}
-#Kosovo-Sanjak Region (52000)  #see Serbia.txt for balance of region 
-#under the rule of Ottoman Empire in 1836  
-#Pljevlja (52000/13000 POPS) #now part of Montenegro
-2577 = {
-	clergymen = {
-		culture = serb
-		religion = orthodox
-		size = 75
-	}
-
-	artisans = {
-		culture = serb
-		religion = orthodox
-		size = 250
-	}
-
-	farmers = {
-		culture = serb
-		religion = orthodox
-		size = 8175
-	}
-
-	aristocrats = {
-		culture = bosniak
-		religion = sunni
-		size = 250
-	}
-
-	clergymen = {
-		culture = bosniak
-		religion = sunni
-		size = 50
-	}
-
-	artisans = {
-		culture = bosniak
-		religion = sunni
-		size = 400
-	}
-
-	soldiers = {
-		culture = bosniak
-		religion = sunni
-		size= 150
-
-	}
-
-	farmers = {
-		culture = bosniak
-		religion = sunni
-		size = 3650
 	}
 }
 #Dalmatia Region (64000) #see Croatia.txt for balance of region 

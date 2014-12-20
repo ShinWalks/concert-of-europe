@@ -981,7 +981,7 @@ political_decisions = {
 			409 = {
 				change_province_name = "Strasbourg"
 				state_scope = {
-					change_region_name = "Alsace-Lorraine"
+					change_region_name = "Alsace"
 				}
 			}
 			prestige = 10

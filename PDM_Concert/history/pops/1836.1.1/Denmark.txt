@@ -130,66 +130,35 @@
 	aristocrats = {
 		culture = danish
 		religion = protestant
-		size = 250
+		size = 500
 	}
 
 	clergymen = {
 		culture = danish
 		religion = protestant
-		size = 250
+		size = 375
 	}
 
 	artisans = {
 		culture = danish
 		religion = protestant
-		size = 1100 #1k moved to 2557
+		size = 2200
 	}
 
 	soldiers = {
 		culture = danish
 		religion = protestant
-		size= 500
+		size= 750
 
 	}
 
 	farmers = {
 		culture = danish
 		religion = protestant
-		size = 24000 #10k moved to 2557
+		size = 38400
 	}
 
 }
-
-# Esbjerg (Pops moved from Aalborg)
-2557 = {
-	artisans = {
-		culture = danish
-		religion = protestant
-		size = 1100
-	}
-	clergymen = {
-		culture = danish
-		religion = protestant
-		size = 125
-	}
-	soldiers = {
-		culture = danish
-		religion = protestant
-		size= 250
-
-	}
-	aristocrats = {
-		culture = danish
-		religion = protestant
-		size = 250
-	}
-	farmers = {
-		culture = danish
-		religion = protestant
-		size = 14400
-	}
-}
-	
 	
 #Schleswig Region : 336000
 #Flensburg (236000/59000 POPS)
@@ -333,25 +302,25 @@
 	aristocrats = {
 		culture = danish
 		religion = protestant
-		size = 1250
+		size = 700
 	}
 
 	bureaucrats = {
 		culture = danish
 		religion = protestant
-		size = 500
+		size = 300
 	}
 
 	officers = {
 		culture = danish
 		religion = protestant
-		size = 500
+		size = 300
 	}
 
 	clergymen = {
 		culture = danish
 		religion = protestant
-		size = 750
+		size = 450
 	}
 
 	artisans = {
@@ -365,12 +334,6 @@
 		religion = protestant
 		size = 10000
 	}
-	
-	artisans = {
-		culture = danish
-		religion = protestant
-		size = 6000
-	}
 
 	soldiers = {
 		culture = danish
@@ -390,20 +353,13 @@
 		culture = danish
 		religion = protestant
 		size= 3000
-
-	}
-
-	soldiers = {
-		culture = danish
-		religion = protestant
-		size= 2000
 
 	}
 
 	farmers = {
 		culture = danish
 		religion = protestant
-		size = 57000
+		size = 22000
 	}
 
 	artisans = {
@@ -416,6 +372,51 @@
 		culture = north_german
 		religion = protestant
 		size = 1100
+	}
+}
+#Roskilde (/ POPS)
+2557 = {
+	aristocrats = {
+		culture = danish
+		religion = protestant
+		size = 550
+	}
+
+	bureaucrats = {
+		culture = danish
+		religion = protestant
+		size = 200
+	}
+
+	officers = {
+		culture = danish
+		religion = protestant
+		size = 200
+	}
+
+	clergymen = {
+		culture = danish
+		religion = protestant
+		size = 300
+	}
+	
+	artisans = {
+		culture = danish
+		religion = protestant
+		size = 6000
+	}
+
+	soldiers = {
+		culture = danish
+		religion = protestant
+		size= 2000
+
+	}
+
+	farmers = {
+		culture = danish
+		religion = protestant
+		size = 35000
 	}
 }
 #Odense (208000/52000 POPS)

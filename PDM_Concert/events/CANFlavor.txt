@@ -75,7 +75,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = nationalist_agitation
-				duration = 365
+				duration = 548
 			}
 		}
 	}
@@ -103,6 +103,7 @@ country_event = {
 		}
 		NOT = {
 			has_country_flag = lord_durhams_report
+			has_country_flag = lord_durhams_report_ignored
 			any_owned_province = {
 				OR = {
 					is_core = CAN
@@ -151,7 +152,7 @@ country_event = {
 	
 	option = {
 		name = "We will not appease radical liberals."
-		set_country_flag = lord_durhams_report
+		set_country_flag = lord_durhams_report_ignored
 		prestige = 10
 		any_owned = {
 			limit = {
@@ -167,12 +168,6 @@ country_event = {
 		}
 		USA = {
 			relation = { who = ENG value = -50 }
-			leave_alliance = ENG
-			casus_belli = {
-				target = ENG
-				type = free_peoples
-				months = 600
-			}
 		}
 		ai_chance = {
 			factor = 10
@@ -187,14 +182,6 @@ country_event = {
 			modifier = {
 				factor = 2
 				has_country_modifier = global_liberal_agitation
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					num_of_revolts = 1
-					average_militancy = 4
-					war = yes
-				}
 			}
 		}
 	}

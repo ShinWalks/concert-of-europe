@@ -177,9 +177,8 @@ From;To;Type;Through;Data;Comment
 2568;722;impassable;0;0;Lugano-Novara
 609;722;impassable;0;0;Sitten-Novara
 606;722;impassable;0;0;Lucerne-Novara
-454;720;impassable;0;0;Grenoble-Turin
-471;720;impassable;0;0;Frejus-Turin
-454;471;impassable;0;0;Grenoble-Frejus
+469;466;impassable;0;0;Digne-Chambery
+469;720;impassable;0;0;Digne-Turin
 
 #Pyrenees
 
@@ -196,6 +195,9 @@ From;To;Type;Through;Data;Comment
 1;16;impassable;0;0;
 1;17;impassable;0;0;
 
+#Greenland
+
+251;2632;impassable;0;0;Inner Greenland
 
 #
 # The canals

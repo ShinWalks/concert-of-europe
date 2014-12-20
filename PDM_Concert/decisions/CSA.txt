@@ -1,5 +1,98 @@
 political_decisions = {
 	
+	raise_the_bonnie_blue_flag = {
+		potential = {
+			tag = CSA
+			NOT = {
+				OR = {
+					has_country_flag = bonnie_blue_flag
+					has_country_flag = 1861CSAstart
+				}
+			}
+		}
+		
+		allow = {
+			war_with = USA
+		}
+		
+		effect = {
+			define_general = {
+				name = "Robert E.Lee"
+				personality = genius
+				background = war_college
+			}
+
+			define_general = {
+				name = "Thomas Jackson"
+				personality = cool_minded
+				background = school_of_defense
+			}
+			define_general = {
+				name = "J.E.B. Stuart"
+				personality = brilliant
+				background = religious_leader
+			}
+			define_general = {
+				name = "James Longstreet"
+				personality = efficient
+				background = armchair_general
+			}
+			define_general = {
+				name = "Pierre Beauregard"
+				personality = expert
+				background = gifted_administrator
+			}
+			small_arms = 100
+			regular_clothes = 100
+			horses = 50			
+			add_country_modifier = {
+				name = the_bonnie_blue_flag
+				duration = 365
+			}
+			add_country_modifier = {
+				name = csa_draft
+				duration = -1
+			}
+			add_country_modifier = {
+				name = the_slavery_debate
+				duration = -1
+			}
+			set_country_flag = bonnie_blue_flag
+		}
+	}
+	
+	king_cotton = {
+		potential = {
+			tag = CSA
+			war_with = USA
+			not = {
+				has_country_flag = haskingcotton
+			}
+		}
+		
+		allow = {
+			cotton = 500
+		}
+		
+		effect = {
+			set_country_flag = haskingcotton
+			prestige = 5
+			cotton = -500
+			any_greater_power = {
+				limit = {
+					NOT = {
+						tag = USA
+					}
+				}
+				casus_belli = {
+					target = USA
+					type = cut_down_to_size
+					months = 24
+				}
+			}
+		}
+	}
+	
 	recognize_the_csa = {
 		picture = reform_csa
 		potential = {

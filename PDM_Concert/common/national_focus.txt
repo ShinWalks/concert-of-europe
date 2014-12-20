@@ -35,7 +35,7 @@ promotion_focus = {
 	}
 
 	promote_clerks = {
-		clerks = 0.15 #10% more likely to become this type
+		clerks = 0.1 #10% more likely to become this type
 		icon = 7
 		outliner_show_as_percent = yes
 		limit = { 
@@ -46,7 +46,7 @@ promotion_focus = {
 	}
 
 	promote_craftsmen = {
-		craftsmen = 0.15 #10% more likely to become this type
+		craftsmen = 0.1 #10% more likely to become this type
 		icon = 8
 		outliner_show_as_percent = yes
 		limit = { 

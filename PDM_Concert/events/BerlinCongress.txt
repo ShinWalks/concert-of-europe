@@ -1852,7 +1852,7 @@ country_event = {
 			TUR = { release_vassal = DLM }
 		}
 		
-		#If Epirus exists, give it Albania & Bitola
+		#If Epirus exists, give it Albania & Debar
 		random_country = {
 			limit = {
 				tag = EPI
@@ -1867,7 +1867,7 @@ country_event = {
 				exists = yes
 			}
 			TUR = {
-				807 = {
+				2577 = {
 					add_core = EPI
 					state_scope = {
 						any_owned = {
@@ -1889,7 +1889,7 @@ country_event = {
 			EPI = { set_country_flag = received_congress_benefit }
 		}
 		
-		#If Albania exists, give it all of Albania & Bitola & Prizren & Gjirokaster
+		#If Albania exists, give it all of Albania & Debar & Prizren & Gjirokaster
 		random_country = {
 			limit = {
 				tag = ALB
@@ -1909,7 +1909,7 @@ country_event = {
 						OR = {
 							region = TUR_853 #Albania
 							province_id = 803 #Pritzren
-							province_id = 807 #Bitola
+							province_id = 2577 #Debar
 							province_id = 853 #Gjirokaster
 						}
 					}

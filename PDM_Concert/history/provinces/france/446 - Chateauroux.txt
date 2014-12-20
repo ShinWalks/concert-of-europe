@@ -1,7 +1,9 @@
 owner = FRA
 controller = FRA
 add_core = FRA
-trade_goods = grain
+add_core = OCC
+add_core = BSQ
+trade_goods = fish
 life_rating = 32
-terrain = marginal_farmland
+terrain = mountain_farmland
 1861.1.1 = { railroad = 3 }

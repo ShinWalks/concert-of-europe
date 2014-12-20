@@ -35,15 +35,27 @@ IRE_liberal_2;Sinn Fein;Sinn Fein;Sinn Fein;;Sinn Fein;;;;;;;;;x
 IRE_reactionary;Unionist Party;Parti unioniste;Unionist Party;;Partido Unionista;;;;;;;;;x
 IRE_social_liberal;Fianna Fail;Fianna Fail;Fianna Fail;;Fianna Fail;;;;;;;;;x
 IRE_anarcho_liberal;Anarcho-Liberal Party;Anarcho-Liberal Party;Anarcho-Liberal Party;;Anarcho-Liberal Party;;;;;;;;;x
+FRA_reactionary_3;Ultraroyaliste;Ultraroyaliste;Ultraroyaliste;;Ultraroyaliste;;;;;;;;;x
+FRA_conservative_6;Constitutionnel;Constitutionnel;Constitutionnel;;Constitutionnel;;;;;;;;;x
 AOT_absolute_monarchy;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
 AOT_prussian_constitutionalism;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
 AOT_hms_government;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
+SWE_322;Svealand;;;;;;;;;;;;x
+SWE_329;Götaland;;;;;;;;;;;;x
+SWE_334;Skåneland;;;;;;;;;;;;x
 RUS_354;Livonia;;;;;;;;;;;;x
 RUS_357;Courland;;;;;;;;;;;;x
 RUS_360;Kovno;;;;;;;;;;;;x
 RUS_361;Vilna;;;;;;;;;;;;x
 NET_379;Gelderland-North Brabant;;;;;;;;;;;;x
 FRA_400;Pas-de-Calais;;;;;;;;;;;;x
+FRA_411;Lorraine;;;;;;;;;;;;x
+FRA_412;Alsace;;;;;;;;;;;;x
+FRA_425;Île-de-France;;;;;;;;;;;;x
+FRA_432;Franche-Comté;;;;;;;;;;;;x
+FRA_438;Centre;;;;;;;;;;;;x
+FRA_448;Auvergne-Limousin;;;;;;;;;;;;x
+FRA_455;Midi-Pyrénées;;;;;;;;;;;;x
 SPA_474;Galicia-Asturias;;;;;;;;;;;;x
 SPA_477;Castilla-León;;;;;;;;;;;;x
 SWI_605;German Switzerland;;;;;;;;;;;;x
@@ -74,6 +86,7 @@ ENG_1252;East Bengal;;;;;;;;;;;;x
 ENG_1320;Andaman & Nicobar Islands;;;;;;;;;;;;x
 SWI_2568;Italian Switzerland;;;;;;;;;;;;x
 PROV69;Edmundston;;;;;;;;;;;;;x
+PROV251;Godthåb;;;;;;;;;;;;;x
 PROV350;Narwa;;;;;;;;;;;;;x
 PROV351;Pernau;;;;;;;;;;;;;x
 PROV355;Wolmar;;;;;;;;;;;;;x
@@ -87,12 +100,30 @@ PROV362;Mariampol;;;;;;;;;;;;;x
 PROV363;Ponevezh;;;;;;;;;;;;;x
 PROV364;Shavli;;;;;;;;;;;;;x
 PROV365;Telshi;;;;;;;;;;;;;x
+PROV366;Århus;;;;;;;;;;;;;x
+PROV367;Ålborg;;;;;;;;;;;;;x
+PROV368;Vejle;;;;;;;;;;;;;x
+PROV371;Åbenrå;;;;;;;;;;;;;x
 PROV387;Bruxelles;;;;;;;;;;;;;x
 PROV388;Brugge;;;;;;;;;;;;;x
 PROV389;Gent;;;;;;;;;;;;;x
 PROV390;Antwerpen;;;;;;;;;;;;;x
 PROV393;Mons;;;;;;;;;;;;;x
 PROV396;Verviers;;;;;;;;;;;;;x
+PROV403;St-Quentin;;;;;;;;;;;;;x
+PROV408;Reims;;;;;;;;;;;;;x
+PROV415;Le Havre;;;;;;;;;;;;;x
+PROV430;Nevers;;;;;;;;;;;;;x
+PROV431;Chalon;;;;;;;;;;;;;x
+PROV435;Versailles;;;;;;;;;;;;;x
+PROV446;Bayonne;;;;;;;;;;;;;x
+PROV447;Périgueux;;;;;;;;;;;;;x
+PROV452;St-Étienne;;;;;;;;;;;;;x
+PROV457;Tarbes;;;;;;;;;;;;;x
+PROV459;Mont-de-Marsan;;;;;;;;;;;;;x
+PROV463;Narbonne;;;;;;;;;;;;;x
+PROV468;Nîmes;;;;;;;;;;;;;x
+PROV471;Belfort;;;;;;;;;;;;;x
 PROV625;Prag;;;;;;;;;;;;;x
 PROV626;Königgrätz;;;;;;;;;;;;;x
 PROV628;Reichenberg;;;;;;;;;;;;;x
@@ -146,10 +177,16 @@ PROV1045;Ust-Medveditskaya;;;;;;;;;;;;;x
 PROV1046;Nizhnechirskaya;;;;;;;;;;;;;x
 PROV1090;Tiflis;;;;;;;;;;;;;x
 PROV2533;Vásárhely;;;;;;;;;;;;;x
+PROV2557;Roskilde;;;;;;;;;;;;;x
+PROV2577;Debar;;;;;;;;;;;;;x
 PROV2580;Staraya Ladoga;;;;;;;;;;;;;x
 PROV2584;Bielitz;;;;;;;;;;;;;x
+PROV2591;Ammassalik;;;;;;;;;;;;;x
 PROV2595;Nijmegen;;;;;;;;;;;;;x
-PROV2636;Volkovysk;;;;;;;;;;;;;x
+PROV2614;Volkovysk;;;;;;;;;;;;;x
+PROV2632;Scoresbysund;;;;;;;;;;;;;x
+PROV2636;Halmstad;;;;;;;;;;;;;x
+PROV2682;Obdorsk;;;;;;;;;;;;;x
 PROV3249;Eupen;;;;;;;;;;;;;x
 PROV3250;Guangzhou Wan;;;;;;;;;;;;;x
 PROV3251;Dünaburg;;;;;;;;;;;;;x
@@ -418,6 +455,10 @@ restore_falkland_title;Restore Falkland Islands;;;;;;;;;;;;;x
 restore_falkland_desc;Now that we have liberated the Falkland Islands, we can correct their name on the maps.;;;;;;;;;;;;;x
 become_antillean_confederation_title;Become Antillean Confederation;;;;;;;;;;;;;x
 become_antillean_confederation_desc;The nations of the former Spanish Caribbean share a language, a culture, a surrounding sea, and an historical legacy. We should move to unite our islands under an Antillean Confederation, and enter a new era together.;;;;;;;;;;;;;x
+manifest_destiny_title;Manifest Destiny;Destin? manifeste;Manifest Destiny;;Destino manifiesto;;;;;;;;;x;;;;
+manifest_destiny_desc;To bring civilization from sea to shining sea has always been the grand mission of our great republic. Let the Eagle spread its wings.;Civiliser l'Ouest a toujours ??la mission ultime de notre grande r?ublique. Que l'aigle d?loie ses ailes !;Die hehre Mission unserer gro?n Republik war schon immer, die Zivilisation von K?te zu K?te zu verbreiten. Lasst den Adler seine Schwingen ausbreiten.;;Llevar la civilizaci? de costa a costa ha sido siempre la gran misi? de nuestra noble rep?lica. Que el ?uila despliegue las alas.;;;;;;;;;x;;;;
+manifest_destiny_notx_title;Manifest Destiny;Destin? manifeste;Manifest Destiny;;Destino manifiesto;;;;;;;;;x;;;;
+manifest_destiny_notx_desc;To bring civilization from sea to shining sea has always been the grand mission of our great republic. Let the Eagle spread its wings.;Civiliser l'Ouest a toujours ??la mission ultime de notre grande r?ublique. Que l'aigle d?loie ses ailes !;Die hehre Mission unserer gro?n Republik war schon immer, die Zivilisation von K?te zu K?te zu verbreiten. Lasst den Adler seine Schwingen ausbreiten.;;Llevar la civilizaci? de costa a costa ha sido siempre la gran misi? de nuestra noble rep?lica. Que el ?uila despliegue las alas.;;;;;;;;;x;;;;
 gadsden_purchase_title;Gadsden Purchase;;;;;;;;;;;;;x
 gadsden_purchase_desc;Transportation and trade in the southwest would be greatly simplified if we could acquire the Mexican desert valley that runs just south of our Arizona Territory. In fact, it wouldn't hurt to go ahead and acquire Lower California, as well. We could offer to purchase a bit more of Mexico's land, bidding different sums depending on how much territory they were willing to part with.;;;;;;;;;;;;;x
 2nd_ostend_manifesto_title;Second Ostend Manifesto;;;;;;;;;;;;;x
@@ -515,6 +556,9 @@ EVTDESC16352;Delegates from the United States have apologized and released the t
 EVTDESC16353;The United States has begun to position troops along its border with our colony in Canada, making it clear that they will not back down. Official delegates from the United States government declare that what they did was only an act of war against the Confederates, but if British diplomats press the Trent issue, then the Union will consider Britain on the side of the Confederate secessionists, and react accordingly. It seems that there is no choice now but war.;;;;;;;;;;;;x
 EVTDESC16354;A Unionist warship commandeered a British vessel, the HMS Trent, in order to arrest two of our diplomats who were crossing the Atlantic to petition European governments for support. There briefly seemed to be some hope of escalation into outright war between the Union and the British, but it seems Washington has backed down, and the British will remain neutral.;;;;;;;;;;;;x
 EVTDESC16355;A Union warship commandeered a British vessel, the Trent, in order to arrest two of our diplomats who were crossing the Atlantic to petition European governments for support. The British, it seems, have taken this as an act of war, and British forces are even now advancing toward the Canadian frontier. It seems the Union will now be fighting two wars!;;;;;;;;;;;;x
+EVTNAME16405;Manifest Destiny;;;;;;;;;;;;;x
+EVTDESC16405;Since it is the United States' self-evident destiny to extend from the Atlantic to the Pacific, the only unsettled detail is the proper latitude for our southern frontier. Our control of Texas suggests that a natural border might run more or less westward from the source of the Rio Grande to the dividing line between Upper and Lower California. However, some expansionists say that the border should be drawn from the mouth of the Rio Grande westward, claiming all of California together with the deserts of Sonora and Chihuahua. Where does America's destiny lie?;;;;;;;;;;;;x
+EVTDESC16406;Since it is the United States' self-evident destiny to extend from the Atlantic to the Pacific, the only unsettled detail is the proper latitude for our southern frontier. Our existing claims suggests that a natural border might run more or less westward from the southern border of Kansas to the coast of California. However, some expansionists say that the border should be drawn along the Rio Grande and westward from its source to the dividing line between Upper and Lower California, claiming all of Texas and Nuevo Mexico. Where does America's destiny lie?;;;;;;;;;;;;x
 EVTNAME16600;The Obsolescence of Slavery;;;;;;;;;;;;;x
 EVTDESC16600;With the dawn of the twentieth century, slavery in developed countries is fading away in the face of modern industry. Only fifty years ago $COUNTRY$'s strength was been built on the backs of our slaves, but as tractors, automobiles, trains and other machines begin to replace mass labour we are faced with a choice. Will we cling to our agrarian slave system to the detriment of industrial development, or will we join the march of progress and free ourselves from the shackles of the slave economy? Just as two generations ago a great house was divided, so now $COUNTRY$ must become all one thing, or all the other: a nation of freedom and industry, or a nation of chains and agriculture. Which will it be?;;;;;;;;;;;;x
 EVTNAME16601;Newly Arrived Slaves;;;;;;;;;;;;;x
@@ -754,13 +798,15 @@ EVTNAME44130;The Maine Census;;;;;;;;;;;;x
 EVTDESC44130;The Treaty of Paris (1783) ended the American Revolutionary War and established the new international border between the United States and British Canada. Some of the details, however, were vague or even contradictory, and now no one is quite certain where Maine ends and New Brunswick begins.\n\nThe state of Maine has sent census-takers into the disputed region and begun recording the local trappers and lumberjacks as American citizens, which has provoked the New Brunswick government into arrests and militia deployments. If the border isn't defined soon, the conflict seems set to grow.;;;;;;;;;;;;x
 EVTNAME44131;A Border Treaty;;;;;;;;;;;;x
 EVTDESC44131;The border dispute along the Maine-New Brunswick frontier continues to escalate. There are now militias on both sides maneuvering along the rivers and ordering each other to stand down. The Secretary of State has invited the British Foreign Minister to work toward a general treaty settling this and a number of other minor disputes between our nations. But Congress is divided on the approach our envoy should take: should our priority be a peaceful resolution of the conflict, or should we insist upon the maximum territory even if it risks war?;;;;;;;;;;;;x
-EVTNAME44132;A Border Treaty;;;;;;;;;;;;x
 EVTDESC44132;The border dispute along the Maine-New Brunswick frontier continues to escalate. There are now militias on both sides maneuvering along the rivers and ordering each other to stand down. The American Secretary of State has invited our Foreign Minister to work toward a general treaty settling this and a number of other minor disputes between our nations. They appear to want the peace preserved, and are willing to renounce some of their claims if we will do the same. Shall we cooperate and keep the peace?;;;;;;;;;;;;x
 EVTDESC44133;The border dispute along the Maine-New Brunswick frontier continues to escalate. There are now militias on both sides maneuvering along the rivers and ordering each other to stand down. The American Secretary of State has invited our Foreign Minister to work toward a general treaty settling this and a number of other minor disputes between our nations. Unfortunately, they are taking an aggressive line, insisting upon their claims to the entire disputed region. Should we back down to keep the peace?;;;;;;;;;;;;x
 EVTNAME44134;Webster-Ashburton Treaty;;;;;;;;;;;;x
 EVTDESC44134;We have concluded a treaty with $FROMCOUNTRY$, resolving several long-standing border disputes between our nations. In particular, the treaty has clearly established the border between Maine and the British colony of New Brunswick. Tensions along the border should be much reduced.;;;;;;;;;;;;x
 EVTNAME44135;Negotiations Break Down;;;;;;;;;;;;x
-EVTDESC44135;The treaty negotiations have collapsed, and the British envoy has departed in a huff. Our relations will be greatly disrupted, and northern Maine will have to be secured the old-fashioned way.;;;;;;;;;;;;x
+EVTDESC44135;The border negotiations have collapsed, and the British envoy has departed in a huff. Our relations will be greatly disrupted, and the border will have to be established the old-fashioned way.;;;;;;;;;;;;x
+EVTNAME44136;A Border Ultimatum;;;;;;;;;;;;x
+EVTDESC44136;Recently a series of rebellions aimed at achieving greater autonomy from Britain has rocked southern Canada, but Westminster has refused to offer any concessions to the Canadas. If we step in now and offer to "protect" the dissidents and republicans from the tyranny of Westminster, we can likely win their loyalty... and justify some northward adjustments to the international frontier. Certainly we would insist upon our full claims in northern Maine, and we could even "protect" the peninsula between the Great Lakes in southwestern Upper Canada, which has been a hotbed of rebellion against the colonial government. The Secretary of State will draw up a sternly worded ultimatum: how far should we extend our claims?;;;;;;;;;;;;x
+EVTDESC44137;Since their independence the United States have harbored some ideas of extending their control northward into the Canadas, and it seems that our harsh response to the recent rebellions there has driven the rebels into the Americans' arms. Now the American government says it intends to move the border northward, to "protect" the Canadian republicans from us, and the public appeals of the rebel leaders for American support gives their aggression an unfortunate veneer of legitimacy. If we back down it will weaken our already tenuous grasp on our remaining North American colonies, but to refuse is to risk war. What should our response be?;;;;;;;;;;;;x
 EVTNAME44148;The Oregon Trail;;;;;;;;;;;;;x
 EVTDESC44148;Since the war of 1812 the British have quarrelled with us over the boundary between our territories in the American Northwest: both we and they claim the Oregon Country. Now this conflict has entered a new phase, as both nations have begun sending settlers to colonize the region. Hundreds of bold pioneers are already loading up to travel the Oregon Trail and find their fortunes in the Columbia Valley.;;;;;;;;;;;;;
 EVTNAME44149;The Columbia District;;;;;;;;;;;;;x

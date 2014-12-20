@@ -1,7 +1,6 @@
 owner = FRA
 controller = FRA
 add_core = FRA
-add_core = OCC
-trade_goods = silk
+trade_goods = coal
 life_rating = 32
-terrain = deciduous_forest_mountains
+terrain = deciduous_forest_hills

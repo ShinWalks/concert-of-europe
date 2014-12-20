@@ -5840,70 +5840,37 @@
 }
 #Yamalia Region (10400)
 #under the rule of Russia in 1836
-#Mordiyakha (1000/250 POPS)
-2614 = {
-	aristocrats = {
-		culture = ugrian
-		religion = animist
-		size = 5
-	}
-
-	clergymen = {
-		culture = ugrian
-		religion = animist
-		size = 5
-	}
-
-	artisans = {
-		culture = ugrian
-		religion = animist
-		size = 10
-	}
-
-	soldiers = {
-		culture = ugrian
-		religion = animist
-		size= 5
-
-	}
-
-	farmers = {
-		culture = ugrian
-		religion = animist
-		size = 225
-	}
-}
-#Yar Sale (1000/250 POPS)
+#Yar Sale (2000/500 POPS)
 2684 = {
 	aristocrats = {
 		culture = ugrian
 		religion = animist
-		size = 5
+		size = 10
 	}
 
 	clergymen = {
 		culture = ugrian
 		religion = animist
-		size = 5
+		size = 10
 	}
 
 	artisans = {
 		culture = ugrian
 		religion = animist
-		size = 10
+		size = 20
 	}
 
 	soldiers = {
 		culture = ugrian
 		religion = animist
-		size= 5
+		size= 10
 
 	}
 
 	farmers = {
 		culture = ugrian
 		religion = animist
-		size = 225
+		size = 450
 	}
 }
 #Aksarka (2200/550 POPS)

@@ -1,7 +1,7 @@
 owner = FRA
 controller = FRA
 add_core = FRA
-trade_goods = grain
+trade_goods = dye
 life_rating = 45
 terrain = good_farmland
 state_building = {

@@ -130,7 +130,7 @@
 	}
 }
 #Volkovysk (/ POPS)
-2636 = {
+2614 = {
 	clergymen = {
 		culture = byelorussian
 		religion = orthodox

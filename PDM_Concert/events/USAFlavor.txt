@@ -1253,31 +1253,14 @@ country_event = {
 		set_country_flag = treaty_of_guadalupe_hidalgo
 		all_core = {
 			limit = {
-				OR = {
-					region = TEX_132
-					region = MEX_103
-					region = MEX_94
-					region = MEX_97
-					region = MEX_85
-					region = MEX_100
-				}
+				is_core = USA
 			}
 			remove_core = MEX
 		}
 		prestige = -20
 		any_owned = {
 			limit = {
-				OR = {
-					is_core = USA
-					region = TEX_132
-					region = MEX_103
-					region = MEX_94
-					region = MEX_97
-					region = MEX_85
-					region = MEX_100
-					region = USA_106
-					region = USA_129
-				}
+				is_core = USA
 			}
 			secede_province = USA
 		}
@@ -1525,10 +1508,11 @@ country_event = {
 		tag = USA
 		exists = yes
 		has_country_flag = aroostook_war
-		year = 1838
+		year = 1840
 		ENG = {
 			owns = 250 #Caribou
 			owns = 69 #Edmundston
+			NOT = { has_country_flag = lord_durhams_report_ignored }
 		}
 		NOT = {
 			has_country_flag = webster_ashburton
@@ -1538,7 +1522,7 @@ country_event = {
 	}
  
 	mean_time_to_happen =  {
-		months = 12
+		months = 18
 	}
 
 	option = {
@@ -1568,13 +1552,17 @@ country_event = {
 				factor = 0
 				is_greater_power = no
 			}
+			modifier = {
+				factor = 2
+				ENG = { war = yes }
+			}
 		}
 	}
 }
 
 country_event = {
 	id = 44132
-	title = "EVTNAME44132" #Maine Border Treaty: Conciliatory
+	title = "EVTNAME44131" #Maine Border Treaty: Conciliatory
 	desc = "EVTDESC44132"
 	picture = "treaty"
 
@@ -1609,13 +1597,17 @@ country_event = {
 		FROM = { country_event = 44135 }
 		ai_chance = {
 			factor = 10
+			modifier = {
+				factor = 0
+				war = yes
+			}
 		}
 	}
 }
 
 country_event = {
 	id = 44133
-	title = "EVTNAME44132" #Maine Border Treaty: Belligerent
+	title = "EVTNAME44131" #Maine Border Treaty: Belligerent
 	desc = "EVTDESC44133"
 	picture = "treaty"
 
@@ -1636,7 +1628,10 @@ country_event = {
 			secede_province = USA
 		}
 		relation = { who = FROM value = 25 }
-		FROM = { country_event = 44134 }
+		FROM = {
+			prestige = 5
+			country_event = 44134
+		}
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -1652,6 +1647,10 @@ country_event = {
 		FROM = { country_event = 44135 }
 		ai_chance = {
 			factor = 60
+			modifier = {
+				factor = 0.5
+				war = yes
+			}
 		}
 	}
 }
@@ -1687,6 +1686,130 @@ country_event = {
 		name = "Then we must prepare for the worst."
 		relation = { who = FROM value = -100 }
 		leave_alliance = FROM
+	}
+}
+
+country_event = {
+	id = 44136 #A Border Ultimatum (Webster-Ashburton alternative if UK has ignored Lord Durham's Report)
+	title = "EVTNAME44136"
+	desc = "EVTDESC44136"
+	picture = "deliberation"
+
+	trigger = {
+		tag = USA
+		exists = yes
+		has_country_flag = aroostook_war
+		ENG = {
+			owns = 250 #Caribou
+			owns = 69 #Edmundston
+			has_country_flag = lord_durhams_report_ignored
+		}
+		NOT = {
+			has_country_flag = webster_ashburton
+			war_with = ENG
+			truce_with = ENG
+		}
+	}
+ 
+	mean_time_to_happen =  {
+		days = 10
+	}
+	
+	option = {
+		name = "Stake our claim in northern Maine."
+		set_country_flag = webster_ashburton
+		250 = { add_core = USA }
+		69 = { add_core = USA }
+		ENG = { country_event = 44137 }
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = "Claim northern Maine and southwestern Upper Canada."
+		set_country_flag = webster_ashburton
+		badboy = 3
+		250 = { add_core = USA }
+		69 = { add_core = USA }
+		53 = { add_core = USA }
+		54 = { add_core = USA }
+		55 = { add_core = USA }
+		ENG = { country_event = 44137 }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 3
+				ENG = { war = yes }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44137
+	title = "EVTNAME44136" #A Border Ultimatum: American Aggression
+	desc = "EVTDESC44137"
+	picture = "deliberation"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We acknowledge their claims."
+		prestige = -5
+		badboy = -3
+		any_owned = {
+			limit = { is_core = USA }
+			remove_core = ENG
+			remove_core = MRU
+			remove_core = CAN
+			secede_province = USA
+		}
+		relation = { who = FROM value = 25 }
+		FROM = {
+			prestige = 5
+			country_event = 44134
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0.1
+				war_policy = jingoism
+			}
+		}
+	}
+	
+	option = {
+		name = "Nonsense! That land is ours!"
+		relation = { who = FROM value = -50 }
+		FROM = { country_event = 44138 }
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.5
+				war = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 44138
+	title = "EVTNAME44135" #Negotiations Break Down
+	desc = "EVTDESC44135"
+	picture = "rebellion"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Then we must press our claims by force."
+		relation = { who = FROM value = -100 }
+		leave_alliance = FROM
+		casus_belli = {
+			target = ENG
+			type = free_peoples
+			months = 120
+		}
 	}
 }
 

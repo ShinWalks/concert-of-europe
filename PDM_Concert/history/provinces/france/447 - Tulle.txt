@@ -2,6 +2,6 @@ owner = FRA
 controller = FRA
 add_core = FRA
 add_core = OCC
-trade_goods = grain
+trade_goods = fruit
 life_rating = 32
 terrain = deciduous_forest_hills

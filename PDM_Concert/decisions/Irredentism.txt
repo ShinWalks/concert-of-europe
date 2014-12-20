@@ -210,9 +210,6 @@ political_decisions = {
 			803 = { #Prizren
 				add_core = ALB
 			}
-			807 = { #Bitola
-				add_core = ALB
-			}
 			824 = { #Janina
 				add_core = ALB
 			}
