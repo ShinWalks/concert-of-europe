@@ -3,39 +3,40 @@ primary_culture = dutch
 culture = flemish
 culture = boer
 religion = protestant
-government = absolute_monarchy
+government = prussian_constitutionalism
 plurality = 5
 nationalvalue = nv_liberty
-literacy = 0.59
+literacy = 0.65
+non_state_culture_literacy = 0.03
 civilized = yes
-prestige = 30
+prestige = 20
 
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = appointed
-vote_franschise = none_voting
-public_meetings = yes_meeting
-press_rights = state_press
+vote_franschise = landed_voting
+public_meetings = no_meeting
+press_rights = censored_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = underground_parties
 minorities_reform = limited
 immigration_policy = quota_immigration
-conscription = two_year_draft
+conscription=two_year_draft
 
 # Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
-safety_regulations = no_safety
+safety_regulations = trinket_safety
 health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
 pollution = no_controls
-child_labor = child_labor_restricted
+child_labor = child_labor_legal
 arts_endowment = no_endowment
-education = elite
+education = public
 
-ruling_party = HOL_conservative
+ruling_party = NET_regeringsgezind
 upper_house = {
 	fascist = 0
 	liberal = 1
@@ -45,9 +46,19 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
-
+#Decisions and events
 set_country_flag = existing_country
+set_country_flag = DIM_dagbladzegel
+set_country_flag = united_netherlands
 decision = NET_setup
+
+1830.1.1 = {
+	clr_country_flag = united_netherlands
+	set_country_flag = DIM_afscheiding_1834_intolerance
+}
+1834.1.1 = { 
+	set_country_flag = DIM_rebuilding_buitenzorg
+}
 
 # Technologies
 post_napoleonic_thought = 1
@@ -66,6 +77,7 @@ early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
 water_wheel_power = 1
+publishing_industry = 1
 mechanized_mining = 1
 
 #Inventions
@@ -77,7 +89,7 @@ nonstate_consciousness = 1
 oob = "/1821/NET_oob.txt"
 
 1836.1.1 = {
-	literacy = 0.60
+	literacy = 0.67
 	prestige = 10
 	
 	set_country_flag = belgium_seceded
@@ -109,8 +121,16 @@ oob = "/1821/NET_oob.txt"
 	mechanized_mining = 1
 	basic_chemistry = 1
 	stock_exchange = 1
-	
-	oob = "NET_oob.txt"
+
+oob = "NET_oob.txt"
+}
+
+1840.1.1 = {
+	set_country_flag = DIM_flores_offer
+}
+
+1853.1.1 = {
+	set_global_flag = DIM_restored_bishops
 }
 
 1861.1.1 = {

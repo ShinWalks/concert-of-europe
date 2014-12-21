@@ -1387,13 +1387,19 @@ country_event = {
 	title = "EVTNAME37240" #The Accession of Charles X
 	desc = "EVTDESC37240"
 	picture = "monarchy"
+	fire_only_once = yes
+	
+	news = yes
+	news_title = "EVTNAME37240_NEWS"
+	news_desc_long = "EVTDESC37240_NEWS_LONG"
+	news_desc_medium = "EVTDESC37240_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC37240_NEWS_SHORT"
 
 	trigger = {
 		tag = FRA
-		exists = yes
 		year = 1823
-		NOT = {
-			has_country_flag = charles_x
+		NOT = { 
+			has_country_flag = july_revolution
 		}
 	}
 
@@ -1433,14 +1439,17 @@ country_event = {
 	title = "EVTNAME37242" #Constitution Suspended
 	desc = "EVTDESC37242"
 	picture = "deliberation"
+	fire_only_once = yes
+	
+	news = yes
+	news_title = "EVTNAME37242_NEWS"
+	news_desc_long = "EVTDESC37242_NEWS_LONG"
+	news_desc_medium = "EVTDESC37242_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC37242_NEWS_SHORT"
 
 	trigger = {
 		tag = FRA
-		exists = yes
 		has_country_flag = charles_x
-		NOT = {
-			has_country_flag = three_glorious_days
-		}
 	}
 
 	mean_time_to_happen = {
@@ -1460,6 +1469,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			year = 1830
+		}
+		modifier = {
+			factor = 0.1
+			has_global_flag = DIM_belgian_revolution
 		}
 	}
 
@@ -1498,26 +1511,32 @@ country_event = {
 
 country_event = {
 	id = 37244
+	
 	title = "EVTNAME37244" #July Revolution
 	desc = "EVTDESC37244"
 	picture = "july_revolution"
-
+	fire_only_once = yes
+	
 	trigger = {
 		tag = FRA
-		exists = yes
 		has_country_flag = three_glorious_days
-		NOT = {
-			has_country_flag = july_revolution
-		}
 	}
 
 	mean_time_to_happen = {
 		days = 3
 	}
+	
+	news = yes
+	news_title = "EVTNAME37244_NEWS"
+	news_desc_long = "EVTDESC37244_NEWS_LONG"
+	news_desc_medium = "EVTDESC37244_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC37244_NEWS_SHORT"
 
 	option = {
 		name = "Charles will abdicate, and Louis Philippe will be king."
 		set_country_flag = july_revolution
+		clr_country_flag = charles_x
+		clr_country_flag = three_glorious_days
 		political_reform = landed_voting
 		political_reform = free_press
 		political_reform = non_secret_ballots
@@ -1545,6 +1564,13 @@ country_event = {
 			name = national_confusion
 			duration = 365
 		}
+		random_country = {
+			limit = {
+				tag = NET
+				has_country_flag = united_netherlands
+			}
+			country_event = { id = 210428 days = 3 }
+		}
 		ai_chance = {
 			factor = 90
 		}
@@ -1553,6 +1579,7 @@ country_event = {
 	option = {
 		name = "Kings do not bow to shopkeepers."
 		set_country_flag = july_revolution
+		clr_country_flag = three_glorious_days
 		middle_strata = {
 			ideology = {
 				value = liberal
@@ -1563,6 +1590,13 @@ country_event = {
 				ideology = liberal
 				factor = 50
 			}
+		}
+		random_country = {
+			limit = {
+				tag = NET
+				has_country_flag = united_netherlands
+			}
+			country_event = { id = 210428 days = 3 }
 		}
 		ai_chance = {
 			factor = 10

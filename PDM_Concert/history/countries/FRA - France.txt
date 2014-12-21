@@ -153,8 +153,6 @@ oob = "/1821/FRA_oob.txt"
 	oob = "FRA_oob.txt"
 	
 	set_country_flag = spanish_absolutism_restored
-	set_country_flag = charles_x
-	set_country_flag = three_glorious_days
 	set_country_flag = july_revolution
 }
 

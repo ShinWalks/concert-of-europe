@@ -412,22 +412,19 @@ political_decisions = {
 				limit = {
 					has_pop_culture = wallonian
 				}
-				literacy = 0.49
-				militancy = 4
-				ideology = {
-					value = separatist
-					factor = 0.1
-				}
+				literacy = 0.45
+				consciousness = 1
 			}
 			any_pop = {
 				limit = {
 					has_pop_culture = flemish
 				}
-				militancy = 4
-				ideology = {
-					value = separatist
-					factor = 0.1
-				}
+				literacy = 0.45
+				consciousness = 1
+			}
+			set_variable = {
+				which = belgian_nationalism
+				value = 14
 			}
 		}
 	}

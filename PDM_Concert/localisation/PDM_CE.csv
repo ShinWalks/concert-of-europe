@@ -37,6 +37,40 @@ IRE_social_liberal;Fianna Fail;Fianna Fail;Fianna Fail;;Fianna Fail;;;;;;;;;x
 IRE_anarcho_liberal;Anarcho-Liberal Party;Anarcho-Liberal Party;Anarcho-Liberal Party;;Anarcho-Liberal Party;;;;;;;;;x
 FRA_reactionary_3;Ultraroyaliste;Ultraroyaliste;Ultraroyaliste;;Ultraroyaliste;;;;;;;;;x
 FRA_conservative_6;Constitutionnel;Constitutionnel;Constitutionnel;;Constitutionnel;;;;;;;;;x
+JAV_social_liberal;Social-Liberals;Social-Liberals;Social-Liberals;;Social-Liberals;;;;;;;;;x
+NET_regeringsgezind;Regeringsgezinden;;;;;;;;;x
+NET_financieel_oppositionele;Financieel Oppositionelen;;;;;;;;;x
+NET_oppositioneel;Oppositionelen;;;;;;;;;x
+NET_ultraconservatief;Ultraconservatieven;;;;;;;;;x
+NET_moderaat;Moderaten;;;;;;;;;x
+NET_conservatief;Conservatieven;;;;;;;;;x
+NET_vrij_antirevolutionaire_partij;Vrije Antirevolutionaire Partij;;;;;;;;;x
+NET_conservatief_liberaal;Conservatief Liberalen;;;;;;;;;x
+NET_algemeene_bond;Algemeene Bond;;;;;;;;;x
+NET_christelijk_hervormd;Christlijk-Historische Unie;;;;;;;;;x
+NET_rooms_katholiek_1;Rooms Katholieken;;;;;;;;;x
+NET_rooms_katholiek_2;Rooms Katholieken;;;;;;;;;x
+NET_schaepmannianen;Schaepmannianen;;;;;;;;;x
+NET_bahlmannianen;Bahlmannianen;;;;;;;;;x
+NET_antirevolutionair;Antirevolutionairen;;;;;;;;;x
+NET_antirevolutionair_partij;Antirevolutionare Partij;;;;;;;;;x
+NET_antirevolutionair_partij_2;Antirevolutionaire Partij;;;;;;;;;x
+NET_staatkundig_reformeerde_partij;Staatkundig Gereformeerde Partij;;;;;;;;;x
+NET_oude_vrije_liberale;Oude/Vrije Liberalen;;;;;;;;;x
+NET_pragmatisch_liberaal;Pragmatisch Liberalen;;;;;;;;;x
+NET_thorbeckiaan;Thorbeckianen;;;;;;;;;x
+NET_liberale_unie;Liberale Unie;;;;;;;;;x
+NET_vrijheidsbond;Staatspartij;;;;;;;;;x
+NET_vrijzinnige_democraten;Vrijzinnige Democraten;;;;;;;;;x
+NET_puttiaan;Puttianen;;;;;;;;;x
+NET_radicaal_liberaal;Radikale Bond;;;;;;;;;x
+NET_vrije_socialisten;Vrije Socialisten;;;;;;;;;x
+NET_sociaal_democratische_bond;Sociaal Democratische Bond;;;;;;;;;x
+NET_sociaal_democratische_arbeiderspartij;Sociaal Democratische Arbeiderspartij;;;;;;;;;x
+NET_social_democratische_partij;Sociaal Democratische Partij;;;;;;;;;x
+NET_communistische_partij_holland;Communistische Partij Holland;;;;;;;;;x
+NET_socialistische_partij;Socialistische Partij;;;;;;;;;x
+HOL_fascist;Nationaal-Socialistische Beweging;;;;;;;;;x
 AOT_absolute_monarchy;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
 AOT_prussian_constitutionalism;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
 AOT_hms_government;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
@@ -87,6 +121,7 @@ ENG_1320;Andaman & Nicobar Islands;;;;;;;;;;;;x
 SWI_2568;Italian Switzerland;;;;;;;;;;;;x
 PROV69;Edmundston;;;;;;;;;;;;;x
 PROV251;Godthåb;;;;;;;;;;;;;x
+PROV308;Ålesund;;;;;;;;;;;;;x
 PROV350;Narwa;;;;;;;;;;;;;x
 PROV351;Pernau;;;;;;;;;;;;;x
 PROV355;Wolmar;;;;;;;;;;;;;x
@@ -173,9 +208,11 @@ PROV984;Kem;;;;;;;;;;;;;x
 PROV988;Pudozh;;;;;;;;;;;;;x
 PROV993;Vytegra;;;;;;;;;;;;;x
 PROV1019;Voronezh;;;;;;;;;;;;;x
+PROV1023;Kostroma;;;;;;;;;;;;;x
 PROV1045;Ust-Medveditskaya;;;;;;;;;;;;;x
 PROV1046;Nizhnechirskaya;;;;;;;;;;;;;x
 PROV1090;Tiflis;;;;;;;;;;;;;x
+PROV2084;Angra Pequeña;;;;;;;;;;;;;x
 PROV2533;Vásárhely;;;;;;;;;;;;;x
 PROV2557;Roskilde;;;;;;;;;;;;;x
 PROV2577;Debar;;;;;;;;;;;;;x
@@ -187,6 +224,7 @@ PROV2614;Volkovysk;;;;;;;;;;;;;x
 PROV2632;Scoresbysund;;;;;;;;;;;;;x
 PROV2636;Halmstad;;;;;;;;;;;;;x
 PROV2682;Obdorsk;;;;;;;;;;;;;x
+PROV2721;Heligoland Bight;;;;;;;;;;;;;x
 PROV3249;Eupen;;;;;;;;;;;;;x
 PROV3250;Guangzhou Wan;;;;;;;;;;;;;x
 PROV3251;Dünaburg;;;;;;;;;;;;;x
@@ -758,10 +796,22 @@ EVTNAME37234;The Fan Affair;;;;;;;;;;;;;x
 EVTDESC37234;The French Republic contracted with the dey of Algeria to purchase large volumes of wheat to feed the revolutionary armies. Since the monarchy has been reinstated, however, the king has refused to pay the republic's debts. This has led to a progressive deterioration in relations between our two nations, and the dey recently punctuated a particularly heated meeting with a French minister by striking him in the face with a fan. The French crown has demanded an apology, which has not been given. Should we amend relations and pay our nation's debts, or should we use this slight as justification for a war against the Algerians?;;;;;;;;;;;;;
 EVTNAME37240;The Accession of Charles X;;;;;;;;;;;;;x
 EVTDESC37240;In 1824 King Louis XVIII died without child, and his brother Charles inherited the French crown as Charles X. Charles was an outspoken absolutist, and he soon made clear that he expected Parliament to rubber-stamp his dictates and keep its opinions to itself. He quickly rolled back freedom of religion, restoring the preeminence of the Catholic Church, and ordered a massive indemnity paid to nobility displaced by the Revolution.\nMeaningful political debate was curtailed, and liberals throughout France grumbled that the constitution was being undermined.;;;;;;;;;;;;;
+EVTNAME37240_NEWS;LE ROI EST MORT, VIVE LE ROI!;;;;;;;;;;;;;x
+EVTDESC37240_NEWS_SHORT;King Louis, le Desire, died today after a short illness. Without issue, he is succeeded by his youngest brother, the Count of Artois, as Charles X. Long may he reign!;;;;;;;;;;;;;x
+EVTDESC37240_NEWS_MEDIUM;King Louis, le Desire, died today after months of poor health. Lacking any issue, he leaves the throne to his youngest brother, the Count of Artois, who has now acceded to the throne as Charles X. Long may he reign!;;;;;;;;;;;;;x
+EVTDESC37240_NEWS_LONG;King Louis, le Desire, died today after months of failing health. Recognized as king by the emigres after the death of Louis XVII in 1795, he ascended the throne after Napoleon's defeat. Though he began as a conciliatory and moderate monarch, the final few years of his reign have seen increasingly reactionary policies. Lacking any issue by his wife, he leaves the throne to his youngest brother, the Count of Artois, who has now acceded to the throne as Charles X. Long may he reign!;;;;;;;;;;;;;x
 EVTNAME37242;The Constitution Suspended;;;;;;;;;;;;;x
 EVTDESC37242;In the 1830 session of parliament a bill was introduced demanding that the government ministers be chosen by parliament, rather than the king's whim. King Charles in turn pronounced the chamber dissolved and declared a state of emergency, followed by new decrees censoring the press and altering the electoral system to ensure parliament's loyalty.\nLiberal newspapers cried that the legal government had been undone and the regime no longer deserved the people's obedience. Unrest boiled in the cities.;;;;;;;;;;;;;
+EVTNAME37242_NEWS;FRENCH CONSTITUTION SUSPENDED;;;;;;;;;;;;;x
+EVTDESC37242_NEWS_SHORT;King Charles has suspended the French constitution and dissolved parliament after demands for the free election of ministers. Once more, revolution is in the air in France.;;;;;;;;;;;;;x
+EVTDESC37242_NEWS_MEDIUM;After demands from the French parliament that state ministers be elected by the body itself, King Charles has taken the extraordinary step of suspending the constitution and dissolving parliament. Vocal liberals have renounced their allegiance to the king. Once more revolution is in the air in France.;;;;;;;;;;;;;x
+EVTDESC37242_NEWS_LONG;After demands from the French parliament that state ministers be elected by the body itself, King Charles has taken the extraordinary step of suspending the constitution and dissolving parliament, simultaneously censoring the press and altering the electoral system to ensure a more biddable legislature. French liberals are incensed, crying that the lawful government has been undone. Some have publicly renounced their allegiance to the king. Once more, revolution is in the air in France.;;;;;;;;;;;;;x
 EVTNAME37244;The July Revolution;;;;;;;;;;;;;x
 EVTDESC37244;The liberal backlash against his proclamations took Charles X by surprise, and the court fled to Versailles as Paris erupted into riots. As the scale of the unrest became clear, Charles was advised to restore the constitution and abdicate the throne. In the event of his departure, the crown would likely pass to Louis Philippe of Orleans, a distant cousin of the Bourbons known for his more liberal politics and more acceptable to the masses than the discredited Bourbon house.;;;;;;;;;;;;;
+EVTNAME37244_NEWS;REVOLUTION IN FRANCE;;;;;;;;;;;;;x
+EVTDESC37244_NEWS_SHORT;As Paris erupts in riot and revolution, King Charles has fled to Versailles. Faced with total revolt, his only option may be to restore the constitution and abdicate.;;;;;;;;;;;;;x
+EVTDESC37244_NEWS_MEDIUM;Revolutionary mobs have flooded the streets of Paris. As the city erupts in riot and revolution, King Charles has been forced to flee to Versailles, leaving the capital and the government in disarray. He may now be forced to restore the constitution and abdicate in order to restore public order.;;;;;;;;;;;;;x
+EVTDESC37244_NEWS_LONG;'Over the past three days Paris grew quieter as the milling crowds grew larger.' Enraged by the autocratic rule of the French king, revolutionary mobs have flooded the streets of Paris with cries of "Mort aux Ministres!" and "A bas les aristocrates!" Rebels have taken possession of such key sites as the Hotel d'Ville, the Louvre, the Tuileries and the Palais de Justice. King Charles has been forced to flee to Versailles, leaving the capital and the government in disarray. He may now be forced to restore the constitution and abdicate in order to restore public order.;;;;;;;;;;;;;x
 EVTNAME37760;The Carlist Question;;;;;;;;;;;;;x
 EVTDESC37760;In 1830 King Ferdinand VII of Spain was old and ailing, with no sons and only an infant daughter. Traditional succession law said that his brother, Infante Carlos, should succeed him as king, but Ferdinand promulgated a law establishing his daughter as his heir. Carlos felt robbed of his birthright, and his cause became a rallying point for traditionalists and legitimists throughout Spain. The nation's politics became increasingly polarised between the liberal supporters of Princess Isabel and the absolutist Carlists, who began making plans to put Carlos on the throne.;;;;;;;;;;;;;x
 EVTNAME37761;A Holy Appeal;;;;;;;;;;;;;x

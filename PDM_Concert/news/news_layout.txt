@@ -111,6 +111,145 @@ style =
 
 	title_image =
 	{
+		####  Netherlands news headers	####
+		case = {
+			trigger = {
+				AND = {
+					is_culture_group = beneluxian
+					press_rights = state_press
+					has_country_flag = DIM_dagbladzegel
+				}
+			}
+			picture = "news/NET_state_press_title.dds"		
+		}
+		case = {
+			trigger = {
+				AND = {
+					is_culture_group = beneluxian
+					press_rights = state_press
+				}
+			}
+			picture = "news/NET_state_press_title_no_stamps.dds"		
+		}
+		case = {
+			trigger = {
+				AND = {
+					is_culture_group = beneluxian
+					ruling_party_ideology = liberal
+					has_country_flag = DIM_dagbladzegel
+				}
+			}
+			picture = "news/NET_liberal_newspaper_title.dds"		
+		}
+		case = {
+			trigger = {
+				AND = {
+					is_culture_group = beneluxian
+					ruling_party_ideology = liberal
+				}
+			}
+			picture = "news/NET_liberal_newspaper_title_no_stamps.dds"		
+		}
+		case =	{
+			trigger = {
+				AND = {
+					tag = NET
+					ruling_party_ideology = anarcho_liberal
+					has_country_flag = DIM_dagbladzegel
+				}
+			}
+			picture = "news/NET_anarcho_liberal_newspaper_title.dds"
+		}
+		case =	{
+			trigger = {
+				AND = {
+					tag = NET
+					ruling_party_ideology = anarcho_liberal
+				}
+			}
+			picture = "news/NET_anarcho_liberal_newspaper_title_no_stamps.dds"
+		}
+
+		case =	{
+			trigger = {
+				AND = {
+					tag = NET
+					ruling_party_ideology = socialist
+					has_country_flag = DIM_dagbladzegel
+				}
+			}
+			picture = "news/NET_socialist_newspaper_title.dds"
+		}
+		
+		case =	{
+			trigger = {
+				AND = {
+					tag = NET
+					ruling_party_ideology = socialist
+				}
+			}
+			picture = "news/NET_socialist_newspaper_title_no_stamps.dds"
+		}
+
+		case =	{
+			trigger = {
+				AND = {
+					tag = NET
+					ruling_party_ideology = fascist
+					has_country_flag = DIM_dagbladzegel
+				}
+			}
+			picture = "news/NET_fascist_newspaper_title.dds"
+		}
+		
+		case =	{
+			trigger = {
+				AND = {
+					tag = NET
+					ruling_party_ideology = fascist
+				}
+			}
+			picture = "news/NET_fascist_newspaper_title_no_stamps.dds"
+		}
+
+		case =	{
+			trigger = {
+				AND = {
+					tag = NET
+					ruling_party_ideology = reactionary
+					has_country_flag = DIM_dagbladzegel
+				}
+			}
+			picture = "news/NET_reactionary_newspaper_title.dds"
+		}
+		
+		case =	{
+			trigger = {
+				AND = {
+					tag = NET
+					ruling_party_ideology = reactionary
+				}
+			}
+			picture = "news/NET_reactionary_newspaper_title_no_stamps.dds"
+		}
+
+
+		# Netherlands Fallback picture
+		case = {
+			trigger = {
+				tag = NET
+				has_country_flag = DIM_dagbladzegel
+			}
+			picture = "news/NET_default_newspaper_title.dds" 
+		}
+		
+		case = {
+			trigger = {
+				tag = NET
+			}
+			picture = "news/NET_default_newspaper_title_no_stamps.dds" 
+		}
+		
 		# FRA ###################
 		case =	{
 			trigger = { 
