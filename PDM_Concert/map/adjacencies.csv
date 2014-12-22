@@ -144,7 +144,6 @@ From;To;Type;Through;Data;Comment
 #
 1326;1589;impassable;0;0;scary mountain
 1326;1592;impassable;0;0;scary mountain
-1328;1589;impassable;0;0;scary mountain
 1329;1589;impassable;0;0;scary mountain
 1329;1590;impassable;0;0;scary mountain
 1329;1590;impassable;0;0;scary mountain
@@ -152,16 +151,26 @@ From;To;Type;Through;Data;Comment
 1258;1593;impassable;0;0;scary mountain
 1260;1593;impassable;0;0;scary mountain
 1259;1593;impassable;0;0;scary mountain
+1210;1208;impassable;0;0;scary mountain
+1210;1223;impassable;0;0;scary mountain
+1216;1223;impassable;0;0;scary mountain
 1238;1592;impassable;0;0;scary mountain
 1244;1592;impassable;0;0;scary mountain
 1235;1592;impassable;0;0;scary mountain
 1226;1592;impassable;0;0;scary mountain
 1327;1592;impassable;0;0;scary mountain
-1328;1592;impassable;0;0;scary mountain
+1190;1594;impassable;0;0;scary mountain
 1225;1594;impassable;0;0;scary mountain
 1226;1594;impassable;0;0;scary mountain
-1210;1594;impassable;0;0;scary mountain
 1208;1594;impassable;0;0;scary mountain
+1190;1597;impassable;0;0;scary mountain
+1186;1597;impassable;0;0;scary mountain
+1186;1595;impassable;0;0;scary mountain
+1188;1596;impassable;0;0;scary mountain
+1068;1596;impassable;0;0;scary mountain
+1068;2679;impassable;0;0;scary mountain
+1068;2608;impassable;0;0;scary mountain
+1068;1469;impassable;0;0;scary mountain
 
 #Alps
 
@@ -182,10 +191,32 @@ From;To;Type;Through;Data;Comment
 
 #Pyrenees
 
+460;493;impassable;0;0;Pau-Pamplona
 460;496;impassable;0;0;Pau-Huesca
-460;500;impassable;0;0;Pau-Lerida
-457;500;impassable;0;0;Foix-Lerida
-457;499;impassable;0;0;Foix-Gerona
+457;496;impassable;0;0;Tarbes-Huesca
+455;496;impassable;0;0;Toulouse-Huesca
+455;500;impassable;0;0;Toulouse-Lerida
+455;499;impassable;0;0;Toulouse-Gerona
+
+#Carpathians
+
+704;637;impassable;0;0;Nowy Sacz-Kassa
+705;637;impassable;0;0;Przemysl-Kassa
+951;950;impassable;0;0;Stryj-Uzhgorod
+
+#Greater Caucasus
+
+1051;1095;impassable;0;0;Adygei-Sukhumi
+1056;1092;impassable;0;0;Pyatigorsk-Kutaisi
+1054;1092;impassable;0;0;Vladikavkaz-Kutaisi
+1055;1091;impassable;0;0;Grozny-Pasanauri
+1053;1091;impassable;0;0;Gunib-Pasanauri
+
+#Lesser Caucasus
+
+1099;1105;impassable;0;0;Gyumri-Ganja
+1098;1105;impassable;0;0;Erivan-Ganja
+1098;1106;impassable;0;0;Erivan-Agdam
 
 #Alaskan Panhandle
 
@@ -198,6 +229,25 @@ From;To;Type;Through;Data;Comment
 #Greenland
 
 251;2632;impassable;0;0;Inner Greenland
+
+#Andes
+
+2308;2312;impassable;0;0;Arica-Oruro
+2307;2314;impassable;0;0;Iquique-Potosi
+2305;2314;impassable;0;0;Antofagasta-Potosi
+2305;2370;impassable;0;0;Antofagasta-Cochinoca
+2305;2368;impassable;0;0;Antofagasta-Salta
+2305;2375;impassable;0;0;Antofagasta-Vinchina
+2322;2375;impassable;0;0;Copiapo-Vinchina
+2322;2385;impassable;0;0;Copiapo-La Rioja
+2322;2388;impassable;0;0;Copiapo-Calingasta
+2323;2388;impassable;0;0;La Serena-Calingasta
+2326;2388;impassable;0;0;Vina del Mar-Calingasta
+2324;2388;impassable;0;0;Santiago-Calingasta
+2324;2390;impassable;0;0;Santiago-San Rafael
+2327;2390;impassable;0;0;Talca-San Rafael
+2327;2391;impassable;0;0;Talca-Neuquen
+2331;2391;impassable;0;0;Chillan-Neuquen
 
 #
 # The canals

@@ -97,10 +97,10 @@ SWI_607;French Switzerland;;;;;;;;;;;;x
 AUS_641;Great Plain;;;;;;;;;;;;x
 AUS_654;Northern Transylvania;;;;;;;;;;;;x
 AUS_657;Southern Transylvania;;;;;;;;;;;;x
-AUS_702;East Galicia;;;;;;;;;;;;x
-AUS_703;West Galicia;;;;;;;;;;;;x
+AUS_702;Galicia;;;;;;;;;;;;x
+AUS_703;Lesser Poland;;;;;;;;;;;;x
 RUS_707;Suwalki;;;;;;;;;;;;x
-RUS_715;Lesser Poland;;;;;;;;;;;;x
+RUS_715;Central Poland;;;;;;;;;;;;x
 SIC_760;Calabria;;;;;;;;;;;;x
 AUS_768;Krain-Untersteiermark;;;;;;;;;;;;x
 TUR_824;Epirus;;;;;;;;;;;;x
@@ -191,6 +191,7 @@ PROV719;Belostok;;;;;;;;;;;;x
 PROV767;Marburg;;;;;;;;;;;;x
 PROV768;Laibach;;;;;;;;;;;;x
 PROV772;Arad;;;;;;;;;;;;x
+PROV792;Pancsova;;;;;;;;;;;;x
 PROV939;Novogrudok;;;;;;;;;;;;;x
 PROV947;Vileyka;;;;;;;;;;;;;x
 PROV951;Stryj;;;;;;;;;;;;;x
@@ -214,6 +215,7 @@ PROV1046;Nizhnechirskaya;;;;;;;;;;;;;x
 PROV1090;Tiflis;;;;;;;;;;;;;x
 PROV2084;Angra Pequeña;;;;;;;;;;;;;x
 PROV2533;Vásárhely;;;;;;;;;;;;;x
+PROV2538;Újvidék;;;;;;;;;;;;;x
 PROV2557;Roskilde;;;;;;;;;;;;;x
 PROV2577;Debar;;;;;;;;;;;;;x
 PROV2580;Staraya Ladoga;;;;;;;;;;;;;x
@@ -437,8 +439,14 @@ romanian_banat_title;Romanian Banat;;;;;;;;;;;;x
 romanian_banat_desc;Now that Banat has gained its freedom, proper Romanian names can be restored to the land.;;;;;;;;;;;;x
 hungarian_banat_title;Hungarian Banat;;;;;;;;;;;;x
 hungarian_banat_desc;Now that Banat has been recovered, proper Hungarian names can be restored to the land.;;;;;;;;;;;;x
+serbian_vojvodina_title;Serbian Vojvodina;;;;;;;;;;;;x
+serbian_vojvodina_desc;Now that Vojvodina has gained its freedom, proper Serbian names can be restored to the land.;;;;;;;;;;;;x
+hungarian_vojvodina_title;Hungarian Vojvodina;;;;;;;;;;;;x
+hungarian_vojvodina_desc;Now that Vojvodina has been recovered, proper Hungarian names can be restored to the land.;;;;;;;;;;;;x
 CPL_recognized_title;Independence Recognized;;;;;;;;;;;;;x
 CPL_recognized_desc;Having proven our independence by victory on the battlefield, we can now demand that the international order recognize our right to exist as a sovereign nation.;;;;;;;;;;;;;x
+poznan_recognized_title;Grater Poland Recognized;;;;;;;;;;;;;x
+poznan_recognized_desc;The Vienna Congress established the Grand Duchy of Posen as an autonomous region, guaranteed to retain its Polish identity and be ruled separately from Prussia proper. Now that the region is back under Polish control, Prussia has no further claim to sovereignty and must recognize Greater Poland's independence.;;;;;;;;;;;;;x
 greater_PLC_title;Greater Poland-Lithuania;;;;;;;;;;;;;x
 greater_PLC_desc;Our nation has become influential enough to stake a credible claim to all of the lands once ruled by the Commonwealth. Let us restore Poland-Lithuania!;;;;;;;;;;;;;x
 polish_jews_title;Polish Jews;;;;;;;;;;;;;x

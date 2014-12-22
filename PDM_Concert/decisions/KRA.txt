@@ -31,6 +31,54 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	poznan_recognized = {
+		picture = unite_with_poland
+		potential = {
+			OR = {
+				tag = POL
+				tag = PLC
+			}
+			owns = 699 #Poznan
+			699 = {
+				is_core = PZN
+				is_core = THIS
+			}
+			NOT = { has_country_flag = poznan_recognized }
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+			owns = 699 #Poznan
+		}
+		
+		effect = {
+			set_country_flag = poznan_recognized
+			PZN = {
+				all_core = {
+					remove_core = PRU
+					remove_core = NGF
+					remove_core = GER
+					remove_core = PZN
+				}
+			}
+			any_country = {
+				limit = {
+					OR = {
+						tag = PRU
+						tag = NGF
+						tag = GER
+					}
+				}
+				prestige = -3
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	unite_with_poland = {
 		potential = {

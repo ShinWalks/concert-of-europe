@@ -113,7 +113,10 @@ province_event = {
 
 	trigger = {
 		year = 1861
-		province_id = 93			# Pocatello
+		OR = {
+			province_id = 93			# Pocatello
+			province_id = 2513			# Dunedin
+		}
 		NOT = { trade_goods = precious_metal }
 	}
 

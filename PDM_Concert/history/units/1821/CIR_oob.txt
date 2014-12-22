@@ -1,6 +1,6 @@
 army = {
 	name = "Army of Circassia"
-	location = 1056
+	location = 1051
 	regiment = {
 		name= "1.1. Infantry Division"
 		type = infantry

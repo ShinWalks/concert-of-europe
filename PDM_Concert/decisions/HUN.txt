@@ -576,4 +576,57 @@ political_decisions = {
 			ROM = { prestige = -2 }
 		}
 	}
+	
+	serbian_vojvodina = {
+		potential = {
+			OR = {
+				tag = SER
+				tag = YUG
+			}
+			owns = 2538 #Novi Sad
+			NOT = {
+				has_global_flag = serbian_vojvodina
+			}
+		}
+		
+		allow = {
+			owns = 2538
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = serbian_vojvodina
+			2538 = { change_province_name = "Novi Sad" }
+			792 = { change_province_name = "Pancevo" }
+			prestige = 2
+			KUK = { prestige = -1 }
+			HUN = { prestige = -1 }
+		}
+	}
+	
+	hungarian_vojvodina = {
+		potential = {
+			OR = {
+				tag = KUK
+				tag = HUN
+			}
+			owns = 2538 #Novi Sad
+			2538 = { is_core = THIS }
+			has_global_flag = serbian_vojvodina
+		}
+		
+		allow = {
+			owns = 2538
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = serbian_vojvodina
+			2538 = { change_province_name = "Újvidék" }
+			792 = { change_province_name = "Pancsova" }
+			prestige = 1
+			SER = { prestige = -2 }
+			YUG = { prestige = -2 }
+		}
+	}
 }

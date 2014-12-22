@@ -343,11 +343,9 @@ AUS_654 = { 654 661 651 647 660 2533 } #Northern Transylvania
 
 AUS_657 = { 657 655 656 659 772 } #Southern Transylvania
 
-AUS_702 = { 702 951 952 953 705 } #East Galicia
+AUS_702 = { 702 951 952 953 705 } #Galicia
 
-AUS_703 = { 703 704 3253 714 } #West Galicia
-
-RUS_715 = { 715 711 713 716 } #Lesser Poland
+AUS_703 = { 703 704 3253 714 } #Lesser Poland
 
 AUS_726 = { 726 727 728 } #Lombardia
 
@@ -544,6 +542,8 @@ RUS_707 = { 707 362 } #Suwalki
 RUS_339 = { 339 984 995 988 } #Karelia
 
 RUS_706 = { 706 708 709 710 717 712 } #Masovia
+
+RUS_715 = { 715 711 713 716 } #Central Poland
 
 RUS_936 = { 936 719 937 2614 } #Grodno/Brêst
 
