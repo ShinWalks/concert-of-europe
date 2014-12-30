@@ -1183,8 +1183,7 @@ political_decisions = {
 			any_owned_province = { is_core = HOL }
 			NOT = {
 				any_owned_province = {
-					is_core = GER
-					NOT = { is_core = HOL }
+					is_core = SCH
 				}
 			}
 		}

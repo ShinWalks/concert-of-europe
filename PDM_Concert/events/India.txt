@@ -444,6 +444,7 @@ country_event = {
 		name = "We mourn the Maharajah's passing."
 		set_country_flag = ranjit_singh_dead
 		remove_country_modifier = military_man
+		remove_country_modifier = shastar_vidya
 		any_pop = { militancy = 4 }
 		ENG = { country_event = 97116 }
 	}

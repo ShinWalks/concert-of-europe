@@ -142,6 +142,9 @@ From;To;Type;Through;Data;Comment
 #
 # Impassables
 #
+
+#Himalayas
+
 1326;1589;impassable;0;0;scary mountain
 1326;1592;impassable;0;0;scary mountain
 1329;1589;impassable;0;0;scary mountain
@@ -218,20 +221,56 @@ From;To;Type;Through;Data;Comment
 1098;1105;impassable;0;0;Erivan-Ganja
 1098;1106;impassable;0;0;Erivan-Agdam
 
-#Alaskan Panhandle
-
-2;6;impassable;0;0;
-2;17;impassable;0;0;
-1;15;impassable;0;0;
-1;16;impassable;0;0;
-1;17;impassable;0;0;
-
 #Greenland
 
 251;2632;impassable;0;0;Inner Greenland
 
+#Alaskan Panhandle/Coast Mountains
+
+2;6;impassable;0;0;
+1;15;impassable;0;0;
+1;16;impassable;0;0;
+1;17;impassable;0;0;
+15;16;impassable;0;0;
+13;16;impassable;0;0;
+
+#Rockies
+
+19;24;impassable;0;0;New Caledonia-Jasper
+19;25;impassable;0;0;New Caledonia-Banff
+78;79;impassable;0;0;Seattle-Spokane
+88;94;impassable;0;0;Mariposa-Carson City
+92;93;impassable;0;0;Coeur d'Alene-Pocatello
+111;107;impassable;0;0;Cody-Grand Junction
+110;107;impassable;0;0;Cheyenne-Grand Junction
+
+#Appalachians
+
+217;215;impassable;0;0;Wheeling-Staunton
+185;216;impassable;0;0;Lexington-Roanoke
+218;216;impassable;0;0;Huntington-Roanoke
+190;2556;impassable;0;0;Knoxville-Asheville
+
+#Sierra Madre
+
+2141;2145;impassable;0;0;Guaymas-Parral
+2157;2145;impassable;0;0;Culiacan-Parral
+2157;2154;impassable;0;0;Culiacan-Santa Maria del Oro
+2161;2153;impassable;0;0;Tepic-Durango
+2161;2158;impassable;0;0;Tepic-Zacatecas
+136;2147;impassable;0;0;El Paso-Morelos
+
+#Yucatan jungle
+
+2184;2189;impassable;0;0;Campeche-Sayaxche
+2185;2189;impassable;0;0;Bacalar-Sayaxche
+
 #Andes
 
+2251;2270;impassable;0;0;Cucuta-Maracaibo
+2290;2300;impassable;0;0;Cajamarca-Pucallpa
+2296;2300;impassable;0;0;Huancavelica-Pucallpa
+2302;2300;impassable;0;0;Cusco-Pucallpa
 2308;2312;impassable;0;0;Arica-Oruro
 2307;2314;impassable;0;0;Iquique-Potosi
 2305;2314;impassable;0;0;Antofagasta-Potosi
@@ -248,6 +287,11 @@ From;To;Type;Through;Data;Comment
 2327;2390;impassable;0;0;Talca-San Rafael
 2327;2391;impassable;0;0;Talca-Neuquen
 2331;2391;impassable;0;0;Chillan-Neuquen
+2328;2391;impassable;0;0;Valdivia-Neuquen
+2332;2391;impassable;0;0;Osorno-Neuquen
+2332;2394;impassable;0;0;Osorno-Bariloche
+2332;2397;impassable;0;0;Osorno-Esquel
+2333;2399;impassable;0;0;Puerto Aisen-Rio Gallegos
 
 #
 # The canals

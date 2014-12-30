@@ -33,7 +33,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Schleswig is a part of $COUNTRY$."
+		name = "Schleswig will become a part of $COUNTRY$."
 		set_country_flag = annex_schleswig_holstein
 		370 = { add_core = DEN }
 		371 = { add_core = DEN }
@@ -97,7 +97,7 @@ country_event = {
 
 	id = 90051 # Response from Schleswig-Holstein
 
-	title = "EVTNAME90051"
+	title = "EVTNAME90050"
 	desc = "EVTDESC90051"
 	picture = "danishgovernment"
 
@@ -143,6 +143,7 @@ country_event = {
 		has_country_flag = annex_schleswig_holstein
 		owns = 369
 		owns = 371
+		371 = { is_core = SWH }
 	}
 
 	fire_only_once = yes
@@ -152,9 +153,9 @@ country_event = {
 	}
 
 	option = {
-		name = "Schleswig-Holstein will be restored."
+		name = "Schleswig-Holstein will retain its autonomy."
 		set_country_flag = schleswig_holstein_restored
-		prestige = 10
+		prestige = -5
 		badboy = -3
 		release_vassal = SWH
 		create_alliance = SWH
@@ -169,8 +170,8 @@ country_event = {
 		}
 	}
 	option = {
-		name = "Holstein may go, but Schleswig is $COUNTRY_ADJ$."
-		badboy = 2
+		name = "Schleswig is $COUNTRY_ADJ$; Holstein may go its own way."
+		badboy = 3
 		SWH = {
 			all_core = { remove_core = SWH }
 		}
@@ -191,19 +192,26 @@ country_event = {
 				is_greater_power = yes
 			}
 			diplomatic_influence = { who = HOL value = 100 }
+			country_event = 90058
 		}
 		any_country = {
 			limit = { capital_scope = { continent = europe } }
 			relation = { who = HOL value = 50 }
 		}
 		ai_chance = {
-			factor = 10
+			factor = 15
 		}
 	}
 	option = {
-		name = "We will not bow to pressure."
-		prestige = -10
-		badboy = 5
+		name = "Both duchies are a part of $COUNTRY$."
+		prestige = 5
+		badboy = 9
+		369 = {
+			add_core = THIS
+		}
+		529 = {
+			add_core = THIS
+		}
 		any_pop = {
 			limit = { has_pop_culture = north_german }
 			militancy = 3
@@ -220,22 +228,32 @@ country_event = {
 		}
 		any_country = {
 			limit = {
-				is_culture_group = germanic
+				primary_culture = north_german
 				is_greater_power = yes
 			}
+			country_event = 90059
+		}
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
+			}
+			relation = { who = THIS value = -100 }
 			leave_alliance = THIS
 			casus_belli = {
 				target = THIS
 				type = free_peoples
-				months = 240
+				months = 60
 			}
 		}
 		ai_chance = {
-			factor = 5
+			factor = 0
 		}
 	}
 }
-
 
 country_event = {
 
@@ -274,8 +292,7 @@ country_event = {
 	}
 
 	option = {
-		name = "Sign the constitution."
-		badboy = 3
+		name = "Schleswig will join Denmark."
 		inherit = SWH
 		SWH = {
 			all_core = { remove_core = SWH }
@@ -295,6 +312,7 @@ country_event = {
 				is_greater_power = yes
 			}
 			diplomatic_influence = { who = HOL value = 100 }
+			country_event = 90058
 		}
 		any_country = {
 			limit = { capital_scope = { continent = europe } }
@@ -307,18 +325,45 @@ country_event = {
 			relation = { who = HOL value = 50 }
 		}
 		ai_chance = {
-			factor = 75
+			factor = 90
+			modifier = {
+				factor = 0.5
+				war = yes
+			}
 		}
 	}
 	option = {
-		name = "Do not sign the constitution."
+		name = "Let the Duke of Holstein have Schleswig."
+		prestige = -10
 		release_vassal = SWH
+		370 = {
+			add_core = GER
+		}
+		371 = {
+			add_core = GER
+		}
+		any_country = {
+			limit = {
+				primary_culture = north_german
+				is_greater_power = yes
+			}
+			diplomatic_influence = { who = SWH value = 100 }
+		}
 		any_pop = {
+			limit = {
+				location = {
+					is_colonial = no
+				}
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.10
+			}
 			militancy = 6
 			consciousness = 3
 		}
 		ai_chance = {
-			factor = 25
+			factor = 10
 		}
 	}
 }
@@ -371,8 +416,16 @@ country_event = {
 	}
 	option = {
 		name = "We can do nothing."
-		prestige = -20
-		badboy = -2
+		prestige = -10
+		badboy = -3
+		370 = {
+			remove_core = DEN
+			add_core = GER
+		}
+		371 = {
+			remove_core = DEN
+			add_core = GER
+		}
 		any_pop = {
 			militancy = 4
 			consciousness = 2
@@ -764,6 +817,136 @@ country_event = {
 					is_culture_group = germanic
 					neighbour = THIS
 				}
+			}
+		}
+	}		
+}
+
+country_event = {
+	id = 90058 # Schleswig-Holstein Divided
+	title = "EVTNAME90058"
+	desc = "EVTDESC90058"
+	picture = "deliberation"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "The $FROMCOUNTRY_ADJ$ claim to Schleswig is legitimate."
+		prestige = -5
+		relation = { who = FROM value = 50 }
+		diplomatic_influence = { who = HOL value = -50 }
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				war = yes
+			}
+			modifier = {
+				factor = 0
+				war_policy = jingoism
+			}
+		}
+	}
+	option = {
+		name = "Schleswig and Holstein are forever inseparable!"
+		diplomatic_influence = { who = HOL value = 100 }
+		create_alliance = HOL
+		370 = {
+			add_core = GER
+		}
+		371 = {
+			add_core = GER
+		}
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = free_peoples
+				country = SCH
+				state_province_id = 370
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0.5
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 0
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 2
+				DEN = { has_country_flag = schleswig_holstein_restored }
+			}
+		}
+	}		
+}
+
+country_event = {
+	id = 90059 # Schleswig-Holstein Annexed
+	title = "EVTNAME90059"
+	desc = "EVTDESC90059"
+	picture = "deliberation"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "The $FROMCOUNTRY_ADJ$ claim to Schleswig-Holstein is legitimate."
+		prestige = -10
+		relation = { who = FROM value = 50 }
+		diplomatic_influence = { who = HOL value = -50 }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				war = yes
+			}
+			modifier = {
+				factor = 0
+				war_policy = jingoism
+			}
+		}
+	}
+	option = {
+		name = "Schleswig-Holstein is German!"
+		370 = {
+			add_core = GER
+		}
+		371 = {
+			add_core = GER
+		}
+		casus_belli = {
+			target = FROM
+			type = liberate_country
+			months = 60
+		}
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = liberate_country
+				country = SWH
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 0
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 2
+				DEN = { has_country_flag = schleswig_holstein_restored }
 			}
 		}
 	}		

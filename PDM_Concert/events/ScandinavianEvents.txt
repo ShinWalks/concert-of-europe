@@ -100,7 +100,7 @@ country_event = {
 				value = -100
 			}
 			remove_country_modifier = kalmar_union
-			remove_country_modifier= customs_union 
+			remove_country_modifier = customs_union 
 		}
 		ai_chance = {
 			factor = 30
@@ -277,10 +277,10 @@ country_event = {
 		}
 		any_owned = { 
 			limit = {
-			is_colonial = no
-			is_core = THIS
+				is_colonial = no
+				is_core = THIS
 			}
-			add_core = SCA 
+			add_core = SCA
 		}
 		add_accepted_culture = swedish
 		add_accepted_culture = danish
@@ -776,6 +776,101 @@ country_event = {
 		add_country_modifier = {
 			name = kalmar_union
 			duration = -1
+		}
+	}
+}
+
+country_event = {
+
+	id = 49510 # The Schleswig-Holstein Question for newly-formed SCA (parallel to SWH 90052)
+	title = "EVTNAME49510"
+	desc = "EVTDESC49510"
+	picture = "danishgovernment"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Schleswig is $COUNTRY_ADJ$; Holstein may go its own way."
+		badboy = 3
+		SWH = {
+			all_core = { remove_core = SWH }
+		}
+		release = HOL
+		any_country = {
+			limit = {
+				is_greater_power = yes
+				capital_scope = { continent = europe }
+			}
+			relation = {
+				who = THIS
+				value = -20
+			}
+		}
+		any_country = {
+			limit = {
+				primary_culture = north_german
+				is_greater_power = yes
+			}
+			diplomatic_influence = { who = HOL value = 100 }
+			country_event = 90058
+		}
+		any_country = {
+			limit = { capital_scope = { continent = europe } }
+			relation = { who = HOL value = 50 }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "Both duchies are a part of $COUNTRY$."
+		prestige = 5
+		badboy = 9
+		369 = {
+			add_core = THIS
+		}
+		529 = {
+			add_core = THIS
+		}
+		any_pop = {
+			limit = { has_pop_culture = north_german }
+			militancy = 3
+		}
+		any_country = {
+			limit = {
+				is_greater_power = yes
+				capital_scope = { continent = europe }
+			}
+			relation = {
+				who = THIS
+				value = -40
+			}
+		}
+		any_country = {
+			limit = {
+				primary_culture = north_german
+				is_greater_power = yes
+			}
+			country_event = 90059
+		}
+		any_country = {
+			limit = {
+				is_culture_group = germanic
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
+			}
+			relation = { who = THIS value = -100 }
+			leave_alliance = THIS
+			casus_belli = {
+				target = THIS
+				type = free_peoples
+				months = 60
+			}
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }

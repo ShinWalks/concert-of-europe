@@ -76,7 +76,7 @@ nonstate_consciousness = 0
 
 schools = industrial_tech_school
 
-oob = "SWE_oob.txt"
+oob = "/1821/SWE_oob.txt"
 
 1836.1.1 = {
 	literacy = 0.7
@@ -111,14 +111,13 @@ oob = "SWE_oob.txt"
 
 	#Inventions
 	#corvettes = yes
+	
+	oob = "SWE_oob.txt"
 }
 
 1850.1.1 = {
-decision = pass_folkskolereformen
+	decision = pass_folkskolereformen
 }
-
-
-
 
 1861.1.1 = {
 	oob = "/1861/SWE_oob.txt"
@@ -127,33 +126,30 @@ decision = pass_folkskolereformen
 	literacy = 0.95
 
 # Political reforms
-slavery = no_slavery
-upper_house_composition = state_equal_weight
-vote_franschise = landed_voting
-public_meetings = yes_meeting
-press_rights = free_press
-trade_unions = no_trade_unions
-voting_system = first_past_the_post
-political_parties = non_secret_ballots
-minorities_reform = limited
-immigration_policy = quota_immigration
-conscription=two_year_draft
+	slavery = no_slavery
+	upper_house_composition = state_equal_weight
+	vote_franschise = landed_voting
+	public_meetings = yes_meeting
+	press_rights = free_press
+	trade_unions = no_trade_unions
+	voting_system = first_past_the_post
+	political_parties = non_secret_ballots
+	minorities_reform = limited
+	immigration_policy = quota_immigration
+	conscription=two_year_draft
 
 # Social Reforms
-wage_reform = no_minimum_wage
-work_hours = no_work_hour_limit
-safety_regulations = no_safety
-health_care = no_health_care
-unemployment_subsidies = no_subsidies
-pensions = no_pensions
-pollution=no_controls
-child_labor = child_labor_restricted
-arts_endowment=no_endowment
-education = church
+	wage_reform = no_minimum_wage
+	work_hours = no_work_hour_limit
+	safety_regulations = no_safety
+	health_care = no_health_care
+	unemployment_subsidies = no_subsidies
+	pensions = no_pensions
+	pollution=no_controls
+	child_labor = child_labor_restricted
+	arts_endowment=no_endowment
+	education = church
 
-
-	
-	
 # Technologies
 	post_napoleonic_thought = 1
 	strategic_mobility = 1

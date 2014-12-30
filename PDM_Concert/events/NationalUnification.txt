@@ -182,6 +182,16 @@ country_event = {
 				all_core = { remove_core = THIS }
 			}
 		}
+		random_owned = {
+			limit = {
+				owner = {
+					tag = DEN
+					is_our_vassal = SWH
+				}
+			}
+			SWH = { annex_to = FROM }
+			FROM = { country_event = 49510 }
+		}
 		FROM = { inherit = THIS }
 		ai_chance = {
 			factor = 75
@@ -450,7 +460,7 @@ country_event = {
 	}
 }
 
-# Event to Inherit (For NGF & SGF )
+# Event to Inherit ( For NGF & SGF )
 country_event = {
 	id = 11106
 	title = "EVTNAME11106"

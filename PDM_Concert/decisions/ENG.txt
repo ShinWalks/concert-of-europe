@@ -401,44 +401,6 @@ political_decisions = {
 		}
 	}
 	
-	create_kashmir = {
-		potential = {
-			OR = {
-				tag = ENG
-				tag = ENL
-			}
-			owns = 1225
-			NOT = {
-				exists = KAS
-				owns = 1227
-			}
-			NOT = { has_country_flag = kashmir_created }
-		}
-		
-		allow = {
-			war = no
-			owns = 1225
-		}
-		
-		effect = {
-			set_country_flag = kashmir_created
-			prestige = 5
-			release_vassal = KAS
-			diplomatic_influence = {
-				who = KAS
-				value = 200
-			}
-			relation = {
-				who = KAS
-				value = 100
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	trucial_protectorate = {
 		picture = map_arabia
 		potential = {
