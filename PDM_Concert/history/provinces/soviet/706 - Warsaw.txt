@@ -16,11 +16,6 @@ state_building = {
 	controller = RUS
 	state_building = {
 		level = 1
-		building = bakery 
-		upgrade = yes
-	}
-	state_building = {
-		level = 1
 		building = fabric_factory
 		upgrade = yes
 	}

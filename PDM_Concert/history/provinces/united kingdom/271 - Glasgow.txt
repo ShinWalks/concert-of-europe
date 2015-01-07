@@ -34,11 +34,6 @@ state_building = {
 		upgrade = yes
 	}
 	state_building = {
-		level = 1
-		building = liquor_distillery
-		upgrade = yes
-	}
-	state_building = {
 		level = 6
 		building = clipper_shipyard
 		upgrade = yes

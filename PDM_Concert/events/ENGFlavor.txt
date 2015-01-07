@@ -2114,78 +2114,202 @@ country_event = {
 }
 
 country_event = {
-	id = 36950
-	title = "EVTNAME36950" #The Danish Gold Coast
-	desc = "EVTDESC36950"
-	picture = "administration"
-
+	id = 36948
+	title = "EVTNAME36948" #Baptist War
+	desc = "EVTDESC36948"
+	picture = "slaves_freed"
+	
 	trigger = {
 		OR = {
 			tag = ENG
 			tag = ENL
 		}
 		exists = yes
-		ASH = { owns = 1907 }
-		owns = 1908
-		year = 1850
-		relation = { who = DEN value = 0 }
+		slavery = yes_slavery
+		owns = 2217
 		NOT = {
-			has_country_flag = sale_of_danish_gold_coast
-			alliance_with = ASH
+			has_country_flag = baptist_war_report
+			has_country_flag = baptist_war_repress
 		}
+		year = 1830
 	}
 	
+	fire_only_once = yes
+	
 	mean_time_to_happen = {
-		months = 40
+		months = 6
+	}
+	
+	option = {
+		name = "Commission an inquiry into the incident."
+		set_country_flag = baptist_war_report
+		prestige = -5
+		any_pop = {
+			limit = {
+				type = slaves
+				location = { province_id = 2217 }
+			}
+			ideology = {
+				value = insubordinate
+				factor = 0.2
+			}
+			consciousness = 6
+			militancy = 6
+			reduce_pop = 0.98
+		}
+		2217 = {
+			add_province_modifier = {
+				name = peasant_revolt
+				duration = 365
+			}
+		}
+		ai_chance = {
+			factor = 90
+		}
 	}
 
 	option = {
-		name = "We agree to the sale."
-		set_country_flag = sale_of_danish_gold_coast
-		DEN = { prestige = 5 }
-		diplomatic_influence = { who = ASH value = -100 }
-		relation = { who = ASH value = -50 }
-		random_country = {
+		name = "We're confident that there was no impropriety."
+		set_country_flag = baptist_war_repress
+		any_pop = {
 			limit = {
-				owns = 1907
-				civilized = no
-				NOT = { has_global_flag = berlin_conference }
+				type = slaves
+				location = { province_id = 2217 }
 			}
-			add_casus_belli = {
-				target = THIS
-				type = demand_concession_casus_belli
-				months = 60
+			consciousness = 4
+			militancy = 10
+			ideology = {
+				value = insubordinate
+				factor = 0.4
+			}
+			reduce_pop = 0.98
+		}
+		2217 = {
+			add_province_modifier = {
+				name = peasant_revolt
+				duration = 730
+			}
+			add_province_modifier = {
+				name = nationalist_agitation
+				duration = 365
 			}
 		}
-		random_country = {
+		any_pop = {
 			limit = {
-				owns = 1907
-				civilized = no
-				has_global_flag = berlin_conference
+				is_primary_culture = yes
 			}
-			add_casus_belli = {
-				target = THIS
-				type = demand_concession_BC_casus_belli
-				months = 60
+			scaled_consciousness = {
+				issue = no_slavery
+				factor = 5
 			}
-		}
-		random_country = {
-			limit = {
-				owns = 1907
-				civilized = yes
+			scaled_militancy = {
+				issue = no_slavery
+				factor = 3
 			}
-			1907 = { add_core = THIS }
 		}
 		ai_chance = {
-			factor = 100
+			factor = 10
+			modifier = {
+				factor = 0
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 5
+				ruling_party_ideology = reactionary
+			}
 		}
 	}
+}
+
+country_event = {
+	id = 36949
+	title = "EVTNAME36949" #Slavery Abolition Act
+	desc = "EVTDESC36949"
+	picture = "confederation"
+	major = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		exists = yes
+		has_country_flag = baptist_war_report
+		slavery = yes_slavery
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 30
+	}
+	
 	option = {
-		name = "There's no need for conflict with the Ashanti."
-		set_country_flag = sale_of_danish_gold_coast
-		prestige = -5
+		name = "The measure passes."
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			dominant_issue = {
+				value = no_slavery
+				factor = 0.1
+			}
+			scaled_militancy = {
+				issue = yes_slavery
+				factor = 4
+			}
+		}
+		money = -25000
+		political_reform = no_slavery
+		any_greater_power = {
+			limit = {
+				slavery = no_slavery
+			}
+			relation = { who = THIS value = 15 }
+		}
 		ai_chance = {
-			factor = 0
+			factor = 90
+			modifier = {
+				factor = 1.5
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = reactionary
+			}
+		}
+	}
+	
+	option = {
+		name = "Slavery is too important to the colonies."
+		prestige = 5
+		any_pop = {
+			limit = { has_pop_culture = british }
+			dominant_issue = {
+				value = no_slavery
+				factor = 0.1
+			}
+			scaled_militancy = {
+				issue = no_slavery
+				factor = 4
+			}
+		}
+		slaves = {
+			consciousness = 2
+			militancy = 2
+			ideology = {
+				value = insubordinate
+				factor = 0.1
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = liberal
+			}
+			modifier = {
+				factor = 2
+				ruling_party_ideology = reactionary
+			}
 		}
 	}
 }
