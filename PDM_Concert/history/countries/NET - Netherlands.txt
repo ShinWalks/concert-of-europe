@@ -52,14 +52,6 @@ set_country_flag = DIM_dagbladzegel
 set_country_flag = united_netherlands
 decision = NET_setup
 
-1830.1.1 = {
-	clr_country_flag = united_netherlands
-	set_country_flag = DIM_afscheiding_1834_intolerance
-}
-1834.1.1 = { 
-	set_country_flag = DIM_rebuilding_buitenzorg
-}
-
 # Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
@@ -87,6 +79,14 @@ consciousness = 3
 nonstate_consciousness = 1
 
 oob = "/1821/NET_oob.txt"
+
+1830.1.1 = {
+	clr_country_flag = united_netherlands
+	set_country_flag = DIM_afscheiding_1834_intolerance
+}
+1834.1.1 = { 
+	set_country_flag = DIM_rebuilding_buitenzorg
+}
 
 1836.1.1 = {
 	literacy = 0.67

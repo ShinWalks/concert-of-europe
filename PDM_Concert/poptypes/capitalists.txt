@@ -514,7 +514,7 @@ promote_to = {
 				clergymen = 0.02
 			}
 			modifier = {
-				factor = -5
+				factor = -10
 				clergymen = 0.025
 			}
 		}
