@@ -213,6 +213,20 @@ party = {
 	war_policy = jingoism
 }
 
+party = {
+	name = "GER_social_liberal"
+	start_date = 1890.1.1
+	end_date = 2000.1.1
+	
+	ideology = social_liberal
+	
+	economic_policy = interventionism
+	trade_policy = free_trade
+	religious_policy = secularized
+	citizenship_policy = full_citizenship
+	war_policy = anti_military
+}
+
 #Same as for Austria
 unit_names = {
 	dreadnought = {

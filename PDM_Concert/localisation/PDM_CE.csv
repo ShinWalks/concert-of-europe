@@ -61,7 +61,7 @@ NET_pragmatisch_liberaal;Pragmatisch Liberalen;;;;;;;;;x
 NET_thorbeckiaan;Thorbeckianen;;;;;;;;;x
 NET_liberale_unie;Liberale Unie;;;;;;;;;x
 NET_vrijheidsbond;Staatspartij;;;;;;;;;x
-NET_vrijzinnige_democraten;Vrijzinnige Democraten;;;;;;;;;x
+NET_vrijzinnige_democraten;Vrijzinnige Democratische Bond;;;;;;;;;x
 NET_puttiaan;Puttianen;;;;;;;;;x
 NET_radicaal_liberaal;Radikale Bond;;;;;;;;;x
 NET_vrije_socialisten;Vrije Socialisten;;;;;;;;;x
@@ -74,6 +74,32 @@ HOL_fascist;Nationaal-Socialistische Beweging;;;;;;;;;x
 AOT_absolute_monarchy;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
 AOT_prussian_constitutionalism;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
 AOT_hms_government;United Tribes;United Tribes;United Tribes;;;;;;;;;;;x
+AST_social_liberal;Australian Democrats;;;;;;;;;;;;;x
+BEL_social_liberal;Sociaal-Liberale Partij;;;;;;;;;;;;;x
+BOS_social_liberal;Nasa Stranka;;;;;;;;;;;;;x
+BOH_social_liberal;Civic Movement;;;;;;;;;;;;;x
+BUR_social_liberal;National Democratic Force;;;;;;;;;;;;;x
+CHI_social_liberal;Moderate Left;;;;;;;;;;;;;x
+DAN_social_liberal;Det Radikale Venstre;;;;;;;;;;;;;x
+EST_social_liberal;Eesti Keskerakond;;;;;;;;;;;;;x
+FIN_social_liberal;Svenska Folkpartiet i Finland;;;;;;;;;;;;;x
+FRA_social_liberal;Parti Radical de Gauche;;;;;;;;;;;;;x
+GER_social_liberal;Fortschrittliche Volkspartei;;;;;;;;;;;;;x
+HUN_social_liberal;SZDSZ;;;;;;;;;;;;;x
+ICL_social_liberal;Alþýðuflokkurinn;;;;;;;;;;;;;x
+ITA_social_liberal;Giustizia e Libertà;;;;;;;;;;;;;x
+JAP_social_liberal;Minshuto;;;;;;;;;;;;;x
+KOR_social_liberal;Korean Democratic Party;;;;;;;;;;;;;x
+LIT_social_liberal;New Union;;;;;;;;;;;;;x
+LUX_social_liberal;Radikal-Sozialistesch Partei;;;;;;;;;;;;;x
+MLY_social_liberal;People's Justice Party;;;;;;;;;;;;;x
+NOR_social_liberal;Det Liberale Folkepartiet;;;;;;;;;;;;;x
+POL_social_liberal;Partia Demokratyczna;;;;;;;;;;;;;x
+ROM_social_liberal;Partidul Liberal Democrat;;;;;;;;;;;;;x
+RUS_social_liberal;Russian United Democratic Party;;;;;;;;;;;;;x
+SPA_social_liberal;Unión Progreso y Democracia;;;;;;;;;;;;;x
+SWE_social_liberal;Folkpartiet Liberalerna;;;;;;;;;;;;;x
+SWI_social_liberal;Landesring der Unabhängigen;;;;;;;;;;;;;x
 SWE_322;Svealand;;;;;;;;;;;;x
 SWE_329;Götaland;;;;;;;;;;;;x
 SWE_334;Skåneland;;;;;;;;;;;;x

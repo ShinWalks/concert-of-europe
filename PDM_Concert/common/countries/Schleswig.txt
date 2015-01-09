@@ -184,7 +184,7 @@ party = {
 }
 
 party = {
-	name = "TAG_social_liberal"
+	name = "DAN_social_liberal"
 	start_date = 1890.1.1
 	end_date = 2000.1.1
 	
