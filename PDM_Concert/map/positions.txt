@@ -24624,21 +24624,16 @@
 
 # Dresden
 558 = { 
-    unit = { 
-        x = 3023.000000
-        y = 1652.000000
-    } 
-
     text_position = { 
-        x = 3023.100098
-        y = 1647.900024
+        x = 3027.650000
+        y = 1650.550000
     } 
 
-    text_rotation = 0.610865
+    text_rotation = 0.407527
     text_scale = 2.300000
-    building_construction = { 
-        x = 3030.000000
-        y = 1652.699951
+    unit = { 
+        x = 3024.250000
+        y = 1649.700000
     } 
 
     factory = { 
@@ -24646,9 +24641,19 @@
         y = 1644.500000
     } 
 
+    building_construction = { 
+        x = 3024.000000
+        y = 1655.250000
+    } 
+
+    military_construction = { 
+        x = 3036.700000
+        y = 1649.350000
+    } 
+
     building_position = { 
         fort = { 
-            x = 3017.000000
+            x = 3019.750000
             y = 1648.000000
         } 
 
@@ -29972,8 +29977,8 @@
 # Krakow
 703 = { 
     text_position = { 
-        x = 3112.650000
-        y = 1628.850000
+        x = 3114.500000
+        y = 1628.250000
     } 
 
     text_rotation = 6.283185

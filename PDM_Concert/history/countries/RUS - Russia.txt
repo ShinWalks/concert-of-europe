@@ -68,7 +68,6 @@ private_banks = 1
 no_standard = 1
 guild_based_production = 1
 water_wheel_power = 1
-mechanized_mining = 1
 basic_chemistry = 1
 
 #Inventions

@@ -54,7 +54,6 @@ private_banks = 1
 no_standard = 1
 early_classical_theory_and_critique = 1
 freedom_of_trade = 1
-guild_based_production = 1
 classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 malthusian_thought = 1
@@ -65,6 +64,7 @@ publishing_industry = 1
 mechanized_mining = 1
 basic_chemistry = 1
 ad_hoc_money_bill_printing = 1
+romanticism = 1
 
 # Inventions
 

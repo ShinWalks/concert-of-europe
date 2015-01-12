@@ -412,14 +412,14 @@ political_decisions = {
 				limit = {
 					has_pop_culture = wallonian
 				}
-				literacy = 0.45
+				literacy = 0.6
 				consciousness = 1
 			}
 			any_pop = {
 				limit = {
 					has_pop_culture = flemish
 				}
-				literacy = 0.45
+				literacy = 0.05
 				consciousness = 1
 			}
 			set_variable = {

@@ -62,10 +62,8 @@ enlightenment_thought = 1
 private_banks = 1
 early_classical_theory_and_critique = 1
 freedom_of_trade = 1
-guild_based_production = 1
 water_wheel_power = 1
 publishing_industry = 1
-mechanized_mining = 1
 
 # Starting Consciousness
 consciousness = 1

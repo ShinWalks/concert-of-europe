@@ -2,7 +2,7 @@
 private_banks = {
 	area = financial_institutions
 	year = 1821
-	cost = 4500
+	cost = 4600
 	administrative_efficiency = 0.025
 	factory_output = 0.01
 	
@@ -66,7 +66,7 @@ private_banks = {
 stock_exchange = {
 	area = financial_institutions
 	year = 1825
-	cost = 7600
+	cost = 7750
 	administrative_efficiency = 0.025
 	factory_output = 0.01
 	
@@ -130,7 +130,7 @@ stock_exchange = {
 business_banks = {
 	area = financial_institutions
 	year = 1850
-	cost = 10000
+	cost = 10200
 	administrative_efficiency = 0.025
 	factory_output = 0.01
 	factory_goods_throughput = {
@@ -196,7 +196,7 @@ business_banks = {
 investment_banks = {
 	area = financial_institutions
 	year = 1870
-	cost = 12500
+	cost = 12750
 	administrative_efficiency = 0.025
 	factory_output = 0.01
 	factory_goods_throughput = {
@@ -265,7 +265,7 @@ investment_banks = {
 bank_inspection_board = {
 	area = financial_institutions
 	year = 1900
-	cost = 20000
+	cost = 20400
 	administrative_efficiency = 0.05
 	factory_output = 0.01
 	factory_goods_throughput = {
@@ -395,7 +395,7 @@ mutual_funds = {
 no_standard = {
 	area = monetary_system
 	year = 1821
-	cost = 4500
+	cost = 4600
 	tax_eff = 5
 	administrative_efficiency = 0.025
 	
@@ -416,7 +416,7 @@ no_standard = {
 		modifier = {
 			factor = 5
 			OR = {
-				NOT = { money = 10000 }
+				NOT = { money = 10200 }
 				produces = precious_metal
 			}
 		}
@@ -452,7 +452,7 @@ no_standard = {
 ad_hoc_money_bill_printing = {
 	area = monetary_system
 	year = 1830
-	cost = 7600
+	cost = 7750
 	tax_eff = 5
 	administrative_efficiency = 0.025
 	
@@ -473,7 +473,7 @@ ad_hoc_money_bill_printing = {
 		modifier = {
 			factor = 5
 			OR = {
-				NOT = { money = 10000 }
+				NOT = { money = 10200 }
 				produces = precious_metal
 			}
 		}
@@ -509,7 +509,7 @@ ad_hoc_money_bill_printing = {
 private_bank_money_bill_printing = {
 	area = monetary_system
 	year = 1850
-	cost = 10000
+	cost = 10200
 	tax_eff = 5
 	administrative_efficiency = 0.025
 	
@@ -530,7 +530,7 @@ private_bank_money_bill_printing = {
 		modifier = {
 			factor = 4
 			OR = {
-				NOT = { money = 10000 }
+				NOT = { money = 10200 }
 				produces = precious_metal
 			}
 		}
@@ -566,7 +566,7 @@ private_bank_money_bill_printing = {
 central_bank_money_bill_printing = {
 	area = monetary_system
 	year = 1870
-	cost = 12500
+	cost = 12750
 	tax_eff = 5
 	administrative_efficiency = 0.025
 	
@@ -587,7 +587,7 @@ central_bank_money_bill_printing = {
 		modifier = {
 			factor = 5
 			OR = {
-				NOT = { money = 10000 }
+				NOT = { money = 10200 }
 				produces = precious_metal
 			}
 		}
@@ -623,7 +623,7 @@ central_bank_money_bill_printing = {
 modern_central_bank_system = {
 	area = monetary_system
 	year = 1880
-	cost = 20000
+	cost = 20400
 	tax_eff = 5
 	administrative_efficiency = 0.05
 	
@@ -643,7 +643,7 @@ modern_central_bank_system = {
 		}
 		modifier = {
 			factor = 5
-			NOT = { money = 10000 }
+			NOT = { money = 10200 }
 		}
 		modifier = {
 			factor = 1.2
@@ -696,7 +696,7 @@ market_determined_exchange_rates = {
 		}
 		modifier = {
 			factor = 5
-			NOT = { money = 10000 }
+			NOT = { money = 10200 }
 		}
 		modifier = {
 			factor = 1.2
@@ -732,7 +732,7 @@ market_determined_exchange_rates = {
 early_classical_theory_and_critique = {
 	area = economic_thought_and_critique
 	year = 1821
-	cost = 4500
+	cost = 4600
 	factory_input = -0.01
 	
 	ai_chance = {
@@ -777,7 +777,7 @@ early_classical_theory_and_critique = {
 late_classical_theory = {
 	area = economic_thought_and_critique
 	year = 1840
-	cost = 7600
+	cost = 7750
 	factory_input = -0.01
 	factory_cost = -0.02
 	increase_research = 0.1
@@ -837,7 +837,7 @@ late_classical_theory = {
 collectivist_theory = {
 	area = economic_thought_and_critique
 	year = 1850
-	cost = 10000
+	cost = 10200
 	factory_input = -0.01
 	factory_cost = -0.02
 	increase_research = 0.1
@@ -897,7 +897,7 @@ collectivist_theory = {
 the_historical_theory = {
 	area = economic_thought_and_critique
 	year = 1860
-	cost = 12500
+	cost = 12750
 	factory_input = -0.01
 	factory_cost = -0.02
 	increase_research = 0.1
@@ -957,7 +957,7 @@ the_historical_theory = {
 neoclassical_theory = {
 	area = economic_thought_and_critique
 	year = 1890
-	cost = 20000
+	cost = 20400
 	factory_input = -0.01
 	factory_cost = -0.02
 	increase_research = 0.1
@@ -1066,7 +1066,7 @@ keynesian_economics = {
 freedom_of_trade = {
 	area = market_functionality
 	year = 1821
-	cost = 4500
+	cost = 4600
 	education_efficiency = 0.25
 	rgo_throughput = 0.1
 	
@@ -1121,7 +1121,7 @@ freedom_of_trade = {
 market_structure = {
 	area = market_functionality
 	year = 1845
-	cost = 7600
+	cost = 7750
 	education_efficiency = 0.25
 	influence = 0.1
 	
@@ -1187,7 +1187,7 @@ market_structure = {
 business_regulations = {
 	area = market_functionality
 	year = 1860
-	cost = 10000
+	cost = 10200
 	education_efficiency = 0.25
 	influence = 0.1
 	
@@ -1253,7 +1253,7 @@ business_regulations = {
 market_regulations = {
 	area = market_functionality
 	year = 1870
-	cost = 12500
+	cost = 12750
 	education_efficiency = 0.25
 	influence = 0.1
 	administrative_efficiency = 0.025
@@ -1320,7 +1320,7 @@ market_regulations = {
 economic_responsibility = {
 	area = market_functionality
 	year = 1890
-	cost = 20000
+	cost = 20400
 	education_efficiency = 0.25
 	influence = 0.1
 	administrative_efficiency = 0.05
@@ -1443,7 +1443,7 @@ government_interventionism = {
 guild_based_production = {
 	area = tech_organization
 	year = 1821
-	cost = 4500
+	cost = 4600
 	factory_output = 0.01
 	
 	ai_chance = {
@@ -1505,7 +1505,7 @@ guild_based_production = {
 organized_factories = {
 	area = tech_organization
 	year = 1845
-	cost = 7600
+	cost = 7750
 	factory_output = 0.01
 	
 	ai_chance = {
@@ -1571,7 +1571,7 @@ organized_factories = {
 scientific_management = {
 	area = tech_organization
 	year = 1860
-	cost = 10000
+	cost = 10200
 	factory_output = 0.01
 	
 	ai_chance = {
@@ -1637,7 +1637,7 @@ scientific_management = {
 time_saving_measures = {
 	area = tech_organization
 	year = 1870
-	cost = 12500
+	cost = 12750
 	factory_output = 0.01
 	
 	ai_chance = {
@@ -1708,7 +1708,7 @@ time_saving_measures = {
 management_strategy = {
 	area = tech_organization
 	year = 1880
-	cost = 20000
+	cost = 20400
 	factory_output = 0.01
 	
 	ai_chance = {

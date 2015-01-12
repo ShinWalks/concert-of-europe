@@ -5,7 +5,7 @@ religion = protestant
 government = hms_government
 plurality = 15
 nationalvalue = nv_order
-literacy = 0.535
+literacy = 0.58
 non_state_culture_literacy = 0.095
 civilized = yes
 
@@ -59,6 +59,8 @@ water_wheel_power = 1
 publishing_industry = 1
 mechanized_mining = 1
 experimental_railroad = 1
+basic_chemistry = 1
+mechanical_production = 1
 stock_exchange = 1
 ad_hoc_money_bill_printing = 1
 late_classical_theory = 1
@@ -91,7 +93,7 @@ decision = UK_setup
 oob = "/1821/ENG_oob.txt"
 
 1836.1.1 = {
-	literacy = 0.55
+	literacy = 0.6
 	non_state_culture_literacy = 0.1
 	prestige = 100
 	
