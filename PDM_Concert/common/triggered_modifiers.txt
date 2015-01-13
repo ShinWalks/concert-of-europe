@@ -220,19 +220,11 @@ populationsize_300M = {
 no_navy = {
 	trigger = {
 		civilized = yes
+		num_of_ports = 1
 		NOT = { total_amount_of_ships = 1 }
 	}
 	prestige = -0.25
 	diplomatic_points_modifier = -0.25
-	icon = 9
-}
-
-no_army = {
-	trigger = {
-		civilized = yes
-		NOT = { total_amount_of_divisions = 1 }
-	}
-	prestige = -0.25
 	icon = 9
 }
 
@@ -255,13 +247,15 @@ grand_navy = {
 	icon = 9
 }
 
-grand_army = {
+landlocked_nation = {
 	trigger = {
-		civilized = yes
-		total_amount_of_divisions = 100
+		NOT = { num_of_ports = 1 }
 	}
-	icon = 9
-	prestige = 0.1
+	icon = 10
+	prestige = -0.1
+	RGO_throughput = -0.02
+	factory_throughput = -0.05
+	diplomatic_points_modifier = -0.25
 }
 
 large_nation = {
@@ -283,15 +277,6 @@ sprawling_empire = {
 	}
 	icon = 9
 	prestige = 0.05
-}
-
-landlocked_nation = {
-	trigger = {
-		NOT = { num_of_ports = 1 }
-	}
-	icon = 10
-	RGO_throughput = -0.02
-	factory_throughput = -0.05
 }
 
 well_drilled = {

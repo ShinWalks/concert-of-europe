@@ -1,4 +1,3 @@
-political_decisions = {
 	CPL_recognized = {
 		picture = unite_with_poland
 		potential = {
@@ -1440,7 +1439,7 @@ political_decisions = {
 				}
 			}
 			937 = { change_province_name = "Brzesc" }
-			2636 = { change_province_name = "Wolkowysk" }
+			2614 = { change_province_name = "Wolkowysk" }
 			prestige = 2
 			RUS = { prestige = -1 }
 			BYE = { prestige = -1 }

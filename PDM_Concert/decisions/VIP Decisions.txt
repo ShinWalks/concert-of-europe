@@ -1,7 +1,10 @@
 political_decisions = {
 	a_telegraph_line_to_uruguay = { #original VIP event idea by General Perón, scripted by Scythe
 		potential = {
-			tag = ARG
+			OR = {
+				tag = ARG
+				tag = LPL
+			}
 			exists = URU
 			NOT = { has_country_flag = a_telegraph_line_to_uruguay }
 		}
@@ -19,7 +22,10 @@ political_decisions = {
 	
 	found_the_school_of_military_aviation = { #original VIP event idea by General Perón, scripted by Scythe
 		potential = {
-			tag = ARG
+			OR = {
+				tag = ARG
+				tag = LPL
+			}
 			owns = 2379 #Cordoba de Argentina
 			NOT = { has_country_flag = foundation_of_the_school_of_military_aviation }
 		}
