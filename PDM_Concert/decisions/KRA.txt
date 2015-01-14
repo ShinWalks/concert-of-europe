@@ -206,22 +206,65 @@
 			war = no
 			is_vassal = no
 			romanticism = 1
-			prestige = 45
-			owns = 706
+			OR = {
+				owns = 706 #Warsaw
+				owns = 699 #Poznan
+				owns = 703 #Krakow
+			}
 		}
 		
 		effect = {
 			prestige = 5
+			badboy = 20
 			all_core = {
 				add_core = POL
 				remove_core = THIS
 			}
 			change_tag = POL
-			capital = 706
+			any_owned = {
+				limit = {
+					province_id = 699
+				}
+				owner = { capital = 699 }
+			}
+			any_owned = {
+				limit = {
+					province_id = 703
+				}
+				owner = { capital = 703 }
+			}
+			any_owned = {
+				limit = {
+					province_id = 706
+				}
+				owner = { capital = 706 }
+			}
+			any_greater_power = {
+				limit = {
+					NOT = { primary_culture = polish }
+					any_owned_province = { is_core = POL }
+				}
+				relation = { who = POL value = -100 }
+				leave_alliance = POL
+				casus_belli = { 
+					target = POL
+					type = cut_down_to_size
+					months = 60
+				}
+			}
 		}
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				is_greater_power = no
+				is_secondary_power = no
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.2
+			}
 		}
 	}
 

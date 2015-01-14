@@ -607,8 +607,12 @@ pompeji_excavations;Pompeii Excavations;;;;;;;;;;;;x;
 pompeji_excavations_desc;Archaeological studies in Pompeii advance our nation's science and prestige.;;;;;;;;;;;;x;
 no_navy;No Navy;;;;;;;;;;;;x
 no_navy_desc;Without a navy, our nation has no way to project influence beyond its immediate neighbors.;;;;;;;;;;;;x
+respectable_navy;Respectable Navy;;;;;;;;;;;;x
+respectable_navy_desc;Our nation's navy is sufficient to make our presence felt in far-off lands.;;;;;;;;;;;;x
+grand_navy;Grand Navy;;;;;;;;;;;;x
+grand_navy_desc;Our nation's navy is admired and feared around the world!;;;;;;;;;;;;x
 landlocked_nation;Landlocked;;;;;;;;;;;;x
-landlocked_nation_desc;Without access to the sea, our nation's ability to trade is significantly reduced.;;;;;;;;;;;;x
+landlocked_nation_desc;Without access to the sea, our nation's ability to trade and influence events is significantly reduced.;;;;;;;;;;;;x
 social_development_focus;Social Development;;;;;;;;;;;;;x
 assimilation_focus;Encourage Minority Assimilation;;;;;;;;;;;;;x
 NORMAL_WAR_CONQUEST_NAME_BRZ_URU;$ORDER$ Cisplatine War;;;;;;;;;;;;;x

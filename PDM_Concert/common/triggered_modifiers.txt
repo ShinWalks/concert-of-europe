@@ -223,18 +223,18 @@ no_navy = {
 		num_of_ports = 1
 		NOT = { total_amount_of_ships = 1 }
 	}
-	prestige = -0.25
+	prestige = -0.1
 	diplomatic_points_modifier = -0.25
 	icon = 9
 }
 
-small_navy = {
+respectable_navy = {
 	trigger = {
 		civilized = yes
-		total_amount_of_ships = 1
-		NOT = { total_amount_of_ships = 10 }
+		total_amount_of_ships = 10
+		NOT = { total_amount_of_ships = 100 }
 	}
-	prestige = -0.1
+	prestige = 0.1
 	icon = 9
 }
 
@@ -243,7 +243,7 @@ grand_navy = {
 		civilized = yes
 		total_amount_of_ships = 100
 	}
-	prestige = 0.1
+	prestige = 0.25
 	icon = 9
 }
 
@@ -252,7 +252,6 @@ landlocked_nation = {
 		NOT = { num_of_ports = 1 }
 	}
 	icon = 10
-	prestige = -0.1
 	RGO_throughput = -0.02
 	factory_throughput = -0.05
 	diplomatic_points_modifier = -0.25
