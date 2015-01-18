@@ -65,6 +65,7 @@ late_enlightenment_philosophy = 1
 malthusian_thought = 1
 enlightenment_thought = 1
 private_banks = 1
+no_standard = 1
 early_classical_theory_and_critique = 1
 water_wheel_power = 1
 publishing_industry = 1

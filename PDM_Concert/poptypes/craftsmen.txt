@@ -1180,6 +1180,10 @@ promote_to = {
 		factor = 0.01
 		modifier = {
 			factor = -30
+			NOT = { year = 1840 }
+		}
+		modifier = {
+			factor = -30
 			NOT = { literacy = 0.30 }
 		}
 		modifier = {
