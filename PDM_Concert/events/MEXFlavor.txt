@@ -781,30 +781,13 @@ country_event = {
 		}
 		all_core = {
 			limit = {
-				OR = {
-					region = TEX_132
-					region = MEX_103
-					region = MEX_94
-					region = MEX_97
-					region = MEX_85
-					region = MEX_100
-				}
+				is_core = USA
 			}
 			remove_core = MEX
 		}
 		any_owned = {
 			limit = {
-				OR = {
-					is_core = USA
-					region = TEX_132
-					region = MEX_103
-					region = MEX_94
-					region = MEX_97
-					region = MEX_85
-					region = MEX_100
-					region = USA_106
-					region = USA_129
-				}
+				is_core = USA
 			}
 			secede_province = USA
 		}

@@ -914,7 +914,13 @@ country_event = {
 		}
 		diplomatic_influence = { who = FROM value = 100 }
 		FROM = { country_event = 44337 }
-		ai_chance = { factor = 100 }
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0
+				FROM = { is_culture_group = south_asian }
+			}
+		}
 	}
 	
 	option = {
@@ -923,7 +929,9 @@ country_event = {
 			set_country_flag = no_more_asking_for_cores
 			country_event = 44338
 		}
-		ai_chance = { factor = 0 }
+		ai_chance = {
+			factor = 1
+		}
 	}
 }
 

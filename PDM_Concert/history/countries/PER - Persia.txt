@@ -3,6 +3,7 @@ primary_culture = persian
 culture = azerbaijani
 culture = hazara
 culture = tajik
+culture = kurdish
 religion = shiite
 government = absolute_monarchy
 plurality = 0.0

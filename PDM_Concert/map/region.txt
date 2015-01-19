@@ -316,7 +316,7 @@ PRU_690 = { 690 691 694 692 } #Westpreuﬂen
 
 PRU_695 = { 695 696 697 698 693 3258 } #Ostpreuﬂen
 
-PRU_701 = { 701 699 700 } #Posen
+PRU_701 = { 699 701 700 } #Posen
 
 
 ### Austria

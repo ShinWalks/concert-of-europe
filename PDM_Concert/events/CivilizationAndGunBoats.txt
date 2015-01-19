@@ -3756,8 +3756,14 @@ country_event = {
 		vassal_of = ENG
 		ai = yes
 		civilized = no
-		NOT = { has_country_flag = no_british_doctrine }
-		ENG = { ideological_thought = 1 }
+		NOT = {
+			has_country_flag = no_british_doctrine
+			has_global_flag = government_of_india_act
+		}
+		ENG = {
+			ideological_thought = 1
+			NOT = { has_country_flag = empress_of_india }
+		}
 		OR = {
 			primary_culture = assamese
 			primary_culture = baluchi

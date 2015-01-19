@@ -25,6 +25,7 @@ country_event = {
 			owns = 1247 #Patna
 			owns = 1227 #Lahore
 		}
+		NOT = { has_country_flag = sepoy_rebellion_ended }
 	}
 	
 	fire_only_once = yes
@@ -75,6 +76,69 @@ country_event = {
 						duration = 365
 					}
 				}
+			}
+		}										
+	}
+}
+
+#End of the Sepoy Rebellion
+country_event = {
+	id = 90039
+
+	title = "EVTNAME90039"
+	desc = "EVTDESC90039"
+	news = yes
+	news_desc_long = "EVTDESC90039_NEWS_LONG"
+	news_desc_medium = "EVTDESC90039_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC90039_NEWS_SHORT"
+	picture = "sepoy_rebellion_ended"
+
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		exists = yes
+		has_country_flag = sepoy_rebellion
+		year = 1859
+		OR = {
+			ai = yes
+			AND = {
+				owns = 1236 #Delhi
+				owns = 1251 #Calcutta
+				owns = 1304 #Madras
+				owns = 1297 #Bombay
+			}
+		}
+		NOT = {
+			any_owned_province = {
+				AND = {
+					controlled_by = REB
+					is_core = HND
+				}
+			}
+		}
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "Victoria!"
+		clr_country_flag = sepoy_rebellion
+		set_country_flag = sepoy_rebellion_ended
+		any_owned = {
+			limit = { is_core = HND }
+			remove_province_modifier = nationalist_agitation
+			any_pop = {
+				limit = {
+					is_culture_group = south_asian
+				}
+				militancy = -3
+				consciousness = 3
 			}
 		}										
 	}

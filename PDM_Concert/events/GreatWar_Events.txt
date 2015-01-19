@@ -2862,6 +2862,25 @@ country_event = {
 				remove_core = GER
 			}
 		}
+		
+		#remove cores from South Tyrol & Istria if owned & Italy has a truce	
+		random_country = {
+			limit = {
+				tag = ITA
+				truce_with = THIS
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						region = AUS_734 #South Tyrol
+						region = AUS_736 #Istria
+					}
+					NOT = { province_id = 769 } #Postojna
+				}
+				remove_core = THIS
+				add_core = ITA
+			}
+		}
 
 		#normalize relations with treaty members
 		any_country = {
@@ -3814,7 +3833,7 @@ country_event = {
 			}
 		}
 		
-		#restore Pas de Calais to France if France has a truce
+		#restore Pas-de-Calais to France if France has a truce
 		random_country = {
 			limit = {
 				tag = FRA
@@ -7542,6 +7561,26 @@ country_event = {
 				}
 			}
 			add_core = GER
+		}
+		
+		#remove cores from South Tyrol & Istria & Dalmatia if owned & Italy has a truce	
+		random_country = {
+			limit = {
+				tag = ITA
+				truce_with = THIS
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						region = AUS_734 #South Tyrol
+						region = AUS_736 #Istria
+						region = AUS_780 #Dalmatia
+					}
+					NOT = { province_id = 769 } #Postojna
+				}
+				remove_core = THIS
+				add_core = ITA
+			}
 		}
 
 		#normalize relations with treaty members

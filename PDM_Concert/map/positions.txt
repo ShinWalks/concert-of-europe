@@ -16193,25 +16193,15 @@
 
 # Valmiera
 355 = { 
+    text_position = { 
+        x = 3207.520000
+        y = 1779.476667
+    } 
+
+    text_scale = 3.199999
     unit = { 
         x = 3208.000000
         y = 1784.000000
-    } 
-
-    text_position = { 
-        x = 3207.699951
-        y = 1778.000000
-    } 
-
-    text_scale = 3.799999
-    building_construction = { 
-        x = 3199.699951
-        y = 1790.000000
-    } 
-
-    military_construction = { 
-        x = 3225.000000
-        y = 1772.000000
     } 
 
     factory = { 
@@ -16219,33 +16209,25 @@
         y = 1798.000000
     } 
 
+    building_construction = { 
+        x = 3199.699951
+        y = 1790.000000
+    } 
+
+    military_construction = { 
+        x = 3221.853333
+        y = 1785.210000
+    } 
+
     building_position = { 
         fort = { 
-            x = 3236.000000
-            y = 1784.000000
+            x = 3218.055000
+            y = 1779.476667
         } 
 
         naval_base = { 
             x = 3184.199951
             y = 1792.000000
-        } 
-
-    } 
-
-    spawn_railway_track = { 
-        { 
-            x = 0.000000
-            y = 0.000000
-        } 
-
-        { 
-            x = 0.000000
-            y = 0.000000
-        } 
-
-        { 
-            x = 3197.812500
-            y = 1782.998779
         } 
 
     } 
@@ -41710,17 +41692,22 @@
 
 # Luga
 996 = { 
-    unit = { 
-        x = 3267.000000
-        y = 1828.000000
-    } 
-
     text_position = { 
         x = 3268.600098
         y = 1820.699951
     } 
 
-    text_scale = 4.299998
+    text_scale = 3.7
+    unit = { 
+        x = 3267.000000
+        y = 1828.000000
+    } 
+
+    factory = { 
+        x = 3259.000000
+        y = 1835.000000
+    } 
+
     building_construction = { 
         x = 3276.000000
         y = 1818.000000
@@ -41729,11 +41716,6 @@
     military_construction = { 
         x = 3260.000000
         y = 1828.099976
-    } 
-
-    factory = { 
-        x = 3259.000000
-        y = 1835.000000
     } 
 
     building_position = { 
@@ -41757,25 +41739,25 @@
 
 # Gdov
 997 = { 
-    unit = { 
-        x = 3254.000000
-        y = 1814.000000
-    } 
-
     text_position = { 
         x = 3254.000000
         y = 1807.599976
     } 
 
-    text_scale = 3.799999
-    building_construction = { 
-        x = 3244.300049
-        y = 1819.000000
+    text_scale = 3.399999
+    unit = { 
+        x = 3254.000000
+        y = 1814.000000
     } 
 
     factory = { 
         x = 3266.000000
         y = 1807.000000
+    } 
+
+    building_construction = { 
+        x = 3244.300049
+        y = 1819.000000
     } 
 
     building_position = { 
@@ -41787,19 +41769,6 @@
         naval_base = { 
             x = 3241.699951
             y = 1835.000000
-        } 
-
-    } 
-
-    spawn_railway_track = { 
-        { 
-            x = 3241.000000
-            y = 1824.000000
-        } 
-
-        { 
-            x = 3242.000000
-            y = 1809.000000
         } 
 
     } 
@@ -42070,17 +42039,22 @@
 
 # Velikiye Luki
 1007 = { 
-    unit = { 
-        x = 3296.000000
-        y = 1765.000000
-    } 
-
     text_position = { 
         x = 3294.100098
         y = 1756.500000
     } 
 
-    text_scale = 4.099998
+    text_scale = 3.6
+    unit = { 
+        x = 3296.000000
+        y = 1765.000000
+    } 
+
+    factory = { 
+        x = 3288.000000
+        y = 1768.000000
+    } 
+
     building_construction = { 
         x = 3301.000000
         y = 1751.000000
@@ -42089,11 +42063,6 @@
     military_construction = { 
         x = 3294.000000
         y = 1750.000000
-    } 
-
-    factory = { 
-        x = 3288.000000
-        y = 1768.000000
     } 
 
     building_position = { 
@@ -121474,11 +121443,11 @@
 # Latgale
 3251 = { 
     text_position = { 
-        x = 3232.000000
-        y = 1763.000000
+        x = 3231.061667
+        y = 1763.040000
     } 
 
-    text_scale = 3.799999
+    text_scale = 3.199999
     unit = { 
         x = 3234.000000
         y = 1764.000000
@@ -121490,13 +121459,13 @@
     } 
 
     building_construction = { 
-        x = 3199.699951
-        y = 1790.000000
+        x = 3218.998333
+        y = 1765.468333
     } 
 
     military_construction = { 
-        x = 3227.100000
-        y = 1766.641667
+        x = 3232.863333
+        y = 1776.591667
     } 
 
     building_position = { 

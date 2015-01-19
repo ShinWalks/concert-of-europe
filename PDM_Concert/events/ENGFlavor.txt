@@ -1685,17 +1685,27 @@ country_event = {
 	}
 }
 
-province_event = {
+country_event = {
 
 	id = 36938
 
 	trigger = {
-		province_id = 1251 #Calcutta
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		1251 = { #Calcutta
+			OR = {
+				owned_by = THIS
+				owner = {
+					vassal_of = THIS
+				}
+			}
+		}
 		year = 1864
 		NOT = {
 			year = 1867
-			}
-		
+		}
 	}
 	
 	fire_only_once = yes
@@ -1715,8 +1725,8 @@ province_event = {
 		}
 	}
 
-	title = "EVTNAME36938"
-	desc = "EVTDESC36938"
+	title = "EVTNAME36938_NEW"
+	desc = "EVTDESC36938_NEW"
 	picture = "BengaliNovel"
 
 	option = {
@@ -1725,10 +1735,15 @@ province_event = {
 			limit = {
 				has_pop_religion = hindu 
 			}
-			militancy = 3
-			consciousness = 2
+			militancy = 1
+			consciousness = 1
 		}
-
+		any_pop = {
+			limit = {
+				has_pop_culture = bengali 
+			}
+			consciousness = 1
+		}
 	}
 
 }
@@ -1752,32 +1767,38 @@ country_event = {
 		NOT = {
 			year = 1857
 			exists = MUG
-			}
+		}
 	}
 	
 	fire_only_once = yes
  
 	mean_time_to_happen =  {
 		months = 5
-
 		modifier = {
 			factor = 0.75 #increase likelihood to happen
 			year = 1855
 		}
-
-
 		modifier = {
-			factor = 0.95 #increase likelihood to happen
+			factor = 0.5 #increase likelihood to happen
 			year = 1856
 		}
 	}
 
 	title = "EVTNAME36939"
-	desc = "EVTDESC36939"
+	desc = "EVTDESC36939_NEW"
 	picture = "LordDalhousie"
 
 	option = {
-		name = "EVTOPTA36939"
+		name = "Empire demands it!"
+		years_of_research = 0.1
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				civilized = no
+				is_culture_group = south_asian
+			}
+			years_of_research = 0.2
+		}
 		any_pop = {
 			limit = {
 				has_pop_religion = hindu
@@ -1793,13 +1814,20 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTB36939" 
+		name = "What about local sensibilities?" 
+		prestige = -10
 		officers = {
 			consciousness = 1
 			}
 		capitalists = {
 			consciousness = 1
 			}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			consciousness = 2
+		}
 		any_pop = {
 			limit = {
 				has_pop_religion = hindu
