@@ -635,6 +635,14 @@ NORMAL_WAR_RESTORE_ORDER_NAME_BRZ_URU;$ORDER$ Cisplatine War;;;;;;;;;;;;;x
 AGRESSION_WAR_RESTORE_ORDER_NAME_BRZ_URU;$ORDER$ Cisplatine War;;;;;;;;;;;;;x
 NORMAL_CUT_DOWN_TO_SIZE_WAR_NAME_ENG_BUR;$ORDER$ Anglo-Burmese War;;;;;;;;;;;;;x
 AGRESSION_CUT_DOWN_TO_SIZE_WAR_NAME_ENG_BUR;$ORDER$ Anglo-Burmese War;;;;;;;;;;;;;x
+east_indian_unification;Unite East Indies;;;;;;;;;;;;;;x
+east_indian_unification_desc;Aquire an East Indian §Ystate§W to unite the region;;;;;;;;;;;;;x
+east_indian_unification_short;Acquire $STATE$;;;;;;;;;;;;;;x
+east_indian_unification_setup;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;;x
+east_indian_unification_annex;Unite East Indies;;;;;;;;;;;;;;x
+east_indian_unification_annex_desc;Annex an East Indian §Ynation§W to unite the region;;;;;;;;;;;;;x
+east_indian_unification_annex_short;Annex $RECIPIENT$;;;;;;;;;;;;;;x
+east_indian_unification_annex_setup;Annex $RECIPIENT$;;;;;;;;;;;;;;x
 EVTNAME1141;Lead Struck - $PROVINCENAME$;;;;;;;;;;;;;x
 EVTDESC1141;A rich vein of metal ores with industrial applications has been located in $PROVINCENAME$. This is a strategically significant resource, and we should begin extracting it immediately.;;;;;;;;;;;;;x
 EVTNAME11125;An Antillean Confederation;;;;;;;;;;;;;x

@@ -51,8 +51,10 @@ colonial_reconquest_cb
 restore_america
 restore_british_raj
 unification_casus_belli
+east_indian_unification
 civil_war
 unification_annex_casus_belli
+east_indian_unification_annex
 annex_core_country
 unification_add_to_sphere
 add_to_sphere
@@ -884,6 +886,124 @@ unification_casus_belli = {
 	}
 }
 
+# Unification in East Indies
+east_indian_unification = {
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 1
+	constructing_cb = no
+	crisis = no
+	
+	badboy_factor = 0.5
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 12
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	always = yes
+	
+	can_use = {
+		is_vassal = no
+		NOT = { is_our_vassal = THIS }
+		OR = {
+			THIS = { tag = INO }
+			AND = {
+				primary_culture = malay
+				THIS = { tag = MLY }
+			}
+		}
+		THIS = {
+			NOT = {
+				has_country_modifier = neutrality
+				war_policy = pacifism
+			}
+		}
+		OR = {
+			civilized = no
+			NOT = { is_culture_group = THIS }
+		}
+		number_of_states = 2
+		any_state = {
+			any_owned_province = {
+				OR = {
+					region = BRU_1394 #West Borneo
+					region = BRU_1396 #Sabah
+					region = NET_1398 #Sumatra
+					region = NET_1401 #Siak
+					region = ATJ_1405 #Aceh
+					region = NET_1413 #Western Java
+					region = NET_1418 #Eastern Java
+					region = NET_1423 #East Borneo
+					region = NET_1426 #South Borneo
+					region = BAL_1438 #Sunda Islands
+					region = NET_1446 #Timor
+					region = NET_1447 #Moluccas
+					region = NET_1449 #Celebes
+					region = NET_1451 #Western New Guinea
+					region = AST_2528 #Southern New Guinea
+					region = GER_2530 #Northern New Guinea
+					region = AST_2534 #Solomon Islands
+					region = AST_1097 #New Caledonia
+				}
+				any_neighbor_province = { owned_by = THIS }
+			}
+			NOT = { any_owned_province = { is_capital = yes } }
+		}
+		OR = {
+			war_with = THIS
+			THIS = {
+				NOT = { has_country_modifier = punitive_effects }
+			}
+		}
+	}
+	allowed_states = {
+		any_owned_province = {
+			OR = {
+				region = BRU_1394 #West Borneo
+				region = BRU_1396 #Sabah
+				region = NET_1398 #Sumatra
+				region = NET_1401 #Siak
+				region = ATJ_1405 #Aceh
+				region = NET_1413 #Western Java
+				region = NET_1418 #Eastern Java
+				region = NET_1423 #East Borneo
+				region = NET_1426 #South Borneo
+				region = BAL_1438 #Sunda Islands
+				region = NET_1446 #Timor
+				region = NET_1447 #Moluccas
+				region = NET_1449 #Celebes
+				region = NET_1451 #Western New Guinea
+				region = AST_2528 #Southern New Guinea
+				region = GER_2530 #Northern New Guinea
+				region = AST_2534 #Solomon Islands
+				region = AST_1097 #New Caledonia
+			}
+			any_neighbor_province = { owned_by = THIS }
+		}
+		NOT = { any_owned_province = { is_capital = yes } }
+	}
+	
+	po_demand_state = yes
+	
+	war_name = WAR_UNIFICATION_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
 # Civil war
 civil_war = {
 	sprite_index = 2
@@ -976,6 +1096,95 @@ unification_annex_casus_belli = {
 				this_culture_union = this_union
 				is_cultural_union = yes
 			}
+		}
+		OR = {
+			war_with = THIS
+			THIS = {
+				NOT = { has_country_modifier = punitive_effects }
+			}
+		}
+	}
+	
+	po_annex = yes
+	
+	war_name = WAR_UNIFICATION_ANNEX_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
+# Unification in East Indies Annex
+east_indian_unification_annex = {
+	sprite_index = 5
+	is_triggered_only = yes
+	months = 1
+	constructing_cb = no
+	crisis = no
+	
+	badboy_factor = 0.5
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 12
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	always = yes
+	
+	can_use = {
+		is_vassal = no
+		NOT = { is_our_vassal = THIS }
+		OR = {
+			THIS = { tag = INO }
+			AND = {
+				primary_culture = malay
+				THIS = { tag = MLY }
+			}
+		}
+		THIS = {
+			NOT = {
+				has_country_modifier = neutrality
+				war_policy = pacifism
+			}
+		}
+		OR = {
+			civilized = no
+			NOT = { is_culture_group = THIS }
+		}
+		NOT = { number_of_states = 2 }
+		any_owned_province = {
+			OR = {
+				region = BRU_1394 #West Borneo
+				region = BRU_1396 #Sabah
+				region = NET_1398 #Sumatra
+				region = NET_1401 #Siak
+				region = ATJ_1405 #Aceh
+				region = NET_1413 #Western Java
+				region = NET_1418 #Eastern Java
+				region = NET_1423 #East Borneo
+				region = NET_1426 #South Borneo
+				region = BAL_1438 #Sunda Islands
+				region = NET_1446 #Timor
+				region = NET_1447 #Moluccas
+				region = NET_1449 #Celebes
+				region = NET_1451 #Western New Guinea
+				region = AST_2528 #Southern New Guinea
+				region = GER_2530 #Northern New Guinea
+				region = AST_2534 #Solomon Islands
+				region = AST_1097 #New Caledonia
+			}
+			any_neighbor_province = { owned_by = THIS }
 		}
 		OR = {
 			war_with = THIS

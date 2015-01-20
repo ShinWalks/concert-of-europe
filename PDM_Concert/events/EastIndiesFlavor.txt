@@ -130,7 +130,15 @@ country_event = {
 				neighbour = THIS
 				NOT = { number_of_states = 2 }
 			}
+			MAL = {
+				neighbour = THIS
+				NOT = { number_of_states = 2 }
+			}
 			BAL = {
+				neighbour = THIS
+				NOT = { number_of_states = 2 }
+			}
+			BIM = {
 				neighbour = THIS
 				NOT = { number_of_states = 2 }
 			}
@@ -154,7 +162,9 @@ country_event = {
 			casus_belli = SAK
 			casus_belli = DJA
 			casus_belli = SLW
+			casus_belli = MAL
 			casus_belli = BAL
+			casus_belli = BIM
 			casus_belli = KTI
 			casus_belli = LAN
 			casus_belli = KLM
@@ -185,7 +195,9 @@ country_event = {
 					tag = SAK
 					tag = DJA
 					tag = SLW
+					tag = MAL
 					tag = BAL
+					tag = BIM
 					tag = KTI
 					tag = LAN
 					tag = KLM
@@ -219,7 +231,9 @@ country_event = {
 					tag = SAK
 					tag = DJA
 					tag = SLW
+					tag = MAL
 					tag = BAL
+					tag = BIM
 					tag = KTI
 					tag = LAN
 					tag = KLM
@@ -253,7 +267,9 @@ country_event = {
 					tag = SAK
 					tag = DJA
 					tag = SLW
+					tag = MAL
 					tag = BAL
+					tag = BIM
 					tag = KTI
 					tag = LAN
 					tag = KLM
@@ -299,7 +315,9 @@ country_event = {
 					tag = SAK
 					tag = DJA
 					tag = SLW
+					tag = MAL
 					tag = BAL
+					tag = BIM
 					tag = KTI
 					tag = LAN
 					tag = KLM

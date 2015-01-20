@@ -33,6 +33,7 @@ political_decisions = {
 					OR = {
 						owned_by = THIS
 						owner = { in_sphere = THIS }
+						owner = { vassal_of = THIS }
 					}
 				}
 			}
@@ -42,6 +43,25 @@ political_decisions = {
 						OR = {
 							owned_by = THIS
 							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
+						}
+					}
+				}
+				SAK = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
+						}
+					}
+				}
+				ATJ = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
@@ -50,6 +70,7 @@ political_decisions = {
 						OR = {
 							owned_by = THIS
 							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
@@ -58,6 +79,7 @@ political_decisions = {
 						OR = {
 							owned_by = THIS
 							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
@@ -66,6 +88,7 @@ political_decisions = {
 						OR = {
 							owned_by = THIS
 							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
 						}
 					}
 				}
@@ -206,6 +229,71 @@ political_decisions = {
 					}
 				}
 			}
+			OR = {
+				DJA = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
+						}
+					}
+				}
+				SAK = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
+						}
+					}
+				}
+				ATJ = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
+						}
+					}
+				}
+				BRU = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
+						}
+					}
+				}
+				SWK = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
+						}
+					}
+				}
+				KLM = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
+						}
+					}
+				}
+				KTI = {
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = { in_sphere = THIS }
+							owner = { vassal_of = THIS }
+						}
+					}
+				}
+			}
 		}
 
 		effect = {
@@ -215,38 +303,31 @@ political_decisions = {
 				remove_core = THIS
 				add_core = MLY
 			}
+			any_country = {
+				limit = {
+					primary_culture = malay
+					NOT = { tag = THIS }
+					war = no
+					OR = {
+						in_sphere = THIS
+						relation = { who = THIS value = 100 }
+					}
+				}
+				country_event = 95259
+			}
+			any_owned = {
+				limit = {
+					any_core = {
+						primary_culture = malay
+					}
+				}
+				add_core = MLY
+			}
 			change_tag = MLY
 			add_accepted_culture = yue
 			random_owned = {
 				limit = { province_id = 1387 }
 				owner = { capital = 1387 }
-			}
-			JOH = { all_core = { add_core = MLY } }
-			BRU = { all_core = { add_core = MLY } }
-			SWK = { all_core = { add_core = MLY } }
-			KTI = { all_core = { add_core = MLY } }
-			KLM = { all_core = { add_core = MLY } }
-			BRU_1396 = { add_core = MLY }
-			any_country = {
-				limit = {
-					OR = {
-						tag = JOH
-						tag = BRU
-						tag = SWK
-						tag = KTI
-						tag = KLM
-					}
-					NOT = { tag = THIS }
-					war = no
-					OR = {
-						in_sphere = THIS
-						relation = {
-							who = THIS
-							value = 50
-						}
-					}
-				}
-				country_event = 95259
 			}
 		}
 
