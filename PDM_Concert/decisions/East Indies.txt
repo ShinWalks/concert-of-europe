@@ -204,6 +204,51 @@ political_decisions = {
 		}
 	}
 	
+	create_indonesia = {
+		picture = map_east_indies
+		potential = {
+			any_owned_province = { is_core = JAV }
+			NOT = {
+				is_culture_group = southeast_asian
+				has_global_flag = indonesia_formed
+				exists = INO
+			}
+		}
+
+		allow = {
+			war = no
+			is_greater_power = yes
+			mass_politics = 1
+			JAV = {
+				all_core = { owned_by = THIS }
+			}
+		}
+
+		effect = {
+			set_global_flag = indonesia_formed
+			prestige = 10
+			JAV = {
+				all_core = {
+					add_core = INO
+					remove_core = JAV
+					add_province_modifier = {
+						name = colonial_exploitation
+						duration = 1095
+					}
+				}
+			}
+			any_pop = {
+				limit = { has_pop_culture = javan }
+				militancy = -4
+			}
+			INO = { set_country_flag = civilize_after_release }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	unite_malaya = {
 		picture = map_east_indies
 		potential = {
@@ -514,7 +559,6 @@ political_decisions = {
 			}
 		}
 	}
-
 
 	sulu_protectorate = {
 		picture = map_east_indies

@@ -113,6 +113,55 @@ political_decisions = {
 		}
 	}
 	
+	support_kurdish_independence = {
+		picture = unequal_treaty
+		potential = {
+			tag = RUS
+			is_greater_power = yes
+			neighbour = PER
+			PER = { 
+				have_core_in = KDS
+				NOT = {
+					accepted_culture = kurdish
+					in_sphere = THIS
+				}
+			}
+		}
+		
+		allow = {
+			war = no
+			NOT = {
+				relation = { who = PER value = 50 }
+			}
+		}
+		
+		effect = {
+			badboy = 4
+			relation = { who = PER value = -50 }
+			diplomatic_influence = { who = KDS value = 50 }
+			diplomatic_influence = { who = PER value = -50 }
+			PER = {
+				any_owned = {
+					limit = {
+						is_core = KDS
+					}
+					add_province_modifier = {
+						name = nationalist_agitation
+						duration = 1500
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
 	russian_black_sea = {
 		potential = {
 			tag = RUS

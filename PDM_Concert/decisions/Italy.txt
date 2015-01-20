@@ -320,6 +320,10 @@ political_decisions = {
 
 		allow = {
 			average_militancy = 3
+			OR = {
+				has_global_flag = liberal_revolution_somewhere
+				state_n_government = 1
+			}
 		}
 
 		effect = {
@@ -328,7 +332,8 @@ political_decisions = {
 			political_reform = free_press
 			government = prussian_constitutionalism
 			any_pop = {
-				militancy = -2
+				militancy = -3
+				consciousness = -3
 			}
 			set_country_flag = get_your_statuto_albertino_here
 		}
@@ -476,7 +481,7 @@ political_decisions = {
 		}
 
 		allow = {
-			owns = 749
+			owns = 749 #Rome
 		}
 
 		effect = {
@@ -513,7 +518,12 @@ political_decisions = {
 				invention = national_fraternity
 				is_greater_power = yes
 			}
-			owns = 726 #Milan
+			all_core = {
+				OR = {
+					owned_by = THIS
+					province_id = 749 #Rome
+				}
+			}
 		}
 		
 		effect = {
@@ -539,12 +549,14 @@ political_decisions = {
 	venetian_dalmatia = {
 		potential = {
 			tag = ITA
+			nationalism_n_imperialism = 1
 			has_country_flag = italia_ulterior
-			NOT = { has_country_flag = italia_ulterior }
+			NOT = { has_country_flag = venetian_dalmatia }
 		}
 		
 		allow = {
-			owns = 729 #Venice
+			is_greater_power = yes
+			has_unclaimed_cores = no
 		}
 		
 		effect = {
@@ -577,11 +589,9 @@ political_decisions = {
 	italian_islands = {
 		potential = {
 			tag = ITA
-			nationalism_n_imperialism = 1
+			revolution_n_counterrevolution = 1
 			has_country_flag = venetian_dalmatia
-			NOT = {
-				has_country_flag = italian_islands_claimed
-			}
+			NOT = { has_country_flag = italian_islands_claimed }
 		}
 		
 		allow = {
@@ -591,9 +601,7 @@ political_decisions = {
 				ruling_party_ideology = conservative
 				ruling_party_ideology = fascist
 			}
-			owns = 729 #Venice
-			owns = 736 #Trieste
-			owns = 780 #Zara
+			has_unclaimed_cores = no
 		}
 		
 		effect = {

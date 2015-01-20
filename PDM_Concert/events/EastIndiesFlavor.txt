@@ -946,27 +946,23 @@ province_event = {
 			region = ENG_1384 #Southern Malaya
 			region = ENG_1391 #Northern Malaya
 		}
+		owner = {
+			owns = 1413 #Batavia
+			has_global_flag = indonesia_formed
+			civilized = yes
+			OR = {
+				tag = INO
+				NOT = { is_culture_group = southeast_asian }
+			}
+		}
+		NOT = { is_core = INO }
 		owned_by = THIS
 		controlled_by = THIS
-		any_neighbor_province = {
-			is_core = INO
-		}
-		owner = {
-			civilized = yes
-			NOT = { is_culture_group = southeast_asian }
-		}
 		OR = {
-			AND = {
-				owner = { owns = 1413 }
-				INO = { exists = no }
+			any_neighbor_province = {
+				is_core = INO
 			}
-			INO = {
-				vassal_of = THIS
-				is_culture_group = THIS
-			}
-		}
-		NOT = {
-			is_core = INO
+			region = NET_1426 #can jump the water to South Borneo
 		}
 	}
 	
@@ -1004,26 +1000,19 @@ province_event = {
 			region = NET_1449 #Sulawesi
 			region = NET_1447 #Moluccas
 		}
+		owner = {
+			owns = 1413 #Batavia
+			has_global_flag = indonesia_formed
+			civilized = yes
+			OR = {
+				tag = INO
+				NOT = { is_culture_group = southeast_asian }
+			}
+		}
+		NOT = { is_core = INO }
 		owned_by = THIS
 		controlled_by = THIS
 		any_neighbor_province = {
-			is_core = INO
-		}
-		owner = {
-			civilized = yes
-			NOT = { is_culture_group = southeast_asian }
-		}
-		OR = {
-			AND = {
-				owner = { owns = 1413 }
-				INO = { exists = no }
-			}
-			INO = {
-				vassal_of = THIS
-				is_culture_group = THIS
-			}
-		}
-		NOT = {
 			is_core = INO
 		}
 	}
@@ -1062,26 +1051,19 @@ province_event = {
 			region = AST_2528 #Southeast New Guinea
 			region = GER_2530 #Northeast New Guinea
 		}
+		owner = {
+			owns = 1413 #Batavia
+			has_global_flag = indonesia_formed
+			civilized = yes
+			OR = {
+				tag = INO
+				NOT = { is_culture_group = southeast_asian }
+			}
+		}
+		NOT = { is_core = INO }
 		owned_by = THIS
 		controlled_by = THIS
 		any_neighbor_province = {
-			is_core = INO
-		}
-		owner = {
-			civilized = yes
-			NOT = { is_culture_group = southeast_asian }
-		}
-		OR = {
-			AND = {
-				owner = { owns = 1413 }
-				INO = { exists = no }
-			}
-			INO = {
-				vassal_of = THIS
-				is_culture_group = THIS
-			}
-		}
-		NOT = {
 			is_core = INO
 		}
 	}

@@ -2875,7 +2875,6 @@ country_event = {
 						region = AUS_734 #South Tyrol
 						region = AUS_736 #Istria
 					}
-					NOT = { province_id = 769 } #Postojna
 				}
 				remove_core = THIS
 				add_core = ITA
@@ -7576,7 +7575,6 @@ country_event = {
 						region = AUS_736 #Istria
 						region = AUS_780 #Dalmatia
 					}
-					NOT = { province_id = 769 } #Postojna
 				}
 				remove_core = THIS
 				add_core = ITA
