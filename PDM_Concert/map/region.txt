@@ -1311,7 +1311,7 @@ AST_2454 = { 2454 2527 2541 2542 2520 2523 } #Fiji
 
 SPA_2517 = { 2517 2521 } #Mariana Islands
 
-AST_2528 = { 2528 2529 } #Southern New Guina
+AST_2528 = { 2528 2529 } #Southern New Guinea
 
 GER_2530 = { 2531 1531 2530 2537 } #Northern New Guinea
 

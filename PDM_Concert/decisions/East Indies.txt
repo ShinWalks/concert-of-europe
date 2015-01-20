@@ -14,10 +14,9 @@ political_decisions = {
 				tag = JAV
 				tag = BAL
 				tag = ATJ
-				tag = JOH
 				tag = SWK
 				tag = BRU
-				tag = MLY
+				tag = SUL
 			}
 			NOT = {
 				has_global_flag = indonesia_formed
@@ -29,16 +28,15 @@ political_decisions = {
 			war = no
 			prestige = 45
 			state_n_government = 1
-			OR = {
-				tag = DJA
-				AND = {
-					exists = DJA
-					DJA = { war = no }
-					relation = {
-						who = DJA
-						value = 50
+			JAV = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
 					}
 				}
+			}
+			OR = {
 				DJA = {
 					all_core = {
 						OR = {
@@ -47,18 +45,7 @@ political_decisions = {
 						}
 					}
 				}
-			}
-			OR = {
-				tag = SAK
-				AND = {
-					exists = SAK
-					SAK = { war = no }
-					relation = {
-						who = SAK
-						value = 50
-					}
-				}
-				SAK = {
+				KLM = {
 					all_core = {
 						OR = {
 							owned_by = THIS
@@ -66,72 +53,12 @@ political_decisions = {
 						}
 					}
 				}
-			}
-			OR = {
-				tag = ATJ
-				AND = {
-					exists = ATJ
-					ATJ = { war = no }
-					relation = {
-						who = ATJ
-						value = 50
-					}
-				}
-				ATJ = {
+				KTI = {
 					all_core = {
 						OR = {
 							owned_by = THIS
 							owner = { in_sphere = THIS }
 						}
-					}
-				}
-			}
-			OR = {
-				tag = SLW
-				AND = {
-					exists = SLW
-					SLW = { war = no }
-					relation = {
-						who = SLW
-						value = 50
-					}
-				}
-				SLW = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = { in_sphere = THIS }
-						}
-					}
-				}
-			}
-			OR = {
-				tag = JAV
-				AND = {
-					exists = JAV
-					JAV = { war = no }
-					relation = {
-						who = JAV
-						value = 50
-					}
-				}
-				JAV = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = { in_sphere = THIS }
-						}
-					}
-				}
-			}
-			OR = {
-				tag = BAL
-				AND = {
-					exists = BAL
-					BAL = { war = no }
-					relation = {
-						who = BAL
-						value = 50
 					}
 				}
 				BAL = {
@@ -148,7 +75,49 @@ political_decisions = {
 		effect = {
 			set_global_flag = indonesia_formed
 			clr_country_flag = post_colonial_country
+			badboy = 25
 			prestige = 20
+			any_country = {
+				limit = {
+					OR = {
+						tag = JAV
+						tag = DJA
+						tag = SAK
+						tag = ATJ
+						tag = KLM
+						tag = KTI
+						tag = BRU
+						tag = SUL
+						tag = SLW
+						tag = MAL
+						tag = BAL
+						tag = BIM
+					}
+					NOT = { tag = THIS }
+					war = no
+					OR = {
+						in_sphere = THIS
+						relation = { who = THIS value = 100 }
+					}
+				}
+				country_event = 95259
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = JAV
+						is_core = DJA
+						is_core = SAK
+						is_core = ATJ
+						is_core = KLM
+						is_core = KTI
+						is_core = BRU
+						is_core = SUL
+						is_core = BAL
+					}
+				}
+				add_core = INO
+			}
 			all_core = {
 				remove_core = THIS
 				add_core = INO
@@ -156,55 +125,18 @@ political_decisions = {
 			change_tag = INO
 			add_accepted_culture = javan
 			add_accepted_culture = malay
-			add_accepted_culture = moluccan
-			BIM = { all_core = { add_core = INO } }
-			DJA = { all_core = { add_core = INO } }
-			KLM = { all_core = { add_core = INO } }
-			KTI = { all_core = { add_core = INO } }
-			MAL = { all_core = { add_core = INO } }
-			SLW = { all_core = { add_core = INO } }
-			SAK = { all_core = { add_core = INO } }
-			JAV = { all_core = { add_core = INO } }
-			BAL = { all_core = { add_core = INO } }
-			ATJ = { all_core = { add_core = INO } }
-			1452 = { add_core = INO }
-			1453 = { add_core = INO }
-			1454 = { add_core = INO }
-			1560 = { add_core = INO }
-			any_country = {
-				limit = {
-					OR = {
-						tag = BIM
-						tag = DJA
-						tag = KLM
-						tag = KTI
-						tag = MAL
-						tag = SLW
-						tag = SAK
-						tag = JAV
-						tag = BAL
-						tag = ATJ
-					}
-					NOT = { tag = THIS }
-					war = no
-					OR = {
-						in_sphere = THIS
-						relation = {
-							who = THIS
-							value = 50
-						}
-					}
-				}
-				country_event = 95259
-			}
 		}
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.1
+			}
 		}
 	}
 	
-	create_indonesia = {
+	organize_indonesia = {
 		picture = map_east_indies
 		potential = {
 			any_owned_province = { is_core = JAV }
