@@ -2531,7 +2531,7 @@ country_event = {
 	trigger = {
 		tag = PER
 		exists = yes
-		year = 1870
+		year = 1865
 		civilized = no
 		accepted_culture = kurdish
 	}
@@ -2543,6 +2543,10 @@ country_event = {
 		modifier = {
 			factor = 0.1
 			exists = KDS
+		}
+		modifier = {
+			factor = 0.3
+			has_recently_lost_war = yes
 		}
 		modifier = {
 			factor = 1.3

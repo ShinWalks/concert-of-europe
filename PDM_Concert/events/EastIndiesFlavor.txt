@@ -1121,3 +1121,62 @@ province_event = {
 		INO = { add_accepted_culture = melanesian }
 	}
 }
+
+
+province_event = {
+	id = 97133
+	title = "EVTNAME98800"
+	desc = "EVTDESC97133"
+	
+	trigger = {
+		OR = {
+			region = NET_1398 #Djambi
+			region = NET_1401 #Siak
+			region = ATJ_1405 #Atjeh
+			region = NET_1426 #South Borneo
+			region = NET_1423 #East Borneo
+			region = BRU_1396 #North Borneo
+			region = BRU_1394 #West Borneo
+		}
+		owner = {
+			owns = 1385 #Johor Bahru
+			has_global_flag = malaya_formed
+			civilized = yes
+			OR = {
+				tag = MLY
+				NOT = { is_culture_group = southeast_asian }
+			}
+		}
+		NOT = { is_core = MLY }
+		owned_by = THIS
+		controlled_by = THIS
+		OR = {
+			any_neighbor_province = {
+				is_core = MLY
+			}
+			region = BRU_1394 #can jump the water to West Borneo
+			region = BRU_1396 #can jump the water to North Borneo
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = MLY }
+				}
+				add_core = MLY
+				any_pop = { militancy = -2 }
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 1095
+				}
+			}
+		}
+	}
+}
