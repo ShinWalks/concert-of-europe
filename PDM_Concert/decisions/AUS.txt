@@ -286,7 +286,6 @@ political_decisions = {
 							is_core = NAS
 							is_core = OLD
 							is_core = RHI
-							is_core = WES
 							is_core = SAA
 							is_core = SAX
 							is_core = SCH

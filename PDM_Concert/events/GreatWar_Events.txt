@@ -73,7 +73,7 @@ country_event = {
 				NOT = { has_country_flag = enemy_of_my_enemy }
 			}
 			country_event = 96025
-		}	
+		}
 		add_country_modifier = {
 			name = great_war
 			duration = -1
@@ -475,6 +475,8 @@ country_event = {
 			tag = TUR
 			tag = JAP
 			tag = TKG
+			tag = POL
+			tag = PLC
 		}
 		OR = {
 			has_country_flag = ultimatum_accepted
@@ -1760,11 +1762,17 @@ country_event = {
 			tag = RUS
 			tag = USA
 			tag = ENG
+			tag = CAN
 			tag = FRA
 			tag = AUS
 			tag = KUK
+			tag = DNB
+			tag = HUN
 			tag = TUR
 			tag = JAP
+			tag = TKG
+			tag = POL
+			tag = PLC
 		}
 		is_greater_power = no
 		is_secondary_power = no
@@ -3265,6 +3273,7 @@ country_event = {
 				}
 			}
 			remove_core = THIS
+		}
 		
 		#If Russia has a truce, lose core on Bialystok & add Russian core on Mariampole
 		random_country = {
@@ -4354,8 +4363,8 @@ country_event = {
 					}
 				}
 			}
-		add_core = FIN
-		add_core = SCA
+			add_core = FIN
+			add_core = SCA
         }
 		random_owned = {
 			limit = {
@@ -4916,7 +4925,7 @@ country_event = {
 			}
 			add_core = RUS
 		}
-				
+		
 		#if any Polish cores owned, re-add cores to Germany
 		any_owned = {
 			limit = {
@@ -4946,7 +4955,7 @@ country_event = {
 			}
 			remove_core = THIS
 		}
-				
+		
 		#normalize relations with treaty members
 		any_country = {
 			limit = {
@@ -5721,7 +5730,7 @@ country_event = {
 			}
 			add_core = RUS
 		}
-				
+		
 		#if any Polish cores owned, re-add cores to Germany
 		any_owned = {
 			limit = {
@@ -6126,7 +6135,7 @@ country_event = {
 			}
 			add_core = RUS
 		}
-				
+		
 		#if any Polish cores owned, re-add cores to Germany
 		any_owned = {
 			limit = {
@@ -7540,7 +7549,7 @@ country_event = {
 			}
 			add_core = RUS
 		}
-				
+		
 		#if any Polish cores owned, re-add cores to Germany
 		any_owned = {
 			limit = {
@@ -8000,7 +8009,7 @@ country_event = {
 			}
 			add_core = RUS
 		}
-				
+		
 		#if any Polish cores owned, re-add cores to Germany
 		any_owned = {
 			limit = {
@@ -8357,7 +8366,7 @@ country_event = {
 				}
 			}
 			country_event = 96061
-		}	
+		}
 		
 		# 50% chance of release for Armenia
 		any_country = {
@@ -8987,7 +8996,6 @@ country_event = {
 		}
 	}
 }
-
 
 #########################################################
 #														#
@@ -9923,4 +9931,3 @@ country_event = {
 		}
 	}
 }
-	

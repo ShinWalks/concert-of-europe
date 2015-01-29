@@ -120,7 +120,7 @@ political_decisions = {
 			is_greater_power = yes
 			neighbour = PER
 			PER = { 
-				have_core_in = KDS
+				any_owned_province = { is_core = KDS }
 				NOT = {
 					accepted_culture = kurdish
 					in_sphere = THIS

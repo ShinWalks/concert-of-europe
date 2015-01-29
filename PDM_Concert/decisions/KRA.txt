@@ -450,7 +450,7 @@ political_decisions = {
 				limit = {
 					owner = { primary_culture = lithuanian }
 				}
-				add_accepted_culture = latvian
+				owner = { add_accepted_culture = latvian }
 				LIT = {
 					all_core = { remove_core = LIT }
 				}

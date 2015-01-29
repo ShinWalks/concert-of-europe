@@ -421,6 +421,8 @@ PNJ_embrace_kashmiri_minority_title;Embrace the Kashmiri;;;;;;;;;;;;;x
 PNJ_embrace_kashmiri_minority_desc;The Sikh Empire is a secular, tolerant state. We shall embrace the Kashmiri lands under our dominion, and together forge a nation even stronger than before.;;;;;;;;;;;;;x
 PNJ_embrace_baluchi_minority_title;Embrace the Baluch;;;;;;;;;;;;;x
 PNJ_embrace_baluchi_minority_desc;The Sikh Empire is a secular, tolerant state. We shall embrace the Baluchi lands under our dominion, and together forge a nation even stronger than before.;;;;;;;;;;;;;x
+treaty_of_brescia_title;Treaty of Brescia;;;;;;;;;;;;x
+treaty_of_brescia_desc;We have forced the Austrians to relinquish their control of an Italian territory, and the region is ready to be fully integrated into $COUNTRY$. Forward, Italia!;;;;;;;;;;;;x
 venetian_dalmatia_title;Venetian Dalmatia;;;;;;;;;;;;x
 venetian_dalmatia_desc;For centuries the Dalmatian coast was a territory of the Republic of Venice. The Napoleonic wars saw the end of the Republic, and Dalmatia was transferred to Austria at the Vienna Congress, but the region's Italian population remains. We could credibly lay claim to the coast and tighten our grip on the Adriatic.;;;;;;;;;;;;x
 italian_islands_title;The Italian Islands;;;;;;;;;;;;x
@@ -817,6 +819,8 @@ EVTDESC35311;The liberal convulsions racking $FROMCOUNTRY$ have mingled with lon
 EVTDESC35312;The liberal convulsions racking $FROMCOUNTRY$ have mingled with long-suppressed Italian nationalism in the Kingdom of Lombardy-Venetia with astonishing effect. A riot-turned-rebellion in Milan has driven the imperial garrison out of the city, and Venice, too, has risen up in revolt. Rebels are proclaiming republics in Lombardia and Venetia, and both are seeking support and protection from Piedmont. Popular sentiment in $COUNTRY$ supports the rebellions, and the people would be heartened if we sent funds and arms to support the new republics.;;;;;;;;;;;;x;
 EVTNAME35313;Italian Solidarity;;;;;;;;;;;;x;
 EVTDESC35313;$FROMCOUNTRY$ has agreed to support us in our struggle against the Austrians. With this alliance, freedom appears within our grasp.;;;;;;;;;;;;x;
+EVTNAME35314;Piedmontese Intervention;;;;;;;;;;;;x;
+EVTDESC35314;$FROMCOUNTRY$ has taken up the cause of the Italian rebels, occupying Milan and advancing toward Venetia. They mean to unite northern Italy against us.;;;;;;;;;;;;x;
 EVTNAME35705;Election of Pius IX;;;;;;;;;;;;x;
 EVTDESC35705;The papal conclave of 1846 took an unexpected turn, as liberals and moderates among the cardinals combined to elect Bishop Mastai-Ferretti of Spoleto, an Italian patriot and reformer. Conservative Catholic governments were shocked, including that of Austria, which had attempted to block his nomination. Taking the name Pius IX, he quickly instituted political and economic reforms in the Papal States and released political prisoners. For a time, the new pope was the most popular man on the Italian peninsula, where the exclamation 'Long life to Pius IX!' was often heard.;;;;;;;;;;;;x;
 EVTNAME36223;Sell Accra?;;;;;;;;;;;;;x

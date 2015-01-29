@@ -26,8 +26,11 @@ political_decisions = {
 				tag = SAR
 				tag = SVY
 			}
-			NOT = { exists = ITA }
-			NOT = { has_country_flag = plombieres }
+			NOT = {
+				exists = ITA
+				has_country_flag = plombieres
+				has_country_flag = brescia_treaty
+			}
 			owns = 465
 			owns = 466
 			owns = 472
@@ -500,7 +503,6 @@ political_decisions = {
 				remove_core = LUC
 				remove_core = PAR
 				remove_core = PAP
-				remove_core = VEN
 				remove_core = LOM
 				remove_core = RMG
 			}
@@ -529,7 +531,6 @@ political_decisions = {
 		effect = {
 			set_country_flag = italia_ulterior
 			badboy = 5
-			AUS_729 = { add_core = ITA } #Venetia
 			734 = { add_core = ITA } #Trent
 			736 = { add_core = ITA } #Trieste
 			737 = { add_core = ITA } #Gorizia
@@ -629,6 +630,61 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				badboy = 0.6
+			}
+		}
+	}
+	
+	treaty_of_brescia = {
+		picture = unite_with_poland
+		potential = {
+			OR = {
+				tag = SAR
+				tag = SVY
+			}
+			OR = {
+				government = prussian_constitutionalism
+				government = hms_government
+				government = democracy
+			}
+			has_global_flag = first_italian_war
+			owns = 726 #Milan
+			NOT = {
+				year = 1855
+				has_country_flag = brescia_treaty
+			}
+		}
+		
+		allow = {
+			war = no
+			ideological_thought = 1
+			OR = {
+				VEN = { exists = no }
+				AND = {
+					VEN = { exists = yes }
+					VEN = { war = no }
+				}
+			}
+		}	
+		
+		effect = {
+			set_country_flag = brescia_treaty
+			prestige = 10
+			AUS = { prestige = -5 }
+			badboy = 5
+			inherit = VEN
+			AUS_726 = { add_core = THIS }
+			any_owned = {
+				limit = {
+					is_core = VEN
+				}
+				add_core = THIS
+			}
+			AUS = {
+				diplomatic_influence = { who = PAR value = -100 }
+				diplomatic_influence = { who = MOD value = -100 }
+				diplomatic_influence = { who = LUC value = -100 }
+				diplomatic_influence = { who = TUS value = -100 }
+				diplomatic_influence = { who = PAP value = 40 }
 			}
 		}
 	}
@@ -767,6 +823,36 @@ political_decisions = {
 				clr_country_flag = restore_alliance
 				create_alliance = THIS
 			}
+		}
+	}
+	
+	perfect_fusion = {
+		potential = {
+			tag = SAR
+			owns = 765
+			owns = 766
+			NOT = { has_country_flag = perfect_fusion }
+		}
+		
+		allow = {
+			OR = {
+				government = prussian_constitutionalism
+				government = hms_government
+				government = democracy
+			}
+		}
+		
+		effect = {
+			set_country_flag = perfect_fusion
+			add_accepted_culture = south_italian
+			any_pop = {
+				limit = { has_pop_culture = south_italian }
+				militancy = -4
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -1010,36 +1096,6 @@ political_decisions = {
 			relation = {
 				who = TUR
 				value = 100
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	perfect_fusion = {
-		potential = {
-			tag = SAR
-			owns = 765
-			owns = 766
-			NOT = { has_country_flag = perfect_fusion }
-		}
-		
-		allow = {
-			OR = {
-				government = prussian_constitutionalism
-				government = hms_government
-				government = democracy
-			}
-		}
-		
-		effect = {
-			set_country_flag = perfect_fusion
-			add_accepted_culture = south_italian
-			any_pop = {
-				limit = { has_pop_culture = south_italian }
-				militancy = -4
 			}
 		}
 		

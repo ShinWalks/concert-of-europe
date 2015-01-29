@@ -3913,6 +3913,13 @@ country_event = {
 			limit = { is_primary_culture = yes }
 			militancy = -6
 		}
+		any_owned = {
+			limit = { culture = north_italian }
+			add_province_modifier = {
+				name = liberal_agitation
+				duration = 1095
+			}
+		}
 		random_owned = {
 			limit = {
 				owner = {
@@ -4048,6 +4055,13 @@ country_event = {
 		any_pop = {
 			limit = { is_primary_culture = yes }
 			militancy = -6
+		}
+		any_owned = {
+			limit = { culture = north_italian }
+			add_province_modifier = {
+				name = liberal_agitation
+				duration = 1095
+			}
 		}
 		random_owned = {
 			limit = {
