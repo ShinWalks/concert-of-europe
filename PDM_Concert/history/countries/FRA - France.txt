@@ -72,7 +72,7 @@ romanticism = 1
 consciousness = 3
 nonstate_consciousness = 1
 
-ruling_party = FRA_conservative
+ruling_party = FRA_conservative_6
 set_country_flag = conservative_election_win
 set_country_flag = existing_country
 decision = FRA_setup

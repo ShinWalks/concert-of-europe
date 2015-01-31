@@ -41,7 +41,10 @@ political_decisions = {
 		
 		allow = {
 			prestige = 30
-			military_score = 50	
+			OR = {
+				is_greater_power = yes
+				military_score = 50
+			}
 		}
 		
 		effect = {

@@ -15165,7 +15165,14 @@
 	}
 	farmers = {
 
-		size = 43148
+		size = 5000
+		culture = danish
+		religion = protestant
+
+	}
+	farmers = {
+
+		size = 38148
 		culture = swedish
 		religion = protestant
 
@@ -20244,9 +20251,16 @@
 	}
 	farmers = {
 
-		size = 12888
+		size = 9888
 		culture = british
 		religion = protestant
+
+	}
+	farmers = {
+
+		size = 3000
+		culture = french
+		religion = catholic
 
 	}
 
@@ -22634,7 +22648,14 @@
 	}
 	farmers = {
 
-		size = 141339
+		size = 15000
+		culture = portuguese
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 126339
 		culture = spanish
 		religion = catholic
 
@@ -22705,7 +22726,14 @@
 	}
 	farmers = {
 
-		size = 69232
+		size = 17000
+		culture = portuguese
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 52232
 		culture = spanish
 		religion = catholic
 
@@ -27618,7 +27646,7 @@
 
 		size = 619
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 	artisans = {
@@ -27632,7 +27660,7 @@
 
 		size = 953
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 	artisans = {
@@ -27681,7 +27709,7 @@
 
 		size = 687
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 	craftsmen = {
@@ -27695,7 +27723,7 @@
 
 		size = 15418
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 	labourers = {
@@ -27716,7 +27744,7 @@
 
 		size = 183
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 	soldiers = {
@@ -27730,7 +27758,7 @@
 
 		size = 343
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 
@@ -27741,7 +27769,7 @@
 
 		size = 656
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 	artisans = {
@@ -27762,7 +27790,7 @@
 
 		size = 12366
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 	labourers = {
@@ -27780,7 +27808,7 @@
 
 		size = 3055
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 	artisans = {
@@ -27808,7 +27836,7 @@
 
 		size = 55405
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 
@@ -35852,7 +35880,14 @@
 	}
 	labourers = {
 
-		size = 16125
+		size = 4000
+		culture = polish
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 12125
 		culture = south_german
 		religion = catholic
 
@@ -38521,7 +38556,14 @@
 	}
 	farmers = {
 
-		size = 184492
+		size = 11000
+		culture = catalan
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 173492
 		culture = north_italian
 		religion = catholic
 
@@ -39106,14 +39148,14 @@
 
 	artisans = {
 
-		size = 1373
+		size = 1623
 		culture = south_german
 		religion = catholic
 
 	}
 	artisans = {
 
-		size = 457
+		size = 207
 		culture = north_italian
 		religion = catholic
 
@@ -39127,14 +39169,14 @@
 	}
 	farmers = {
 
-		size = 13689
+		size = 16089
 		culture = south_german
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 4944
+		size = 2544
 		culture = north_italian
 		religion = catholic
 
@@ -40399,7 +40441,14 @@
 	}
 	farmers = {
 
-		size = 34819
+		size = 2200
+		culture = catalan
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 32619
 		culture = south_italian
 		religion = catholic
 
@@ -40408,13 +40457,6 @@
 }
 767 = {
 
-	aristocrats = {
-
-		size = 1442
-		culture = south_german
-		religion = catholic
-
-	}
 	artisans = {
 
 		size = 1007
@@ -40426,13 +40468,6 @@
 
 		size = 1465
 		culture = slovene
-		religion = catholic
-
-	}
-	bureaucrats = {
-
-		size = 228
-		culture = south_german
 		religion = catholic
 
 	}
@@ -40464,35 +40499,28 @@
 		religion = catholic
 
 	}
-	officers = {
-
-		size = 91
-		culture = slovene
-		religion = catholic
-
-	}
-	soldiers = {
-
-		size = 1053
-		culture = south_german
-		religion = catholic
-
-	}
-	soldiers = {
-
-		size = 412
-		culture = slovene
-		religion = catholic
-
-	}
 
 }
 768 = {
 
+	aristocrats = {
+
+		size = 1442
+		culture = south_german
+		religion = catholic
+
+	}
 	artisans = {
 
 		size = 3662
 		culture = slovene
+		religion = catholic
+
+	}
+	bureaucrats = {
+
+		size = 228
+		culture = south_german
 		religion = catholic
 
 	}
@@ -40512,7 +40540,35 @@
 	}
 	farmers = {
 
-		size = 57827
+		size = 6000
+		culture = south_german
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 51827
+		culture = slovene
+		religion = catholic
+
+	}
+	officers = {
+
+		size = 91
+		culture = south_german
+		religion = catholic
+
+	}
+	soldiers = {
+
+		size = 1053
+		culture = south_german
+		religion = catholic
+
+	}
+	soldiers = {
+
+		size = 412
 		culture = slovene
 		religion = catholic
 

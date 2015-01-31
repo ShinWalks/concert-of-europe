@@ -635,18 +635,17 @@ political_decisions = {
 	}
 	
 	treaty_of_brescia = {
-		picture = unite_with_poland
+		picture = form_italy
 		potential = {
 			OR = {
 				tag = SAR
 				tag = SVY
 			}
-			OR = {
-				government = prussian_constitutionalism
-				government = hms_government
-				government = democracy
-			}
 			has_global_flag = first_italian_war
+			OR = {
+				truce_with = AUS
+				truce_with = KUK
+			}
 			owns = 726 #Milan
 			NOT = {
 				year = 1855
@@ -656,12 +655,17 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			ideological_thought = 1
+			OR = {
+				government = prussian_constitutionalism
+				government = hms_government
+				government = democracy
+			}
 			OR = {
 				VEN = { exists = no }
-				AND = {
-					VEN = { exists = yes }
-					VEN = { war = no }
+				VEN = {
+					exists = yes
+					war = no
+					ai = yes
 				}
 			}
 		}	

@@ -15,6 +15,7 @@ country_event = {
 		capital_scope = { continent = europe }
 		NOT = {
 			tag = TUR
+			tag = RUS
 			has_global_flag = london_conference_1832_held
 			has_global_flag = london_conference_1832_in_progress
 			has_country_flag = will_not_hold_conference_1832

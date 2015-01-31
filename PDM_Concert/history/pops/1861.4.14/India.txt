@@ -4001,7 +4001,7 @@
 
 }
 #Nicobar Islands (14000/3500 POPS)
-1320 = {
+3252 = {
 	clergymen = {
 		culture = asian_minor
 		religion = animist
