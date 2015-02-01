@@ -1569,7 +1569,7 @@ country_event = {
 				tag = NET
 				has_country_flag = united_netherlands
 			}
-			country_event = { id = 210428 days = 3 }
+			#country_event = { id = 210428 days = 3 }
 		}
 		ai_chance = {
 			factor = 90
@@ -1596,7 +1596,7 @@ country_event = {
 				tag = NET
 				has_country_flag = united_netherlands
 			}
-			country_event = { id = 210428 days = 3 }
+			#country_event = { id = 210428 days = 3 }
 		}
 		ai_chance = {
 			factor = 10

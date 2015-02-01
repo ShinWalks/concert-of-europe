@@ -451,7 +451,7 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			treasury = 100000
+			money = 100000
 			NOT = { truce_with = MEX }
 		}
 		effect = {

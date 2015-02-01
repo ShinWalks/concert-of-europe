@@ -264,7 +264,7 @@ investment_banks = {
 
 bank_inspection_board = {
 	area = financial_institutions
-	year = 1900
+	year = 1890
 	cost = 20400
 	administrative_efficiency = 0.05
 	factory_output = 0.01
@@ -329,7 +329,7 @@ bank_inspection_board = {
 
 mutual_funds = {
 	area = financial_institutions
-	year = 1910
+	year = 1900
 	cost = 30000
 	administrative_efficiency = 0.05
 	factory_output = 0.02
@@ -734,6 +734,7 @@ early_classical_theory_and_critique = {
 	year = 1821
 	cost = 4600
 	factory_input = -0.01
+	increase_research = 0.1
 	
 	ai_chance = {
 		factor = 100

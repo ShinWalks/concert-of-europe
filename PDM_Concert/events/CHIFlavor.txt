@@ -509,7 +509,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 40
+		months = 120
 		modifier = {
 			factor = 1.2
 			is_greater_power = yes
@@ -585,10 +585,10 @@ country_event = {
 		prestige = -10
 		poor_strata = {
 			limit = { is_culture_group = east_asian }
-			consciousness = 2
+			consciousness = 4
 			ideology = {
 				value = liberal
-				factor = 0.08
+				factor = 0.12
 			}
 		}
 		middle_strata = {
@@ -596,7 +596,7 @@ country_event = {
 			consciousness = 4
 			ideology = {
 				value = liberal
-				factor = 0.12
+				factor = 0.15
 			}
 		}
 	}
@@ -608,7 +608,7 @@ country_event = {
 				is_culture_group = east_asian
 				is_primary_culture = no
 			}
-			militancy = 3
+			militancy = 4
 		}
 		random_state = {
 			limit = {
@@ -622,7 +622,49 @@ country_event = {
 			}
 			any_pop = {
 				limit = { is_culture_group = east_asian }
-				militancy = 3
+				militancy = 4
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = peasant_revolt
+					duration = 365
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				OR = {
+					liberal = 10
+					socialist = 10
+					communist = 10
+					fascist = 10
+				}
+				any_owned_province = { is_core = CHI }
+			}
+			any_pop = {
+				limit = { is_culture_group = east_asian }
+				militancy = 4
+			}
+			any_owned = {
+				add_province_modifier = {
+					name = peasant_revolt
+					duration = 365
+				}
+			}
+		}
+		random_state = {
+			limit = {
+				OR = {
+					liberal = 10
+					socialist = 10
+					communist = 10
+					fascist = 10
+				}
+				any_owned_province = { is_core = CHI }
+			}
+			any_pop = {
+				limit = { is_culture_group = east_asian }
+				militancy = 4
 			}
 			any_owned = {
 				add_province_modifier = {
@@ -662,7 +704,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
 		modifier = {
 			factor = 3
 			NOT = { controlled_by = THIS }
@@ -750,12 +792,12 @@ province_event = {
 				}
 			}
 			reduce_pop = 0.95
-			militancy = 3
-			consciousness = 6
+			militancy = 4
+			consciousness = 8
 		}
 		poor_strata = {
 			limit = { is_culture_group = east_asian }
-			consciousness = 6
+			consciousness = 8
 		}
 		state_scope = {
 			any_pop = {
@@ -769,8 +811,8 @@ province_event = {
 						militancy = 4
 					}
 				}
-				militancy = 6
-				consciousness = 6
+				militancy = 8
+				consciousness = 8
 			}
 			any_owned = {
 				add_province_modifier = {
@@ -788,15 +830,15 @@ province_event = {
 		state_scope = {
 			poor_strata = {
 				limit = { is_culture_group = east_asian }
-				consciousness = 2
+				consciousness = 4
 				ideology = {
 					value = liberal
-					factor = 0.1
+					factor = 0.15
 				}
 			}
 			middle_strata = {
 				limit = { is_culture_group = east_asian }
-				consciousness = 2
+				consciousness = 4
 				ideology = {
 					value = liberal
 					factor = 0.2
@@ -3452,7 +3494,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 300
 		modifier = {
 			factor = 1.5
 			is_greater_power = yes

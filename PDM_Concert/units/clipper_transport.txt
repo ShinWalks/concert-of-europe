@@ -22,8 +22,9 @@ clipper_transport = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		lumber = 1
-		fabric = 0.5
+		clipper_convoy = 0.05
+		lumber = 0.5
+		fabric = 0.25
 	}
 	
 	#Naval Abilties

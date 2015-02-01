@@ -807,7 +807,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 180
+		months = 360
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -865,7 +865,7 @@ province_event = {
 				limit = { NOT = { is_core = TPG } }
 				add_province_modifier = {
 					name = anti_manchu_sentiment
-					duration = 1825
+					duration = 3650
 				}
 			}
 			any_pop = {

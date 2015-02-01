@@ -15,7 +15,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 900
 		
 		modifier = {
 			factor = 0.33
@@ -43,13 +43,13 @@ country_event = {
 			}
 			state_scope = {
 				bureaucrats = {
-					consciousness = 3
+					consciousness = 6
 				}
 				capitalists = {
-					consciousness = 3
+					consciousness = 6
 				}
 				clerks = {
-					consciousness = 3
+					consciousness = 6
 				}
 			}
 		}
@@ -57,7 +57,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB12000"
 		labourers = {
-			consciousness = 2
+			consciousness = 4
 		}
 	}
 }
@@ -84,7 +84,7 @@ country_event = {
 		safety_regulations = trinket_safety	
 	}
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.8
 			plurality = 30
@@ -121,7 +121,7 @@ country_event = {
 			duration = 2500
 		}
 		labourers = {
-			consciousness = 2
+			consciousness = 6
 		}
 	}
 }
@@ -149,7 +149,7 @@ country_event = {
 		
 	}
 	mean_time_to_happen = {
-		months = 400
+		months = 900
 		modifier = {
 			factor = 0.8
 			plurality = 40
@@ -186,7 +186,7 @@ country_event = {
 			duration = 2500
 		}
 		labourers = {
-			consciousness = 2
+			consciousness = 6
 		}
 	}
 }
@@ -209,7 +209,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 1.5
 			child_labor = child_labor_restricted
@@ -232,7 +232,7 @@ country_event = {
 				owner = { child_labor = child_labor_legal }
 			}
 			any_pop = {
-				consciousness = 2
+				consciousness = 6
 				dominant_issue = {
 					factor = 0.3
 					value = child_labor_restricted
@@ -245,7 +245,7 @@ country_event = {
 				owner = { child_labor = child_labor_legal }
 			}
 			any_pop = {
-				consciousness = 2
+				consciousness = 6
 				dominant_issue = {
 					factor = 0.3
 					value = child_labor_illegal
@@ -270,7 +270,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.7
 			economic_policy = interventionism
@@ -292,12 +292,12 @@ country_event = {
 	option = {
 		name = "EVTOPTA12030"
 		ammunition = -250
-		treasury = -10000
+		treasury = -100000
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				NOT = { money = 10000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -309,8 +309,8 @@ country_event = {
 				has_building = ammunition_factory 
 			}
 			poor_strata = {
-				militancy = 2
-				consciousness = 3
+				militancy = 4
+				consciousness = 6
 			}
 		}
 		ai_chance = {
@@ -333,7 +333,7 @@ country_event = {
 	}
 		
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -357,8 +357,8 @@ country_event = {
 				has_building = fertilizer_factory 
 			}
 			any_pop = {
-				consciousness = 2
-				militancy = 1
+				consciousness = 6
+				militancy = 4
 			}
 		}
 		fertilizer = 250
@@ -367,8 +367,8 @@ country_event = {
 	option = {
 		name = "EVTOPTB12040"
 		capitalists = {
-			consciousness = 3
-			militancy = 1
+			consciousness = 6
+			militancy = 4
 		}
 	}
 }
@@ -388,7 +388,7 @@ country_event = {
 	}
 		
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.8
 			average_militancy = 6
@@ -425,12 +425,12 @@ country_event = {
 	option = {
 		name = "EVTOPTA12050"
 		tea = -250
-		treasury = -10000
+		treasury = -100000
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				NOT = { money = 10000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -442,8 +442,8 @@ country_event = {
 				trade_goods = tea
 			}
 			farmers = {
-				militancy = 2
-				consciousness = 3
+				militancy = 4
+				consciousness = 6
 			}
 		}
 		ai_chance = {
@@ -458,8 +458,8 @@ country_event = {
 				trade_goods = tea
 			}
 			bureaucrats = {
-				militancy = 2
-				consciousness = 3
+				militancy = 4
+				consciousness = 6
 			}
 		}
 		ai_chance = {
@@ -488,7 +488,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.8
 			war_exhaustion = 4
@@ -563,7 +563,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.9
 			poor_strata_life_needs = 0.9
@@ -595,7 +595,7 @@ country_event = {
 			}
 			poor_strata = {
 				militancy = -1
-				consciousness = -1
+				consciousness = -4
 			}
 		}
 	}
@@ -616,7 +616,7 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.7
 			cattle = 500
@@ -636,12 +636,12 @@ country_event = {
 	option = {
 		name = "EVTOPTA12080"
 		cattle = -500
-		treasury = -10000
+		treasury = -100000
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				NOT = { money = 10000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -650,7 +650,7 @@ country_event = {
 		name = "EVTOPTB12080"
 		farmers = {
 			militancy = 2
-			consciousness = 2
+			consciousness = 6
 		}
 		ai_chance = {
 			factor = 50
@@ -674,7 +674,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 900
 		modifier = {
 			factor = 0.8
 			NOT = {
@@ -703,8 +703,8 @@ country_event = {
 				NOT = { has_province_modifier = silk_famine }
 			}
 			any_pop = {
-				militancy = 1
-				consciousness = 2
+				militancy = 2
+				consciousness = 6
 			}
 			add_province_modifier = {
 				name = silk_famine
@@ -720,12 +720,12 @@ country_event = {
 		name = "EVTOPTB12090"
 		silk = -200
 		canned_food = -200
-		treasury = -5000
+		treasury = -50000
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				NOT = { money = 5000 }
+				NOT = { money = 50000 }
 			}
 		}
 	}
@@ -768,7 +768,7 @@ province_event = {
 		remove_province_modifier = silk_famine
 		any_pop = {
 			militancy = -1
-			consciousness = -1
+			consciousness = -3
 		}
 		ai_chance = {
 			factor = 50
@@ -784,13 +784,13 @@ province_event = {
 				}
 				remove_province_modifier = silk_famine
 			}
-			treasury = -5000
+			treasury = -50000
 		}
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				owner = { NOT = { money = 5000 } }
+				owner = { NOT = { money = 50000 } }
 			}
 		}
 	}
@@ -812,7 +812,7 @@ country_event = {
 	}
 		
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		
 		modifier = {
 			factor = 0.9
@@ -836,8 +836,8 @@ country_event = {
 			limit = { trade_goods = cotton }
 			state_scope = {
 				farmers = {
-					consciousness = 2
-					militancy = -1
+					consciousness = -4
+					militancy = -2
 				}
 			}
 		}
@@ -878,7 +878,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.9
 			NOT = {
@@ -918,7 +918,7 @@ country_event = {
 			}
 			state_scope = {
 				labourers = {
-					consciousness = -2
+					consciousness = -6
 					militancy = -2
 				}
 			}
@@ -942,7 +942,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.9
 			economic_policy = laissez_faire
@@ -1002,7 +1002,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.9
 			poor_strata_life_needs = 0.9
@@ -1024,8 +1024,8 @@ country_event = {
 				has_building = clipper_shipyard
 			}
 			any_pop = {
-				militancy = -1
-				consciousness = -1
+				militancy = -2
+				consciousness = -6
 			}
 		}
 		clipper_convoy = 20
@@ -1036,7 +1036,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTB12140"
-		treasury = -5000
+		treasury = -100000
 		random_owned = {
 			limit = {
 				port = yes
@@ -1051,7 +1051,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				NOT = { money = 5000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -1071,7 +1071,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 1.3
 			safety_regulations = acceptable_safety
@@ -1089,12 +1089,12 @@ country_event = {
 	option = {
 		name = "EVTOPTA12150"
 		steamer_convoy = -20
-		treasury = -10000
+		treasury = -100000
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				NOT = { money = 10000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -1105,8 +1105,8 @@ country_event = {
 				has_building = steamer_shipyard
 			}
 			any_pop = {
-				militancy = 1
-				consciousness = 2
+				militancy = 2
+				consciousness = 6
 			}
 		}
 		ai_chance = {
@@ -1129,7 +1129,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 1.8
 			OR = {
@@ -1157,8 +1157,8 @@ country_event = {
 				has_building = cement_factory
 			}
 			labourers = {
-				militancy = -1
-				consciousness = -1
+				militancy = -2
+				consciousness = -6
 			}
 		}
 	}
@@ -1171,7 +1171,7 @@ country_event = {
 				has_building = cement_factory
 			}
 			capitalists = {
-				money = 500
+				money = 200
 			}
 		}
 	}
@@ -1191,7 +1191,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.7
 			safety_regulations = no_safety
@@ -1217,11 +1217,11 @@ country_event = {
 			limit = { has_building = dye_factory }
 			poor_strata = {
 				militancy = -1
-				consciousness = 1
+				consciousness = -4
 			}
 			rich_strata = {
-				militancy = 1
-				consciousness = 2
+				militancy = 2
+				consciousness = 6
 			}
 		}
 	}
@@ -1232,12 +1232,12 @@ country_event = {
 		random_state = {
 			limit = { has_building = dye_factory }
 			poor_strata = {
-				militancy = 1
-				consciousness = 2
+				militancy = 2
+				consciousness = 6
 			}
 			rich_strata = {
 				militancy = -1
-				consciousness = 1
+				consciousness = -4
 			}
 		}
 	}
@@ -1256,7 +1256,7 @@ country_event = {
 		any_state = { has_building = fuel_refinery }
 	}
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 1.5
 			safety_regulations = good_safety
@@ -1280,7 +1280,7 @@ country_event = {
 			}
 			any_pop = {
 				militancy = 2
-				consciousness = 3
+				consciousness = 6
 			}
 		}
 	}
@@ -1288,6 +1288,14 @@ country_event = {
 	option = {
 		name = "EVTOPTB12180"
 		fuel = -500
+		treasury = -100000
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.1
+				NOT = { money = 100000 }
+			}
+		}
 	}
 }
 
@@ -1309,7 +1317,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 1.5
 			average_militancy = 2
@@ -1339,7 +1347,7 @@ country_event = {
 			}
 			any_pop = {
 				militancy = -2
-				consciousness = 1
+				consciousness = -6
 			}
 		}
 	}
@@ -1361,7 +1369,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.5
 			safety_regulations = no_safety
@@ -1383,7 +1391,7 @@ country_event = {
 			limit = { trade_goods = iron }
 			labourers = {
 				militancy = 2
-				consciousness = 2
+				consciousness = 6
 			}
 		}
 	}
@@ -1392,8 +1400,8 @@ country_event = {
 		name = "EVTOPTB12200"
 		iron = -200
 		capitalists = {
-			militancy = 1
-			consciousness = 2
+			militancy = 2
+			consciousness = 6
 		}
 	}
 }
@@ -1414,7 +1422,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.8
 			NOT = {
@@ -1435,6 +1443,7 @@ country_event = {
 		name = "EVTOPTA12210"
 		fish = 250
 	}
+	
 	option = {
 		name = "EVTOPTB12210"
 		random_owned = {
@@ -1465,7 +1474,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 	}
 	
 	option = {
@@ -1479,8 +1488,8 @@ country_event = {
 			limit = { trade_goods = tea }
 			state_scope = {
 				poor_strata = {
-					militancy = -1
-					consciousness = -1
+					militancy = -2
+					consciousness = -6
 				}
 			}
 		}
@@ -1488,8 +1497,13 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTC12220"
-		capitalists = {
-			money = 500
+		random_owned = {
+			limit = { trade_goods = tea }
+			state_scope = {
+				capitalists = {
+					money = 200
+				}
+			}
 		}
 	}
 }
@@ -1509,7 +1523,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 200
 		modifier = {
 			factor = 0.8
 			radio = 50
@@ -1536,7 +1550,7 @@ country_event = {
 			}
 			any_pop = {
 				militancy = 1
-				consciousness = 2
+				consciousness = 6
 			}
 		}
 		ai_chance = {
@@ -1547,21 +1561,21 @@ country_event = {
 	option = {
 		name = "EVTOPTB12230"
 		radio = -50
-		treasury = -10000
+		treasury = -100000
 		random_state = {
 			limit = {
 				has_building = radio_factory
 			}
 			any_pop = {
 				militancy = -2
-				consciousness = -1
+				consciousness = -6
 			}
 		}
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				NOT = { money = 10000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -1585,7 +1599,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.9
 			average_militancy = 2
@@ -1619,8 +1633,8 @@ country_event = {
 				}
 			}
 			middle_strata = {
-			militancy = 1
-			consciousness = 2
+				militancy = 1
+				consciousness = 6
 			}
 		}
 	}
@@ -1636,8 +1650,8 @@ country_event = {
 				}
 			}
 			rich_strata = {
-				militancy = 1
-				consciousness = 4
+				militancy = 2
+				consciousness = 6
 			}
 		}
 	}
@@ -1660,7 +1674,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 900
 		modifier = {
 			factor = 0.9
 			middle_strata_everyday_needs = 0.9
@@ -1683,14 +1697,14 @@ country_event = {
 		name = "EVTOPTA12250"
 		random_state = {
 			limit = {
-				or = {
+				OR = {
 					has_building = explosives_factory
 					has_building = ammunition_factory
 				}
 			}
 			poor_strata = {
 				militancy = 2
-				consciousness = 3
+				consciousness = 6
 			}
 		}
 	}
@@ -1699,7 +1713,7 @@ country_event = {
 		name = "EVTOPTB12250"
 		random_state = {
 			limit = {
-				or = {
+				OR = {
 					has_building = explosives_factory
 					has_building = ammunition_factory
 				}
@@ -1715,14 +1729,14 @@ country_event = {
 		name = "EVTOPTC12250"
 		random_state = {
 			limit = {
-				or = {
+				OR = {
 					has_building = explosives_factory
 					has_building = ammunition_factory
 				}
 			}
 			rich_strata = {
 				militancy = 2
-				consciousness = 3
+				consciousness = 6
 			}
 		}
 	}
@@ -1745,7 +1759,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			poor_strata_everyday_needs = 0.9
 			factor = 0.8
@@ -1764,42 +1778,41 @@ country_event = {
 	option = {
 		name = "EVTOPTA12260"
 		luxury_furniture = -250
-		treasury = -10000
+		treasury = -100000
 		prestige = 2
 		random_state = {
 			limit = {
-				or = {
+				OR = {
 					has_building = luxury_furniture_factory
 					has_building = advanced_luxury_furniture_factory
 				}
 			}
 			any_pop = {
 				militancy = -1
-				consciousness = -2
+				consciousness = -6
 			}
 		}
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				NOT = { money = 10000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
 	
 	option = {
 		name = "EVTOPTB12260"
-
 		random_state = {
 			limit = {
-				or = {
+				OR = {
 					has_building = luxury_furniture_factory
 					has_building = advanced_luxury_furniture_factory
 				}
 			}
 			middle_strata = {
 				militancy = 1
-				consciousness = 2
+				consciousness = 6
 			}
 			poor_strata = {
 				militancy = -1
@@ -1829,19 +1842,19 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 	}
 	
 	option = {
 		name = "EVTOPTA12270"
 		luxury_clothes = -250
 		regular_clothes = 250
-		treasury = -10000
+		treasury = -100000
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				NOT = { money = 10000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -1882,7 +1895,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.9
 			average_militancy = 2
@@ -1902,12 +1915,12 @@ country_event = {
 	option = {
 		name = "EVTOPTA12280"
 		regular_clothes = -250
-		treasury = -10000
+		treasury = -100000
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 0.1
-				NOT = { money = 10000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -1918,7 +1931,7 @@ country_event = {
 			limit = { has_building = regular_clothes_factory }
 			poor_strata = {
 				militancy = 1
-				consciousness = 2
+				consciousness = 6
 			}
 		}
 		ai_chance = {

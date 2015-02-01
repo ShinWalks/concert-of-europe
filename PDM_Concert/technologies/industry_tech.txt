@@ -4,6 +4,13 @@ water_wheel_power = {
 	year = 1821
 	cost = 4600
 	rgo_throughput = 0.05
+	factory_throughput = 0.025
+	factory_goods_throughput = {
+		shares = -0.025
+	}
+	factory_goods_throughput = {
+		financial_services = -0.025
+	}
 	
 	ai_chance = {
 		factor = 250
@@ -89,7 +96,14 @@ practical_steam_engine = {
 	area = tech_power
 	year = 1821
 	cost = 7750
-	rgo_throughput = 0.1
+	rgo_throughput = 0.05
+	factory_throughput = 0.025
+	factory_goods_throughput = {
+		shares = -0.025
+	}
+	factory_goods_throughput = {
+		financial_services = -0.025
+	}
 	
 	ai_chance = {
 		factor = 100
@@ -177,7 +191,14 @@ high_n_low_pressure_steam_engines = {
 	area = tech_power
 	year = 1850
 	cost = 10200
-	rgo_throughput = 0.1
+	rgo_throughput = 0.05
+	factory_throughput = 0.025
+	factory_goods_throughput = {
+		shares = -0.025
+	}
+	factory_goods_throughput = {
+		financial_services = -0.025
+	}
 	
 	ai_chance = {
 		factor = 50
@@ -267,6 +288,13 @@ steam_turbine = {
 	year = 1860
 	cost = 12750
 	rgo_throughput = 0.1
+	factory_throughput = 0.05
+	factory_goods_throughput = {
+		shares = -0.05
+	}
+	factory_goods_throughput = {
+		financial_services = -0.05
+	}
 	
 	ai_chance = {
 		factor = 50
@@ -348,6 +376,13 @@ combustion_engine = {
 	year = 1880
 	cost = 20400
 	rgo_throughput = 0.1
+	factory_throughput = 0.05
+	factory_goods_throughput = {
+		shares = -0.05
+	}
+	factory_goods_throughput = {
+		financial_services = -0.05
+	}
 	pop_growth = -0.0001
 	
 	ai_chance = {
@@ -433,6 +468,13 @@ electrical_power_generation = {
 	year = 1900
 	cost = 30000
 	rgo_throughput = 0.1
+	factory_throughput = 0.05
+	factory_goods_throughput = {
+		shares = -0.05
+	}
+	factory_goods_throughput = {
+		financial_services = -0.05
+	}
 	
 	ai_chance = {
 		factor = 50
@@ -508,6 +550,14 @@ publishing_industry = {
 	area = mechanization
 	year = 1821
 	cost = 4600
+	rgo_throughput = 0.025
+	factory_throughput = 0.05
+	factory_goods_throughput = {
+		shares = -0.05
+	}
+	factory_goods_throughput = {
+		financial_services = -0.05
+	}
 	
 	ai_chance = {
 		factor = 250
@@ -588,7 +638,7 @@ mechanical_production = {
 	area = mechanization
 	year = 1830
 	cost = 7750
-	factory_cost = 0.05
+	rgo_throughput = 0.025
 	factory_throughput = 0.05
 	factory_goods_throughput = {
 		shares = -0.05
@@ -679,7 +729,7 @@ interchangeable_parts = {
 	area = mechanization
 	year = 1850
 	cost = 10200
-	factory_cost = 0.05
+	rgo_throughput = 0.025
 	factory_throughput = 0.05 
 	factory_goods_throughput = {
 		shares = -0.05
@@ -774,7 +824,7 @@ semi_automatization = {
 	area = mechanization
 	year = 1870
 	cost = 12750
-	factory_cost = 0.1
+	rgo_throughput = 0.05
 	factory_throughput = 0.1 
 	factory_goods_throughput = {
 		shares = -0.05
@@ -865,7 +915,7 @@ assembly_line = {
 	area = mechanization
 	year = 1880
 	cost = 20400
-	factory_cost = 0.1 
+	rgo_throughput = 0.05
 	factory_throughput = 0.1 
 	factory_goods_throughput = {
 		shares = -0.1
@@ -963,7 +1013,7 @@ shift_work = {
 	area = mechanization
 	year = 1900
 	cost = 30000
-	factory_cost = 0.1
+	rgo_throughput = 0.05
 	factory_throughput = 0.1 
 	factory_goods_throughput = {
 		shares = -0.1
@@ -1301,7 +1351,7 @@ cheap_iron = {
 		bronze = 0.05 
 	}
 	rgo_goods_throughput = {
-		copper = 0.5
+		copper = 1
 	}
 	rgo_goods_throughput = {
 		lead = 0.25

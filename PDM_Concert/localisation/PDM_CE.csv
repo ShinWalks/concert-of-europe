@@ -269,6 +269,10 @@ incorporate_hedjaz_title;Incorporate Hedjaz;;;;;;;;;;;;;x
 incorporate_hedjaz_desc;Egypt has proven itself a worthy Protector of the Two Holy Cities. The Hedjaz can now be considered a proper part of Egypt.;;;;;;;;;;;;;x
 treaty_of_kutahya_title;The Treaty of Kutahya;;;;;;;;;;;;;x
 treaty_of_kutahya_desc;Having thoroughly defeated the Ottoman Empire in war, we can now force the Sultan into a humiliating peace. The Sultan will acknowledged Egypt's independence and hereditary rule, not only in Egypt but in the Levant. Other Ottoman territories in the Hedjaz and Cyrenaica will also be transferred to Egyptian control.;;;;;;;;;;;;;x
+claim_the_sahara_MOR_title;Claim the Sahara;;;;;;;;;;;;;x
+claim_the_sahara_MOR_desc;Now that we are recognized as a civilized state, we can credibly assert our sovereignty over the deserts to the south.;;;;;;;;;;;;;x
+claim_the_sahara_ALD_title;Claim the Sahara;;;;;;;;;;;;;x
+claim_the_sahara_ALD_desc;Now that we are recognized as a civilized state, we can credibly assert our sovereignty over the deserts to the south.;;;;;;;;;;;;;x
 persian_asia_title;Persian Asia;;;;;;;;;;;;;x
 persian_asia_desc;Persia's power has grown, and now we can claim all of the regions of central Asia with Persian populations.;;;;;;;;;;;;;x
 persian_caucasus_title;Persian Caucasus;;;;;;;;;;;;;x
@@ -823,14 +827,14 @@ EVTNAME35314;Piedmontese Intervention;;;;;;;;;;;;x;
 EVTDESC35314;$FROMCOUNTRY$ has taken up the cause of the Italian rebels, occupying Milan and advancing toward Venetia. They mean to unite northern Italy against us.;;;;;;;;;;;;x;
 EVTNAME35705;Election of Pius IX;;;;;;;;;;;;x;
 EVTDESC35705;The papal conclave of 1846 took an unexpected turn, as liberals and moderates among the cardinals combined to elect Bishop Mastai-Ferretti of Spoleto, an Italian patriot and reformer. Conservative Catholic governments were shocked, including that of Austria, which had attempted to block his nomination. Taking the name Pius IX, he quickly instituted political and economic reforms in the Papal States and released political prisoners. For a time, the new pope was the most popular man on the Italian peninsula, where the exclamation 'Long life to Pius IX!' was often heard.;;;;;;;;;;;;x;
-EVTNAME36223;Sell Accra?;;;;;;;;;;;;;x
-EVTDESC36223;Denmark controls a trading fort on the African Gold Coast in Accra. Since the slave trade ended the outpost has ceased to be profitable, and it might be prudent to sell the fort to a more active colonial power and liquidate our interest in he region. Shall we search for a buyer?;;;;;;;;;;;;;x
-EVTNAME36224;Purchase Accra?;;;;;;;;;;;;;x
-EVTDESC36224;An envoy from $FROMCOUNTRY$ has approached us about purchasing their fort on the Gold Coast in Accra. The outpost holds a commanding position on the Gold Coast and would make an excellent colonial capital, should we be interested in expanding our influence in the region. Shall we take them up on the offer?;;;;;;;;;;;;;x
-EVTNAME36225;Sell the Nicobars?;;;;;;;;;;;;;x
-EVTDESC36225;Denmark still holds a colonial outpost in the Indian Ocean: the Nicobar Islands. Voices in parliament have begun calling on the government to seek out a buyer for the archipelago, to eliminate the expense of administration and communication with the islands and show the government's focus on European and domestic affairs.\nIt would be something of a symbolic admission that Denmark is no longer a truly global power, but it would also strengthen the budget and appease the opposition. Shall we search for a buyer?;;;;;;;;;;;;;x
-EVTNAME36226;Purchase the Nicobars?;;;;;;;;;;;;;x
-EVTDESC36226;An envoy from $FROMCOUNTRY$ has approached us about purchasing their colony in the Nicobar Islands. The islands are relatively insignificant, but an extra territory never hurts. Shall we take them up on the offer?;;;;;;;;;;;;;x
+EVTNAME36224;Sell Accra?;;;;;;;;;;;;;x
+EVTDESC36224;Denmark controls a trading fort on the African Gold Coast in Accra. Since the slave trade ended the outpost has ceased to be profitable, and it might be prudent to sell the fort to a more active colonial power and liquidate our interest in he region. Shall we search for a buyer?;;;;;;;;;;;;;x
+EVTNAME36225;Purchase Accra?;;;;;;;;;;;;;x
+EVTDESC36225;An envoy from $FROMCOUNTRY$ has approached us about purchasing their fort on the Gold Coast in Accra. The outpost holds a commanding position on the Gold Coast and would make an excellent colonial capital, should we be interested in expanding our influence in the region. Shall we take them up on the offer?;;;;;;;;;;;;;x
+EVTNAME36226;Sell the Nicobars?;;;;;;;;;;;;;x
+EVTDESC36226;Denmark still holds a colonial outpost in the Indian Ocean: the Nicobar Islands. Voices in parliament have begun calling on the government to seek out a buyer for the archipelago, to eliminate the expense of administration and communication with the islands and show the government's focus on European and domestic affairs.\nIt would be something of a symbolic admission that Denmark is no longer a truly global power, but it would also strengthen the budget and appease the opposition. Shall we search for a buyer?;;;;;;;;;;;;;x
+EVTNAME36227;Purchase the Nicobars?;;;;;;;;;;;;;x
+EVTDESC36227;An envoy from $FROMCOUNTRY$ has approached us about purchasing their colony in the Nicobar Islands. The islands are relatively insignificant, but an extra territory never hurts. Shall we take them up on the offer?;;;;;;;;;;;;;x
 EVTNAME36707;End of the Personal Union;;;;;;;;;;;;;x
 EVTDESC36707;Our king has died without a male heir. Our realm's inheritance laws permit his daughter, Wilhelmina, to become monarch of the Netherlands, but Luxembourg's laws will not allow her to rule. This means an end to the personal union between our two nations: Luxembourg will instead be ruled by the head of another branch of the House of Nassau.;;;;;;;;;;;;;x
 EVTNAME36720;Belgian Secession;;;;;;;;;;;;;x

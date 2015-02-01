@@ -50,17 +50,8 @@ country_event = {
 			any_owned = {
 				limit = {
 					OR = {
-						province_id = 146
-						province_id = 147
-						province_id = 148
-						province_id = 149
-						province_id = 150
-						province_id = 217
-						province_id = 218
-						province_id = 219
-						province_id = 220
-						province_id = 221
-						province_id = 222
+						region = USA_218 #West Virginia
+						region = USA_219 #Maryland
 					}
 				}
 				secede_province = USA

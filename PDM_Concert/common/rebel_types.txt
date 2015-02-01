@@ -848,12 +848,12 @@ communist_rebels = {
 			pop_majority_ideology = communist
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
 			pop_majority_ideology = socialist
 			NOT = { life_needs = 0.9 }
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
 			pop_majority_ideology = socialist
 			NOT = { life_needs = 0.7 }
 		}
@@ -912,7 +912,7 @@ communist_rebels = {
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 2
 			country = {
 				any_neighbor_country = {
 					government = proletarian_dictatorship
@@ -4480,12 +4480,12 @@ socialist_rebels = {
 			pop_majority_ideology = socialist
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			pop_majority_ideology = socialist
 			NOT = { life_needs = 0.9 }
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			pop_majority_ideology = socialist
 			NOT = { life_needs = 0.7 }
 		}

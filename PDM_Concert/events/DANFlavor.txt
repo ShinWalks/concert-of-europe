@@ -1252,9 +1252,9 @@ country_event = {
 ###events 36221 and 36222 are in USAFlavor.txt (US purchase VI events)
 
 country_event = {
-	id = 36223
-	title = "EVTNAME36223" #Sell Accra?
-	desc = "EVTDESC36223"
+	id = 36224
+	title = "EVTNAME36224" #Sell Accra?
+	desc = "EVTDESC36224"
 	picture = "deliberation"
 	
 	trigger = {
@@ -1279,7 +1279,7 @@ country_event = {
 				owns = 1908 #Cape Coast
 				is_greater_power = yes
 			}
-			country_event = 36224
+			country_event = 36225
 		}
 		random_country = {
 			limit = {
@@ -1287,7 +1287,7 @@ country_event = {
 				is_greater_power = yes
 				capital_scope = { continent = europe }
 			}
-			country_event = 36224
+			country_event = 36225
 		}
 		ai_chance = {
 			factor = 100
@@ -1312,9 +1312,9 @@ country_event = {
 }
 
 country_event = {
-	id = 36224
-	title = "EVTNAME36224" #Purchase Accra?
-	desc = "EVTDESC36224"
+	id = 36225
+	title = "EVTNAME36225" #Purchase Accra?
+	desc = "EVTDESC36225"
 	picture = "deliberation"
 	
 	is_triggered_only = yes
@@ -1342,9 +1342,9 @@ country_event = {
 }
 
 country_event = {
-	id = 36225
-	title = "EVTNAME36225" #Sell the Nicobars?
-	desc = "EVTDESC36225"
+	id = 36226
+	title = "EVTNAME36226" #Sell the Nicobars?
+	desc = "EVTDESC36226"
 	picture = "deliberation"
 	
 	trigger = {
@@ -1378,7 +1378,7 @@ country_event = {
 				is_greater_power = yes
 				capital_scope = { continent = europe }
 			}
-			country_event = 36226
+			country_event = 36227
 		}
 		random_country = {
 			limit = {
@@ -1386,7 +1386,7 @@ country_event = {
 				is_greater_power = yes
 				capital_scope = { continent = europe }
 			}
-			country_event = 36226
+			country_event = 36227
 		}
 		ai_chance = {
 			factor = 100
@@ -1411,9 +1411,9 @@ country_event = {
 }
 
 country_event = {
-	id = 36226
-	title = "EVTNAME36226" #Purchase the Nicobars?
-	desc = "EVTDESC36226"
+	id = 36227
+	title = "EVTNAME36227" #Purchase the Nicobars?
+	desc = "EVTDESC36227"
 	picture = "deliberation"
 	
 	is_triggered_only = yes

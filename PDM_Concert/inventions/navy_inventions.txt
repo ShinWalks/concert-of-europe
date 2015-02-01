@@ -536,6 +536,7 @@ destroyers = {
 		}
 	}
 	effect = {
+		shared_prestige = 10
 		monitor = {
 			gun_power = 5
 			hull = 5
@@ -559,6 +560,7 @@ submarines = {
 		}
 	}
 	effect = {
+		shared_prestige = 10
 		activate_unit = submarine
 	}
 }
@@ -578,6 +580,7 @@ pre_dreadnought = {
 		}
 	}
 	effect = {
+		shared_prestige = 10
 		ironclad = {
 			hull = 15
 			gun_power = 15
@@ -603,8 +606,8 @@ dreadnoughts = {
 		}
 	}
 	effect = {
-		activate_unit = dreadnought
 		shared_prestige = 30
+		activate_unit = dreadnought
 	}
 }
 

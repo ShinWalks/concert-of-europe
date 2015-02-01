@@ -627,7 +627,7 @@ neokantian_idealism = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -650,7 +650,7 @@ hegelian_idealism = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -673,7 +673,7 @@ proto_existentialism = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -693,7 +693,7 @@ pragmatism = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -712,7 +712,7 @@ i_empiricism = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -736,7 +736,7 @@ i_analytic_philosophy = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -755,7 +755,7 @@ modern_logics = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -774,7 +774,7 @@ logical_positivism = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -793,7 +793,7 @@ philosophy_of_language = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -813,7 +813,7 @@ phenomenology = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -832,7 +832,7 @@ hermeneutics = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 
@@ -928,7 +928,7 @@ quantum_theory = {
 		}
 	}
 	effect = {
-		increase_research = 0.2
+		increase_research = 0.15
 	}
 }
 

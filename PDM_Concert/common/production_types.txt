@@ -684,10 +684,10 @@ steel_machine_parts_factory = {
 synthetic_oil_factory = {       
 	template = cheap_factory_template	#24
 	input_goods = { 	
-		coal = 40			#161
+		coal = 8			#161
 	}
 	output_goods = oil 
-	value = 56				#200
+	value = 11				#200
 	bonus = {
 		trigger = {
 			trade_goods_in_state = coal
@@ -898,13 +898,13 @@ fish_cannery = {
 oil_plant = {
 	template = factory_template	#50
 	input_goods = {        
-		fuel = 44
+		fuel = 35
 	}
 	output_goods = electric_power 
-	value = 112
+	value = 90
 	bonus = {
 		trigger = { 
-			trade_goods_in_state = fuel 
+			has_building = fuel_refinery
 		}
 		value = 0.2
 	}
@@ -912,10 +912,10 @@ oil_plant = {
 coal_plant = {
 	template = factory_template	#50
 	input_goods = {        
-		coal = 76
+		coal = 60
 	}
 	output_goods = electric_power 
-	value = 112
+	value = 90
 	bonus = {
 		trigger = { 
 			trade_goods_in_state = coal 
@@ -1324,10 +1324,10 @@ advanced_machine_parts_factory = {
 synthetic_rubber_factory = {       
 	template = factory_template	#50
 	input_goods = {    
-		oil = 88		#
+		oil = 20		#
 	}
 	output_goods = rubber 
-	value = 112
+	value = 25
 	bonus = {
 		trigger = {
 			OR = {
@@ -1459,10 +1459,10 @@ sugar_beet_refinery = {
 newspaper = { 
 	template = factory_template	#50
 	input_goods = {
-		paper = 62
+		paper = 28
  	}
 	output_goods = print
-	value = 150
+	value = 68
 	bonus = {
 		trigger = { 
 			has_building = paper_mill 
@@ -1474,10 +1474,10 @@ newspaper = {
 synthetic_silk_factory = {       
 	template = modern_factory_template #98
 	input_goods = {     
-		oil = 125
+		oil = 50
 	}
 	output_goods = silk
-	value = 67.5
+	value = 27
 	bonus = {
 		trigger = {
 			OR = {

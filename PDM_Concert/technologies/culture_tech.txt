@@ -346,7 +346,7 @@ late_enlightenment_philosophy = {
 	year = 1821
 	cost = 4600
 	permanent_prestige = 2
-	increase_research = 0.5
+	increase_research = 0.4
 	
 	ai_chance = {
 		factor = 500
@@ -473,7 +473,7 @@ empiricism = {
 
 analytic_philosophy = {
 	area = philosophy
-	year = 1880
+	year = 1870
 	cost = 12750
 	permanent_prestige = 5
 	
@@ -523,6 +523,7 @@ phenomenology_n_hermeneutic = {
 	year = 1890
 	cost = 20400
 	permanent_prestige = 10
+	increase_research = 0.15
 	
 	ai_chance = {
 		factor = 100
@@ -566,7 +567,7 @@ anti__rationalism = {
 	year = 1900
 	cost = 30000
 	permanent_prestige = 10
-	increase_research = 0.5
+	increase_research = 0.3
 	
 	ai_chance = {
 		factor = 50
@@ -1569,7 +1570,7 @@ introspectionism = {
 	year = 1821
 	cost = 4600
 	permanent_prestige = 2
-	education_efficiency = 0.25
+	education_efficiency = 0.15
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
 	
@@ -1647,7 +1648,7 @@ associationism = {
 	year = 1840
 	cost = 7750
 	permanent_prestige = 2
-	education_efficiency = 0.25
+	education_efficiency = 0.15
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
 	
@@ -1729,7 +1730,7 @@ phenomenalism = {
 	year = 1850
 	cost = 10200
 	permanent_prestige = 5
-	education_efficiency = 0.25
+	education_efficiency = 0.15
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
 	
@@ -1811,7 +1812,7 @@ experimental_psychology = {
 	year = 1860
 	cost = 12750
 	permanent_prestige = 5
-	education_efficiency = 0.25
+	education_efficiency = 0.15
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
 	
@@ -1893,7 +1894,7 @@ psychoanalysis = {
 	year = 1870
 	cost = 20400
 	permanent_prestige = 10
-	education_efficiency = 0.25
+	education_efficiency = 0.15
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
 	
@@ -1975,7 +1976,7 @@ behaviorism = {
 	year = 1900
 	cost = 30000
 	permanent_prestige = 10
-	education_efficiency = 0.25
+	education_efficiency = 0.15
 	reinforce_rate = 0.05
 	war_exhaustion = -0.05
 	

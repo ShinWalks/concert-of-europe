@@ -647,6 +647,61 @@ political_decisions = {
 		}
 	}
 	
+	claim_the_sahara_MOR = {
+		potential = {
+			tag = MOR
+			civilized = yes
+			1696 = { empty = yes } #Tarfaya
+			1714 = { empty = yes } #Bechar
+		}
+	
+		allow = {
+			owns = 1683 #Taza
+			owns = 1694 #Agadir
+		}
+	
+		effect = {
+			prestige = 5
+			badboy = 3
+			1696 = { secede_province = THIS }
+			1714 = { secede_province = THIS }
+			1716 = { secede_province = THIS }
+			1717 = { secede_province = THIS }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	claim_the_sahara_ALD = {
+		potential = {
+			tag = ALD
+			civilized = yes
+			1720 = { empty = yes } #Timimoun
+			1718 = { empty = yes } #In Salah
+		}
+	
+		allow = {
+			owns = 1713 #Laghwat
+		}
+	
+		effect = {
+			prestige = 8
+			badboy = 5
+			1720 = { secede_province = THIS }
+			1718 = { secede_province = THIS }
+			1719 = { secede_province = THIS }
+			1721 = { secede_province = THIS }
+			1722 = { secede_province = THIS }
+			1724 = { secede_province = THIS }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	become_hausaland = {
 		potential = {
 			tag = SOK

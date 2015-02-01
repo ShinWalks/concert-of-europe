@@ -1148,11 +1148,11 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 2
-				treasury = 250000
+				money = 250000
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { treasury = 100000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}
@@ -1165,15 +1165,15 @@ country_event = {
 			factor = 20
 			modifier = {
 				factor = 4
-				treasury = 500000
+				money = 500000
 			}
 			modifier = {
 				factor = 2
-				treasury = 250000
+				money = 250000
 			}
 			modifier = {
 				factor = 0.25
-				NOT = { treasury = 100000 }
+				NOT = { money = 100000 }
 			}
 		}
 	}

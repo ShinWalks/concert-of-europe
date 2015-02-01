@@ -408,7 +408,7 @@ mechanized_wells = {
 	}
 	effect = {
 		rgo_goods_throughput = {
-			oil = 0.5
+			oil = 1
 		}
 	}
 }
@@ -422,10 +422,30 @@ industrial_farming = {
 	effect = {
 		rgo_goods_throughput = {
 			grain = 0.2
-			
 		}
 		rgo_goods_throughput = {
 			fruit = 0.2
+		}
+		rgo_goods_throughput = {
+			tea = 0.2
+		}
+		rgo_goods_throughput = {
+			opium = 0.2
+		}
+		rgo_goods_throughput = {
+			sugar = 0.2
+		}
+		rgo_goods_throughput = {
+			tobacco = 0.2
+		}
+		rgo_goods_throughput = {
+			spices = 0.2
+		}
+		rgo_goods_throughput = {
+			cotton = 0.2
+		}
+		rgo_goods_throughput = {
+			wool = 0.2
 		}
 	}
 }
@@ -2482,6 +2502,7 @@ first_railroads = {
 		}
 	}
 	effect = {
+		shared_prestige = 5
 		activate_building = railroad
 		mobilisation_size = 0.002
 	}
@@ -2502,6 +2523,7 @@ industrial_railroads = {
 		}
 	}
 	effect = {
+		shared_prestige = 10
 		max_railroad = 1
 		mobilisation_size = 0.002
 	}
@@ -2522,6 +2544,7 @@ the_iron_horse = {
 		}
 	}
 	effect = {
+		shared_prestige = 15
 		max_railroad = 1
 		mobilisation_size = 0.002
 	}
@@ -2542,6 +2565,7 @@ commercial_railroads = {
 		}
 	}
 	effect = {
+		shared_prestige = 20
 		max_railroad = 1
 		mobilisation_size = 0.002
 	}
@@ -2562,6 +2586,7 @@ arteries_of_commerce = {
 		}
 	}
 	effect = {
+		shared_prestige = 25
 		max_railroad = 1
 		mobilisation_size = 0.002
 	}
@@ -2578,8 +2603,8 @@ autobahn = {
 		}
 	}
 	effect = {
-		max_railroad = 1
 		shared_prestige = 30
+		max_railroad = 1
 		mobilisation_size = 0.002
 	}
 }

@@ -13,7 +13,7 @@ germanic = {
 		Pascal Paul Peter Reinhard Rudolf Ruprecht Stefan Theodor Wilhelm Wolfgang }
 		
 		last_names = { Behncke Brommy Cordemann Dreyer Droste Groener "Herwarth von Bittenfeld" Heppendorf Hoffmann Krohn Ludendorff Schree
-		"Vogel von Falkenstein" "von Alten" "von Anhalt" "von Arentschildt" "von Bülow" "von Bismarck-Bohlen" "von Blumenthal" "von Blomberg" 
+		"Vogel von Falkenstein" "von Alten" "von Anhalt" "von Arentschildt" "von Bismarck-Bohlen" "von Blumenthal" "von Blomberg" 
 		"von Boyen" "von Braunschweig" "von Bülow" "von dem Knesebeck" "von Gebser" "von Fritsch" "von Halkett" "von Hannover" 
 		"von Hessen-Darmstadt" "von Hessen-Kassel" "von Hindenburg" "von Hohenzollern" "von Holstein-Gottorp" "von Knorr" "von Kleefeld"
 		"von Manteuffel" "von Mecklenburg-Schwerin" "von Mecklenburg-Strelitz" "von Moltke" "von Oldenburg" "von Rauch" "von Ravensberg" 
@@ -93,7 +93,7 @@ beneluxian = {
 		last_names = { 
 			"van der Aa" "van Assendelft" 
 			Boetge Boumeester "van Bronkhorst" Batenburg Bentinck Boreel Brandt "van Brederode" Brouwer Buyskes "van Braam Houckgeest"
-			"van der Capellen" Chassé Cochius Coops "de Casembroot" Cleerens Cochius Coehoorn Coen "de Constant Rebecque" Crijnssen 	
+			"van der Capellen" Chassé Cochius Coops "de Casembroot" Cleerens Coehoorn Coen "de Constant Rebecque" Crijnssen 	
 
 			"van Culemborg"
 			Duycker	"de Eerens" "de Kock" Deijkerhoff "den Beer Poortugael" Daendels "van Diemen" "van der Does" "van Duivenvoorde"
@@ -114,7 +114,7 @@ beneluxian = {
 
 			Steltman Stuyvesant
 			Tasman "van Troyen" Trip
-			"van Dambenoy" "van den Bosch" "van der Heijden" "van Ham" "van Hoensbroeck" "van Oranje-Nassau" "van Swieten" 
+			"van Dambenoy" "van den Bosch" "van der Heijden" "van Hoensbroeck" "van Oranje-Nassau" "van Swieten" 
 			"van Vredenburch" Verspijck Vetter Weitzel "Van Utenhove"
 			"van Walbeeck" "van Wassenaer" "van der Werff" "van Wesembeke" "van Wingle" "van der Wijck" "van Wijngaarden" "de Winter"
 			Wolterbeek
@@ -1206,7 +1206,7 @@ south_asian = {
 	}
 	oriya = {
 		color = {190 63 88}
-		first_names = { Dibvyasimhadeva Harekrushnadeva Gopinathdeva Ramachandradeva Padmanavadeva Birakishoredeva Mukundadeva Ramachandradeva Dibvyasimhadeva
+		first_names = { Dibvyasimhadeva Harekrushnadeva Gopinathdeva Ramachandradeva Padmanavadeva Birakishoredeva Mukundadeva
 			
 		}
 		
@@ -1564,7 +1564,7 @@ far_east_asian = {
 		Heihachiro Hiroshi Hikonojo Hyoe Hayao
 		Iwao
 		Jiro Jinzaburo
-		Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kiyotaka Kageaki Kotohito Keisuke Kazushige Kenkichi
+		Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
 		Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
 		Nariaki Nobuyoshi
 		Rokuro
@@ -2571,7 +2571,7 @@ southern_african = {
 	}
 	nguni = {
 		color = {165 43 18}
-		first_names = { Kinjikitile Fambaltate Songea Ebabruma Mputa Mbemchapa Atepa Matola Magobi Rjoroza Wasesse Rinyizea Chapwanya Chakoma Kapola Kapungu Kindunda Kinjalla Kiwanga Mahengu Mburu Mhavanginonya Namkina Ngosingosi Schabruma Sentambandu songea Uawula Ulanga 
+		first_names = { Kinjikitile Fambaltate Songea Ebabruma Mputa Mbemchapa Atepa Matola Magobi Rjoroza Wasesse Rinyizea Chapwanya Chakoma Kapola Kapungu Kindunda Kinjalla Kiwanga Mahengu Mburu Mhavanginonya Namkina Ngosingosi Schabruma Sentambandu Uawula Ulanga 
 		}
 
 		last_names = { Ngwale Farhenga Chimai Amari Kwira Mtemi Hanga Mwanawalifa Mbano

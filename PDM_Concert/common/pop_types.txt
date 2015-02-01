@@ -47,15 +47,15 @@ promotion_chance =
 	group = {
 		modifier = {
 			factor = -0.05
-			militancy = 9
-		}
-		modifier = {
-			factor = -0.05
 			militancy = 8
 		}
 		modifier = {
 			factor = -0.05
-			militancy = 7
+			militancy = 6
+		}
+		modifier = {
+			factor = -0.05
+			militancy = 4
 		}
 	}
 	modifier = {
@@ -273,6 +273,10 @@ demotion_chance =
 	group = {
 		modifier = {
 			factor = 0.1
+			unemployment = 0.05
+		}
+		modifier = {
+			factor = 0.1
 			unemployment = 0.1
 		}
 		modifier = {
@@ -440,6 +444,23 @@ colonialmigration_chance = {
 		OR = { 
 			continent = north_america
 			continent = south_america
+		}
+	}
+	modifier = {
+		factor = 0.025
+		consciousness = 6
+		OR = { 
+			continent = oceania
+			continent = africa
+			
+		}
+	}
+	modifier = {
+		factor = 0.025
+		consciousness = 9
+		OR = { 
+			continent = oceania
+			continent = africa
 		}
 	}
 	group = {
@@ -615,7 +636,7 @@ emigration_chance =
 		is_accepted_culture = yes
 	}
 	modifier = {
-		factor = -0.5
+		factor = -0.3
 		country = { citizenship_policy = full_citizenship }
 	}
 	group = {
@@ -636,10 +657,28 @@ emigration_chance =
 			NOT = { literacy = 0.1 }
 		}
 	}
+	modifier = {
+		factor = -1
+		strata = rich
+	}
+	group = {
 		modifier = {
-			factor = -1
-			strata = rich
+			factor = -0.1
+			NOT = { consciousness = 4 }
 		}
+		modifier = {
+			factor = -0.1
+			NOT = { consciousness = 3 }
+		}
+		modifier = {
+			factor = -0.1
+			NOT = { consciousness = 2 }
+		}
+		modifier = {
+			factor = -5
+			NOT = { consciousness = 1 }
+		}
+	}
 	modifier = {
 		factor = -5.0
 		OR = { 
@@ -886,8 +925,11 @@ assimilation_chance =
 	}
 	modifier = {
 		factor = -20
-		has_pop_culture = afro_american
-		continent = north_america
+		is_culture_group = african_diaspora_cultures
+		OR = {
+			continent = north_america
+			continent = south_america
+		}
 	}
 	modifier = {
 		factor = -10000

@@ -24,7 +24,7 @@ cuirassier = {
 	build_time = 40
 	build_cost = {
 		regular_clothes = 3
-		horses = 3
+		horses = 2
 		steel = 3
 	}
 	

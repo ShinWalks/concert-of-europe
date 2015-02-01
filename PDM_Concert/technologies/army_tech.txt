@@ -1258,11 +1258,11 @@ iron_muzzle_loaded_artillery = {
 	year = 1830
 	cost = 7750
 	artillery = {
-		support = 0.5
+		support = 0.25
 		supply_consumption = 0.3
 	}
 	horse_artillery = {
-		support = 0.3
+		support = 0.25
 		supply_consumption = 0.3
 	}
 	ai_chance = {
@@ -1361,10 +1361,10 @@ iron_breech_loaded_artillery = {
 	year = 1850
 	cost = 10200
 	artillery = {
-		support = 0.5
+		support = 0.25
 	}
 	horse_artillery = {
-		support = 0.5
+		support = 0.25
 	}
 	
 	ai_chance = {
@@ -1463,12 +1463,12 @@ steel_breech_loaded_artillery = {
 	year = 1870
 	cost = 12750
 	artillery = {
-		support = 0.75
+		support = 0.25
 		supply_consumption = 0.5
 		maximum_speed = -0.5
 	}
 	horse_artillery = {
-		support = 0.75
+		support = 0.25
 		supply_consumption = 0.5
 	}	
 
@@ -1568,12 +1568,12 @@ indirect_artillery_fire = {
 	year = 1900
 	cost = 20400
 	artillery = {
-		support = 0.75
+		support = 0.25
 		supply_consumption = 0.5
 		maximum_speed = -0.5
 	}
 	horse_artillery = {
-		support = 0.75
+		support = 0.25
 		supply_consumption = 0.5
 	}
 
@@ -1673,12 +1673,12 @@ heavy_armament_dunno = {
 	year = 1919
 	cost = 30000
 	artillery = {
-		support = 1
+		support = 0.5
 		supply_consumption = 1
 		maximum_speed = -0.5
 	}
 	horse_artillery = {
-		support = 1
+		support = 0.5
 		supply_consumption = 1
 	}
 	tank = {

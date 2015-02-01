@@ -24,12 +24,12 @@ liberal_agitation = {
 
 springtime_of_nations = {
 	core_pop_militancy_modifier = 0.2
-	global_pop_consciousness_modifier = 0.2
+	global_pop_consciousness_modifier = 0.4
 	icon = 16
 }
 
 global_liberal_agitation = {
-	global_pop_consciousness_modifier = 0.2
+	global_pop_consciousness_modifier = 0.4
 	global_pop_militancy_modifier = 0.01
 	prestige = -0.05
 	icon = 18
@@ -529,9 +529,10 @@ the_congo_reform_association = {
 }
 
 ruhr_boom = {
-	factory_owner_cost = -0.5
-	global_population_growth = 0.002
-	factory_output = 0.05
+	population_growth = 0.003
+	local_factory_output = 0.05
+	local_rgo_output = 0.1
+	immigrant_push = 0.2
 	icon = 11
 }
 

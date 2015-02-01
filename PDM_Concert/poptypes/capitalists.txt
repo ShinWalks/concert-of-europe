@@ -59,31 +59,63 @@ country_migration_target = {
 		NOT = { religion = THIS }
 	}
 	modifier = {
-		factor = 1.2
+		factor = 1.1
 		is_greater_power = yes
+	}
+	modifier = {
+		factor = 1.05
+		is_secondary_power = yes
 	}
 	modifier = {
 		factor = 1.2
 		religion = THIS
 	}
 	modifier = {
-		factor = 1.2
+		factor = 1.02
+		plurality = 20
+	}
+	modifier = {
+		factor = 1.02
+		plurality = 40
+	}
+	modifier = {
+		factor = 1.02
+		plurality = 60
+	}
+	modifier = {
+		factor = 1.05
+		plurality = 80
+	}
+	modifier = {
+		factor = 1.05
+		plurality = 100
+	}
+	modifier = {
+		factor = 1.02
+		industrial_score = 1000
+	}
+	modifier = {
+		factor = 1.02
+		industrial_score = 500
+	}
+	modifier = {
+		factor = 1.02
 		industrial_score = 100
 	}
 	modifier = {
-		factor = 1.1
-		num_of_cities = 20
+		factor = 1.02
+		industrial_score = 50
 	}
 	modifier = {
-		factor = 1.1
-		num_of_cities = 30
+		factor = 1.05
+		num_of_cities = 25
 	}
 	modifier = {
-		factor = 1.1
+		factor = 1.05
 		num_of_cities = 50
 	}
 	modifier = {
-		factor = 1.1
+		factor = 1.05
 		num_of_cities = 75
 	}
 	modifier = {
@@ -109,7 +141,7 @@ country_migration_target = {
 		is_culture_group = THIS
 	}
 	modifier = {
-		factor = 1.2
+		factor = 1.1
 		religious_policy = moralism
 		religion = THIS 
 	}
@@ -118,7 +150,7 @@ country_migration_target = {
 		religious_policy = pluralism
 	}
 	modifier = {
-		factor = 0.5
+		factor = 0.75
 		religious_policy = pro_atheism
 	}
 	modifier = {
@@ -185,7 +217,7 @@ country_migration_target = {
 		government = democracy
 	}
 	modifier = {
-		factor = 2
+		factor = 1.5
 		OR = { 
 			continent = north_america
 			continent = south_america
@@ -198,6 +230,14 @@ country_migration_target = {
 			continent = africa
 			continent = asia
 		}
+	}
+	modifier = {
+		factor = 0.9
+		average_militancy = 1
+	}
+	modifier = {
+		factor = 0.9
+		average_militancy = 2
 	}
 	modifier = {
 		factor = 0.8
@@ -4011,6 +4051,17 @@ issues = {
 			factor = 1.2
 			consciousness = 9
 		}
+		modifier = {
+			factor = 2
+			NOT = { vote_franschise = none_voting }
+			NOT = { upper_house_composition = party_appointed }
+			OR = {
+				government = proletarian_dictatorship
+				government = presidential_dictatorship
+				government = bourgeois_dictatorship
+				government = fascist_dictatorship
+			}
+		}
 	}
 	gerrymandering = {
 		factor = 0.9
@@ -5936,24 +5987,28 @@ trinket_subsidies = {
 			consciousness = 8
 		}
 		modifier = {
-		factor = 1.2
+			factor = 2
+			consciousness = 9
+		}
+		modifier = {
+			factor = 1.2
 			state_scope = { total_pops = 150000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = { total_pops = 250000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = { total_pops = 500000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = {	total_pops = 750000 }
 		}	
 		modifier = {
-			factor = 2
-			consciousness = 9
+			factor = 0.5
+			not = { everyday_needs = 0.75 }
 		}
 		modifier = {
 			factor = 2
@@ -5986,24 +6041,28 @@ trinket_subsidies = {
 			consciousness = 8
 		}
 		modifier = {
-		factor = 1.2
+			factor = 2
+			consciousness = 9
+		}
+		modifier = {
+			factor = 1.2
 			state_scope = { total_pops = 150000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = { total_pops = 250000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = { total_pops = 500000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = {	total_pops = 750000 }
-		}	
+		}
 		modifier = {
-			factor = 2
-			consciousness = 9
+			factor = 0.5
+			not = { everyday_needs = 0.75 }
 		}
 		modifier = {
 			factor = 2
@@ -6036,24 +6095,28 @@ trinket_subsidies = {
 			consciousness = 8
 		}
 		modifier = {
-		factor = 1.2
+			factor = 2
+			consciousness = 9
+		}
+		modifier = {
+			factor = 1.2
 			state_scope = { total_pops = 150000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = { total_pops = 250000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = { total_pops = 500000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = {	total_pops = 750000 }
-		}	
+		}
 		modifier = {
-			factor = 2
-			consciousness = 9
+			factor = 0.5
+			not = { everyday_needs = 0.75 }
 		}
 		modifier = {
 			factor = 2
@@ -6086,24 +6149,28 @@ trinket_subsidies = {
 			consciousness = 8
 		}
 		modifier = {
-		factor = 1.2
+			factor = 2
+			consciousness = 9
+		}
+		modifier = {
+			factor = 1.2
 			state_scope = { total_pops = 150000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = { total_pops = 250000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = { total_pops = 500000 }
 		}
 		modifier = {
-		factor = 1.2
+			factor = 1.2
 			state_scope = {	total_pops = 750000 }
-		}	
+		}
 		modifier = {
-			factor = 2
-			consciousness = 9
+			factor = 0.5
+			not = { everyday_needs = 0.75 }
 		}
 		modifier = {
 			factor = 2

@@ -736,14 +736,7 @@ country_event = {
 		name = "Onwards, Italia!"
 		relation = { who = FROM value = 400 }
 		create_alliance = FROM
-		THIS = {
-			war = {
-				attacker_goal = {
-					casus_belli = call_allies_cb
-				}
-				call_ally = yes
-			}
-		}
+		FROM = { diplomatic_influence = { who = THIS value = 200 } }
 	}
 }
 

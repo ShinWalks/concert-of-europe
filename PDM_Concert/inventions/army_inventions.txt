@@ -130,7 +130,10 @@ synchronized_heavy_support = {
 	}
 	effect = {
 		artillery = {
-			support = 0.5
+			support = 0.25
+		}
+		horse_artillery = {
+			support = 0.25
 		}
 	}
 }
@@ -676,7 +679,7 @@ medium_artillery = {
 	}
 	effect = {
 		artillery = {
-			support = 0.5
+			support = 0.25
 			supply_consumption = 0.05
 		}
 		tank = {
@@ -704,8 +707,8 @@ heavy_artillery = {
 		artillery = {
 			attack = 0.25
 			defence = 0.25
-			supply_consumption = 0.5
-			support = 1
+			supply_consumption = 0.25
+			support = 0.25
 		}
 		tank = {
 			attack = 1

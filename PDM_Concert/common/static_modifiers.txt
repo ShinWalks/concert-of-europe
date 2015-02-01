@@ -182,6 +182,7 @@ great_power = {
 }
 
 second_power = {
+	tax_efficiency = 0.025
 	research_points = 1.5
 	diplomatic_points_modifier = 0.5
 	leadership = 1.0
@@ -189,11 +190,13 @@ second_power = {
 }
 
 civ_nation = {
+	tax_efficiency = 0.05
 	research_points = 1
 	leadership = 0.5
 }
 
 unciv_nation = {
+	tax_efficiency = 0.1
 	prestige = -0.05
 	badboy = -0.5
 	cb_generation_speed_modifier = 1
