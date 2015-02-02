@@ -624,7 +624,7 @@ country_event = {
 		war = {
 			target = RGS
 			attacker_goal = {
-				casus_belli = liberate_country
+				casus_belli = conquest_any
 				country = BRZ
 			}
 			call_ally = yes
