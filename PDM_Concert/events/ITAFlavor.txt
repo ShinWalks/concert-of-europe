@@ -362,7 +362,7 @@ country_event = {
 			}
 		}
 		any_owned = {
-			limit = { is_core = VEN }
+			limit = { region = AUS_729 }
 			secede_province = VEN
 			VEN = {
 				set_country_flag = had_liberal_revolution
@@ -430,7 +430,7 @@ country_event = {
 			secede_province = LOM
 		}
 		any_owned = {
-			limit = { is_core = VEN }
+			limit = { region = AUS_729 }
 			secede_province = VEN
 		}
 		VEN = { set_country_flag = had_liberal_revolution }
@@ -590,7 +590,7 @@ country_event = {
 					has_pop_culture = south_italian
 				}
 			}
-			militancy = -2
+			militancy = -3
 		}	
 		ai_chance = {
 			factor = 90
@@ -715,8 +715,8 @@ country_event = {
 					has_pop_culture = south_italian
 				}
 			}
-			militancy = 1
-			consciousness = 1
+			militancy = 2
+			consciousness = 3
 		}	
 		ai_chance = {
 			factor = 10
@@ -757,7 +757,7 @@ country_event = {
 country_event = {
 
 	id = 90038
-	title = "EVTNAME90038" #The Pact of Plombières
+	title = "EVTNAME90038" #The Pact of PlombiÃ¨res
 	desc = "EVTDESC90038"
 	news = yes
 	news_desc_long = "EVTDESC90038_NEWS_LONG"
@@ -1060,8 +1060,8 @@ country_event = {
 country_event = {
 	
 	id = 96161
-	title = "Failure of Plombières"
-	desc = "The Pact of Plombières has failed, and our deal with France is broken."
+	title = "Failure of PlombiÃ¨res"
+	desc = "The Pact of PlombiÃ¨res has failed, and our deal with France is broken."
 	picture = "treaty"
 	
 	trigger = {
