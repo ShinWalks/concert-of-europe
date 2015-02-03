@@ -335,7 +335,7 @@ political_decisions = {
 			political_reform = free_press
 			government = prussian_constitutionalism
 			any_pop = {
-				militancy = -3
+				militancy = -5
 				consciousness = -3
 			}
 			set_country_flag = get_your_statuto_albertino_here
@@ -496,7 +496,6 @@ political_decisions = {
 				limit = { is_core = ITA }
 				remove_core = SAR
 				remove_core = SVY
-				remove_core = SRD
 				remove_core = SIC
 				remove_core = MOD
 				remove_core = TUS
@@ -851,7 +850,7 @@ political_decisions = {
 			add_accepted_culture = south_italian
 			any_pop = {
 				limit = { has_pop_culture = south_italian }
-				militancy = -4
+				militancy = -5
 			}
 		}
 		
@@ -936,9 +935,8 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = CRS
-				tag = TRE
 				tag = LOM
-				tag = VEN
+				tag = TRE
 				tag = RMG
 				tag = SRD
 			}
@@ -960,7 +958,7 @@ political_decisions = {
 						has_pop_culture = south_italian
 					}
 				}
-				militancy = -4
+				militancy = -5
 			}
 			random_country = {
 				limit = {
