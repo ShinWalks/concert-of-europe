@@ -2572,7 +2572,7 @@ country_event = {
 	
 	option = {
 		name = "We will claim everything from Texas westward!"
-		badboy = 20
+		badboy = 15
 		MEX_85 = { add_core = USA } #California
 		TEX_132 = { add_core = USA } #Texas
 		MEX_103 = { add_core = USA } #New Mexico
@@ -2625,7 +2625,7 @@ country_event = {
 	
 	option = {
 		name = "We will claim everything from the deserts of Sonora and Chihuahua northward!"
-		badboy = 35
+		badboy = 25
 		MEX_2138 = { add_core = USA } #Sonora
 		MEX_2142 = { add_core = USA } #Chihuahua
 		MEX_85 = { add_core = USA } #California
@@ -2742,7 +2742,7 @@ country_event = {
 	
 	option = {
 		name = "We will claim everything from Texas westward!"
-		badboy = 25
+		badboy = 20
 		MEX_85 = { add_core = USA } #California
 		TEX_132 = { add_core = USA } #Texas
 		MEX_103 = { add_core = USA } #New Mexico
