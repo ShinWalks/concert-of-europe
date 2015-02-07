@@ -353,7 +353,7 @@ country_event = {
 				war = {
 					target = LOM
 					attacker_goal = {
-						casus_belli = annex_core_country
+						casus_belli = conquest_any
 					}
 					defender_goal = {
 						casus_belli = status_quo
@@ -362,7 +362,7 @@ country_event = {
 			}
 		}
 		any_owned = {
-			limit = { is_core = VEN }
+			limit = { region = AUS_729 }
 			secede_province = VEN
 			VEN = {
 				set_country_flag = had_liberal_revolution
@@ -383,7 +383,7 @@ country_event = {
 				war = {
 					target = VEN
 					attacker_goal = {
-						casus_belli = annex_core_country
+						casus_belli = conquest_any
 					}
 					defender_goal = {
 						casus_belli = status_quo
@@ -430,7 +430,7 @@ country_event = {
 			secede_province = LOM
 		}
 		any_owned = {
-			limit = { is_core = VEN }
+			limit = { region = AUS_729 }
 			secede_province = VEN
 		}
 		VEN = { set_country_flag = had_liberal_revolution }
@@ -465,7 +465,7 @@ country_event = {
 				war = {
 					target = LOM
 					attacker_goal = {
-						casus_belli = annex_core_country
+						casus_belli = conquest_any
 					}
 					defender_goal = {
 						casus_belli = status_quo
@@ -495,7 +495,7 @@ country_event = {
 				war = {
 					target = VEN
 					attacker_goal = {
-						casus_belli = annex_core_country
+						casus_belli = conquest_any
 					}
 					defender_goal = {
 						casus_belli = status_quo
@@ -590,7 +590,7 @@ country_event = {
 					has_pop_culture = south_italian
 				}
 			}
-			militancy = -2
+			militancy = -3
 		}	
 		ai_chance = {
 			factor = 90
@@ -715,8 +715,8 @@ country_event = {
 					has_pop_culture = south_italian
 				}
 			}
-			militancy = 1
-			consciousness = 1
+			militancy = 2
+			consciousness = 3
 		}	
 		ai_chance = {
 			factor = 10

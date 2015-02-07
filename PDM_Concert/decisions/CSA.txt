@@ -568,7 +568,7 @@ political_decisions = {
 			2173 = { add_core = CSA } #Queretaro
 			2175 = { add_core = CSA } #Tulancingo
 			2176 = { add_core = CSA } #Puebla
-			2177 = { add_core = CSA } #Oaxaca
+			MEX_2177 = { add_core = CSA } #Oaxaca
 			UCA_2193 = { add_core = CSA } #Honduras
 			UCA_2197 = { add_core = CSA } #Nicaragua
 			UCA_2201 = { add_core = CSA } #Costa Rica

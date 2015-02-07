@@ -938,7 +938,6 @@ political_decisions = {
 				tag = CRS
 				tag = TRE
 				tag = LOM
-				tag = VEN
 				tag = RMG
 				tag = SRD
 			}

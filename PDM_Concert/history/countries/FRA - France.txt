@@ -18,8 +18,8 @@ prestige = 70
 slavery = yes_slavery
 upper_house_composition = appointed
 vote_franschise = landed_voting
-public_meetings = yes_meeting
-press_rights = free_press
+public_meetings = no_meeting
+press_rights = censored_press
 trade_unions = no_trade_unions
 minorities_reform = limited
 immigration_policy = quota_immigration
@@ -99,8 +99,8 @@ oob = "/1821/FRA_oob.txt"
 	
 	# Political reforms
 	slavery = yes_slavery
-	upper_house_composition = appointed
-	vote_franschise = landed_voting
+	upper_house_composition = two_per_state
+	vote_franschise = wealth_weighted_voting
 	public_meetings = yes_meeting
 	press_rights = free_press
 	trade_unions = no_trade_unions
@@ -108,7 +108,7 @@ oob = "/1821/FRA_oob.txt"
 	immigration_policy = quota_immigration
 	conscription = no_draft
 	voting_system = first_past_the_post
-	political_parties = non_secret_ballots
+	political_parties = gerrymandering
 	
 	# Technologies
 	post_napoleonic_thought = 1

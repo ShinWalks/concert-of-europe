@@ -236,6 +236,7 @@ political_decisions = {
 							owned_by = THIS
 							owner = { in_sphere = THIS }
 							owner = { vassal_of = THIS }
+							province_id = 1384 #Singapore
 						}
 					}
 				}

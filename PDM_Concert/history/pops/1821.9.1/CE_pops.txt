@@ -129899,7 +129899,7 @@
 
 	aristocrats = {
 
-		size = 4303
+		size = 3503
 		culture = mexican
 		religion = catholic
 
@@ -129962,7 +129962,7 @@
 	}
 	soldiers = {
 
-		size = 4201
+		size = 4001
 		culture = mexican
 		religion = catholic
 
@@ -130019,7 +130019,7 @@
 
 	aristocrats = {
 
-		size = 6947
+		size = 5447
 		culture = mexican
 		religion = catholic
 
@@ -130096,14 +130096,14 @@
 	}
 	officers = {
 
-		size = 288
+		size = 232
 		culture = mexican
 		religion = catholic
 
 	}
 	soldiers = {
 
-		size = 6785
+		size = 5985
 		culture = mexican
 		religion = catholic
 
@@ -130338,6 +130338,13 @@
 }
 2177 = {
 
+	aristocrats = {
+
+		size = 2300
+		culture = mexican
+		religion = catholic
+
+	}
 	artisans = {
 
 		size = 1434
@@ -130382,7 +130389,21 @@
 	}
 	farmers = {
 
-		size = 64762
+		size = 63762
+		culture = zapotec
+		religion = catholic
+
+	}
+	officers = {
+
+		size = 56
+		culture = zapotec
+		religion = catholic
+
+	}
+	soldiers = {
+
+		size = 2000
 		culture = zapotec
 		religion = catholic
 
