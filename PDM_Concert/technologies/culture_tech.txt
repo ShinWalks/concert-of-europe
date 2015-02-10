@@ -1138,7 +1138,7 @@ enlightenment_thought = {
 	permanent_prestige = 2
 	max_national_focus = 1
 	cb_creation_speed = 0.25
-	influence = 0.25
+	influence = 0.15
 	
 	ai_chance = {
 		factor = 500
@@ -1209,7 +1209,7 @@ ideological_thought = {
 	permanent_prestige = 2
 	max_national_focus = 1 
 	cb_creation_speed = 0.25
-	influence = 0.25
+	influence = 0.15
 	
 	ai_chance = {
 		factor = 250
@@ -1281,7 +1281,7 @@ state_n_government = {
 	cost = 10200
 	permanent_prestige = 5
 	max_national_focus = 1 
-	influence = 0.25
+	influence = 0.15
 	cb_creation_speed = 0.25
 	
 	ai_chance = {
@@ -1354,7 +1354,7 @@ nationalism_n_imperialism = {
 	cost = 12750
 	permanent_prestige = 5
 	max_national_focus = 1
-	influence = 0.25
+	influence = 0.15
 	cb_creation_speed = 0.5
 	
 	ai_chance = {
@@ -1427,7 +1427,7 @@ revolution_n_counterrevolution = {
 	cost = 20400
 	permanent_prestige = 10
 	max_national_focus = 1
-	influence = 0.25
+	influence = 0.15
 	diplomatic_points = 0.25
 	cb_creation_speed = 0.25
 	
@@ -1501,7 +1501,7 @@ mass_politics = {
 	cost = 30000
 	permanent_prestige = 10
 	max_national_focus = 1
-	influence = 0.25
+	influence = 0.15
 	cb_creation_speed = 0.25
 	
 	ai_chance = {

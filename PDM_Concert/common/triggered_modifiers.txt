@@ -257,6 +257,28 @@ landlocked_nation = {
 	diplomatic_points_modifier = -0.25
 }
 
+city_state = {
+	trigger = {
+		NOT = {
+			num_of_cities = 2
+		}
+	}
+	icon = 10
+	prestige = -0.025
+}
+
+small_nation = {
+	trigger = {
+		civilized = yes
+		num_of_cities = 2
+		NOT = {
+			num_of_cities = 8
+		}
+	}
+	icon = 10
+	prestige = -0.01
+}
+
 large_nation = {
 	trigger = {
 		civilized = yes

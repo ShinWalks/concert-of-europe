@@ -19,6 +19,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -91,7 +94,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -106,39 +108,32 @@ province_event = {
 			factor = 0.95
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			NOT = {
 				average_militancy = 5
 			}
 		}
-		
 		modifier = {
 			factor = 4
 			state_scope = {
@@ -191,6 +186,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -208,7 +206,6 @@ province_event = {
 			factor = 0.2
 			is_capital = yes
 		}
-		
 		modifier = {
 			factor = 0.95
 			literacy = 0.9
@@ -255,7 +252,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -278,7 +274,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -287,7 +282,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -296,7 +290,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -305,7 +298,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -314,37 +306,30 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			NOT = {
@@ -400,6 +385,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -470,7 +458,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -493,7 +480,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -502,7 +488,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -511,7 +496,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -520,7 +504,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -529,37 +512,30 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			NOT = {
@@ -616,6 +592,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -678,7 +657,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -701,7 +679,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -710,7 +687,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -719,7 +695,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -728,7 +703,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -737,37 +711,30 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			NOT = {
@@ -823,6 +790,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -844,8 +814,8 @@ province_event = {
 			factor = 1.5
 			NOT = {
 				owner = {
-				invention = machine_tools
-			}
+					invention = machine_tools
+				}
 			}
 		}		
 		modifier = {
@@ -894,7 +864,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -917,7 +886,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -926,7 +894,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -935,7 +902,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -944,7 +910,6 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -953,37 +918,30 @@ province_event = {
 				}
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			NOT = {
@@ -1051,6 +1009,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -1120,7 +1081,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -1131,32 +1091,26 @@ province_event = {
 			factor = 0.95
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			NOT = {
@@ -1221,6 +1175,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -1292,7 +1249,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -1303,32 +1259,26 @@ province_event = {
 			factor = 0.95
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			NOT = {
@@ -1392,6 +1342,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -1463,7 +1416,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -1474,32 +1426,26 @@ province_event = {
 			factor = 0.95
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			NOT = {
@@ -1577,6 +1523,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -1646,7 +1595,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -1657,27 +1605,22 @@ province_event = {
 			factor = 0.75
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.75
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.75
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
@@ -1740,6 +1683,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -1811,7 +1757,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -1822,32 +1767,26 @@ province_event = {
 			factor = 0.95
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			NOT = {
@@ -1911,6 +1850,9 @@ province_event = {
 					province_id = 854 #Malta
 					province_id = 848 #Iraklion
 					province_id = 855 #Nicosia
+					province_id = 86 #Sacramento
+					province_id = 81 #Portland
+					province_id = 78 #Seattle
 					AND = {
 						is_overseas = yes
 						port = yes
@@ -1982,7 +1924,6 @@ province_event = {
 				plurality = 25
 			}
 		}
-		
 		modifier = {
 			factor = 0.95
 			owner = {
@@ -1993,32 +1934,26 @@ province_event = {
 			factor = 0.95
 			average_consciousness = 6
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			average_consciousness = 8
 		}
-		
 		modifier = {
 			factor = 1.1
 			average_militancy = 5
 		}
-		
 		modifier = {
 			factor = 1.2
 			average_militancy = 6
 		}
-		
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
 		}
-		
 		modifier = {
 			factor = 0.95
 			NOT = {

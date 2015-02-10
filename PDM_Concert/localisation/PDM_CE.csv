@@ -607,6 +607,10 @@ early_archaeology;Early Archaeology;;;;;;;;;;;;x;
 early_archaeology_desc;Archaeology is the study of the activity of ancient civilizations, primarily through the recovery and analysis of the objects and records left behind, including artifacts, architecture, biofacts and cultural landscapes (the archaeological record). Organized study of human antiquity dates back to the days of the Renaissance, but in the 19th century archaeology evolved into a true science. Archaeologists began to investigate various ruins around the world, with the study of ancient Aegean civilization being stimulated by the excavations of Heinrich Schliemann at Troy and of Arthur Evans at Crete, while John Lloyd Stephens was a pivotal figure in the rediscovery of the Maya civilization throughout Central America. However, the methodologies employed by these early archaeologists were problematic by the standards of the 20th century.;;;;;;;;;;;;x;
 modern_archaeology;Modern Archaeology;;;;;;;;;;;;x;
 modern_archaeology_desc;Archaeological field methods underwent further developments in the late 19th century. One of the leading figures in modern archaeology was Augustus Pitt Rivers, who meticulously excavated Cranborne Chase in southern England, emphasizing that not only items of beauty or value should be recorded, but mundane items as well. He thus helped to differentiate archaeology from mere antiquarianism. Flinders Petrie pioneered a new level of meticulousness in the examination and preservation of artifacts. Archaeologists---once nothing more than tomb raiders---became reputable scientists.;;;;;;;;;;;;x;
+hypodermic_injection;Hypodermic Injection (+);;;;;;;;;;;;x;
+hypodermic_injection_desc;In the 1840s physicians interested in safe ways to administer small amounts of potent medications such as opiates and strychnine experimented with injection through the skin using hollow needles. Doctors found that an injection beneath the skin anywhere on a patient's body could produce effects elsewhere, as the blood carried the medication throughout the body. Syringes with glass walls were soon developed, so that the amount of liquid within the syringe could be seen from the outside.;;;;;;;;;;;;x;
+aspirin;Aspirin;;;;;;;;;;;;x;
+aspirin_desc;Since antiquity people have used preparations of willow bark and other salicylate-rich plants to reduce pain and inflammation. In the 1800s chemists began exploring related compounds in the hope of finding one with similar medicinal properties but fewer side effects. German chemists eventually developed reliable methods of synthesizing acetylsalicylic acid, a salicylate derivative that the Bayer corporation trademarked as "Aspirin." It soon became one of the most-used medications in the world, and a cornerstone of modern medical care.;;;;;;;;;;;;x;
 simon_bolivar;Simon Bolivar;;;;;;;;;;;;;x
 simon_bolivar_desc;The Liberator of Spanish America, Bolivar is determined to see all of the New World freed from European tyranny.;;;;;;;;;;;;;x
 eleftherios_venizelos;Eleftherios Venizelos;;;;;;;;;;;;;x
@@ -635,6 +639,10 @@ grand_navy;Grand Navy;;;;;;;;;;;;x
 grand_navy_desc;Our nation's navy is admired and feared around the world!;;;;;;;;;;;;x
 landlocked_nation;Landlocked;;;;;;;;;;;;x
 landlocked_nation_desc;Without access to the sea, our nation's ability to trade and influence events is significantly reduced.;;;;;;;;;;;;x
+city_state;City-State;;;;;;;;;;;;x
+city_state_desc;With only one major city under our rule, our nation is easily overlooked.;;;;;;;;;;;;x
+small_nation;Small Nation;;;;;;;;;;;;x
+small_nation_desc;Our nation governs less territory than most.;;;;;;;;;;;;x
 social_development_focus;Social Development;;;;;;;;;;;;;x
 assimilation_focus;Encourage Minority Assimilation;;;;;;;;;;;;;x
 NORMAL_WAR_CONQUEST_NAME_BRZ_URU;$ORDER$ Cisplatine War;;;;;;;;;;;;;x

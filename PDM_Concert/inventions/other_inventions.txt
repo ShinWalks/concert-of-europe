@@ -1883,6 +1883,7 @@ caste_privileges = {
 		base = 100
 	}
 	effect = {
+		colonial_points = 25
 		rebel_org_gain = {
 			faction = indian_sepoys
 			value = 0.25
@@ -1917,7 +1918,7 @@ sati_abolished = {
 		}
 	}
 	effect = {
-		colonial_points = 100
+		colonial_points = 125
 		rebel_org_gain = {
 			faction = indian_sepoys
 			value = 0.25

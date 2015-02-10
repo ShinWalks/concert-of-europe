@@ -6,8 +6,8 @@ ANH = {
 	military_access = yes
 }
 BRA = {
-	value = 75
-	level = 4
+	value = 100
+	level = 5
 	influence_value = 0
 	military_access = yes
 }
