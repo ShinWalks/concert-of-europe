@@ -302,6 +302,7 @@ sprawling_empire = {
 
 well_drilled = {
 	trigger = {
+		NOT = { tag = REB }
 		officers = 0.002
 		civilized = yes
 	}
@@ -312,6 +313,7 @@ well_drilled = {
 
 drilled = {
 	trigger = {
+		NOT = { tag = REB }
 		NOT = { officers = 0.002 }
 		officers = 0.0015
 		civilized = yes
@@ -323,6 +325,7 @@ drilled = {
 
 poorly_drilled = {
 	trigger = {
+		NOT = { tag = REB }
 		NOT = { officers = 0.001 }
 		officers = 0.0005
 	}
@@ -333,6 +336,7 @@ poorly_drilled = {
 
 undisciplined_mob = {
 	trigger = {
+		NOT = { tag = REB }
 		NOT = { officers = 0.0005 }
 	}
 	icon = 18

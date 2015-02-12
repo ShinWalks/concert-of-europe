@@ -87,6 +87,8 @@
 # 555083 - Rebel Armament 1920
 
 # 555090 - Colonial Maintenance
+# 555091 - Colonial Maintenance (Post Colonial)
+# 555092 - The Dusk of an Era
 
 # - - - - - - - - - -
 
@@ -384,3 +386,4 @@ country_event = {
 		}
 	}
 }
+

@@ -554,6 +554,10 @@ promote_to = {
 				factor = -10
 				clergymen = 0.025
 			}
+			modifier = {
+				factor = -100
+				clergymen = 0.04
+			}
 		}
 		group = {
 			modifier = {
@@ -1862,22 +1866,22 @@ ideologies = {
 		modifier = {
 			factor = 1.2
  			country = { citizenship_policy = residency }
-			}
+		}
 		modifier = {
-			factor = 0.3
+			factor = 0.5
  			is_accepted_culture = yes
 			country = { citizenship_policy = limited_citizenship }
-			}
+		}
 		modifier = {
-			factor = 0.1
+			factor = 0.25
  			country = { citizenship_policy = full_citizenship }
-			}
+		}
 		modifier = {
     		factor = 0
 			NOT = { 
 				location = {
-       				any_core = { is_primary_culture = THIS }
-    			}
+       					any_core = { is_primary_culture = THIS }
+    				}
 			}
 		}
 		modifier = {
@@ -4309,6 +4313,10 @@ issues = {
 		}
 		modifier = {
 			factor = 1.2
+			consciousness = 6
+		}
+		modifier = {
+			factor = 1.2
 			consciousness = 7
 		}
 		modifier = {
@@ -4329,6 +4337,11 @@ issues = {
 				government = bourgeois_dictatorship
 				government = fascist_dictatorship
 			}
+		}
+		modifier = {
+			factor = 2
+			NOT = { vote_franschise = none_voting }
+			NOT = { vote_franschise = landed_voting }
 		}
 	}
 	gerrymandering = {
@@ -4359,6 +4372,10 @@ issues = {
 		}
 		modifier = {
 			factor = 1.2
+			consciousness = 6
+		}
+		modifier = {
+			factor = 1.2
 			consciousness = 7
 		}
 		modifier = {
@@ -4368,6 +4385,12 @@ issues = {
 		modifier = {
 			factor = 1.2
 			consciousness = 9
+		}
+		modifier = {
+			factor = 2
+			NOT = { vote_franschise = none_voting }
+			NOT = { vote_franschise = landed_voting }
+			NOT = { vote_franschise = wealth_voting }
 		}
 	}
 	non_secret_ballots = {
@@ -4398,6 +4421,10 @@ issues = {
 		}
 		modifier = {
 			factor = 1.2
+			consciousness = 6
+		}
+		modifier = {
+			factor = 1.2
 			consciousness = 7
 		}
 		modifier = {
@@ -4407,6 +4434,13 @@ issues = {
 		modifier = {
 			factor = 1.2
 			consciousness = 9
+		}
+		modifier = {
+			factor = 2
+			NOT = { vote_franschise = none_voting }
+			NOT = { vote_franschise = landed_voting }
+			NOT = { vote_franschise = wealth_voting }
+			NOT = { vote_franschise = universal_weighted_voting }
 		}
 	}
 	secret_ballots = {
@@ -4432,6 +4466,10 @@ issues = {
 		modifier = {
 			factor = 1.5
 			NOT = { agree_with_ruling_party = 0.70 }
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 6
 		}
 		modifier = {
 			factor = 1.2

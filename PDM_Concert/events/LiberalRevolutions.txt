@@ -561,7 +561,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 		modifier = {
 			factor = 0.9
 			political_reform_want = 0.02
@@ -597,6 +597,30 @@ country_event = {
 		upper_house = {
 			ideology = reactionary
 			value = 0.2
+		}
+		random_state = {
+			limit = { 
+				is_colonial = no
+				liberal = 10
+			}
+			any_owned = {	
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
+			}
+		}
+		random_state = {
+			limit = { 
+				is_colonial = no
+				liberal = 10
+			}
+			any_owned = {	
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
+			}
 		}
 		random_state = {
 			limit = { 
@@ -655,7 +679,7 @@ country_event = {
 			}
 			ideology = {
 				value = liberal
-				factor = 0.02
+				factor = 0.05
 			}
 			scaled_consciousness = {
 				ideology = liberal
@@ -5164,7 +5188,7 @@ country_event = {
 country_event = {
 	id = 10310
 	title = "EVTNAME10320"
-	desc = "EVTDESC10330"
+	desc = "EVTDESC10320"
 	picture = "Demonstration"
 
 	trigger = {
@@ -5238,7 +5262,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 0.2
 			has_country_flag = liberal_revolution_in_progress
@@ -5297,77 +5321,98 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA10330"
-		random_state = {
+		any_pop = {
 			limit = {
-				is_colonial = no
+				location = { is_colonial = no }
 			}
-			any_pop = {
-				ideology = {
-					value = liberal
-					factor = 0.2
-				}
-				militancy = 1
-				consciousness = 1
+			ideology = {
+				value = liberal
+				factor = 0.1
 			}
-			any_pop = {
-				limit = {
-					country = {
-						vote_franschise = none_voting
-					}
-				}
-				dominant_issue = {
-					factor = 0.1
-					value = landed_voting
+			militancy = 1
+			consciousness = 2
+		}
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+				country = {
+					vote_franschise = none_voting
 				}
 			}
-			any_pop = {
-				limit = {
-					country = {
-						vote_franschise = landed_voting
-					}
-				}
-				dominant_issue = {
-					factor = 0.1
-					value = wealth_weighted_voting
+			dominant_issue = {
+				factor = 0.1
+				value = landed_voting
+			}
+		}
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+				country = {
+					vote_franschise = landed_voting
 				}
 			}
-			any_pop = {
-				limit = {
-					country = {
-						vote_franschise = wealth_weighted_voting
-					}
-				}
-				dominant_issue = {
-					factor = 0.1
-					value = wealth_voting
+			dominant_issue = {
+				factor = 0.1
+				value = wealth_weighted_voting
+			}
+		}
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+				country = {
+					vote_franschise = wealth_weighted_voting
 				}
 			}
-			any_pop = {
-				limit = {
-					country = {
-						vote_franschise = wealth_voting
-					}
-				}
-				dominant_issue = {
-					factor = 0.1
-					value = universal_weighted_voting
+			dominant_issue = {
+				factor = 0.1
+				value = wealth_voting
+			}
+		}
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+				country = {
+					vote_franschise = wealth_voting
 				}
 			}
-			any_pop = {
-				limit = {
-					country = {
-						vote_franschise = universal_weighted_voting
-					}
+			dominant_issue = {
+				factor = 0.1
+				value = universal_weighted_voting
+			}
+		}
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+				country = {
+					vote_franschise = universal_weighted_voting
 				}
-				dominant_issue = {
-					factor = 0.1
-					value = universal_voting
-				}
+			}
+			dominant_issue = {
+				factor = 0.1
+				value = universal_voting
 			}
 		}
 	}
 	option = {
 		name = "EVTOPTB10330"
+		random_state = {
+			limit = {
+				is_colonial = no
+			}
+			any_pop = {
+				reduce_pop = 0.99
+				militancy = 4
+			}
+		}
+		random_state = {
+			limit = {
+				is_colonial = no
+			}
+			any_pop = {
+				reduce_pop = 0.99
+				militancy = 4
+			}
+		}
 		random_state = {
 			limit = {
 				is_colonial = no

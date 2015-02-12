@@ -160,9 +160,10 @@ aeroplane_factory = {
 	bonus = {
 		trigger = { 
 			OR = {
-				has_building = machine_parts_factory 
-				has_building = iron_machine_parts_factory 
-				has_building = advanced_machine_parts_factory 
+				has_building = machine_parts_factory
+				has_building = iron_machine_parts_factory
+				has_building = steel_machine_parts_factory
+				has_building = advanced_machine_parts_factory
 			}
 		}
 		value = 0.2
@@ -230,9 +231,10 @@ artillery_factory = {
 	bonus = {
 		trigger = { 
 			OR = {
-				has_building = machine_parts_factory 
-				has_building = iron_machine_parts_factory 
-				has_building = advanced_machine_parts_factory 
+				has_building = machine_parts_factory
+				has_building = iron_machine_parts_factory
+				has_building = steel_machine_parts_factory
+				has_building = advanced_machine_parts_factory
 			}
 		}
 		value = 0.2
@@ -253,9 +255,10 @@ automobile_factory = {
 	bonus = {
 		trigger = { 
 			OR = {
-				has_building = machine_parts_factory 
-				has_building = iron_machine_parts_factory 
-				has_building = advanced_machine_parts_factory 
+				has_building = machine_parts_factory
+				has_building = iron_machine_parts_factory
+				has_building = steel_machine_parts_factory
+				has_building = advanced_machine_parts_factory
 			}
 		}
 		value = 0.2
@@ -295,9 +298,10 @@ barrel_factory = {
 	bonus = {
 		trigger = { 
 			OR = {
-				has_building = machine_parts_factory 
-				has_building = iron_machine_parts_factory 
-				has_building = advanced_machine_parts_factory 
+				has_building = machine_parts_factory
+				has_building = iron_machine_parts_factory
+				has_building = steel_machine_parts_factory
+				has_building = advanced_machine_parts_factory
 			}
 		}
 		value = 0.2
@@ -414,7 +418,10 @@ furniture_factory = {
 	value = 26.4     #391
 	bonus = {
 		trigger = {
-			has_building = lumber_mill
+			OR = {
+				has_building = lumber_mill
+				has_building = tropical_lumber_mill
+			}
 		}
 		value = 0.2
 	}
@@ -473,7 +480,7 @@ luxury_clothes_factory = {
 	}
 }
 
-luxury_furniture_factory = {       
+luxury_furniture_factory = {
 	template = factory_template		#100
 	input_goods = { 
 		furniture = 4			#68
@@ -489,7 +496,7 @@ luxury_furniture_factory = {
 	}
 	bonus = {
 		trigger = {
-			trade_goods_in_state = tropical_wood 
+			trade_goods_in_state = tropical_wood
 		}
 		value = 0.2
 	}
@@ -628,9 +635,10 @@ steamer_shipyard = {
 	bonus = {
 		trigger = { 
 			OR = {
-				has_building = machine_parts_factory 
-				has_building = advanced_machine_parts_factory 
+				has_building = machine_parts_factory
 				has_building = iron_machine_parts_factory
+				has_building = steel_machine_parts_factory
+				has_building = advanced_machine_parts_factory 
 			}
 		}
 		value = 0.2
@@ -1324,10 +1332,10 @@ advanced_machine_parts_factory = {
 synthetic_rubber_factory = {       
 	template = factory_template	#50
 	input_goods = {    
-		oil = 20		#
+		oil = 10		#
 	}
 	output_goods = rubber 
-	value = 25
+	value = 12
 	bonus = {
 		trigger = {
 			OR = {

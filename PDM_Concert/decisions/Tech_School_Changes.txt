@@ -4,17 +4,17 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			tech_school = traditional_academic
+			NOT = { has_country_flag = hidden_decisions }
 		}
 		allow = {
 			NOT = { has_country_modifier = academic_confusion }
-			prestige = 45
-			military_score = 100
-			jingoism = 5
-			pro_military = 5
+			state_n_government = 1
 			OR = {
-				ruling_party_ideology = conservative
-				ruling_party_ideology = reactionary
-				ruling_party_ideology = fascist
+				nationalvalue = nv_order
+				nationalvalue = nv_might
+				nationalvalue = nv_supremacy
+				nationalvalue = nv_glory
+				nationalvalue = nv_dominion
 			}
 		}
 		effect = {
@@ -31,20 +31,19 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			tech_school = traditional_academic
+			NOT = { has_country_flag = hidden_decisions }
 		}
 		allow = {
 			NOT = { has_country_modifier = academic_confusion }
-			prestige = 45
-			military_score = 100
-			total_amount_of_ships = 30
-			pro_military = 5
-			laissez_faire = 5
-			any_owned_province = { is_overseas = yes }
+			state_n_government = 1
 			OR = {
-				ruling_party_ideology = conservative
-				ruling_party_ideology = liberal
-				ruling_party_ideology = anarcho_liberal
+				nationalvalue = nv_order
+				nationalvalue = nv_might
+				nationalvalue = nv_supremacy
+				nationalvalue = nv_glory
+				nationalvalue = nv_dominion
 			}
+			any_owned_province = { is_overseas = yes }
 		}
 		effect = {
 			prestige = -15
@@ -60,17 +59,19 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			tech_school = traditional_academic
+			NOT = { has_country_flag = hidden_decisions }
 		}
 		allow = {
 			NOT = { has_country_modifier = academic_confusion }
-			prestige = 45
+			state_n_government = 1
 			average_consciousness = 4
-			pacifism = 5
-			secularized = 5
 			OR = {
-				ruling_party_ideology = liberal
-				ruling_party_ideology = fascist
-				ruling_party_ideology = communist
+				nationalvalue = nv_liberty
+				nationalvalue = nv_equality
+				nationalvalue = nv_freedom
+				nationalvalue = nv_fraternity
+				nationalvalue = nv_unity
+				nationalvalue = nv_prosperity
 			}
 		}
 		effect = {
@@ -87,16 +88,16 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			tech_school = traditional_academic
+			NOT = { has_country_flag = hidden_decisions }
 		}
 		allow = {
 			NOT = { has_country_modifier = academic_confusion }
-			prestige = 45
-			industrial_score = 100
-			laissez_faire = 5
-			free_trade = 5
+			state_n_government = 1
 			OR = {
-				ruling_party_ideology = liberal
-				ruling_party_ideology = anarcho_liberal
+				nationalvalue = nv_liberty
+				nationalvalue = nv_freedom
+				nationalvalue = nv_prosperity
+				nationalvalue = nv_glory
 			}
 		}
 		effect = {
@@ -113,17 +114,18 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			tech_school = traditional_academic
+			NOT = { has_country_flag = hidden_decisions }
 		}
 		allow = {
 			NOT = { has_country_modifier = academic_confusion }
-			prestige = 45
-			industrial_score = 100
-			interventionism = 5
-			protectionism = 5
+			state_n_government = 1
 			OR = {
-				ruling_party_ideology = conservative
-				ruling_party_ideology = socialist
-				ruling_party_ideology = communist
+				nationalvalue = nv_equality
+				nationalvalue = nv_order
+				nationalvalue = nv_fraternity
+				nationalvalue = nv_unity
+				nationalvalue = nv_productivity
+				nationalvalue = nv_prosperity
 			}
 		}
 		effect = {
@@ -140,11 +142,12 @@ political_decisions = {
 		potential = {
 			NOT = { tech_school = traditional_academic }
 			civilized = yes
+			NOT = { has_country_flag = hidden_decisions }
 		}
 		
 		allow = {
 			NOT = { has_country_modifier = academic_confusion }
-			prestige = 45
+			state_n_government = 1
 		}
 		effect = {
 			prestige = -15
