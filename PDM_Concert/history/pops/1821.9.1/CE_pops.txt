@@ -38557,7 +38557,7 @@
 	farmers = {
 
 		size = 11000
-		culture = catalan
+		culture = occitan
 		religion = catholic
 
 	}
@@ -60885,21 +60885,21 @@
 	aristocrats = {
 
 		size = 35
-		culture = siberian
+		culture = ainu
 		religion = animist
 
 	}
 	artisans = {
 
 		size = 49
-		culture = siberian
+		culture = ainu
 		religion = animist
 
 	}
 	clergymen = {
 
 		size = 24
-		culture = siberian
+		culture = ainu
 		religion = animist
 
 	}
@@ -60913,7 +60913,7 @@
 	farmers = {
 
 		size = 890
-		culture = siberian
+		culture = ainu
 		religion = animist
 
 	}
@@ -60927,7 +60927,7 @@
 	soldiers = {
 
 		size = 39
-		culture = siberian
+		culture = ainu
 		religion = animist
 
 	}

@@ -252,13 +252,13 @@ USA = {
 	value = 50
 }
 AUS = {
-	value = -75
+	value = -25
 }
 SPA = {
-	value = -75
+	value = -25
 }
 PRU = {
-	value = -75
+	value = 25
 }
 RUS = {
 	value = -25

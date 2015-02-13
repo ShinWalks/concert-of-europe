@@ -1051,11 +1051,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 4
-		modifier = {
-			factor = 0.75
-			TEX = { national_provinces_occupied = 0.05 }
-		}
+		months = 3
 		modifier = {
 			factor = 0.5
 			TEX = { national_provinces_occupied = 0.50 }
@@ -1983,7 +1979,7 @@ country_event = {
 		war = {
 			target = TEX
 			attacker_goal = {
-				casus_belli = annex_core_country
+				casus_belli = conquest_any
 			}
 		}
 		ai_chance = {

@@ -420,6 +420,9 @@ country_event = {
 			has_country_flag = committee_polish_independence
 			year = 1850
 			primary_culture = polish
+			exists = POL
+			exists = CPL
+			exists = PLC
 		}	
 	}
 	

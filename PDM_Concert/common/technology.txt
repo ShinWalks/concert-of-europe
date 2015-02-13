@@ -46,15 +46,14 @@ folders = {
 schools = {
 	traditional_academic = 
 	{
-		army_tech_research_bonus = 0.02
-		commerce_tech_research_bonus = 0.02
-		culture_tech_research_bonus = 0.02
-		industry_tech_research_bonus = 0.02
-		navy_tech_research_bonus = 0.02
+		army_tech_research_bonus = 0
+		commerce_tech_research_bonus = 0
+		culture_tech_research_bonus = 0
+		industry_tech_research_bonus = 0
+		navy_tech_research_bonus = 0
 	}
 	
-	army_tech_school = 
-	{
+	army_tech_school = {
 		army_tech_research_bonus = 0.15
 		commerce_tech_research_bonus = 0
 		culture_tech_research_bonus = -0.1
@@ -113,6 +112,7 @@ schools = {
 		unciv_economic_modifier = -0.05
 		unciv_military_modifier = -0.15
 	}
+	
 	russian_tech_school = {
 		army_tech_research_bonus = 0.1
 		commerce_tech_research_bonus = -0.05
@@ -122,6 +122,7 @@ schools = {
 		unciv_economic_modifier = -0.05
 		unciv_military_modifier = -0.15
 	}
+	
 	japanese_tech_school = {
 		army_tech_research_bonus = 0.05
 		commerce_tech_research_bonus = -0.1
@@ -131,6 +132,7 @@ schools = {
 		unciv_economic_modifier = 0.05
 		unciv_military_modifier = 0.15
 	}
+	
 	unciv_tech_school = {
 		army_tech_research_bonus = -0.05
 		commerce_tech_research_bonus = -0.05
