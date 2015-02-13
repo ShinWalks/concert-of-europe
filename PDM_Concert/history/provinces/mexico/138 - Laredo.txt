@@ -5,10 +5,12 @@ add_core = RGR
 trade_goods = cattle
 life_rating = 35
 terrain = dry_grassland
+colonial = 1
 1836.1.1 = {
 	add_core = TEX
 }
 1861.1.1 = {
+	colonial = 0
 	controller = CSA
 	owner = CSA
 	add_core = CSA

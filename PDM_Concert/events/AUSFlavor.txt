@@ -3076,3 +3076,74 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 22240
+	title = "EVTNAME22240"
+	desc = "EVTDESC22240"
+	picture = "greatpowers"
+
+	is_triggered_only = yes
+			
+	option = {
+		name = "We must pursue reconciliation."
+		set_country_flag = accepts_poland #deactivates the Imperial Reconquest CB
+		prestige = 5
+		FROM = { prestige = 5 }
+		relation = { who = FROM value = 200 }
+		create_alliance = FROM
+		689 = { #Tesin
+			remove_core = POL
+			remove_core = FROM
+		}
+		2584 = { #Bielsko
+			remove_core = AUS
+		}
+		any_owned = {
+			limit = {
+				is_core = FROM
+			}
+			secede_province = FROM
+		}
+		FROM = {
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				secede_province = THIS
+			}
+		}
+		any_pop = {
+			limit = {
+				culture = polish
+			}
+			move_pop = 2584
+		}
+		FROM = {
+			any_pop = {
+				limit = {
+					culture = south_german
+				}
+				move_pop = 689
+			}
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+
+	option = {
+		name = "Never! Galicia belongs to Austria!"
+		relation = { who = FROM value = -50 }
+		prestige = 5
+		FROM = { prestige = -5 }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 50
+				has_country_flag = breslau_treaty
+			}
+		}
+	}
+}
+

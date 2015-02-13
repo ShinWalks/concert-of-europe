@@ -5,3 +5,8 @@ add_core = RGR
 trade_goods = coal
 life_rating = 35
 terrain = hilly_grassland
+colonial = 1
+1861.1.1 = {
+	colonial = 0
+}
+

@@ -429,6 +429,8 @@ PNJ_embrace_baluchi_minority_title;Embrace the Baluch;;;;;;;;;;;;;x
 PNJ_embrace_baluchi_minority_desc;The Sikh Empire is a secular, tolerant state. We shall embrace the Baluchi lands under our dominion, and together forge a nation even stronger than before.;;;;;;;;;;;;;x
 treaty_of_brescia_title;Treaty of Brescia;;;;;;;;;;;;x
 treaty_of_brescia_desc;We have forced the Austrians to relinquish their control of an Italian territory, and the region is ready to be fully integrated into $COUNTRY$. Forward, Italia!;;;;;;;;;;;;x
+refute_french_savoy_title;Refute French Claims;;;;;;;;;;;;x
+refute_french_savoy_desc;We have defeated the treacherous French, and now their trumped-up claim on Savoy can be laughed away.;;;;;;;;;;;;x
 venetian_dalmatia_title;Venetian Dalmatia;;;;;;;;;;;;x
 venetian_dalmatia_desc;For centuries the Dalmatian coast was a territory of the Republic of Venice. The Napoleonic wars saw the end of the Republic, and Dalmatia was transferred to Austria at the Vienna Congress, but the region's Italian population remains. We could credibly lay claim to the coast and tighten our grip on the Adriatic.;;;;;;;;;;;;x
 italian_islands_title;The Italian Islands;;;;;;;;;;;;x
@@ -503,6 +505,8 @@ reinstate_ken_title;Reinstate the Commission of National Education;;;;;;;;;;;;x
 reinstate_ken_desc;Formed in the late years of the Polish-Lithuanian Commonwealth, the Commission of National Education was Europe's first public education ministry. Though the Commonwealth ended not long thereafter, the Commission can now be reestablished to see to the literacy and education of our nation.;;;;;;;;;;;;x
 2nd_treaty_of_hadiach_title;Second Treaty of Hadiach;;;;;;;;;;;;x
 2nd_treaty_of_hadiach_desc;At the peak of old Poland-Lithuania's powers, it almost signed a treaty to make the Ruthenians a third equal nation within the Commonwealth. We should resurrect this idea and give equal political rights and representation to our eastern regions.;;;;;;;;;;;;x
+poland_reconcile_austria_title;Reconcile with Austria;;;;;;;;;;;;x
+poland_reconcile_austria_desc;Now that we have liberated Galicia-Lodomeria from Austria, we could try to resolve any remaining territorial claims and develop a new alliance between our nations. They could make a powerful ally against Prussia or Russia, our mutual rivals. If they agree to bury our conflicts, this could be the beginning of a new geopolitical strategy.;;;;;;;;;;;;x
 create_german_baltic_states_title;Create the Baltic States;;;;;;;;;;;;x
 create_german_baltic_states_desc;Uniting the Baltic nations under a single flag, as a puppet to our nation, will make for a much stronger ally.;;;;;;;;;;;;x
 polish_poznan_title;Polish Poznan;;;;;;;;;;;;x
@@ -715,6 +719,8 @@ EVTNAME16660;Mississippi Flooding;;;;;;;;;;;;;x
 EVTDESC16660;Along the Missouri River and the Upper Mississippi, heavy rainfall and inadequate preparation have led to major floods, the worst in decades. With the increasing population of $COUNTRY$ especially in the areas around the Mississippi and its tributaries, it is becoming increasingly important to develop a set of levees and ditches to prevent high water from wiping out whole towns.;;;;;;;;;;;;x
 EVTDESC16661;Recalling last decade's horrendous floods along the Upper Mississippi, there has been another year of extraordinary rain and subsequent floods along the very same Mississippi River. We had made sure riverside towns were prepared for any threat of flooding, but this time the floods hit mostly rural areas and new colonial towns, which hadn't yet managed to establish systems of levees to cope with rising water levels.;;;;;;;;;;;;x
 EVTDESC16662;The worst floods yet have hit many of our cities along the Mississippi and its tributaries, overwhelming even our painstakingly built levees and ditches. We begin to wonder whether modern technology can truly protect us from nature's fury. Perhaps we can only pray that a disaster of this scale never again strikes our country.;;;;;;;;;;;;x
+EVTNAME22240;An Austro-Polish Alliance?;;;;;;;;;;;;;x
+EVTDESC22240;$FROMCOUNTRY$ is now a rising power in central Europe, and $COUNTRY$ has lost the Polish lands it once ruled. Rather than begrudge that loss forever, we could accept the new reality and make the best of our new strategic situation. By resolving our few remaining overlapping claims, we could lay the foundation for a strong new alliance between ourselves and $FROMCOUNTRY$. Indeed, such an alliance could prove crucial in both nations' conflicts with our mutual neighbors and rivals, Russia and Prussia. Shall we begin a new chapter in Austro-Polish relations, or keep our sights fixed on the past?;;;;;;;;;;;;x
 EVTNAME31110;Our Crimean Vassal;;;;;;;;;;;;;x
 EVTDESC31110;The Crimean Khanate has been liberated from Russian control, and the Giray Khan is reinstated. Crimea is once again an Ottoman vassal, and a bulwark against Russian aggression from the north.;;;;;;;;;;;;;x
 EVTNAME31111;Defeat in Crimea;;;;;;;;;;;;;x

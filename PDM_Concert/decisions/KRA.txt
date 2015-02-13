@@ -681,7 +681,78 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	poland_reconcile_austria = {
+		picture = unite_with_poland
+		potential = {
+			OR = {
+				tag = POL
+				tag = PLC
+			}
+			OR = {
+				AUS = { exists = yes }
+				KUK = { exists = yes }
+				DNB = { exists = yes }
+			}
+			owns = 702 #Lwow
+			owns = 703 #Krakow
+			owns = 714 #Tarnow
+			NOT = {
+				has_global_flag = reconciliation_poland_tried
+				mass_politics = 1
+			}
+		}
 
+		allow = {
+			war = no
+			OR = {
+				AND = {
+					NOT = {
+						truce_with = AUS
+						AUS = { war = yes }
+					}
+					DNB = { exists = no }
+					KUK = { exists = no }
+				}
+				AND = {
+					NOT = {
+						truce_with = DNB
+						DNB = { war = yes }
+					}
+					AUS = { exists = no }
+					KUK = { exists = no }
+				}
+				AND = {
+					NOT = {
+						truce_with = KUK
+						KUK = { war = yes }
+					}
+					DNB = { exists = no }
+					AUS = { exists = no }
+				}
+			}
+		}
+
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						tag = AUS
+						tag = KUK
+						tag = DNB
+					}
+					exists = yes
+				}
+				country_event = 22240
+			}
+			set_global_flag = reconciliation_poland_tried
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	galicia_annex_krakow = {
 		picture = unite_with_poland
 		potential = {

@@ -1,8 +1,8 @@
 political_decisions = {
 	accademia_della_crusca = {
-        potential = {
-           	tag = TUS
-            NOT = { has_country_flag = accademia_della_crusca }
+		potential = {
+		   	tag = TUS
+		    	NOT = { has_country_flag = accademia_della_crusca }
 		}
 
 		allow = {
@@ -12,11 +12,11 @@ political_decisions = {
 		}
 
 		effect = { 
-           	treasury = -80000
-            prestige = 15                   
-            political_reform = free_press
-            set_country_flag = accademia_della_crusca
-        }
+			treasury = -80000
+			prestige = 15                   
+			political_reform = free_press
+			set_country_flag = accademia_della_crusca
+		}
 	}
 
 	plombieres = {
@@ -290,6 +290,30 @@ political_decisions = {
 				diplomatic_influence = { who = PAP value = -200 }
 				diplomatic_influence = { who = SIC value = -200 }
 			}
+		}
+	}
+
+	refute_french_savoy = {
+		potential = {
+			tag = ITA
+			FRA = { has_country_flag = claimed_savoy }
+			NOT = {
+				has_country_flag = cavour_has_done_his
+				has_country_flag = french_savoy_refuted
+			}
+		}
+
+		allow = {
+			owns = 465 #Savoy
+			war = no
+			has_recently_lost_war = no
+			truce_with = FRA
+		}
+		
+		effect = {
+			set_country_flag = french_savoy_refuted
+			prestige = 5
+			SAR_466 = { remove_core = FRA }
 		}
 	}
 	

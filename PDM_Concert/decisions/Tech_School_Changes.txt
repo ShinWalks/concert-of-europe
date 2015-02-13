@@ -24,6 +24,9 @@ political_decisions = {
 			}
 			tech_school = army_tech_school
 		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	switch_to_navy_tech = {
 		alert = no
@@ -50,6 +53,17 @@ political_decisions = {
 				duration = 3650
 			}
 			tech_school = naval_tech_school
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				nationalvalue = nv_might
+			}
+			modifier = {
+				factor = 0
+				nationalvalue = nv_order
+			}
 		}
 	}
 	switch_to_culture_tech = {
@@ -79,6 +93,13 @@ political_decisions = {
 			}
 			tech_school = culture_tech_school
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				nationalvalue = nv_liberty
+			}
+		}
 	}
 	switch_to_trade_tech = {
 		alert = no
@@ -103,6 +124,9 @@ political_decisions = {
 				duration = 3650
 			}
 			tech_school = commerce_tech_school
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	switch_to_industry_tech = {
@@ -130,6 +154,17 @@ political_decisions = {
 				duration = 3650
 			}
 			tech_school = industrial_tech_school
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				nationalvalue = nv_order
+			}
+			modifier = {
+				factor = 0
+				nationalvalue = nv_equality
+			}
 		}
 	}
 	switch_to_traditional_academic = {
