@@ -2060,6 +2060,7 @@ country_event = {
 	trigger = {
 		tag = USA
 		exists = yes
+		year = 1840
 		79 = {
 			empty = no
 			OR = {
@@ -2075,14 +2076,13 @@ country_event = {
 			}
 		}
 		NOT = { war_with = ENG }
-		has_country_flag = hasmanifestdestiny
 		election = yes
 	}
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 12
 		modifier = {
-			factor = 0.25
+			factor = 0.1
 			year = 1850
 		}
 	}

@@ -306,8 +306,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = ALS
-					create_alliance = ALS
-					diplomatic_influence = { who = ALS value = 200 }
 				}
 			}
 			any_owned = {
@@ -316,8 +314,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = ANH
-					create_alliance = ANH
-					diplomatic_influence = { who = ANH value = 200 }
 				}
 			}
 			any_owned = {
@@ -326,8 +322,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = BAD
-					create_alliance = BAD
-					diplomatic_influence = { who = BAD value = 200 }
 				}
 			}
 			any_owned = {
@@ -336,8 +330,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = BAV
-					create_alliance = BAV
-					diplomatic_influence = { who = BAV value = 200 }
 				}
 			}
 			any_owned = {
@@ -346,8 +338,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = BRA
-					create_alliance = BRA
-					diplomatic_influence = { who = BRA value = 200 }
 				}
 			}
 			any_owned = {
@@ -356,8 +346,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = BRE
-					create_alliance = BRE
-					diplomatic_influence = { who = BRE value = 200 }
 				}
 			}
 			any_owned = {
@@ -366,8 +354,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = COB
-					create_alliance = COB
-					diplomatic_influence = { who = COB value = 200 }
 				}
 			}
 			any_owned = {
@@ -376,8 +362,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = FRM
-					create_alliance = FRM
-					diplomatic_influence = { who = FRM value = 200 }
 				}
 			}
 			any_owned = {
@@ -386,8 +370,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = HAM
-					create_alliance = HAM
-					diplomatic_influence = { who = HAM value = 200 }
 				}
 			}
 			any_owned = {
@@ -396,8 +378,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = HAN
-					create_alliance = HAN
-					diplomatic_influence = { who = HAN value = 200 }
 				}
 			}
 			any_owned = {
@@ -406,8 +386,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = HEK
-					create_alliance = HEK
-					diplomatic_influence = { who = HEK value = 200 }
 				}
 			}
 			any_owned = {
@@ -416,8 +394,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = HES
-					create_alliance = HES
-					diplomatic_influence = { who = HES value = 200 }
 				}
 			}
 			any_owned = {
@@ -426,8 +402,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = HOL
-					create_alliance = HOL
-					diplomatic_influence = { who = HOL value = 200 }
 				}
 			}
 			any_owned = {
@@ -436,8 +410,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = LIP
-					create_alliance = LIP
-					diplomatic_influence = { who = LIP value = 200 }
 				}
 			}
 			any_owned = {
@@ -446,8 +418,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = LUB
-					create_alliance = LUB
-					diplomatic_influence = { who = LUB value = 200 }
 				}
 			}
 			any_owned = {
@@ -457,8 +427,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = LUX
-					create_alliance = LUX
-					diplomatic_influence = { who = LUX value = 200 }
 				}
 			}
 			any_owned = {
@@ -467,8 +435,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = MEC
-					create_alliance = MEC
-					diplomatic_influence = { who = MEC value = 200 }
 				}
 			}
 			any_owned = {
@@ -477,8 +443,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = MEI
-					create_alliance = MEI
-					diplomatic_influence = { who = MEI value = 200 }
 				}
 			}
 			any_owned = {
@@ -487,8 +451,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = NAS
-					create_alliance = NAS
-					diplomatic_influence = { who = NAS value = 200 }
 				}
 			}
 			any_owned = {
@@ -497,8 +459,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = OLD
-					create_alliance = OLD
-					diplomatic_influence = { who = OLD value = 200 }
 				}
 			}
 			any_owned = {
@@ -507,8 +467,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = SAA
-					create_alliance = SAA
-					diplomatic_influence = { who = SAA value = 200 }
 				}
 			}
 			any_owned = {
@@ -517,8 +475,14 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = RHI
-					create_alliance = RHI
-					diplomatic_influence = { who = RHI value = 200 }
+				}
+			}
+			any_owned = {
+				limit = {
+					is_core = PRU
+				}
+				owner = {
+					release_vassal = PRU
 				}
 			}
 			any_owned = {
@@ -527,8 +491,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = SAX
-					create_alliance = SAX
-					diplomatic_influence = { who = SAX value = 200 }
 				}
 			}
 			any_owned = {
@@ -537,8 +499,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = SCH
-					create_alliance = SCH
-					diplomatic_influence = { who = SCH value = 200 }
 				}
 			}
 			any_owned = {
@@ -547,8 +507,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = WEI
-					create_alliance = WEI
-					diplomatic_influence = { who = WEI value = 200 }
 				}
 			}
 			any_owned = {
@@ -557,8 +515,6 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = WES
-					create_alliance = WES
-					diplomatic_influence = { who = WES value = 200 }
 				}
 			}
 			any_owned = {
@@ -567,10 +523,95 @@ political_decisions = {
 				}
 				owner = {
 					release_vassal = WUR
-					create_alliance = WUR
-					diplomatic_influence = { who = WUR value = 200 }
 				}
 			}
+			create_vassal = ALS
+			create_vassal = ANH
+			create_vassal = BAD
+			create_vassal = BAV
+			create_vassal = BRA
+			create_vassal = BRE
+			create_vassal = COB
+			create_vassal = FRM
+			create_vassal = HAM
+			create_vassal = HAN
+			create_vassal = HEK
+			create_vassal = HES
+			create_vassal = HOL
+			create_vassal = LIP
+			create_vassal = LUB
+			create_vassal = LUX
+			create_vassal = MEC
+			create_vassal = MEI
+			create_vassal = NAS
+			create_vassal = OLD
+			create_vassal = PRU
+			create_vassal = RHI
+			create_vassal = SAA
+			create_vassal = SAX
+			create_vassal = SCH
+			create_vassal = SWH
+			create_vassal = WEI
+			create_vassal = WES
+			create_vassal = WUR
+			create_alliance = ALS	
+			create_alliance = ANH
+			create_alliance = BAD
+			create_alliance = BAV
+			create_alliance = BRA
+			create_alliance = BRE
+			create_alliance = COB
+			create_alliance = FRM
+			create_alliance = HAM
+			create_alliance = HAN
+			create_alliance = HEK
+			create_alliance = HES
+			create_alliance = HOL
+			create_alliance = LIP
+			create_alliance = LUB
+			create_alliance = LUX
+			create_alliance = MEC
+			create_alliance = MEI
+			create_alliance = NAS
+			create_alliance = OLD
+			create_alliance = PRU
+			create_alliance = RHI
+			create_alliance = SAA
+			create_alliance = SAX
+			create_alliance = SCH
+			create_alliance = SWH
+			create_alliance = WEI
+			create_alliance = WES
+			create_alliance = WUR
+			diplomatic_influence = { who = ALS value = 200 }
+			diplomatic_influence = { who = ANH value = 200 }
+			diplomatic_influence = { who = BAD value = 200 }
+			diplomatic_influence = { who = BAV value = 200 }
+			diplomatic_influence = { who = BRA value = 200 }
+			diplomatic_influence = { who = BRE value = 200 }
+			diplomatic_influence = { who = COB value = 200 }
+			diplomatic_influence = { who = FRM value = 200 }
+			diplomatic_influence = { who = HAM value = 200 }
+			diplomatic_influence = { who = HAN value = 200 }
+			diplomatic_influence = { who = HEK value = 200 }
+			diplomatic_influence = { who = HES value = 200 }
+			diplomatic_influence = { who = HOL value = 200 }
+			diplomatic_influence = { who = LIP value = 200 }
+			diplomatic_influence = { who = LUB value = 200 }
+			diplomatic_influence = { who = LUX value = 200 }
+			diplomatic_influence = { who = MEC value = 200 }
+			diplomatic_influence = { who = MEI value = 200 }
+			diplomatic_influence = { who = NAS value = 200 }
+			diplomatic_influence = { who = OLD value = 200 }
+			diplomatic_influence = { who = PRU value = 200 }
+			diplomatic_influence = { who = RHI value = 200 }
+			diplomatic_influence = { who = SAA value = 200 }
+			diplomatic_influence = { who = SAX value = 200 }
+			diplomatic_influence = { who = SCH value = 200 }
+			diplomatic_influence = { who = SWH value = 200 }
+			diplomatic_influence = { who = WEI value = 200 }
+			diplomatic_influence = { who = WES value = 200 }
+			diplomatic_influence = { who = WUR value = 200 }
 		}
 		ai_will_do = {
 			factor = 1

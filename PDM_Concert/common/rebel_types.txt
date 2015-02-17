@@ -1334,6 +1334,7 @@ anarcho_liberal_rebels = {
 		social_reform = no_subsidies
 		social_reform = no_pensions
 		social_reform = no_health_care
+		social_reform = no_controls
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win

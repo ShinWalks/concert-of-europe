@@ -2846,7 +2846,6 @@ country_event = {
 		war_with = TUR
 		TUR = { has_country_flag = promised_egyptian_levant }
 		NOT = {
-			tag = TUR
 			war_with = EGY
 			truce_with = EGY
 			has_global_flag = london_conference_1832_held
