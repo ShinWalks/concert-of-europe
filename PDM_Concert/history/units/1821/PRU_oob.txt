@@ -1,7 +1,7 @@
 #German Minors
 ANH = {
-	value = 75
-	level = 4
+	value = 100
+	level = 5
 	influence_value = 0
 	military_access = yes
 }
@@ -42,8 +42,8 @@ HAN = {
 	military_access = yes
 }
 HEK = {
-	value = 75
-	level = 4
+	value = 100
+	level = 5
 	influence_value = 0
 	military_access = yes
 }
@@ -54,8 +54,8 @@ HES = {
 	military_access = yes
 }
 LIP = {
-	value = 75
-	level = 4
+	value = 100
+	level = 5
 	influence_value = 0
 	military_access = yes
 }
@@ -66,8 +66,8 @@ LUB = {
 	military_access = yes
 }
 MEC = {
-	value = 75
-	level = 4
+	value = 100
+	level = 5
 	influence_value = 0
 	military_access = yes
 }
@@ -78,8 +78,8 @@ MEI = {
 	military_access = yes
 }
 NAS = {
-	value = 75
-	level = 4
+	value = 100
+	level = 5
 	influence_value = 0
 	military_access = yes
 }

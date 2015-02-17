@@ -241,10 +241,6 @@ political_decisions = {
 			badboy = 25
 			PRU_684 = { remove_core = PRU } #Upper Silesia
 			PRU_682 = { remove_core = PRU } #Lower Silesia
-			PRU_553 = { #Anhalt
-				add_core = ANH
-				remove_core = PRU
-			}
 			554 = { #Erfurt
 				add_core = HES
 				remove_core = PRU
