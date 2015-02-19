@@ -5,3 +5,4 @@ add_core = DLM
 trade_goods = fish
 life_rating = 35
 terrain = dry_forest_hills
+naval_base = 1

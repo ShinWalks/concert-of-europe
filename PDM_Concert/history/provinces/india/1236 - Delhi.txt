@@ -4,5 +4,5 @@ add_core = MUG
 add_core = HND
 trade_goods = sugar
 life_rating = 35
-terrain = good_farmland
+terrain = rich_farmland
 colonial = 1

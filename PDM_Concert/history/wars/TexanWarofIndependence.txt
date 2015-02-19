@@ -10,7 +10,7 @@ name = "Texan War of Independence"
 	# country - 3rd party
 	# state_province_id - target state capital
 	war_goal = {
-		casus_belli = conquest
+		casus_belli = establish_protectorate_casus_belli
 		actor = MEX
 		receiver = TEX
 	}

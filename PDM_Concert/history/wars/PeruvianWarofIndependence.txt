@@ -6,13 +6,13 @@ name = "Peruvian War of Independence"
 	add_defender = BOL
 	
 	war_goal = {
-		casus_belli = conquest
+		casus_belli = establish_protectorate_casus_belli
 		actor = SPA
 		receiver = PEU
 	}
 	
 	war_goal = {
-		casus_belli = conquest
+		casus_belli = establish_protectorate_casus_belli
 		actor = SPA
 		receiver = BOL
 	}

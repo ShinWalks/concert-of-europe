@@ -2779,8 +2779,10 @@ country_event = {
 			}
 			693 = { add_core = POL }
 			696 = { add_core = POL }
-			683 = { add_core = POL }
 			682 = { add_core = POL }
+			683 = { add_core = POL }
+			3255 = { add_core = POL }
+			3256 = { add_core = POL }
 		}
 		
 		random_country = {
@@ -2791,8 +2793,10 @@ country_event = {
 			}
 			693 = { add_core = PLC }
 			696 = { add_core = PLC }
-			683 = { add_core = PLC }
 			682 = { add_core = PLC }
+			683 = { add_core = PLC }
+			3255 = { add_core = PLC }
+			3256 = { add_core = PLC }
 		}
 
 		random_country = {
@@ -3340,7 +3344,10 @@ country_event = {
 			THIS = {
 				any_owned = {
 					limit = {
-						region = AUS_702
+						OR = {
+							region = AUS_702
+							region = AUS_703
+						}
 					}
 					secede_province = GLM
 				}
@@ -6480,6 +6487,7 @@ country_event = {
 				THIS = { owns = 702 }
 			}
 			AUS_702 = { add_core = RUS }
+			AUS_703 = { add_core = RUS }
 		}
 		
 		#If Russia is at truce & Poland does exist, give them Lodomeria if owned
@@ -6493,19 +6501,7 @@ country_event = {
 				}
 				THIS = { owns = 702 }
 			}
-			702 = {
-				add_core = RUS
-				secede_province = RUS
-			}
-			951 = {
-				add_core = RUS
-				secede_province = RUS
-			}
-			952 = {
-				add_core = RUS
-				secede_province = RUS
-			}
-			953 = {
+			AUS_702 = {
 				add_core = RUS
 				secede_province = RUS
 			}
@@ -7494,6 +7490,7 @@ country_event = {
 				THIS = { owns = 702 }
 			}
 			AUS_702 = { add_core = RUS }
+			AUS_703 = { add_core = RUS }
 		}
 		
 		#If Russia is at truce & Poland does exist, give them Lodomeria
@@ -7507,19 +7504,7 @@ country_event = {
 				}
 				THIS = { owns = 702 }
 			}
-			702 = {
-				add_core = RUS
-				secede_province = RUS
-			}
-			951 = {
-				add_core = RUS
-				secede_province = RUS
-			}
-			952 = {
-				add_core = RUS
-				secede_province = RUS
-			}
-			953 = {
+			AUS_702 = {
 				add_core = RUS
 				secede_province = RUS
 			}

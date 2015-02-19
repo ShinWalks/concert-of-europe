@@ -7,5 +7,5 @@ terrain = temperate_grassland
 colonial = 1
 1861.1.1 = {
 	colonial = 0
-	}
+}
 1861.1.1 = { railroad = 3 }

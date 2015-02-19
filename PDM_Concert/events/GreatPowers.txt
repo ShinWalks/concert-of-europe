@@ -1943,7 +1943,6 @@ country_event = {
 		random_country = {
 			limit = {
 				is_greater_power = yes
-
 				tag = FROM
 			}
 			diplomatic_influence = { who = THIS value = 400 }
@@ -1970,7 +1969,7 @@ country_event = {
 				}
 				location = { is_core = THIS }
 			}
-			militancy = 4
+			militancy = 2
 		}
 		any_owned = {
 			limit = { is_core = THIS }

@@ -5,7 +5,7 @@ name = "Dominican War of Independence"
 	add_defender = DOM
 	
 	war_goal = {
-		casus_belli = conquest
+		casus_belli = establish_protectorate_casus_belli
 		actor = SPA
 		receiver = DOM
 	}

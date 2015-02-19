@@ -1,9 +1,9 @@
 owner = SPA
 controller = SPA
 add_core = SPA
-trade_goods = fish
+trade_goods = grain
 life_rating = 35
-terrain = good_farmland
+terrain = rich_farmland
 naval_base = 1
 state_building = {
 	level = 1

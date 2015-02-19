@@ -3,5 +3,5 @@ controller = FRA
 add_core = FRA
 trade_goods = grain
 life_rating = 32
-terrain = good_farmland
+terrain = rich_farmland
 1861.1.1 = { railroad = 3 }

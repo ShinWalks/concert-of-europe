@@ -242,7 +242,7 @@ political_decisions = {
 			PRU_684 = { remove_core = PRU } #Upper Silesia
 			PRU_682 = { remove_core = PRU } #Lower Silesia
 			554 = { #Erfurt
-				add_core = HES
+				add_core = SAX
 				remove_core = PRU
 			}
 			RHI = { all_core = { remove_core = PRU } }

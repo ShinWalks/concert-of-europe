@@ -17938,14 +17938,14 @@
 
 	artisans = {
 
-		size = 3388
+		size = 3288
 		culture = dutch
 		religion = protestant
 
 	}
 	artisans = {
 
-		size = 137
+		size = 237
 		culture = flemish
 		religion = catholic
 
@@ -17959,14 +17959,14 @@
 	}
 	farmers = {
 
-		size = 32324
+		size = 30324
 		culture = dutch
 		religion = protestant
 
 	}
 	farmers = {
 
-		size = 1007
+		size = 3007
 		culture = flemish
 		religion = catholic
 
@@ -17991,14 +17991,14 @@
 	}
 	artisans = {
 
-		size = 2884
+		size = 1884
 		culture = dutch
 		religion = protestant
 
 	}
 	artisans = {
 
-		size = 137
+		size = 1137
 		culture = flemish
 		religion = catholic
 
@@ -18012,21 +18012,28 @@
 	}
 	clergymen = {
 
-		size = 778
+		size = 478
+		culture = dutch
+		religion = protestant
+
+	}
+	clergymen = {
+
+		size = 300
+		culture = flemish
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 22243
 		culture = dutch
 		religion = protestant
 
 	}
 	labourers = {
 
-		size = 46243
-		culture = dutch
-		religion = protestant
-
-	}
-	labourers = {
-
-		size = 2747
+		size = 26747
 		culture = flemish
 		religion = catholic
 
@@ -18051,23 +18058,44 @@
 
 	artisans = {
 
-		size = 3433
+		size = 2000
+		culture = dutch
+		religion = protestant
+
+	}
+	artisans = {
+
+		size = 1433
+		culture = flemish
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 200
 		culture = dutch
 		religion = protestant
 
 	}
 	clergymen = {
 
-		size = 366
+		size = 166
+		culture = flemish
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 15095
 		culture = dutch
 		religion = protestant
 
 	}
 	farmers = {
 
-		size = 32095
-		culture = dutch
-		religion = protestant
+		size = 17000
+		culture = flemish
+		religion = catholic
 
 	}
 
@@ -18083,35 +18111,42 @@
 	}
 	artisans = {
 
-		size = 3754
+		size = 1754
 		culture = dutch
 		religion = protestant
 
 	}
 	artisans = {
 
-		size = 824
+		size = 2824
 		culture = flemish
 		religion = catholic
 
 	}
 	clergymen = {
 
-		size = 366
+		size = 122
+		culture = dutch
+		religion = protestant
+
+	}
+	clergymen = {
+
+		size = 244
+		culture = flemish
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 9220
 		culture = dutch
 		religion = protestant
 
 	}
 	labourers = {
 
-		size = 24220
-		culture = dutch
-		religion = protestant
-
-	}
-	labourers = {
-
-		size = 7417
+		size = 22417
 		culture = flemish
 		religion = catholic
 
@@ -18143,9 +18178,16 @@
 	}
 	artisans = {
 
-		size = 3131
+		size = 2731
 		culture = dutch
 		religion = protestant
+
+	}
+	artisans = {
+
+		size = 400
+		culture = dutch
+		religion = catholic
 
 	}
 	artisans = {
@@ -18164,16 +18206,30 @@
 	}
 	clergymen = {
 
-		size = 573
+		size = 500
+		culture = dutch
+		religion = protestant
+
+	}
+	clergymen = {
+
+		size = 73
+		culture = dutch
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 40000
 		culture = dutch
 		religion = protestant
 
 	}
 	farmers = {
 
-		size = 46228
+		size = 6228
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 	farmers = {
@@ -38634,13 +38690,20 @@
 	farmers = {
 
 		size = 11000
+		culture = french
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 23000
 		culture = occitan
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 173492
+		size = 150492
 		culture = north_italian
 		religion = catholic
 
@@ -38732,8 +38795,15 @@
 	}
 	farmers = {
 
-		size = 42603
+		size = 40603
 		culture = north_italian
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 2000
+		culture = swiss
 		religion = catholic
 
 	}
@@ -40039,8 +40109,15 @@
 	}
 	farmers = {
 
-		size = 102445
+		size = 99445
 		culture = south_italian
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 3000
+		culture = albanian
 		religion = catholic
 
 	}
@@ -40220,8 +40297,15 @@
 	}
 	farmers = {
 
-		size = 57689
+		size = 52689
 		culture = south_italian
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 5000
+		culture = greek
 		religion = catholic
 
 	}
@@ -40252,8 +40336,15 @@
 	}
 	farmers = {
 
-		size = 116936
+		size = 106936
 		culture = south_italian
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 10000
+		culture = greek
 		religion = catholic
 
 	}
@@ -40291,8 +40382,15 @@
 	}
 	farmers = {
 
-		size = 72959
+		size = 63759
 		culture = south_italian
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 9200
+		culture = albanian
 		religion = catholic
 
 	}
@@ -40330,8 +40428,22 @@
 	}
 	farmers = {
 
-		size = 118424
+		size = 111424
 		culture = south_italian
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 4000
+		culture = north_italian
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 3000
+		culture = albanian
 		religion = catholic
 
 	}
@@ -40369,8 +40481,15 @@
 	}
 	farmers = {
 
-		size = 135135
+		size = 131635
 		culture = south_italian
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 3500
+		culture = albanian
 		religion = catholic
 
 	}
@@ -40401,8 +40520,15 @@
 	}
 	labourers = {
 
-		size = 68815
+		size = 65815
 		culture = south_italian
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 3000
+		culture = north_italian
 		religion = catholic
 
 	}
@@ -40440,8 +40566,15 @@
 	}
 	labourers = {
 
-		size = 136440
+		size = 131940
 		culture = south_italian
+		religion = catholic
+
+	}
+	labourers = {
+
+		size = 4500
+		culture = north_italian
 		religion = catholic
 
 	}
@@ -40479,7 +40612,14 @@
 	}
 	farmers = {
 
-		size = 64919
+		size = 3000
+		culture = north_italian
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 61919
 		culture = south_italian
 		religion = catholic
 
@@ -42291,7 +42431,14 @@
 	}
 	labourers = {
 
-		size = 4784
+		size = 1000
+		culture = ukrainian
+		religion = orthodox
+
+	}
+	labourers = {
+
+		size = 3784
 		culture = south_german
 		religion = catholic
 
@@ -42358,28 +42505,42 @@
 	}
 	farmers = {
 
-		size = 22274
+		size = 21274
 		culture = serb
 		religion = orthodox
 
 	}
 	farmers = {
 
-		size = 7966
+		size = 7466
 		culture = hungarian
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 16123
+		size = 15123
 		culture = south_german
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 9431
+		size = 1500
+		culture = czech
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 2000
+		culture = slovak
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 8431
 		culture = romanian
 		religion = orthodox
 
@@ -52141,7 +52302,7 @@
 	}
 	farmers = {
 
-		size = 14019
+		size = 13419
 		culture = byelorussian
 		religion = orthodox
 
@@ -52155,7 +52316,14 @@
 	}
 	farmers = {
 
-		size = 17235
+		size = 1800
+		culture = lithuanian
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 16035
 		culture = byelorussian
 		religion = catholic
 
@@ -56929,7 +57097,7 @@
 
 	artisans = {
 
-		size = 2938
+		size = 979
 		culture = manchu
 		religion = mahayana
 
@@ -56943,14 +57111,14 @@
 	}
 	clergymen = {
 
-		size = 653
+		size = 218
 		culture = manchu
 		religion = mahayana
 
 	}
 	farmers = {
 
-		size = 50189
+		size = 16730
 		culture = manchu
 		religion = mahayana
 
@@ -60861,7 +61029,7 @@
 
 	aristocrats = {
 
-		size = 5858
+		size = 1953
 		culture = manchu
 		religion = mahayana
 
@@ -60875,7 +61043,7 @@
 	}
 	artisans = {
 
-		size = 3684
+		size = 1228
 		culture = manchu
 		religion = mahayana
 
@@ -60889,14 +61057,14 @@
 	}
 	clergymen = {
 
-		size = 767
+		size = 256
 		culture = manchu
 		religion = mahayana
 
 	}
 	farmers = {
 
-		size = 66305
+		size = 22102
 		culture = manchu
 		religion = mahayana
 
@@ -60917,7 +61085,7 @@
 	}
 	soldiers = {
 
-		size = 3139
+		size = 1046
 		culture = manchu
 		religion = mahayana
 
@@ -60928,7 +61096,7 @@
 
 	artisans = {
 
-		size = 3731
+		size = 1244
 		culture = manchu
 		religion = mahayana
 
@@ -60942,14 +61110,14 @@
 	}
 	clergymen = {
 
-		size = 750
+		size = 250
 		culture = manchu
 		religion = mahayana
 
 	}
 	farmers = {
 
-		size = 68077
+		size = 22692
 		culture = manchu
 		religion = mahayana
 
@@ -60967,7 +61135,7 @@
 
 	artisans = {
 
-		size = 746
+		size = 249
 		culture = manchu
 		religion = mahayana
 
@@ -60981,14 +61149,14 @@
 	}
 	clergymen = {
 
-		size = 186
+		size = 62
 		culture = manchu
 		religion = mahayana
 
 	}
 	labourers = {
 
-		size = 13596
+		size = 4532
 		culture = manchu
 		religion = mahayana
 
@@ -61006,7 +61174,7 @@
 
 	artisans = {
 
-		size = 4291
+		size = 1430
 		culture = manchu
 		religion = mahayana
 
@@ -61020,21 +61188,21 @@
 	}
 	bureaucrats = {
 
-		size = 396
+		size = 132
 		culture = manchu
 		religion = mahayana
 
 	}
 	clergymen = {
 
-		size = 867
+		size = 289
 		culture = manchu
 		religion = mahayana
 
 	}
 	farmers = {
 
-		size = 76846
+		size = 25615
 		culture = manchu
 		religion = mahayana
 
@@ -86200,7 +86368,7 @@
 
 	aristocrats = {
 
-		size = 20663
+		size = 6888
 		culture = manchu
 		religion = mahayana
 
@@ -86235,20 +86403,6 @@
 	}
 	artisans = {
 
-		size = 10261
-		culture = manchu
-		religion = mahayana
-
-	}
-	artisans = {
-
-		size = 1026
-		culture = manchu
-		religion = mahayana
-
-	}
-	artisans = {
-
 		size = 2285
 		culture = korean
 		religion = mahayana
@@ -86270,14 +86424,14 @@
 	}
 	bureaucrats = {
 
-		size = 1212
+		size = 404
 		culture = manchu
 		religion = mahayana
 
 	}
 	clergymen = {
 
-		size = 3964
+		size = 1321
 		culture = manchu
 		religion = mahayana
 
@@ -86305,7 +86459,7 @@
 	}
 	farmers = {
 
-		size = 351467
+		size = 117156
 		culture = manchu
 		religion = mahayana
 
@@ -86333,14 +86487,14 @@
 	}
 	officers = {
 
-		size = 699
+		size = 233
 		culture = manchu
 		religion = mahayana
 
 	}
 	soldiers = {
 
-		size = 14296
+		size = 4765
 		culture = manchu
 		religion = mahayana
 
@@ -86372,7 +86526,7 @@
 
 	artisans = {
 
-		size = 6623
+		size = 2208
 		culture = manchu
 		religion = mahayana
 
@@ -86393,7 +86547,7 @@
 	}
 	clergymen = {
 
-		size = 1306
+		size = 435
 		culture = manchu
 		religion = mahayana
 
@@ -86414,7 +86568,7 @@
 	}
 	farmers = {
 
-		size = 120599
+		size = 40200
 		culture = manchu
 		religion = mahayana
 
@@ -92869,7 +93023,7 @@
 
 	aristocrats = {
 
-		size = 21106
+		size = 7035
 		culture = manchu
 		religion = mahayana
 
@@ -92890,21 +93044,7 @@
 	}
 	artisans = {
 
-		size = 10261
-		culture = manchu
-		religion = mahayana
-
-	}
-	artisans = {
-
-		size = 10261
-		culture = manchu
-		religion = mahayana
-
-	}
-	artisans = {
-
-		size = 4244
+		size = 1415
 		culture = manchu
 		religion = mahayana
 
@@ -92918,21 +93058,21 @@
 	}
 	bureaucrats = {
 
-		size = 2145
+		size = 715
 		culture = manchu
 		religion = mahayana
 
 	}
 	clergymen = {
 
-		size = 6506
+		size = 2169
 		culture = manchu
 		religion = mahayana
 
 	}
 	labourers = {
 
-		size = 582219
+		size = 194073
 		culture = manchu
 		religion = mahayana
 
@@ -92946,14 +93086,14 @@
 	}
 	officers = {
 
-		size = 1492
+		size = 497
 		culture = manchu
 		religion = mahayana
 
 	}
 	soldiers = {
 
-		size = 12123
+		size = 4041
 		culture = manchu
 		religion = mahayana
 
@@ -92964,14 +93104,7 @@
 
 	artisans = {
 
-		size = 10261
-		culture = manchu
-		religion = mahayana
-
-	}
-	artisans = {
-
-		size = 8302
+		size = 6189
 		culture = manchu
 		religion = mahayana
 
@@ -92985,14 +93118,14 @@
 	}
 	clergymen = {
 
-		size = 3614
+		size = 1205
 		culture = manchu
 		religion = mahayana
 
 	}
 	labourers = {
 
-		size = 320868
+		size = 106956
 		culture = manchu
 		religion = mahayana
 
@@ -93010,14 +93143,7 @@
 
 	artisans = {
 
-		size = 10261
-		culture = manchu
-		religion = mahayana
-
-	}
-	artisans = {
-
-		size = 1399
+		size = 3887
 		culture = manchu
 		religion = mahayana
 
@@ -93031,7 +93157,7 @@
 	}
 	clergymen = {
 
-		size = 2145
+		size = 715
 		culture = manchu
 		religion = mahayana
 
@@ -93045,7 +93171,7 @@
 	}
 	labourers = {
 
-		size = 194414
+		size = 64805
 		culture = manchu
 		religion = mahayana
 
@@ -93063,14 +93189,7 @@
 
 	artisans = {
 
-		size = 10261
-		culture = manchu
-		religion = mahayana
-
-	}
-	artisans = {
-
-		size = 2334
+		size = 4198
 		culture = manchu
 		religion = mahayana
 
@@ -93084,7 +93203,7 @@
 	}
 	clergymen = {
 
-		size = 2377
+		size = 792
 		culture = manchu
 		religion = mahayana
 
@@ -93098,7 +93217,7 @@
 	}
 	labourers = {
 
-		size = 212279
+		size = 70760
 		culture = manchu
 		religion = mahayana
 
@@ -146059,7 +146178,7 @@
 	}
 	farmers = {
 
-		size = 24266
+		size = 22266
 		culture = hungarian
 		religion = catholic
 
@@ -146073,14 +146192,21 @@
 	}
 	farmers = {
 
-		size = 8584
+		size = 7584
 		culture = slovak
 		religion = catholic
 
 	}
 	farmers = {
 
-		size = 18657
+		size = 4000
+		culture = ukrainian
+		religion = orthodox
+
+	}
+	farmers = {
+
+		size = 17657
 		culture = south_german
 		religion = catholic
 
@@ -148310,23 +148436,44 @@
 	}
 	artisans = {
 
-		size = 2500
+		size = 2150
+		culture = dutch
+		religion = protestant
+
+	}
+	artisans = {
+
+		size = 350
+		culture = dutch
+		religion = catholic
+
+	}
+	clergymen = {
+
+		size = 420
 		culture = dutch
 		religion = protestant
 
 	}
 	clergymen = {
 
-		size = 480
+		size = 60
+		culture = dutch
+		religion = catholic
+
+	}
+	farmers = {
+
+		size = 37000
 		culture = dutch
 		religion = protestant
 
 	}
 	farmers = {
 
-		size = 42000
+		size = 5000
 		culture = dutch
-		religion = protestant
+		religion = catholic
 
 	}
 
@@ -148972,21 +149119,21 @@
 
 	artisans = {
 
-		size = 2891
+		size = 964
 		culture = manchu
 		religion = mahayana
 
 	}
 	clergymen = {
 
-		size = 578
+		size = 193
 		culture = manchu
 		religion = mahayana
 
 	}
 	labourers = {
 
-		size = 51798
+		size = 17266
 		culture = manchu
 		religion = mahayana
 

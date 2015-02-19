@@ -5,9 +5,9 @@ add_core = ITA
 trade_goods = fish
 life_rating = 35
 terrain = hilly_farmland
+naval_base = 1
 1861.1.1 = {
 	controller = ITA
 	owner = ITA
-	add_core = ITA
+	railroad = 3
 }
-1861.1.1 = { railroad = 3 }

@@ -9,5 +9,4 @@ terrain = floodplain_farmland
 1861.1.1 = {
 	controller = ITA
 	owner = ITA
-	add_core = ITA
 }

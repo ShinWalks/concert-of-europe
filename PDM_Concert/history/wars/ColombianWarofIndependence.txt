@@ -5,7 +5,7 @@ name = "Colombian War of Independence"
 	add_defender = GCO
 	
 	war_goal = {
-		casus_belli = conquest
+		casus_belli = establish_protectorate_casus_belli
 		actor = SPA
 		receiver = GCO
 	}

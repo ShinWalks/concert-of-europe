@@ -1,7 +1,7 @@
 add_core = USA
 trade_goods = fruit
 life_rating = 35
-terrain = temperate_grassland
+terrain = rich_farmland
 colonial = 1
 1836.1.1 = {
 	owner = USA

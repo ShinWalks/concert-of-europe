@@ -19,6 +19,9 @@ PRU = {
 RUS = {
 	value = 125
 }
+ASH = {
+	value = 150
+}
 
 army = {
 	name = "Danske Heeren"

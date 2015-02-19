@@ -8,9 +8,5 @@ terrain = deciduous_forest_hills
 1861.1.1 = {
 	controller = ITA
 	owner = ITA
-	add_core = ITA
-}
-1861.1.1 = { 
-	railroad = 3 
-	naval_base = 1
+	railroad = 3
 }
