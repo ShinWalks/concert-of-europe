@@ -2370,3 +2370,13 @@ the_eye_of_the_storm = {
 	political_reform_desire = -0.25
 	icon = 5
 }
+
+# New modifiers by Five_X
+
+lanfang_republic_modifier = {
+	global_pop_militancy_modifier = -0.025
+	global_pop_consciousness_modifier = 0.025
+	research_points = 0.1
+	suppression_points_modifier = -0.25
+	icon = 5
+}

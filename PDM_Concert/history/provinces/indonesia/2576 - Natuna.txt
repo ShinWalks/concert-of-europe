@@ -1,5 +1,6 @@
 owner = NET
 controller = NET
+add_core = JOH
 trade_goods = spices
 life_rating = 30
 terrain = jungle

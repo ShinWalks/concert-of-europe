@@ -431,10 +431,10 @@ migration_target = {
 	}
 	modifier = {
 		factor = 1.2
-		OR = { 
+		OR = {
+			terrain = rich_farmland
 			terrain = good_farmland
 			terrain = floodplain_farmland
-			terrain = plains
 		}
 	}
 	modifier = {

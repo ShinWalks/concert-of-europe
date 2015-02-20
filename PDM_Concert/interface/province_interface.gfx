@@ -239,7 +239,11 @@ spriteTypes = {
 	}
 	
 	
-	
+	spriteType = {
+		name = "GFX_terrainimg_rich_farmland"
+		texturefile = "gfx\\interface\\terrain_rich_farmland.tga"
+		norefcount = yes
+	}
 	
 	spriteType = {
 		name = "GFX_terrainimg_good_farmland"
