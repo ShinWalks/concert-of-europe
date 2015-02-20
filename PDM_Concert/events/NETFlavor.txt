@@ -1,7 +1,5264 @@
+#############################################
+#											#
+#	Build-up to the Belgian Revolution		#
+#											#
+#############################################
+#The Stelselwet
 country_event = {
 	id = 46450
-	title = "EVTNAME46450" #The Walloon Movement
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		owns = 387
+	}
+
+	title = "ETVNAME46450"
 	desc = "EVTDESC46450"
+	picture = "DIM_nederlandsch_congres"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = "Favor the north and trade."
+		set_country_flag = DIM_grain_tax
+		add_country_modifier = {
+			name = tax_reforms
+			duration = 3600
+		}
+		any_pop = {
+			limit = {
+				culture = flemish
+			}
+			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				culture = wallonian
+			}
+			consciousness = 3
+			ideology = {
+				value = separatist
+				factor = 0.1
+			}
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = 8
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "Favor the south and industry."
+		set_country_flag = DIM_potato_tax
+		add_country_modifier = {
+			name = tax_reforms
+			duration = 1800
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			militancy = 1
+			consciousness = 3
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 8
+		}
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+# The Location of the Capital
+country_event = {
+	id = 46451
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		owns = 387
+	}
+
+	title = "EVTNAME46451"
+	desc = "EVTDESC46451"
+	picture = "DIM_parliament"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 170
+		modifier = {
+			factor = 0.85
+			check_variable = {
+				which = belgian_nationalism
+				value = 25
+			}
+		}
+		modifier = {
+			factor = 0.7
+			check_variable = {
+				which = belgian_nationalism
+				value = 30
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = belgian_nationalism
+				value = 35
+			}
+		}
+		modifier = {
+			factor = 0.2
+			check_variable = {
+				which = belgian_nationalism
+				value = 40
+			}
+		}
+		modifier = {
+			factor = 0.8
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+		}
+		modifier = {
+			factor = 0.6
+			check_variable = {
+				which = dutch_nationalism
+				value = 25
+			}
+		}
+		modifier = {
+			factor = 0.3
+			check_variable = {
+				which = dutch_nationalism
+				value = 30
+			}
+		}
+		modifier = {
+			factor = 0.2
+			check_variable = {
+				which = dutch_nationalism
+				value = 35
+			}
+		}
+	}
+
+	option = {
+		name = "Govern from The Hague."
+		change_variable = {
+			which = belgian_nationalism
+			value = 6
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -4
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = -2
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = "Govern from Brussels."
+		change_variable = {
+			which = belgian_nationalism
+			value = -4
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 6
+		}
+		capital = 387
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = -2
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = 4
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = {
+		name = "Retain the current arrangement."
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		treasury = -5000
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = 1
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+}
+
+# The Language Laws
+country_event = {
+	id = 46452
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		NOT = {
+			citizenship_policy = full_citizenship
+		}
+		owns = 387
+	}
+
+	title = "EVTNAME46452"
+	desc = "EVTDESC46452"
+	picture = "DIM_van_maanen"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "Enforce the policy throughout the country."
+		set_country_flag = neerlandisatiepolitiek_expanded
+		prestige = 5
+		change_variable = {
+			which = belgian_nationalism
+			value = 8
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -2
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					AND = {
+						culture = flemish
+						NOT = { strata = poor }
+					}
+				}
+			}
+			consciousness = 5
+		}
+		NET_375 = {
+			add_province_modifier = {
+				name = national_assimilation
+				duration = 3650
+			}	
+		}
+		NET_385 = {
+			add_province_modifier = {
+				name = national_assimilation
+				duration = 3650
+			}	
+		}
+		NET_379 = {
+			add_province_modifier = {
+				name = national_assimilation
+				duration = 3650
+			}	
+		}
+		BEL_387 = {
+			add_province_modifier = {
+				name = national_assimilation
+				duration = 3650
+			}	
+		}
+		BEL_394 = {
+			add_province_modifier = {
+				name = national_assimilation
+				duration = 3650
+			}	
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+	
+	option = {
+		name = "Mitigate the policy in Wallonia."
+		set_country_flag = neerlandisatiepolitiek
+		prestige = -2
+		change_variable = {
+			which = belgian_nationalism
+			value = 4
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					AND = {
+						culture = flemish
+						NOT = { strata = poor }
+					}
+				}
+			}
+			consciousness = 3
+		}
+		NET_375 = {
+			add_province_modifier = {
+				name = national_assimilation
+				duration = 3650
+			}	
+		}
+		NET_385 = {
+			add_province_modifier = {
+				name = national_assimilation
+				duration = 3650
+			}	
+		}
+		NET_379 = {
+			add_province_modifier = {
+				name = national_assimilation
+				duration = 3650
+			}	
+		}
+		BEL_387 = {
+			add_province_modifier = {
+				name = national_assimilation
+				duration = 3650
+			}	
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = "Rescind the policy in the south."
+		prestige = -5
+		change_variable = {
+			which = belgian_nationalism
+			value = -4
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					AND = {
+						culture = flemish
+						NOT = { strata = poor }
+					}
+				}
+			}
+			consciousness = -3
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# A Plea
+country_event = {
+	id = 210421
+	trigger = {
+		tag = NET
+		OR = {
+			has_country_flag = neerlandisatiepolitiek
+			has_country_flag = neerlandisatiepolitiek_expanded
+		}
+		NOT = {
+			citizenship_policy = full_citizenship
+		}
+		owns = 387
+		check_variable = {
+			which = belgian_nationalism
+			value = 18
+		}
+	}
+
+	title = "DIM_BEL_revolution_language_laws_title"
+	desc = "DIM_BEL_revolution_a_legalistic_protest_desc"
+	picture = "DIM_van_maanen"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = "Support him"
+		set_country_flag = DIM_van_maanen_supported
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 1
+		}
+	}
+	
+	option = {
+		name = "Remand him"
+		set_country_flag = DIM_van_maanen_remanded
+		prestige = -1
+		change_variable = {
+			which = belgian_nationalism
+			value = -1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = -1
+		}
+	}
+}
+
+# The Language Laws part 2
+country_event = {
+	id = 210422
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_van_maanen_remanded
+		NOT = { has_country_flag = DIM_van_maanen_supported }
+		owns = 387
+		check_variable = {
+			which = belgian_nationalism
+			value = 24
+		}
+	}
+
+	title = "DIM_BEL_revolution_language_laws_title"
+	desc = "DIM_BEL_revolution_language_laws_2_desc"
+	picture = "DIM_van_maanen"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = "Persevere"
+		change_variable = {
+			which = belgian_nationalism
+			value = 2
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 1
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	
+	option = {
+		name = "Relent"
+		change_variable = {
+			which = belgian_nationalism
+			value = 3
+		}
+		prestige = -2
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 2
+		}
+	}
+}
+
+# A Plea, part 2
+country_event = {
+	id = 210423
+	trigger = {
+		tag = NET
+		has_country_flag = neerlandisatiepolitiek
+		has_country_flag = DIM_van_maanen_supported
+		NOT = { has_country_flag = DIM_van_maanen_remanded }
+		NOT = { citizenship_policy = full_citizenship }
+		owns = 387
+		check_variable = {
+			which = belgian_nationalism
+			value = 18
+		}
+	}
+
+	title = "DIM_BEL_revolution_language_laws_title"
+	desc = "DIM_BEL_revolution_a_plea_desc"
+	picture = "DIM_van_maanen"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = "Support him"
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 1
+		}
+	}
+	
+	option = {
+		name = "Remand him"
+		set_country_flag = DIM_van_maanen_remanded
+		prestige = -2
+		change_variable = {
+			which = belgian_nationalism
+			value = 3
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 1.5
+		}
+	}
+}
+
+#The Reveil
+country_event = {
+	id = 46455
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+	}
+
+	title = "EVTNAME46455"
+	desc = "EVTDESC46455"
+	picture = "DIM_reveil"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 0.25
+			year = 1823
+		}
+		modifier = {
+			factor = 0.25
+			year = 1825
+		}
+	}
+
+	option = {
+		name = "We hope they will respect the government."
+		set_country_flag = DIM_the_reveil
+		change_variable = {
+			which = dutch_nationalism
+			value = 10
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = protestant
+				strata = poor
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.125
+			}
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = protestant
+				strata = middle
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.025
+			}
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = protestant
+				strata = rich
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.05
+			}
+		}
+	}
+}
+
+#Hendrik de Cock
+country_event = {
+	id = 46456
+	trigger = {
+		tag = NET
+		exists = yes
+		has_country_flag = DIM_the_reveil
+		NOT = { minorities_reform = protected }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.8
+			check_variable = {
+				which = dutch_nationalism
+				value = 15
+			}
+		}
+		modifier = {
+			factor = 0.6
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+		}
+		modifier = {
+			factor = 0.3
+			check_variable = {
+				which = dutch_nationalism
+				value = 25
+			}
+		}
+		modifier = {
+			factor = 0.2
+			check_variable = {
+				which = dutch_nationalism
+				value = 30
+			}
+		}
+		modifier = {
+			factor = 0.2
+			check_variable = {
+				which = dutch_nationalism
+				value = 35
+			}
+		}
+	}
+	
+	title = "EVTNAME46456"
+	desc = "EVTDESC46456"
+	picture = "DIM_de_cock"
+	fire_only_once = yes
+	
+	option = {
+		name = "The government has no role to play here."
+		set_country_flag = DIM_afscheiding_1834_intolerance
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes 
+					is_accepted_culture = yes
+				}
+				has_pop_religion = protestant
+			}
+			consciousness = -2
+		}
+		383 = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes 
+						is_accepted_culture = yes
+					}
+					has_pop_religion = protestant
+				}
+				ideology = {
+					factor = 0.1
+					value = reactionary
+				}
+				scaled_consciousness = {
+					factor = 5
+					ideology = reactionary
+				}
+				scaled_militancy = {
+					factor = 1
+					ideology = reactionary
+				}
+			}
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	option = {
+		name = "Pressure the Church to reinstate him."
+		change_variable = {
+			which = dutch_nationalism
+			value = -2
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = 4
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes 
+					is_accepted_culture = yes
+				}
+				has_pop_religion = protestant
+			}
+			consciousness = 2
+		}
+		383 = {
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes 
+						is_accepted_culture = yes
+					}
+					has_pop_religion = protestant 
+				}
+				ideology = {
+					factor = 0.2
+					value = reactionary
+				}
+				scaled_consciousness = {
+					factor = -4
+					ideology = reactionary
+				}
+				scaled_militancy = {
+					factor = -1
+					ideology = reactionary
+				}
+			}
+		}
+	}
+}
+
+#The Secession of 1834
+country_event = {
+	id = 46457
+	trigger = {
+		tag = NET
+		exists = yes
+		has_country_flag = DIM_afscheiding_1834_intolerance
+		NOT = {
+			minorities_reform = protected
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 15
+			}
+			factor = 0.8
+		}
+		modifier = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+			factor = 0.6
+		}
+		modifier = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 25
+			}
+			factor = 0.4
+		}
+		modifier = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 30
+			}
+			factor = 0.2
+		}
+	}
+	
+	title = "EVTNAME46457"
+	desc = "EVTDESC46457"
+	picture = "DIM_afscheiding_1834"
+	fire_only_once = yes
+	
+	option = {
+		name = "Pester them until they return to the fold."
+		clr_country_flag = DIM_afscheiding_1834_intolerance
+		change_variable = {
+			which = dutch_nationalism
+			value = 4
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes 
+					is_accepted_culture = yes
+				}
+				has_pop_religion = protestant
+			}
+			ideology = {
+				factor = -0.05
+				value = reactionary
+			}
+			scaled_militancy = {
+				factor = 3
+				ideology = reactionary 
+			}
+			scaled_consciousness = {
+				factor = 4
+				ideology = reactionary 
+			}
+			scaled_consciousness = {
+				factor = 1
+				ideology = liberal
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = anarcho_liberal
+			}
+			scaled_consciousness = {
+				factor = -2
+				ideology = conservative
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	option = {
+		name = "Recognize them as a separate church."
+		clr_country_flag = DIM_afscheiding_1834_intolerance
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes 
+					is_accepted_culture = yes
+				}
+				has_pop_religion = protestant
+			}
+			ideology = {
+				factor = 0.05
+				value = reactionary
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = reactionary 
+			}
+			scaled_consciousness = {
+				factor = -1
+				ideology = liberal
+			}
+			scaled_consciousness = {
+				factor = -2
+				ideology = anarcho_liberal
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+			}
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	option = {
+		name = "Perhaps a return to orthodoxy is not so bad after all."
+		clr_country_flag = DIM_afscheiding_1834_intolerance
+		change_variable = {
+			which = dutch_nationalism
+			value = -4
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = 6
+		}
+		upper_house = {
+			value = 0.2
+			ideology = reactionary
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes 
+					is_accepted_culture = yes
+				}
+				has_pop_religion = protestant
+			}
+			ideology = {
+				factor = 0.2
+				value = reactionary
+			}
+			scaled_militancy = {
+				factor = -4
+				ideology = reactionary 
+			}
+			scaled_consciousness = {
+				factor = -5
+				ideology = reactionary 
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = liberal
+			}
+			scaled_consciousness = {
+				factor = 3
+				ideology = anarcho_liberal
+			}
+			scaled_consciousness = {
+				factor = 1
+				ideology = conservative
+			}
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+#Fonds voor Nijverheid
+country_event = {
+	id = 210402
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		has_country_flag = DIM_grain_tax
+		owns = 387	
+		OR = {
+			economic_policy = interventionism
+			economic_policy = state_capitalism
+		}
+	}
+
+	title = "DIM_BEL_fonds_voor_nijverheid_title"
+	desc = "DIM_BEL_fonds_voor_nijverheid_desc"
+	picture = "DIM_fonds_nijverheid"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 7
+	}
+
+	option = {
+		name = "Invest in southern industry"
+		change_variable = {
+			which = belgian_nationalism
+			value = -1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = 0.5
+		}
+		BEL_394 = {
+			capitalists = { money = 700 }
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "Invest in northern trade"
+		change_variable = {
+			which = belgian_nationalism
+			value = 2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -1
+		}
+		any_pop = {
+			limit = {
+				culture = flemish
+			}
+			consciousness = 0.5
+		}
+		any_pop = {
+			limit = {
+				culture = wallonian
+			}
+			consciousness = 1
+		}
+		NET_375 = {
+			capitalists = { money = 350 }
+			aristocrats = { money = 350 }
+		}
+	}
+	option = {
+		name = "Invest in the treasury"
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = DIM_treasury_investment
+			value = 1
+		}
+		treasury = 5000
+		any_owned = {
+			limit = {
+				continent = europe
+			}
+			aristocrats = { consciousness = 2 }
+			capitalists = { consciousness = 2 }
+		}
+	}
+}
+
+#The Collegium Philosophicum
+country_event = {
+	id = 210403
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		owns = 387		
+		NOT = { minorities_reform = protected }
+		check_variable = {
+			which = belgian_nationalism
+			value = 16
+		}
+	}
+
+	title = "DIM_BEL_revolution_collegium_philosophicum_title"
+	desc = "DIM_BEL_revolution_collegium_philosophicum_desc"
+	picture = "DIM_collegium_philosophicum"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.7
+			check_variable = {
+				which = belgian_nationalism
+				value = 18
+			}
+		}
+		modifier = {
+			factor = 0.65
+			check_variable = {
+				which = belgian_nationalism
+				value = 21
+			}
+		}
+		modifier = {
+			factor = 0.65
+			check_variable = {
+				which = belgian_nationalism
+				value = 24
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = belgian_nationalism
+				value = 27
+			}
+		}
+		modifier = {
+			factor = 0.45
+			check_variable = {
+				which = belgian_nationalism
+				value = 30
+			}
+		}
+		modifier = {
+			factor = 0.15
+			check_variable = {
+				which = belgian_nationalism
+				value = 35
+			}
+		}
+	}
+
+	option = {
+		name = "A good idea"
+		set_country_flag = DIM_collegium_philosophicum
+		change_variable = {
+			which = belgian_nationalism
+			value = 3
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -1
+		}
+		prestige = 2
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = -3
+			dominant_issue = {
+				value = church
+				factor = 0.025
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "A bad idea"
+		change_variable = {
+			which = belgian_nationalism
+			value = -1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 2
+		}
+		relation = {
+			who = PAP
+			value = 10
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = 3
+			militancy = -1
+		}
+		any_pop = {
+			limit = { 
+				continent = europe
+				pop_majority_ideology = liberal
+			}
+		}
+	}
+}
+
+#The Collegium Philosophicum - fails
+country_event = {
+	id = 210404
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_collegium_philosophicum
+		owns = 387
+		check_variable = {
+			which = belgian_nationalism
+			value = 16
+		}
+	}
+
+	title = "DIM_BEL_revolution_collegium_philosophicum_title"
+	desc = "DIM_BEL_revolution_collegium_philosophicum_failed_desc"
+	picture = "DIM_collegium_philosophicum_opgeheven"
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.95
+			has_country_flag = DIM_collegium_try_again
+		}
+		modifier = {
+			factor = 0.85
+			check_variable = {
+				which = belgian_nationalism
+				value = 18
+			}
+		}
+		modifier = {
+			factor = 0.85
+			check_variable = {
+				which = belgian_nationalism
+				value = 20
+			}
+		}
+		modifier = {
+			factor = 0.85
+			check_variable = {
+				which = belgian_nationalism
+				value = 22
+			}
+		}
+		modifier = {
+			factor = 0.85
+			check_variable = {
+				which = belgian_nationalism
+				value = 24
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = belgian_nationalism
+				value = 26
+			}
+		}
+	}
+
+	option = {
+		name = "Make the Collegium facultative"
+		clr_country_flag = DIM_collegium_failed
+		clr_country_flag = DIM_collegium_try_again
+		clr_country_flag = DIM_collegium_undecided
+		clr_country_flag = DIM_collegium_philosophicum
+		clr_country_flag = DIM_collegium_success
+		change_variable = {
+			which = belgian_nationalism
+			value = -2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 2
+		}
+		prestige = -5
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = 2
+			militancy = -1
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				has_country_flag = DIM_collegium_try_again
+				factor = 10
+			}
+		}
+	}
+	option = {
+		name = "Hold out until they give in"
+		set_country_flag = DIM_collegium_try_again
+		change_variable = {
+			which = belgian_nationalism
+			value = 2
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = -1
+			militancy = 3
+		}
+	}
+}
+
+#The Collegium Philosophicum - undecided
+country_event = {
+	id = 210405
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_collegium_philosophicum
+		BEL = { exists = no }			
+		owns = 387
+	}
+
+	title = "DIM_BEL_revolution_collegium_philosophicum_title"
+	desc = "DIM_BEL_revolution_collegium_philosophicum_undecided_desc"
+	picture = "DIM_collegium_philosophicum_opgeheven"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 0.85
+			check_variable = {
+				which = belgian_nationalism
+				value = 8
+			}
+		}
+		modifier = {
+			factor = 0.85
+			check_variable = {
+				which = belgian_nationalism
+				value = 10
+			}
+		}
+		modifier = {
+			factor = 1.15
+			check_variable = {
+				which = belgian_nationalism
+				value = 12
+			}
+		}
+		modifier = {
+			factor = 1.5
+			check_variable = {
+				which = belgian_nationalism
+				value = 16
+			}
+		}
+	}
+	option = {
+		name = "Give it some time"
+		set_country_flag = DIM_collegium_undecided
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = 0.5
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				has_country_flag = DIM_collegium_try_again
+				factor = 0
+			}
+			modifier = {
+				has_country_flag = DIM_collegium_undecided
+				factor = 0
+			}
+		}
+	}
+	
+	option = {
+		name = "Make the Collegium facultative"
+		clr_country_flag = DIM_collegium_failed
+		clr_country_flag = DIM_collegium_try_again
+		clr_country_flag = DIM_collegium_undecided
+		clr_country_flag = DIM_collegium_philosophicum
+		clr_country_flag = DIM_collegium_success
+		change_variable = {
+			which = belgian_nationalism
+			value = -2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 2
+		}
+		prestige = -2
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = -0.5
+			militancy = -1
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				has_country_flag = DIM_collegium_undecided
+				factor = 2
+			}
+		}
+	}
+}
+
+#The Collegium Philosophicum - success
+country_event = {
+	id = 210406
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_collegium_philosophicum
+		owns = 387	
+	}
+
+	title = "DIM_BEL_revolution_collegium_philosophicum_title"
+	desc = "DIM_BEL_revolution_collegium_philosophicum_success_desc"
+	picture = "DIM_collegium_philosophicum_opgeheven"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.85
+			NOT = {
+				check_variable = {
+					which = belgian_nationalism
+					value = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 1.15
+			check_variable = {
+				which = belgian_nationalism
+				value = 12
+			}
+		}
+		modifier = {
+			factor = 1.5
+			check_variable = {
+				which = belgian_nationalism
+				value = 16
+			}
+		}
+		modifier = {
+			factor = 2
+			check_variable = {
+				which = belgian_nationalism
+				value = 22
+			}
+		}
+	}
+
+	option = {
+		name = "Wonderful"
+		clr_country_flag = DIM_collegium_failed
+		clr_country_flag = DIM_collegium_try_again
+		clr_country_flag = DIM_collegium_undecided
+		clr_country_flag = DIM_collegium_philosophicum
+		set_country_flag = DIM_collegium_success
+		change_variable = {
+			which = belgian_nationalism
+			value = -8
+		}
+		prestige = 2
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = -1
+			militancy = -1
+		}
+	}
+}
+
+
+#Concordaat van 1827
+country_event = {
+	id = 210407
+	is_triggered_only = yes
+
+	title = "DIM_NET_concordaat_1827_title"
+	desc = "DIM_NET_concordaat_1827_desc"
+	picture = "DIM_concordaat_1827"
+	fire_only_once = yes
+
+	option = {
+		name = "The Catholics will never dominate us!"
+		change_variable = {
+			which = belgian_nationalism
+			value = 3
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -1
+		}
+		political_reform = limited
+		any_pop = {
+			limit = {
+				continent = europe
+				has_pop_religion = catholic
+			}
+			dominant_issue = {
+				value = protected
+				factor = 0.04
+			}
+			consciousness = 2
+			militancy = 2
+		}
+		any_pop = {
+			limit = {
+				continent = europe
+				has_pop_religion = protestant
+			}
+			consciousness = -2
+			militancy = -1
+		}
+	}
+	option = {
+		name = "Allow bishops in the area's where there is a Catholic majority"
+		change_variable = {
+			which = dutch_nationalism
+			value = 2
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = -2
+		}
+		political_reform = limited
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = 1
+			militancy = -1
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = catholic
+			}
+			consciousness = -2
+			militancy = -2
+		}
+		any_pop = {
+			limit = {
+				continent = europe
+				has_pop_religion = protestant
+			}
+			consciousness = 1
+			militancy = 1.5
+		}
+	}
+	option = {
+		name = "A balanced religious policy in everybody's interest"
+		change_variable = {
+			which = belgian_nationalism
+			value = -6
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 8
+		}
+		political_reform = protected
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = -2
+			militancy = -2
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = catholic
+			}
+			consciousness = -2
+			militancy = -3
+		}
+		any_pop = {
+			limit = {
+				continent = europe
+				has_pop_religion = protestant
+			}
+			dominant_issue = {
+				value = limited
+				factor = 0.04
+			}
+			consciousness = 1
+			militancy = 2.5
+		}
+	}
+}
+
+#The issue of press rights
+country_event = {
+	id = 210408
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		owns = 387
+		NOT = {
+			press_rights = free_press
+		}
+	}
+
+	title = "DIM_BEL_revolution_press_issue_title"
+	desc = "DIM_BEL_revolution_press_issue_desc"
+	picture = "DIM_newspapers"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 15
+			}
+			factor = 0.8
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 18
+			}
+			factor = 0.8
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 21
+			}
+			factor = 0.8
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 24
+			}
+			factor = 0.8
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 27
+			}
+			factor = 0.5
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 30
+			}
+			factor = 0.4
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 35
+			}
+			factor = 0.15
+		}
+	}
+
+	option = {
+		name = "The publisher is legal owner of the work, and is accountable"
+		change_variable = {
+			which = belgian_nationalism
+			value = 2
+		}
+		political_reform = censored_press
+		any_pop = {
+			limit = {
+				culture = flemish
+			}
+			consciousness = 1
+			militancy = 0.5
+			dominant_issue = {
+				value = free_press
+				factor = 0.01
+			}
+		}
+		any_pop = {
+			limit = {
+				culture = wallonian
+			}
+			dominant_issue = {
+				value = free_press
+				factor = 0.06
+			}
+			consciousness = 2
+			militancy = 1
+		}
+	}
+	option = {
+		name = "The publisher is but a tool, and is not accountable"
+		change_variable = {
+			which = belgian_nationalism
+			value = -2
+		}
+		political_reform = free_press
+		any_pop = {
+			limit = {
+				culture = flemish
+			}
+			consciousness = 1
+			militancy = -0.5
+		}
+		any_pop = {
+			limit = {
+				culture = wallonian
+			}
+			consciousness = 1
+			militancy = -1
+		}
+	}
+}
+
+#Courier des Pays-Bas
+country_event = {
+	id = 210409
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		check_variable = {
+			which = belgian_nationalism
+			value = 24
+		}
+		owns = 387		
+	}
+
+	title = "DIM_BEL_revolution_courrier_des_pays_bas_title"
+	desc = "DIM_BEL_revolution_courrier_des_pays_bas_desc"
+	picture = "DIM_courrier_des_pays_bas"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 26
+			}
+			factor = 0.65
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 28
+			}
+			factor = 0.45
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 30
+			}
+			factor = 0.3
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 35
+			}
+			factor = 0.15
+		}
+	}
+
+	option = {
+		name = "Round up a few more writers"
+		change_variable = {
+			which = belgian_nationalism
+			value = 3
+		}
+		any_pop = {
+			limit = {
+				culture = flemish
+			}
+			consciousness = 0.5
+		}
+		any_pop = {
+			limit = {
+				culture = wallonian
+			}
+			consciousness = 1
+			dominant_issue = {
+				value = free_press
+				factor = 0.075
+			}
+		}
+	}
+	option = {
+		name = "Review the press rights"
+		change_variable = {
+			which = belgian_nationalism
+			value = -2
+		}
+		political_reform = free_press
+		any_pop = {
+			limit = {
+				culture = wallonian
+			}
+			consciousness = -1.5
+		}
+	}
+}
+
+#The Trial of Louis de Potter
+country_event = {
+	id = 210410
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		owns = 387		
+		check_variable = {
+			which = belgian_nationalism
+			value = 28
+		}
+		OR = {
+			NOT = { press_rights = free_press }
+			NOT = { minorities_reform = protected }
+			NOT = { trade_policy = protectionism }
+		}
+	}
+
+	title = "DIM_BEL_revolution_de_potter_trial_title"
+	desc = "DIM_BEL_revolution_de_potter_trial_desc"
+	picture = "DIM_potter_trial"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 30
+			}
+			factor = 0.7
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 32
+			}
+			factor = 0.5
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 34
+			}
+			factor = 0.5
+		}
+	}
+
+	option = {
+		name = "Oops..."
+		change_variable = {
+			which = belgian_nationalism
+			value = 8
+		}
+		any_pop = {
+			limit = {
+				culture = flemish
+			}
+			consciousness = 3
+			militancy = 2
+		}
+		any_pop = {
+			limit = {
+				culture = wallonian
+			}
+			consciousness = 4
+			militancy = 3
+		}
+	}
+	option = {
+		name = "Reverse the verdict! Reverse the verdict!"
+		change_variable = {
+			which = belgian_nationalism
+			value = 4
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 6
+		}
+		any_pop = {
+			limit = {
+				culture = flemish
+			}
+			consciousness = 2
+			militancy = 1
+		}
+		any_pop = {
+			limit = {
+				culture = wallonian
+			}
+			consciousness = 3
+			militancy = 1
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			scaled_consciousness = {
+				ideology = reactionary
+				factor = 3
+			}
+		}
+	}
+}
+
+#Lettre de Demophile au Roi
+country_event = {
+	id = 210411
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		owns = 387	
+		check_variable = {
+			which = belgian_nationalism
+			value = 33
+		}
+		OR = {
+			NOT = { press_rights = free_press }
+			NOT = { minorities_reform = protected }
+			NOT = { trade_policy = protectionism }
+		}
+	}
+
+	title = "DIM_BEL_revolution_lettre_demophile_au_roi_title"
+	desc = "DIM_BEL_revolution_lettre_demophile_au_roi_desc"
+	picture = "DIM_lettre_demophile"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.75
+			check_variable = {
+				which = belgian_nationalism
+				value = 35
+			}
+		}
+		modifier = {
+			factor = 0.6
+			check_variable = {
+				which = belgian_nationalism
+				value = 38
+			}
+		}
+		modifier = {
+			factor = 0.4
+			check_variable = {
+				which = belgian_nationalism
+				value = 40
+			}
+		}
+	}
+
+	option = {
+		name = "Oops"
+		change_variable = {
+			which = belgian_nationalism
+			value = 3
+		}
+		any_pop = {
+			limit = {
+				culture = flemish
+			}
+			consciousness = 2
+		}
+		any_pop = {
+			limit = {
+				culture = wallonian
+			}
+			consciousness = 3
+		}
+	}
+}
+
+#Unionism
+country_event = {
+	id = 210412
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		NOT = {
+			citizenship_policy = full_citizenship
+		}
+		owns = 387
+		check_variable = {
+			which = belgian_nationalism
+			value = 25
+		}
+	}
+
+	title = "DIM_BEL_revolution_unionism_title"
+	desc = "DIM_BEL_revolution_unionism_desc"
+	picture = "DIM_unionism"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 27
+			}
+			factor = 0.7
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 29
+			}
+			factor = 0.5
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 31
+			}
+			factor = 0.3
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 33
+			}
+			factor = 0.15
+		}
+		modifier = {
+			check_variable = {
+				which = belgian_nationalism
+				value = 38
+			}
+			factor = 0.01
+		}
+	}
+
+	option = {
+		name = "C'est une infamie"
+		change_variable = {
+			which = belgian_nationalism
+			value = 6
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+				has_pop_religion = catholic
+			}
+			ideology = {
+				factor = 0.30
+				value = liberal
+			}
+			consciousness = 4
+		}
+	}
+}
+
+# Le Politique (Newspaper)
+country_event = {
+	id = 210413
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		NOT = {
+			citizenship_policy = full_citizenship
+		}
+		owns = 387
+		check_variable = {
+			which = belgian_nationalism
+			value = 24
+		}
+		press_rights = free_press
+	}
+
+	title = "DIM_BEL_revolution_le_politique_title"
+	desc = "DIM_BEL_revolution_le_politique_desc"
+	picture = "DIM_newspapers"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	option = {
+		name = "Telle conduite infame"
+		change_variable = {
+			which = belgian_nationalism
+			value = 2
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 2
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	
+	option = {
+		name = "It is the end of the free press"
+		change_variable = {
+			which = belgian_nationalism
+			value = 3
+		}
+		political_reform = censored_press
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = -1
+			militancy = 2
+		}
+	}
+}
+
+# De Noord-Brabander (Newspaper)
+country_event = {
+	id = 210414
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		NOT = {
+			citizenship_policy = full_citizenship
+		}
+		owns = 387
+		check_variable = {
+			which = belgian_nationalism
+			value = 27
+		}
+		press_rights = free_press
+	}
+
+	title = "DIM_BEL_revolution_noord_brabander_title"
+	desc = "DIM_BEL_revolution_noord_brabander_desc"
+	picture = "DIM_newspapers"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = "If you can't even petition the king any more, what can you do?"
+		set_country_flag = DIM_de_branbander
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		NET_379 = {
+			any_pop = {
+				limit = {
+					religion = catholic
+				}
+				consciousness = 2
+			}
+		}
+	}
+	
+	option = {
+		name = "Censor it"
+		change_variable = {
+			which = belgian_nationalism
+			value = 2
+		}
+		political_reform = censored_press
+		NET_379 = {
+			any_pop = {
+				limit = {
+					religion = catholic
+				}
+				consciousness = -2
+			}
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 3
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+}
+
+#The July Revolution
+country_event = {
+	id = 210428
+	is_triggered_only = yes
+	
+	title = "EVTNAME37244"
+	desc = "DIM_july_revolution_desc"
+	picture = "july_revolution"
+	
+	option = {
+		name = "Surely nothing could happen here"
+		change_variable = {
+			which = belgian_nationalism
+			value = 15
+		}
+		upper_house = {
+			ideology = liberal
+			value = 0.1
+		} 
+		any_pop = {
+			limit = {
+				culture = flemish
+			}
+			ideology = {
+				factor = 0.1
+				value = liberal
+			}
+			scaled_consciousness = {
+				factor = 4
+				ideology = liberal
+			}
+			scaled_militancy = {
+				factor = 2
+				ideology = liberal
+			}
+			dominant_issue = {
+				value = wealth_weighted_voting
+				factor = 0.075
+			}
+			dominant_issue = {
+				value = state_equal_weight
+				factor = 0.075
+			}
+			dominant_issue = {
+				value = protected
+				factor = 0.075
+			}
+		}
+		any_pop = {
+			limit = {
+				culture = wallonian			
+			}
+			ideology = {
+				factor = 0.15
+				value = liberal
+			}
+			scaled_consciousness = {
+				factor = 6
+				ideology = liberal
+			}
+			scaled_militancy = {
+				factor = 4
+				ideology = liberal
+			}
+			dominant_issue = {
+				value = wealth_weighted_voting
+				factor = 0.15
+			}
+			dominant_issue = {
+				value = state_equal_weight
+				factor = 0.15
+			}
+			dominant_issue = {
+				value = protected
+				factor = 0.15
+			}
+		}
+	}
+}
+
+#Wij willen Willem Weg!
+country_event = {
+	id = 210429
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		check_variable = {
+			which = belgian_nationalism
+			value = 35
+		}
+		owns = 387
+		controls = 387
+	}
+	
+	title = "DIM_BEL_12ws_title"
+	desc = "DIM_BEL_12ws_desc"
+	picture = "DIM_belgian_revolution"
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "Lets hope this doesn't turn into something bad..."
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		any_pop = {
+			limit = {
+				culture = flemish		
+			}
+			militancy = 2
+		}
+		any_pop = {
+			limit = {
+				culture = wallonian			
+			}
+			militancy = 3
+		}
+	}
+}
+
+###Generale Maatschappij###
+#Generale Maatschappij
+country_event = {
+	id = 210450
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		OR = {
+			ruling_party_ideology = conservative
+			ruling_party_ideology = reactionary
+		}
+		NOT = {
+			has_country_modifier = stock_market_crash
+			has_country_modifier = great_depression
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	title = "DIM_generale_maatschappij_title"
+	desc = "DIM_generale_maatschappij_desc"
+	picture = "DIM_societe_generale"
+	fire_only_once = yes
+
+	option = {
+		name = "Invest in southern industry"
+		treasury = -5000
+		any_owned = {
+			limit = {
+				region = BEL_387				
+			}
+			capitalists = { money = 250 }
+		}
+		any_owned = {
+			limit = {
+				region = BEL_394
+			}
+			capitalists = { money = 1000 }
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = -2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		ai_chance = {
+			factor = 0.85		
+		}
+	}
+	option = {
+		name = "Invest in northern trade" 
+		set_global_flag = dutch_societe_generale
+		set_global_flag = no_society_generale
+		treasury = -5000
+		any_owned = {
+			limit = {
+				region = NET_375
+			}
+			capitalists = { money = 500 }
+			aristocrats = { money = 750 }
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = -1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+			}
+			militancy = 2
+			consciousness = 3
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = +2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -1
+		}
+	}
+	option = {
+		name = "Invest in the treasury" 
+		set_global_flag = no_society_generale
+		treasury = 5000
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+			}
+			consciousness = 1
+		}
+		capitalists = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			consciousness = 4
+			militancy = 2
+		}
+		aristocrats = {
+			limit = {
+				OR = {
+					is_accepted_culture = yes
+					is_primary_culture = yes
+				}
+			}
+			consciousness = -2
+			militancy = -1
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = DIM_treasury_investment
+			value = 1
+		}
+	}
+}
+
+#############################################
+#											#
+#		  The Belgian Revolution			#
+#											#
+#############################################
+
+#A Night at the Opera
+country_event = {
+	id = 210430
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		owns = 387
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+		}
+		check_variable = {
+			which = belgian_nationalism
+			value = 45
+		}
+		OR = {
+			NOT = { minorities_reform = protected }
+			NOT = { education = church }
+			NOT = { press_rights = free_press }
+			public_meetings = no_meeting
+		}
+	}
+	
+	news = yes
+	news_title = "NEWS_a_night_at_the_opera_title"
+	news_desc_long = "NEWS_a_night_at_the_opera_long"
+	news_desc_medium = "NEWS_a_night_at_the_opera_medium"
+	news_desc_short = "NEWS_a_night_at_the_opera_short"
+	
+	title = "DIM_BEL_a_night_at_the_opera_title"
+	desc = "DIM_BEL_a_night_at_the_opera_desc"
+	picture = "DIM_muette_de_portici"
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+	
+	immediate = {
+		country_event = { id = 210431 days = 5 }
+		clr_country_flag = united_netherlands
+		clr_country_flag = DIM_collegium_failed
+		clr_country_flag = DIM_collegium_try_again
+		clr_country_flag = DIM_collegium_undecided
+		clr_country_flag = DIM_collegium_philosophicum
+		clr_country_flag = DIM_collegium_success
+		clr_country_flag = neerlandisatiepolitiek
+		clr_country_flag = neerlandisatiepolitiek_expanded
+		clr_country_flag = DIM_van_maanen_remanded
+		clr_country_flag = DIM_van_maanen_supported
+		clr_country_flag = DIM_van_maanen
+		clr_country_flag = DIM_potato_tax
+		clr_country_flag = DIM_grain_tax
+	}
+
+	option = {
+		name = "Lets hope this doesn't turn into something bad..."
+		set_global_flag = DIM_belgian_revolution
+		clr_country_flag = DIM_the_reveil
+		set_variable = {
+			which = dutch_nationalism
+			value = 0
+		}
+		set_variable = {
+			which = belgian_nationalism
+			value = 0
+		}
+		set_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 1
+		}
+		prestige = -3
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}			
+			}
+			consciousness = 6
+			militancy = 2
+		}
+		BEL = {
+			relation = {
+				who = FRA
+				value = 20
+			}
+		}
+		FRA = {
+			prestige = 3
+			diplomatic_influence = {
+				who = BEL
+				value = 25
+			}
+		}
+	}
+}
+
+#The August Riots
+country_event = {
+	id = 210431
+	is_triggered_only = yes
+	
+	immediate = {
+		country_event = { id = 210432 days = 5 }
+	}
+	
+	title = "DIM_BEL_august_riots_title"
+	desc = "DIM_BEL_august_riots_desc"
+	picture = "DIM_august_riots"
+
+	option = {
+		name = "The Revolution is for the whole world, and Belgium in particular, a surprise"
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 1
+		}
+		prestige = -5
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}			
+			}
+			militancy = 4
+		}
+	}
+}
+
+#The Garde Civique
+country_event = {
+	id = 210432
+	is_triggered_only = yes
+	
+	immediate = {
+		country_event = { id = 210435 days = 5 }
+	}
+	
+	title = "DIM_BEL_garde_civique_title"
+	desc = "DIM_BEL_garde_civique_desc"
+	picture = "DIM_garde_civique"
+	
+	option = {
+		name = "This is good, I suppose..."
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 1
+		}
+		set_country_flag = garde_civique
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 387
+					AND = {
+						province_id = 392
+						NOT = { country_units_in_province = NET }
+					}
+					AND = {
+						province_id = 394
+						NOT = { country_units_in_province = NET }
+					}
+					AND = {
+						province_id = 395
+						NOT = { country_units_in_province = NET }
+					}
+				}
+			}
+			secede_province = BEL
+			any_pop = {
+				militancy = -3
+			}
+		}
+	}
+}
+
+#William II is asked to come to Brussels
+country_event = {
+	id = 210435
+	is_triggered_only = yes
+	
+	title = "DIM_BEL_first_embassy_title"
+	desc = "DIM_BEL_first_embassy_desc"
+	picture = "DIM_willem_ii_brussel"
+
+	option = {
+		name = "The Prince of Orange will come to Brussels..."
+		country_event = { id = 210436 days = 15 }
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+			}
+			militancy = -3
+			consciousness = 1
+		}
+	}
+	option = {
+		name = "...At the head of a column of 10.000 men!"
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 4
+		}
+		badboy = 2
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+			}
+			militancy = 4
+		}
+		387 = { secede_province = BEL }
+		war = {
+			target = BEL
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+			}
+			defender_goal = {
+				casus_belli = become_independent
+			}
+				call_ally = no
+		}
+	}
+}
+
+#The Prince of Orange reports back
+country_event = {
+	id = 210436
+	is_triggered_only = yes
+	
+	title = "DIM_BEL_william_reports_back_title"
+	desc = "DIM_BEL_william_reports_back_desc"
+	picture = "DIM_willem_ii_brussel"
+
+	option = {
+		name = "We'll think about it."
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 1
+		}
+		prestige = -2
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+			}
+			militancy = 3
+			consciousness = 3
+		}
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "Cede to their demands"
+		clr_global_flag = DIM_belgian_revolution
+		change_variable = {
+			which = dutch_nationalism
+			value = 2
+		}
+		release_vassal = BEL
+		BEL = { country_event = { id = 210444 days = 15 } }
+		prestige = -25
+		badboy = -5
+		war_exhaustion = -5
+		any_pop = {
+			limit = {
+					culture = dutch
+			}
+			militancy = 3
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+			}
+			militancy = -9
+			consciousness = -9
+		}
+		BEL = {
+			any_pop = {
+				limit = {
+					OR = {
+						culture = flemish
+						culture = wallonian
+					}
+				}
+				militancy = -9
+				consciousness = -9
+			}
+		}
+	}
+}
+
+#Riots in Brussels
+country_event = {
+	id = 210437
+	trigger = {
+		tag = NET
+		has_global_flag = DIM_belgian_revolution
+		387 = { 
+			OR = {
+				controlled_by = REB
+				controlled_by = BEL
+			}
+			country_units_in_province = NET
+		}
+		NOT = { 
+			has_global_flag = voorlopig_bewind
+			has_global_flag = belgian_independence_offered 
+		}
+	}
+	
+	title = "DIM_BEL_brussel_riots_title"
+	desc = "DIM_BEL_brussel_riots_desc"
+	picture = "DIM_battle_brussels"
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "Take positions at the outskirts of town"
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 2
+		}
+		prestige = -4
+		war_exhaustion = 2
+	}
+	option = {
+		name = "Order them to take the city by force!"
+		war = {
+			target = BEL
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+			}
+			defender_goal = {
+				casus_belli = become_independent
+			}
+				call_ally = no
+		}
+		war_exhaustion = 5
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 4
+		}
+	}
+}
+
+#Riots in Liege
+country_event = {
+	id = 210438
+	trigger = {
+		tag = NET
+		has_global_flag = DIM_belgian_revolution
+		395 = { 
+			OR = {
+				controlled_by = REB
+				controlled_by = BEL
+			}
+			country_units_in_province = NET
+		}
+		NOT = { 
+			has_global_flag = voorlopig_bewind
+			has_global_flag = belgian_independence_offered
+		}
+	}
+	
+	title = "DIM_BEL_brussel_riots_title"
+	desc = "DIM_BEL_brussel_riots_desc"
+	picture = "DIM_battle_brussels2"
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "Take positions at the outskirts of town"
+		prestige = -4
+		war_exhaustion = 1
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 2
+		}
+	}
+	option = {
+		name = "Order them to take the city by force!"
+		war = {
+			target = BEL
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+			}
+			defender_goal = {
+				casus_belli = become_independent
+			}
+				call_ally = no
+		}
+		395 = {
+			secede_province = NET
+		}
+		war_exhaustion = 5
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 4
+		}
+	}
+}
+
+#Disintegration of the Army (post-Voorlopig Bewind)
+country_event = {
+	id = 210440
+	trigger = {
+		tag = NET
+		has_global_flag = DIM_belgian_revolution
+		NOT = { has_global_flag = belgian_independence_offered }
+	}
+	
+	title = "DIM_BEL_disintegration_of_the_army_title"
+	desc = "DIM_BEL_disintegration_of_the_army_desc"
+	picture = "DIM_army_disintegration"
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+
+	option = {
+		name = "Damn"
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 1
+		}
+		prestige = -4
+		war_exhaustion = 3
+		any_pop = {
+			limit = {
+				type = soldiers
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+			}
+			militancy = 9
+		}
+		387 = {	secede_province = BEL }
+		395 = {	secede_province = BEL }
+		random = {
+			chance = 50
+			388 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 50
+			389 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 40
+			390 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 30
+			391 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 10
+			381 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 60
+			396 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 80
+			398 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 15
+			397 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 80
+			392 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 80
+			394 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 65
+			393 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 5
+			379 = {	secede_province = BEL }
+		}
+		random = {
+			chance = 5
+			380 = {	secede_province = BEL }
+		}
+	}
+}
+
+#Voorlopig Bewind
+country_event = {
+	id = 210441
+	major = yes
+	trigger = {
+		tag = NET
+		has_global_flag = DIM_belgian_revolution
+		NOT = { has_global_flag = voorlopig_bewind }
+		NOT = { has_global_flag = belgian_independence_offered }
+	}
+	
+	title = "DIM_BEL_voorlopig_bewind_title"
+	desc = "DIM_BEL_voorlopig_bewind_desc"
+	picture = "DIM_belgian_revolution"
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 200
+		modifier = {
+			check_variable = { 
+				which = DIM_belgian_revolution_counter
+				value = 5
+			}
+			factor = 0.9
+		}
+		modifier = {
+			check_variable = { 
+				which = DIM_belgian_revolution_counter
+				value = 6
+			}
+			factor = 0.85
+		}
+		modifier = {
+			check_variable = { 
+				which = DIM_belgian_revolution_counter
+				value = 7
+			}
+			factor = 0.8
+		}
+		modifier = {
+			check_variable = { 
+				which = DIM_belgian_revolution_counter
+				value = 8
+			}
+			factor = 0.75
+		}
+	}
+
+	option = {
+		name = "The kingdom must not be divided!"
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 1
+		}
+		set_global_flag = voorlopig_bewind
+		prestige = -5
+		war_exhaustion = 2
+		any_owned = {
+			limit = {
+				controlled_by_rebels = yes
+				OR = {
+					region = NET_379
+					region = BEL_387
+					region = BEL_394
+				}
+			}
+			secede_province = BEL
+		}
+		war = {
+			target = BEL
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+			}
+			defender_goal = {
+				casus_belli = become_independent
+			}
+				call_ally = no
+		}
+		BEL = {
+			any_pop = {
+				limit = {
+					OR = {
+						culture = flemish
+						culture = wallonian
+					}				
+				}
+				militancy = -9
+				consciousness = -9
+			}
+		}
+	}
+	option = {
+		name = "Hurrah for Belgium!"
+		change_tag_no_core_switch = BEL
+		NET = {
+			prestige = -5
+			war_exhaustion = 2
+			any_owned = {
+				limit = {
+					controlled_by_rebels = yes
+					OR = {
+						region = NET_379
+						region = BEL_387
+						region = BEL_394
+					}
+				}
+				secede_province = BEL
+			}
+			war = {
+				target = BEL
+				attacker_goal = {
+					casus_belli = acquire_all_cores
+				}
+				defender_goal = {
+					casus_belli = become_independent
+				}
+					call_ally = no
+			}
+		}
+		BEL = {
+			any_pop = {
+				limit = {
+					OR = {
+						culture = flemish
+						culture = wallonian
+					}				
+				}
+				militancy = -9
+				consciousness = -9
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Bombardment of Antwerp
+country_event = {
+	id = 210442
+	trigger = {
+		tag = NET
+		has_global_flag = DIM_belgian_revolution
+		390 = { 
+			OR = {
+				controlled_by = BEL
+				controlled_by = REB
+			}
+			country_units_in_province = NET
+		}
+	}
+	
+	title = "DIM_BEL_bombardment_of_antwerp_title"
+	desc = "DIM_BEL_bombardment_of_antwerp_desc"
+	picture = "DIM_bombardment_antwerpen_1830"
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "That'll teach them a lesson"
+		change_variable = {
+			which = DIM_belgian_revolution_counter
+			value = 2
+		}
+		prestige = 2
+		badboy = 1
+		war_exhaustion = 1
+		set_country_flag = bombarded_antwerp
+		relation = {
+			who = ENG
+			value = -30
+		}
+		relation = {
+			who = FRA
+			value = -30
+		}
+	}
+}
+
+#Van Speijk
+country_event = {
+	id = 210443
+	trigger = {
+		tag = NET
+		exists = yes
+		OR = {
+			has_global_flag = DIM_belgian_revolution
+			has_global_flag = volhardingspolitiek
+		}
+		OR = {
+			387 = { 
+				OR = {
+					controlled_by = BEL
+					controlled_by = REB
+				}
+			}
+			389 = {
+				OR = {
+					controlled_by = BEL
+					controlled_by = REB
+				}
+			}
+			390 = { 
+				OR = {
+					controlled_by = BEL
+					controlled_by = REB
+				}
+			}
+		}
+	}
+	
+	title = "DIM_van_speijk_title"
+	desc = "DIM_van_speijk_desc"
+	picture = "DIM_jan_van_speijk"
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = "There will always be a ship named 'Van Speijk!'"
+		prestige = 2
+		war_exhaustion = -2
+	}
+}
+
+#Administrative Split - Belgium decides
+country_event = {
+	id = 210444
+	trigger = {
+		tag = BEL
+		exists = yes
+		vassal_of = NET
+		NET = { has_country_flag = united_netherlands }
+	}
+
+	title = "DIM_BEL_revolution_administrative_split_title"
+	desc = "DIM_BEL_revolution_administrative_split_desc"
+	picture = "DIM_belgian_revolution"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 25
+	}
+	
+	immediate = {
+		clr_country_flag = united_netherlands
+		clr_country_flag = DIM_collegium_failed
+		clr_country_flag = DIM_collegium_try_again
+		clr_country_flag = DIM_collegium_undecided
+		clr_country_flag = DIM_collegium_philosophicum
+		clr_country_flag = DIM_collegium_success
+		clr_country_flag = neerlandisatiepolitiek
+		clr_country_flag = neerlandisatiepolitiek_expanded
+		clr_country_flag = DIM_van_maanen_remanded
+		clr_country_flag = DIM_van_maanen_supported
+		clr_country_flag = DIM_van_maanen
+		clr_country_flag = DIM_potato_tax
+		clr_country_flag = DIM_grain_tax
+		clr_country_flag = DIM_the_reveil
+	}
+
+	option = {
+		name = "We are satisfied" 
+		NET = { create_vassal = BEL }
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+			}
+			militancy = -9
+			consciousness = -9
+		}
+	}
+	
+	option = {
+		name = "It is too late for compromise"
+		NET = { 
+			release_vassal = BEL
+			country_event = { id = 210445 days = 5 }
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+			}
+			militancy = -9
+			consciousness = -9
+		}
+	}
+}
+
+#Administrative Split - Belgium rejects
+country_event = {
+	id = 210445
+	is_triggered_only = yes
+
+	news = yes
+	news_title = "NEWS_BEL_revolution_rejection_split_title"
+	news_desc_long = "NEWS_BEL_revolution_rejection_split_long"
+	news_desc_medium = "NEWS_BEL_revolution_rejection_split_medium"
+	news_desc_short = "NEWS_BEL_revolution_rejection_split_short"
+	
+	title = "DIM_BEL_revolution_administrative_split_rejected_title"
+	desc = "DIM_BEL_revolution_administrative_split_rejected_desc"
+	picture = "DIM_belgian_revolution"
+	fire_only_once = yes
+
+	option = {
+		name = "Ungrateful dogs" 
+		set_global_flag = DIM_belgian_revolution
+		war = {
+			target = BEL
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+			}
+			defender_goal = {
+				casus_belli = become_independent
+			}
+			call_ally = no
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "We wish them well"
+		prestige = -20
+		BEL_387 = { remove_core = NET }
+		BEL_394 = { remove_core = NET }
+		relation = {
+			who = BEL
+			value = 150
+		}
+		relation = {
+			who = FRA
+			value = 30
+		}
+		relation = {
+			who = ENG
+			value = 25
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			militancy = 2
+			consciousness = 3
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+#Legion Belge Parisienne (Belgium)
+country_event = {
+	id = 210446
+	is_triggered_only = yes
+	
+	title = "DIM_legion_belge_parisienne_title"
+	desc = "DIM_legion_belge_parisienne_BEL_desc"
+	picture = "DIM_legion_belge_parisienne"
+
+	option = {
+		name = "Viva la France!"
+		treasury = 500
+		relation = {
+			who = FRA
+			value = 10
+		}
+		FRA = {
+			diplomatic_influence = {
+				who = BEL
+				value = 10
+			}
+		}
+	}
+}
+
+#Legion Belge Parisienne (NET)
+country_event = {
+	id = 210447
+	is_triggered_only = yes
+	
+	title = "DIM_legion_belge_parisienne_title"
+	desc = "DIM_legion_belge_parisienne_NET_desc"
+	picture = "DIM_legion_belge_parisienne"
+
+	option = {
+		name = "Those dastardly French"
+		relation = {
+			who = FRA
+			value = -5
+		}
+	}
+}
+
+#Great Powers Enforce a Ceasefire
+country_event = {
+	id = 210448
+	is_triggered_only = yes
+	
+	title = "DIM_BEL_great_powers_ceasefire_title"
+	desc = "DIM_BEL_great_powers_ceasefire_desc"
+	picture = "DIM_belgian_revolution"
+
+	option = {
+		name = "Nothing we can do"
+		clr_country_flag = DIM_de_branbander
+		prestige = -10
+		NET = {
+			end_war = BEL
+			any_owned = {
+				limit = {
+					OR = {
+						controlled_by_rebels = yes
+						controlled_by = BEL
+					}
+					OR = {
+						region = NET_379
+						region = BEL_387
+						region = BEL_394
+					}
+				}
+				secede_province = BEL
+			}
+		}
+		BEL = {
+			end_war = NET
+			any_owned = {
+				limit = {
+					OR = {
+						controlled_by_rebels = yes
+						controlled_by = NET
+					}
+				}
+				secede_province = NET
+			}
+		}
+	}
+}
+
+#############################################
+#											#
+#	Build-up to the Dutch Revolution		#
+#											#
+#############################################
+
+#The Issue of Vaccination
+country_event = {
+	id = 210502
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_the_reveil
+		exists = yes
+		OR = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 14
+			}
+			religious_policy = pluralism
+		}
+	}
+
+	title = "DIM_reveil_vaccine_title"
+	desc = "DIM_reveil_vaccine_desc"
+	picture = "DIM_vaccine"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 72
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 18
+			}
+		}
+		modifier = {
+			factor = 0.4
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+		}
+		modifier = {
+			factor = 0.3
+			check_variable = {
+				which = dutch_nationalism
+				value = 22
+			}
+		}
+		modifier = {
+			factor = 0.2
+			check_variable = {
+				which = dutch_nationalism
+				value = 24
+			}
+		}
+	}
+	option = {
+		name = "'Vaccination is divine, and Edward Jenner but a tool of God'"
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = protestant
+				strata = poor
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.02
+			}
+			scaled_consciousness = {
+				factor = 0.5
+				ideology = reactionary
+			}
+		}
+		change_variable = 	{
+			which = dutch_nationalism
+			value = 5
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "'Vaccination comes from Evil and radiates the hand of the devil'"
+		any_pop = {
+			limit = {
+				continent = europe
+				OR = {
+					has_pop_religion = catholic
+					strata = rich
+					strata = middle
+				}
+			}
+			ideology = {
+				value = liberal
+				factor = 0.02
+			}
+			scaled_consciousness = {
+				factor = 1
+				ideology = liberal
+			}
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = 3
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -2
+		}
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+#The Sunday Evenings
+country_event = {
+	id = 210503
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_the_reveil
+		exists = yes
+		OR = {
+			public_meetings = yes_meeting
+			press_rights = free_press
+		}
+		OR = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 12
+			}
+			religious_policy = pluralism
+		}
+	}
+
+	title = "DIM_reveil_sunday_evenings_title"
+	desc = "DIM_reveil_sunday_evenings_desc"
+	picture = "DIM_dacosta"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 72
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 15
+			}
+		}
+		modifier = {
+			factor = 0.4
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+		}
+		modifier = {
+			factor = 0.3
+			check_variable = {
+				which = dutch_nationalism
+				value = 25
+			}
+		}
+		modifier = {
+			factor = 0.1
+			check_variable = {
+				which = dutch_nationalism
+				value = 28
+			}
+		}
+	}
+	option = {
+		name = "Put a stop to the meetings"
+		political_reform = no_meeting
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = protestant
+			}
+			consciousness = -1
+		}
+		change_variable = 	{
+			which = dutch_nationalism
+			value = -1
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "Put a stop to the publications"
+		political_reform = censored_press
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = protestant				
+			}
+			consciousness = -1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}			
+			}
+			consciousness = 0.5
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		change_variable = 	{
+			which = dutch_nationalism
+			value = -2
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "Put a stop to all of it"
+		political_reform = censored_press
+		political_reform = no_meeting
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = protestant
+			}
+			consciousness = -2
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}			
+			}
+			consciousness = 3
+		}
+		change_variable = 	{
+			which = belgian_nationalism
+			value = 4
+		}
+		change_variable = 	{
+			which = dutch_nationalism
+			value = -5
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "They aren't breaking any laws..."
+		any_pop = {
+			limit = {
+				culture = dutch			
+			}
+			consciousness = 1.5
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}			
+			}
+			consciousness = -1
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = -4
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 4
+		}
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+#The Sermon on the Pulpit
+country_event = {
+	id = 210504
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_the_reveil
+		exists = yes
+		OR = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 8
+			}
+			religious_policy = pluralism
+		}
+	}
+
+	title = "DIM_reveil_sermon_title"
+	desc = "DIM_reveil_sermon_desc"
+	picture = "DIM_reveil"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "All men are created equal"
+		any_pop = {
+			limit = {
+				continent = europe
+				has_pop_religion = catholic
+			}
+			consciousness = -2
+			militancy = -1
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = protestant
+				strata = poor
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.075
+			}
+			scaled_consciousness = {
+				factor = 2
+				ideology = reactionary
+			}
+			scaled_militancy = {
+				factor = 1
+				ideology = reactionary
+			}
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = protestant
+				strata = middle
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.025
+			}
+			scaled_consciousness = {
+				factor = 1
+				ideology = reactionary
+			}
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = -1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 2
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "Tyranny flourishes in societies rejecting the Reformed faith"
+		any_pop = {
+			limit = {
+				continent = europe
+				has_pop_religion = catholic
+			}
+			ideology = {
+				value = liberal
+				factor = 0.03
+			}
+			consciousness = 2
+			militancy = 1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = dutch
+					strata = poor
+				}
+				has_pop_religion = protestant
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.02
+			}
+			consciousness = -2
+			militancy = -1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = dutch
+					strata = middle
+				}
+				has_pop_religion = protestant
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.01
+			}
+			consciousness = -1
+			militancy = -1
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -2
+		}
+	}
+}
+
+#The Maatschappij van Weldadigheid
+country_event = {
+	id = 210505
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_the_reveil
+		exists = yes
+		OR = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 10
+			}
+			NOT = { middle_strata_everyday_needs = 0.75 }
+			NOT = { poor_strata_life_needs = 0.85 }
+		}
+		OR = {
+			unemployment_subsidies = trinket_subsidies
+			unemployment_subsidies = low_subsidies
+		}
+	}
+
+	title = "DIM_maatschappij_weldadigheid_title"
+	desc = "DIM_maatschappij_weldadigheid_desc"
+	picture = "DIM_reveil"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.7
+			check_variable = {
+				which = dutch_nationalism
+				value = 10
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 14
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 18
+			}
+		}
+	}
+	option = {
+		name = "It's Catholicism"
+		change_variable = {
+			which = belgian_nationalism
+			value = 2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -4
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "It's Calvinism"
+		change_variable = {
+			which = belgian_nationalism
+			value = -2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 4
+		}
+	}
+}
+
+#The Sovereign Debt Issue of $YEAR$
+country_event = {
+	id = 210506
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_the_reveil
+		exists = yes
+		check_variable = {
+			which = dutch_nationalism
+			value = 16
+		}
+		NOT = { 
+			has_country_modifier = DIM_tiercering
+			has_country_modifier = DIM_austerity
+		}
+	}
+
+	title = "DIM_debt_issue_title"
+	desc = "DIM_debt_issue_desc"
+	picture = "DIM_reveil"
+	
+	mean_time_to_happen = {
+		months = 72
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 22
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 24
+			}
+		}
+	}
+	option = {
+		name = "Tiercering it is"
+		add_country_modifier = {
+			name = DIM_tiercering
+			duration = 1800
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = 2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 6
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 10
+				war = yes
+			}
+		}
+	}
+	option = {
+		name = "Austerity it is"
+		add_country_modifier = {
+			name = DIM_austerity
+			duration = 1200
+		}
+		social_reform = no_minimum_wage
+		social_reform = no_subsidies
+		social_reform = no_pensions
+		social_reform = no_health_care
+		social_reform = no_endowment
+		change_variable = {
+			which = belgian_nationalism
+			value = 4
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 2
+		}
+	}
+}
+
+#The Beggars Colony of Ommerschans
+country_event = {
+	id = 210507
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_the_reveil
+		exists = yes
+		has_country_modifier = DIM_tiercering
+		NOT = { poor_strata_life_needs = 0.75 }
+	}
+
+	title = "DIM_beggars_colony_title"
+	desc = "DIM_beggars_colony_desc"
+	picture = "DIM_ommerschans"
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 72
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 10
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 15
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+		}
+	}
+	option = {
+		name = "(It's Catholicism)"
+		change_variable = {
+			which = belgian_nationalism
+			value = 5
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -4
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 10
+				war = yes
+			}
+		}
+	}
+	option = {
+		name = "(It's Calvinism)"
+		change_variable = {
+			which = belgian_nationalism
+			value = -4
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 10
+		}
+	}
+}
+
+#The Great Bankers Revolt of $YEAR$
+country_event = {
+	id = 210508
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_the_reveil
+		exists = yes
+		OR = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+			religious_policy = pluralism
+		}
+		NOT = {
+			check_variable = {
+				which = DIM_treasury_investment
+				value = 5
+			}
+		}
+	}
+
+	title = "DIM_great_bankers_revolt_title"
+	desc = "DIM_great_bankers_revolt_desc"
+	picture = "DIM_reveil"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 72
+		modifier = {
+			factor = 0.9
+			check_variable = {
+				which = dutch_nationalism
+				value = 10
+			}
+		}
+		modifier = {
+			factor = 0.9
+			check_variable = {
+				which = dutch_nationalism
+				value = 13
+			}
+		}
+		modifier = {
+			factor = 0.9
+			check_variable = {
+				which = dutch_nationalism
+				value = 15
+			}
+		}
+		modifier = {
+			factor = 0.9
+			check_variable = {
+				which = dutch_nationalism
+				value = 18
+			}
+		}
+		modifier = {
+			factor = 0.9
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+		}
+		modifier = {
+			factor = 0.9
+			check_variable = {
+				which = dutch_nationalism
+				value = 23
+			}
+		}
+		modifier = {
+			factor = 0.9
+			check_variable = {
+				which = dutch_nationalism
+				value = 25
+			}
+		}
+		modifier = {
+			factor = 0.9
+			check_variable = {
+				which = dutch_nationalism
+				value = 28
+			}
+		}
+		modifier = {
+			factor = 0.9
+			check_variable = {
+				which = dutch_nationalism
+				value = 30
+			}
+		}
+		modifier = {
+			factor = 1.2
+			check_variable = {
+				which = DIM_treasury_investment
+				value = 1
+			}
+		}
+		modifier = {
+			factor = 1.2
+			check_variable = {
+				which = DIM_treasury_investment
+				value = 2
+			}
+		}
+		modifier = {
+			factor = 1.2
+			check_variable = {
+				which = DIM_treasury_investment
+				value = 3
+			}
+		}
+		modifier = {
+			factor = 1.2
+			check_variable = {
+				which = DIM_treasury_investment
+				value = 4
+			}
+		}
+	}
+	option = {
+		name = "We will not be blackmailed"
+		treasury = -100000
+		add_country_modifier = {
+			name = DIM_austerity
+			duration = 1500
+		}
+		capitalists = {
+			limit = {
+				continent = europe
+			}
+			consciousness = 3 
+			militancy = 3
+		}
+		aristocrats = {
+			limit = {
+				continent = europe
+			}
+			consciousness = 3 
+			militancy = 3
+		}
+		any_pop = {
+			limit = {
+				continent = europe
+			}
+			consciousness = 1
+		}
+		change_variable = 	{
+			which = dutch_nationalism
+			value = 15
+		}
+		change_variable = {
+			which = DIM_treasury_investment
+			value = 1
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "Give them everything"
+		capitalists = {
+			limit = {
+				continent = europe
+			}
+			consciousness = 1 
+		}
+		aristocrats = {
+			limit = {
+				continent = europe
+			}
+			consciousness = 1 
+		}
+		any_pop = {
+			limit = {
+				continent = europe
+			}
+			consciousness = 2
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 3
+			militancy = 5
+		}
+		change_variable = {
+			which = belgian_nationalism
+			value = 25
+		}
+		set_variable = {
+			which = dutch_nationalism
+			value = 5
+		}
+		change_variable = {
+			which = DIM_treasury_investment
+			value = 1
+		}
+	}
+}
+
+#The Plakkaat van Verlaating
+country_event = {
+	id = 210509
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_the_reveil
+		exists = yes
+		check_variable = {
+			which = dutch_nationalism
+			value = 25
+		}
+	}
+
+	major = yes
+	title = "DIM_plakkaat_van_verlaating_title"
+	desc = "DIM_plakkaat_van_verlaating_desc"
+	fire_only_once = yes
+	
+	immediate = {
+		NET = {
+			government = democracy
+			ruling_party_ideology = reactionary
+			political_reform = wealth_voting
+			political_reform = secret_ballots
+			political_reform = limited
+			social_reform = church
+			release = BEL
+			clr_country_flag = united_netherlands
+			clr_country_flag = DIM_collegium_failed
+			clr_country_flag = DIM_collegium_try_again
+			clr_country_flag = DIM_collegium_undecided
+			clr_country_flag = DIM_collegium_philosophicum
+			clr_country_flag = DIM_collegium_success
+			clr_country_flag = neerlandisatiepolitiek
+			clr_country_flag = neerlandisatiepolitiek_expanded
+			clr_country_flag = DIM_van_maanen_remanded
+			clr_country_flag = DIM_van_maanen
+			clr_country_flag = DIM_potato_tax
+			clr_country_flag = DIM_grain_tax
+			clr_country_flag = DIM_the_reveil
+			random = {
+				chance = 75
+				any_owned = { 
+					limit = {
+						OR = {
+							province_id = 379
+							province_id = 380
+						}
+						has_country_flag = DIM_de_branbander
+					}
+					secede_province = BEL
+				}
+			}
+			random = {
+				chance = 30
+				379 = { secede_province = BEL }
+				380 = { secede_province = BEL }
+			}
+		}
+		set_variable = {
+			which = belgian_nationalism
+			value = 0
+		}
+		set_variable = {
+			which = dutch_nationalism
+			value = 0
+		}
+		set_global_flag = DIM_belgian_revolution_has_happened
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.8
+			check_variable = {
+				which = dutch_nationalism
+				value = 26
+			}
+		}
+		modifier = {
+			factor = 0.8
+			check_variable = {
+				which = dutch_nationalism
+				value = 28
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = dutch_nationalism
+				value = 30
+			}
+		}
+	}
+	option = {
+		name = "Huurah for the Northern Netherlands!"
+		prestige = -50 
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = "Huurah for the Southern Netherlands"
+		prestige = -50
+		change_tag = BEL		
+	}
+}
+
+
+# The Supreme Court
+country_event = {
+	id = 210535
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		owns = 387
+	}
+
+	title = "DIM_BEL_revolution_supreme_court_title"
+	desc = "DIM_BEL_revolution_supreme_court_desc"
+	picture = "DIM_parliament"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.85
+			check_variable = {
+				which = belgian_nationalism
+				value = 25
+			}
+		}
+		modifier = {
+			factor = 0.7
+			check_variable = {
+				which = belgian_nationalism
+				value = 30
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = belgian_nationalism
+				value = 35
+			}
+		}
+		modifier = {
+			factor = 0.2
+			check_variable = {
+				which = belgian_nationalism
+				value = 40
+			}
+		}
+		modifier = {
+			factor = 0.8
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+		}
+		modifier = {
+			factor = 0.6
+			check_variable = {
+				which = dutch_nationalism
+				value = 25
+			}
+		}
+		modifier = {
+			factor = 0.4
+			check_variable = {
+				which = dutch_nationalism
+				value = 30
+			}
+		}
+		modifier = {
+			factor = 0.2
+			check_variable = {
+				which = dutch_nationalism
+				value = 35
+			}
+		}
+	}
+
+	option = {
+		name = "It will be in The Hague"
+		change_variable = {
+			which = belgian_nationalism
+			value = 3
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -2
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 2
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = -1
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	
+	option = {
+		name = "It will be in Brussels"
+		change_variable = {
+			which = belgian_nationalism
+			value = -2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 3
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = -1
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = 2
+		}
+	}
+	option = {
+		name = "What is wrong with the current arrangement?"
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		treasury = -5000
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = 1
+		}
+	}
+}
+
+# The Location of the Capital
+country_event = {
+	id = 210536
+	trigger = {
+		tag = NET
+		has_country_flag = united_netherlands
+		NOT = { has_country_flag = neerlandisatiepolitiek_expanded }
+		owns = 387
+	}
+
+	title = "DIM_BEL_revolution_language_title"
+	desc = "DIM_BEL_revolution_language_desc"
+	picture = "DIM_parliament"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 170
+		modifier = {
+			factor = 0.85
+			check_variable = {
+				which = belgian_nationalism
+				value = 25
+			}
+		}
+		modifier = {
+			factor = 0.7
+			check_variable = {
+				which = belgian_nationalism
+				value = 30
+			}
+		}
+		modifier = {
+			factor = 0.5
+			check_variable = {
+				which = belgian_nationalism
+				value = 35
+			}
+		}
+		modifier = {
+			factor = 0.2
+			check_variable = {
+				which = belgian_nationalism
+				value = 40
+			}
+		}
+		modifier = {
+			factor = 0.8
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+		}
+		modifier = {
+			factor = 0.6
+			check_variable = {
+				which = dutch_nationalism
+				value = 25
+			}
+		}
+		modifier = {
+			factor = 0.3
+			check_variable = {
+				which = dutch_nationalism
+				value = 30
+			}
+		}
+		modifier = {
+			factor = 0.2
+			check_variable = {
+				which = dutch_nationalism
+				value = 35
+			}
+		}
+	}
+
+	option = {
+		name = "It will be The Hague"
+		change_variable = {
+			which = belgian_nationalism
+			value = 6
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -4
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 4
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = -2
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	
+	option = {
+		name = "It will be Brussels"
+		change_variable = {
+			which = belgian_nationalism
+			value = -4
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 6
+		}
+		capital = 387
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = -2
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = 4
+		}
+	}
+	option = {
+		name = "What is wrong with the current arrangement?"
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		treasury = -5000
+		any_pop = {
+			limit = {
+				OR = {
+					culture = wallonian
+					culture = flemish
+				}
+			}
+			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = 1
+		}
+	}
+}
+
+#Maatschappij van Welstand
+country_event = {
+	id = 211533
+	trigger = {
+		tag = NET
+		owns = 379
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			has_country_modifier = recession
+			factor = 0.5
+		}
+		modifier = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 15
+			}
+			factor = 0.85
+		}
+		modifier = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 20
+			}
+			factor = 0.75
+		}
+		modifier = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 25
+			}
+			factor = 0.6
+		}
+		modifier = {
+			check_variable = {
+				which = dutch_nationalism
+				value = 30
+			}
+			factor = 0.3
+		}
+	}
+	
+	title = "DIM_maatschappij_welstand_title"
+	desc = "DIM_maatschappij_welstand_desc"
+	picture = "DIM_maatschappij_weldadigheid"
+	fire_only_once = yes
+	
+	option = {
+		name = "It is a free country"
+		change_variable = {
+			which = belgian_nationalism
+			value = 2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -2
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes 
+					is_accepted_culture = yes
+				}
+				has_pop_religion = protestant
+			}
+			consciousness = -0.5
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = catholic
+			}
+			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = 0.5
+		}
+	}
+	option = {
+		name = "Restrict their activities"
+		change_variable = {
+			which = belgian_nationalism
+			value = -1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 2
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes 
+					is_accepted_culture = yes
+				}
+				has_pop_religion = protestant
+			}
+			militancy = 0.5
+			consciousness = 1
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+				has_pop_religion = catholic
+			}
+			consciousness = -1
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+				has_pop_religion = catholic
+			}
+			consciousness = -0.25
+		}
+	}
+}
+
+#Founding of the NHM
+country_event = {
+	id = 211540
+	trigger = {
+		tag = NET
+		year = 1824
+		OR = {
+			ruling_party_ideology = conservative
+			ruling_party_ideology = reactionary
+		}
+		NOT = {
+			has_country_modifier = stock_market_crash
+			has_country_modifier = great_depression
+		}
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			has_country_flag = dutch_societe_generale
+		}
+		modifier = {
+			factor = 20
+			has_country_flag = DIM_potato_tax
+		}
+	}
+
+	title = "DIM_NHM_title"
+	desc = "DIM_NHM_desc"
+	picture = "DIM_NHM"
+	fire_only_once = yes
+
+	option = {
+		name = "A new world wide company"
+		change_variable = {
+			which = belgian_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -2
+		}
+		prestige = 5
+		set_country_flag = NHM_worldwide
+		treasury = -30000
+		diplomatic_influence = {
+			who = MEX
+			value = 40
+		}
+		diplomatic_influence = {
+			who = UPB
+			value = 25
+		}
+		diplomatic_influence = {
+			who = GCO
+			value = 25
+		}
+		diplomatic_influence = {
+			who = PBC
+			value = 25
+		}
+		diplomatic_influence = {
+			who = ASH
+			value = 50
+		}
+		diplomatic_influence = {
+			who = AIN
+			value = 25
+		}
+		diplomatic_influence = {
+			who = CHO
+			value = 25
+		}
+		diplomatic_influence = {
+			who = KAG
+			value = 25
+		}
+		diplomatic_influence = {
+			who = SAT
+			value = 25
+		}
+		diplomatic_influence = {
+			who = SEN
+			value = 25
+		}
+		diplomatic_influence = {
+			who = TKG
+			value = 25
+		}
+		diplomatic_influence = {
+			who = TOS
+			value = 25
+		}
+		diplomatic_influence = {
+			who = YZW
+			value = 25
+		}
+		diplomatic_influence = {
+			who = EGY
+			value = 40
+		}
+		diplomatic_influence = {
+			who = ETH
+			value = 25
+		}
+		diplomatic_influence = {
+			who = MOR
+			value = 25
+		}
+		diplomatic_influence = {
+			who = OMA
+			value = 25
+		}
+		diplomatic_influence = {
+			who = YEM
+			value = 25
+		}
+		diplomatic_influence = {
+			who = ARG
+			value = 25
+		}
+		diplomatic_influence = {
+			who = BRZ
+			value = 25
+		}
+		diplomatic_influence = {
+			who = CLM
+			value = 25
+		}
+		diplomatic_influence = {
+			who = VNZ
+			value = 25
+		}
+	}
+	option = {
+		name = "A new European company"
+		change_variable = {
+			which = belgian_nationalism
+			value = -2
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -2
+		}
+		prestige = 2
+		treasury = -25000
+		diplomatic_influence = {
+			who = DEN
+			value = 40
+		}
+		diplomatic_influence = {
+			who = SWE
+			value = 40
+		}
+		diplomatic_influence = {
+			who = LOM
+			value = 25
+		}
+		diplomatic_influence = {
+			who = SAR
+			value = 25
+		}
+		diplomatic_influence = {
+			who = TUS
+			value = 25
+		}
+		diplomatic_influence = {
+			who = SIC
+			value = 25
+		}
+		diplomatic_influence = {
+			who = HAM
+			value = 30
+		}
+		diplomatic_influence = {
+			who = BAV
+			value = 20
+		}
+		diplomatic_influence = {
+			who = HAN
+			value = 20
+		}
+		diplomatic_influence = {
+			who = BRE
+			value = 25
+		}
+		diplomatic_influence = {
+			who = POR
+			value = 25
+		}
+		diplomatic_influence = {
+			who = GRE
+			value = 15
+		}
+	}
+	option = {
+		name = "A new colonial company"
+		change_variable = {
+			which = belgian_nationalism
+			value = +1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -3
+		}
+		change_variable = {
+			which = DIM_northern_investment
+			value = 10
+		}
+		treasury = -10000
+		diplomatic_influence = {
+			who = DJA
+			value = 35
+		}
+		diplomatic_influence = {
+			who = KTI
+			value = 35
+		}
+		diplomatic_influence = {
+			who = LAN
+			value = 35
+		}
+		diplomatic_influence = {
+			who = SAK
+			value = 35
+		}
+	}
+	option = {
+		name = "A new Dutch company" 
+		change_variable = {
+			which = belgian_nationalism
+			value = -3
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = -1
+		}
+		treasury = -10000
+		375 = {
+			capitalists = { money = 1000 }
+			capitalists = {
+				consciousness = -1
+			}
+		}
+		any_greater_power = {
+			diplomatic_influence = {
+				who = NET
+				value = -25
+			}
+		}
+	}
+	option = {
+		name = "Invest the money in the treasury" 
+		clr_country_flag = NHM_overstretched
+		set_country_flag = no_NHM
+		prestige = -5
+		treasury = 2000
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = DIM_treasury_investment
+			value = 1
+		}
+		any_owned = {
+			limit = {
+				continent = europe
+			}
+			aristocrats = { consciousness = 2 }
+			capitalists = { consciousness = 2 }
+		}
+	}
+}
+
+#Fonds voor het Koopmanschap
+country_event = {
+	id = 211606
+	trigger = {
+		tag = NET
+		has_country_flag = DIM_potato_tax
+		OR = {
+			economic_policy = interventionism
+			economic_policy = state_capitalism
+		}
+	}
+	
+	title = "DIM_NET_fonds_voor_het_koopmanschap_title"
+	desc = "DIM_NET_fonds_voor_het_koopmanschap_desc"
+	picture = "DIM_office"
+	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "Invest in northern trade"
+		change_variable = {
+			which = dutch_nationalism
+			value = -2
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					culture = flemish
+					culture = wallonian
+				}
+			}
+			consciousness = 0.5
+		}
+		NET_375 = {
+			capitalists = { money = 500 }
+			aristocrats = { money = 750 }
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "Invest in southern industry"
+		change_variable = {
+			which = belgian_nationalism
+			value = -1
+		}
+		change_variable = {
+			which = dutch_nationalism
+			value = 2
+		}
+		any_pop = {
+			limit = {
+				culture = dutch
+			}
+			consciousness = 1
+		}
+		BEL_394 = {
+			capitalists = { money = 500 }
+		}
+	}
+	option = {
+		name = "Invest in the treasury"
+		change_variable = {
+			which = dutch_nationalism
+			value = 1
+		}
+		change_variable = {
+			which = DIM_treasury_investment
+			value = 1
+		}
+		treasury = 5000
+		any_owned = {
+			limit = {
+				continent = europe
+			}
+			aristocrats = { consciousness = 2 }
+			capitalists = { consciousness = 4 }
+		}
+	}
+}
+
+#Walloon Movement for United Netherlands
+country_event = {
+	id = 46490
+	title = "EVTNAME46490" #The Walloon Movement
+	desc = "EVTDESC46490"
 	picture = "nationalists"
 	
 	trigger = {
@@ -67,9 +5324,9 @@ country_event = {
 }
 
 province_event = {
-	id = 46451
-	title = "EVTNAME46451" #Wallingants in $PROVINCENAME$
-	desc = "EVTDESC46451"
+	id = 46491
+	title = "EVTNAME46491" #Wallingants in $PROVINCENAME$
+	desc = "EVTDESC46491"
 	
 	trigger = {
 		is_core = WLL
@@ -178,9 +5435,9 @@ province_event = {
 }
 
 province_event = {
-	id = 46452
-	title = "EVTNAME46452" #Wallingant Riot in $PROVINCENAME$
-	desc = "EVTDESC46452"
+	id = 46492
+	title = "EVTNAME46492" #Wallingant Riot in $PROVINCENAME$
+	desc = "EVTDESC46492"
 
 	trigger = {
 		has_province_modifier = wallingants
@@ -283,9 +5540,9 @@ province_event = {
 }
 
 country_event = {
-	id = 46453
-	title = "EVTNAME46453" #Wallonian Autonomy
-	desc = "EVTDESC46453"
+	id = 46493
+	title = "EVTNAME46493" #Wallonian Autonomy
+	desc = "EVTDESC46493"
 	picture = "danishgovernment"
 	
 	trigger = {

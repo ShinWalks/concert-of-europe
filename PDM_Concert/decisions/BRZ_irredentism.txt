@@ -183,4 +183,32 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	we_are_free_rgs = {
+		potential = {
+			tag = RGS
+			NOT = { has_country_flag = free_rgs }
+		}
+		allow = {
+			war = no
+			OR = {
+				truce_with = UPB
+				truce_with = BRZ
+			}
+		}
+		effect = {
+			set_country_flag = free_rgs
+			any_owned = {
+				limit = {
+					is_core = THIS
+				}
+				remove_core = BRZ
+				remove_core = UPB
+			}
+			add_country_modifier = {
+				name = trek_boers #small immigration buff
+				duration = 365
+			}
+		}
+	}
 }
