@@ -270,7 +270,13 @@ country_event = {
 				num_of_revolts = 1
 			}
 		}
-		NOT = { has_country_flag = refused_protectorate }
+		NOT = {
+			has_country_flag = refused_protectorate
+			tag = TUN
+			tag = TRI
+			tag = ALD
+			tag = MOR
+		}
 	}
 	
 	mean_time_to_happen = {

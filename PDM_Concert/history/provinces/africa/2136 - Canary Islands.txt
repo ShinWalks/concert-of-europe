@@ -3,6 +3,6 @@ controller = SPA
 add_core = SPA
 trade_goods = fruit
 life_rating = 35
-terrain = semi_desert_mountains
+terrain = mountain_farmland
 naval_base = 1
 colonial = 0

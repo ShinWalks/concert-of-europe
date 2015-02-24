@@ -3,4 +3,4 @@ controller = BAL
 add_core = BAL
 trade_goods = spices
 life_rating = 30
-terrain = seasonal_jungle_hills
+terrain = mountain_farmland

@@ -242,6 +242,8 @@ PROV1038;Novy Uzen;;;;;;;;;;;;;x
 PROV1045;Ust-Medveditskaya;;;;;;;;;;;;;x
 PROV1046;Nizhnechirskaya;;;;;;;;;;;;;x
 PROV1090;Tiflis;;;;;;;;;;;;;x
+PROV1092;Kutais;;;;;;;;;;;;;x
+PROV1095;Sukhum;;;;;;;;;;;;;x
 PROV2084;Angra Pequeña;;;;;;;;;;;;;x
 PROV2533;Vásárhely;;;;;;;;;;;;;x
 PROV2538;Újvidék;;;;;;;;;;;;;x
@@ -267,6 +269,7 @@ PROV3256;Öls;;;;;;;;;;;;;x
 PROV3257;Calais;;;;;;;;;;;;;x
 PROV3258;Marienwerder;;;;;;;;;;;;;x
 rich_farmland;Rich Farmland;;;;;;;;;;;;;x;
+mountain_farmland;Terraced Farmland;Terres Arables en Terrasses;Terrassenkultur Ackerland;;Tierras de Cultivo de Bancal;;;;;;;;;x
 incorporate_sudan_title;Incorporate Sudan;;;;;;;;;;;;;x
 incorporate_sudan_desc;We should introduce modern administrative structures to replace tribal governments throughout our new lands in the Sudan. The locals won't like it, but it will bind the region to Egypt permanently.;;;;;;;;;;;;;x
 incorporate_hedjaz_title;Incorporate Hedjaz;;;;;;;;;;;;;x
@@ -531,8 +534,8 @@ german_danzig_title;German Danzig;;;;;;;;;;;;x
 german_danzig_desc;Now that Danzig has been recovered, proper German names can be restored to the land.;;;;;;;;;;;;x
 polish_masuria_title;Polish Masuria;;;;;;;;;;;;x
 polish_masuria_desc;Now that Masuria has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
-german_danzig_title;German Allenstein;;;;;;;;;;;;x
-german_danzig_desc;Now that Allenstein has been recovered, proper German names can be restored to the land.;;;;;;;;;;;;x
+german_allenstein_title;German Allenstein;;;;;;;;;;;;x
+german_allenstein_desc;Now that Allenstein has been recovered, proper German names can be restored to the land.;;;;;;;;;;;;x
 polish_cieszyn_title;Polish Cieszyn;;;;;;;;;;;;x
 polish_cieszyn_desc;Now that Cieszyn has gained its freedom, proper Polish names can be restored to the land.;;;;;;;;;;;;x
 polish_bielsko_title;Polish Bielsko;;;;;;;;;;;;x
@@ -982,8 +985,6 @@ EVTNAME44860;Claiming New Mexico;;;;;;;;;;;;;x
 EVTDESC44860;The mountainous lands to the north are part of the Spanish claims that Mexico has inherited. We must establish control of them, before our neighbors do.;;;;;;;;;;;;;
 EVTNAME44861;Cuban Liberation?;;;;;;;;;;;;;x
 EVTDESC44861;"Cuba without Mexico is aimed at imperialist yoke, Mexico without Cuba is a prisoner of the Gulf of Mexico."\nSince our independence, Havana has become Spain's last stronghold in North America. Our Foreign Minister contends that as long as Cuba remains in Spanish hands, Mexico will not be truly secure. He heads a growing movement to declare new war on our former masters and wrest Cuba from the Spanish crown. We worry, though, that the Americans also have designs on Cuba and might not look favorably upon our conquest of the island. If we are to pursue war with Spain, we should seek America's support first. If not, we could instead focus our efforts on normalizing relations with Spain and thus remove the threat of reconquest.;;;;;;;;;;;;;
-EVTNAME44862;Mexican Cuba?;;;;;;;;;;;;;x
-EVTDESC44862;An envoy from $FROMCOUNTRY$ seeks America's support for an effort by his government to seize control of Cuba from Spain. While we are flattered that they felt the need to ask our permission, we hesitate to give it, since many in America are interested in eventually adding Cuba to our own Union. A Mexican Cuba would likely be a greater obstacle to that goal than a Spanish Cuba. Still, we also desire strong relations with our neighbor to the south. Shall we promise not to interfere with their attempt for Cuba, or should we discourage them from trying?;;;;;;;;;;;;;
 EVTNAME44862;Mexican Cuba?;;;;;;;;;;;;;x
 EVTDESC44862;An envoy from $FROMCOUNTRY$ seeks America's support for an effort by his government to seize control of Cuba from Spain. While we are flattered that they felt the need to ask our permission, we hesitate to give it, since many in America are interested in eventually adding Cuba to our own Union. A Mexican Cuba would likely be a greater obstacle to that goal than a Spanish Cuba. Still, we also desire strong relations with our neighbor to the south. Shall we promise not to interfere with their attempt for Cuba, or should we discourage them from trying?;;;;;;;;;;;;;
 EVTNAME44863;$FROMCOUNTRY$ Agrees!;;;;;;;;;;;;;x

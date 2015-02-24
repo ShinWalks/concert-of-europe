@@ -4,4 +4,4 @@ add_core = YZW
 add_core = TKG
 trade_goods = grain
 life_rating = 35
-terrain = marginal_farmland
+terrain = mountain_farmland

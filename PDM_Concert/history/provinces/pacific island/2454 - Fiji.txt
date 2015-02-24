@@ -1,4 +1,4 @@
 add_core = FIJ
 trade_goods = fish
 life_rating = 15
-terrain = jungle_mountains
+terrain = mountain_farmland
