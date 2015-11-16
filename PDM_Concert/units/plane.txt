@@ -6,13 +6,12 @@ plane = {
 	active = no
 	unit_type = cavalry
 	primary_culture = yes
-	floating_flag = no
-	
+	floating_flag = no	
 	#Core Abilities
 	priority = 45
 	max_strength = 3
-	default_organisation = 5
-	maximum_speed = 20.00
+	default_organisation = 10
+	maximum_speed = 5.00
 	weighted_value = 10.0
 
 	#Building Costs
@@ -26,14 +25,14 @@ plane = {
 	supply_consumption = 1
 	supply_cost = {
 		aeroplanes = 0.2
-		fuel = 0.1
 	}
 	
+
 	#Land Abilties
-	reconnaissance = 25
-	attack = 0.5
-	defence = 0.5
+	reconnaissance = 10
+	attack = 1
+	defence = 15
 	discipline = 1
-	support = 1
-	maneuver = 20
+	support = 2
+	maneuver = 2
 }

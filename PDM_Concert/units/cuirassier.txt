@@ -8,6 +8,7 @@ cuirassier = {
 	primary_culture = yes
 	weighted_value = 8.0
 	
+		
 	#Avatar
 	sprite_override = Cavalry
 	sprite_mount = GenericMount
@@ -17,9 +18,10 @@ cuirassier = {
 	#Core Abilities
 	priority = 40
 	max_strength = 3
-	default_organisation = 5
+	default_organisation = 10
 	maximum_speed = 5.00
-	
+
+
 	#Building Costs
 	build_time = 40
 	build_cost = {
@@ -34,11 +36,13 @@ cuirassier = {
 		horses = 1
 	}
 	
+
 	#Land Abilties
 	reconnaissance = 0
-	attack = 4
-	defence = 4
+	attack = 6
+	defence = 5
 	discipline = 1
 	support = 0.0
-	maneuver = 1
+	maneuver = 2
+	
 }

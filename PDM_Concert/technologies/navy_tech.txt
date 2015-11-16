@@ -2,14 +2,13 @@
 post_nelsonian_thought = {
 	area = naval_doctrine
 	year = 1821
-	cost = 4600
+	cost = 4500
 	activate_building = naval_base
 	colonial_points = 10
-	
 	ai_chance = {
-		factor = 250
+		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -47,7 +46,7 @@ post_nelsonian_thought = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -68,20 +67,19 @@ post_nelsonian_thought = {
 			tech_school = prussian_tech_school
 		}
 	}
-}
 
+}
 battleship_column_doctrine = {
 	area = naval_doctrine
 	year = 1821
-	cost = 7750
+	cost = 7600
 	max_naval_base = 1
 	colonial_points = 10
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 100
+		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -119,7 +117,7 @@ battleship_column_doctrine = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -145,15 +143,14 @@ battleship_column_doctrine = {
 raider_group_doctrine = {
 	area = naval_doctrine
 	year = 1860
-	cost = 10200
+	cost = 10000
 	max_naval_base = 1
 	colonial_points = 10
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 50
+		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -191,7 +188,7 @@ raider_group_doctrine = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -217,15 +214,14 @@ raider_group_doctrine = {
 blue_and_brown_water_schools = {
 	area = naval_doctrine
 	year = 1870
-	cost = 12750
+	cost = 12500
 	max_naval_base = 1
 	colonial_points = 10
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 25
+		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -263,7 +259,7 @@ blue_and_brown_water_schools = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -289,15 +285,14 @@ blue_and_brown_water_schools = {
 high_sea_battle_fleet = {
 	area = naval_doctrine
 	year = 1900
-	cost = 20400
+	cost = 20000
 	max_naval_base = 1
 	colonial_points = 10
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 10
+		factor = 0.75
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -335,7 +330,7 @@ high_sea_battle_fleet = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -360,16 +355,15 @@ high_sea_battle_fleet = {
 
 modern_naval_doctrine = {
 	area = naval_doctrine
-	year = 1919
+	year = 1910
 	cost = 30000
 	max_naval_base = 1
 	colonial_points = 10
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 5
+		factor = 0.5
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -407,7 +401,7 @@ modern_naval_doctrine = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -430,28 +424,102 @@ modern_naval_doctrine = {
 	}
 }
 
+modern_naval_doctrine_1920 = {
+	area = naval_doctrine
+	year = 1920
+	cost = 40000
+	colonial_points = 10
+	influence = 0.05
+	ai_chance = {
+		factor = 0.5
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			is_greater_power = no
+			is_secondary_power = no
+			colonial_nation = no
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 30
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 50
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 100
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_glory
+		}
+		modifier = {
+			factor = 1.2
+			tech_school = japanese_tech_school
+		}
+		modifier = {
+			factor = 1.3
+			tech_school = naval_tech_school
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tech_school = industrial_tech_school
+				tech_school = culture_tech_school
+				tech_school = commerce_tech_school
+				tech_school = russian_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.7
+			tech_school = prussian_tech_school
+		}
+	}
+}
+
+
 #ship_construction
 clipper_design = {
 	area = ship_construction
 	year = 1821
-	cost = 4600
+	cost = 4500
 	activate_unit = manowar
-	
 	ai_chance = {
-		factor = 250
+		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			year = 1850
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			OR = {
 				big_producer = clipper_convoy
 				big_producer = fish
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -488,7 +556,7 @@ clipper_design = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -514,17 +582,16 @@ clipper_design = {
 steamers = {
 	area = ship_construction
 	year = 1830
-	cost = 7750
+	cost = 7600
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 100
+		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			year = 1870
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			OR = {
 				big_producer = clipper_convoy
 				big_producer = steamer_convoy
@@ -532,7 +599,7 @@ steamers = {
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -569,7 +636,7 @@ steamers = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -595,13 +662,12 @@ steamers = {
 iron_steamers = {
 	area = ship_construction
 	year = 1860
-	cost = 10200
+	cost = 10000
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 50
+		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -638,7 +704,7 @@ iron_steamers = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -664,13 +730,12 @@ iron_steamers = {
 steel_steamers = {
 	area = ship_construction
 	year = 1880
-	cost = 12750
+	cost = 12500
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 25
+		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -707,7 +772,7 @@ steel_steamers = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -733,13 +798,12 @@ steel_steamers = {
 steam_turbine_ships = {
 	area = ship_construction
 	year = 1900
-	cost = 20400
+	cost = 20000
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 10
+		factor = 0.75
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -776,7 +840,7 @@ steam_turbine_ships = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -801,14 +865,14 @@ steam_turbine_ships = {
 
 oil_driven_ships = {
 	area = ship_construction
-	year = 1919
+	year = 1910
 	cost = 30000
+	
 	influence = 0.05
-
 	ai_chance = {
-		factor = 5
+		factor = 0.5
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			is_greater_power = yes
 		}
 		modifier = {
@@ -845,7 +909,7 @@ oil_driven_ships = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -868,15 +932,88 @@ oil_driven_ships = {
 	}
 }
 
+modern_ship_construction = {
+	area = ship_construction
+	year = 1920
+	cost = 40000
+	
+	influence = 0.05
+	ai_chance = {
+		factor = 0.5
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			num_of_ports = 10
+			NOT = { num_of_ports = 20 }
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 30
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 50
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 100
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_glory
+		}
+		modifier = {
+			factor = 1.2
+			tech_school = japanese_tech_school
+		}
+		modifier = {
+			factor = 1.3
+			tech_school = naval_tech_school
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tech_school = industrial_tech_school
+				tech_school = culture_tech_school
+				tech_school = commerce_tech_school
+				tech_school = russian_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.7
+			tech_school = prussian_tech_school
+		}
+	}
+}
+
+
 #naval_engineering
 naval_design_bureaus = {
 	area = naval_engineering
 	year = 1821
-	cost = 4600
+	cost = 4500
 	navy_base = { build_time = -15 }
-	
 	ai_chance = {
-		factor = 100
+		factor = 0.75
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -887,7 +1024,7 @@ naval_design_bureaus = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -920,7 +1057,7 @@ naval_design_bureaus = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -946,14 +1083,13 @@ naval_design_bureaus = {
 fire_control_systems = {
 	area = naval_engineering
 	year = 1830
-	cost = 7750
+	cost = 7600
 	navy_base = {
 		build_time = -15 
 	}
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 50
+		factor = 0.75
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -964,7 +1100,7 @@ fire_control_systems = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -997,7 +1133,7 @@ fire_control_systems = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1023,14 +1159,13 @@ fire_control_systems = {
 weapon_platforms = {
 	area = naval_engineering
 	year = 1850
-	cost = 10200
+	cost = 10000
 	navy_base = {
 		build_time = -15 
 	}
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 25
+		factor = 0.75
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -1041,7 +1176,7 @@ weapon_platforms = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1074,7 +1209,7 @@ weapon_platforms = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1100,14 +1235,13 @@ weapon_platforms = {
 main_armament = {
 	area = naval_engineering
 	year = 1870
-	cost = 12750
+	cost = 12500
 	navy_base = {
 		build_time = -15
 	}
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 10
+		factor = 0.5
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -1118,7 +1252,7 @@ main_armament = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1151,7 +1285,7 @@ main_armament = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1177,14 +1311,13 @@ main_armament = {
 advanced_naval_design = {
 	area = naval_engineering
 	year = 1900
-	cost = 20400
+	cost = 20000
 	navy_base = {
 		build_time = -15 
 	}
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 5
+		factor = 0.5
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -1195,7 +1328,7 @@ advanced_naval_design = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1228,7 +1361,7 @@ advanced_naval_design = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1253,15 +1386,14 @@ advanced_naval_design = {
 
 modern_naval_design = {
 	area = naval_engineering
-	year = 1919
+	year = 1910
 	cost = 30000
 	navy_base = {
-		build_time = -30 
+		build_time = -15 
 	}
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 1
+		factor = 0.5
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -1272,7 +1404,7 @@ modern_naval_design = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1305,7 +1437,7 @@ modern_naval_design = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1328,19 +1460,19 @@ modern_naval_design = {
 	}
 }
 
-#naval_science
-alphabetic_flag_signaling = {
-	area = naval_science
-	year = 1821
-	cost = 4600
-	supply_range = 1.0
-	colonial_points = 10
-	
+modern_naval_design_1920 = {
+	area = naval_engineering
+	year = 1920
+	cost = 40000
+	navy_base = {
+		build_time = -30 
+	}
+	influence = 0.05
 	ai_chance = {
-		factor = 100
+		factor = 0.5
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 0.5
+			not = { year = 1925 }
 		}
 		modifier = {
 			factor = 0.5
@@ -1352,7 +1484,7 @@ alphabetic_flag_signaling = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1385,7 +1517,87 @@ alphabetic_flag_signaling = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
+			tech_school = japanese_tech_school
+		}
+		modifier = {
+			factor = 1.3
+			tech_school = naval_tech_school
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tech_school = industrial_tech_school
+				tech_school = culture_tech_school
+				tech_school = commerce_tech_school
+				tech_school = russian_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.7
+			tech_school = prussian_tech_school
+		}
+	}
+}
+
+
+#naval_science
+alphabetic_flag_signaling = {
+	area = naval_science
+	year = 1821
+	cost = 4500
+	supply_range = 1.0
+	colonial_points = 10
+	ai_chance = {
+		factor = 0.75
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { total_amount_of_ships = 20 }
+		}
+		modifier = {
+			factor = 1.2
+			total_amount_of_ships = 50
+			NOT = { total_amount_of_ships = 100 }
+		}
+		modifier = {
+			factor = 1.2
+			total_amount_of_ships = 100
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			num_of_ports = 10
+			NOT = { num_of_ports = 20 }
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 30
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 50
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 100
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_glory
+		}
+		modifier = {
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1411,16 +1623,15 @@ alphabetic_flag_signaling = {
 naval_plans = {
 	area = naval_science
 	year = 1840
-	cost = 7750
+	cost = 7600
 	supply_range = 0.5
 	colonial_points = 10
 	navy_base = {
 		supply_consumption = -0.15 
 	}
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 50
+		factor = 0.75
 		modifier = {
 			factor = 2.5
 			is_greater_power = yes
@@ -1435,7 +1646,7 @@ naval_plans = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1468,7 +1679,7 @@ naval_plans = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1494,16 +1705,15 @@ naval_plans = {
 naval_statistics = {
 	area = naval_science
 	year = 1870
-	cost = 10200
+	cost = 10000
 	supply_range = 0.5
 	colonial_points = 10
 	navy_base = {
 		supply_consumption = -0.15 
 	}
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 25
+		factor = 0.75
 		modifier = {
 			factor = 2
 			is_greater_power = yes
@@ -1518,7 +1728,7 @@ naval_statistics = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1551,7 +1761,7 @@ naval_statistics = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1577,16 +1787,15 @@ naval_statistics = {
 naval_logistics = {
 	area = naval_science
 	year = 1880
-	cost = 12750
+	cost = 12500
 	supply_range = 1
 	colonial_points = 10
 	navy_base = {
 		supply_consumption = -0.15 
 	}
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 10
+		factor = 0.5
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -1597,7 +1806,7 @@ naval_logistics = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1630,7 +1839,7 @@ naval_logistics = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1656,16 +1865,15 @@ naval_logistics = {
 naval_directionism = {
 	area = naval_science
 	year = 1900
-	cost = 20400
+	cost = 20000
 	supply_range = 1
 	colonial_points = 10
 	navy_base = {
 		supply_consumption = -0.15 
 	}
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 5
+		factor = 0.5
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -1676,7 +1884,7 @@ naval_directionism = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1709,7 +1917,7 @@ naval_directionism = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1734,7 +1942,7 @@ naval_directionism = {
 
 naval_integration = {
 	area = naval_science
-	year = 1919
+	year = 1910
 	cost = 30000
 	supply_range = 1
 	colonial_points = 10
@@ -1742,9 +1950,8 @@ naval_integration = {
 		supply_consumption = -0.15 
 	}
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 1
+		factor = 0.5
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -1755,7 +1962,7 @@ naval_integration = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1788,7 +1995,7 @@ naval_integration = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1811,22 +2018,21 @@ naval_integration = {
 	}
 }
 
-#naval_leadership
-the_command_principle = {
-	area = naval_leadership
-	year = 1821
-	cost = 4600
-	navy_base = {
-		default_organisation = 1
-		supply_consumption = 0.1
-	}
+modern_naval_science = {
+	area = naval_science
+	year = 1920
+	cost = 40000
+	supply_range = 1
 	colonial_points = 10
-	
+	navy_base = {
+		supply_consumption = -0.15 
+	}
+	influence = 0.05
 	ai_chance = {
-		factor = 100
+		factor = 0.5
 		modifier = {
-			factor = 2
-			is_greater_power = yes
+			factor = 0.5
+			not = { year = 1925 }
 		}
 		modifier = {
 			factor = 0.5
@@ -1838,7 +2044,7 @@ the_command_principle = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1871,7 +2077,90 @@ the_command_principle = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
+			tech_school = japanese_tech_school
+		}
+		modifier = {
+			factor = 1.3
+			tech_school = naval_tech_school
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tech_school = industrial_tech_school
+				tech_school = culture_tech_school
+				tech_school = commerce_tech_school
+				tech_school = russian_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.7
+			tech_school = prussian_tech_school
+		}
+	}
+}
+
+
+#naval_leadership
+the_command_principle = {
+	area = naval_leadership
+	year = 1821
+	cost = 4500
+	navy_base = {
+		default_organisation = 1
+		supply_consumption = 0.1
+	}
+	colonial_points = 10
+	ai_chance = {
+		factor = 0.75
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { total_amount_of_ships = 20 }
+		}
+		modifier = {
+			factor = 1.2
+			total_amount_of_ships = 50
+			NOT = { total_amount_of_ships = 100 }
+		}
+		modifier = {
+			factor = 1.2
+			total_amount_of_ships = 100
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			num_of_ports = 10
+			NOT = { num_of_ports = 20 }
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 30
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 50
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 100
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_glory
+		}
+		modifier = {
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1897,16 +2186,15 @@ the_command_principle = {
 naval_professionalism = {
 	area = naval_leadership
 	year = 1830
-	cost = 7750
+	cost = 7600
 	navy_base = {
 		default_organisation = 1
 		supply_consumption = 0.1
 	}
 	colonial_points = 10
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 50
+		factor = 0.75
 		modifier = {
 			factor = 2.5
 			is_greater_power = yes
@@ -1921,7 +2209,7 @@ naval_professionalism = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -1954,7 +2242,7 @@ naval_professionalism = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -1980,16 +2268,15 @@ naval_professionalism = {
 naval_decision_making = {
 	area = naval_leadership
 	year = 1850
-	cost = 10200
+	cost = 10000
 	navy_base = {
 		default_organisation = 1
 		supply_consumption = 0.1
 	}
 	colonial_points = 10
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 25
+		factor = 0.75
 		modifier = {
 			factor = 2
 			is_greater_power = yes
@@ -2004,7 +2291,7 @@ naval_decision_making = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -2037,7 +2324,7 @@ naval_decision_making = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -2063,16 +2350,15 @@ naval_decision_making = {
 naval_risk_management = {
 	area = naval_leadership
 	year = 1870
-	cost = 12750
+	cost = 12500
 	navy_base = {
 		default_organisation = 1
 		supply_consumption = 0.1
 	}
 	colonial_points = 10
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 10
+		factor = 0.5
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -2083,7 +2369,7 @@ naval_risk_management = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -2116,7 +2402,7 @@ naval_risk_management = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -2142,16 +2428,15 @@ naval_risk_management = {
 naval_nco_training = {
 	area = naval_leadership
 	year = 1900
-	cost = 20400
+	cost = 20000
 	navy_base = {
 		default_organisation = 2
 		supply_consumption = 0.1
 	}
 	colonial_points = 10
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 5
+		factor = 0.5
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -2162,7 +2447,7 @@ naval_nco_training = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -2195,7 +2480,7 @@ naval_nco_training = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {
@@ -2220,7 +2505,7 @@ naval_nco_training = {
 
 modern_naval_training = {
 	area = naval_leadership
-	year = 1919
+	year = 1910
 	cost = 30000
 	navy_base = {
 		default_organisation = 2
@@ -2228,9 +2513,8 @@ modern_naval_training = {
 	}
 	colonial_points = 10
 	influence = 0.05
-	
 	ai_chance = {
-		factor = 1
+		factor = 0.5
 		modifier = {
 			factor = 0.5
 			NOT = { total_amount_of_ships = 20 }
@@ -2241,7 +2525,7 @@ modern_naval_training = {
 			NOT = { total_amount_of_ships = 100 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			total_amount_of_ships = 100
 		}
 		modifier = {
@@ -2274,7 +2558,89 @@ modern_naval_training = {
 			nationalvalue = nv_glory
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
+			tech_school = japanese_tech_school
+		}
+		modifier = {
+			factor = 1.3
+			tech_school = naval_tech_school
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tech_school = industrial_tech_school
+				tech_school = culture_tech_school
+				tech_school = commerce_tech_school
+				tech_school = russian_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.7
+			tech_school = prussian_tech_school
+		}
+	}
+}
+
+modern_naval_training_1920 = {
+	area = naval_leadership
+	year = 1920
+	cost = 40000
+	navy_base = {
+		default_organisation = 2
+		supply_consumption = 0.1
+	}
+	colonial_points = 10
+	influence = 0.05
+	ai_chance = {
+		factor = 0.5
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { total_amount_of_ships = 20 }
+		}
+		modifier = {
+			factor = 1.2
+			total_amount_of_ships = 50
+			NOT = { total_amount_of_ships = 100 }
+		}
+		modifier = {
+			factor = 1.2
+			total_amount_of_ships = 100
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 0.75
+			num_of_ports = 10
+			NOT = { num_of_ports = 20 }
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 30
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 50
+		}
+		modifier = {
+			factor = 1.2
+			num_of_ports = 100
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_glory
+		}
+		modifier = {
+			factor = 1.2
 			tech_school = japanese_tech_school
 		}
 		modifier = {

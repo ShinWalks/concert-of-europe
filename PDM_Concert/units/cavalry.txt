@@ -15,7 +15,7 @@ cavalry = {
 	priority = 25
 	max_strength = 3
 	default_organisation = 5
-	maximum_speed = 6.00
+	maximum_speed = 5
 	weighted_value = 4.0
 
 	#Building Costs
@@ -31,11 +31,12 @@ cavalry = {
 		horses = 0.5
 	}
 	
+
 	#Land Abilties
-	reconnaissance = 2
-	attack = 1
+	reconnaissance = 1
+	attack = 3
 	defence = 1
 	discipline = 1
 	support = 0.0
-	maneuver = 4
+	maneuver = 2
 }

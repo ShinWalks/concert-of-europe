@@ -6,14 +6,16 @@ manowar = {
 	unit_type = big_ship
 	capital = yes
 	floating_flag = yes
-	
+
+
 	#Core Abilities
 	priority = 25
 	max_strength = 100
 	default_organisation = 5
 	maximum_speed = 4
 	weighted_value = 3.0
-	
+
+
 	#Building Costs
 	build_time = 1050
 	build_cost = {
@@ -23,13 +25,13 @@ manowar = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		clipper_convoy = 0.2
-		lumber = 2
-		fabric = 1
-		artillery = 0.1
+		lumber = 1
 		gunpowder = 1
+		fabric = 1
+		bronze = 0.5
 	}
 	
+
 	#Naval Abilties
 	hull = 8
 	gun_power = 8
@@ -39,6 +41,5 @@ manowar = {
 	min_port_level = 1
 	limit_per_port = -1
 	supply_consumption_score = 1
-	colonial_points = 0.5
 }
 

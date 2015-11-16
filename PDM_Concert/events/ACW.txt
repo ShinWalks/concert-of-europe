@@ -122,7 +122,6 @@ country_event = {
 			}
 		}
 		capital = 220
-		create_vassal = CSA
 		change_tag_no_core_switch = CSA
 	}
 }

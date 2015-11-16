@@ -717,9 +717,100 @@ country_event = {
 
 #########################################################
 #														#
-#      			London Conference (1830) Events				#
+#      			Belgian Secession Events				#
 #														#
 #########################################################
+
+country_event = {
+	id = 36720
+	title = "EVTNAME36720" #Belgian Secession
+	desc = "EVTDESC36720"
+	picture = "communist_riot"
+	
+	trigger = {
+		tag = NET
+		exists = yes
+		year = 1825
+		BEL = { exists = no }
+		owns = 387 #Brussels
+		NOT = {
+			has_country_flag = belgium_seceded
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			any_owned_province = {
+				is_core = BEL
+				average_militancy = 4
+			}
+		}
+		modifier = {
+			factor = 0.5
+			any_owned_province = {
+				is_core = BEL
+				average_militancy = 6
+			}
+		}
+	}
+	
+	option = {
+		name = "The kingdom must not be divided!"
+		set_country_flag = belgium_seceded
+		prestige = -10
+		war_exhaustion = 50
+		add_country_modifier = {
+			name = no_more_war
+			duration = 730
+		}
+		release = BEL
+		relation = { who = BEL value = -100 }
+		BEL = {
+			any_pop = { militancy = -6 }
+			relation = { who = FRA value = 100 }
+			leadership = 40
+			war_exhaustion = 50
+			add_country_modifier = {
+				name = no_more_war
+				duration = 730
+			}
+		}
+		FRA = { diplomatic_influence = { who = BEL value = 100 } }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "Hurrah for Belgium!"
+		set_country_flag = belgium_seceded
+		prestige = -10
+		war_exhaustion = 50
+		add_country_modifier = {
+			name = no_more_war
+			duration = 730
+		}
+		release = BEL
+		relation = { who = BEL value = -100 }
+		BEL = {
+			any_pop = { militancy = -6 }
+			relation = { who = FRA value = 100 }
+			leadership = 40
+			war_exhaustion = 50
+			add_country_modifier = {
+				name = no_more_war
+				duration = 730
+			}
+		}
+		FRA = { diplomatic_influence = { who = BEL value = 100 } }
+		change_tag_no_core_switch = BEL
+		ai_chance = {
+			factor = 0
+		}	
+	}
+}
 
 country_event = {
 	id = 36725

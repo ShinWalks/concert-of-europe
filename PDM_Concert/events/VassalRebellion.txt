@@ -181,7 +181,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.25
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 1.5
@@ -243,7 +246,10 @@ country_event = {
 			factor = 70
 			modifier = {
 				factor = 1.75
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 0.5
@@ -376,7 +382,10 @@ country_event = {
 			factor = 95
 			modifier = {
 				factor = 1.75
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 0.5
@@ -461,7 +470,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.25
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 1.5

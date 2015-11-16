@@ -387,3 +387,32 @@ country_event = {
 	}
 }
 
+
+# 555092 - The Dusk of an Era
+country_event = {
+	id = 555092
+	title = "EVTNAME555092"
+	desc = "EVTDESC555092"
+	picture = "nationalists"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {	
+		exists = yes
+		post_colonialism = 1
+		not = {	has_global_flag = post_colonial_era_fired }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "EVTOPTA555092"
+		prestige = 25
+		set_global_flag = post_colonial_era_fired
+		any_country = {
+			set_country_flag = post_colonial_era
+		}
+	}
+}

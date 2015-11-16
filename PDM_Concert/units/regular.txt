@@ -6,12 +6,11 @@ regular = {
 	active = no
 	unit_type = infantry
 	primary_culture = yes
-	floating_flag = no
-	
+	floating_flag = no	
 	#Core Abilities
 	priority = 10
 	max_strength = 3
-	default_organisation = 6
+	default_organisation = 10
 	maximum_speed = 4.00
 	weighted_value = 2.0
 
@@ -29,12 +28,13 @@ regular = {
 		horses = 0.1
 	}
 	
+
 	#Land Abilties
 	reconnaissance = 0
-	attack = 2
-	defence = 2
+	attack = 4
+	defence = 4
 	discipline = 1
 	support = 0.0
 	maneuver = 1
-	siege = 0.25
+	siege = 0
 }

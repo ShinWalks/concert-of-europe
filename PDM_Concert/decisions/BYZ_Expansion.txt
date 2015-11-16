@@ -1,0 +1,536 @@
+push_into_anatolia = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		NOT = { has_country_flag = retreated_from_anatolia }
+		has_country_flag = legacy_of_rome
+		NOT = { has_country_flag = no_turks_in_anatolia }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 30
+		badboy = 15
+		TUR_876 = { add_core = BYZ }
+		TUR_894 = { add_core = BYZ }
+		set_country_flag = no_turks_in_anatolia
+		any_country = {
+				limit = {
+					is_greater_power = no
+					capital_scope = {
+						continent = europe
+					}
+					NOT = { 
+						tag = TUR
+						neighbour = THIS
+					}
+				}
+				relation = { who = THIS value = -50 }
+			}
+			any_country = {
+				limit = {
+					is_greater_power = yes
+					capital_scope = {
+						continent = europe
+					}
+					NOT = { 
+						tag = TUR
+						neighbour = THIS
+					}
+				}
+				relation = { who = THIS value = -100 }
+			}
+			any_country = {
+				limit = {
+					exists = yes
+					neighbour = THIS
+					NOT = {
+						tag = TUR
+					}
+				}
+				relation = { who = THIS value = -100 }
+			}
+			TUR = {
+				relation = { who = THIS value = -200 }
+			}
+	}
+}
+reclaim_armenia = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		NOT = { has_country_flag = retreated_from_anatolia }
+		has_country_flag = legacy_of_rome
+		has_country_flag = no_turks_in_anatolia
+		NOT = { has_country_flag = byzantine_armenia }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 10.5
+		badboy = 9
+		TUR_893 = { add_core = BYZ }
+		TUR_890 = { add_core = BYZ }
+		TUR_885 = { add_core = BYZ }
+		RUS_1098 = { add_core = BYZ }
+		set_country_flag = byzantine_armenia
+		TUR = {
+				relation = { who = THIS value = -200 }
+			}
+		RUS = {
+				relation = { who = THIS value = -100 }
+			}
+	}
+}
+
+reclaim_levant = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		NOT = { has_country_flag = retreated_from_anatolia }
+		has_country_flag = legacy_of_rome
+		has_country_flag = no_turks_in_anatolia
+		NOT = { has_country_flag = byzantine_levant }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 15.75
+		badboy = 12
+		EGY_897 = { add_core = BYZ }
+		EGY_903 = { add_core = BYZ }
+		EGY_915 = { add_core = BYZ }
+		EGY_921 = { add_core = BYZ }
+		EGY_910 = { add_core = BYZ }
+		set_country_flag = byzantine_levant
+		TUR = {
+				relation = { who = THIS value = -200 }
+			}
+		EGY = {
+				relation = { who = THIS value = -100 }
+			}
+	}
+}
+
+reclaim_egypt = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		NOT = { has_country_flag = retreated_from_anatolia }
+		has_country_flag = legacy_of_rome
+		has_country_flag = byzantine_levant
+		NOT = { has_country_flag = byzantine_egypt }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 21
+		badboy = 18
+		EGY_1755 = { add_core = BYZ }
+		EGY_1751 = { add_core = BYZ }
+		EGY_1745 = { add_core = BYZ }
+		EGY_1753 = { add_core = BYZ }
+		EGY_1762 = { add_core = BYZ }
+		EGY_1771 = { add_core = BYZ }
+		EGY_1758 = { add_core = BYZ }
+		set_country_flag = byzantine_egypt
+		EGY = {
+				relation = { who = THIS value = -300 }
+			}
+	}
+}
+
+reclaim_cyrenaica = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		NOT = { has_country_flag = retreated_from_anatolia }
+		has_country_flag = legacy_of_rome
+		has_country_flag = byzantine_egypt
+		NOT = { has_country_flag = byzantine_cyrenaica }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 2
+		badboy = 3
+		TRI_1735 = { add_core = BYZ }
+		TUR = {
+				relation = { who = THIS value = -100 }
+			}
+		set_country_flag = byzantine_cyrenaica
+	}
+}
+
+reclaim_tripolitania = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		NOT = { has_country_flag = retreated_from_anatolia }
+		has_country_flag = legacy_of_rome
+		has_country_flag = byzantine_cyrenaica
+		NOT = { has_country_flag = byzantine_tripolitania }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 5.25
+		badboy = 6
+		TRI_1731 = { add_core = BYZ }
+		TRI_1740 = { add_core = BYZ }
+		set_country_flag = byzantine_tripolitania
+		TUR = {
+				relation = { who = THIS value = -100 }
+			}
+	}
+}
+
+expand_into_mesopotamia = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		NOT = { has_country_flag = retreated_from_anatolia }
+		has_country_flag = legacy_of_rome
+		has_country_flag = byzantine_levant
+		NOT = { has_country_flag = the_two_rivers }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 5.25
+		badboy = 6
+		TUR_923 = { add_core = BYZ }
+		TUR_931 = { add_core = BYZ }
+		TUR_935 = { add_core = BYZ }
+		set_country_flag = the_two_rivers
+		TUR = {
+				relation = { who = THIS value = -200 }
+			}
+	}
+}
+
+reclaim_tunisia = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		NOT = { has_country_flag = retreated_from_anatolia }
+		has_country_flag = legacy_of_rome
+		has_country_flag = byzantine_tripolitania
+		NOT = { has_country_flag = carthage_reclaimed }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 5.25
+		badboy = 3
+		TUN_1726 = { add_core = BYZ }
+		set_country_flag = carthage_reclaimed
+		TUN = {
+				relation = { who = THIS value = -200 }
+			}
+	}
+}
+
+reclaim_moesia = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		has_country_flag = legacy_of_rome
+		NOT = { has_country_flag = byzantine_moesia }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 5.25
+		badboy = 5
+		TUR_810 = { add_core = BYZ }
+		set_country_flag = byzantine_moesia
+		BUL = {
+				relation = { who = THIS value = -200 }
+			}
+		RUS = {
+				relation = { who = THIS value = -50 }
+			}
+		TUR = {
+				relation = { who = THIS value = -100 }
+			}	
+	}
+}
+
+reclaim_south_illyria = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		has_country_flag = legacy_of_rome
+		NOT = { has_country_flag = march_for_illyria }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 10.5
+		badboy = 9
+		TUR_803 = { add_core = BYZ }
+		SER_794 = { add_core = BYZ }
+		TUR_853 = { add_core = BYZ }
+		MON_2582 = { add_core = BYZ }
+		set_country_flag = march_for_illyria
+		SER = {
+				relation = { who = THIS value = -300 }
+			}
+		MON = {
+				relation = { who = THIS value = -200 }
+			}
+		ALB = {
+				relation = { who = THIS value = -200 }
+			}
+		RUS = {
+				relation = { who = THIS value = -100 }
+			}
+		TUR = {
+				relation = { who = THIS value = -100 }
+			}	
+	}
+}
+
+reclaim_north_illyria = {
+	potential = {
+		primary_culture = greek
+		tag = BYZ
+		has_country_flag = legacy_of_rome
+		has_country_flag = march_for_illyria
+		NOT = { has_country_flag = illyria_is_ours }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		NOT = { has_country_modifier = no_more_war }
+		is_greater_power = yes
+		all_core = { owned_by = THIS }
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+		war_policy = jingoism
+	}
+	effect = {
+		prestige = 15.75
+		badboy = 20
+		TUR_788 = { add_core = BYZ }
+		AUS_780 = { add_core = BYZ }
+		AUS_2538 = { add_core = BYZ }
+		AUS_777 = { add_core = BYZ }
+		AUS_771 = { add_core = BYZ }
+		AUS_768 = { add_core = BYZ }
+		set_country_flag = illyria_is_ours
+		SER = {
+				relation = { who = THIS value = -100 }
+			}
+		AUS = {
+				relation = { who = THIS value = -300 }
+			}
+		KUK = {
+				relation = { who = THIS value = -300 }
+			}
+		CRO = {
+				relation = { who = THIS value = -200 }
+			}
+		ITA = {
+				relation = { who = THIS value = -50 }
+			}
+		RUS = {
+				relation = { who = THIS value = -100 }
+			}
+		SLO = {
+				relation = { who = THIS value = -200 }
+			}
+		DLM = {
+				relation = { who = THIS value = -200 }
+			}
+	}
+}
+
+accept_turks = {
+	potential = {
+		primary_culture = greek
+		OR = {
+			tag = BYZ
+			tag = GRE
+		}
+		NOT = { has_country_flag = accepted_turks }
+	}
+	allow = {
+		war = no
+		is_disarmed = no
+		OR = {
+			government = prussian_constitutionalism
+			government = hms_government
+			government = democracy
+		}
+		nationalism_n_imperialism = 1
+		
+	}
+	effect = {
+		set_country_flag = accepted_turks
+		add_accepted_culture = turkish
+		any_pop = {
+			limit = { has_pop_culture = turkish }
+			militancy = -3
+		}
+	}
+}
+
+assimilate_turks = {
+	potential = {
+		primary_culture = greek
+		OR = {
+			tag = BYZ
+			tag = GRE
+		}
+		NOT = { has_country_flag = accepted_turks }
+		NOT = { has_country_flag = assimilating_turks }
+	}
+	allow = {
+		war = no
+		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = fascist_dictatorship
+			}
+	}
+	effect = {
+		any_owned_province = {
+			limit = {
+				AND = {
+					is_core = TUR
+					is_culture = turkish
+				}
+			}
+			assimilation_rate = 0.2  #or maybe national_assimilation modifier?
+		}
+		consciousness = 4
+		
+	}
+}

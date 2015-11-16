@@ -2,12 +2,11 @@
 private_banks = {
 	area = financial_institutions
 	year = 1821
-	cost = 4600
+	cost = 4500
 	administrative_efficiency = 0.025
 	factory_output = 0.01
-	
 	ai_chance = {
-		factor = 50
+		factor = 1.1
 		modifier = {
 			factor = 1.5
 			year = 1856
@@ -66,12 +65,11 @@ private_banks = {
 stock_exchange = {
 	area = financial_institutions
 	year = 1825
-	cost = 7750
+	cost = 7600
 	administrative_efficiency = 0.025
 	factory_output = 0.01
-	
 	ai_chance = {
-		factor = 25
+		factor = 1.1
 		modifier = {
 			factor = 1.5
 			year = 1856
@@ -130,15 +128,14 @@ stock_exchange = {
 business_banks = {
 	area = financial_institutions
 	year = 1850
-	cost = 10200
+	cost = 10000
 	administrative_efficiency = 0.025
 	factory_output = 0.01
 	factory_goods_throughput = {
 		shares = 0.02
 	}
-	
 	ai_chance = {
-		factor = 10
+		factor = 1.1
 		modifier = {
 			factor = 5
 			OR = {
@@ -196,7 +193,7 @@ business_banks = {
 investment_banks = {
 	area = financial_institutions
 	year = 1870
-	cost = 12750
+	cost = 12500
 	administrative_efficiency = 0.025
 	factory_output = 0.01
 	factory_goods_throughput = {
@@ -205,9 +202,8 @@ investment_banks = {
 	factory_goods_throughput = {
 		financial_services = 0.02
 	}
-	
 	ai_chance = {
-		factor = 5
+		factor = 1.1
 		modifier = {
 			factor = 2
 			OR = {
@@ -265,7 +261,7 @@ investment_banks = {
 bank_inspection_board = {
 	area = financial_institutions
 	year = 1890
-	cost = 20400
+	cost = 20000
 	administrative_efficiency = 0.05
 	factory_output = 0.01
 	factory_goods_throughput = {
@@ -274,9 +270,8 @@ bank_inspection_board = {
 	factory_goods_throughput = {
 		financial_services = 0.02
 	}
-	
 	ai_chance = {
-		factor = 1
+		factor = 1.01
 		modifier = {
 			factor = 5
 			OR = {
@@ -339,11 +334,10 @@ mutual_funds = {
 	factory_goods_throughput = {
 		shares = 0.05
 	}
-	
 	ai_chance = {
 		factor = 1
 		modifier = {
-			factor = 5
+			factor = 1.01
 			OR = {
 				big_producer = shares
 				big_producer = financial_services
@@ -391,16 +385,84 @@ mutual_funds = {
 	}
 }
 
+modern_financial_institutions = {
+	area = financial_institutions
+	year = 1920
+	cost = 40000
+	administrative_efficiency = 0.05
+	factory_output = 0.02
+	factory_goods_throughput = {
+		financial_services = 0.05
+	}
+	factory_goods_throughput = {
+		shares = 0.05
+	}
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 1.01
+			OR = {
+				big_producer = shares
+				big_producer = financial_services
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { literacy = 0.5 }
+		}
+		modifier = {
+			factor = 1.2
+			literacy = 0.5
+			NOT = { literacy = 0.7 }
+		}
+		modifier = {
+			factor = 1.5
+			literacy = 0.7
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_equality
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_prosperity
+		}
+		modifier = {
+			factor = 0.8
+			tech_school = japanese_tech_school
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tech_school = culture_tech_school
+				tech_school = russian_tech_school
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				tech_school = naval_tech_school
+				tech_school = industrial_tech_school
+			}
+		}
+	}
+}
+
+
 #monetary_system
 no_standard = {
 	area = monetary_system
 	year = 1821
-	cost = 4600
+	cost = 4500
+	permanent_prestige = 2
 	tax_eff = 5
 	administrative_efficiency = 0.025
-	
 	ai_chance = {
-		factor = 100
+		factor = 1.5
 		modifier = {
 			factor = 1.5
 			year = 1840
@@ -416,7 +478,7 @@ no_standard = {
 		modifier = {
 			factor = 5
 			OR = {
-				NOT = { money = 10200 }
+				NOT = { money = 10000 }
 				produces = precious_metal
 			}
 		}
@@ -452,12 +514,12 @@ no_standard = {
 ad_hoc_money_bill_printing = {
 	area = monetary_system
 	year = 1830
-	cost = 7750
+	cost = 7600
+	permanent_prestige = 2
 	tax_eff = 5
 	administrative_efficiency = 0.025
-	
 	ai_chance = {
-		factor = 50
+		factor = 1.1
 		modifier = {
 			factor = 1.5
 			year = 1850
@@ -473,7 +535,7 @@ ad_hoc_money_bill_printing = {
 		modifier = {
 			factor = 5
 			OR = {
-				NOT = { money = 10200 }
+				NOT = { money = 10000 }
 				produces = precious_metal
 			}
 		}
@@ -509,12 +571,12 @@ ad_hoc_money_bill_printing = {
 private_bank_money_bill_printing = {
 	area = monetary_system
 	year = 1850
-	cost = 10200
+	cost = 10000
+	permanent_prestige = 5
 	tax_eff = 5
 	administrative_efficiency = 0.025
-	
 	ai_chance = {
-		factor = 25
+		factor = 1.01
 		modifier = {
 			factor = 1.5
 			year = 1870
@@ -530,7 +592,7 @@ private_bank_money_bill_printing = {
 		modifier = {
 			factor = 4
 			OR = {
-				NOT = { money = 10200 }
+				NOT = { money = 10000 }
 				produces = precious_metal
 			}
 		}
@@ -566,12 +628,12 @@ private_bank_money_bill_printing = {
 central_bank_money_bill_printing = {
 	area = monetary_system
 	year = 1870
-	cost = 12750
+	cost = 12500
+	permanent_prestige = 5
 	tax_eff = 5
 	administrative_efficiency = 0.025
-	
 	ai_chance = {
-		factor = 10
+		factor = 1.01
 		modifier = {
 			factor = 1.5
 			year = 1890
@@ -587,7 +649,7 @@ central_bank_money_bill_printing = {
 		modifier = {
 			factor = 5
 			OR = {
-				NOT = { money = 10200 }
+				NOT = { money = 10000 }
 				produces = precious_metal
 			}
 		}
@@ -623,12 +685,12 @@ central_bank_money_bill_printing = {
 modern_central_bank_system = {
 	area = monetary_system
 	year = 1880
-	cost = 20400
+	cost = 20000
+	permanent_prestige = 10
 	tax_eff = 5
 	administrative_efficiency = 0.05
-	
 	ai_chance = {
-		factor = 5
+		factor = 1.01
 		modifier = {
 			factor = 1.5
 			year = 1900
@@ -643,7 +705,7 @@ modern_central_bank_system = {
 		}
 		modifier = {
 			factor = 5
-			NOT = { money = 10200 }
+			NOT = { money = 10000 }
 		}
 		modifier = {
 			factor = 1.2
@@ -678,12 +740,12 @@ market_determined_exchange_rates = {
 	area = monetary_system
 	year = 1900
 	cost = 30000
+	permanent_prestige = 10
 	tax_eff = 5
 	administrative_efficiency = 0.05
 	factory_goods_throughput = {
 		financial_services = 0.05
 	}
-	
 	ai_chance = {
 		factor = 1
 		modifier = {
@@ -696,7 +758,64 @@ market_determined_exchange_rates = {
 		}
 		modifier = {
 			factor = 5
-			NOT = { money = 10200 }
+			NOT = { money = 10000 }
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_equality
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_prosperity
+		}
+		modifier = {
+			factor = 0.8
+			tech_school = japanese_tech_school
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tech_school = culture_tech_school
+				tech_school = russian_tech_school
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				tech_school = naval_tech_school
+				tech_school = industrial_tech_school
+			}
+		}
+	}
+}
+
+modern_monetary_system = {
+	area = monetary_system
+	year = 1920
+	cost = 40000
+	permanent_prestige = 20
+	tax_eff = 5
+	administrative_efficiency = 0.05
+	factory_goods_throughput = {
+		financial_services = 0.05
+	}
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 1.5
+			year = 1930
+		}
+		modifier = {
+			factor = 1.2
+			big_producer = financial_services
+		}
+		modifier = {
+			factor = 5
+			NOT = { money = 10000 }
 		}
 		modifier = {
 			factor = 1.2
@@ -732,12 +851,11 @@ market_determined_exchange_rates = {
 early_classical_theory_and_critique = {
 	area = economic_thought_and_critique
 	year = 1821
-	cost = 4600
+	cost = 4500
 	factory_input = -0.01
-	increase_research = 0.1
-	
+	increase_research = 0.15
 	ai_chance = {
-		factor = 100
+		factor = 1.1
 		modifier = {
 			factor = 1.5
 			year = 1856
@@ -778,13 +896,12 @@ early_classical_theory_and_critique = {
 late_classical_theory = {
 	area = economic_thought_and_critique
 	year = 1840
-	cost = 7750
+	cost = 7600
 	factory_input = -0.01
 	factory_cost = -0.02
-	increase_research = 0.1
-	
+	increase_research = 0.150
 	ai_chance = {
-		factor = 50
+		factor = 1.01
 		modifier = {
 			factor = 1.5
 			year = 1860
@@ -838,13 +955,12 @@ late_classical_theory = {
 collectivist_theory = {
 	area = economic_thought_and_critique
 	year = 1850
-	cost = 10200
+	cost = 10000
 	factory_input = -0.01
 	factory_cost = -0.02
-	increase_research = 0.1
-	
+	increase_research = 0.150
 	ai_chance = {
-		factor = 25
+		factor = 1.05
 		modifier = {
 			factor = 1.5
 			year = 1870
@@ -898,13 +1014,12 @@ collectivist_theory = {
 the_historical_theory = {
 	area = economic_thought_and_critique
 	year = 1860
-	cost = 12750
+	cost = 12500
 	factory_input = -0.01
 	factory_cost = -0.02
-	increase_research = 0.1
-	
+	increase_research = 0.150
 	ai_chance = {
-		factor = 10
+		factor = 1.01
 		modifier = {
 			factor = 1.5
 			year = 1880
@@ -958,13 +1073,12 @@ the_historical_theory = {
 neoclassical_theory = {
 	area = economic_thought_and_critique
 	year = 1890
-	cost = 20400
+	cost = 20000
 	factory_input = -0.01
 	factory_cost = -0.02
-	increase_research = 0.1
-	
+	increase_research = 0.150
 	ai_chance = {
-		factor = 5
+		factor = 1.01
 		modifier = {
 			factor = 1.5
 			year = 1910
@@ -1017,8 +1131,7 @@ keynesian_economics = {
 	cost = 30000
 	factory_input = -0.01
 	factory_cost = -0.02
-	increase_research = 0.1
-	
+	increase_research = 0.150
 	ai_chance = {
 		factor = 1
 		modifier = {
@@ -1063,16 +1176,71 @@ keynesian_economics = {
 	}
 }
 
+neoliberal_theory = {
+	area = economic_thought_and_critique
+	year = 1920
+	cost = 40000
+	factory_input = -0.01
+	factory_cost = -0.02
+	increase_research = 0.150
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { industrial_score = 10 }
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 50
+			NOT = { industrial_score = 100 }
+		}
+		modifier = {
+			factor = 1.5
+			industrial_score = 100
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_equality
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_prosperity
+		}
+		modifier = {
+			factor = 0.8
+			tech_school = japanese_tech_school
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tech_school = culture_tech_school
+				tech_school = russian_tech_school
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				tech_school = naval_tech_school
+				tech_school = industrial_tech_school
+			}
+		}		
+	}
+}
+
+
 #market_functionality
 freedom_of_trade = {
 	area = market_functionality
 	year = 1821
-	cost = 4600
+	cost = 4500
 	education_efficiency = 0.25
 	rgo_throughput = 0.1
-	
 	ai_chance = {
-		factor = 250
+		factor = 4
 		modifier = {
 			factor = 1.2
 			year = 1856
@@ -1122,12 +1290,11 @@ freedom_of_trade = {
 market_structure = {
 	area = market_functionality
 	year = 1845
-	cost = 7750
+	cost = 7600
 	education_efficiency = 0.25
 	influence = 0.1
-	
 	ai_chance = {
-		factor = 50
+		factor = 1.1
 		modifier = {
 			factor = 1.2
 			year = 1865
@@ -1188,18 +1355,17 @@ market_structure = {
 business_regulations = {
 	area = market_functionality
 	year = 1860
-	cost = 10200
+	cost = 10000
 	education_efficiency = 0.25
 	influence = 0.1
-	
 	ai_chance = {
-		factor = 25
+		factor = 1.01
 		modifier = {
 			factor = 1.2
 			year = 1880
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.5
 			year = 1900
 		}
 		modifier = {
@@ -1254,19 +1420,18 @@ business_regulations = {
 market_regulations = {
 	area = market_functionality
 	year = 1870
-	cost = 12750
+	cost = 12500
 	education_efficiency = 0.25
 	influence = 0.1
 	administrative_efficiency = 0.025
-	
 	ai_chance = {
-		factor = 10
+		factor = 1.01
 		modifier = {
-			factor = 1.2
+			factor = 1.5
 			year = 1890
 		}
 		modifier = {
-			factor = 1.2
+			factor = 1.5
 			year = 1910
 		}
 		modifier = {
@@ -1321,16 +1486,15 @@ market_regulations = {
 economic_responsibility = {
 	area = market_functionality
 	year = 1890
-	cost = 20400
+	cost = 20000
 	education_efficiency = 0.25
 	influence = 0.1
 	administrative_efficiency = 0.05
-	
 	ai_chance = {
-		factor = 5
+		factor = 1.5
 		modifier = {
 			factor = 1.2
-			year = 1910
+			year = 1900
 		}
 		modifier = {
 			factor = 2
@@ -1384,16 +1548,15 @@ government_interventionism = {
 	education_efficiency = 0.25
 	influence = 0.1
 	administrative_efficiency = 0.05
-	
 	ai_chance = {
-		factor = 1
+		factor = 1.1
 		modifier = {
 			factor = 1.2
-			year = 1865
+			year = 1910
 		}
 		modifier = {
 			factor = 1.2
-			year = 1885
+			year = 1920
 		}
 		modifier = {
 			factor = 5
@@ -1440,15 +1603,81 @@ government_interventionism = {
 	}
 }
 
+globalized_markets = {
+	area = market_functionality
+	year = 1920
+	cost = 40000
+	education_efficiency = 0.25
+	influence = 0.1
+	administrative_efficiency = 0.05
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 1.2
+			year = 1925
+		}
+		modifier = {
+			factor = 1.2
+			year = 1930
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				big_producer = shares
+				big_producer = financial_services
+			}
+		}
+		modifier = {
+			factor = 5
+			NOT = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 2
+			literacy = 0.2
+			NOT = { literacy = 0.5 }
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_equality
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_prosperity
+		}
+		modifier = {
+			factor = 0.8
+			tech_school = japanese_tech_school
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tech_school = culture_tech_school
+				tech_school = russian_tech_school
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				tech_school = naval_tech_school
+				tech_school = industrial_tech_school
+			}
+		}
+	}
+}
+
+
 #tech_organization
 guild_based_production = {
 	area = tech_organization
 	year = 1821
-	cost = 4600
+	cost = 4500
 	factory_output = 0.01
-	
 	ai_chance = {
-		factor = 100
+		factor = 1.05
 		modifier = {
 			factor = 0.5
 			NOT = { industrial_score = 10 }
@@ -1506,11 +1735,10 @@ guild_based_production = {
 organized_factories = {
 	area = tech_organization
 	year = 1845
-	cost = 7750
+	cost = 7600
 	factory_output = 0.01
-	
 	ai_chance = {
-		factor = 50
+		factor = 1.05
 		modifier = {
 			factor = 0.1
 			NOT = { industrial_score = 1 }
@@ -1572,11 +1800,10 @@ organized_factories = {
 scientific_management = {
 	area = tech_organization
 	year = 1860
-	cost = 10200
+	cost = 10000
 	factory_output = 0.01
-	
 	ai_chance = {
-		factor = 25
+		factor = 1.01
 		modifier = {
 			factor = 0.1
 			NOT = { industrial_score = 1 }
@@ -1638,11 +1865,10 @@ scientific_management = {
 time_saving_measures = {
 	area = tech_organization
 	year = 1870
-	cost = 12750
+	cost = 12500
 	factory_output = 0.01
-	
 	ai_chance = {
-		factor = 10
+		factor = 1.01
 		modifier = {
 			factor = 0.1
 			NOT = { industrial_score = 1 }
@@ -1709,11 +1935,10 @@ time_saving_measures = {
 management_strategy = {
 	area = tech_organization
 	year = 1880
-	cost = 20400
+	cost = 20000
 	factory_output = 0.01
-	
 	ai_chance = {
-		factor = 5
+		factor = 1.01
 		modifier = {
 			factor = 0.1
 			NOT = { industrial_score = 1 }
@@ -1782,9 +2007,78 @@ organizational_development = {
 	year = 1900
 	cost = 30000
 	factory_output = 0.01
-	
 	ai_chance = {
 		factor = 1
+		modifier = {
+			factor = 0.1
+			NOT = { industrial_score = 100 }
+		}
+		modifier = {
+			factor = 0.5
+			industrial_score = 100
+			NOT = { industrial_score = 500 }
+		}
+		modifier = {
+			factor = 1.5
+			industrial_score = 500
+			NOT = { industrial_score = 1000 }
+		}
+		modifier = {
+			factor = 2
+			industrial_score = 1000
+			NOT = { industrial_score = 1500 }
+		}
+		modifier = {
+			factor = 5
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				big_producer = cigarettes
+				big_producer = cigars
+			}
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_equality
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_prosperity
+		}
+		modifier = {
+			factor = 0.8
+			tech_school = japanese_tech_school
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				tech_school = culture_tech_school
+				tech_school = russian_tech_school
+			}
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				tech_school = naval_tech_school
+				tech_school = industrial_tech_school
+			}
+		}
+	}
+}
+
+modern_business_management = {
+	area = tech_organization
+	year = 1920
+	cost = 40000
+	factory_output = 0.01
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
 		modifier = {
 			factor = 0.1
 			NOT = { industrial_score = 100 }

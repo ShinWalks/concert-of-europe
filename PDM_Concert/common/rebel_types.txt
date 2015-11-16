@@ -28,6 +28,7 @@ reactionary_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = presidential_dictatorship
+		theocracy = absolute_monarchy
 	}
 	
 	
@@ -396,6 +397,7 @@ fascist_rebels = {
 		prussian_constitutionalism = fascist_dictatorship
 		hms_government = fascist_dictatorship
 		democracy = fascist_dictatorship
+		theocracy = fascist_dictatorship
 	}
 	
 	
@@ -725,6 +727,7 @@ communist_rebels = {
 		prussian_constitutionalism = proletarian_dictatorship
 		hms_government = proletarian_dictatorship
 		democracy = proletarian_dictatorship
+		theocracy = proletarian_dictatorship
 	}
 	
 	
@@ -1079,6 +1082,7 @@ anarcho_liberal_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
+		theocracy = democracy
 	}
 	
 	
@@ -1413,6 +1417,7 @@ nationalist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = theocracy
 	}
 	
 	
@@ -1699,6 +1704,7 @@ pan_nationalist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = theocracy
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2739,6 +2745,7 @@ red_shirts = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = theocracy
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -3456,6 +3463,7 @@ liberal_rebels = {
 		prussian_constitutionalism = hms_government
 		hms_government = democracy
 		democracy = democracy
+		theocracy = hms_government
 	}
 	
 	
@@ -4132,6 +4140,7 @@ separatist_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = theocracy
 	}
 	
 	
@@ -4360,6 +4369,7 @@ socialist_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
+		theocracy = democracy
 	}
 	
 	
@@ -4751,6 +4761,7 @@ independence_rebels = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = theocracy
 	}
 	
 	
@@ -4916,6 +4927,7 @@ turkish_nationalist_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
+		theocracy = theocracy
 	}
 	
 	
@@ -5208,6 +5220,7 @@ native_rebels = {
 		prussian_constitutionalism = democracy
 		hms_government = democracy
 		democracy = democracy
+		theocracy = democracy
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -5634,6 +5647,7 @@ colonial_rebels = {
 		prussian_constitutionalism = hms_government
 		hms_government = democracy
 		democracy = democracy
+		theocracy = hms_government
 	}
 	
 	defection = none					# Will defect to the "best" alternative.

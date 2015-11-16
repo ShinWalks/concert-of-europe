@@ -7,12 +7,11 @@ guard = {
 	unit_type = infantry
 	primary_culture = yes
 	floating_flag = no
-	
 	#Core Abilities
 	priority = 24
 	max_strength = 3
-	default_organisation = 5
-	maximum_speed = 5.00
+	default_organisation = 10
+	maximum_speed = 4.00
 	weighted_value = 9.0
 
 	#Building Costs
@@ -20,25 +19,24 @@ guard = {
 	build_cost = {
 		small_arms = 10
 		regular_clothes = 10
-		automobiles = 5
+		luxury_clothes = 5
 	}
 	
 	supply_consumption = 1
 	supply_cost = {
 		small_arms = 0.2
 		ammunition = 1
-		radio = 0.1
-		telephones = 0.1
-		automobiles = 0.25
-		fuel = 0.25
+		horses = 0.1
 	}
 	
+
 	#Land Abilties
-	reconnaissance = 0
-	attack = 3
-	defence = 3
-	discipline = 1.2
+	reconnaissance = 1
+	attack = 8
+	defence = 2
+	discipline = 1
 	support = 0
-	maneuver = 3
-	siege = 0.5
+	maneuver = 2
+	siege = 0
+
 }

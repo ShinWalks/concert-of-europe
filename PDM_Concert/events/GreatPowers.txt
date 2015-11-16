@@ -1675,6 +1675,7 @@ country_event = {
 				owner = {
 					civilized = yes
 					OR = {
+						government = theocracy
 						government = absolute_monarchy
 						government = prussian_constitutionalism
 					}
@@ -1831,14 +1832,17 @@ country_event = {
 			limit = {
 				FROM = {
 					OR = {
+						government = theocracy
 						government = absolute_monarchy
 						government = prussian_constitutionalism
 					}
 				}
 				owner = {
 					civilized = yes
-					NOT = { government = absolute_monarchy }
-					NOT = { government = prussian_constitutionalism }
+					NOT = {
+						government = theocracy
+					 	government = absolute_monarchy
+					 	government = prussian_constitutionalism }
 				}
 			}
 			owner = {

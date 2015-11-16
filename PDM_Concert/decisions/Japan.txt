@@ -523,7 +523,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = sent_iwakura_mission
 			prestige = 10
-			years_of_research = 2
+			years_of_research = 1
 		}
 		
 		ai_will_do = {

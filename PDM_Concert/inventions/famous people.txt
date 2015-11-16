@@ -14,7 +14,7 @@ franz_boas = {
 		}
 	}
 	effect = {
-		colonial_prestige = 0.1 
+		colonial_prestige = 1.0 
 		shared_prestige = 5
 	}	
 }
@@ -34,8 +34,8 @@ marcel_mauss = {
 		}
 	}
 	effect = {
-		education_efficiency = 0.05
-		shared_prestige = 5
+		education_efficiency = 0.25
+		shared_prestige = 15
 	}	
 }
 
@@ -55,7 +55,7 @@ branislaw_malinowski = {
 	}
 	effect = {
 		influence = 0.1
-		shared_prestige = 5
+		shared_prestige = 15
 	}	
 }
 
@@ -81,7 +81,6 @@ flinders_petrie = {
 		shared_prestige = 5
 	}	
 }
-
 # John George Taylor (1850s), 
 jg_taylor = {
 	limit = {
@@ -96,8 +95,8 @@ jg_taylor = {
 		shared_prestige = 5
 	}	
 }
-
 # Charles Leonard Wooley (1920s), 
+
 cl_wooley = {
 	limit = {
 		social_alienation = 1
@@ -112,11 +111,12 @@ cl_wooley = {
 		}
 	}
 	effect = {
-		shared_prestige = 25
+		colonial_prestige = 1.0
+		shared_prestige = 15
 	}	
 }
-
 # Arthur Evans (1900ish),
+
 arthur_evans = {
 	limit = {
 		social_alienation = 1
@@ -131,11 +131,13 @@ arthur_evans = {
 		}
 	}
 	effect = {
-		shared_prestige = 25
+		colonial_prestige = 1.0
+		shared_prestige = 15
 	}	
 }
 
 # Heinrich Schliemann (1860s).
+
 heinrich_schliemann = {
 	limit = {
 		functionalism = 1
@@ -173,12 +175,13 @@ emile_dirkheim = {
 		}
 	}
 	effect = {
-		education_efficiency = 0.05
+		education_efficiency = 0.1
 		shared_prestige = 5
 	}	
 }
 
 #Max Weber (1890s) 
+
 max_weber = {
 	limit = {
 		social_science = 1
@@ -198,8 +201,8 @@ max_weber = {
 	}
 	effect = {
 		shared_prestige = 25
-		political_reform_desire = 0.05
 	}	
+		political_reform_desire = 0.05
 }
 
 #Ferdinand de Saussure (1880s) 
@@ -283,8 +286,8 @@ emile_coue = {
 	}
 	effect = {
 		shared_prestige = 15
-		core_pop_militancy_modifier = -0.01
 	}	
+	core_pop_militancy_modifier = -0.01	
 }
 
 neurology = {
@@ -302,8 +305,8 @@ neurology = {
 	}
 	effect = {
 		shared_prestige = 25
-		core_pop_militancy_modifier = -0.01
-	}
+	}	
+	core_pop_militancy_modifier = -0.01	
 }
 
 #Alfred Nobel
@@ -385,15 +388,15 @@ the_periodic_table = {
 		}
 	}
 	effect = {
-		shared_prestige = 25
-		rgo_goods_throughput = {
+	shared_prestige = 25
+	rgo_goods_throughput = {
 			sulphur = 0.05
 		}
-		factory_goods_output = {
-			fertilizer = 0.05
+	factory_goods_output = {
+		fertilizer = 0.05
 		}
-		factory_goods_output = {
-			fuel = 0.05
+	factory_goods_output = {
+		fuel = 0.05
 		}
 	}	
 }
@@ -434,8 +437,9 @@ lenin = {
 		}
 	}
 	effect = {
-		social_reform_desire = 0.05
+		shared_prestige = 15
 	}
+	social_reform_desire = 0.05
 }
 
 trotsky = { 
@@ -469,8 +473,9 @@ trotsky = {
 		}
 	}
 	effect = {
-		social_reform_desire = 0.05
+		shared_prestige = 15
 	}
+	social_reform_desire = 0.05
 }
 
 mussolini = { 
@@ -499,9 +504,10 @@ mussolini = {
 			nationalvalue = nv_fraternity
 		}
 	}
+	social_reform_desire = -0.2
+	political_reform_desire = -0.1
 	effect = {
-		social_reform_desire = -0.2
-		political_reform_desire = -0.1
+		shared_prestige = 15
 		rebel_org_gain = {
 			faction = fascist_rebels 
 			value = 0.5
@@ -683,7 +689,7 @@ antitoxins = {
 
 vitamins = {
 	limit = {
-		electricity = 1
+		electricity = 1 
 		analytic_philosophy = 1
 		has_country_flag = existing_country
 	}
@@ -718,6 +724,7 @@ sanitation = {
 		pop_growth = 0.0001
 	}	
 }
+
 
 #Thomas Robert Malthus
 thomas_robert_malthus ={

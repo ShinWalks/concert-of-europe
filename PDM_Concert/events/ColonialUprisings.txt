@@ -790,10 +790,16 @@ country_event = {
 		exists = yes
 		colonial_nation = yes
 		civilized = yes
-		any_owned_province = {
-			is_colonial = yes
-			average_consciousness = 4
-			average_militancy = 4
+		or = {
+			any_owned_province = {
+				is_colonial = yes
+				average_consciousness = 4
+				average_militancy = 4
+			}
+			any_owned_province = {
+				is_colonial = yes
+				owner = { has_global_flag = post_colonial_era_fired }
+			}
 		}
 	}
 	
@@ -820,6 +826,10 @@ country_event = {
 		modifier = {
 			factor = 0.9
 			NOT = { average_consciousness = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			has_global_flag = post_colonial_era_fired
 		}
 	}
 	
@@ -928,6 +938,10 @@ province_event = {
 			factor = 1.1
 			owner = { num_of_cities = 40 }
 		}
+		modifier = {
+			factor = 1.2
+			has_global_flag = post_colonial_era_fired
+		}
 	}
 	
 	option = {
@@ -1012,6 +1026,10 @@ province_event = {
 		modifier = {
 			factor = 1.2
 			owner = { num_of_cities = 40 }
+		}
+		modifier = {
+			factor = 0.8
+			has_global_flag = post_colonial_era_fired
 		}
 	}
 	
@@ -1466,15 +1484,8 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA14670"
-		badboy = 3
-		prestige = -20
-		
-	}
-	
-	option = {
-		name = "EVTOPTB14670"
-		badboy = 1
-		prestige = -5
+		badboy = 15
+		prestige = -10
 		random_state = {
 			limit = {
 				is_colonial = yes
@@ -1484,12 +1495,46 @@ country_event = {
 					is_primary_culture = no
 					is_accepted_culture = no
 				}
-				consciousness = 5
+				militancy = 10
+				consciousness = 10
 				ideology = {
 					value = separatist
-					factor = 0.10
+					factor = 0.5
 				}
 			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				badboy = 0.25
+			}
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB14670"
+		badboy = 5
+		prestige = -20
+		random_state = {
+			limit = {
+				is_colonial = yes
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				}
+				militancy = 8
+				consciousness = 8
+				ideology = {
+					value = separatist
+					factor = 0.25
+				}
+			}
+		}
+		ai_chance = {
+			factor = 50
 		}
 	}
 }

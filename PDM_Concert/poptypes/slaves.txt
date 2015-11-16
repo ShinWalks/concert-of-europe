@@ -5,7 +5,8 @@ is_slave = yes
 color = { 17 17 17 }
 unemployment = yes
 
-rebel = {
+rebel =
+{
 	cavalry = 0.0
 	artillery = 0.0
 	cuirassier = 0.0
@@ -51,19 +52,19 @@ ideologies = {
 		factor = 1
 		modifier = {
 			factor = 1.5
-			NOT = { political_reform_want = 0.05 }
+			not = { political_reform_want = 0.05 }
 		}
 		modifier = {
 			factor = 1.5
-			NOT = { political_reform_want = 0.10 }
+			not = { political_reform_want = 0.10 }
 		}
 		modifier = {
 			factor = 1.5
-			NOT = { political_reform_want = 0.15 }
+			not = { political_reform_want = 0.15 }
 		}
 		modifier = {
 			factor = 1.5
-			NOT = { political_reform_want = 0.20 }
+			not = { political_reform_want = 0.20 }
 		}		
 	}
 	insubordinate = {
@@ -117,15 +118,15 @@ issues = {
 		}
 		modifier = {
 			factor = 1.5
-			NOT = { consciousness = 3 }
+			not = { consciousness = 3 }
 		}
 		modifier = {
 			factor = 1.5
-			NOT = { consciousness = 2 }
+			not = { consciousness = 2 }
 		}
 		modifier = {
 			factor = 1.5
-			NOT = { consciousness = 1 }
+			not = { consciousness = 1 }
 		}
 	}
 } 

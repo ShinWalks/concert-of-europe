@@ -99,3 +99,10 @@ democracy = {
 	appoint_ruling_party = no
 	flagType = republic
 }
+
+theocracy = {
+	reactionary = yes
+	
+	appoint_ruling_party = yes
+	flagType = special
+}

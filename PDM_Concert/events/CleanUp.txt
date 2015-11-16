@@ -412,7 +412,10 @@ country_event = {
 	
 	trigger = {
 		exists = yes
-		government = absolute_monarchy
+		OR = {
+			government = absolute_monarchy
+			government = theocracy
+		}
 		NOT = { vote_franschise = none_voting }		
 		civilized = yes	
 	}

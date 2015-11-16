@@ -30,6 +30,7 @@ province_event = {
 				government = democracy
 				government = hms_government
 				government = absolute_monarchy
+				government = theocracy
 			}
 			OR = {
 				trade_unions = non_socialist
@@ -231,6 +232,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		OR = {
 			trade_unions = non_socialist
@@ -407,6 +409,7 @@ province_event = {
 				government = democracy
 				government = hms_government
 				government = absolute_monarchy
+				government = theocracy
 			}
 			OR = {
 				trade_unions = non_socialist
@@ -623,6 +626,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		OR = {
 			trade_unions = non_socialist
@@ -782,6 +786,7 @@ province_event = {
 				government = democracy
 				government = hms_government
 				government = absolute_monarchy
+				government = theocracy
 			}
 			OR = {
 				trade_unions = non_socialist
@@ -1026,6 +1031,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		OR = {
 			trade_unions = non_socialist
@@ -1181,6 +1187,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		public_meetings = yes_meeting
 		NOT = {
@@ -1335,6 +1342,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		press_rights = free_press
 	}
@@ -1482,6 +1490,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		any_owned_province = {
 			OR = {
@@ -1690,6 +1699,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		any_state = {
 			has_building = factory
@@ -1878,6 +1888,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		OR = {
 			nationalvalue = nv_supremacy
@@ -2082,6 +2093,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		OR = {
 			nationalvalue = nv_supremacy
@@ -2286,6 +2298,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		any_owned_province = {
 			is_colonial = no
@@ -2487,6 +2500,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		NOT = { has_country_flag = march_on_capital }
 	}
@@ -2710,6 +2724,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		OR = {
 			nationalvalue = nv_supremacy
@@ -2925,6 +2940,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		OR = {
 			nationalvalue = nv_supremacy
@@ -3105,6 +3121,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		any_owned_province = {
 			has_province_modifier = black_shirts
@@ -3290,6 +3307,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		OR = {
 			nationalvalue = nv_supremacy
@@ -3498,6 +3516,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		any_owned_province = {
 			has_province_modifier = black_shirts
@@ -3684,6 +3703,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		any_owned_province = {
 			is_colonial = no
@@ -3887,6 +3907,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 			government = absolute_monarchy
+			government = theocracy
 		}
 		any_owned_province = {
 			is_colonial = no
@@ -4306,7 +4327,10 @@ country_event = {
 			factor = 75
 			modifier = {
 				factor = 0.5
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 		}		
 	}
@@ -4332,6 +4356,7 @@ country_event = {
 			government = prussian_constitutionalism
 			government = presidential_dictatorship
 			government = bourgeois_dictatorship
+			government = theocracy
 		}
 	}
 
@@ -4391,7 +4416,10 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.75
-			government = absolute_monarchy
+			OR = {
+				government = theocracy
+				government = absolute_monarchy
+			}
 		}
 		modifier = {
 			factor = 1.25
