@@ -521,14 +521,19 @@ assimilate_turks = {
 			}
 	}
 	effect = {
-		any_owned_province = {
+		any_owned = {
 			limit = {
-				AND = {
-					is_core = TUR
-					is_culture = turkish
+				any_pop = {
+					AND = {
+						is_core = TUR
+						has_pop_culture = turkish
+					}
 				}
+			}	
+			add_province_modifier = {
+				name = turkish_assimilation
+				duration = -1
 			}
-			assimilation_rate = 0.2  #or maybe national_assimilation modifier?
 		}
 		consciousness = 4
 		
