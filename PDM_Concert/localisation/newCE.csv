@@ -14,3 +14,25 @@ EVTNAME1000204;The War is Won!;;;;;;;;;;;;;x
 EVTDESC1000204;We have proven in battle that we are truly worth the title we were fighting for. The Russian Empire will have to agree to our demands and our position in the Eastern Christendom will be restored.;;;;;;;;;;;;x;
 EVTNAME1000205;The War is Lost!;;;;;;;;;;;;;x
 EVTDESC1000205;We have lost the war and forever lost the right to call ourselves the Protectors of Eastern Christendom. The new title owners have proven themselves to be more suitable for this role and we'll have to set our sights elsewhere.;;;;;;;;;;;;x;
+byzantine_anatolia_title;Byzantine Anatolia;;;;;;;;;;;;;x
+byzantine_anatolia_desc;We should restore the proper names of Anatolian provinces.;;;;;;;;;;;;x;
+restore_anatolia_title;Restore Anatolia;;;;;;;;;;;;;x
+restore_anatolia_desc;We returned Anatolia under Turkish rule and should return the respective names for its provinces.;;;;;;;;;;;;x;
+byzantine_armenia_title;Byzantine Armenia;;;;;;;;;;;;;x
+byzantine_armenia_desc;The return of Armenian lands should be accompanied with the restoration of their proper names.;;;;;;;;;;;;;x
+restore_armenia_not_TUR_title;Restore Armenia;;;;;;;;;;;;;x
+restore_armenia_not_TUR_desc;We should restore the Armenian names to the reclaimed provinces.;;;;;;;;;;;;x;
+restore_armenia_TUR_title;Restore Armenia;;;;;;;;;;;;;x
+restore_armenia_TUR_desc;We returned our Armenian lands and should restore their proper names.;;;;;;;;;;;;x;
+byzantine_levant_title;Byzantine Levant;;;;;;;;;;;;;x
+byzantine_levant_desc;Levant is ours and its province names should be restored to respective old names.;;;;;;;;;;;;x;
+restore_levant_title;Restore Levant;;;;;;;;;;;;;x
+reastore_levant_desc;Levant is returned and the names of its provinces should be restored.;;;;;;;;;;;;x;
+byzantine_egypt_title;Byzanine Egypt;;;;;;;;;;;;;x
+byzantine_egypt_desc;Aegyptus has been returned and should be assigned proper province names of old.;;;;;;;;;;;;x;
+byzantine_cyrenaica_title;Byzantine Cyrenaica;;;;;;;;;;;;;x
+byzantine_cyrenaica_desc;While we advance West we could restore the original names of the provinces of Cyrenaica.;;;;;;;;;;;;x;
+byzantine_tripolitania_title;Byzantine Tripolitania;;;;;;;;;;;;;x
+byzantine_tripolitania_desc;The Province of Tripolitania should be assigned its proper name as well as its cities.;;;;;;;;;;;;x;
+byzantine_tunis_title;Byzantine Tunisia
+byzantine_tunis_desc;The lands of Carthage is ours and as a symbol of our victory we should assign proper Roman names to its cities.;;;;;;;;;;;;x;
