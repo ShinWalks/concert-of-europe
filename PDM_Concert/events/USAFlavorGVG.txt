@@ -17,7 +17,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 2
+		months = 1
 	}
 	
 	option = {
@@ -26,7 +26,7 @@ country_event = {
 		realtion = { who = USA value = 100 }
 		USA = { country_event = 1000101 }
 		ai_chance = {
-			factor = 80
+			factor = 90
 		}
 	}
 	option = {
@@ -34,7 +34,7 @@ country_event = {
 		set_country_flag = texas_is_brave
 		relation = { who = USA value = -25 }
 		ai_chance = {
-			factor = 20
+			factor = 10
 		}
 	}
 }
