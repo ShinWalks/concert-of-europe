@@ -1025,7 +1025,7 @@ national_assimilation_complete = {
 }
 
 turkish_assimilation = {
-	assimilation_rate = 0.1
+	assimilation_rate = 0.2
 	icon = 7
 }
 
