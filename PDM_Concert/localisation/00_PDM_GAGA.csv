@@ -907,7 +907,8 @@ populationsize_25M_desc;Our population has reached twenty-five million people.;;
 populationsize_50M;Population 50 Million;;;;;;;;;;;;x
 populationsize_50M_desc;Our population has reached fifty million people.;;;;;;;;;;;;x
 populationsize_200M;Population 200 Million;;;;;;;;;;;;x
-populationsize_200M_desc;Our population has reached two hundred million people.;;;;;;;;;;;;xarmy_1;Army I (+);;;;;;;;;;;;x,,
+populationsize_200M_desc;Our population has reached two hundred million people.;;;;;;;;;;;;x
+army_1;Army I (+);;;;;;;;;;;;x,,
 army_2;Army II (+);;;;;;;;;;;;x,,
 army_3;Army III (+);;;;;;;;;;;;x,,
 army_4;Army IV (+);;;;;;;;;;;;x,,

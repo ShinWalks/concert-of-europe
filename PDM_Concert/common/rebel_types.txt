@@ -2179,6 +2179,7 @@ carlist_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = absolute_monarchy
+		theocracy = absolute_monarchy
 	}
 	
 	
@@ -2474,6 +2475,7 @@ christino_rebels = {
 		prussian_constitutionalism = hms_government
 		hms_government = hms_government
 		democracy = hms_government
+		theocracy = hms_government
 	}
 	
 	
@@ -2983,6 +2985,7 @@ indian_sepoys = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = theocracy
 	}
 
 	defection = pan_nationalist		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -3256,6 +3259,7 @@ indian_nationalists = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = theocracy
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -3916,6 +3920,7 @@ unciv_reactionary_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = absolute_monarchy
+		theocracy = absolute_monarchy
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -5406,6 +5411,7 @@ sioux_nation = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = theocracy
 	}
 
 	defection = none					# Will defect to the "best" alternative.
@@ -5523,6 +5529,7 @@ apache = {
 		prussian_constitutionalism = prussian_constitutionalism
 		hms_government = hms_government
 		democracy = democracy
+		theocracy = theocracy
 	}
 
 	defection = none					# Will defect to the "best" alternative.
