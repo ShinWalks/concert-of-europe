@@ -104,5 +104,5 @@ theocracy = {
 	reactionary = yes
 	
 	appoint_ruling_party = yes
-	flagType = special
+	flagType = monarchy
 }
