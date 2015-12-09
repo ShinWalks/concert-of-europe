@@ -25,12 +25,14 @@ multitude_of_financial_instruments = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			shares = 0.01
+	factory_goods_output = {
+		shares = 0.01
 		}
 	}
+	
+	
+	
 }
-
 insurance_companies = {
 	limit = { stock_exchange = 1 }
 	news = no
@@ -46,12 +48,14 @@ insurance_companies = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			financial_services = 0.01
+	factory_goods_output = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 regulated_buying_and_selling_of_stocks = {
 	limit = { stock_exchange = 1 }
 	news = no
@@ -67,10 +71,13 @@ regulated_buying_and_selling_of_stocks = {
 		}
 	}
 	effect = {
-		factory_goods_throughput = {
-			shares = 0.02
+	factory_goods_throughput = {
+		shares = 0.02
 		}
 	}
+	
+	
+	
 }
 
 #business_banks
@@ -89,10 +96,12 @@ liquidation_of_assets = {
 		}
 	}
 	effect = {
-		factory_cost = -0.1
+		factory_cost = -0.10
 	}
+	
+	
+	
 }
-
 capital_for_investors = {
 	limit = { business_banks = 1 }
 	news = no
@@ -109,11 +118,13 @@ capital_for_investors = {
 	}
 	effect = {
 		factory_goods_output = {
-			shares = 0.01
+		shares = 0.01
 		}
 	}
+	
+	
+	
 }
-
 distribution_channels = {
 	limit = { business_banks = 1 }
 	news = no
@@ -131,6 +142,9 @@ distribution_channels = {
 	effect = {
 		factory_input = -0.01
 	}
+	
+	
+	
 }
 
 #investment_banks
@@ -153,11 +167,13 @@ industrial_rnd_investments = {
 	}
 	effect = {
 		factory_goods_throughput = {
-			financial_services = 0.01
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 industrial_production_investments = {
 	limit = {
 		investment_banks = 1
@@ -178,8 +194,10 @@ industrial_production_investments = {
 	effect = {
 		factory_cost = -0.02
 	}
+	
+	
+	
 }
-
 industrial_distribution_investments = {
 	limit = {
 		investment_banks = 1
@@ -200,6 +218,9 @@ industrial_distribution_investments = {
 	effect = {
 		factory_cost = -0.02
 	}
+	
+	
+	
 }
 
 #bank_inspection_board
@@ -233,12 +254,14 @@ private_bank_monitoring = {
 		}
 	}
 	effect = {
-		factory_goods_throughput = {
-			paper =  0.05
+	factory_goods_throughput = {
+		paper =  0.05
 		}
 	}
+	
+	
+	
 }
-
 market_behaviour_monitoring = {
 	limit = {
 		bank_inspection_board = 1
@@ -265,10 +288,13 @@ market_behaviour_monitoring = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			financial_services = 0.01
+	factory_goods_output = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
 
 #mutual_funds
@@ -301,11 +327,14 @@ buying_on_margin = {
 		}
 	}
 	effect = {
-		factory_input = -0.01
-		factory_goods_throughput = {
-			shares = 0.02
+	factory_input = -0.01
+	factory_goods_throughput = {
+		shares = 0.02
 		}
 	}
+	
+	
+	
 }
 
 #ad_hoc_money_bill_printing
@@ -335,12 +364,14 @@ silver_standard = {
 		}
 	}
 	effect = {
-		rgo_goods_throughput = {
-			precious_metal = 0.05
+	rgo_goods_throughput = {
+		precious_metal = 0.05
 		}
 	}
+	
+	
+	
 }
-
 decimal_monetary_system = {
 	limit = { ad_hoc_money_bill_printing = 1 }
 	news = no
@@ -364,12 +395,14 @@ decimal_monetary_system = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			financial_services = 0.01
+	factory_goods_output = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 #private_bank_money_bill_printing
 double_standard = {
 	limit = { private_bank_money_bill_printing = 1 }
@@ -386,12 +419,14 @@ double_standard = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			financial_services = 0.01
+	factory_goods_output = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 fixed_intramonetary_exchange_rates = {
 	limit = { private_bank_money_bill_printing = 1 }
 	news = no
@@ -407,16 +442,18 @@ fixed_intramonetary_exchange_rates = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			financial_services = 0.01
+	factory_goods_output = {
+		financial_services = 0.01
 		}
 		loan_interest = -0.01
-		rgo_goods_throughput = {
-			precious_metal = 0.15
+	rgo_goods_throughput = {
+		precious_metal = 0.15
 		}
 	}
+	
+	
+	
 }
-
 #central_bank_money_bill_printing
 gold_standard = {
 	limit = { central_bank_money_bill_printing = 1 }
@@ -437,12 +474,14 @@ gold_standard = {
 		}
 	}
 	effect = {
-		rgo_goods_throughput = {
-			precious_metal = 0.15
+	rgo_goods_throughput = {
+		precious_metal = 0.15
 		}
 	}
+	
+	
+	
 }
-
 international_monetary_exchange_rates = {
 	limit = { central_bank_money_bill_printing = 1 }
 	news = no
@@ -463,12 +502,14 @@ international_monetary_exchange_rates = {
 	}
 	effect = {
 		loan_interest = -0.01
-		factory_goods_output = {
-			financial_services = 0.01
+			factory_goods_output = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 #modern_central_bank_system
 state_bond_monetary_mechanism = {
 	limit = {
@@ -496,12 +537,14 @@ state_bond_monetary_mechanism = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			financial_services = 0.01
+			factory_goods_output = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 interest_inflation_weapon = {
 	limit = {
 		modern_central_bank_system = 1
@@ -524,12 +567,14 @@ interest_inflation_weapon = {
 		}
 	}
 	effect = {
-		factory_goods_throughput = {
-			financial_services = 0.03
+			factory_goods_throughput = {
+		financial_services = 0.03
 		}
 	}
+	
+	
+	
 }
-
 #market_determined_exchange_rates
 hyperinflation = {
 	limit = {
@@ -555,8 +600,10 @@ hyperinflation = {
 			financial_services = 0.02
 		}
 	}
+	
+	
+	
 }
-
 #early_classical_theory
 john_ramsay_mcculloch = {
 	limit = { early_classical_theory_and_critique = 1 }
@@ -579,8 +626,10 @@ john_ramsay_mcculloch = {
 	effect = {
 		activate_building = furniture_factory
 	}
+	
+	
+	
 }
-
 nassau_william_sr = {
 	limit = { early_classical_theory_and_critique = 1 }
 	news = no
@@ -602,8 +651,10 @@ nassau_william_sr = {
 	effect = {
 		activate_building = paper_mill 
 	}
+	
+	
+	
 }
-
 james_mill = {
 	limit = { classicism_n_early_romanticism = 1 }
 	news = no
@@ -629,17 +680,16 @@ james_mill = {
 			ruling_party_ideology = liberal
 		}
 		modifier = {
-			factor = -2
+			factor = -1
 			civilized = no
-		}
-		modifier = {
-			factor = 2
-			invention = john_ramsay_mcculloch
 		}
 	}
 	effect = {
 		activate_building = luxury_furniture_factory 
 	}
+	
+	
+	
 }
 
 #late_classical_theory
@@ -673,12 +723,14 @@ john_elliot_cairnes = {
 	}
 	effect = {
 		permanent_prestige = 2
-		rgo_goods_throughput = {
-			precious_metal = 0.1
+	rgo_goods_throughput = {
+		precious_metal = 0.1
 		}
 	}
+	
+	
+	
 }
-
 robert_torrens = {
 	limit = {
 		late_classical_theory = 1
@@ -698,12 +750,14 @@ robert_torrens = {
 	}
 	effect = {
 		permanent_prestige = 2
-		factory_goods_throughput = {
-			financial_services = 0.02
+	factory_goods_throughput = {
+		financial_services = 0.02
 		}
 	}
+	
+	
+	
 }
-
 john_stuart_mill = {
 	limit = {
 		late_classical_theory = 1
@@ -734,13 +788,17 @@ john_stuart_mill = {
 	}
 	effect = {
 		permanent_prestige = 2 
-		factory_goods_output = {
-			shares = 0.02
+	factory_goods_output = {
+		shares = 0.02
 		}
 	}
+	
+	
+	
 }
 
 #collectivist_theory
+
 pierre_joseph_proudhon = {
 	limit = {
 		collectivist_theory = 1
@@ -772,8 +830,10 @@ pierre_joseph_proudhon = {
 	effect = {
 		permanent_prestige = 1  
 	}
+	
+	
+	
 }
-
 karl_marx = {
 	limit = {
 		collectivist_theory = 1
@@ -808,10 +868,12 @@ karl_marx = {
 	}
 	effect = {
 		permanent_prestige = 3 
-		social_reform_desire = 0.05
 	}
+	social_reform_desire = 0.05
+	
+	
+	
 }
-
 friedrich_engels = {
 	limit = {
 		collectivist_theory = 1
@@ -831,10 +893,12 @@ friedrich_engels = {
 	}
 	effect = {
 		permanent_prestige = 3 
-		social_reform_desire = 0.1
 	}
+	social_reform_desire = 0.1
+	
+	
+	
 }
-
 eduard_bernstein = {
 	limit = {
 		collectivist_theory = 1
@@ -871,8 +935,10 @@ eduard_bernstein = {
 	effect = {
 		permanent_prestige = 3 
 	}
+	
+	
+	
 }
-
 sidney_webb = {
 	limit = {
 		collectivist_theory = 1
@@ -899,8 +965,10 @@ sidney_webb = {
 	effect = {
 		permanent_prestige = 3
 	}
+	
+	
+	
 }
-
 karl_kautsky = {
 	limit = {
 		collectivist_theory = 1
@@ -936,8 +1004,10 @@ karl_kautsky = {
 	effect = {
 		permanent_prestige = 5
 	}
+	
+	
+	
 }
-
 jean_jaurès = {
 	limit = {
 		collectivist_theory = 1
@@ -958,8 +1028,10 @@ jean_jaurès = {
 	effect = {
 		permanent_prestige = 1 
 	}
+	
+	
+	
 }
-
 #the_historical_theory
 friedrich_list = {
 	limit = {
@@ -989,8 +1061,10 @@ friedrich_list = {
 	effect = {
 		permanent_prestige = 1 
 	}
+	
+	
+	
 }
-
 wilhelm_roscher = {
 	limit = {
 		the_historical_theory = 1
@@ -1019,8 +1093,10 @@ wilhelm_roscher = {
 	effect = {
 		permanent_prestige = 1 
 	}
+	
+	
+	
 }
-
 bruno_hildebrand = {
 	limit = {
 		the_historical_theory = 1
@@ -1041,8 +1117,10 @@ bruno_hildebrand = {
 	effect = {
 		permanent_prestige = 1 
 	}
+	
+	
+	
 }
-
 karl_knies = {
 	limit = {
 		the_historical_theory = 1
@@ -1071,8 +1149,10 @@ karl_knies = {
 	effect = {
 		permanent_prestige = 5 
 	}
+	
+	
+	
 }
-
 gustav_von_schmoller = {
 	limit = {
 		the_historical_theory = 1
@@ -1093,8 +1173,10 @@ gustav_von_schmoller = {
 	effect = {
 		permanent_prestige = 1  
 	}
+	
+	
+	
 }
-
 adolph_wagner = {
 	limit = {
 		the_historical_theory = 1
@@ -1123,8 +1205,10 @@ adolph_wagner = {
 	effect = {
 		permanent_prestige = 3 
 	}
+	
+	
+	
 }
-
 william_cunningham = {
 	limit = {
 		the_historical_theory = 1
@@ -1156,9 +1240,12 @@ william_cunningham = {
 	effect = {
 		permanent_prestige = 1 
 	}
+	
+	
+	
 }
-
 #neoclassical_theory
+
 johann_heinrich_von_thünen = {
 	limit = {
 		neoclassical_theory = 1
@@ -1178,12 +1265,14 @@ johann_heinrich_von_thünen = {
 	}
 	effect = {
 		permanent_prestige = 3 
-		factory_goods_output = {
-			financial_services = 0.01
+	factory_goods_output = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 léon_walras = {
 	limit = {
 		neoclassical_theory = 1
@@ -1214,12 +1303,14 @@ léon_walras = {
 	}
 	effect = {
 		permanent_prestige = 2 
-		factory_goods_output = {
-			financial_services = 0.01
+	factory_goods_output = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 stanley_jevons = {
 	limit = {
 		neoclassical_theory = 1
@@ -1251,8 +1342,10 @@ stanley_jevons = {
 		shares = 0.01
 		}
 	}
+	
+	
+	
 }
-
 carl_menger = {
 	limit = {
 		neoclassical_theory = 1
@@ -1284,8 +1377,10 @@ carl_menger = {
 	effect = {
 		permanent_prestige = 5 
 	}
+	
+	
+	
 }
-
 thorstein_veblen = {
 	limit = {
 		neoclassical_theory = 1
@@ -1306,8 +1401,10 @@ thorstein_veblen = {
 	effect = {
 		permanent_prestige = 4 
 	}
+	
+	
+	
 }
-
 alfred_marshall = {
 	limit = {
 		neoclassical_theory = 1
@@ -1339,8 +1436,10 @@ alfred_marshall = {
 	effect = {
 		permanent_prestige = 5 
 	}
+	
+	
+	
 }
-
 augustin_cournot = {
 	limit = {
 		neoclassical_theory = 1
@@ -1372,8 +1471,10 @@ augustin_cournot = {
 	effect = {
 		permanent_prestige = 1 
 	}
+	
+	
+	
 }
-
 jules_dupuit = {
 	limit = {
 		neoclassical_theory = 1
@@ -1394,8 +1495,10 @@ jules_dupuit = {
 	effect = {
 		permanent_prestige = 1 
 	}
+	
+	
+	
 }
-
 vilfredo_pareto = {
 	limit = {
 		neoclassical_theory = 1
@@ -1416,8 +1519,10 @@ vilfredo_pareto = {
 	effect = {
 		permanent_prestige = 1 
 	}
+	
+	
+	
 }
-
 knut_wicksell = {
 	limit = {
 		neoclassical_theory = 1
@@ -1449,8 +1554,10 @@ knut_wicksell = {
 	effect = {
 		permanent_prestige = 1 
 	}
+	
+	
+	
 }
-
 irving_fischer = {
 	limit = {
 		neoclassical_theory = 1
@@ -1470,12 +1577,14 @@ irving_fischer = {
 	}
 	effect = {
 		permanent_prestige = 1 
-		factory_goods_output = {
-			financial_services = 0.01
+	factory_goods_output = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 joseph_schumpeter = {
 	limit = {
 		neoclassical_theory = 1
@@ -1496,8 +1605,10 @@ joseph_schumpeter = {
 	effect = {
 		permanent_prestige = 5 
 	}
+	
+	
+	
 }
-
 eugen_von_böhm_bawerk = {
 	limit = {
 		neoclassical_theory = 1
@@ -1518,8 +1629,10 @@ eugen_von_böhm_bawerk = {
 	effect = {
 		permanent_prestige = 1 
 	}
+	
+	
+	
 }
-
 #keynesian_economics
 john_maynard_keynes = {
 	limit = {
@@ -1541,13 +1654,15 @@ john_maynard_keynes = {
 		}
 	}
 	effect = {
-		permanent_prestige = 3 
-		factory_goods_throughput = {
-			financial_services = 0.02
+		permanent_prestige = 10 
+	factory_goods_throughput = {
+		financial_services = 0.02
 		}
 	}
+	
+	
+	
 }
-
 richard_kahn = {
 	limit = {
 		keynesian_economics = 1
@@ -1568,8 +1683,10 @@ richard_kahn = {
 	effect = {
 		permanent_prestige = 10 
 	}
+	
+	
+	
 }
-
 ludwig_von_mises = {
 	limit = {
 		keynesian_economics = 1
@@ -1594,11 +1711,13 @@ ludwig_von_mises = {
 	effect = {
 		permanent_prestige = 10
 	}
+	
+	
+	
 }
-
 friedrich_hayek = {
 	limit = {
-		keynesian_economics = 1
+		neoliberal_theory = 1
 		has_country_flag = existing_country
 	}
 	news = no
@@ -1614,16 +1733,15 @@ friedrich_hayek = {
 		}
 	}
 	effect = {
-		permanent_prestige = 5 
-		factory_goods_output = {
-			financial_services = 0.03
+		permanent_prestige = 10
+			factory_goods_output = {
+		financial_services = 0.03
 		}
-		factory_goods_output = {
-			shares = 0.03
+	factory_goods_output = {
+		shares = 0.03
 		}
 	}
 }
-
 #freedom_of_trade
 #market_structure
 polypoly_structure = {
@@ -1659,8 +1777,10 @@ polypoly_structure = {
 	effect = {
 		factory_output = 0.03
 	}
+	
+	
+	
 }
-
 oligopoly_structure = {
 	limit = {
 		market_structure = 1 
@@ -1689,10 +1809,12 @@ oligopoly_structure = {
 		}
 	}
 	effect = {
-		factory_throughput = 0.1
+		factory_throughput = 0.10
 	}
+	
+	
+	
 }
-
 monopoly_structure = {
 	limit = {
 		market_structure = 1
@@ -1726,8 +1848,10 @@ monopoly_structure = {
 	effect = {
 		factory_input = -0.02
 	}
+	
+	
+	
 }
-
 #business_regulations
 limited_partnership_company = {
 	limit = {
@@ -1748,8 +1872,10 @@ limited_partnership_company = {
 	effect = {
 		factory_input = -0.01
 	}
+	
+	
+	
 }
-
 joint_stock_company = {
 	limit = {
 		business_regulations = 1
@@ -1767,12 +1893,13 @@ joint_stock_company = {
 		}
 	}
 	effect = {
-		factory_goods_throughput = {
-			shares = 0.1
-		}
+	factory_goods_throughput = {
+		shares = 0.1	}
 	}
+	
+	
+	
 }
-
 patent = {
 	limit = {
 		business_regulations = 1
@@ -1804,8 +1931,10 @@ patent = {
 	effect = {
 		factory_cost = -0.02
 	}
+	
+	
+	
 }
-
 trademark = {
 	limit = {
 		business_regulations = 1
@@ -1829,8 +1958,10 @@ trademark = {
 	effect = {
 		factory_cost = -0.02 
 	}
+	
+	
+	
 }
-
 #market_regulations
 anti_trust_laws = {
 	limit = {
@@ -1863,12 +1994,14 @@ anti_trust_laws = {
 			factor = 4
 			nationalvalue = nv_prosperity
 		}
-	}
-	effect = {		
+	}	
+	effect = {
 		factory_input = -0.01
 	}
+	
+	
+	
 }
-
 financial_regulations = {
 	limit = {
 		market_regulations = 1
@@ -1888,11 +2021,13 @@ financial_regulations = {
 	}
 	effect = {
 		factory_goods_output = {
-			financial_services = 0.01
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 banking_regulations = {
 	limit = {
 		market_regulations = 1
@@ -1911,12 +2046,14 @@ banking_regulations = {
 		}
 	}
 	effect = {
-		factory_goods_throughput = {
-			financial_services = 0.03
+	factory_goods_throughput = {
+		financial_services = 0.03
 		}
 	}
+	
+	
+	
 }
-
 #economic_responsibility
 working_board_of_directors = {
 	limit = {
@@ -1938,8 +2075,10 @@ working_board_of_directors = {
 	effect = {
 		factory_output = 0.02
 	}
+	
+	
+	
 }
-
 bankruptcy_proceedings = {
 	limit = {
 		economic_responsibility = 1
@@ -1958,12 +2097,14 @@ bankruptcy_proceedings = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			financial_services = 0.01
+	factory_goods_output = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 annual_report_proceedings = {
 	limit = {
 		economic_responsibility = 1
@@ -1984,8 +2125,10 @@ annual_report_proceedings = {
 	effect = {
 		factory_cost = -0.05
 	}
+	
+	
+	
 }
-
 #government_interventionism
 priming_the_pump_ = {
 	limit = {
@@ -2006,12 +2149,14 @@ priming_the_pump_ = {
 	}
 	effect = {
 		loan_interest = -0.005
-		factory_goods_throughput = {
-			financial_services = 0.01
+	factory_goods_throughput = {
+		financial_services = 0.01
 		}
 	}
+	
+	
+	
 }
-
 mixed_economy = {
 	limit = {
 		government_interventionism = 1
@@ -2039,7 +2184,7 @@ mixed_economy = {
 
 The_New_Deal ={
 	limit = {
-		government_interventionism = 1
+		globalized_markets = 1
 		has_country_flag = existing_country
 	}
 	news = no
@@ -2077,12 +2222,11 @@ centralized_economic_planning = {
 		}
 	}
 	effect = {
-		factory_goods_output = {
-			financial_services = 0.05
+	factory_goods_output = {
+		financial_services = 0.05
 		}
 	}
 }
-
 autarky = {
 	limit = {
 		government_interventionism = 1
@@ -2108,7 +2252,6 @@ autarky = {
 		loan_interest = -0.005
 	}
 }
-
 import_substitution_industrialization = {
 	limit = { government_interventionism = 1 }
 	news = no
@@ -2140,7 +2283,34 @@ import_substitution_industrialization = {
 		}
 	}
 }
-
+	
+import_substitution_industrialization_2 = {
+	limit = { economic_responsibility = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			economic_policy = planned_economy
+		}
+		modifier = {
+			factor = 3
+			economic_policy = interventionism
+		}
+		modifier = {
+			factor = 2
+			trade_policy = protectionism
+		}
+		modifier = {
+			factor = 2
+			year = 1900
+		}
+	}
+	effect = {
+		activate_building = synthetic_tropical_factory
+	}
+}
+	
 #organized_factories
 work_classification = {
 	limit = { organized_factories = 1 }
@@ -2159,8 +2329,10 @@ work_classification = {
 	effect = {
 		factory_output = 0.01
 	}
+	
+	
+	
 }
-
 work_specialization = {
 	limit = { organized_factories = 1 }
 	news = no
@@ -2182,8 +2354,10 @@ work_specialization = {
 	effect = {
 		factory_output = 0.01
 	}
+	
+	
+	
 }
-
 work_control_and_hierarchy = {
 	limit = { organized_factories = 1 }
 	news = no
@@ -2205,8 +2379,10 @@ work_control_and_hierarchy = {
 	effect = {
 		factory_throughput = 0.025
 	}
+	
+	
+	
 }
-
 #scientific_management
 sequence_planning = {
 	limit = {
@@ -2227,8 +2403,10 @@ sequence_planning = {
 	effect = {
 		factory_output = 0.01
 	}
+	
+	
+	
 }
-
 inventory_planning = {
 	limit = {
 		scientific_management = 1
@@ -2248,8 +2426,10 @@ inventory_planning = {
 	effect = {
 		factory_output = 0.01
 	}
+	
+	
+	
 }
-
 quality_assurance_procedure = {
 	limit = {
 		scientific_management = 1
@@ -2269,8 +2449,10 @@ quality_assurance_procedure = {
 	effect = {
 		factory_throughput = 0.025
 	}
+	
+	
+	
 }
-
 #time_saving_measures
 time_studies = {
 	limit = {
@@ -2298,8 +2480,10 @@ time_studies = {
 			cigarettes = 0.01
 		}
 	}
+	
+	
+	
 }
-
 time_clock = {
 	limit = {
 		time_saving_measures = 1
@@ -2320,8 +2504,10 @@ time_clock = {
 	effect = {
 		factory_output = 0.01
 	}
+	
+	
+	
 }
-
 lighting = {
 	limit = {
 		time_saving_measures = 1
@@ -2342,8 +2528,10 @@ lighting = {
 	effect = {
 		factory_throughput = 0.025
 	}
+	
+	
+	
 }
-
 #management_strategy
 old_style_family_business = {
 	limit = {
@@ -2379,8 +2567,10 @@ old_style_family_business = {
 			cigars = 0.01
 		}
 	}
+	
+	
+	
 }
-
 anynomous_investor_business = {
 	limit = {
 		management_strategy = 1
@@ -2401,8 +2591,10 @@ anynomous_investor_business = {
 	effect = {
 		factory_output = 0.01 
 	}
+	
+	
+	
 }
-
 marketized_smallholder_business = {
 	limit = {
 		management_strategy = 1
@@ -2423,8 +2615,10 @@ marketized_smallholder_business = {
 	effect = {
 		factory_output = 0.01
 	}
+	
+	
+	
 }
-
 #organizational_development
 i_scientific_management = {
 	limit = {
@@ -2458,8 +2652,10 @@ i_scientific_management = {
 			cigars = 0.01
 		}
 	}
+	
+	
+	
 }
-
 human_resource_development = {
 	limit = {
 		organizational_development = 1
@@ -2478,6 +2674,6 @@ human_resource_development = {
 		}
 	}
 	effect = {
-		factory_output = 0.02
+		factory_output = 0.01
 	}
 }

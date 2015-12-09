@@ -1,4 +1,4 @@
-color = { 99  43  71 }
+color = { 140  29  44 }
 graphical_culture = EuropeanGC
 
 party = {
@@ -127,7 +127,7 @@ unit_names = {
 		
 	}
 	cruiser = {
-		"Józef Pilsudski" "Józef Chlopicki" "Michal Gedeon Radziwill" Miedzymorze "Adam Czartoryski" "Wladyslaw Czartoryski" "Aleksander Waszkowski" "Konstanty Kalinowski"
+		"JÃ³zef Pilsudski" "JÃ³zef Chlopicki" "Michal Gedeon Radziwill" Miedzymorze "Adam Czartoryski" "Wladyslaw Czartoryski" "Aleksander Waszkowski" "Konstanty Kalinowski"
 	}
 	frigate = {
 		Mindaugas Butigeidis Vytenis Gediminas Algirdas Kestutis Jogaila "Vytautas Didysis" "Zygimantas Kestutaitis"
@@ -142,6 +142,6 @@ unit_names = {
 		
 	}
 	commerce_raider = {
-		 Wisla Odra Windawa Bartów Neman Dniprer Prypec
+		 Wisla Odra Windawa BartÃ³w Neman Dniprer Prypec
 	}
 }

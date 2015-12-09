@@ -750,6 +750,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = post_colonial_country
 				exists = ITA
+				government = theocracy
 			}
 		}
 		

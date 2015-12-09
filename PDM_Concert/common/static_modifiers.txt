@@ -9,6 +9,8 @@
 # Difficulty Modifiers
 ##########################################################################
 
+
+
 very_easy_player = {
 	supply_consumption = -0.5
 	research_points_modifier = 0.5
@@ -30,9 +32,13 @@ very_hard_player = {
 	supply_consumption = 1.0
 }
 
+
+
+
 very_easy_ai = {
 	land_organisation = -0.25
 	naval_organisation = -0.25
+
 }
 
 easy_ai = {
@@ -89,13 +95,15 @@ land_province = {
 	supply_limit = 5
 }
 
+
+
 blockaded = {
-	war_exhaustion = 0.02
 }
 
 no_adjacent_controlled = {
 	supply_limit = -3
 }
+
 
 core = {
 	supply_limit = 3
@@ -105,12 +113,14 @@ has_siege = {
 	population_growth = -0.0001
 	farm_rgo_eff = -0.5
 	mine_rgo_eff = -0.5
-	war_exhaustion = 0.05
+	war_exhaustion = 0.04
 	prestige = -0.01
 }
 
 occupied = {
 }
+
+
 
 nationalism = {
 	pop_militancy_modifier = 0.01
@@ -123,6 +133,8 @@ infrastructure = {
 	supply_limit = 1.5
 }
 
+
+
 ##########################################################################
 # Global Static Modifiers
 ##########################################################################
@@ -133,15 +145,14 @@ base_values = {
 
 war = {
 	max_war_exhaustion = 100			#base max at war.
-	war_exhaustion = -0.1
 	badboy = -0.033
 	global_pop_consciousness_modifier = -0.03
+	war_exhaustion = -0.1
 }
 
 peace = {
-	max_war_exhaustion = 50			#base max at peace.
+	max_war_exhaustion = 25			#base max at peace.
 	war_exhaustion = -0.5
-	supply_consumption = -0.5
 	badboy = -0.1
 }
 
@@ -158,11 +169,14 @@ war_exhaustion = {
 	prestige = -0.01
 }
 
+
 badboy = {
 	global_pop_consciousness_modifier = 0.005
 	cb_generation_speed_modifier = -0.03
 	war_exhaustion = 0.01
+	prestige = -0.01
 }
+
 
 debt_default_to = {
 	import_cost = 0.01
@@ -202,6 +216,7 @@ unciv_nation = {
 	cb_generation_speed_modifier = 1
 }
 
+
 average_literacy = {
 	research_points_modifier = 1
 	leadership = 1
@@ -210,7 +225,7 @@ average_literacy = {
 	tax_efficiency = 0.2
 }
 
-plurality = {
+plurality = { 
 	research_points_modifier = 0.01
 	cb_generation_speed_modifier = -0.005
 	issue_change_speed = 0.01

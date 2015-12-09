@@ -64,7 +64,7 @@ country_event = {
 
 	trigger = {
 		tag = PAP
-		government = absolute_monarchy
+		government = theocracy
 		has_global_flag = liberal_revolutions_should_now_fire
 		NOT = { has_global_flag = pius_IX_reforms }
 	}

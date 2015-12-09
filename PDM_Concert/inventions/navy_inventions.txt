@@ -46,8 +46,10 @@ sealane_hunters = {
 			gun_power = 2
 		}
 	}
+	
+	
+	
 }
-
 fast_ship_killer = {
 	limit = { raider_group_doctrine = 1 }
 	news = no
@@ -65,8 +67,10 @@ fast_ship_killer = {
 			maximum_speed = 2
 		}
 	}
+	
+	
+	
 }
-
 big_ship_competitor = {
 	limit = { raider_group_doctrine = 1 }
 	news = no
@@ -87,8 +91,10 @@ big_ship_competitor = {
 			supply_consumption = 0.05
 		}
 	}
+	
+	
+	
 }
-
 standard_raider_group_doctrine = {
 	limit = { raider_group_doctrine = 1 }
 	news = no
@@ -100,8 +106,10 @@ standard_raider_group_doctrine = {
 			maximum_speed = 1
 		}
 	}
+	
+	
+	
 }
-
 #blue_and_brown_water_schools
 blue_water_school = {
 	limit = {
@@ -139,8 +147,10 @@ blue_water_school = {
 			maximum_speed = 3
 		}
 	}
+	
+	
+	
 }
-
 brown_water_school = {
 	limit = {
 		blue_and_brown_water_schools = 1 
@@ -179,8 +189,10 @@ brown_water_school = {
 			supply_consumption = -0.1
 		}
 	}
+	
+	
+	
 }
-
 #high_sea_battle_fleet
 offensive_attitude = {
 	limit = {
@@ -199,8 +211,10 @@ offensive_attitude = {
 			supply_consumption = 0.25
 		}
 	}
+	
+	
+	
 }
-
 defensive_attitude = {
 	limit = {
 		high_sea_battle_fleet = 1 
@@ -219,8 +233,10 @@ defensive_attitude = {
 		}
 	
 	}
+	
+	
+	
 }
-
 #modern_naval_doctrine
 decisive_firepower_doctrine = {
 	limit = {
@@ -241,8 +257,10 @@ decisive_firepower_doctrine = {
 			supply_consumption = 0.1
 		}
 	}
+	
+	
+	
 }
-
 naval_firepower_doctrine = {
 	limit = {
 		modern_naval_doctrine = 1
@@ -258,8 +276,10 @@ naval_firepower_doctrine = {
 			supply_consumption = 0.05
 		}
 	}
+	
+	
+	
 }
-
 fleet_auxiliary_cv_doctrine = {
 	limit = {
 		modern_naval_doctrine = 1
@@ -277,7 +297,6 @@ fleet_auxiliary_cv_doctrine = {
 		}
 	}
 }
-
 fleet_auxiliary_ss_doctrine = {
 	limit = {
 		modern_naval_doctrine = 1
@@ -293,7 +312,6 @@ fleet_auxiliary_ss_doctrine = {
 		}
 	}
 }
-
 convoy_sailing = {
 	limit = {
 		modern_naval_doctrine = 1
@@ -310,7 +328,6 @@ convoy_sailing = {
 		}
 	}
 }
-
 integrated_naval_doctrine = {
 	limit = {
 		modern_naval_doctrine = 1
@@ -348,7 +365,6 @@ integrated_naval_doctrine = {
 		}
 	}
 }
-
 #clipper_design
 building_station_shipyards = {
 	limit = { clipper_design = 1 }
@@ -365,8 +381,10 @@ building_station_shipyards = {
 			clipper_convoy = 0.10
 		}
 	}
+	
+	
+	
 }
-
 corvettes = {
 	limit = { clipper_design = 1 }
 	news = no
@@ -381,7 +399,6 @@ corvettes = {
 		}
 	}
 }
-
 #steamers
 mechanized_fishing_vessels = {
 	limit = { steamers = 1 }
@@ -398,8 +415,10 @@ mechanized_fishing_vessels = {
 			fish = 0.1
 		}
 	}
+	
+	
+	
 }
-
 steamer_automatic_construction_plants = {
 	limit = { steamers = 1 }
 	news = no
@@ -419,8 +438,10 @@ steamer_automatic_construction_plants = {
 			steamer_convoy = 0.03
 		}
 	}
+	
+	
+	
 }
-
 steamer_transports = {
 	limit = { steamers = 1 }
 	news = no
@@ -432,8 +453,10 @@ steamer_transports = {
 		shared_prestige = 5
 		supply_range = 1
 	}
+	
+	
+	
 }
-
 commerce_raiders = {
 	limit = { steamers = 1 }
 	news = no
@@ -444,8 +467,10 @@ commerce_raiders = {
 		activate_unit = commerce_raider 
 		shared_prestige = 5
 	}
+	
+	
+	
 }
-
 #iron_steamers
 ironclads = {
 	limit = {
@@ -463,8 +488,10 @@ ironclads = {
 		activate_unit = ironclad  
 		shared_prestige = 10
 	}
+	
+	
+	
 }
-
 monitors = {
 	limit = { iron_steamers = 1 
 		practical_steam_engine = 1}
@@ -479,8 +506,10 @@ monitors = {
 		activate_unit = monitor 
 		shared_prestige = 10
 	}
+	
+	
+	
 }
-
 torpedo_boats = {
 	limit = { iron_steamers = 1 }
 	news = no
@@ -497,12 +526,11 @@ torpedo_boats = {
 	}
 	effect = {
 		monitor  = {
-			gun_power = 3
-			supply_consumption = 0.05
+				gun_power = 3
+				supply_consumption = 0.05
 		}
 	}
 }
-
 #steel_steamers
 protected_cruisers = {
 	limit = {
@@ -520,8 +548,10 @@ protected_cruisers = {
 		activate_unit = cruiser 
 		shared_prestige = 20
 	}
+	
+	
+	
 }
-
 destroyers = {
 	limit = {
 		steel_steamers = 1
@@ -546,7 +576,6 @@ destroyers = {
 		}
 	}
 }
-
 submarines = {
 	limit = {
 		steel_steamers = 1
@@ -560,11 +589,10 @@ submarines = {
 		}
 	}
 	effect = {
-		shared_prestige = 10
 		activate_unit = submarine
+		shared_prestige = 10
 	}
 }
-
 pre_dreadnought = {
 	limit = {
 		steel_steamers = 1
@@ -589,8 +617,10 @@ pre_dreadnought = {
 			build_time = 30	
 		}
 	}
+	
+	
+	
 }
-
 #steam_turbine_ships
 dreadnoughts = {
 	limit = {
@@ -606,11 +636,13 @@ dreadnoughts = {
 		}
 	}
 	effect = {
-		shared_prestige = 30
 		activate_unit = dreadnought
+		shared_prestige = 30
 	}
+	
+	
+	
 }
-
 light_cruisers = {
 	limit = {
 		steam_turbine_ships = 1 
@@ -634,7 +666,6 @@ light_cruisers = {
 		}
 	}
 }
-
 battlecruisers = {
 	limit = {
 		steam_turbine_ships = 1 
@@ -660,7 +691,6 @@ battlecruisers = {
 		}
 	}
 }
-
 ocean_going_submarines = {
 	limit = {
 		steam_turbine_ships = 1 
@@ -684,7 +714,6 @@ ocean_going_submarines = {
 		}
 	}
 }
-
 #oil_driven_ships
 advanced_destroyers = {
 	limit = {
@@ -709,10 +738,9 @@ advanced_destroyers = {
 		}
 	}
 }
-
 modern_destroyers = {
 	limit = {
-		oil_driven_ships = 1
+		modern_ship_construction = 1
 		has_country_flag = existing_country
 	}
 	news = no
@@ -733,7 +761,6 @@ modern_destroyers = {
 		}
 	}
 }
-
 advanced_cruisers = {
 	limit = {
 		oil_driven_ships = 1 
@@ -757,11 +784,13 @@ advanced_cruisers = {
 			build_time = 30	
 		} 
 	}
+	
+	
+	
 }
-
 modern_cruisers = {
 	limit = {
-		oil_driven_ships = 1 
+		modern_ship_construction = 1 
 		combustion_engine = 1 
 		NOT = { invention = battlecruisers }
 		invention =  15_inch_main_armament
@@ -784,8 +813,10 @@ modern_cruisers = {
 			build_time = 30	
 		}  
 	}
+	
+	
+	
 }
-
 advanced_battlecruisers = {
 	limit = {
 		oil_driven_ships = 1 
@@ -809,7 +840,6 @@ advanced_battlecruisers = {
 		} 
 	}
 }
-
 advanced_battleships = {
 	limit = {
 		oil_driven_ships = 1 
@@ -832,11 +862,13 @@ advanced_battleships = {
 			supply_consumption = 0.25
 		} 
 	}
+	
+	
+	
 }
-
 modern_battleships = {
 	limit = {
-		oil_driven_ships = 1 
+		modern_ship_construction = 1 
 		combustion_engine = 1 
 		invention =  15_inch_main_armament
 		has_country_flag = existing_country
@@ -851,41 +883,42 @@ modern_battleships = {
 	effect = {
 		activate_unit = battleship
 	}
+	
+	
+	
 }
-
-#experimental_carriers = {
-#	limit = { oil_driven_ships = 1 }
-#	chance = {
-#		base = 6
-#	}
-#	effect = { 
-#	}
-#}
-#converted_hulk_carriers = {
-#	limit = { oil_driven_ships = 1 }
-#	chance = {
-#		base = 5
-#		modifier = {
-#			factor = 2
-#			invention = experimental_carriers
-#		}
-#	}
-#	effect = {
-#	}
-#}
-#purpose_built_carriers = {
-#	limit = { oil_driven_ships = 1 }
-#	chance = {
-#		base = 5
-#		modifier = {
-#			factor = 2
-#			invention = converted_hulk_carriers
-#		}
-#	}
-#	effect = { 
-#	}
-#}
-
+experimental_carriers = {
+	limit = { modern_ship_construction = 1 }
+	chance = {
+		base = 6
+	}
+	effect = { 
+	}
+}
+converted_hulk_carriers = {
+	limit = { modern_ship_construction = 1 }
+	chance = {
+		base = 5
+		modifier = {
+			factor = 2
+			invention = experimental_carriers
+		}
+	}
+	effect = {
+	}
+}
+purpose_built_carriers = {
+	limit = { modern_ship_construction = 1 }
+	chance = {
+		base = 5
+		modifier = {
+			factor = 2
+			invention = converted_hulk_carriers
+		}
+	}
+	effect = { 
+	}
+}
 advanced_submarines = {
 	limit = {
 		oil_driven_ships = 1 
@@ -909,10 +942,9 @@ advanced_submarines = {
 
 	}
 }
-
 modern_battlecruisers = {
 	limit = {
-		oil_driven_ships = 1 
+		modern_ship_construction = 1 
 		NOT = {
 			invention = light_cruisers 
 			invention =  15_inch_main_armament 
@@ -935,7 +967,6 @@ modern_battlecruisers = {
 		} 
 	}
 }
-
 #fire_control_systems
 optical_rangefinders = {
 	limit = { fire_control_systems = 1 }
@@ -953,8 +984,10 @@ optical_rangefinders = {
 			supply_consumption = 0.05
 		}
 	}
+	
+	
+	
 }
-
 gyrostabilized_fire_control = {
 	limit = { fire_control_systems = 1 }
 	news = no
@@ -973,8 +1006,10 @@ gyrostabilized_fire_control = {
 			gun_power = 1
 		}
 	}
+	
+	
+	
 }
-
 torpedo_gyroscope = {
 	limit = { fire_control_systems = 1 }
 	news = no
@@ -988,7 +1023,6 @@ torpedo_gyroscope = {
 		}
 	}
 }
-
 #weapon_platforms
 sea_mine_equipment = {
 	limit = { weapon_platforms = 1 }
@@ -1003,7 +1037,6 @@ sea_mine_equipment = {
 		}
 	}
 }
-
 self_propelled_torpedoes = {
 	limit = { weapon_platforms = 1 }
 	news = no
@@ -1021,7 +1054,6 @@ self_propelled_torpedoes = {
 		}
 	}
 }
-
 armour_piercing_projectiles = {
 	limit = { weapon_platforms = 1 }
 	news = no
@@ -1033,8 +1065,10 @@ armour_piercing_projectiles = {
 			gun_power = 3
 		} 
 	}
+	
+	
+	
 }
-
 armour_piercing_exploding_projectiles = {
 	limit = { weapon_platforms = 1 }
 	news = no
@@ -1050,8 +1084,10 @@ armour_piercing_exploding_projectiles = {
 			gun_power = 3
 		}  
 	}
+	
+	
+	
 }
-
 armoured_turrets = {
 	limit = { weapon_platforms = 1 }
 	news = no
@@ -1068,8 +1104,10 @@ armoured_turrets = {
 			gun_power = 1
 		} 
 	}
+	
+	
+	
 }
-
 #main_armament
 bomb_guns = {
 	limit = { main_armament = 1 }
@@ -1087,8 +1125,10 @@ bomb_guns = {
 			supply_consumption = 0.05
 		}
 	}
+	
+	
+	
 }
-
 rifled_guns = {
 	limit = { main_armament = 1 }
 	news = no
@@ -1104,8 +1144,10 @@ rifled_guns = {
 			gun_power = 2
 		}
 	}
+	
+	
+	
 }
-
 quick_firing_guns = {
 	limit = { main_armament = 1 }
 	news = no
@@ -1122,8 +1164,10 @@ quick_firing_guns = {
 			supply_consumption = 0.05
 		}
 	}
+	
+	
+	
 }
-
 armoured_citadels = {
 	limit = { main_armament = 1 }
 	news = no
@@ -1140,8 +1184,10 @@ armoured_citadels = {
 			hull = 8
 		} 
 	}
+	
+	
+	
 }
-
 heavy_caliber_guns = {
 	limit = { main_armament = 1 }
 	news = no
@@ -1157,8 +1203,10 @@ heavy_caliber_guns = {
 			gun_power = 10
 		}
 	}
+	
+	
+	
 }
-
 #advanced_naval_design
 on_board_recon_aircraft = {
 	limit = {
@@ -1183,8 +1231,10 @@ on_board_recon_aircraft = {
 			supply_consumption = 0.05
 		}		
 	}
+	
+	
+	
 }
-
 gun_hydraulics = {
 	limit = {
 		advanced_naval_design = 1
@@ -1204,8 +1254,10 @@ gun_hydraulics = {
 			supply_consumption = 0.05
 		}
 	}
+	
+	
+	
 }
-
 heavy_armour_plates = {
 	limit = {
 		advanced_naval_design = 1
@@ -1221,8 +1273,10 @@ heavy_armour_plates = {
 			supply_consumption = 0.05
 		} 
 	}
+	
+	
+	
 }
-
 large_hull_form = {
 	limit = {
 		advanced_naval_design = 1
@@ -1237,8 +1291,10 @@ large_hull_form = {
 			hull = 10
 		} 
 	}
+	
+	
+	
 }
-
 #modern_naval_design
 wireless = {
 	limit = {
@@ -1254,8 +1310,10 @@ wireless = {
 			default_organisation = 10
 		}
 	}
+	
+	
+	
 }
-
 advanced_fire_control = {
 	limit = {
 		modern_naval_design = 1
@@ -1279,8 +1337,10 @@ advanced_fire_control = {
 			gun_power = 5
 		}
 	}
+	
+	
+	
 }
-
 15_inch_main_armament = {
 	limit = {
 		modern_naval_design = 1
@@ -1296,8 +1356,10 @@ advanced_fire_control = {
 			supply_consumption = 0.05
 		}
 	}
+	
+	
+	
 }
-
 #naval_plans
 night_training = {
 	limit = { naval_plans = 1 }
@@ -1310,6 +1372,9 @@ night_training = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
 
 enemy_plotting_cards = {
@@ -1323,6 +1388,9 @@ enemy_plotting_cards = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
 
 target_hit_profile_analysis = {
@@ -1336,6 +1404,9 @@ target_hit_profile_analysis = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
 
 #naval_statistics
@@ -1350,6 +1421,9 @@ hit_evaluation_reports = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
 
 empirical_interdiction_reports = {
@@ -1363,6 +1437,9 @@ empirical_interdiction_reports = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
 
 naval_strike_success_criterium = {
@@ -1376,6 +1453,9 @@ naval_strike_success_criterium = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
 
 #naval_logistics
@@ -1395,6 +1475,9 @@ underway_refueling = {
 			supply_consumption = -0.15
 		}
 	}
+	
+	
+	
 }
 
 ammunition_conservation_system = {
@@ -1409,6 +1492,9 @@ ammunition_conservation_system = {
 			supply_consumption = -0.15
 		}
 	}
+	
+	
+	
 }
 
 radio_telegraphy = {
@@ -1426,6 +1512,9 @@ radio_telegraphy = {
 			default_organisation = 3
 		}
 	}
+	
+	
+	
 }
 #naval_directionism
 political_lobbying = {
@@ -1442,6 +1531,9 @@ political_lobbying = {
 			build_time = -30
 		}
 	}
+	
+	
+	
 }
 
 military_political_decision_making = {
@@ -1458,6 +1550,9 @@ military_political_decision_making = {
 			build_time = -30
 		}
 	}
+	
+	
+	
 }
 
 local_military_government = {
@@ -1474,6 +1569,9 @@ local_military_government = {
 			build_time = -30
 		}
 	}
+	
+	
+	
 }
 
 #naval_integration
@@ -1491,6 +1589,9 @@ war_gamming = {
 			default_organisation = 10
 		}
 	}
+	
+	
+	
 }
 
 combined_arms_planning = {
@@ -1507,6 +1608,9 @@ combined_arms_planning = {
 			default_organisation = 5
 		}
 	}
+	
+	
+	
 }
 
 #naval_professionalism
@@ -1521,6 +1625,9 @@ academic_training = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
 
 combat_station_training = {
@@ -1534,6 +1641,9 @@ combat_station_training = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
 
 societal_status = {
@@ -1547,6 +1657,9 @@ societal_status = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
 
 #naval_decision_making
@@ -1560,8 +1673,10 @@ independent_command = {
 	effect = {
 		supply_range = 0.5
 	}
+	
+	
+	
 }
-
 continuous_issuing_of_orders = {
 	limit = { naval_decision_making = 1 }
 	news = no
@@ -1573,6 +1688,9 @@ continuous_issuing_of_orders = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
 
 delegated_power = {
@@ -1584,6 +1702,9 @@ delegated_power = {
 	effect = {
 		supply_range = 0.5
 	}
+	
+	
+	
 }
 
 #naval_risk_management
@@ -1596,8 +1717,10 @@ wargames = {
 	effect = {
 		naval_attrition = -0.05
 	}
+	
+	
+	
 }
-
 alternative_plans = {
 	limit = { naval_risk_management = 1 }
 	news = no
@@ -1608,6 +1731,9 @@ alternative_plans = {
 	effect = {
 		naval_attrition = -0.05
 	}
+	
+	
+	
 }
 
 n_saddle_orders = {
@@ -1619,8 +1745,10 @@ n_saddle_orders = {
 	effect = {
 		naval_attrition = -0.05
 	}
+	
+	
+	
 }
-
 #naval_nco_training
 literate_ncos = {
 	limit = {
@@ -1640,8 +1768,10 @@ literate_ncos = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
-
 nco_combat_station_training = {
 	limit = {
 		naval_nco_training = 1
@@ -1660,8 +1790,10 @@ nco_combat_station_training = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
-
 nco_tactical_training = {
 	limit = {
 		naval_nco_training = 1
@@ -1676,8 +1808,10 @@ nco_tactical_training = {
 			default_organisation = 1
 		}
 	}
+	
+	
+	
 }
-
 #modern_naval_training
 amphibious_warfare_training = {
 	limit = {
@@ -1693,8 +1827,10 @@ amphibious_warfare_training = {
 			default_organisation = 5
 		}
 	}
+	
+	
+	
 }
-
 naval_exercises = {
 	limit = {
 		modern_naval_training = 1
@@ -1707,4 +1843,8 @@ naval_exercises = {
 	effect = {
 		naval_attrition = -0.1
 	}
+	
+	
+	
 }
+

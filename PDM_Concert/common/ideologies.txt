@@ -5,10 +5,13 @@ fascist_group = {
 		uncivilized = no
 		color = { 60 60 60 }
 		date = 1905.1.1
+	
 		
 		add_political_reform = {
 			base = 0
 		}
+	
+	
 		remove_political_reform = {
 			base = 0
 			modifier = {
@@ -16,6 +19,8 @@ fascist_group = {
 				ruling_party_ideology = fascist 
 			}
 		}
+	
+	
 		add_social_reform = {
 			base = 0
 			modifier = {
@@ -23,6 +28,8 @@ fascist_group = {
 				ruling_party_ideology = fascist 
 			}
 		}
+	
+	
 		remove_social_reform = {
 			base = 0
 			modifier = {
@@ -30,6 +37,9 @@ fascist_group = {
 				ruling_party_ideology = fascist 
 			}
 		}
+		
+		
+		
 	}
 }	
 
@@ -49,9 +59,11 @@ conservative_group = {
 		remove_social_reform = {
 			base = 1
 		}
+		
 		add_military_reform = {
 			base = -1
 		}
+		
 		add_economic_reform = {
 			base = -1
 		}
@@ -76,45 +88,82 @@ conservative_group = {
 	
 	conservative = {
 		color = { 10 10 250 }
+		
 		can_reduce_militancy = yes
 		
 		add_political_reform = {
 			base = 0
 			group = {
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.05
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.1
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.15
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.2
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.25
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.3
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.35
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.4
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.45
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.5
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.55
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.6
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.65
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.7
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.75
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.8
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.85
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.9
 				}
 			}
@@ -124,51 +173,91 @@ conservative_group = {
 		}
 		add_social_reform = {
 			base = 0
+			
 			group = {
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.05
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.1
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.15
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.2
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.25
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.3
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.35
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.4
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.45
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.5
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.55
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.6
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.65
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.7
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.75
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.8
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.85
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.9
 				}
 			}
+			
 		}
 		remove_social_reform = {
 			base = 0
 		}
+		
 		add_military_reform = {
 			base = 0.5
 		}
+		
 		add_economic_reform = {
 			base = -0.5
 		}
@@ -184,39 +273,75 @@ socialist_group = {
 			base = 0
 			group = {
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.05
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.1
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.15
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.2
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.25
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.3
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.35
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.4
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.45
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.5
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.55
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.6
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.65
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.7
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.75
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.8
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					political_movement_strength = 0.85
+				}
+				modifier = {
+					factor = 0.05
 					political_movement_strength = 0.9
 				}
 			}
@@ -260,13 +385,15 @@ socialist_group = {
 				factor = 1
 				ruling_party_ideology = communist
 			}
-		}	
+		}
 	}
 }
 
 liberal_group = {
+	
 	liberal = {
 		color = { 255 255 0 }
+
 		
 		add_political_reform = {
 			base = 1
@@ -278,39 +405,75 @@ liberal_group = {
 			base = 0
 			group = {
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.05
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.1
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.15
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.2
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.25
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.3
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.35
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.4
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.45
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.5
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.55
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.6
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.65
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.7
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.75
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.8
 				}
 				modifier = {
-					factor = 0.1
+					factor = 0.05
+					social_movement_strength = 0.85
+				}
+				modifier = {
+					factor = 0.05
 					social_movement_strength = 0.9
 				}
 			}
@@ -322,13 +485,16 @@ liberal_group = {
 				ruling_party_ideology = liberal 
 			}
 		}
+		
 		add_military_reform = {
 			base = 0.5
 		}
+		
 		add_economic_reform = {
 			base = 1
 		}
 	}
+	
 	anarcho_liberal = {
 		color = { 150 150 10 }
 		date = 1848.1.1
@@ -349,16 +515,19 @@ liberal_group = {
 		remove_social_reform = {
 			base = 1
 		}
+		
 		add_military_reform = {
 			base = -1
 		}
+		
 		add_economic_reform = {
 			base = -1
 		}
 	}
+
 	social_liberal = {
 		color = { 255 160 53 }
-		date = 1890.1.1
+		date = 1900.1.1
 		
 		add_political_reform = {
 			base = 1
@@ -410,6 +579,7 @@ minor_group = {
 	}
 	subordinate = {
 		color = { 160 160 160 }
+
 		
 		add_political_reform = {
 			base = 0
@@ -440,4 +610,5 @@ minor_group = {
 			base = 0
 		}	
 	}
+
 }

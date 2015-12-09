@@ -149,8 +149,8 @@ trade_restrictions = {
 }
 
 colonial_dry_spell = {
-	pop_militancy_modifier = 0.02
-	local_RGO_throughput = -0.2
+	pop_militancy_modifier = 0.1
+	local_RGO_throughput = -0.50
 	icon = 14
 }
 
@@ -168,7 +168,7 @@ colonial_museum_of_natural_history = {
 }
 
 colonial_mismanagement = {
-	pop_militancy_modifier = -0.02
+	pop_militancy_modifier = 0.1
 	local_RGO_throughput = -0.5
 	icon = 2
 }
@@ -187,7 +187,7 @@ baby_boom = {
 loyal_askaris = {
 	pop_militancy_modifier = -0.05
 	pop_consciousness_modifier = -0.05
-	prestige = 0.01
+	prestige = 0.02
 	icon = 17
 }
 
@@ -230,7 +230,7 @@ militant_trade_union = {
 	pop_consciousness_modifier = 0.1
 	local_factory_throughput = -0.25
 	local_RGO_throughput = -0.05
-	prestige = -0.01
+	prestige = -0.02
 	icon = 4
 }
 
@@ -471,6 +471,7 @@ liquor_prohibition = {
 	factory_throughput = 0.1
 	global_pop_militancy_modifier = 0.02
 	tax_efficiency = -0.05
+	prestige = 0.05
 	icon = 18
 }
 
@@ -616,12 +617,12 @@ witwatersrand_gold_rush = {
 
 ##### RGO Spread Events #####
 local_tractors = {
-	farm_rgo_eff = 0.5
+	farm_rgo_eff = 0.3
 	icon = 13
 }
 
 local_electricity = {
-	local_RGO_throughput = 0.25
+	local_RGO_throughput = 0.2
 	icon = 13
 }
 
@@ -631,12 +632,12 @@ local_nitroglycerin = {
 }
 
 local_distribution_channels = {
-	local_RGO_throughput = 0.15
+	local_RGO_throughput = 0.1
 	icon = 11
 }
 
 local_machine_tools = {
-	local_RGO_throughput = 0.25
+	local_RGO_throughput = 0.2
 	icon = 13
 }
 
@@ -666,7 +667,7 @@ irrigration_network = {
 }
 
 nitrates = {
-	farm_RGO_eff = 0.55
+	farm_RGO_eff = 0.5
 	icon = 13
 }
 
@@ -1023,6 +1024,11 @@ national_assimilation_complete = {
 	icon = 7
 }
 
+turkish_assimilation = {
+	assimilation_rate = 0.2
+	icon = 7
+}
+
 ### Dictatorship ###
 fight_the_power = {
 	global_pop_militancy_modifier = 0.05
@@ -1067,8 +1073,8 @@ power_vacuum = {
 ### NV changes ###
 national_confusion = {
 	research_points_modifier = -0.25
-	global_pop_consciousness_modifier = 0.02
-	global_pop_militancy_modifier = 0.01
+	global_pop_consciousness_modifier = 0.03
+	global_pop_militancy_modifier = 0.03
 	prestige = -0.05
 	icon = 4
 }
@@ -1246,7 +1252,7 @@ nv_dominion_modifier = {
 	supply_consumption = -0.05
 	global_pop_consciousness_modifier = -0.02
 	non_accepted_pop_militancy_modifier = -0.02
-	rgo_output = 0.05
+	rgo_output = 0.1
 	icon = 3
 }
 
@@ -1259,13 +1265,15 @@ the_open_door = {
 	
 citizenship_tests = {
 	global_immigrant_attract = 0.15
-	global_pop_militancy_modifier = 0.02
+	global_pop_consciousness_modifier = 0.01
+	global_pop_militancy_modifier = 0.01
 	icon = 5
 }
 	
 passports = {
 	global_immigrant_attract = 0.15
-	global_pop_consciousness_modifier = 0.02
+	global_pop_consciousness_modifier = 0.01
+	global_pop_militancy_modifier = 0.01
 	icon = 5
 }
 
@@ -1348,7 +1356,9 @@ workshop_of_the_world = {
 }
 
 secret_police = {
+	global_pop_militancy_modifier = -0.01
 	suppression_points_modifier = 0.5
+	prestige = -0.05
 	icon = 15
 }
 
@@ -1418,7 +1428,7 @@ the_statue_of_liberty = {
 }
 
 gateway_to_america = {
-	immigrant_attract = 1
+	immigrant_attract = 0.5
 	population_growth = 0.002
 	icon = 19
 }
@@ -1558,19 +1568,19 @@ drive_to_reunify = {
 
 ### Nationalism & Rebellion ###
 nationalist_agitation = {
-	pop_consciousness_modifier = 0.05
-	pop_militancy_modifier = 0.25
+	pop_consciousness_modifier = 0.1
+	pop_militancy_modifier = 0.2
 	icon = 18
 }
 
 patriot_uprising = {
-	pop_consciousness_modifier = 0.05
+	pop_consciousness_modifier = 0.1
 	pop_militancy_modifier = 0.25
 	icon = 18
 }
 
 peasant_revolt = {
-	pop_consciousness_modifier = 0.05
+	pop_consciousness_modifier = 0.1
 	pop_militancy_modifier = 0.25
 	icon = 18
 }

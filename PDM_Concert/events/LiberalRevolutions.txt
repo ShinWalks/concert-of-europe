@@ -642,7 +642,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 1.2
@@ -874,7 +877,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 1.2
@@ -1083,7 +1089,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 1.2
@@ -1321,7 +1330,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 1.2
@@ -1539,7 +1551,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 1.2
@@ -1904,7 +1919,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.4
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 1.4
@@ -2250,7 +2268,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 1.2
@@ -4299,6 +4320,7 @@ country_event = {
 		exists = yes
 		exists = BEL
 		OR = {
+			government = theocracy
 			government = absolute_monarchy
 			government = prussian_constitutionalism
 		}
@@ -4444,6 +4466,7 @@ country_event = {
 		}
 		exists = yes
 		OR = {
+			government = theocracy
 			government = absolute_monarchy
 			government = prussian_constitutionalism
 		}
@@ -4945,7 +4968,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				government = absolute_monarchy
+				OR = {
+					government = theocracy
+					government = absolute_monarchy
+				}
 			}
 			modifier = {
 				factor = 1.2

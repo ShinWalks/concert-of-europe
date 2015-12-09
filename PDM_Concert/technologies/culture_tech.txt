@@ -2,12 +2,11 @@
 classicism_n_early_romanticism = {
 	area = aesthetics
 	year = 1821
-	cost = 4600
+	cost = 4500
 	permanent_prestige = 2
 	prestige = 0.05
-	
 	ai_chance = {
-		factor = 100
+		factor = 1.01
 		modifier = {
 			factor = 2
 			is_greater_power = yes
@@ -58,12 +57,11 @@ classicism_n_early_romanticism = {
 romanticism = {
 	area = aesthetics
 	year = 1825
-	cost = 7750
+	cost = 7600
 	permanent_prestige = 2
 	prestige = 0.05
-	
 	ai_chance = {
-		factor = 50
+		factor = 1.05
 		modifier = {
 			factor = 2.5
 			is_greater_power = yes
@@ -119,12 +117,11 @@ romanticism = {
 realism = {
 	area = aesthetics
 	year = 1840
-	cost = 10200
+	cost = 10000
 	permanent_prestige = 5
 	prestige = 0.1
-	
 	ai_chance = {
-		factor = 25
+		factor = 1.05
 		modifier = {
 			factor = 2
 			is_greater_power = yes
@@ -175,12 +172,11 @@ realism = {
 impressionism = {
 	area = aesthetics
 	year = 1850
-	cost = 12750
+	cost = 12500
 	permanent_prestige = 5
 	prestige = 0.1
-	
 	ai_chance = {
-		factor = 10
+		factor = 1.05
 		modifier = {
 			factor = 5
 			is_greater_power = yes
@@ -231,18 +227,17 @@ impressionism = {
 expressionism = {
 	area = aesthetics
 	year = 1870
-	cost = 20400
+	cost = 20000
 	permanent_prestige = 10
 	prestige = 0.1
-	
 	ai_chance = {
-		factor = 5
+		factor = 1.05
 		modifier = {
-			factor = 10
+			factor = 5
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 5
+			factor = 2
 			is_secondary_power = yes
 		}
 		modifier = {
@@ -290,15 +285,14 @@ mass_culture_n_the_avant_garde = {
 	cost = 30000
 	permanent_prestige = 10
 	prestige = 0.1
-	
 	ai_chance = {
-		factor = 1
+		factor = 1.1
 		modifier = {
-			factor = 50
+			factor = 5
 			is_greater_power = yes
 		}
 		modifier = {
-			factor = 25
+			factor = 2
 			is_secondary_power = yes
 		}
 		modifier = {
@@ -340,16 +334,75 @@ mass_culture_n_the_avant_garde = {
 	}
 }
 
+modern_aesthetics = {
+	area = aesthetics
+	year = 1920
+	cost = 40000
+	permanent_prestige = 20
+	prestige = 0.1
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+
 #philosophy
 late_enlightenment_philosophy = {
 	area = philosophy
 	year = 1821
-	cost = 4600
+	cost = 4500
 	permanent_prestige = 2
 	increase_research = 0.4
-	
 	ai_chance = {
-		factor = 500
+		factor = 5
 		modifier = {
 			factor = 5
 			year = 1856
@@ -384,11 +437,10 @@ late_enlightenment_philosophy = {
 idealism = {
 	area = philosophy
 	year = 1840
-	cost = 7750
+	cost = 7600
 	permanent_prestige = 2
-	
 	ai_chance = {
-		factor = 350
+		factor = 5
 		modifier = {
 			factor = 5
 			year = 1860
@@ -427,11 +479,10 @@ idealism = {
 empiricism = {
 	area = philosophy
 	year = 1860
-	cost = 10200
+	cost = 10000
 	permanent_prestige = 5
-	
 	ai_chance = {
-		factor = 250
+		factor = 5
 		modifier = {
 			factor = 5
 			year = 1880
@@ -474,11 +525,10 @@ empiricism = {
 analytic_philosophy = {
 	area = philosophy
 	year = 1870
-	cost = 12750
+	cost = 12500
 	permanent_prestige = 5
-	
 	ai_chance = {
-		factor = 250
+		factor = 5
 		modifier = {
 			factor = 5
 			year = 1900
@@ -521,12 +571,11 @@ analytic_philosophy = {
 phenomenology_n_hermeneutic = {
 	area = philosophy
 	year = 1890
-	cost = 20400
+	cost = 20000
 	permanent_prestige = 10
 	increase_research = 0.15
-	
 	ai_chance = {
-		factor = 100
+		factor = 5
 		modifier = {
 			factor = 5
 			year = 1910
@@ -568,9 +617,8 @@ anti__rationalism = {
 	cost = 30000
 	permanent_prestige = 10
 	increase_research = 0.3
-	
 	ai_chance = {
-		factor = 50
+		factor = 5
 		modifier = {
 			factor = 2
 			year = 1920
@@ -606,17 +654,64 @@ anti__rationalism = {
 	}
 }
 
+critical_theory = {
+	area = philosophy
+	year = 1920
+	cost = 40000
+	permanent_prestige = 20
+	increase_research = 0.3
+	ai_chance = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 2
+			year = 1925
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+
 #social_thought
 malthusian_thought = {
 	area = social_thought
 	year = 1821
-	cost = 4600
+	cost = 4500
 	permanent_prestige = 2
 	colonial_points = 50
 	education_efficiency = 0.25
-	
 	ai_chance = {
-		factor = 250
+		factor = 1.01
 		modifier = {
 			factor = 1.5
 			year = 1856
@@ -703,13 +798,12 @@ malthusian_thought = {
 positivism = {
 	area = social_thought
 	year = 1830
-	cost = 7750
+	cost = 7600
 	permanent_prestige = 2
-	colonial_points = 50
-	education_efficiency = 0.25
-	
+	education_efficiency = 0.50
+	colonial_points = 10
 	ai_chance = {
-		factor = 100
+		factor = 1.01
 		modifier = {
 			factor = 1.5
 			year = 1856
@@ -788,7 +882,7 @@ positivism = {
 functionalism = {
 	area = social_thought
 	year = 1850
-	cost = 10200
+	cost = 10000
 	permanent_prestige = 5
 	education_efficiency = 0.5
 	colonial_points = 10
@@ -798,9 +892,8 @@ functionalism = {
 	factory_goods_output = {
 		shoes = 0.1
 	}
-	
 	ai_chance = {
-		factor = 50
+		factor = 1.01
 		modifier = {
 			factor = 1.5
 			year = 1870
@@ -879,7 +972,7 @@ functionalism = {
 biologism = {
 	area = social_thought
 	year = 1870
-	cost = 12750
+	cost = 12500
 	permanent_prestige = 5
 	colonial_points = 10
 	education_efficiency = 0.5
@@ -889,9 +982,8 @@ biologism = {
 	factory_goods_output = {
 		boots = 0.05
 	}
-	
 	ai_chance = {
-		factor = 25
+		factor = 1.1
 		modifier = {
 			factor = 1.5
 			year = 1890
@@ -970,13 +1062,12 @@ biologism = {
 social_science = {
 	area = social_thought
 	year = 1880
-	cost = 20400
+	cost = 20000
 	permanent_prestige = 10
 	education_efficiency = 0.5
 	colonial_points = 10
-	
 	ai_chance = {
-		factor = 10
+		factor = 1.05
 		modifier = {
 			factor = 4
 			colonial_nation = yes
@@ -1049,12 +1140,11 @@ social_alienation = {
 	year = 1900
 	cost = 30000
 	permanent_prestige = 10
-	war_exhaustion = -0.25
-	education_efficiency = 0.75
+	war_exhaustion = -0.1
+	education_efficiency = 0.50
 	colonial_points = 10
-	
 	ai_chance = {
-		factor = 5
+		factor = 1
 		modifier = {
 			factor = 4
 			colonial_nation = yes
@@ -1130,18 +1220,107 @@ social_alienation = {
 	}
 }
 
+mathematical_sociology = {
+	area = social_thought
+	year = 1920
+	cost = 40000
+	permanent_prestige = 20
+	war_exhaustion = -0.15
+	education_efficiency = 1
+	colonial_points = 10
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 4
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 10
+			NOT = { literacy = 0.1 }
+		}
+		modifier = {
+			factor = 8
+			literacy = 0.1
+			NOT = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 6
+			literacy = 0.2
+			NOT = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 4
+			literacy = 0.3
+			NOT = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = 2
+			literacy = 0.4
+			NOT = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = 1.25
+			war = yes
+		}
+		modifier = {
+			factor = 1.25
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+
 #political_thought
 enlightenment_thought = {
 	area = political_thought
 	year = 1821
-	cost = 4600
+	cost = 4500
 	permanent_prestige = 2
 	max_national_focus = 1
 	cb_creation_speed = 0.25
-	influence = 0.15
-	
+	influence = 0.25
 	ai_chance = {
-		factor = 500
+		factor = 3
 		modifier = {
 			factor = 1.5
 			year = 1856
@@ -1205,14 +1384,13 @@ enlightenment_thought = {
 ideological_thought = {
 	area = political_thought
 	year = 1840
-	cost = 7750
+	cost = 7600
 	permanent_prestige = 2
 	max_national_focus = 1 
 	cb_creation_speed = 0.25
-	influence = 0.15
-	
+	influence = 0.25
 	ai_chance = {
-		factor = 250
+		factor = 1.1
 		modifier = {
 			factor = 1.5
 			year = 1860
@@ -1278,14 +1456,13 @@ ideological_thought = {
 state_n_government = {
 	area = political_thought
 	year = 1850
-	cost = 10200
+	cost = 10000
 	permanent_prestige = 5
 	max_national_focus = 1 
-	influence = 0.15
+	influence = 0.25
 	cb_creation_speed = 0.25
-	
 	ai_chance = {
-		factor = 100
+		factor = 1.1
 		modifier = {
 			factor = 1.5
 			year = 1870
@@ -1351,14 +1528,14 @@ state_n_government = {
 nationalism_n_imperialism = {
 	area = political_thought
 	year = 1860
-	cost = 12750
+	cost = 12500
 	permanent_prestige = 5
 	max_national_focus = 1
-	influence = 0.15
+	influence = 0.25
+
 	cb_creation_speed = 0.5
-	
 	ai_chance = {
-		factor = 50
+		factor = 1.5
 		modifier = {
 			factor = 1.5
 			year = 1880
@@ -1424,15 +1601,14 @@ nationalism_n_imperialism = {
 revolution_n_counterrevolution = {
 	area = political_thought
 	year = 1870
-	cost = 20400
+	cost = 20000
 	permanent_prestige = 10
 	max_national_focus = 1
-	influence = 0.15
+	influence = 0.25
 	diplomatic_points = 0.25
 	cb_creation_speed = 0.25
-	
 	ai_chance = {
-		factor = 25
+		factor = 1.5
 		modifier = {
 			factor = 1.5
 			year = 1890
@@ -1500,12 +1676,11 @@ mass_politics = {
 	year = 1900
 	cost = 30000
 	permanent_prestige = 10
-	max_national_focus = 1
-	influence = 0.15
+	max_national_focus = 1 
+	influence = 0.25
 	cb_creation_speed = 0.25
-	
 	ai_chance = {
-		factor = 10
+		factor = 1.01
 		modifier = {
 			factor = 2
 			year = 1920
@@ -1564,22 +1739,94 @@ mass_politics = {
 	}
 }
 
+post_colonialism = {
+	area = political_thought
+	year = 1920
+	cost = 40000
+	permanent_prestige = 20
+	max_national_focus = 1 
+	influence = 0.25
+	cb_creation_speed = 0.25
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
+		modifier = {
+			factor = 2
+			year = 1930
+		}
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 25
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = no
+			is_secondary_power = no
+			colonial_nation = yes
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 7
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 14
+		}
+		modifier = {
+			factor = 1.2
+			number_of_states = 28
+		}
+		modifier = {
+			factor = 2
+			liberal = 25
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+
 #psychology
 introspectionism = {
 	area = psychology
 	year = 1821
-	cost = 4600
+	cost = 4500
 	permanent_prestige = 2
-	education_efficiency = 0.15
-	reinforce_rate = 0.05
+	education_efficiency = 0.25
+	reinforce_rate = 0.025
 	war_exhaustion = -0.05
-	
 	ai_chance = {
-		factor = 250
+		factor = 1.01
 		modifier = {
 			factor = 1.2
 			is_greater_power = yes
-		}
+		} 
 		modifier = {
 			factor = 1.2
 			average_militancy = 2
@@ -1646,14 +1893,13 @@ introspectionism = {
 associationism = {
 	area = psychology
 	year = 1840
-	cost = 7750
+	cost = 7600
 	permanent_prestige = 2
-	education_efficiency = 0.15
-	reinforce_rate = 0.05
+	education_efficiency = 0.25
+	reinforce_rate = 0.025
 	war_exhaustion = -0.05
-	
 	ai_chance = {
-		factor = 50
+		factor = 1.05
 		modifier = {
 			factor = 2
 			is_greater_power = yes
@@ -1728,14 +1974,13 @@ associationism = {
 phenomenalism = {
 	area = psychology
 	year = 1850
-	cost = 10200
+	cost = 10000
 	permanent_prestige = 5
-	education_efficiency = 0.15
-	reinforce_rate = 0.05
+	education_efficiency = 0.25
+	reinforce_rate = 0.025
 	war_exhaustion = -0.05
-	
 	ai_chance = {
-		factor = 25
+		factor = 1.05
 		modifier = {
 			factor = 2
 			is_greater_power = yes
@@ -1810,14 +2055,13 @@ phenomenalism = {
 experimental_psychology = {
 	area = psychology
 	year = 1860
-	cost = 12750
+	cost = 12500
 	permanent_prestige = 5
-	education_efficiency = 0.15
-	reinforce_rate = 0.05
+	education_efficiency = 0.25
+	reinforce_rate = 0.025
 	war_exhaustion = -0.05
-	
 	ai_chance = {
-		factor = 10
+		factor = 1.05
 		modifier = {
 			factor = 5
 			is_greater_power = yes
@@ -1892,14 +2136,13 @@ experimental_psychology = {
 psychoanalysis = {
 	area = psychology
 	year = 1870
-	cost = 20400
+	cost = 20000
 	permanent_prestige = 10
-	education_efficiency = 0.15
-	reinforce_rate = 0.05
+	education_efficiency = 0.25
+	reinforce_rate = 0.025
 	war_exhaustion = -0.05
-	
 	ai_chance = {
-		factor = 5
+		factor = 1.05
 		modifier = {
 			factor = 5
 			is_greater_power = yes
@@ -1976,12 +2219,96 @@ behaviorism = {
 	year = 1900
 	cost = 30000
 	permanent_prestige = 10
-	education_efficiency = 0.15
-	reinforce_rate = 0.05
+	education_efficiency = 0.25
+	reinforce_rate = 0.025
 	war_exhaustion = -0.05
-	
 	ai_chance = {
 		factor = 1
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 5
+			is_secondary_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 2
+		}
+		modifier = {
+			factor = 1.2
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1.5
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 1.5
+			war = yes
+		}
+		modifier = {
+			factor = 1.2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = 1.4
+			nationalvalue = nv_freedom
+		}
+		modifier = {
+			factor = 0.8
+			nationalvalue = nv_might
+		}
+		modifier = {
+			factor = 0.6
+			nationalvalue = nv_supremacy
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				tech_school = army_tech_school
+				tech_school = naval_tech_school
+				tech_school = japanese_tech_school
+			}
+		}
+		modifier = {
+			factor = 0.9
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = russian_tech_school
+		}
+		modifier = {
+			factor = 1.6
+			tech_school = culture_tech_school
+		}
+	}
+}
+
+humanistic_psychology = {
+	area = psychology
+	year = 1920
+	cost = 40000
+	permanent_prestige = 20
+	education_efficiency = 0.25
+	reinforce_rate = 0.025
+	war_exhaustion = -0.05
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			not = { year = 1925 }
+		}
 		modifier = {
 			factor = 10
 			is_greater_power = yes

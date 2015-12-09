@@ -865,6 +865,52 @@ political_decisions = {
 		}
 	}
 	
+	integrate_silesia = {
+		picture = embrace_minority
+		potential = {
+			OR = {
+				tag = PRU
+				tag = NGF
+				tag = GER
+			}
+			owns = 684 #Oppeln
+			684 = {
+				is_core = SLS
+				is_core = THIS
+			}
+			owns = 685 #Kattowitz
+			685 = {
+				is_core = SLS
+				is_core = THIS
+			}
+			owns = 682 #Breslau
+			682 = {
+				is_core = SLS
+				is_core = THIS
+			}
+			is_greater_power = yes
+			revolution_n_counterrevolution = 1
+		}
+
+		allow = {
+			war = no
+			owns = 699
+			mass_politics = 1
+		}
+
+		effect = {
+			prestige = 1
+			badboy = 1
+			POL = { prestige = -2 }
+			relation = { who = POL value = -25 }
+			SLS = { all_core = { remove_core = SLS } }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	PRU_setup = {
 		potential = {
 			tag = PRU

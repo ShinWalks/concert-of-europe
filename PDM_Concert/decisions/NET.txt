@@ -424,11 +424,7 @@ political_decisions = {
 			}
 			set_variable = {
 				which = belgian_nationalism
-				value = 0
-			}
-			set_variable = {
-				which = dutch_nationalism
-				value = 0
+				value = 14
 			}
 		}
 	}

@@ -6,12 +6,11 @@ horse_artillery = {
 	active = no
 	unit_type = support
 	floating_flag = no
-	
 	#Core Abilities
 	priority = 20
 	max_strength = 3
 	default_organisation = 5
-	maximum_speed = 5.00
+	maximum_speed = 4
 	weighted_value = 7.0
 
 	#Building Costs
@@ -29,12 +28,13 @@ horse_artillery = {
 		horses = 0.5
 	}
 	
+
 	#Land Abilties
 	reconnaissance = 0
 	attack = 0.5
-	defence = 0.5
-	discipline = 0.5
-	support = 2
-	maneuver = 4
-	siege = 1
+	defence = 3
+	discipline = 1
+	support = 1.5
+	maneuver = 2
+	siege = 0
 }

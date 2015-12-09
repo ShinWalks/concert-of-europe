@@ -138,7 +138,6 @@ alfred_binet  = {
 	}
 	effect = {
 		shared_prestige = 5
-		core_pop_consciousness_modifier = 0.01
 	}
 }
 
@@ -174,14 +173,14 @@ eugenics  = {
 			year = 1890
 		}
 		modifier = {
-			factor = -4
+			factor = -3
 			civilized = no
 		}
 	}
 	effect = {
-		pop_growth = -0.0001
-		core_pop_consciousness_modifier = 0.02			
+		pop_growth = -0.0001		
 	}
+	core_pop_consciousness_modifier = 0.01	
 }
 
 wilhelm_wundt  = {

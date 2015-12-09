@@ -394,11 +394,7 @@ political_decisions = {
 	the_case_of_edgardo_mortara = {
 		potential = {
 			tag = PAP
-			OR = {
-				government = absolute_monarchy
-				government = prussian_constitutionalism
-				government = hms_government
-			}
+			government = theocracy
 			NOT = { has_country_flag = edgardo_mortara }
 			year = 1858
 			owns = 741
@@ -426,11 +422,9 @@ political_decisions = {
 			tag = PAP
 			OR = {
 				AND = {
-					government = absolute_monarchy
+					government = theocracy
 					has_global_flag = pius_IX_reforms
 				}
-				government = prussian_constitutionalism
-				government = hms_government
 			}
 			NOT = { has_country_flag = first_vatican_council_held }
 		}
@@ -892,6 +886,7 @@ political_decisions = {
 				exists = ITA
 				has_global_flag = italian_call_to_union
 				has_global_flag = garibaldi_redshirts
+				government = theocracy
 			}
 		}
 		

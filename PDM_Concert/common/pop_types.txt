@@ -153,46 +153,50 @@ demotion_chance =
 		factor = -0.1
 		NOT = { culture = THIS }
 	}
-	modifier = {
-		factor = -0.03
-		NOT = { literacy = 0.1 }
+	
+	group = {
+		modifier = {
+			factor = -0.03
+			not = { literacy = 0.1 }
+		}
+		modifier = {
+			factor = -0.03
+			not = { literacy = 0.15 }
+		}
+		modifier = {
+			factor = -0.03
+			not = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = -0.03
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = -0.03
+			not = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = -0.03
+			not = { literacy = 0.5 }
+		}
+		modifier = {
+			factor = -0.03
+			not = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = -0.03
+			not = { literacy = 0.7 }
+		}
+		modifier = {
+			factor = -0.03
+			not = { literacy = 0.8 }
+		}
+		modifier = {
+			factor = -0.03
+			not = { literacy = 0.9 }
+		}
 	}
-	modifier = {
-		factor = -0.03
-		NOT = { literacy = 0.15 }
-	}
-	modifier = {
-		factor = -0.03
-		NOT = { literacy = 0.2 }
-	}
-	modifier = {
-		factor = -0.03
-		NOT = { literacy = 0.3 }
-	}
-	modifier = {
-		factor = -0.03
-		NOT = { literacy = 0.4 }
-	}
-	modifier = {
-		factor = -0.03
-		NOT = { literacy = 0.5 }
-	}
-	modifier = {
-		factor = -0.03
-		NOT = { literacy = 0.6 }
-	}
-	modifier = {
-		factor = -0.03
-		NOT = { literacy = 0.7 }
-	}
-	modifier = {
-		factor = -0.03
-		NOT = { literacy = 0.8 }
-	}
-	modifier = {
-		factor = -0.03
-		NOT = { literacy = 0.9 }
-	}
+
 	group = {
 		modifier = {
 			factor = 0.1
@@ -724,6 +728,10 @@ emigration_chance =
 		}
 	}
 	group = {
+		modifier = {
+			factor = 0.05
+			unemployment = 0.05
+		}
 		modifier = {
 			factor = 0.1
 			unemployment = 0.1

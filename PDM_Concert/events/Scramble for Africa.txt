@@ -165,7 +165,10 @@ country_event = {
 		war = no
 		civilized = no
 		is_disarmed = no
-		government = absolute_monarchy
+		OR = {
+			government = theocracy
+			government = absolute_monarchy
+		}
 		NOT = {
 			num_of_revolts = 1
 			has_recently_lost_war = yes
@@ -727,6 +730,7 @@ country_event = {
 			is_secondary_power = yes
 		}
 		OR = {
+			government = theocracy
 			government = absolute_monarchy
 			government = prussian_constitutionalism
 			government = hms_government
