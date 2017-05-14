@@ -757,7 +757,7 @@ country_event = {
 country_event = {
 
 	id = 90038
-	title = "EVTNAME90038" #The Pact of Plombières
+	title = "EVTNAME90038" #The Pact of PlombiÃ¨res
 	desc = "EVTDESC90038"
 	news = yes
 	news_desc_long = "EVTDESC90038_NEWS_LONG"
@@ -1060,8 +1060,8 @@ country_event = {
 country_event = {
 	
 	id = 96161
-	title = "Failure of Plombières"
-	desc = "The Pact of Plombières has failed, and our deal with France is broken."
+	title = "Failure of PlombiÃ¨res"
+	desc = "The Pact of PlombiÃ¨res has failed, and our deal with France is broken."
 	picture = "treaty"
 	
 	trigger = {
